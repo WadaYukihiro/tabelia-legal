@@ -20,7 +20,7 @@
 
     <main>
       <h1 class="page-title">プライバシーポリシー</h1>
-      <p class="page-updated">最終更新日：2026年5月22日</p>
+      <p class="page-updated">最終更新日：2026年6月2日</p>
 
       <!-- 日本語版 -->
       <h2>1. はじめに</h2>
@@ -31,17 +31,17 @@
 
       <h3>2-1. お客様が提供する情報</h3>
       <ul>
-        <li><strong>アカウント情報</strong>：メールアドレス、パスワード（暗号化済み）</li>
-        <li><strong>プロフィール情報</strong>：表示名（任意）</li>
-        <li><strong>課金情報</strong>：サブスクリプション購入履歴（決済情報そのものはApp Storeが管理し、当サービスは保持しません）</li>
+        <li><strong>アカウント情報</strong>：メールアドレス、パスワード（ハッシュ化済み）、Googleログインを利用する場合の認証識別子</li>
+        <li><strong>保存データ</strong>：お気に入りレシピ、保存済みの献立、買い物リスト、常備品設定、規約同意履歴</li>
+        <li><strong>課金・プラン情報</strong>：サブスクリプション購入履歴、購入商品ID、購読期限、利用可能なコーチング回数、RevenueCat顧客ID（決済情報そのものはApp Storeが管理し、当サービスは保持しません）</li>
       </ul>
 
       <h3>2-2. 自動的に収集される情報</h3>
       <ul>
-        <li><strong>利用ログ</strong>：閲覧したレシピ、実行した機能、操作履歴</li>
+        <li><strong>利用ログ</strong>：閲覧したレシピ、実行した機能、操作履歴、AI機能の利用回数</li>
         <li><strong>デバイス情報</strong>：デバイスモデル、OSバージョン、アプリバージョン、言語設定</li>
-        <li><strong>クラッシュレポート</strong>：アプリ異常終了時のスタックトレース・デバイス状態</li>
-        <li><strong>分析データ</strong>：機能の使用頻度、セッション時間（匿名化処理済み）</li>
+        <li><strong>クラッシュ・性能診断データ</strong>：アプリ異常終了時のスタックトレース、エラー情報、デバイス状態（取得される場合）</li>
+        <li><strong>分析データ</strong>：画面表示、機能の使用頻度、検索語、フィルタ条件、選択した代替食材、買い物リストの操作、購入導線の操作。ログイン後はユーザーIDに紐づけて分析される場合があります</li>
       </ul>
 
       <h3>2-3. AIサービスへの送信データ</h3>
@@ -49,9 +49,12 @@
       <ul>
         <li>選択したレシピ情報（レシピ名・食材・手順）</li>
         <li>食材の代替設定（代替食材名・数量）</li>
-        <li>調理人数・スキルレベルなどの設定値</li>
+        <li>調理人数、献立、段取りステップ、コーチング対象のステップ</li>
+        <li>Shefチャットで入力した質問文および直近の会話履歴</li>
+        <li>買い物リスト内で分類が必要な食材名</li>
+        <li>レシピの組み合わせ提案に必要な候補レシピ情報</li>
       </ul>
-      <p>これらの情報は個人を特定できない形でAI処理に使用されます。</p>
+      <p>AIサービスへの送信は、AI機能の提供に必要な範囲に限定します。メールアドレス、パスワード、決済情報を意図的にAIサービスへ送信することはありません。ただし、ユーザーがチャット入力などに個人情報を含めた場合、その内容がAI処理のために送信される可能性があります。</p>
 
       <h2>3. 情報の利用目的</h2>
       <p>収集した情報は以下の目的で利用します。</p>
@@ -62,6 +65,7 @@
         <li>バグの修正・クラッシュの分析・パフォーマンス改善</li>
         <li>サービスに関するお知らせ（重要なアップデート、利用規約変更等）</li>
         <li>不正利用の検知・防止</li>
+        <li>利用状況の分析、機能改善、課金導線の改善</li>
       </ol>
       <p><strong>マーケティング目的での第三者への販売は行いません。</strong></p>
 
@@ -73,6 +77,7 @@
             <th>サービス</th>
             <th>提供事業者</th>
             <th>用途</th>
+            <th>プライバシーポリシー</th>
           </tr>
         </thead>
         <tbody>
@@ -80,30 +85,54 @@
             <td>Supabase</td>
             <td>Supabase Inc.</td>
             <td>認証・データベース</td>
+            <td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td>Apple App Store</td>
+            <td>Apple Inc.</td>
+            <td>アプリ配布、アプリ内課金、返金・購読管理、診断情報</td>
+            <td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td>
+          </tr>
+          <tr>
+            <td>Google Sign-In</td>
+            <td>Google LLC</td>
+            <td>Googleログイン</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
           </tr>
           <tr>
             <td>RevenueCat</td>
             <td>RevenueCat Inc.</td>
             <td>サブスクリプション管理</td>
+            <td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td>
           </tr>
           <tr>
             <td>PostHog</td>
             <td>PostHog Inc.</td>
             <td>利用分析</td>
-          </tr>
-          <tr>
-            <td>Sentry</td>
-            <td>Functional Software Inc.</td>
-            <td>クラッシュ解析</td>
+            <td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td>
           </tr>
           <tr>
             <td>Anthropic Claude API</td>
             <td>Anthropic, PBC</td>
-            <td>AI機能（代替食材提案・コーチング）</td>
+            <td>AI機能（Shefチャット、レシピ組み合わせ提案）</td>
+            <td><a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td>OpenAI API</td>
+            <td>OpenAI, L.L.C.</td>
+            <td>AI機能（本格度説明、食材カテゴリ分類）</td>
+            <td><a href="https://openai.com/policies/privacy-policy/">openai.com/policies/privacy-policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Gemini API</td>
+            <td>Google LLC</td>
+            <td>AI機能（調理段取り、ステップごとのコツ生成）</td>
+            <td><a href="https://ai.google.dev/gemini-api/docs/logs-policy">ai.google.dev/gemini-api/docs/logs-policy</a></td>
           </tr>
         </tbody>
       </table>
-      <p>これら以外の第三者に個人情報を販売・貸与・共有することはありません。ただし、法令に基づく開示要請がある場合はこの限りではありません。</p>
+      <p>上記サービス提供者は、当サービスの提供に必要な範囲でデータを処理します。これら以外の第三者に個人情報を販売・貸与することはありません。ただし、法令に基づく開示要請がある場合はこの限りではありません。</p>
+      <p>買い物リストや代替食材画面からAmazonまたは楽天市場の検索ページを開く場合、検索対象の食材名が外部サイトの検索クエリとして送信されます。これらの外部サイトは当サービスとは別のプライバシーポリシーに基づき運営されます。</p>
 
       <h2>5. データの保存と保護</h2>
       <ul>
@@ -115,10 +144,12 @@
 
       <h2>6. データの保持期間</h2>
       <ul>
-        <li><strong>アカウント情報</strong>：アカウント削除まで保持</li>
+        <li><strong>アカウント情報・保存データ</strong>：アカウント削除まで保持</li>
         <li><strong>利用ログ・分析データ</strong>：最大2年間保持後、匿名化または削除</li>
-        <li><strong>クラッシュレポート</strong>：最大90日間保持</li>
-        <li><strong>アカウント削除後</strong>：30日以内にすべての個人データを削除します（バックアップからの削除は最大90日）</li>
+        <li><strong>AI段取りジョブ・生成された段取りデータ</strong>：アカウント削除まで保持</li>
+        <li><strong>クラッシュ・性能診断データ</strong>：取得される場合、最大90日間保持</li>
+        <li><strong>課金・プラン管理情報</strong>：サブスクリプション管理、法令対応、決済記録、不正利用防止に必要な期間保持</li>
+        <li><strong>アカウント削除後</strong>：当サービスが管理する個人データは、法令対応、決済記録、不正利用防止に必要な情報を除き30日以内に削除します（バックアップからの削除は最大90日）。第三者サービス側で保持されるデータは、各社のポリシーに従って処理されます。</li>
       </ul>
 
       <h2>7. お客様の権利</h2>
@@ -149,7 +180,7 @@
 
       <!-- English Version -->
       <h1 class="page-title">Privacy Policy</h1>
-      <p class="page-updated">Last Updated: May 22, 2026</p>
+      <p class="page-updated">Last Updated: June 2, 2026</p>
 
       <h2>1. Introduction</h2>
       <p>Tabelia (the "Service") is an iOS application operated by Tabelia (the "Operator"), a sole proprietorship. This Privacy Policy describes how the Service collects, uses, and protects your information.</p>
@@ -159,17 +190,17 @@
 
       <h3>2-1. Information You Provide</h3>
       <ul>
-        <li><strong>Account Information</strong>: Email address, password (encrypted)</li>
-        <li><strong>Profile Information</strong>: Display name (optional)</li>
-        <li><strong>Billing Information</strong>: Subscription purchase history (payment details are managed by the App Store; we do not store them)</li>
+        <li><strong>Account Information</strong>: Email address, password (hashed), and authentication identifiers when you use Google Sign-In</li>
+        <li><strong>Saved Data</strong>: Favorite recipes, saved menus, shopping lists, pantry settings, and legal consent history</li>
+        <li><strong>Billing and Plan Information</strong>: Subscription purchase history, product IDs, subscription expiration dates, available coaching credits, and RevenueCat customer ID (payment details are managed by the App Store; we do not store them)</li>
       </ul>
 
       <h3>2-2. Automatically Collected Information</h3>
       <ul>
-        <li><strong>Usage Logs</strong>: Recipes viewed, features used, interaction history</li>
+        <li><strong>Usage Logs</strong>: Recipes viewed, features used, interaction history, and AI feature usage counts</li>
         <li><strong>Device Information</strong>: Device model, OS version, app version, language settings</li>
-        <li><strong>Crash Reports</strong>: Stack traces and device state at the time of app crashes</li>
-        <li><strong>Analytics Data</strong>: Feature usage frequency, session duration (anonymized)</li>
+        <li><strong>Crash and Performance Diagnostics</strong>: Stack traces, error information, and device state at the time of app crashes, if collected</li>
+        <li><strong>Analytics Data</strong>: Screen views, feature usage frequency, search terms, filter conditions, selected substitutions, shopping list interactions, and purchase-flow interactions. After login, analytics may be associated with your user ID</li>
       </ul>
 
       <h3>2-3. Data Sent to AI Services</h3>
@@ -177,9 +208,12 @@
       <ul>
         <li>Selected recipe information (name, ingredients, steps)</li>
         <li>Ingredient substitution settings (substitute names, quantities)</li>
-        <li>Serving size, skill level, and other configuration values</li>
+        <li>Serving size, menu selections, cooking schedule steps, and the focused coaching step</li>
+        <li>Questions you enter in Shef chat and recent conversation history</li>
+        <li>Ingredient names that need shopping-list categorization</li>
+        <li>Candidate recipe information needed for pairing suggestions</li>
       </ul>
-      <p>This information is used for AI processing in a non-personally-identifiable form.</p>
+      <p>We limit data sent to AI services to what is necessary to provide AI features. We do not intentionally send your email address, password, or payment information to AI services. However, if you include personal information in chat messages or similar free-text inputs, that content may be sent for AI processing.</p>
 
       <h2>3. How We Use Your Information</h2>
       <ol>
@@ -189,6 +223,7 @@
         <li>Fixing bugs, analyzing crashes, and improving performance</li>
         <li>Service notices (important updates, Terms changes, etc.)</li>
         <li>Detecting and preventing fraudulent use</li>
+        <li>Analyzing usage, improving features, and improving purchase flows</li>
       </ol>
       <p><strong>We do not sell your data to third parties for marketing purposes.</strong></p>
 
@@ -199,6 +234,7 @@
             <th>Service</th>
             <th>Provider</th>
             <th>Purpose</th>
+            <th>Privacy Policy</th>
           </tr>
         </thead>
         <tbody>
@@ -206,30 +242,54 @@
             <td>Supabase</td>
             <td>Supabase Inc.</td>
             <td>Authentication &amp; database</td>
+            <td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td>Apple App Store</td>
+            <td>Apple Inc.</td>
+            <td>App distribution, in-app purchases, refunds/subscription management, diagnostics</td>
+            <td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td>
+          </tr>
+          <tr>
+            <td>Google Sign-In</td>
+            <td>Google LLC</td>
+            <td>Google login</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
           </tr>
           <tr>
             <td>RevenueCat</td>
             <td>RevenueCat Inc.</td>
             <td>Subscription management</td>
+            <td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td>
           </tr>
           <tr>
             <td>PostHog</td>
             <td>PostHog Inc.</td>
             <td>Usage analytics</td>
-          </tr>
-          <tr>
-            <td>Sentry</td>
-            <td>Functional Software Inc.</td>
-            <td>Crash analysis</td>
+            <td><a href="https://posthog.com/privacy">posthog.com/privacy</a></td>
           </tr>
           <tr>
             <td>Anthropic Claude API</td>
             <td>Anthropic, PBC</td>
-            <td>AI features (substitution suggestions, cooking schedule)</td>
+            <td>AI features (Shef chat and recipe pairing suggestions)</td>
+            <td><a href="https://www.anthropic.com/privacy">anthropic.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td>OpenAI API</td>
+            <td>OpenAI, L.L.C.</td>
+            <td>AI features (authenticity-score explanation and ingredient categorization)</td>
+            <td><a href="https://openai.com/policies/privacy-policy/">openai.com/policies/privacy-policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Gemini API</td>
+            <td>Google LLC</td>
+            <td>AI features (cooking schedules and step tips)</td>
+            <td><a href="https://ai.google.dev/gemini-api/docs/logs-policy">ai.google.dev/gemini-api/docs/logs-policy</a></td>
           </tr>
         </tbody>
       </table>
-      <p>We do not sell, lend, or share personal information with any other third parties, except where required by law.</p>
+      <p>These service providers process data as necessary to provide the Service. We do not sell or lend personal information to other third parties, except where required by law.</p>
+      <p>When you open Amazon or Rakuten search pages from shopping-list or substitution screens, the ingredient name you search for is sent to the external site as a search query. Those external sites are operated under their own privacy policies.</p>
 
       <h2>5. Data Storage and Security</h2>
       <ul>
@@ -241,10 +301,12 @@
 
       <h2>6. Data Retention</h2>
       <ul>
-        <li><strong>Account information</strong>: Retained until account deletion</li>
+        <li><strong>Account information and saved data</strong>: Retained until account deletion</li>
         <li><strong>Usage logs and analytics data</strong>: Retained for up to 2 years, then anonymized or deleted</li>
-        <li><strong>Crash reports</strong>: Retained for up to 90 days</li>
-        <li><strong>After account deletion</strong>: All personal data deleted within 30 days (backup deletion within 90 days)</li>
+        <li><strong>AI schedule jobs and generated schedule data</strong>: Retained until account deletion</li>
+        <li><strong>Crash and performance diagnostics</strong>: Retained for up to 90 days, if collected</li>
+        <li><strong>Billing and plan-management information</strong>: Retained for as long as necessary for subscription management, legal compliance, payment records, and fraud prevention</li>
+        <li><strong>After account deletion</strong>: Personal data managed by the Service will be deleted within 30 days, except for information necessary for legal compliance, payment records, and fraud prevention (backup deletion within 90 days). Data retained by third-party services is handled according to each provider's policy.</li>
       </ul>
 
       <h2>7. Your Rights</h2>
