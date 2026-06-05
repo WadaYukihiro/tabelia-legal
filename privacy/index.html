@@ -20,7 +20,7 @@
 
     <main>
       <h1 class="page-title">プライバシーポリシー</h1>
-      <p class="page-updated">最終更新日：2026年6月2日</p>
+      <p class="page-updated">最終更新日：2026年6月4日</p>
 
       <!-- 日本語版 -->
       <h2>1. はじめに</h2>
@@ -137,6 +137,7 @@
       <h2>5. データの保存と保護</h2>
       <ul>
         <li>ユーザーデータはSupabaseのクラウドインフラ（AWS）に保存されます</li>
+        <li>生成された調理段取りは、同じ条件で再表示するため、端末内にキャッシュされる場合があります</li>
         <li>通信はすべてTLS/HTTPSで暗号化されます</li>
         <li>パスワードは業界標準のハッシュアルゴリズムで暗号化され、平文では保存しません</li>
         <li>アクセス権限は業務上必要な範囲に限定します（最小権限の原則）</li>
@@ -147,6 +148,7 @@
         <li><strong>アカウント情報・保存データ</strong>：アカウント削除まで保持</li>
         <li><strong>利用ログ・分析データ</strong>：最大2年間保持後、匿名化または削除</li>
         <li><strong>AI段取りジョブ・生成された段取りデータ</strong>：アカウント削除まで保持</li>
+        <li><strong>端末内の調理段取りキャッシュ</strong>：生成から30日経過後は再表示に利用されず、再表示確認時に削除されます</li>
         <li><strong>クラッシュ・性能診断データ</strong>：取得される場合、最大90日間保持</li>
         <li><strong>課金・プラン管理情報</strong>：サブスクリプション管理、法令対応、決済記録、不正利用防止に必要な期間保持</li>
         <li><strong>アカウント削除後</strong>：当サービスが管理する個人データは、法令対応、決済記録、不正利用防止に必要な情報を除き30日以内に削除します（バックアップからの削除は最大90日）。第三者サービス側で保持されるデータは、各社のポリシーに従って処理されます。</li>
@@ -180,7 +182,7 @@
 
       <!-- English Version -->
       <h1 class="page-title">Privacy Policy</h1>
-      <p class="page-updated">Last Updated: June 2, 2026</p>
+      <p class="page-updated">Last Updated: June 4, 2026</p>
 
       <h2>1. Introduction</h2>
       <p>Tabelia (the "Service") is an iOS application operated by Tabelia (the "Operator"), a sole proprietorship. This Privacy Policy describes how the Service collects, uses, and protects your information.</p>
@@ -294,6 +296,7 @@
       <h2>5. Data Storage and Security</h2>
       <ul>
         <li>User data is stored on Supabase's cloud infrastructure (AWS)</li>
+        <li>Generated cooking schedules may be cached on your device so they can be reopened under the same conditions</li>
         <li>All communications are encrypted using TLS/HTTPS</li>
         <li>Passwords are stored using industry-standard hashing algorithms; plaintext passwords are never stored</li>
         <li>Access permissions are limited to what is necessary for business operations (principle of least privilege)</li>
@@ -304,6 +307,7 @@
         <li><strong>Account information and saved data</strong>: Retained until account deletion</li>
         <li><strong>Usage logs and analytics data</strong>: Retained for up to 2 years, then anonymized or deleted</li>
         <li><strong>AI schedule jobs and generated schedule data</strong>: Retained until account deletion</li>
+        <li><strong>On-device cooking schedule cache</strong>: Not used for reopening after 30 days from generation, and deleted when the app checks the expired cache</li>
         <li><strong>Crash and performance diagnostics</strong>: Retained for up to 90 days, if collected</li>
         <li><strong>Billing and plan-management information</strong>: Retained for as long as necessary for subscription management, legal compliance, payment records, and fraud prevention</li>
         <li><strong>After account deletion</strong>: Personal data managed by the Service will be deleted within 30 days, except for information necessary for legal compliance, payment records, and fraud prevention (backup deletion within 90 days). Data retained by third-party services is handled according to each provider's policy.</li>
