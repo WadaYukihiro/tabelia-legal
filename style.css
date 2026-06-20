@@ -152,12 +152,6 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   letter-spacing: 0.01em;
   color: #fff;
 }
-.appstore-coming-soon {
-  margin-top: 0.6rem;
-  font-size: 0.75rem;
-  color: #aaa;
-}
-
 .legal-links { margin-top: 3rem; }
 .legal-links > h2 {
   font-size: 0.78rem;
