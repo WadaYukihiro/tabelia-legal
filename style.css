@@ -369,6 +369,127 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-card-title { display: block; font-weight: 600; font-size: 0.9rem; line-height: 1.4; }
 .recipe-card-subtitle { display: block; color: #888; font-size: 0.78rem; margin-top: 0.1rem; }
 
+/* ============================================================
+   レシピ誌面レイアウト（ハブ・コース・地方・詳細ページ共通）
+   ============================================================ */
+
+/* レシピ系ページは通常の法務ページ（760px）より広いコンテナを使う */
+.container-recipe { max-width: 1120px; }
+
+/* イタリア語タイトル用ディスプレイ書体 */
+.display-serif {
+  font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.container-recipe .recipe-title { font-size: 2.4rem; }
+.container-recipe .page-title { font-size: 2rem; }
+
+/* Hub hero */
+.hub-hero { padding: 2rem 0 1rem; max-width: 640px; }
+.hub-hero h1 { font-size: 2.6rem; line-height: 1.25; margin-bottom: 0.9rem; }
+.hub-hero p { color: #555; font-size: 1rem; }
+.hub-hero-tagline { color: #1a1a1a; font-weight: 600; margin-top: 0.5rem; }
+.hub-hero-stat {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: #999;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 0.9rem;
+}
+
+.hub-section { margin-top: 3rem; }
+.hub-section h2 { margin-top: 0; }
+
+/* コースカード・地方カード */
+.course-grid, .region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.course-card, .region-card {
+  display: block;
+  text-decoration: none;
+  color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #f2f2f2;
+  aspect-ratio: 4 / 3;
+}
+.course-card img, .region-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.course-card-body, .region-card-body {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.5rem 1.1rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.course-card-title, .region-card-title { font-weight: 700; font-size: 1.1rem; }
+.course-card-count, .region-card-count { font-size: 0.78rem; opacity: 0.85; }
+
+/* 全レシピ索引（軽量テキストのみ） */
+.compact-index { margin-top: 3.5rem; }
+.compact-index-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.75rem; }
+.compact-index-group h3 { margin-top: 0; color: #999; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.compact-index-links { display: flex; flex-direction: column; gap: 0.35rem; }
+.compact-index-links a { color: #444; text-decoration: none; font-size: 0.86rem; }
+.compact-index-links a:hover { text-decoration: underline; }
+
+/* レシピ詳細: 材料レール + 手順の2カラム */
+.recipe-body { display: block; margin-top: 1rem; }
+@media (min-width: 900px) {
+  .recipe-body { display: grid; grid-template-columns: 300px 1fr; gap: 2.75rem; align-items: start; }
+  .recipe-rail { position: sticky; top: 2rem; }
+}
+.recipe-rail .recipe-ingredients, .recipe-main .recipe-steps { margin: 0; }
+
+/* この料理に合わせる（recipe_pairings） */
+.pairings-section { margin-top: 3rem; }
+.pairings-lead { color: #777; font-size: 0.85rem; margin-top: -0.3rem; }
+.pairing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+.pairing-card { display: block; text-decoration: none; color: #1a1a1a; }
+.pairing-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 0.5rem;
+  background: #f2f2f2;
+}
+.pairing-card-context {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #8a6d3b;
+  background: #faf1df;
+  border-radius: 4px;
+  padding: 0.1rem 0.5rem;
+  margin-bottom: 0.35rem;
+}
+.pairing-card-title { display: block; font-weight: 600; font-size: 0.9rem; line-height: 1.4; }
+.pairing-card-subtitle { display: block; color: #888; font-size: 0.78rem; margin-top: 0.1rem; }
+.pairing-card-desc { display: block; color: #555; font-size: 0.82rem; margin-top: 0.4rem; line-height: 1.6; }
+
+/* 同じ地方の料理 */
+.related-section { margin-top: 3rem; }
+
 /* Responsive */
 @media (max-width: 600px) {
   .page-title { font-size: 1.35rem; }
@@ -377,5 +498,9 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   th, td { padding: 0.45rem 0.6rem; }
   .hero h1 { font-size: 1.5rem; }
   .recipe-title { font-size: 1.35rem; }
+  .container-recipe .recipe-title { font-size: 1.65rem; }
+  .container-recipe .page-title { font-size: 1.5rem; }
+  .hub-hero h1 { font-size: 1.9rem; }
   .recipe-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .course-grid, .region-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 }
