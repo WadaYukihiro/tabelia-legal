@@ -391,7 +391,7 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   border-radius: 2px;
 }
 
-/* Shef Authenの耳より情報（アプリのストーリータブと同じ配色: #FFF8EE / #E8A44A） */
+/* Chef Authenの耳より情報（アプリのストーリータブと同じ配色: #FFF8EE / #E8A44A） */
 .recipe-trivia {
   background: #FFF8EE;
   border-left: 3px solid #E8A44A;
@@ -401,8 +401,8 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 }
 .recipe-trivia h2 { border: none; margin: 0; padding: 0; font-size: 0.95rem; }
 .recipe-trivia p { font-size: 0.88rem; color: #555; }
-.shef-trivia-head { display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.6rem; }
-.shef-avatar {
+.chef-trivia-head { display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.6rem; }
+.chef-avatar {
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -412,8 +412,8 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   background: #f3e3c3;
 }
 
-/* Shef Authen 紹介（ハブページ） */
-.shef-intro {
+/* Chef Authen 紹介（ハブページ） */
+.chef-intro {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
@@ -423,7 +423,7 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   padding: 1.75rem;
   margin-top: 3rem;
 }
-.shef-portrait {
+.chef-portrait {
   width: 128px;
   height: 128px;
   border-radius: 50%;
@@ -432,19 +432,19 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   border: 3px solid #E8A44A;
   background: #f3e3c3;
 }
-.shef-intro-body { min-width: 0; }
-.shef-intro-label {
+.chef-intro-body { min-width: 0; }
+.chef-intro-label {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: #C47A1E;
   margin-bottom: 0.1rem;
 }
-.shef-intro-name { font-size: 1.35rem; font-weight: 700; border: none; margin: 0 0 0.5rem; padding: 0; }
-.shef-intro-desc { font-size: 0.9rem; color: #555; margin-bottom: 0; }
-.shef-quote { margin: 0.9rem 0 0; border-top: 1px dashed #e8cf9f; padding-top: 0.9rem; }
-.shef-quote blockquote { margin: 0; }
-.shef-quote p {
+.chef-intro-name { font-size: 1.35rem; font-weight: 700; border: none; margin: 0 0 0.5rem; padding: 0; }
+.chef-intro-desc { font-size: 0.9rem; color: #555; margin-bottom: 0; }
+.chef-quote { margin: 0.9rem 0 0; border-top: 1px dashed #e8cf9f; padding-top: 0.9rem; }
+.chef-quote blockquote { margin: 0; }
+.chef-quote p {
   font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
   font-size: 0.92rem;
   color: #6b5637;
@@ -452,8 +452,8 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   line-height: 1.9;
 }
 
-/* アプリCTA内の Shef Authen */
-.app-cta-shef {
+/* アプリCTA内の Chef Authen */
+.app-cta-chef {
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -629,8 +629,8 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   .recipe-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .course-grid, .region-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .header-search { flex-basis: 100%; max-width: none; margin: 0.4rem 0 0; order: 3; }
-  .shef-intro { flex-direction: column; padding: 1.25rem; }
-  .shef-portrait { width: 96px; height: 96px; margin: 0 auto; }
+  .chef-intro { flex-direction: column; padding: 1.25rem; }
+  .chef-portrait { width: 96px; height: 96px; margin: 0 auto; }
   .app-cta { flex-direction: column; }
-  .app-cta-shef { width: 56px; height: 56px; }
+  .app-cta-chef { width: 56px; height: 56px; }
 }
