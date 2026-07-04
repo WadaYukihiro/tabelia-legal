@@ -39,6 +39,70 @@ body {
   display: block;
 }
 
+/* レシピ検索（generate-web-recipes.ts で生成するページのみ） */
+.header-search { position: relative; flex: 1 1 220px; max-width: 320px; margin: 0 0.25rem; }
+.header-search-input {
+  width: 100%;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.header-search-input:focus { border-color: #c0392b; }
+.header-search-results {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.14);
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 50;
+  padding: 0.4rem;
+}
+.search-result {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.search-result:hover { background: #f7f7f7; }
+.search-result img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #f2f2f2;
+}
+.search-result-body { display: flex; flex-direction: column; min-width: 0; }
+.search-result-title {
+  font-weight: 600;
+  font-size: 0.86rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search-result-subtitle {
+  font-size: 0.76rem;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search-empty { padding: 0.75rem; color: #999; font-size: 0.85rem; text-align: center; margin: 0; }
+
 .site-nav { display: flex; flex-wrap: wrap; gap: 0; }
 
 .site-nav a {
@@ -446,6 +510,7 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .compact-index-links { display: flex; flex-direction: column; gap: 0.35rem; }
 .compact-index-links a { color: #444; text-decoration: none; font-size: 0.86rem; }
 .compact-index-links a:hover { text-decoration: underline; }
+.compact-index-ja { color: #999; font-size: 0.78rem; }
 
 /* レシピ詳細: 材料レール + 手順の2カラム */
 .recipe-body { display: block; margin-top: 1rem; }
@@ -503,4 +568,5 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   .hub-hero h1 { font-size: 1.9rem; }
   .recipe-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .course-grid, .region-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .header-search { flex-basis: 100%; max-width: none; margin: 0.4rem 0 0; order: 3; }
 }

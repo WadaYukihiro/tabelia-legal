@@ -30,6 +30,10 @@
         <img src="/favicon.png" class="wordmark-icon" alt="">
         TABELIA
       </a>
+      <div class="header-search" role="search">
+        <input type="search" id="recipe-search-input" class="header-search-input" placeholder="レシピを検索" autocomplete="off" aria-label="レシピを検索">
+        <div id="recipe-search-results" class="header-search-results" hidden></div>
+      </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
         <a href="/privacy/">プライバシー</a>
@@ -274,5 +278,6 @@
       <p>&copy; 2026 Tabelia &nbsp;&middot;&nbsp; <a href="mailto:support@tabelia.app">support@tabelia.app</a></p>
     </footer>
   </div>
+  <script src="/recipes/search.js" defer></script>
 </body>
 </html>

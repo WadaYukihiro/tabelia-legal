@@ -29,6 +29,10 @@
         <img src="/favicon.png" class="wordmark-icon" alt="">
         TABELIA
       </a>
+      <div class="header-search" role="search">
+        <input type="search" id="recipe-search-input" class="header-search-input" placeholder="レシピを検索" autocomplete="off" aria-label="レシピを検索">
+        <div id="recipe-search-results" class="header-search-results" hidden></div>
+      </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
         <a href="/privacy/">プライバシー</a>
@@ -172,295 +176,295 @@
           <div class="compact-index-group">
             <h3>アンティパスト（前菜）</h3>
             <div class="compact-index-links">
-            <a href="/recipes/acciughe-al-verde/">Acciughe al Verde</a>
-            <a href="/recipes/alici-marinate-alla-cetarese/">Alici Marinate alla Cetarese</a>
-            <a href="/recipes/arancini-siciliani/">Arancini Siciliani</a>
-            <a href="/recipes/bagna-cauda/">Bagna Cauda</a>
-            <a href="/recipes/bruschetta-al-pomodoro/">Bruschetta al Pomodoro</a>
-            <a href="/recipes/bruschetta-con-funghi/">Bruschetta con Funghi</a>
-            <a href="/recipes/bruschetta-con-ricotta-e-pomodorini/">Bruschetta con Ricotta e Pomodorini</a>
-            <a href="/recipes/caponata/">Caponata</a>
-            <a href="/recipes/caprese/">Caprese</a>
-            <a href="/recipes/carciofi-alla-giudia/">Carciofi alla Giudia</a>
-            <a href="/recipes/carciofi-alla-romana/">Carciofi alla Romana</a>
-            <a href="/recipes/carpaccio-di-manzo/">Carpaccio di Manzo</a>
-            <a href="/recipes/cipolle-borettane-in-agrodolce/">Cipolle Borettane in Agrodolce</a>
-            <a href="/recipes/cozze-alla-marinara/">Cozze alla Marinara</a>
-            <a href="/recipes/crostini-con-crema-di-cannellini/">Crostini con Crema di Cannellini</a>
-            <a href="/recipes/crostini-con-fegatini-di-pollo/">Crostini con Fegatini di Pollo</a>
-            <a href="/recipes/fiori-di-zucca-fritti/">Fiori di Zucca Fritti</a>
-            <a href="/recipes/focaccia-genovese/">Focaccia Genovese</a>
-            <a href="/recipes/frittata-di-cipolle/">Frittata di Cipolle</a>
-            <a href="/recipes/gamberi-allaglio-e-olio/">Gamberi all'Aglio e Olio</a>
-            <a href="/recipes/insalata-di-ceci/">Insalata di Ceci</a>
-            <a href="/recipes/insalata-di-farro/">Insalata di Farro</a>
-            <a href="/recipes/insalata-di-mare/">Insalata di Mare</a>
-            <a href="/recipes/insalata-di-polpo/">Insalata di Polpo</a>
-            <a href="/recipes/insalata-di-sgombro/">Insalata di Sgombro</a>
-            <a href="/recipes/melanzane-alla-scapece/">Melanzane alla Scapece</a>
-            <a href="/recipes/mozzarella-in-carrozza/">Mozzarella in Carrozza</a>
-            <a href="/recipes/panzanella/">Panzanella</a>
-            <a href="/recipes/peperoni-arrostiti/">Peperoni Arrostiti</a>
-            <a href="/recipes/peperoni-arrostiti-con-acciughe-e-capperi/">Peperoni Arrostiti con Acciughe e Capperi</a>
-            <a href="/recipes/pinzimonio/">Pinzimonio</a>
-            <a href="/recipes/polenta-fritta/">Polenta Fritta</a>
-            <a href="/recipes/pomodori-ripieni-di-riso/">Pomodori Ripieni di Riso</a>
-            <a href="/recipes/prosciutto-e-melone/">Prosciutto e Melone</a>
-            <a href="/recipes/sarde-in-saor/">Sarde in Saor</a>
-            <a href="/recipes/tartare-di-tonno/">Tartare di Tonno</a>
-            <a href="/recipes/tonno-e-fagioli/">Tonno e Fagioli</a>
-            <a href="/recipes/verdure-grigliate/">Verdure Grigliate</a>
-            <a href="/recipes/vitello-tonnato/">Vitello Tonnato</a>
-            <a href="/recipes/vongole-al-vino-bianco/">Vongole al Vino Bianco</a>
-            <a href="/recipes/zucchine-alla-scapece/">Zucchine alla Scapece</a>
+            <a href="/recipes/acciughe-al-verde/">Acciughe al Verde<span class="compact-index-ja">（アンチョビのグリーンソース）</span></a>
+            <a href="/recipes/alici-marinate-alla-cetarese/">Alici Marinate alla Cetarese<span class="compact-index-ja">（チェターラ風いわしのマリネ）</span></a>
+            <a href="/recipes/arancini-siciliani/">Arancini Siciliani<span class="compact-index-ja">（シチリア風アランチーニ）</span></a>
+            <a href="/recipes/bagna-cauda/">Bagna Cauda<span class="compact-index-ja">（バーニャカウダ）</span></a>
+            <a href="/recipes/bruschetta-al-pomodoro/">Bruschetta al Pomodoro<span class="compact-index-ja">（トマトのブルスケッタ）</span></a>
+            <a href="/recipes/bruschetta-con-funghi/">Bruschetta con Funghi<span class="compact-index-ja">（ブルスケッタ・コン・フンギ）</span></a>
+            <a href="/recipes/bruschetta-con-ricotta-e-pomodorini/">Bruschetta con Ricotta e Pomodorini<span class="compact-index-ja">（リコッタとミニトマトのブルスケッタ）</span></a>
+            <a href="/recipes/caponata/">Caponata<span class="compact-index-ja">（シチリア風野菜のカポナータ）</span></a>
+            <a href="/recipes/caprese/">Caprese<span class="compact-index-ja">（カプレーゼサラダ）</span></a>
+            <a href="/recipes/carciofi-alla-giudia/">Carciofi alla Giudia<span class="compact-index-ja">（カルチョーフィ・アッラ・ジュディア）</span></a>
+            <a href="/recipes/carciofi-alla-romana/">Carciofi alla Romana<span class="compact-index-ja">（アーティチョークのローマ風煮込み）</span></a>
+            <a href="/recipes/carpaccio-di-manzo/">Carpaccio di Manzo<span class="compact-index-ja">（牛肉のカルパッチョ）</span></a>
+            <a href="/recipes/cipolle-borettane-in-agrodolce/">Cipolle Borettane in Agrodolce<span class="compact-index-ja">（チポッレ・ボレッターネ・イン・アグロドルチェ）</span></a>
+            <a href="/recipes/cozze-alla-marinara/">Cozze alla Marinara<span class="compact-index-ja">（ムール貝のマリナーラ風）</span></a>
+            <a href="/recipes/crostini-con-crema-di-cannellini/">Crostini con Crema di Cannellini<span class="compact-index-ja">（クロスティーニ・コン・クレマ・ディ・カンネッリーニ）</span></a>
+            <a href="/recipes/crostini-con-fegatini-di-pollo/">Crostini con Fegatini di Pollo<span class="compact-index-ja">（鶏レバーのクロスティーニ）</span></a>
+            <a href="/recipes/fiori-di-zucca-fritti/">Fiori di Zucca Fritti<span class="compact-index-ja">（ズッキーニの花のフリット）</span></a>
+            <a href="/recipes/focaccia-genovese/">Focaccia Genovese<span class="compact-index-ja">（ジェノヴァ風フォカッチャ）</span></a>
+            <a href="/recipes/frittata-di-cipolle/">Frittata di Cipolle<span class="compact-index-ja">（玉ねぎのフリッタータ）</span></a>
+            <a href="/recipes/gamberi-allaglio-e-olio/">Gamberi all'Aglio e Olio<span class="compact-index-ja">（エビのガーリックオイルソテー）</span></a>
+            <a href="/recipes/insalata-di-ceci/">Insalata di Ceci<span class="compact-index-ja">（ひよこ豆のサラダ）</span></a>
+            <a href="/recipes/insalata-di-farro/">Insalata di Farro<span class="compact-index-ja">（インサラータ・ディ・ファッロ）</span></a>
+            <a href="/recipes/insalata-di-mare/">Insalata di Mare<span class="compact-index-ja">（混合魚介サラダ）</span></a>
+            <a href="/recipes/insalata-di-polpo/">Insalata di Polpo<span class="compact-index-ja">（タコとじゃがいものサラダ）</span></a>
+            <a href="/recipes/insalata-di-sgombro/">Insalata di Sgombro<span class="compact-index-ja">（サバのサラダ）</span></a>
+            <a href="/recipes/melanzane-alla-scapece/">Melanzane alla Scapece<span class="compact-index-ja">（メランザーネ・アッラ・スカペーチェ）</span></a>
+            <a href="/recipes/mozzarella-in-carrozza/">Mozzarella in Carrozza<span class="compact-index-ja">（モッツァレラの揚げサンド）</span></a>
+            <a href="/recipes/panzanella/">Panzanella<span class="compact-index-ja">（トスカーナ風パンとトマトのサラダ）</span></a>
+            <a href="/recipes/peperoni-arrostiti/">Peperoni Arrostiti<span class="compact-index-ja">（ペペローニ・アロスティティ）</span></a>
+            <a href="/recipes/peperoni-arrostiti-con-acciughe-e-capperi/">Peperoni Arrostiti con Acciughe e Capperi<span class="compact-index-ja">（焼きピーマンのアンチョビ・ケッパーマリネ）</span></a>
+            <a href="/recipes/pinzimonio/">Pinzimonio<span class="compact-index-ja">（ピンツィモーニオ）</span></a>
+            <a href="/recipes/polenta-fritta/">Polenta Fritta<span class="compact-index-ja">（ポレンタ・フリッタ）</span></a>
+            <a href="/recipes/pomodori-ripieni-di-riso/">Pomodori Ripieni di Riso<span class="compact-index-ja">（ポモドーリ・リピエーニ・ディ・リーゾ）</span></a>
+            <a href="/recipes/prosciutto-e-melone/">Prosciutto e Melone<span class="compact-index-ja">（生ハムとメロン）</span></a>
+            <a href="/recipes/sarde-in-saor/">Sarde in Saor<span class="compact-index-ja">（イワシの甘酢マリネ（サオール））</span></a>
+            <a href="/recipes/tartare-di-tonno/">Tartare di Tonno<span class="compact-index-ja">（マグロのタルタル）</span></a>
+            <a href="/recipes/tonno-e-fagioli/">Tonno e Fagioli<span class="compact-index-ja">（ツナと白いんげん豆のサラダ）</span></a>
+            <a href="/recipes/verdure-grigliate/">Verdure Grigliate<span class="compact-index-ja">（季節野菜のグリル盛り合わせ）</span></a>
+            <a href="/recipes/vitello-tonnato/">Vitello Tonnato<span class="compact-index-ja">（ヴィテッロ・トンナート）</span></a>
+            <a href="/recipes/vongole-al-vino-bianco/">Vongole al Vino Bianco<span class="compact-index-ja">（あさりの白ワイン蒸し）</span></a>
+            <a href="/recipes/zucchine-alla-scapece/">Zucchine alla Scapece<span class="compact-index-ja">（ズッキーニのミントマリネ）</span></a>
             </div>
           </div>
           <div class="compact-index-group">
             <h3>プリモ・ピアット（パスタ・米・スープ）</h3>
             <div class="compact-index-links">
-            <a href="/recipes/agnolotti-del-plin-al-sugo-darrosto/">Agnolotti del Plin al Sugo d'Arrosto</a>
-            <a href="/recipes/anelletti-al-forno/">Anelletti al Forno</a>
-            <a href="/recipes/bigoli-in-salsa/">Bigoli in Salsa</a>
-            <a href="/recipes/busiate-al-pesto-trapanese/">Busiate al Pesto Trapanese</a>
-            <a href="/recipes/cacio-e-pepe/">Cacio e Pepe</a>
-            <a href="/recipes/casoncelli-alla-bergamasca/">Casoncelli alla Bergamasca</a>
-            <a href="/recipes/culurgiones-allogliastrina/">Culurgiones all'Ogliastrina</a>
-            <a href="/recipes/cuscus-alla-trapanese/">Cuscus alla Trapanese</a>
-            <a href="/recipes/farfalle-ai-piselli-e-prosciutto-cotto/">Farfalle ai Piselli e Prosciutto Cotto</a>
-            <a href="/recipes/farfalle-con-crema-di-gorgonzola-e-noci/">Farfalle con Crema di Gorgonzola e Noci</a>
-            <a href="/recipes/farfalle-con-salmone-e-panna/">Farfalle con Salmone e Panna</a>
-            <a href="/recipes/fettuccine-ai-funghi-misti/">Fettuccine ai Funghi Misti</a>
-            <a href="/recipes/fettuccine-alfredo/">Fettuccine Alfredo</a>
-            <a href="/recipes/fettuccine-alla-papalina/">Fettuccine alla Papalina</a>
-            <a href="/recipes/fettuccine-con-asparagi-e-speck/">Fettuccine con Asparagi e Speck</a>
-            <a href="/recipes/fileja-con-nduja-e-pomodoro/">Fileja con 'Nduja e Pomodoro</a>
-            <a href="/recipes/fregola-con-aragosta/">Fregola con Aragosta</a>
-            <a href="/recipes/fusilli-al-pesto-di-rucola-e-pomodorini/">Fusilli al Pesto di Rucola e Pomodorini</a>
-            <a href="/recipes/fusilli-alla-calabrese/">Fusilli alla Calabrese</a>
-            <a href="/recipes/fusilli-con-crema-di-peperoni-arrosto/">Fusilli con Crema di Peperoni Arrosto</a>
-            <a href="/recipes/garganelli-al-ragu-bianco-di-vitello/">Garganelli al Ragù Bianco di Vitello</a>
-            <a href="/recipes/gnocchi-alla-romana/">Gnocchi alla Romana</a>
-            <a href="/recipes/lasagne-alla-bolognese/">Lasagne alla Bolognese</a>
-            <a href="/recipes/linguine-ai-gamberi-e-zucchine/">Linguine ai Gamberi e Zucchine</a>
-            <a href="/recipes/linguine-al-limone/">Linguine al Limone</a>
-            <a href="/recipes/linguine-al-tonno-fresco-e-capperi/">Linguine al Tonno Fresco e Capperi</a>
-            <a href="/recipes/linguine-allo-scoglio/">Linguine allo Scoglio</a>
-            <a href="/recipes/linguine-con-vongole-e-colatura/">Linguine con Vongole e Colatura</a>
-            <a href="/recipes/malloreddus-alla-campidanese/">Malloreddus alla Campidanese</a>
-            <a href="/recipes/minestrone-alla-genovese/">Minestrone alla Genovese</a>
-            <a href="/recipes/minestrone-alla-milanese/">Minestrone alla Milanese</a>
-            <a href="/recipes/orecchiette-con-cime-di-rapa/">Orecchiette con Cime di Rapa</a>
-            <a href="/recipes/paccheri-al-forno-con-salsiccia-e-ricotta/">Paccheri al Forno con Salsiccia e Ricotta</a>
-            <a href="/recipes/paccheri-alla-genovese/">Paccheri alla Genovese</a>
-            <a href="/recipes/paccheri-con-frutti-di-mare/">Paccheri con Frutti di Mare</a>
-            <a href="/recipes/paccheri-con-ragu-di-polpo/">Paccheri con Ragù di Polpo</a>
-            <a href="/recipes/paccheri-con-ragu-di-totani-e-colatura/">Paccheri con Ragù di Totani e Colatura</a>
-            <a href="/recipes/pappa-al-pomodoro/">Pappa al Pomodoro</a>
-            <a href="/recipes/pappardelle-al-cinghiale/">Pappardelle al Cinghiale</a>
-            <a href="/recipes/passatelli-in-brodo/">Passatelli in Brodo</a>
-            <a href="/recipes/pasta-ncasciata/">Pasta 'ncasciata</a>
-            <a href="/recipes/pasta-al-pistacchio-di-bronte/">Pasta al Pistacchio di Bronte</a>
-            <a href="/recipes/pasta-alla-genovese-napoletana/">Pasta alla Genovese Napoletana</a>
-            <a href="/recipes/pasta-alla-norma/">Pasta alla Norma</a>
-            <a href="/recipes/pasta-alla-sorrentina/">Pasta alla Sorrentina</a>
-            <a href="/recipes/pasta-cacio-e-uova/">Pasta Cacio e Uova</a>
-            <a href="/recipes/pasta-con-le-sarde/">Pasta con le Sarde</a>
-            <a href="/recipes/pasta-e-fagioli/">Pasta e Fagioli</a>
-            <a href="/recipes/penne-ai-quattro-formaggi/">Penne ai Quattro Formaggi</a>
-            <a href="/recipes/penne-allarrabbiata/">Penne all'Arrabbiata</a>
-            <a href="/recipes/penne-alla-vodka/">Penne alla Vodka</a>
-            <a href="/recipes/pici-allaglione/">Pici all'Aglione</a>
-            <a href="/recipes/pizzoccheri-della-valtellina/">Pizzoccheri della Valtellina</a>
-            <a href="/recipes/polenta-pasticciata-al-forno/">Polenta Pasticciata al Forno</a>
-            <a href="/recipes/ribollita/">Ribollita</a>
-            <a href="/recipes/rigatoni-al-ragu-napoletano/">Rigatoni al Ragù Napoletano</a>
-            <a href="/recipes/rigatoni-alla-gricia/">Rigatoni alla Gricia</a>
-            <a href="/recipes/rigatoni-alla-pajata/">Rigatoni alla Pajata</a>
-            <a href="/recipes/risi-e-bisi-alla-veneziana/">Risi e Bisi alla Veneziana</a>
-            <a href="/recipes/risotto-agli-scampi/">Risotto agli Scampi</a>
-            <a href="/recipes/risotto-ai-funghi-porcini/">Risotto ai Funghi Porcini</a>
-            <a href="/recipes/risotto-al-barolo/">Risotto al Barolo</a>
-            <a href="/recipes/risotto-al-limone/">Risotto al Limone</a>
-            <a href="/recipes/risotto-al-radicchio-trevigiano/">Risotto al Radicchio Trevigiano</a>
-            <a href="/recipes/risotto-alla-milanese/">Risotto alla Milanese</a>
-            <a href="/recipes/spaghetti-aglio-olio-e-peperoncino/">Spaghetti Aglio, Olio e Peperoncino</a>
-            <a href="/recipes/spaghetti-ai-ricci-di-mare/">Spaghetti ai Ricci di Mare</a>
-            <a href="/recipes/spaghetti-al-nero-di-seppia/">Spaghetti al Nero di Seppia</a>
-            <a href="/recipes/spaghetti-al-pomodoro/">Spaghetti al Pomodoro</a>
-            <a href="/recipes/spaghetti-allamatriciana/">Spaghetti all'Amatriciana</a>
-            <a href="/recipes/spaghetti-allassassina/">Spaghetti all'Assassina</a>
-            <a href="/recipes/spaghetti-alla-carbonara/">Spaghetti alla Carbonara</a>
-            <a href="/recipes/spaghetti-alla-chitarra-con-ragu-dagnello/">Spaghetti alla Chitarra con Ragù d'Agnello</a>
-            <a href="/recipes/spaghetti-alla-nerano/">Spaghetti alla Nerano</a>
-            <a href="/recipes/spaghetti-alla-puttanesca/">Spaghetti alla Puttanesca</a>
-            <a href="/recipes/spaghetti-alle-vongole/">Spaghetti alle Vongole</a>
-            <a href="/recipes/spaghetti-allo-scorfano/">Spaghetti allo Scorfano</a>
-            <a href="/recipes/spaghetti-con-bottarga-di-muggine/">Spaghetti con Bottarga di Muggine</a>
-            <a href="/recipes/spaghetti-con-colatura-di-alici/">Spaghetti con Colatura di Alici</a>
-            <a href="/recipes/strangozzi-al-tartufo-nero-di-norcia/">Strangozzi al Tartufo Nero di Norcia</a>
-            <a href="/recipes/tagliatelle-ai-funghi-porcini/">Tagliatelle ai Funghi Porcini</a>
-            <a href="/recipes/tagliatelle-al-ragu-ragu-alla-bolognese/">Tagliatelle al Ragù(Ragù alla bolognese)</a>
-            <a href="/recipes/tagliatelle-al-salmone-affumicato/">Tagliatelle al Salmone Affumicato</a>
-            <a href="/recipes/tagliatelle-con-prosciutto-di-parma-e-piselli/">Tagliatelle con Prosciutto di Parma e Piselli</a>
-            <a href="/recipes/tagliolini-ai-gamberi-con-bisque/">Tagliolini ai Gamberi con Bisque</a>
-            <a href="/recipes/tagliolini-al-tartufo-bianco-dalba/">Tagliolini al Tartufo Bianco d'Alba</a>
-            <a href="/recipes/tortellini-in-brodo-di-cappone/">Tortellini in Brodo di Cappone</a>
-            <a href="/recipes/trenette-al-pesto-con-patate-e-fagiolini/">Trenette al Pesto con Patate e Fagiolini</a>
-            <a href="/recipes/trofie-al-pesto-genovese/">Trofie al Pesto Genovese</a>
-            <a href="/recipes/umbricelli-al-ragu-di-piccione/">Umbricelli al Ragù di Piccione</a>
-            <a href="/recipes/zuppa-gallurese/">Zuppa Gallurese</a>
+            <a href="/recipes/agnolotti-del-plin-al-sugo-darrosto/">Agnolotti del Plin al Sugo d'Arrosto<span class="compact-index-ja">（ロースト肉のソースで仕上げるアニョロッティ・デル・プリン）</span></a>
+            <a href="/recipes/anelletti-al-forno/">Anelletti al Forno<span class="compact-index-ja">（アネッレッティのオーブン焼き）</span></a>
+            <a href="/recipes/bigoli-in-salsa/">Bigoli in Salsa<span class="compact-index-ja">（アンチョビソースのビゴリ）</span></a>
+            <a href="/recipes/busiate-al-pesto-trapanese/">Busiate al Pesto Trapanese<span class="compact-index-ja">（トラーパニ風ペストのブジアーテ）</span></a>
+            <a href="/recipes/cacio-e-pepe/">Cacio e Pepe<span class="compact-index-ja">（カチョ・エ・ペペ）</span></a>
+            <a href="/recipes/casoncelli-alla-bergamasca/">Casoncelli alla Bergamasca<span class="compact-index-ja">（ベルガモ風カゾンチェッリ）</span></a>
+            <a href="/recipes/culurgiones-allogliastrina/">Culurgiones all'Ogliastrina<span class="compact-index-ja">（オリアストラ風クルルジョーネス）</span></a>
+            <a href="/recipes/cuscus-alla-trapanese/">Cuscus alla Trapanese<span class="compact-index-ja">（トラーパニ風魚介のクスクス）</span></a>
+            <a href="/recipes/farfalle-ai-piselli-e-prosciutto-cotto/">Farfalle ai Piselli e Prosciutto Cotto<span class="compact-index-ja">（グリーンピースとハムのファルファッレ）</span></a>
+            <a href="/recipes/farfalle-con-crema-di-gorgonzola-e-noci/">Farfalle con Crema di Gorgonzola e Noci<span class="compact-index-ja">（ゴルゴンゾーラクリームとくるみのファルファッレ）</span></a>
+            <a href="/recipes/farfalle-con-salmone-e-panna/">Farfalle con Salmone e Panna<span class="compact-index-ja">（サーモンクリームのファルファッレ）</span></a>
+            <a href="/recipes/fettuccine-ai-funghi-misti/">Fettuccine ai Funghi Misti<span class="compact-index-ja">（きのこのフェットゥッチーネ）</span></a>
+            <a href="/recipes/fettuccine-alfredo/">Fettuccine Alfredo<span class="compact-index-ja">（フェットゥッチーネ アルフレード）</span></a>
+            <a href="/recipes/fettuccine-alla-papalina/">Fettuccine alla Papalina<span class="compact-index-ja">（ローマ風ハムと卵のフェットゥッチーネ）</span></a>
+            <a href="/recipes/fettuccine-con-asparagi-e-speck/">Fettuccine con Asparagi e Speck<span class="compact-index-ja">（アスパラガスとスペックのフェットゥッチーネ）</span></a>
+            <a href="/recipes/fileja-con-nduja-e-pomodoro/">Fileja con 'Nduja e Pomodoro<span class="compact-index-ja">（ンドゥイヤとトマトのフィレヤ）</span></a>
+            <a href="/recipes/fregola-con-aragosta/">Fregola con Aragosta<span class="compact-index-ja">（オマール海老のフレーゴラ）</span></a>
+            <a href="/recipes/fusilli-al-pesto-di-rucola-e-pomodorini/">Fusilli al Pesto di Rucola e Pomodorini<span class="compact-index-ja">（ルッコラペストとミニトマトのフジッリ）</span></a>
+            <a href="/recipes/fusilli-alla-calabrese/">Fusilli alla Calabrese<span class="compact-index-ja">（カラブリア風フジッリ）</span></a>
+            <a href="/recipes/fusilli-con-crema-di-peperoni-arrosto/">Fusilli con Crema di Peperoni Arrosto<span class="compact-index-ja">（焼きパプリカクリームのフジッリ）</span></a>
+            <a href="/recipes/garganelli-al-ragu-bianco-di-vitello/">Garganelli al Ragù Bianco di Vitello<span class="compact-index-ja">（仔牛の白いラグーのガルガネッリ）</span></a>
+            <a href="/recipes/gnocchi-alla-romana/">Gnocchi alla Romana<span class="compact-index-ja">（ローマ風セモリナのニョッキ）</span></a>
+            <a href="/recipes/lasagne-alla-bolognese/">Lasagne alla Bolognese<span class="compact-index-ja">（ラザニア ボロネーゼ）</span></a>
+            <a href="/recipes/linguine-ai-gamberi-e-zucchine/">Linguine ai Gamberi e Zucchine<span class="compact-index-ja">（エビとズッキーニのリングイネ）</span></a>
+            <a href="/recipes/linguine-al-limone/">Linguine al Limone<span class="compact-index-ja">（レモンのリングイーネ）</span></a>
+            <a href="/recipes/linguine-al-tonno-fresco-e-capperi/">Linguine al Tonno Fresco e Capperi<span class="compact-index-ja">（生マグロとケッパーのリングイネ）</span></a>
+            <a href="/recipes/linguine-allo-scoglio/">Linguine allo Scoglio<span class="compact-index-ja">（魚介のリングイネ）</span></a>
+            <a href="/recipes/linguine-con-vongole-e-colatura/">Linguine con Vongole e Colatura<span class="compact-index-ja">（あさりとコラトゥーラのリングイネ）</span></a>
+            <a href="/recipes/malloreddus-alla-campidanese/">Malloreddus alla Campidanese<span class="compact-index-ja">（サルシッチャのラグーのマッロレッドゥス）</span></a>
+            <a href="/recipes/minestrone-alla-genovese/">Minestrone alla Genovese<span class="compact-index-ja">（ジェノヴァ風ミネストローネ）</span></a>
+            <a href="/recipes/minestrone-alla-milanese/">Minestrone alla Milanese<span class="compact-index-ja">（ミラノ風ミネストローネ）</span></a>
+            <a href="/recipes/orecchiette-con-cime-di-rapa/">Orecchiette con Cime di Rapa<span class="compact-index-ja">（菜の花のオレキエッテ）</span></a>
+            <a href="/recipes/paccheri-al-forno-con-salsiccia-e-ricotta/">Paccheri al Forno con Salsiccia e Ricotta<span class="compact-index-ja">（サルシッチャとリコッタのパッケリ オーブン焼き）</span></a>
+            <a href="/recipes/paccheri-alla-genovese/">Paccheri alla Genovese<span class="compact-index-ja">（ナポリ風ジェノヴェーゼのパッケリ）</span></a>
+            <a href="/recipes/paccheri-con-frutti-di-mare/">Paccheri con Frutti di Mare<span class="compact-index-ja">（魚介のパッケリ）</span></a>
+            <a href="/recipes/paccheri-con-ragu-di-polpo/">Paccheri con Ragù di Polpo<span class="compact-index-ja">（タコのラグーのパッケリ）</span></a>
+            <a href="/recipes/paccheri-con-ragu-di-totani-e-colatura/">Paccheri con Ragù di Totani e Colatura<span class="compact-index-ja">（スルメイカのラグーとコラトゥーラのパッケリ）</span></a>
+            <a href="/recipes/pappa-al-pomodoro/">Pappa al Pomodoro<span class="compact-index-ja">（トスカーナ風トマトとパンのスープ）</span></a>
+            <a href="/recipes/pappardelle-al-cinghiale/">Pappardelle al Cinghiale<span class="compact-index-ja">（猪のラグーのパッパルデッレ）</span></a>
+            <a href="/recipes/passatelli-in-brodo/">Passatelli in Brodo<span class="compact-index-ja">（ブロードで味わうパッサテッリ）</span></a>
+            <a href="/recipes/pasta-ncasciata/">Pasta 'ncasciata<span class="compact-index-ja">（シチリア風焼きパスタ）</span></a>
+            <a href="/recipes/pasta-al-pistacchio-di-bronte/">Pasta al Pistacchio di Bronte<span class="compact-index-ja">（ブロンテ産ピスタチオのパスタ）</span></a>
+            <a href="/recipes/pasta-alla-genovese-napoletana/">Pasta alla Genovese Napoletana<span class="compact-index-ja">（ナポリ風ジェノヴェーゼのパスタ）</span></a>
+            <a href="/recipes/pasta-alla-norma/">Pasta alla Norma<span class="compact-index-ja">（揚げなすとリコッタサラータのパスタ）</span></a>
+            <a href="/recipes/pasta-alla-sorrentina/">Pasta alla Sorrentina<span class="compact-index-ja">（ソレント風トマトとモッツァレラのパスタ）</span></a>
+            <a href="/recipes/pasta-cacio-e-uova/">Pasta Cacio e Uova<span class="compact-index-ja">（チーズと卵のパスタ）</span></a>
+            <a href="/recipes/pasta-con-le-sarde/">Pasta con le Sarde<span class="compact-index-ja">（いわしとフェンネルのパスタ）</span></a>
+            <a href="/recipes/pasta-e-fagioli/">Pasta e Fagioli<span class="compact-index-ja">（白いんげん豆のパスタスープ）</span></a>
+            <a href="/recipes/penne-ai-quattro-formaggi/">Penne ai Quattro Formaggi<span class="compact-index-ja">（4種チーズのペンネ）</span></a>
+            <a href="/recipes/penne-allarrabbiata/">Penne all'Arrabbiata<span class="compact-index-ja">（ペンネ アラビアータ）</span></a>
+            <a href="/recipes/penne-alla-vodka/">Penne alla Vodka<span class="compact-index-ja">（ウォッカソースのペンネ）</span></a>
+            <a href="/recipes/pici-allaglione/">Pici all'Aglione<span class="compact-index-ja">（にんにくトマトソースのピチ）</span></a>
+            <a href="/recipes/pizzoccheri-della-valtellina/">Pizzoccheri della Valtellina<span class="compact-index-ja">（ヴァルテッリーナ風ピッツォッケリ）</span></a>
+            <a href="/recipes/polenta-pasticciata-al-forno/">Polenta Pasticciata al Forno<span class="compact-index-ja">（ポレンタのオーブン焼き（ラザーニャ風））</span></a>
+            <a href="/recipes/ribollita/">Ribollita<span class="compact-index-ja">（トスカーナ風パンと野菜の煮込みスープ）</span></a>
+            <a href="/recipes/rigatoni-al-ragu-napoletano/">Rigatoni al Ragù Napoletano<span class="compact-index-ja">（ナポリ風ラグーのリガトーニ）</span></a>
+            <a href="/recipes/rigatoni-alla-gricia/">Rigatoni alla Gricia<span class="compact-index-ja">（リガトーニ グリーチャ）</span></a>
+            <a href="/recipes/rigatoni-alla-pajata/">Rigatoni alla Pajata<span class="compact-index-ja">（パヤータのリガトーニ）</span></a>
+            <a href="/recipes/risi-e-bisi-alla-veneziana/">Risi e Bisi alla Veneziana<span class="compact-index-ja">（ヴェネツィア風グリーンピースのリゾット）</span></a>
+            <a href="/recipes/risotto-agli-scampi/">Risotto agli Scampi<span class="compact-index-ja">（スカンピのリゾット）</span></a>
+            <a href="/recipes/risotto-ai-funghi-porcini/">Risotto ai Funghi Porcini<span class="compact-index-ja">（ポルチーニ茸のリゾット）</span></a>
+            <a href="/recipes/risotto-al-barolo/">Risotto al Barolo<span class="compact-index-ja">（バローロワインのリゾット）</span></a>
+            <a href="/recipes/risotto-al-limone/">Risotto al Limone<span class="compact-index-ja">（レモンのリゾット）</span></a>
+            <a href="/recipes/risotto-al-radicchio-trevigiano/">Risotto al Radicchio Trevigiano<span class="compact-index-ja">（トレヴィーゾ産ラディッキオのリゾット）</span></a>
+            <a href="/recipes/risotto-alla-milanese/">Risotto alla Milanese<span class="compact-index-ja">（ミラノ風サフランリゾット）</span></a>
+            <a href="/recipes/spaghetti-aglio-olio-e-peperoncino/">Spaghetti Aglio, Olio e Peperoncino<span class="compact-index-ja">（スパゲッティ アーリオ・オーリオ・エ・ペペロンチーノ）</span></a>
+            <a href="/recipes/spaghetti-ai-ricci-di-mare/">Spaghetti ai Ricci di Mare<span class="compact-index-ja">（ウニのスパゲッティ）</span></a>
+            <a href="/recipes/spaghetti-al-nero-di-seppia/">Spaghetti al Nero di Seppia<span class="compact-index-ja">（イカ墨のスパゲッティ）</span></a>
+            <a href="/recipes/spaghetti-al-pomodoro/">Spaghetti al Pomodoro<span class="compact-index-ja">（トマトソースのスパゲッティ）</span></a>
+            <a href="/recipes/spaghetti-allamatriciana/">Spaghetti all'Amatriciana<span class="compact-index-ja">（スパゲッティ アマトリチャーナ）</span></a>
+            <a href="/recipes/spaghetti-allassassina/">Spaghetti all'Assassina<span class="compact-index-ja">（焦がしトマトの暗殺者風スパゲッティ）</span></a>
+            <a href="/recipes/spaghetti-alla-carbonara/">Spaghetti alla Carbonara<span class="compact-index-ja">（スパゲッティ カルボナーラ）</span></a>
+            <a href="/recipes/spaghetti-alla-chitarra-con-ragu-dagnello/">Spaghetti alla Chitarra con Ragù d'Agnello<span class="compact-index-ja">（仔羊のラグーのキタッラ）</span></a>
+            <a href="/recipes/spaghetti-alla-nerano/">Spaghetti alla Nerano<span class="compact-index-ja">（ズッキーニとチーズのネラーノ風スパゲッティ）</span></a>
+            <a href="/recipes/spaghetti-alla-puttanesca/">Spaghetti alla Puttanesca<span class="compact-index-ja">（スパゲッティ プッタネスカ）</span></a>
+            <a href="/recipes/spaghetti-alle-vongole/">Spaghetti alle Vongole<span class="compact-index-ja">（スパゲッティ ボンゴレ）</span></a>
+            <a href="/recipes/spaghetti-allo-scorfano/">Spaghetti allo Scorfano<span class="compact-index-ja">（カサゴのスパゲッティ）</span></a>
+            <a href="/recipes/spaghetti-con-bottarga-di-muggine/">Spaghetti con Bottarga di Muggine<span class="compact-index-ja">（カラスミのスパゲッティ）</span></a>
+            <a href="/recipes/spaghetti-con-colatura-di-alici/">Spaghetti con Colatura di Alici<span class="compact-index-ja">（コラトゥーラのスパゲッティ）</span></a>
+            <a href="/recipes/strangozzi-al-tartufo-nero-di-norcia/">Strangozzi al Tartufo Nero di Norcia<span class="compact-index-ja">（ノルチャ産黒トリュフのストランゴッツィ）</span></a>
+            <a href="/recipes/tagliatelle-ai-funghi-porcini/">Tagliatelle ai Funghi Porcini<span class="compact-index-ja">（ポルチーニ茸のタリアテッレ）</span></a>
+            <a href="/recipes/tagliatelle-al-ragu-ragu-alla-bolognese/">Tagliatelle al Ragù(Ragù alla bolognese)<span class="compact-index-ja">（ボローニャ風ラグーのタリアテッレ（ボロネーゼ））</span></a>
+            <a href="/recipes/tagliatelle-al-salmone-affumicato/">Tagliatelle al Salmone Affumicato<span class="compact-index-ja">（スモークサーモンのタリアテッレ）</span></a>
+            <a href="/recipes/tagliatelle-con-prosciutto-di-parma-e-piselli/">Tagliatelle con Prosciutto di Parma e Piselli<span class="compact-index-ja">（パルマ産生ハムとグリーンピースのタリアテッレ）</span></a>
+            <a href="/recipes/tagliolini-ai-gamberi-con-bisque/">Tagliolini ai Gamberi con Bisque<span class="compact-index-ja">（エビのビスク仕立てタリオリーニ）</span></a>
+            <a href="/recipes/tagliolini-al-tartufo-bianco-dalba/">Tagliolini al Tartufo Bianco d'Alba<span class="compact-index-ja">（アルバ産白トリュフのタリオリーニ）</span></a>
+            <a href="/recipes/tortellini-in-brodo-di-cappone/">Tortellini in Brodo di Cappone<span class="compact-index-ja">（去勢鶏のブロードで味わうトルテッリーニ）</span></a>
+            <a href="/recipes/trenette-al-pesto-con-patate-e-fagiolini/">Trenette al Pesto con Patate e Fagiolini<span class="compact-index-ja">（じゃがいもとインゲンのジェノヴェーゼ・トレネッテ）</span></a>
+            <a href="/recipes/trofie-al-pesto-genovese/">Trofie al Pesto Genovese<span class="compact-index-ja">（ジェノヴェーゼペストのトロフィエ）</span></a>
+            <a href="/recipes/umbricelli-al-ragu-di-piccione/">Umbricelli al Ragù di Piccione<span class="compact-index-ja">（鳩のラグーのウンブリチェッリ）</span></a>
+            <a href="/recipes/zuppa-gallurese/">Zuppa Gallurese<span class="compact-index-ja">（ガッルーラ風パンとチーズのオーブン焼きスープ）</span></a>
             </div>
           </div>
           <div class="compact-index-group">
             <h3>セコンド・ピアット（メイン）</h3>
             <div class="compact-index-links">
-            <a href="/recipes/agnello-alla-scottadito/">Agnello alla Scottadito</a>
-            <a href="/recipes/alici-in-tortiera-alla-pugliese/">Alici in Tortiera alla Pugliese</a>
-            <a href="/recipes/aragosta-alla-catalana/">Aragosta alla Catalana</a>
-            <a href="/recipes/arista-di-maiale-al-forno/">Arista di Maiale al Forno</a>
-            <a href="/recipes/baccala-alla-vicentina/">Baccalà alla Vicentina</a>
-            <a href="/recipes/bistecca-alla-fiorentina/">Bistecca alla Fiorentina</a>
-            <a href="/recipes/bistecca-alla-pizzaiola/">Bistecca alla Pizzaiola</a>
-            <a href="/recipes/branzino-al-cartoccio/">Branzino al Cartoccio</a>
-            <a href="/recipes/branzino-al-sale/">Branzino al Sale</a>
-            <a href="/recipes/brasato-al-barolo/">Brasato al Barolo</a>
-            <a href="/recipes/cacciucco-alla-livornese/">Cacciucco alla Livornese</a>
-            <a href="/recipes/calamari-ripieni-alla-siciliana/">Calamari Ripieni alla Siciliana</a>
-            <a href="/recipes/costine-di-maiale-al-forno-alla-sarda/">Costine di Maiale al Forno alla Sarda</a>
-            <a href="/recipes/costolette-di-maiale-alla-milanese/">Costolette di Maiale alla Milanese</a>
-            <a href="/recipes/cotoletta-alla-milanese/">Cotoletta alla Milanese</a>
-            <a href="/recipes/dentice-al-forno-con-olive-e-capperi/">Dentice al Forno con Olive e Capperi</a>
-            <a href="/recipes/frittata-di-zucchine/">Frittata di Zucchine</a>
-            <a href="/recipes/fritto-misto-di-mare-alladriatica/">Fritto Misto di Mare all'Adriatica</a>
-            <a href="/recipes/gamberoni-alla-busara/">Gamberoni alla Busara</a>
-            <a href="/recipes/gamberoni-alla-griglia-con-salmoriglio/">Gamberoni alla Griglia con Salmoriglio</a>
-            <a href="/recipes/granseola-alla-veneziana/">Granseola alla Veneziana</a>
-            <a href="/recipes/impepata-di-cozze/">Impepata di Cozze</a>
-            <a href="/recipes/involtini-di-manzo-al-sugo/">Involtini di Manzo al Sugo</a>
-            <a href="/recipes/involtini-di-pesce-spada/">Involtini di Pesce Spada</a>
-            <a href="/recipes/involtini-di-pollo-alla-salvia/">Involtini di Pollo alla Salvia</a>
-            <a href="/recipes/maiale-al-latte/">Maiale al Latte</a>
-            <a href="/recipes/maiale-in-agrodolce-alla-siciliana/">Maiale in Agrodolce alla Siciliana</a>
-            <a href="/recipes/melanzane-alla-parmigiana/">Melanzane alla Parmigiana</a>
-            <a href="/recipes/merluzzo-alla-livornese/">Merluzzo alla Livornese</a>
-            <a href="/recipes/orata-al-forno-con-patate-e-pomodori/">Orata al Forno con Patate e Pomodori</a>
-            <a href="/recipes/ossobuco-alla-milanese/">Ossobuco alla Milanese</a>
-            <a href="/recipes/peposo-alla-fornacina/">Peposo alla Fornacina</a>
-            <a href="/recipes/pesce-allacqua-pazza/">Pesce all'Acqua Pazza</a>
-            <a href="/recipes/pesce-spada-alla-ghiotta/">Pesce Spada alla Ghiotta</a>
-            <a href="/recipes/piccata-di-pollo-al-limone/">Piccata di Pollo al Limone</a>
-            <a href="/recipes/polenta-con-ragu-di-cinghiale/">Polenta con Ragù di Cinghiale</a>
-            <a href="/recipes/polenta-e-osei-alla-bergamasca/">Polenta e Osei alla Bergamasca</a>
-            <a href="/recipes/pollo-allarancia-rossa-di-sicilia/">Pollo all'Arancia Rossa di Sicilia</a>
-            <a href="/recipes/pollo-alla-cacciatora/">Pollo alla Cacciatora</a>
-            <a href="/recipes/pollo-alla-diavola/">Pollo alla Diavola</a>
-            <a href="/recipes/pollo-alla-marsala/">Pollo alla Marsala</a>
-            <a href="/recipes/pollo-alla-valdostana/">Pollo alla Valdostana</a>
-            <a href="/recipes/pollo-con-i-peperoni-alla-romana/">Pollo con i Peperoni alla Romana</a>
-            <a href="/recipes/polpette-al-sugo/">Polpette al Sugo</a>
-            <a href="/recipes/polpo-alla-luciana/">Polpo alla Luciana</a>
-            <a href="/recipes/polpo-e-patate-alla-sarda/">Polpo e Patate alla Sarda</a>
-            <a href="/recipes/porchetta-al-forno-versione-casalinga/">Porchetta al Forno (versione casalinga)</a>
-            <a href="/recipes/salsicce-e-friarielli/">Salsicce e Friarielli</a>
-            <a href="/recipes/salsicce-e-peperoni/">Salsicce e Peperoni</a>
-            <a href="/recipes/saltimbocca-alla-romana/">Saltimbocca alla Romana</a>
-            <a href="/recipes/sarde-a-beccafico/">Sarde a Beccafico</a>
-            <a href="/recipes/scaloppine-di-maiale-al-limone/">Scaloppine di Maiale al Limone</a>
-            <a href="/recipes/sgombro-al-forno-con-patate/">Sgombro al Forno con Patate</a>
-            <a href="/recipes/spezzatino-di-manzo-con-patate/">Spezzatino di Manzo con Patate</a>
-            <a href="/recipes/stoccafisso-allanconetana/">Stoccafisso all'Anconetana</a>
-            <a href="/recipes/tagliata-di-manzo-con-rucola/">Tagliata di Manzo con Rucola</a>
-            <a href="/recipes/tonno-alla-griglia-con-salmoriglio/">Tonno alla Griglia con Salmoriglio</a>
-            <a href="/recipes/tonno-con-cipolla-alla-siciliana/">Tonno con Cipolla alla Siciliana</a>
-            <a href="/recipes/totani-in-umido-con-piselli/">Totani in Umido con Piselli</a>
-            <a href="/recipes/totani-ripieni-al-forno/">Totani Ripieni al Forno</a>
-            <a href="/recipes/totani-saltati-con-colatura/">Totani Saltati con Colatura</a>
-            <a href="/recipes/triglie-alla-livornese/">Triglie alla Livornese</a>
+            <a href="/recipes/agnello-alla-scottadito/">Agnello alla Scottadito<span class="compact-index-ja">（仔羊のグリル（スコッタディート））</span></a>
+            <a href="/recipes/alici-in-tortiera-alla-pugliese/">Alici in Tortiera alla Pugliese<span class="compact-index-ja">（プーリア風いわしのオーブン焼き）</span></a>
+            <a href="/recipes/aragosta-alla-catalana/">Aragosta alla Catalana<span class="compact-index-ja">（オマール海老のカタルーニャ風サラダ）</span></a>
+            <a href="/recipes/arista-di-maiale-al-forno/">Arista di Maiale al Forno<span class="compact-index-ja">（豚ロースのハーブロースト）</span></a>
+            <a href="/recipes/baccala-alla-vicentina/">Baccalà alla Vicentina<span class="compact-index-ja">（干し鱈のヴィチェンツァ風煮込み）</span></a>
+            <a href="/recipes/bistecca-alla-fiorentina/">Bistecca alla Fiorentina<span class="compact-index-ja">（フィレンツェ風Tボーンステーキ（ビステッカ））</span></a>
+            <a href="/recipes/bistecca-alla-pizzaiola/">Bistecca alla Pizzaiola<span class="compact-index-ja">（牛ステーキのピッツァイオーラ風）</span></a>
+            <a href="/recipes/branzino-al-cartoccio/">Branzino al Cartoccio<span class="compact-index-ja">（スズキの香草カルトッチョ焼き）</span></a>
+            <a href="/recipes/branzino-al-sale/">Branzino al Sale<span class="compact-index-ja">（スズキの塩釜焼き）</span></a>
+            <a href="/recipes/brasato-al-barolo/">Brasato al Barolo<span class="compact-index-ja">（牛肉のバローロ煮込み）</span></a>
+            <a href="/recipes/cacciucco-alla-livornese/">Cacciucco alla Livornese<span class="compact-index-ja">（リヴォルノ風魚介の煮込みスープ）</span></a>
+            <a href="/recipes/calamari-ripieni-alla-siciliana/">Calamari Ripieni alla Siciliana<span class="compact-index-ja">（シチリア風イカの詰め物トマト煮）</span></a>
+            <a href="/recipes/costine-di-maiale-al-forno-alla-sarda/">Costine di Maiale al Forno alla Sarda<span class="compact-index-ja">（豚スペアリブのサルデーニャ風オーブン焼き）</span></a>
+            <a href="/recipes/costolette-di-maiale-alla-milanese/">Costolette di Maiale alla Milanese<span class="compact-index-ja">（骨付き豚ロースのミラノ風カツレツ）</span></a>
+            <a href="/recipes/cotoletta-alla-milanese/">Cotoletta alla Milanese<span class="compact-index-ja">（ミラノ風仔牛カツレツ）</span></a>
+            <a href="/recipes/dentice-al-forno-con-olive-e-capperi/">Dentice al Forno con Olive e Capperi<span class="compact-index-ja">（マダイのオリーブとケッパーのオーブン焼き）</span></a>
+            <a href="/recipes/frittata-di-zucchine/">Frittata di Zucchine<span class="compact-index-ja">（ズッキーニのフリッタータ）</span></a>
+            <a href="/recipes/fritto-misto-di-mare-alladriatica/">Fritto Misto di Mare all'Adriatica<span class="compact-index-ja">（アドリア海風 魚介のフリットミスト）</span></a>
+            <a href="/recipes/gamberoni-alla-busara/">Gamberoni alla Busara<span class="compact-index-ja">（大エビのブザーラ風トマト煮）</span></a>
+            <a href="/recipes/gamberoni-alla-griglia-con-salmoriglio/">Gamberoni alla Griglia con Salmoriglio<span class="compact-index-ja">（グリルガンベロとサルモリーリョ）</span></a>
+            <a href="/recipes/granseola-alla-veneziana/">Granseola alla Veneziana<span class="compact-index-ja">（ヴェネツィア風クモガニのサラダ）</span></a>
+            <a href="/recipes/impepata-di-cozze/">Impepata di Cozze<span class="compact-index-ja">（ムール貝の黒胡椒蒸し）</span></a>
+            <a href="/recipes/involtini-di-manzo-al-sugo/">Involtini di Manzo al Sugo<span class="compact-index-ja">（牛肉のインヴォルティーニ トマトソース）</span></a>
+            <a href="/recipes/involtini-di-pesce-spada/">Involtini di Pesce Spada<span class="compact-index-ja">（メカジキのインヴォルティーニ）</span></a>
+            <a href="/recipes/involtini-di-pollo-alla-salvia/">Involtini di Pollo alla Salvia<span class="compact-index-ja">（鶏肉のセージ風味インヴォルティーニ）</span></a>
+            <a href="/recipes/maiale-al-latte/">Maiale al Latte<span class="compact-index-ja">（豚ロースのミルク煮込み）</span></a>
+            <a href="/recipes/maiale-in-agrodolce-alla-siciliana/">Maiale in Agrodolce alla Siciliana<span class="compact-index-ja">（豚肉のシチリア風アグロドルチェ）</span></a>
+            <a href="/recipes/melanzane-alla-parmigiana/">Melanzane alla Parmigiana<span class="compact-index-ja">（なすのパルミジャーナ）</span></a>
+            <a href="/recipes/merluzzo-alla-livornese/">Merluzzo alla Livornese<span class="compact-index-ja">（タラのリヴォルノ風トマト煮）</span></a>
+            <a href="/recipes/orata-al-forno-con-patate-e-pomodori/">Orata al Forno con Patate e Pomodori<span class="compact-index-ja">（金鯛のオーブン焼き）</span></a>
+            <a href="/recipes/ossobuco-alla-milanese/">Ossobuco alla Milanese<span class="compact-index-ja">（仔牛すね肉のミラノ風煮込み）</span></a>
+            <a href="/recipes/peposo-alla-fornacina/">Peposo alla Fornacina<span class="compact-index-ja">（黒胡椒を効かせたトスカーナ風牛肉煮込み）</span></a>
+            <a href="/recipes/pesce-allacqua-pazza/">Pesce all'Acqua Pazza<span class="compact-index-ja">（白身魚のアクアパッツァ）</span></a>
+            <a href="/recipes/pesce-spada-alla-ghiotta/">Pesce Spada alla Ghiotta<span class="compact-index-ja">（メカジキのシチリア風煮込み）</span></a>
+            <a href="/recipes/piccata-di-pollo-al-limone/">Piccata di Pollo al Limone<span class="compact-index-ja">（鶏肉のレモンピッカータ）</span></a>
+            <a href="/recipes/polenta-con-ragu-di-cinghiale/">Polenta con Ragù di Cinghiale<span class="compact-index-ja">（ポレンタと猪のラグー）</span></a>
+            <a href="/recipes/polenta-e-osei-alla-bergamasca/">Polenta e Osei alla Bergamasca<span class="compact-index-ja">（ポレンタと小鳥のベルガモ風）</span></a>
+            <a href="/recipes/pollo-allarancia-rossa-di-sicilia/">Pollo all'Arancia Rossa di Sicilia<span class="compact-index-ja">（鶏肉のブラッドオレンジソース）</span></a>
+            <a href="/recipes/pollo-alla-cacciatora/">Pollo alla Cacciatora<span class="compact-index-ja">（鶏肉の猟師風煮込み）</span></a>
+            <a href="/recipes/pollo-alla-diavola/">Pollo alla Diavola<span class="compact-index-ja">（鶏肉のディアボラ風グリル）</span></a>
+            <a href="/recipes/pollo-alla-marsala/">Pollo alla Marsala<span class="compact-index-ja">（鶏肉のマルサラワインソース）</span></a>
+            <a href="/recipes/pollo-alla-valdostana/">Pollo alla Valdostana<span class="compact-index-ja">（鶏肉のヴァッレ・ダオスタ風）</span></a>
+            <a href="/recipes/pollo-con-i-peperoni-alla-romana/">Pollo con i Peperoni alla Romana<span class="compact-index-ja">（鶏肉とパプリカのローマ風煮込み）</span></a>
+            <a href="/recipes/polpette-al-sugo/">Polpette al Sugo<span class="compact-index-ja">（肉団子のトマト煮込み）</span></a>
+            <a href="/recipes/polpo-alla-luciana/">Polpo alla Luciana<span class="compact-index-ja">（タコのルチアーナ風煮込み）</span></a>
+            <a href="/recipes/polpo-e-patate-alla-sarda/">Polpo e Patate alla Sarda<span class="compact-index-ja">（タコとじゃがいものサルデーニャ風サラダ）</span></a>
+            <a href="/recipes/porchetta-al-forno-versione-casalinga/">Porchetta al Forno (versione casalinga)<span class="compact-index-ja">（ハーブを詰めた豚バラ肉のポルケッタ）</span></a>
+            <a href="/recipes/salsicce-e-friarielli/">Salsicce e Friarielli<span class="compact-index-ja">（サルシッチャと菜の花のナポリ風）</span></a>
+            <a href="/recipes/salsicce-e-peperoni/">Salsicce e Peperoni<span class="compact-index-ja">（サルシッチャとパプリカのソテー）</span></a>
+            <a href="/recipes/saltimbocca-alla-romana/">Saltimbocca alla Romana<span class="compact-index-ja">（ローマ風サルティンボッカ）</span></a>
+            <a href="/recipes/sarde-a-beccafico/">Sarde a Beccafico<span class="compact-index-ja">（いわしのベッカフィーコ風）</span></a>
+            <a href="/recipes/scaloppine-di-maiale-al-limone/">Scaloppine di Maiale al Limone<span class="compact-index-ja">（豚肉のレモンスカロッピーネ）</span></a>
+            <a href="/recipes/sgombro-al-forno-con-patate/">Sgombro al Forno con Patate<span class="compact-index-ja">（サバとじゃがいものオーブン焼き）</span></a>
+            <a href="/recipes/spezzatino-di-manzo-con-patate/">Spezzatino di Manzo con Patate<span class="compact-index-ja">（牛肉とじゃがいものスペッツァティーノ）</span></a>
+            <a href="/recipes/stoccafisso-allanconetana/">Stoccafisso all'Anconetana<span class="compact-index-ja">（アンコーナ風干し鱈の煮込み）</span></a>
+            <a href="/recipes/tagliata-di-manzo-con-rucola/">Tagliata di Manzo con Rucola<span class="compact-index-ja">（牛肉のタリアータ ルッコラ添え）</span></a>
+            <a href="/recipes/tonno-alla-griglia-con-salmoriglio/">Tonno alla Griglia con Salmoriglio<span class="compact-index-ja">（グリルマグロのサルモリーリョ仕立て）</span></a>
+            <a href="/recipes/tonno-con-cipolla-alla-siciliana/">Tonno con Cipolla alla Siciliana<span class="compact-index-ja">（マグロと玉ねぎのシチリア風ソテー）</span></a>
+            <a href="/recipes/totani-in-umido-con-piselli/">Totani in Umido con Piselli<span class="compact-index-ja">（スルメイカとグリーンピースの煮込み）</span></a>
+            <a href="/recipes/totani-ripieni-al-forno/">Totani Ripieni al Forno<span class="compact-index-ja">（ヤリイカの詰め物オーブン焼き）</span></a>
+            <a href="/recipes/totani-saltati-con-colatura/">Totani Saltati con Colatura<span class="compact-index-ja">（スルメイカのコラトゥーラソテー）</span></a>
+            <a href="/recipes/triglie-alla-livornese/">Triglie alla Livornese<span class="compact-index-ja">（ヒメジのリヴォルノ風トマト煮）</span></a>
             </div>
           </div>
           <div class="compact-index-group">
             <h3>コントルノ（付け合わせ）</h3>
             <div class="compact-index-links">
-            <a href="/recipes/asparagi-alla-parmigiana/">Asparagi alla Parmigiana</a>
-            <a href="/recipes/barbabietole-al-forno/">Barbabietole al Forno</a>
-            <a href="/recipes/bietola-saltata/">Bietola Saltata</a>
-            <a href="/recipes/broccoletti-di-rapa-ripassati/">Broccoletti di Rapa Ripassati</a>
-            <a href="/recipes/broccoletti-ripassati-con-colatura/">Broccoletti Ripassati con Colatura</a>
-            <a href="/recipes/broccoli-saltati-con-aglio/">Broccoli Saltati con Aglio</a>
-            <a href="/recipes/carote-al-burro-e-prezzemolo/">Carote al Burro e Prezzemolo</a>
-            <a href="/recipes/cavolfiore-gratinato/">Cavolfiore Gratinato</a>
-            <a href="/recipes/cavolfiore-in-padella/">Cavolfiore in Padella</a>
-            <a href="/recipes/ceci-in-umido/">Ceci in Umido</a>
-            <a href="/recipes/cicoria-ripassata/">Cicoria Ripassata</a>
-            <a href="/recipes/cipolle-al-forno/">Cipolle al Forno</a>
-            <a href="/recipes/fagioli-alluccelletto/">Fagioli all'Uccelletto</a>
-            <a href="/recipes/fagioli-borlotti-al-pomodoro/">Fagioli Borlotti al Pomodoro</a>
-            <a href="/recipes/fagiolini-al-pomodoro/">Fagiolini al Pomodoro</a>
-            <a href="/recipes/fagiolini-alla-genovese/">Fagiolini alla Genovese</a>
-            <a href="/recipes/fave-e-pecorino/">Fave e Pecorino</a>
-            <a href="/recipes/finocchi-gratinati/">Finocchi Gratinati</a>
-            <a href="/recipes/finocchi-gratinati-al-parmigiano/">Finocchi Gratinati al Parmigiano</a>
-            <a href="/recipes/funghi-trifolati/">Funghi Trifolati</a>
-            <a href="/recipes/insalata-di-rucola-con-grana/">Insalata di Rucola con Grana</a>
-            <a href="/recipes/insalata-mista/">Insalata Mista</a>
-            <a href="/recipes/insalata-tricolore/">Insalata Tricolore</a>
-            <a href="/recipes/lenticchie-di-castelluccio/">Lenticchie di Castelluccio</a>
-            <a href="/recipes/melanzane-al-funghetto/">Melanzane al Funghetto</a>
-            <a href="/recipes/melanzane-alla-griglia/">Melanzane alla Griglia</a>
-            <a href="/recipes/patate-al-rosmarino/">Patate al Rosmarino</a>
-            <a href="/recipes/patate-e-cipolla-al-forno/">Patate e Cipolla al Forno</a>
-            <a href="/recipes/patate-in-umido/">Patate in Umido</a>
-            <a href="/recipes/patate-schiacciate/">Patate Schiacciate</a>
-            <a href="/recipes/peperonata/">Peperonata</a>
-            <a href="/recipes/piselli-al-prosciutto/">Piselli al Prosciutto</a>
-            <a href="/recipes/polenta-morbida/">Polenta Morbida</a>
-            <a href="/recipes/polenta-taragna/">Polenta Taragna</a>
-            <a href="/recipes/pomodori-al-forno/">Pomodori al Forno</a>
-            <a href="/recipes/porri-brasati-al-burro/">Porri Brasati al Burro</a>
-            <a href="/recipes/rapini-affogati/">Rapini Affogati</a>
-            <a href="/recipes/spinaci-alla-romana/">Spinaci alla Romana</a>
-            <a href="/recipes/verdure-grigliate-miste/">Verdure Grigliate Miste</a>
-            <a href="/recipes/verze-stufate/">Verze Stufate</a>
-            <a href="/recipes/zucca-al-forno-con-rosmarino/">Zucca al Forno con Rosmarino</a>
-            <a href="/recipes/zucchine-ripiene-al-forno/">Zucchine Ripiene al Forno</a>
-            <a href="/recipes/zucchine-trifolate/">Zucchine Trifolate</a>
+            <a href="/recipes/asparagi-alla-parmigiana/">Asparagi alla Parmigiana<span class="compact-index-ja">（アスパラガスのパルミジャーノグラタン）</span></a>
+            <a href="/recipes/barbabietole-al-forno/">Barbabietole al Forno<span class="compact-index-ja">（ビーツのオーブン焼き）</span></a>
+            <a href="/recipes/bietola-saltata/">Bietola Saltata<span class="compact-index-ja">（スイスチャードのガーリックソテー）</span></a>
+            <a href="/recipes/broccoletti-di-rapa-ripassati/">Broccoletti di Rapa Ripassati<span class="compact-index-ja">（ブロッコリーラーベのガーリックソテー）</span></a>
+            <a href="/recipes/broccoletti-ripassati-con-colatura/">Broccoletti Ripassati con Colatura<span class="compact-index-ja">（青菜のコラトゥーラソテー）</span></a>
+            <a href="/recipes/broccoli-saltati-con-aglio/">Broccoli Saltati con Aglio<span class="compact-index-ja">（ブロッコリーのガーリックソテー）</span></a>
+            <a href="/recipes/carote-al-burro-e-prezzemolo/">Carote al Burro e Prezzemolo<span class="compact-index-ja">（にんじんのバターソテー パセリ風味）</span></a>
+            <a href="/recipes/cavolfiore-gratinato/">Cavolfiore Gratinato<span class="compact-index-ja">（カリフラワーのグラタン）</span></a>
+            <a href="/recipes/cavolfiore-in-padella/">Cavolfiore in Padella<span class="compact-index-ja">（カリフラワーの白ワインソテー）</span></a>
+            <a href="/recipes/ceci-in-umido/">Ceci in Umido<span class="compact-index-ja">（ひよこ豆のトマト煮）</span></a>
+            <a href="/recipes/cicoria-ripassata/">Cicoria Ripassata<span class="compact-index-ja">（チコリ菜のガーリックソテー）</span></a>
+            <a href="/recipes/cipolle-al-forno/">Cipolle al Forno<span class="compact-index-ja">（玉ねぎの丸ごとオーブン焼き）</span></a>
+            <a href="/recipes/fagioli-alluccelletto/">Fagioli all'Uccelletto<span class="compact-index-ja">（白いんげん豆のトスカーナ風トマト煮）</span></a>
+            <a href="/recipes/fagioli-borlotti-al-pomodoro/">Fagioli Borlotti al Pomodoro<span class="compact-index-ja">（ボルロッティ豆のトマト煮）</span></a>
+            <a href="/recipes/fagiolini-al-pomodoro/">Fagiolini al Pomodoro<span class="compact-index-ja">（インゲン豆のトマト煮）</span></a>
+            <a href="/recipes/fagiolini-alla-genovese/">Fagiolini alla Genovese<span class="compact-index-ja">（インゲン豆のジェノヴェーゼ和え）</span></a>
+            <a href="/recipes/fave-e-pecorino/">Fave e Pecorino<span class="compact-index-ja">（そら豆とペコリーノ・ロマーノ）</span></a>
+            <a href="/recipes/finocchi-gratinati/">Finocchi Gratinati<span class="compact-index-ja">（フェンネルのグラタン）</span></a>
+            <a href="/recipes/finocchi-gratinati-al-parmigiano/">Finocchi Gratinati al Parmigiano<span class="compact-index-ja">（フェンネルのパルミジャーノグラタン）</span></a>
+            <a href="/recipes/funghi-trifolati/">Funghi Trifolati<span class="compact-index-ja">（きのこのトリフォラーティ）</span></a>
+            <a href="/recipes/insalata-di-rucola-con-grana/">Insalata di Rucola con Grana<span class="compact-index-ja">（ルッコラとグラナ・パダーノのサラダ）</span></a>
+            <a href="/recipes/insalata-mista/">Insalata Mista<span class="compact-index-ja">（季節の野菜サラダ）</span></a>
+            <a href="/recipes/insalata-tricolore/">Insalata Tricolore<span class="compact-index-ja">（トリコローレサラダ）</span></a>
+            <a href="/recipes/lenticchie-di-castelluccio/">Lenticchie di Castelluccio<span class="compact-index-ja">（カステッルッチョのレンズ豆）</span></a>
+            <a href="/recipes/melanzane-al-funghetto/">Melanzane al Funghetto<span class="compact-index-ja">（ナスのナポリ風ソテー）</span></a>
+            <a href="/recipes/melanzane-alla-griglia/">Melanzane alla Griglia<span class="compact-index-ja">（ナスの炭火焼きマリネ）</span></a>
+            <a href="/recipes/patate-al-rosmarino/">Patate al Rosmarino<span class="compact-index-ja">（じゃがいものローズマリー焼き）</span></a>
+            <a href="/recipes/patate-e-cipolla-al-forno/">Patate e Cipolla al Forno<span class="compact-index-ja">（じゃがいもと玉ねぎのオーブン焼き）</span></a>
+            <a href="/recipes/patate-in-umido/">Patate in Umido<span class="compact-index-ja">（じゃがいものトマト煮）</span></a>
+            <a href="/recipes/patate-schiacciate/">Patate Schiacciate<span class="compact-index-ja">（つぶしじゃがいものオーブン焼き）</span></a>
+            <a href="/recipes/peperonata/">Peperonata<span class="compact-index-ja">（三色パプリカのトマト煮）</span></a>
+            <a href="/recipes/piselli-al-prosciutto/">Piselli al Prosciutto<span class="compact-index-ja">（グリーンピースと生ハムのソテー）</span></a>
+            <a href="/recipes/polenta-morbida/">Polenta Morbida<span class="compact-index-ja">（やわらかいポレンタ）</span></a>
+            <a href="/recipes/polenta-taragna/">Polenta Taragna<span class="compact-index-ja">（ポレンタ・タラーニャ）</span></a>
+            <a href="/recipes/pomodori-al-forno/">Pomodori al Forno<span class="compact-index-ja">（トマトのオーブン焼き）</span></a>
+            <a href="/recipes/porri-brasati-al-burro/">Porri Brasati al Burro<span class="compact-index-ja">（リーキのバター蒸し煮）</span></a>
+            <a href="/recipes/rapini-affogati/">Rapini Affogati<span class="compact-index-ja">（ブロッコリーラーベのオリーブオイル蒸し煮）</span></a>
+            <a href="/recipes/spinaci-alla-romana/">Spinaci alla Romana<span class="compact-index-ja">（ほうれん草のローマ風ソテー）</span></a>
+            <a href="/recipes/verdure-grigliate-miste/">Verdure Grigliate Miste<span class="compact-index-ja">（季節の野菜のグリル焼き）</span></a>
+            <a href="/recipes/verze-stufate/">Verze Stufate<span class="compact-index-ja">（サヴォイキャベツの白ワイン蒸し煮）</span></a>
+            <a href="/recipes/zucca-al-forno-con-rosmarino/">Zucca al Forno con Rosmarino<span class="compact-index-ja">（かぼちゃのローズマリーオーブン焼き）</span></a>
+            <a href="/recipes/zucchine-ripiene-al-forno/">Zucchine Ripiene al Forno<span class="compact-index-ja">（ズッキーニの詰め物焼き）</span></a>
+            <a href="/recipes/zucchine-trifolate/">Zucchine Trifolate<span class="compact-index-ja">（ズッキーニのガーリックソテー）</span></a>
             </div>
           </div>
           <div class="compact-index-group">
             <h3>ドルチェ（デザート）</h3>
             <div class="compact-index-links">
-            <a href="/recipes/baba-al-rum/">Babà al Rum</a>
-            <a href="/recipes/baci-di-dama/">Baci di dama</a>
-            <a href="/recipes/biancomangiare/">Biancomangiare</a>
-            <a href="/recipes/budino-al-cioccolato/">Budino al Cioccolato</a>
-            <a href="/recipes/cannoli-siciliani/">Cannoli Siciliani</a>
-            <a href="/recipes/cantucci-e-vin-santo/">Cantucci e Vin Santo</a>
-            <a href="/recipes/cassata-siciliana/">Cassata Siciliana</a>
-            <a href="/recipes/crostata-di-ricotta/">Crostata di Ricotta</a>
-            <a href="/recipes/frittelle-di-carnevale/">Frittelle di Carnevale</a>
-            <a href="/recipes/gelo-di-melone/">Gelo di Melone</a>
-            <a href="/recipes/granita-al-caffe-con-panna/">Granita al Caffè con Panna</a>
-            <a href="/recipes/granita-al-limone/">Granita al Limone</a>
-            <a href="/recipes/maritozzi-con-la-panna/">Maritozzi con la Panna</a>
-            <a href="/recipes/panna-cotta/">Panna Cotta</a>
-            <a href="/recipes/pardulas/">Pardulas</a>
-            <a href="/recipes/pastiera-napoletana/">Pastiera Napoletana</a>
-            <a href="/recipes/pesche-ripiene-al-forno-con-amaretti/">Pesche Ripiene al Forno con Amaretti</a>
-            <a href="/recipes/ricciarelli-di-siena/">Ricciarelli di Siena</a>
-            <a href="/recipes/sbrisolona/">Sbrisolona</a>
-            <a href="/recipes/seadas/">Seadas</a>
-            <a href="/recipes/semifreddo-al-torroncino/">Semifreddo al Torroncino</a>
-            <a href="/recipes/sfogliatelle-ricce/">Sfogliatelle Ricce</a>
-            <a href="/recipes/sorbetto-alla-pesca/">Sorbetto alla Pesca</a>
-            <a href="/recipes/struffoli-napoletani/">Struffoli Napoletani</a>
-            <a href="/recipes/tiramisu/">Tiramisù</a>
-            <a href="/recipes/torta-caprese/">Torta Caprese</a>
-            <a href="/recipes/torta-della-nonna/">Torta della Nonna</a>
-            <a href="/recipes/torta-di-nocciole-piemontese/">Torta di Nocciole Piemontese</a>
-            <a href="/recipes/torta-margherita/">Torta Margherita</a>
-            <a href="/recipes/zabaione/">Zabaione</a>
-            <a href="/recipes/zuccotto/">Zuccotto</a>
-            <a href="/recipes/zuppa-inglese/">Zuppa Inglese</a>
+            <a href="/recipes/baba-al-rum/">Babà al Rum<span class="compact-index-ja">（ラム酒香るナポリ風ババ）</span></a>
+            <a href="/recipes/baci-di-dama/">Baci di dama<span class="compact-index-ja">（バーチ・ディ・ダーマ）</span></a>
+            <a href="/recipes/biancomangiare/">Biancomangiare<span class="compact-index-ja">（シチリア風アーモンドミルクのブランマンジェ）</span></a>
+            <a href="/recipes/budino-al-cioccolato/">Budino al Cioccolato<span class="compact-index-ja">（チョコレートのブディーノ）</span></a>
+            <a href="/recipes/cannoli-siciliani/">Cannoli Siciliani<span class="compact-index-ja">（シチリア風カンノーリ）</span></a>
+            <a href="/recipes/cantucci-e-vin-santo/">Cantucci e Vin Santo<span class="compact-index-ja">（カントゥッチとヴィン・サント）</span></a>
+            <a href="/recipes/cassata-siciliana/">Cassata Siciliana<span class="compact-index-ja">（シチリア風カッサータ）</span></a>
+            <a href="/recipes/crostata-di-ricotta/">Crostata di Ricotta<span class="compact-index-ja">（リコッタチーズのクロスタータ）</span></a>
+            <a href="/recipes/frittelle-di-carnevale/">Frittelle di Carnevale<span class="compact-index-ja">（ヴェネツィア風カーニバルの揚げ菓子）</span></a>
+            <a href="/recipes/gelo-di-melone/">Gelo di Melone<span class="compact-index-ja">（シチリア風スイカのジェーロ）</span></a>
+            <a href="/recipes/granita-al-caffe-con-panna/">Granita al Caffè con Panna<span class="compact-index-ja">（コーヒーグラニータと生クリーム）</span></a>
+            <a href="/recipes/granita-al-limone/">Granita al Limone<span class="compact-index-ja">（レモンのグラニータ）</span></a>
+            <a href="/recipes/maritozzi-con-la-panna/">Maritozzi con la Panna<span class="compact-index-ja">（生クリームを挟んだマリトッツォ）</span></a>
+            <a href="/recipes/panna-cotta/">Panna Cotta<span class="compact-index-ja">（パンナコッタ）</span></a>
+            <a href="/recipes/pardulas/">Pardulas<span class="compact-index-ja">（サフラン香るリコッタの焼き菓子 パルドゥラス）</span></a>
+            <a href="/recipes/pastiera-napoletana/">Pastiera Napoletana<span class="compact-index-ja">（ナポリ風リコッタと小麦のタルト）</span></a>
+            <a href="/recipes/pesche-ripiene-al-forno-con-amaretti/">Pesche Ripiene al Forno con Amaretti<span class="compact-index-ja">（桃のリピエーネ アマレッティとナッツの詰め物）</span></a>
+            <a href="/recipes/ricciarelli-di-siena/">Ricciarelli di Siena<span class="compact-index-ja">（シエナ風アーモンド菓子 リッチャレッリ）</span></a>
+            <a href="/recipes/sbrisolona/">Sbrisolona<span class="compact-index-ja">（スブリゾローナ）</span></a>
+            <a href="/recipes/seadas/">Seadas<span class="compact-index-ja">（サルデーニャ風チーズフリット はちみつ添え）</span></a>
+            <a href="/recipes/semifreddo-al-torroncino/">Semifreddo al Torroncino<span class="compact-index-ja">（トロンチーノのセミフレッド）</span></a>
+            <a href="/recipes/sfogliatelle-ricce/">Sfogliatelle Ricce<span class="compact-index-ja">（貝殻形のパリパリ焼き菓子 スフォリアテッレ）</span></a>
+            <a href="/recipes/sorbetto-alla-pesca/">Sorbetto alla Pesca<span class="compact-index-ja">（桃のソルベット）</span></a>
+            <a href="/recipes/struffoli-napoletani/">Struffoli Napoletani<span class="compact-index-ja">（ナポリ風はちみつの揚げ菓子 ストゥルッフォリ）</span></a>
+            <a href="/recipes/tiramisu/">Tiramisù<span class="compact-index-ja">（ティラミス）</span></a>
+            <a href="/recipes/torta-caprese/">Torta Caprese<span class="compact-index-ja">（カプリ風チョコレートとアーモンドのケーキ）</span></a>
+            <a href="/recipes/torta-della-nonna/">Torta della Nonna<span class="compact-index-ja">（松の実とカスタードのタルト）</span></a>
+            <a href="/recipes/torta-di-nocciole-piemontese/">Torta di Nocciole Piemontese<span class="compact-index-ja">（ピエモンテ風ヘーゼルナッツケーキ）</span></a>
+            <a href="/recipes/torta-margherita/">Torta Margherita<span class="compact-index-ja">（トルタ・マルゲリータ）</span></a>
+            <a href="/recipes/zabaione/">Zabaione<span class="compact-index-ja">（ザバイオーネ）</span></a>
+            <a href="/recipes/zuccotto/">Zuccotto<span class="compact-index-ja">（ズッコット）</span></a>
+            <a href="/recipes/zuppa-inglese/">Zuppa Inglese<span class="compact-index-ja">（ズッパ・イングレーゼ）</span></a>
             </div>
           </div>
           
@@ -486,5 +490,6 @@
       <p>&copy; 2026 Tabelia &nbsp;&middot;&nbsp; <a href="mailto:support@tabelia.app">support@tabelia.app</a></p>
     </footer>
   </div>
+  <script src="/recipes/search.js" defer></script>
 </body>
 </html>
