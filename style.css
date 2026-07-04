@@ -272,6 +272,44 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 }
 .step-bullets li::before { content: '・'; flex-shrink: 0; width: 1em; }
 
+/* 構造化ステップ（title/action_items/completion_criteria等）*/
+.step-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.6rem; }
+
+.action-list { list-style: none; padding: 0; margin: 0 0 0.4rem; }
+.action-item { display: flex; gap: 0.6rem; margin-bottom: 0.6rem; }
+.action-item:last-child { margin-bottom: 0; }
+.action-item-number {
+  flex-shrink: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #f3f3f3;
+  color: #c0392b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-item-body { flex: 1; line-height: 1.75; }
+.action-item-text { display: block; }
+.parallel-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #8a6d3b;
+  background: #faf1df;
+  border-radius: 4px;
+  padding: 0.1rem 0.45rem;
+  margin-bottom: 0.25rem;
+}
+.parallel-note { display: block; color: #888; font-size: 0.85rem; }
+
+.support-block { margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed #eee; }
+.step-block-heading { font-size: 0.72rem; font-weight: 700; color: #999; margin-bottom: 0.3rem; }
+.support-text { font-size: 0.86rem; color: #555; margin-bottom: 0.25rem; line-height: 1.65; }
+.support-text:last-child { margin-bottom: 0; }
+
 /* セクション区切りはカードの外・左アクセントバー付き */
 .step-section {
   display: flex;
