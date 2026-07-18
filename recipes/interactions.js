@@ -11,6 +11,7 @@
   var state = { servings: data.recipe.baseServings, selections: {} };
   var dialog = document.getElementById('substitution-dialog');
   var activeIngredientId = null;
+  var lockedScrollY = 0;
   var countUnits = new Set(['枝','個','枚','本','片','束','株','房','粒','缶','パック','袋','セット','尾','切れ','羽','頭','茎','ひとつまみ','ひとにぎり','適量']);
 
   function esc(value) {
@@ -312,6 +313,23 @@
     if (substitutes.length) html += '<section><h3>代わりに使える食材</h3>' + substitutes.map(function (o) { return optionHtml(ingredient,o,selectedId); }).join('') + '</section>';
     document.getElementById('substitution-options').innerHTML = html;
     if (typeof dialog.showModal === 'function') dialog.showModal(); else dialog.setAttribute('open','');
+    lockPageScroll();
+  }
+
+  function lockPageScroll() {
+    if (document.documentElement.classList.contains('dialog-open')) return;
+    lockedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.documentElement.classList.add('dialog-open');
+    document.body.classList.add('dialog-open');
+    document.body.style.top = '-' + lockedScrollY + 'px';
+  }
+
+  function unlockPageScroll() {
+    if (!document.documentElement.classList.contains('dialog-open')) return;
+    document.documentElement.classList.remove('dialog-open');
+    document.body.classList.remove('dialog-open');
+    document.body.style.top = '';
+    window.scrollTo(0, lockedScrollY);
   }
   function bindSubstitutionTriggers() {
     document.querySelectorAll('[data-substitution-trigger]').forEach(function (button) { button.onclick = function () { openDialog(button.getAttribute('data-substitution-trigger')); }; });
@@ -324,6 +342,7 @@
     if (dialog.returnValue === 'confirm' && activeIngredientId != null) {
       var chosen = dialog.querySelector('input[name="substitution"]:checked'); state.selections[activeIngredientId] = chosen && chosen.value ? chosen.value : null; render();
     }
+    unlockPageScroll();
   });
   bindSubstitutionTriggers(); render();
 })();
