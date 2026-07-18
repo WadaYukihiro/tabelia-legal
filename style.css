@@ -762,6 +762,108 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-card img, .course-card img, .region-card img, .pairing-card img { transition: transform 0.2s, box-shadow 0.2s; }
 .recipe-card:hover img, .course-card:hover img, .region-card:hover img, .pairing-card:hover img { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(55,38,25,0.12); }
 
+/* Recipe collection hub */
+.recipe-hub-page { max-width: 1240px; }
+.recipe-hub-page .site-header { margin-bottom: 0; }
+.recipe-hub-hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2.5rem, 7vw, 6rem);
+  align-items: center;
+  min-height: 590px;
+  padding: 4rem 0 5rem;
+}
+.recipe-hub-copy h1 {
+  font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: clamp(3rem, 5.2vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1.07;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.4rem;
+}
+.recipe-hub-copy h1 span { color: #9e2f23; font-style: italic; }
+.recipe-hub-copy > p:not(.eyebrow):not(.recipe-hub-stat) { max-width: 520px; color: #625a50; line-height: 2; }
+.recipe-hub-stat { display: flex; align-items: baseline; gap: 0.7rem; margin-top: 1.8rem; }
+.recipe-hub-stat strong { color: #9e2f23; font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; line-height: 1; }
+.recipe-hub-stat span { color: #777066; font-size: 0.82rem; }
+.recipe-hub-visual { position: relative; display: block; color: #fff; text-decoration: none; }
+.recipe-hub-visual::after { content: ''; position: absolute; inset: 52% 0 0; border-radius: 0 0 70px 10px; background: linear-gradient(transparent, rgba(26,18,12,0.78)); }
+.recipe-hub-visual img { display: block; width: 100%; height: 500px; object-fit: cover; border-radius: 10px 10px 70px 10px; box-shadow: 0 24px 60px rgba(60,40,24,0.18); }
+.recipe-hub-visual > span { position: absolute; z-index: 1; left: 1.5rem; right: 2rem; bottom: 1.4rem; }
+.recipe-hub-visual strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.65rem; line-height: 1.15; }
+.recipe-hub-visual small { display: block; color: rgba(255,255,255,0.8); margin-top: 0.25rem; }
+
+.hub-discovery {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+  padding: 2rem 2.25rem;
+  background: #252018;
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(46,32,21,0.14);
+}
+.hub-discovery .eyebrow { color: #dfaa78; }
+.hub-discovery h2 { margin: 0; padding: 0; border: 0; color: #fff; font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 1.8rem; }
+.hub-search { max-width: none; margin: 0; order: 0; }
+.hub-search .header-search-input { min-height: 54px; border: 0; border-radius: 10px; padding: 0.7rem 1.1rem; font-size: 0.92rem; }
+.hub-quick-links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.13); }
+.hub-quick-links a { color: #d9d3cb; border: 1px solid rgba(255,255,255,0.18); border-radius: 999px; padding: 0.3rem 0.75rem; font-size: 0.75rem; text-decoration: none; }
+.hub-quick-links a:hover { color: #fff; border-color: #dfaa78; }
+
+.recipe-hub-page .hub-section { margin-top: 6rem; }
+.hub-section-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 1.6rem; }
+.hub-section-heading h2 { margin: 0; padding: 0; border: 0; font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; }
+.hub-section-heading > p { max-width: 370px; color: #756d63; font-size: 0.85rem; text-align: right; }
+.recipe-hub-page .recipe-grid { grid-template-columns: repeat(3, 1fr); gap: 2rem 1.25rem; }
+.recipe-hub-page .recipe-card img { aspect-ratio: 4 / 3; border-radius: 10px 10px 38px 10px; }
+.recipe-hub-page .recipe-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.18rem; }
+.recipe-hub-page .course-grid { grid-template-columns: repeat(3, 1fr); }
+.recipe-hub-page .region-grid { grid-template-columns: repeat(4, 1fr); }
+.recipe-hub-page .course-card, .recipe-hub-page .region-card { position: relative; overflow: hidden; border-radius: 12px 12px 42px 12px; background: #252018; }
+.recipe-hub-page .course-card img, .recipe-hub-page .region-card img { aspect-ratio: 4 / 3; border-radius: inherit; opacity: 0.82; }
+.recipe-hub-page .course-card::after, .recipe-hub-page .region-card::after { content: ''; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(20,14,10,0.9)); pointer-events: none; }
+.recipe-hub-page .course-card-body, .recipe-hub-page .region-card-body { position: absolute; z-index: 1; left: 1rem; right: 1rem; bottom: 0.9rem; padding: 0; color: #fff; }
+.recipe-hub-page .course-card-title, .recipe-hub-page .region-card-title { font-size: 0.98rem; }
+.recipe-hub-page .course-card-count, .recipe-hub-page .region-card-count { color: rgba(255,255,255,0.72); }
+.recipe-hub-page .chef-intro { margin-top: 6rem; }
+.recipe-hub-page .compact-index { padding-top: 2rem; border-top: 1px solid #ded6cb; }
+
+/* Recipe detail */
+.recipe-article { max-width: 1080px; margin: 0 auto; }
+.recipe-heading { margin: 2.5rem 0 1.5rem; }
+.recipe-heading .eyebrow { margin-bottom: 0.5rem; }
+.recipe-heading .recipe-title { font-size: clamp(2.7rem, 6vw, 4.5rem); line-height: 1; margin-bottom: 0.45rem; }
+.recipe-heading .recipe-subtitle { color: #756d63; font-size: 1.08rem; margin-bottom: 0; }
+.recipe-article .recipe-hero { width: 100%; max-height: 610px; aspect-ratio: 16 / 9; margin-bottom: 1.25rem; }
+.recipe-article .recipe-meta { margin-bottom: 1.2rem; }
+.recipe-article .recipe-description { max-width: 760px; font-size: 1rem; line-height: 1.9; margin-bottom: 1rem; }
+.recipe-byline { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; color: #938b81; font-size: 0.75rem; margin-bottom: 1.5rem; }
+.recipe-byline strong { color: #625a50; }
+.recipe-jump-nav { position: sticky; top: 0; z-index: 20; display: flex; gap: 0.45rem; padding: 0.65rem; margin: 0 -0.65rem 2.5rem; border: 1px solid rgba(221,213,201,0.92); border-radius: 12px; background: rgba(251,250,247,0.94); box-shadow: 0 8px 25px rgba(58,42,28,0.07); backdrop-filter: blur(12px); }
+.recipe-jump-nav a { flex: 1; color: #554d43; border-radius: 8px; padding: 0.55rem 0.75rem; font-size: 0.8rem; font-weight: 700; text-align: center; text-decoration: none; }
+.recipe-jump-nav a:hover { color: #9e2f23; background: #eee7dd; }
+.recipe-article .recipe-body { margin-top: 0; grid-template-columns: 315px 1fr; gap: 3.25rem; }
+.recipe-ingredients { scroll-margin-top: 5rem; padding: 1.25rem 1.25rem 0.5rem; border: 1px solid #e5ddd2; border-radius: 14px; background: #f2ece3; }
+.recipe-ingredients h2 { margin-top: 0; border: 0; padding-bottom: 0; }
+.recipe-ingredients .ingredient-list { border-top-color: #ddd3c6; }
+.recipe-ingredients .ingredient-list li { border-bottom-color: #ddd3c6; }
+.recipe-steps { scroll-margin-top: 5rem; }
+.recipe-steps > h2 { margin-top: 0; font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 2rem; }
+.step-card { scroll-margin-top: 5rem; padding: 1.35rem 1.5rem; }
+.step-number { font-family: 'Cormorant Garamond', serif; font-size: 2rem; }
+.recipe-story { max-width: 800px; margin: 5rem auto 0; scroll-margin-top: 5rem; padding: 3rem; border-radius: 12px 12px 52px 12px; background: #eee5d9; }
+.recipe-story h2 { border: 0; margin-top: 0; padding: 0; font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 2rem; }
+.recipe-story p { color: #51493f; font-size: 0.95rem; line-height: 2; }
+.pairings-section, .related-section { scroll-margin-top: 5rem; }
+.recipe-list-page .page-title { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.8rem; }
+.recipe-list-page .recipe-index-lead { max-width: 760px; line-height: 1.9; margin-bottom: 2.5rem; }
+.recipe-list-page .recipe-grid { grid-template-columns: repeat(3, 1fr); gap: 2rem 1.25rem; }
+.recipe-list-page .recipe-card img { aspect-ratio: 4 / 3; border-radius: 10px 10px 38px 10px; }
+
 /* Responsive */
 @media (max-width: 600px) {
   .container { padding-left: 1rem; padding-right: 1rem; }
@@ -803,10 +905,35 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   .home-philosophy { grid-template-columns: 1fr; gap: 2rem; margin: 5rem 0 0; padding: 3rem 1.4rem; border-radius: 40px 8px 40px 8px; }
   .section-heading-row { align-items: flex-end; }
   .home-page .app-cta { margin-top: 5rem; padding: 1.5rem; }
+  .recipe-hub-hero { grid-template-columns: 1fr; min-height: auto; padding: 3rem 0 4rem; gap: 2.5rem; }
+  .recipe-hub-copy h1 { font-size: 2.65rem; overflow-wrap: anywhere; }
+  .recipe-hub-visual { order: -1; }
+  .recipe-hub-visual img { height: 360px; border-radius: 8px 8px 50px 8px; }
+  .recipe-hub-visual::after { border-radius: 0 0 50px 8px; }
+  .hub-discovery { grid-template-columns: 1fr; padding: 1.4rem; gap: 1rem; }
+  .hub-quick-links { grid-column: auto; flex-wrap: nowrap; overflow-x: auto; max-height: none; padding-bottom: 0.2rem; }
+  .hub-quick-links a { flex: 0 0 auto; }
+  .recipe-hub-page .hub-section { margin-top: 4.5rem; }
+  .hub-section-heading { display: block; }
+  .hub-section-heading > p { margin-top: 0.55rem; text-align: left; }
+  .recipe-hub-page .recipe-grid, .recipe-list-page .recipe-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 0.8rem; }
+  .recipe-hub-page .course-grid, .recipe-hub-page .region-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; }
+  .recipe-hub-page .course-card-title, .recipe-hub-page .region-card-title { font-size: 0.82rem; }
+  .recipe-hub-page .course-card-count, .recipe-hub-page .region-card-count { font-size: 0.68rem; }
+  .recipe-heading { margin-top: 2rem; }
+  .recipe-heading .recipe-title { font-size: 2.45rem; }
+  .recipe-article .recipe-hero { aspect-ratio: 4 / 3; border-radius: 10px 10px 45px 10px; }
+  .recipe-jump-nav { overflow-x: auto; }
+  .recipe-jump-nav a { flex: 0 0 auto; min-width: 76px; }
+  .recipe-ingredients { padding: 1rem 1rem 0.3rem; }
+  .recipe-story { margin-top: 4rem; padding: 1.5rem; border-radius: 10px 10px 38px 10px; }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
   .home-hero { grid-template-columns: 1fr 0.85fr; min-height: 590px; gap: 2.5rem; }
   .home-hero-image img { height: 500px; }
   .home-philosophy { margin-left: 0; margin-right: 0; padding: 4rem 3rem; }
+  .recipe-hub-hero { grid-template-columns: 0.9fr 1.1fr; gap: 2.5rem; }
+  .recipe-hub-visual img { height: 430px; }
+  .recipe-hub-page .region-grid { grid-template-columns: repeat(2, 1fr); }
 }
