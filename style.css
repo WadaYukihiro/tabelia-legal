@@ -479,8 +479,16 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   align-items: flex-start;
 }
 .app-cta-body { min-width: 0; }
-.app-cta h2 { border: none; margin: 0 0 0.6rem; padding: 0; font-size: 1.05rem; }
+.app-cta h2 { border: none; margin: 0 0 0.6rem; padding: 0; font-size: 1.2rem; }
 .app-cta p { font-size: 0.88rem; color: #555; }
+.app-cta .app-cta-kicker { margin: 0 0 0.25rem; color: #a53629; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.09em; }
+.app-cta .app-cta-lead { max-width: 650px; margin: 0; color: #3f3932; line-height: 1.75; }
+.app-cta-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.app-cta-benefits li { padding: 0.75rem; border: 1px solid #e5ddd3; border-radius: 10px; background: #fff; }
+.app-cta-benefits strong, .app-cta-benefits span { display: block; }
+.app-cta-benefits strong { color: #9e2f23; font-size: 0.78rem; }
+.app-cta-benefits span { margin-top: 0.25rem; color: #605850; font-size: 0.72rem; line-height: 1.55; }
+.app-cta .app-cta-trial { margin: 0.85rem 0 0; color: #6f5b46; font-size: 0.76rem; font-weight: 700; }
 .app-cta .appstore-badge { margin-top: 0.75rem; }
 
 /* Recipe index */
@@ -978,6 +986,7 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .home-philosophy { grid-template-columns: 1fr; gap: 2rem; margin: 5rem 0 0; padding: 3rem 1.4rem; border-radius: 40px 8px 40px 8px; }
   .section-heading-row { align-items: flex-end; }
   .home-page .app-cta { margin-top: 5rem; padding: 1.5rem; }
+  .app-cta-benefits { grid-template-columns: 1fr; }
   .recipe-hub-hero { grid-template-columns: 1fr; min-height: auto; padding: 3rem 0 4rem; gap: 2.5rem; }
   .recipe-hub-copy h1 { font-size: 2.65rem; overflow-wrap: anywhere; }
   .recipe-hub-visual { order: -1; }
