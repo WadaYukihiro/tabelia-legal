@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>21分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>4時間10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,14 +94,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">完熟スイカ</span><span class="ingredient-qty">1800g</span><span class="ingredient-notes">皮と種を除き、果汁1000mlを取る。種が残ると口当たりが悪い</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">90g</span><span class="ingredient-notes">スイカの甘みにより70〜110gで調整</span></li>
-          <li><span class="ingredient-name">コーンスターチ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">スイカ果汁で溶いてから加熱する</span></li>
-          <li><span class="ingredient-name">ダークチョコレートチップ</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">スイカの種に見立てる</span></li>
-          <li><span class="ingredient-name">ピスタチオ（刻み）</span><span class="ingredient-qty">25g</span></li>
-          <li><span class="ingredient-name">シナモンパウダー</span><span class="ingredient-qty">1g</span><span class="ingredient-notes">仕上げに少量</span></li>
+              <li data-ingredient-row="6e5dd3e8-f067-4316-81c3-7bb798dc5cef"><span class="ingredient-name" data-ingredient-name>完熟スイカ</span><span class="ingredient-qty" data-ingredient-qty>1800g</span><span class="ingredient-notes">皮と種を除き、果汁1000mlを取る。種が残ると口当たりが悪い</span></li>
+          <li data-ingredient-row="e23ac8ef-5871-4fc3-8485-c603dc3c5dbb"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>90g</span><span class="ingredient-notes">スイカの甘みにより70〜110gで調整</span></li>
+          <li data-ingredient-row="782beb6e-be7d-478e-afdb-5ba01361ed79"><span class="ingredient-name" data-ingredient-name>コーンスターチ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">スイカ果汁で溶いてから加熱する</span><button type="button" class="substitution-trigger" data-substitution-trigger="782beb6e-be7d-478e-afdb-5ba01361ed79"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="21ee2c8f-2375-4ad2-a48f-fd4894ab5d54"><span class="ingredient-name" data-ingredient-name>ダークチョコレートチップ</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">スイカの種に見立てる</span></li>
+          <li data-ingredient-row="dde21c89-9330-4885-b7b1-eaae487585a5"><span class="ingredient-name" data-ingredient-name>ピスタチオ（刻み）</span><span class="ingredient-qty" data-ingredient-qty>25g</span></li>
+          <li data-ingredient-row="4df2e896-9711-4fca-9fba-2b8a76c14ede"><span class="ingredient-name" data-ingredient-name>シナモンパウダー</span><span class="ingredient-qty" data-ingredient-qty>1g</span><span class="ingredient-notes">仕上げに少量</span></li>
               </ul>
             </section>
           </div>
@@ -294,6 +314,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d9cc4970-5d28-4e7e-aabd-c699aee75f4d","nameJa":"シチリア風スイカのジェーロ","baseServings":6,"minServings":4,"maxServings":20},"ingredients":[{"id":"6e5dd3e8-f067-4316-81c3-7bb798dc5cef","nameOriginal":"Anguria matura","nameJa":"完熟スイカ","nameEn":"Ripe watermelon","quantity":1800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮と種を除き、果汁1000mlを取る。種が残ると口当たりが悪い","substitutionOptions":[]},{"id":"e23ac8ef-5871-4fc3-8485-c603dc3c5dbb","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":90,"unit":"g","role":"essential","scalingBehavior":null,"notes":"スイカの甘みにより70〜110gで調整","substitutionOptions":[]},{"id":"782beb6e-be7d-478e-afdb-5ba01361ed79","nameOriginal":"Amido di mais","nameJa":"コーンスターチ","nameEn":"Cornstarch","quantity":80,"unit":"g","role":"technique","scalingBehavior":null,"notes":"スイカ果汁で溶いてから加熱する","substitutionOptions":[{"id":"1b05ef6e-4bfb-4392-83e1-201a29048f91","standardIngredientId":"782beb6e-be7d-478e-afdb-5ba01361ed79","nameJa":"片栗粉","nameEn":"Potato starch","authenticityImpact":-10,"flavorImpact":"より弾力が出て、伝統的ななめらかさから少し離れる","textureImpact":null,"procedureChanges":["70gに減らし、加熱しすぎない"],"affectedStepNumbers":[2,3],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"スイカ果汁で溶いてから加熱する。弾力が出やすいため70gに減らす","action":"update","nameEn":"Potato starch","nameJa":"片栗粉","quantity":70,"targetNameJa":"コーンスターチ"}],"stepPatches":[{"title":"でんぷんを溶く","action":"replace","stepNumber":2,"actionItems":["鍋に片栗粉70gと砂糖90gを入れる。","スイカ果汁を少しずつ加えながら泡立て器で混ぜる。","粉の塊がなくなったら残りの果汁を加える。"],"instruction":"鍋に片栗粉70gと砂糖90gを入れ、スイカ果汁を少しずつ加えながら泡立て器で混ぜる。粉の塊がなくなったら残りの果汁を加える。","cautionItems":["果汁を一度に入れるとダマになる。最初は少量ずつ加える。"],"changeReason":"片栗粉は弾力が出やすいため、70gに減らす","completionCriteria":["粉の塊がなく、均一な赤い液体になれば次へ。"]},{"title":"とろみをつける","action":"replace","stepNumber":3,"actionItems":["鍋を中火にかけ、底をこするように絶えず混ぜながら加熱する。"],"instruction":"鍋を中火にかけ、底をこするように絶えず混ぜながら加熱する。液体に透明感が出て、泡立て器の跡が一瞬残るとろみになったらすぐ火を止める（沸騰後30秒〜1分）。","cautionItems":["片栗粉は加熱しすぎると弾力が強く出る。とろみが出たらすぐ火を止める。"],"changeReason":"片栗粉はコーンスターチより弾力が出やすいため、加熱を短くする","completionCriteria":["沸騰後30秒〜1分。液体が透明感を持ち、泡立て器の跡が一瞬残るとろみになれば次へ。"]}]}]},{"id":"21ee2c8f-2375-4ad2-a48f-fd4894ab5d54","nameOriginal":"Gocce di cioccolato fondente","nameJa":"ダークチョコレートチップ","nameEn":"Dark chocolate chips","quantity":30,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"スイカの種に見立てる","substitutionOptions":[]},{"id":"dde21c89-9330-4885-b7b1-eaae487585a5","nameOriginal":"Pistacchi tritati","nameJa":"ピスタチオ（刻み）","nameEn":"Chopped pistachios","quantity":25,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4df2e896-9711-4fca-9fba-2b8a76c14ede","nameOriginal":"Cannella in polvere","nameJa":"シナモンパウダー","nameEn":"Ground cinnamon","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"仕上げに少量","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"スイカは皮と種を除き、果肉を2〜3cm角に切る。ミキサーでなめらかにし、細かいザルでこして果汁1000mlを取る。","title":"スイカ果汁を取る","actionItems":["スイカの皮と種を除き、果肉を2〜3cm角に切る。","ミキサーでなめらかにする。","細かいザルでこして果汁1000mlを取る。"],"parallelItems":[],"completionCriteria":["種や繊維が残らない、澄んだ赤い果汁が1000ml取れれば次へ。"],"cautionItems":["種が残ると口当たりが悪くなるため、必ずこす。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋にコーンスターチ80gと砂糖90gを入れ、スイカ果汁を少しずつ加えながら泡立て器で混ぜる。粉の塊がなくなったら残りの果汁を加える。","title":"でんぷんを溶く","actionItems":["鍋にコーンスターチ80gと砂糖90gを入れる。","スイカ果汁を少しずつ加えながら泡立て器で混ぜる。","粉の塊がなくなったら残りの果汁を加える。"],"parallelItems":[],"completionCriteria":["粉の塊がなく、均一な赤い液体になれば次へ。"],"cautionItems":["果汁を一度に入れるとダマになる。最初は少量ずつ加える。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鍋を中火にかけ、底をこするように絶えず混ぜながら加熱する。液体が透明感を持ち、泡立て器の跡が一瞬残るとろみになったら火を止める（沸騰後1〜2分）。","title":"とろみをつける","actionItems":["鍋を中火にかけ、底をこするように絶えず混ぜながら加熱する。"],"parallelItems":[],"completionCriteria":["沸騰後1〜2分。液体が透明感を持ち、泡立て器の跡が一瞬残るとろみになれば次へ。"],"cautionItems":["焦げやすいので底をこすり続ける。強く沸かしすぎると香りが飛ぶ。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"熱いうちにグラスまたは小さな型に流し入れる。表面が平らになったら粗熱を取り、冷蔵庫で4時間以上冷やし固める。","title":"器に流して冷やす","actionItems":["熱いうちにグラスまたは小さな型に流し入れる。","粗熱を取る。","冷蔵庫で4時間以上冷やし固める。"],"parallelItems":[],"completionCriteria":["4時間以上。表面が揺れても流れず、スプーンを入れるとやわらかく切れる状態になれば次へ。"],"cautionItems":["熱いうちにチョコレートをのせると溶けるため、飾りは冷えてから行う。"],"tipItems":[],"durationMinutes":250,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"冷えたジェーロにダークチョコレートチップ、刻みピスタチオ、シナモンパウダー少量を散らす。冷たいまま提供する。","title":"飾って提供する","actionItems":["ダークチョコレートチップを散らす。","刻みピスタチオを散らす。","シナモンパウダー少量を振る。"],"parallelItems":[],"completionCriteria":["飾りを散らし、冷たい状態なら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

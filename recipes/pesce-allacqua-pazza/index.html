@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">マダイまたはスズキ（丸ごと、鱗取り・内臓除去済み）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">厚い部分に包丁で切れ目を入れる</span></li>
-          <li><span class="ingredient-name">ミニトマト（チェリートマト）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">半分に切る</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">つぶす</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">水</span><span class="ingredient-qty">150ml</span><span class="ingredient-notes">これが「狂った水」の素</span></li>
-          <li><span class="ingredient-name">ガエタオリーブ（黒）</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
+              <li data-ingredient-row="06ee388b-fddd-4acd-9da6-08f181847511"><span class="ingredient-name" data-ingredient-name>マダイまたはスズキ（丸ごと、鱗取り・内臓除去済み）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">厚い部分に包丁で切れ目を入れる</span><button type="button" class="substitution-trigger" data-substitution-trigger="06ee388b-fddd-4acd-9da6-08f181847511"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="29478dd2-24b4-451f-9a81-cf8ba843333a"><span class="ingredient-name" data-ingredient-name>ミニトマト（チェリートマト）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">半分に切る</span></li>
+          <li data-ingredient-row="be7e453e-deb7-4767-bc87-ea5933b5ceec"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">つぶす</span></li>
+          <li data-ingredient-row="ef87f1c5-fb3b-430c-94bf-cf033a6133ac"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="c6527667-ff48-4203-afa8-fd7ae514d706"><span class="ingredient-name" data-ingredient-name>水</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><span class="ingredient-notes">これが「狂った水」の素</span></li>
+          <li data-ingredient-row="bc608598-47fc-48ab-b147-55ce8523fb16"><span class="ingredient-name" data-ingredient-name>ガエタオリーブ（黒）</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="4cfd4741-7372-415b-925a-fb61fd22bc38"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="9e2abdc0-fa84-489d-928a-780b2821e4c8"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
               </ul>
             </section>
           </div>
@@ -255,6 +275,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"5f26c8db-c55a-45b4-b1d3-f535a1dbb4ce","nameJa":"白身魚のアクアパッツァ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"06ee388b-fddd-4acd-9da6-08f181847511","nameOriginal":"Dentice o branzino intero","nameJa":"マダイまたはスズキ（丸ごと、鱗取り・内臓除去済み）","nameEn":"Whole sea bream or sea bass","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"厚い部分に包丁で切れ目を入れる","substitutionOptions":[{"id":"296fae56-65db-41af-8520-ab67c51a93b2","standardIngredientId":"06ee388b-fddd-4acd-9da6-08f181847511","nameJa":"ヒラメ（丸ごと）","nameEn":"Whole flounder","authenticityImpact":-5,"flavorImpact":"淡白でアクア・パッツァと相性が良い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"29478dd2-24b4-451f-9a81-cf8ba843333a","nameOriginal":"Pomodorini ciliegino","nameJa":"ミニトマト（チェリートマト）","nameEn":"Cherry tomatoes","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"半分に切る","substitutionOptions":[]},{"id":"be7e453e-deb7-4767-bc87-ea5933b5ceec","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"essential","scalingBehavior":null,"notes":"つぶす","substitutionOptions":[]},{"id":"ef87f1c5-fb3b-430c-94bf-cf033a6133ac","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c6527667-ff48-4203-afa8-fd7ae514d706","nameOriginal":"Acqua","nameJa":"水","nameEn":"Water","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"これが「狂った水」の素","substitutionOptions":[]},{"id":"bc608598-47fc-48ab-b147-55ce8523fb16","nameOriginal":"Olive di Gaeta","nameJa":"ガエタオリーブ（黒）","nameEn":"Gaeta black olives","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4cfd4741-7372-415b-925a-fb61fd22bc38","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"9e2abdc0-fa84-489d-928a-780b2821e4c8","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・ミニトマトを半分に切る\n・イタリアンパセリをみじん切りにする","title":"材料を準備する","actionItems":["ミニトマト200gを半分に切る。","イタリアンパセリをみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパン（魚が入るサイズ）にオリーブオイルとにんにく（つぶす）を入れ中火にかけ、香りが立ったらミニトマトとオリーブを加えて2分炒める。","title":"ベースを炒める","actionItems":["フライパンにオリーブオイル50mlとつぶしたにんにくを入れ中火にかける。","香りが立ったらミニトマトとオリーブを加えて2分炒める。"],"parallelItems":[],"completionCriteria":["トマトが軽く崩れ始めたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"白ワインと水を加えて沸騰させ、魚を入れる。スプーンで液体を魚の上にかけながら強めの中火で4分。","title":"魚を入れる","actionItems":["白ワイン100mlと水150mlを加えて沸騰させる。","魚を入れ、スプーンで液体を魚の上にかけながら強めの中火で4分煮る。"],"parallelItems":[],"completionCriteria":["4分後に次のステップへ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"魚をそっとひっくり返し、蓋をして弱火で8〜10分。身が白くなり、骨の付け根から外れる感触があれば完成。煮すぎない。","title":"蒸し煮にする","actionItems":["魚をそっとひっくり返し、蓋をして弱火で8〜10分煮る。"],"parallelItems":[],"completionCriteria":["身が白くなり、骨の付け根から外れる感触があれば完成。"],"cautionItems":["煮すぎると身が硬くなる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"パセリを散らし、スープごと深皿に盛る。パンでスープをぬぐって食べるのが流儀。","title":"スープごと深皿に盛る","actionItems":["パセリを散らし、スープごと深皿に盛る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

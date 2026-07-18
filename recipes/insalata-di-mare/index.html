@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>35分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>55分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・沿岸部</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">生タコ</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">粗塩で揉んでぬめりを取り、洗う</span></li>
-          <li><span class="ingredient-name">エビ</span><span class="ingredient-qty">8尾</span><span class="ingredient-notes">殻付き。背わたを取る</span></li>
-          <li><span class="ingredient-name">ムール貝</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">ひげを取り、殻をこすり洗いする</span></li>
-          <li><span class="ingredient-name">イカ</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">内臓と軟骨を取り、輪切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">6枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">果汁を絞る</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">70ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">8g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="c2fb7341-10d0-4e4e-9236-a7a569e3edb0"><span class="ingredient-name" data-ingredient-name>生タコ</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">粗塩で揉んでぬめりを取り、洗う</span></li>
+          <li data-ingredient-row="6c69adc5-7274-4502-8590-9b90357ace3e"><span class="ingredient-name" data-ingredient-name>エビ</span><span class="ingredient-qty" data-ingredient-qty>8尾</span><span class="ingredient-notes">殻付き。背わたを取る</span></li>
+          <li data-ingredient-row="c7c04048-1dae-4c5b-b956-30c3b95aea9b"><span class="ingredient-name" data-ingredient-name>ムール貝</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">ひげを取り、殻をこすり洗いする</span></li>
+          <li data-ingredient-row="bcd6b659-a41c-4e0a-bde9-16ac567742cf"><span class="ingredient-name" data-ingredient-name>イカ</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">内臓と軟骨を取り、輪切り</span></li>
+          <li data-ingredient-row="4f6f2e28-0588-45ec-9870-12856cb22094"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="14ef2e0d-c8c8-45f5-8170-913d246a73b2"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>6枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="b57218e2-11dd-4c8a-b54a-6c3ca6bb4cea"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">果汁を絞る</span></li>
+          <li data-ingredient-row="6846c1dc-b7e0-4b0a-916d-03775c7a1a41"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>70ml</span></li>
+          <li data-ingredient-row="84747aab-a0bf-4bcd-9140-71f23b9ed678"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>8g</span></li>
+          <li data-ingredient-row="de353f58-54c2-436e-982a-08a20a167725"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -277,6 +297,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"091e0dcf-f4d7-4166-a0d0-213d4dea7c91","nameJa":"混合魚介サラダ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"c2fb7341-10d0-4e4e-9236-a7a569e3edb0","nameOriginal":"Polpo","nameJa":"生タコ","nameEn":"Octopus","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"粗塩で揉んでぬめりを取り、洗う","substitutionOptions":[]},{"id":"6c69adc5-7274-4502-8590-9b90357ace3e","nameOriginal":"Gamberi","nameJa":"エビ","nameEn":"Shrimp","quantity":8,"unit":"尾","role":"essential","scalingBehavior":null,"notes":"殻付き。背わたを取る","substitutionOptions":[]},{"id":"c7c04048-1dae-4c5b-b956-30c3b95aea9b","nameOriginal":"Cozze","nameJa":"ムール貝","nameEn":"Mussels","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ひげを取り、殻をこすり洗いする","substitutionOptions":[]},{"id":"bcd6b659-a41c-4e0a-bde9-16ac567742cf","nameOriginal":"Calamari","nameJa":"イカ","nameEn":"Squid","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"内臓と軟骨を取り、輪切り","substitutionOptions":[]},{"id":"4f6f2e28-0588-45ec-9870-12856cb22094","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"14ef2e0d-c8c8-45f5-8170-913d246a73b2","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":6,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"b57218e2-11dd-4c8a-b54a-6c3ca6bb4cea","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"果汁を絞る","substitutionOptions":[]},{"id":"6846c1dc-b7e0-4b0a-916d-03775c7a1a41","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":70,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"84747aab-a0bf-4bcd-9140-71f23b9ed678","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"de353f58-54c2-436e-982a-08a20a167725","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"（下処理の間に）大鍋に湯を沸かし始める。生タコ500gは粗塩でよく揉んでぬめりを取り、流水でよく洗い流す。エビ8尾は殻付きのまま背わたを取る。ムール貝500gはひげを取り、殻をこすり洗いする。イカ300gは内臓と軟骨を取り、輪切りにする。セロリ1本は薄切りにし、イタリアンパセリ6枝はみじん切りにする。","title":"魚介を下処理する","actionItems":["生タコ500gは粗塩でよく揉んでぬめりを取り、流水でよく洗い流す。","エビ8尾は殻付きのまま背わたを取る。","ムール貝500gはひげを取り、殻をこすり洗いする。","イカ300gは内臓と軟骨を取り、輪切りにする。","セロリ1本は薄切りにし、イタリアンパセリ6枝はみじん切りにする。"],"parallelItems":["（下処理の間に）大鍋に湯を沸かし始める。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋に湯を沸かし、塩4gを加える。生タコを入れて弱火で35〜40分茹でる。竹串が抵抗なく入る柔らかさになったら湯の中で10分休ませる。","title":"タコを茹でる","actionItems":["鍋に湯を沸かし、塩4gを加える。","生タコを入れて弱火で35〜40分茹でる。"],"parallelItems":[],"completionCriteria":["竹串が抵抗なく入る柔らかさになったら湯の中で10分休ませる。"],"cautionItems":[],"tipItems":[],"durationMinutes":50,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ムール貝を蓋付き鍋で3〜4分蒸し、殻が開いたら取り出す。エビは沸いた湯で2分茹で、身が白く締まったら取り出す。イカは1分だけ茹で、輪が反って透明感が消えたら取り出す。","title":"魚介を個別に火入れする","actionItems":["ムール貝を蓋付き鍋で3〜4分蒸し、殻が開いたら取り出す。","エビは沸いた湯で2分茹で、身が白く締まったら取り出す。","イカは1分だけ茹で、輪が反って透明感が消えたら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"タコを一口大に切る。ムール貝は半量を殻から外す。タコ、エビ、ムール貝、イカをバットに広げ、粗熱が取れたら次へ。","title":"切って冷ます","actionItems":["タコを一口大に切る。","ムール貝は半量を殻から外す。"],"parallelItems":[],"completionCriteria":["タコ、エビ、ムール貝、イカをバットに広げ、粗熱が取れたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"魚介にセロリ、イタリアンパセリ、レモン果汁、エクストラバージンオリーブオイル70ml、塩4g、黒胡椒を加えて和える。冷蔵庫で30分置き、魚介にレモンの香りがなじんだら完成。","title":"和える","actionItems":["魚介にセロリ、イタリアンパセリ、レモン果汁、エクストラバージンオリーブオイル70ml、塩4g、黒胡椒を加えて和える。"],"parallelItems":[],"completionCriteria":["冷蔵庫で30分置き、魚介にレモンの香りがなじんだら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

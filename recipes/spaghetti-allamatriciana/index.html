@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">グアンチャーレ</span><span class="ingredient-qty">120g</span><span class="ingredient-notes">5mm角に切る</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">スパゲッティ</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">ペコリーノ・ロマーノ</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">粗めにすりおろす</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">50ml</span></li>
+              <li data-ingredient-row="fd0220b4-51eb-4dc0-8bd9-38507fe14d65"><span class="ingredient-name" data-ingredient-name>グアンチャーレ</span><span class="ingredient-qty" data-ingredient-qty>120g</span><span class="ingredient-notes">5mm角に切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="fd0220b4-51eb-4dc0-8bd9-38507fe14d65"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="306c590c-4472-409c-bdda-93c639b2b498"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="791796e3-c6c0-4624-bbcd-8250963a184d"><span class="ingredient-name" data-ingredient-name>スパゲッティ</span><span class="ingredient-qty" data-ingredient-qty>200g</span><button type="button" class="substitution-trigger" data-substitution-trigger="791796e3-c6c0-4624-bbcd-8250963a184d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8c9fa326-a727-42fb-b442-61565f492810"><span class="ingredient-name" data-ingredient-name>ペコリーノ・ロマーノ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">粗めにすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="8c9fa326-a727-42fb-b442-61565f492810"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="263c1a62-e2fc-408d-a151-1fa5aa8249d1"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
+          <li data-ingredient-row="96690896-12fb-429b-ba0e-e12e70f2c9df"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
               </ul>
             </section>
           </div>
@@ -279,6 +299,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7405354b-e9b5-4d7c-a6da-7d07993d2878","nameJa":"スパゲッティ アマトリチャーナ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"fd0220b4-51eb-4dc0-8bd9-38507fe14d65","nameOriginal":"Guanciale","nameJa":"グアンチャーレ","nameEn":"Guanciale","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":"5mm角に切る","substitutionOptions":[{"id":"32b98218-ff30-4fc3-8f64-4916881eb9f2","standardIngredientId":"fd0220b4-51eb-4dc0-8bd9-38507fe14d65","nameJa":"パンチェッタ","nameEn":"Pancetta","authenticityImpact":-5,"flavorImpact":"風味は近いが脂の甘みが弱い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"306c590c-4472-409c-bdda-93c639b2b498","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"791796e3-c6c0-4624-bbcd-8250963a184d","nameOriginal":"Spaghetti","nameJa":"スパゲッティ","nameEn":"Spaghetti","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"2169e16d-d0ab-4ffc-9097-ab27228ad067","standardIngredientId":"791796e3-c6c0-4624-bbcd-8250963a184d","nameJa":"ブカティーニ","nameEn":"Bucatini","authenticityImpact":0,"flavorImpact":"中空の穴がソースを閉じ込め、一口ごとの旨みが増す。発祥地アマトリーチェではスパゲッティが標準だが、ローマで定着した代表的な別形状","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"authentic_variant","ingredientPatches":[],"stepPatches":[]},{"id":"853f5dcb-e54c-4ab1-83ad-e4158edce241","standardIngredientId":"791796e3-c6c0-4624-bbcd-8250963a184d","nameJa":"リガトーニ","nameEn":"Rigatoni","authenticityImpact":0,"flavorImpact":"現代ローマの定番形。ソースがリッジと筒内に絡み、グアンチャーレの旨みをしっかり受け止める","textureImpact":null,"procedureChanges":["乾燥重量はスパゲッティと同量。袋記載の茹で時間で。"],"affectedStepNumbers":[4],"notes":null,"variantType":"authentic_variant","ingredientPatches":[],"stepPatches":[{"title":"パスタを茹でる","action":"replace","stepNumber":4,"instruction":"リガトーニ200gを沸かしておいた塩湯に入れ、袋記載の茹で時間より1分短めに茹でる。\n・茹で汁100mlを取り置く","changeReason":"リガトーニはスパゲッティと茹で時間が異なるため、袋記載時間を基準にする"}]}]},{"id":"8c9fa326-a727-42fb-b442-61565f492810","nameOriginal":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":"粗めにすりおろす","substitutionOptions":[{"id":"6e0416d5-0041-4396-8bad-078c94fc35ef","standardIngredientId":"8c9fa326-a727-42fb-b442-61565f492810","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","authenticityImpact":-5,"flavorImpact":"塩気と羊乳の風味が弱まる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"263c1a62-e2fc-408d-a151-1fa5aa8249d1","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"96690896-12fb-429b-ba0e-e12e70f2c9df","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・グアンチャーレを5mm角に切る\n・ペコリーノを粗めにすりおろしておく","title":"材料を切る","actionItems":["グアンチャーレ120gを5mm角に切る。","ペコリーノ40gを粗めにすりおろしておく。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"グアンチャーレ（5mm角）をフライパンに入れ、中火で炒める。\n・脂がじわじわ出てきたら唐辛子を加える\n・グアンチャーレがカリッとして縁が黄金色になったら（約5分）次へ","title":"グアンチャーレの脂を出す","actionItems":["フライパンにグアンチャーレ120g（5mm角）を入れ、中火で炒める。","脂がじわじわ出てきたら、乾燥唐辛子1本を加える。"],"parallelItems":[],"completionCriteria":["約5分。グアンチャーレがカリッとして、縁が黄金色になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"白ワイン50mlを加えてアルコールを飛ばし（約1分）、ホールトマトを手でつぶしながら加える。\n・（ソースを煮詰める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）\n・中火で15分煮詰める\n・ソースにとろみがついてきたら次へ","title":"トマトソースを煮詰める","actionItems":["フライパンに白ワイン50mlを加え、約1分煮立ててアルコールを飛ばす。","ホールトマト400gを手でつぶしながら加え、中火で煮詰める。"],"parallelItems":["ソースを煮詰める間に、大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["約15分。ソースにとろみがつき、木べらで鍋底をなぞると一瞬跡が残れば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":16,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"スパゲッティを沸かしておいた塩湯に入れ、表示より1分短めに茹でる。\n・茹で汁100mlを取り置く","title":"パスタを茹でる","actionItems":["スパゲッティ200gを沸かしておいた塩湯に入れ、表示より1分短めに茹でる。","茹で汁100mlを取り置く。"],"parallelItems":[],"completionCriteria":["中心にわずかに芯が残るアルデンテ手前で引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"パスタをソースに加え、茹で汁で濃度を調整しながら1〜2分強火で炒め合わせる。ソースがパスタに絡んでつやが出たら完成。","title":"ソースとパスタを合わせる","actionItems":["茹でたスパゲッティをフライパンのソースに加える。","茹で汁を少しずつ加えながら、強火で1〜2分炒め合わせる。"],"parallelItems":[],"completionCriteria":["ソースがパスタに絡み、表面につやが出たら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"火を止めてペコリーノをたっぷりかけて完成。","title":"ペコリーノをかける","actionItems":["火を止め、ペコリーノ40gをたっぷりかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["チーズを加えた後は強火に戻さない。チーズが固まり、ソースが重くなる。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

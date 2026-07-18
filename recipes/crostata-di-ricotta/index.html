@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>50分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,20 +93,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">300g</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">冷たい状態でカットしておく</span></li>
-          <li><span class="ingredient-name">粉砂糖（生地用）</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">卵黄（生地用）</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">レモンの皮（生地用）</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">牛乳リコッタ（水切り済み）</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">前日からざるで水切りして冷蔵庫へ（重要：水分が多いと焼き上がりが湿る）</span></li>
-          <li><span class="ingredient-name">砂糖（フィリング用）</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">卵（フィリング用）</span><span class="ingredient-qty">3個</span></li>
-          <li><span class="ingredient-name">レモンの皮（フィリング用）</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">チョコチップ（ダーク）</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">ラムまたはサンブーカ</span><span class="ingredient-qty">15ml</span><span class="ingredient-notes">お好みで。風味付け</span></li>
+              <li data-ingredient-row="5f4cca5c-329e-47a5-bad9-d4ae69c78fe6"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>300g</span></li>
+          <li data-ingredient-row="d9563b35-aefd-4cf2-88cc-1ba91d328dbd"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">冷たい状態でカットしておく</span></li>
+          <li data-ingredient-row="a8600418-28e4-4374-8d3c-96a51ab8a3ff"><span class="ingredient-name" data-ingredient-name>粉砂糖（生地用）</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="804073ce-5982-4a95-b273-2f87f594a964"><span class="ingredient-name" data-ingredient-name>卵黄（生地用）</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="2b5b9b9a-aab9-48b1-b6b1-1c34d4a67e5e"><span class="ingredient-name" data-ingredient-name>レモンの皮（生地用）</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="b6c7865e-f9bd-4dd9-be09-58f023e1e3f5"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="19abe4eb-4356-41ba-920f-e6dd266a51cc"><span class="ingredient-name" data-ingredient-name>牛乳リコッタ（水切り済み）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">前日からざるで水切りして冷蔵庫へ（重要：水分が多いと焼き上がりが湿る）</span><button type="button" class="substitution-trigger" data-substitution-trigger="19abe4eb-4356-41ba-920f-e6dd266a51cc"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e35588ed-85fe-4701-aa79-e712a56c3d4b"><span class="ingredient-name" data-ingredient-name>砂糖（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="2f22bd61-0e9e-4716-92b7-cb70998b0dc6"><span class="ingredient-name" data-ingredient-name>卵（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>3個</span></li>
+          <li data-ingredient-row="98637028-3f3f-4b94-b63d-2fc4d72a4426"><span class="ingredient-name" data-ingredient-name>レモンの皮（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="eef73baf-6fbe-4465-9f27-d45a3932eba5"><span class="ingredient-name" data-ingredient-name>チョコチップ（ダーク）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><button type="button" class="substitution-trigger" data-substitution-trigger="eef73baf-6fbe-4465-9f27-d45a3932eba5"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9ce7917d-c324-4f3b-87de-803a618e125e"><span class="ingredient-name" data-ingredient-name>ラムまたはサンブーカ</span><span class="ingredient-qty" data-ingredient-qty>15ml</span><span class="ingredient-notes">お好みで。風味付け</span></li>
               </ul>
             </section>
           </div>
@@ -317,6 +337,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"54308fc7-f9f5-485d-be45-638287896fe4","nameJa":"リコッタチーズのクロスタータ","baseServings":8,"minServings":4,"maxServings":20},"ingredients":[{"id":"5f4cca5c-329e-47a5-bad9-d4ae69c78fe6","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d9563b35-aefd-4cf2-88cc-1ba91d328dbd","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"冷たい状態でカットしておく","substitutionOptions":[]},{"id":"a8600418-28e4-4374-8d3c-96a51ab8a3ff","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（生地用）","nameEn":"Powdered sugar","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"804073ce-5982-4a95-b273-2f87f594a964","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄（生地用）","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2b5b9b9a-aab9-48b1-b6b1-1c34d4a67e5e","nameOriginal":"Scorza di limone","nameJa":"レモンの皮（生地用）","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"b6c7865e-f9bd-4dd9-be09-58f023e1e3f5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"19abe4eb-4356-41ba-920f-e6dd266a51cc","nameOriginal":"Ricotta vaccina","nameJa":"牛乳リコッタ（水切り済み）","nameEn":"Drained cow's milk ricotta","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"前日からざるで水切りして冷蔵庫へ（重要：水分が多いと焼き上がりが湿る）","substitutionOptions":[{"id":"0fa7c1ac-6f3a-43c3-84e7-46d46558dec5","standardIngredientId":"19abe4eb-4356-41ba-920f-e6dd266a51cc","nameJa":"リコッタ・ディ・ペコーラ","nameEn":"Sheep's milk ricotta","authenticityImpact":0,"flavorImpact":"より濃厚でコクが出る。本場ローマではこちらが伝統的","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e35588ed-85fe-4701-aa79-e712a56c3d4b","nameOriginal":"Zucchero semolato","nameJa":"砂糖（フィリング用）","nameEn":"Granulated sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2f22bd61-0e9e-4716-92b7-cb70998b0dc6","nameOriginal":"Uova","nameJa":"卵（フィリング用）","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"98637028-3f3f-4b94-b63d-2fc4d72a4426","nameOriginal":"Scorza di limone","nameJa":"レモンの皮（フィリング用）","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"eef73baf-6fbe-4465-9f27-d45a3932eba5","nameOriginal":"Gocce di cioccolato fondente","nameJa":"チョコチップ（ダーク）","nameEn":"Dark chocolate chips","quantity":80,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"2acb5e54-8bca-45f2-94da-dfbcde0b82ae","standardIngredientId":"eef73baf-6fbe-4465-9f27-d45a3932eba5","nameJa":"アマレーナ（サワーチェリー）","nameEn":"Amarena cherries","authenticityImpact":-5,"flavorImpact":"甘酸っぱいアクセントが加わり異なる個性に","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9ce7917d-c324-4f3b-87de-803a618e125e","nameOriginal":"Rum o Sambuca","nameJa":"ラムまたはサンブーカ","nameEn":"Rum or Sambuca","quantity":15,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"お好みで。風味付け","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"パスタ・フロッラを作る：生地用のレモンは白いワタを避け、表皮だけをすりおろす。冷たいバター150gを指で薄力粉300gに擦り込みパン粉状にする。粉砂糖100g・塩・すりおろしたレモンの皮・卵黄2個を加えて素早くまとめる。ラップして冷蔵庫で30分休ませる。","title":"パスタ・フロッラを作り休ませる","actionItems":["生地用のレモンの表皮だけをすりおろす。","冷たいバター150gを指で薄力粉300gに擦り込みパン粉状にする。","粉砂糖100g・塩・すりおろしたレモンの皮・卵黄2個を加えて素早くまとめる。","ラップして冷蔵庫で30分休ませる。"],"parallelItems":[],"completionCriteria":["べたつかないまとまりのある生地になれば次へ（冷蔵庫で30分後）。"],"cautionItems":["こねすぎない。グルテンが出るとサクサク感が失われる。"],"tipItems":[],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フィリングを作る：フィリング用のレモンは白いワタを避け、表皮だけをすりおろす。水切りしたリコッタ500gをゴムベラで滑らかにし、砂糖150g・卵3個・すりおろしたレモンの皮・ラム15mlを加えてよく混ぜる。チョコチップ80gを加える。","title":"フィリングを作る","actionItems":["フィリング用のレモンの表皮だけをすりおろす。","水切りしたリコッタ500gをゴムベラで滑らかにする。","砂糖150g・卵3個・すりおろしたレモンの皮・ラム15mlを加えてよく混ぜる。","チョコチップ80gを加える。"],"parallelItems":[],"completionCriteria":["均一な滑らかなフィリングになれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"オーブンを180℃に予熱。生地の2/3を3mm厚に伸ばして直径26cmのタルト型（底外れ型）に敷き込む。底をフォークで刺す。","title":"型に生地を敷く","actionItems":["オーブンを180℃に予熱する。","生地の2/3を3mm厚に伸ばして直径26cmのタルト型に敷き込む。","底をフォークで刺す。"],"parallelItems":[],"completionCriteria":["生地が型全体に均一に敷ければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"リコッタフィリングを型に流し込み、平らにならす。残りの生地を細長く切り（幅1.5cm）、格子状に並べる。端を型の縁に押しつけて固定。","title":"フィリングを詰め格子をのせる","actionItems":["リコッタフィリングを型に流し込み平らにならす。","残りの生地を幅1.5cmに切り、格子状に並べる。","端を型の縁に押しつけて固定する。"],"parallelItems":[],"completionCriteria":["格子模様が完成すれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"180℃で40〜45分焼く（生地がきつね色に、フィリングが固まるまで）。型のまま完全に冷まして（最低1時間）から型を外す。","title":"リコッタタルトを焼く","actionItems":["180℃で40〜45分焼く。","型のまま最低1時間冷ます。","型を外す。"],"parallelItems":[],"completionCriteria":["生地がきつね色に、フィリングが固まれば焼き上がり。"],"cautionItems":["熱いうちに型を外すとフィリングが崩れる。完全に冷めるまで待つ。"],"tipItems":[],"durationMinutes":45,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"粉砂糖を振って完成。常温で当日中に食べる。翌日は冷蔵保存。","title":"粉砂糖を振る","actionItems":["粉砂糖を振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

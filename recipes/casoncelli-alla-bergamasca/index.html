@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ベルガモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">卵入りパスタ生地（薄力粉300g・卵3個）</span><span class="ingredient-qty">1バッチ</span></li>
-          <li><span class="ingredient-name">牛ひき肉</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">フィリング用。炒めておく</span></li>
-          <li><span class="ingredient-name">サラメッラ（ベルガモのサラミ）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">フィリング用。細かく刻む</span></li>
-          <li><span class="ingredient-name">レーズン</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">フィリング用。甘みのアクセント</span></li>
-          <li><span class="ingredient-name">モスタッチーノ（スパイスビスケット粉末）</span><span class="ingredient-qty">10g</span><span class="ingredient-notes">シナモン・クローブ・ナツメグの混合で代用可</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">90g</span><span class="ingredient-notes">ひき肉炒め用10g・ソース用80g</span></li>
-          <li><span class="ingredient-name">パンチェッタ（薄切り）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">ソース用。カリッとするまで炒める</span></li>
-          <li><span class="ingredient-name">セージ（生）</span><span class="ingredient-qty">6枚</span><span class="ingredient-notes">ソース用</span></li>
+              <li data-ingredient-row="3192d6cf-b7d7-43af-892e-52cfbd7a2ee4"><span class="ingredient-name" data-ingredient-name>卵入りパスタ生地（薄力粉300g・卵3個）</span><span class="ingredient-qty" data-ingredient-qty>1バッチ</span></li>
+          <li data-ingredient-row="be2cc99c-e53e-4ab7-b98c-65a704f3596e"><span class="ingredient-name" data-ingredient-name>牛ひき肉</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">フィリング用。炒めておく</span></li>
+          <li data-ingredient-row="ba2ea8ab-6fec-467c-afe5-30735f42dc67"><span class="ingredient-name" data-ingredient-name>サラメッラ（ベルガモのサラミ）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">フィリング用。細かく刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="ba2ea8ab-6fec-467c-afe5-30735f42dc67"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e7b786fe-3d51-418c-974a-7853e0cc1717"><span class="ingredient-name" data-ingredient-name>レーズン</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">フィリング用。甘みのアクセント</span></li>
+          <li data-ingredient-row="fa52d255-9374-491d-bd4c-fddbb2e73004"><span class="ingredient-name" data-ingredient-name>モスタッチーノ（スパイスビスケット粉末）</span><span class="ingredient-qty" data-ingredient-qty>10g</span><span class="ingredient-notes">シナモン・クローブ・ナツメグの混合で代用可</span><button type="button" class="substitution-trigger" data-substitution-trigger="fa52d255-9374-491d-bd4c-fddbb2e73004"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e8ebf076-cc55-40ac-9aa5-5f108d553376"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="4ea81d3b-b876-40e6-9f6b-b5f8f953d796"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>90g</span><span class="ingredient-notes">ひき肉炒め用10g・ソース用80g</span></li>
+          <li data-ingredient-row="344baa2e-329d-4926-85b5-9eb54d5b699e"><span class="ingredient-name" data-ingredient-name>パンチェッタ（薄切り）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">ソース用。カリッとするまで炒める</span></li>
+          <li data-ingredient-row="e3228d8c-958d-4bf7-bde0-cc59183ad5f9"><span class="ingredient-name" data-ingredient-name>セージ（生）</span><span class="ingredient-qty" data-ingredient-qty>6枚</span><span class="ingredient-notes">ソース用</span></li>
               </ul>
             </section>
           </div>
@@ -292,6 +312,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d3ebeb70-8304-4b1d-bdc4-1bea385843e1","nameJa":"ベルガモ風カゾンチェッリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"3192d6cf-b7d7-43af-892e-52cfbd7a2ee4","nameOriginal":"Pasta all'uovo","nameJa":"卵入りパスタ生地（薄力粉300g・卵3個）","nameEn":"Egg pasta dough","quantity":1,"unit":"バッチ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"be2cc99c-e53e-4ab7-b98c-65a704f3596e","nameOriginal":"Manzo macinato","nameJa":"牛ひき肉","nameEn":"Ground beef","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用。炒めておく","substitutionOptions":[]},{"id":"ba2ea8ab-6fec-467c-afe5-30735f42dc67","nameOriginal":"Salamella bergamasca","nameJa":"サラメッラ（ベルガモのサラミ）","nameEn":"Bergamo salami","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用。細かく刻む","substitutionOptions":[{"id":"cd3cde1c-8a04-4e7b-a6b0-508d2154a6d8","standardIngredientId":"ba2ea8ab-6fec-467c-afe5-30735f42dc67","nameJa":"一般的な生サラミ","nameEn":"Fresh sausage","authenticityImpact":-10,"flavorImpact":"スパイスの組み合わせが変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e7b786fe-3d51-418c-974a-7853e0cc1717","nameOriginal":"Uvetta","nameJa":"レーズン","nameEn":"Raisins","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"フィリング用。甘みのアクセント","substitutionOptions":[]},{"id":"fa52d255-9374-491d-bd4c-fddbb2e73004","nameOriginal":"Mostaccino","nameJa":"モスタッチーノ（スパイスビスケット粉末）","nameEn":"Mostaccino spice","quantity":10,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"シナモン・クローブ・ナツメグの混合で代用可","substitutionOptions":[{"id":"01780446-92b5-4747-bec3-774f7746c970","standardIngredientId":"fa52d255-9374-491d-bd4c-fddbb2e73004","nameJa":"シナモン・クローブ・ナツメグ（各少々）","nameEn":"Mixed spices (cinnamon, clove, nutmeg)","authenticityImpact":-5,"flavorImpact":"スパイスの複雑さは近似できる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e8ebf076-cc55-40ac-9aa5-5f108d553376","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4ea81d3b-b876-40e6-9f6b-b5f8f953d796","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":90,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ひき肉炒め用10g・ソース用80g","substitutionOptions":[]},{"id":"344baa2e-329d-4926-85b5-9eb54d5b699e","nameOriginal":"Pancetta","nameJa":"パンチェッタ（薄切り）","nameEn":"Pancetta","quantity":80,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ソース用。カリッとするまで炒める","substitutionOptions":[]},{"id":"e3228d8c-958d-4bf7-bde0-cc59183ad5f9","nameOriginal":"Salvia","nameJa":"セージ（生）","nameEn":"Fresh sage","quantity":6,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"ソース用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"フライパンでバター10g程度を弱中火で溶かし、牛ひき肉150gを加えて中火で炒める。肉の色が変わったら取り出して冷ます。\n・炒めた牛ひき肉・刻んだサラメッラ80g・レーズン30g・スパイス10g・パルミジャーノ30gをよく混ぜてフィリングを作る","title":"フィリングを作る","actionItems":["フライパンでバター10gを溶かし牛ひき肉150gを中火で炒める。","肉の色が変わったら取り出して冷ます。","炒めた牛ひき肉・刻んだサラメッラ80g・レーズン30g・スパイス10g・パルミジャーノ30gをよく混ぜてフィリングを作る。"],"parallelItems":[],"completionCriteria":["フィリングが均一に混ざった。"],"cautionItems":["ひき肉が熱いままだとパスタ生地が破れやすい。必ず冷ましてから使うこと。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"（成形する間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。卵入りパスタ生地を薄く伸ばし、直径7cmの円でくり抜く。フィリングを小さじ1ほどのせ、半月形に折りたたんで縁をしっかり閉じる。","title":"成形する","actionItems":["卵入りパスタ生地を薄く伸ばし直径7cmの円でくり抜く。","フィリングを小さじ1ほどのせ半月形に折りたたんで縁をしっかり閉じる。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["全てのカゾンチェッリが閉じられた。"],"cautionItems":["縁をしっかり閉じないと茹でで開く。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"沸かしておいた塩湯でカゾンチェッリを5〜6分茹でる（浮いてから2分）。","title":"カゾンチェッリを茹でる","actionItems":["沸かしておいた塩湯でカゾンチェッリを5〜6分茹でる（浮いてから2分）。"],"parallelItems":[],"completionCriteria":["カゾンチェッリが浮いてから2分で茹で上がった。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"（茹でている間に）フライパンでバター80gを溶かし、パンチェッタ80gをカリカリになるまで中火で炒める。セージ6枚を加えて30秒香りを出す。","title":"ソースを作る","actionItems":["フライパンでバター80gを溶かす。","パンチェッタ80gをカリカリになるまで中火で炒める。","セージ6枚を加えて30秒香りを出す。"],"parallelItems":[],"completionCriteria":["パンチェッタがカリカリになりセージの香りが立った。"],"cautionItems":["セージを入れすぎると焦げる。30秒で十分。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"カゾンチェッリを皿に盛り、パンチェッタとバターをかけ、パルミジャーノ30gをふりかける。","title":"パンチェッタバターをかける","actionItems":["カゾンチェッリを皿に盛る。","パンチェッタとバターをかける。","パルミジャーノ30gをふりかける。"],"parallelItems":[],"completionCriteria":["ソースとチーズをかけて盛り付けた。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

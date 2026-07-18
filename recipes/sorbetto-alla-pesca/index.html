@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>17分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>6時間10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・イタリア各地</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,14 +94,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">完熟桃</span><span class="ingredient-qty">800g</span><span class="ingredient-notes">湯むきして皮と種を除き、果肉を2cm角に切る。正味約600g</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">140g</span><span class="ingredient-notes">凍結時の硬さを調整する</span></li>
-          <li><span class="ingredient-name">ブドウ糖</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">製菓材料店で入手可。なければ砂糖に置き換え、砂糖の総量を170gにする</span></li>
-          <li><span class="ingredient-name">水</span><span class="ingredient-qty">220ml</span></li>
-          <li><span class="ingredient-name">レモン汁</span><span class="ingredient-qty">25ml</span><span class="ingredient-notes">国産・ノーワックスのレモンを絞る</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
+              <li data-ingredient-row="ef10fea8-2ad9-4671-bfa3-1ff7703eea44"><span class="ingredient-name" data-ingredient-name>完熟桃</span><span class="ingredient-qty" data-ingredient-qty>800g</span><span class="ingredient-notes">湯むきして皮と種を除き、果肉を2cm角に切る。正味約600g</span><button type="button" class="substitution-trigger" data-substitution-trigger="ef10fea8-2ad9-4671-bfa3-1ff7703eea44"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="81fcbdd2-fef6-4b88-886e-0158e287f55e"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>140g</span><span class="ingredient-notes">凍結時の硬さを調整する</span></li>
+          <li data-ingredient-row="17b2c76d-3d0c-486d-819b-b27e7d76e783"><span class="ingredient-name" data-ingredient-name>ブドウ糖</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">製菓材料店で入手可。なければ砂糖に置き換え、砂糖の総量を170gにする</span><button type="button" class="substitution-trigger" data-substitution-trigger="17b2c76d-3d0c-486d-819b-b27e7d76e783"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4dba56c5-df56-4286-9b8f-1071d71d5221"><span class="ingredient-name" data-ingredient-name>水</span><span class="ingredient-qty" data-ingredient-qty>220ml</span></li>
+          <li data-ingredient-row="2d5432f8-6b3f-4831-952c-dba82387906d"><span class="ingredient-name" data-ingredient-name>レモン汁</span><span class="ingredient-qty" data-ingredient-qty>25ml</span><span class="ingredient-notes">国産・ノーワックスのレモンを絞る</span></li>
+          <li data-ingredient-row="3081ed57-c6f8-4bdb-89ad-e158838445bf"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
               </ul>
             </section>
           </div>
@@ -324,6 +344,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"557cb417-3135-4b41-a25a-e212315362ad","nameJa":"桃のソルベット","baseServings":6,"minServings":1,"maxServings":20},"ingredients":[{"id":"ef10fea8-2ad9-4671-bfa3-1ff7703eea44","nameOriginal":"Pesche mature","nameJa":"完熟桃","nameEn":"Ripe peaches","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"湯むきして皮と種を除き、果肉を2cm角に切る。正味約600g","substitutionOptions":[{"id":"40701f91-e4ec-41c5-83c1-712d1cd31ebc","standardIngredientId":"ef10fea8-2ad9-4671-bfa3-1ff7703eea44","nameJa":"ネクタリン","nameEn":"Nectarines","authenticityImpact":-5,"flavorImpact":"桃より酸味が強く香りは少し締まるが、夏の核果として自然な代替になる","textureImpact":null,"procedureChanges":["皮が薄ければ湯むきを省ける"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"皮が薄ければ湯むきを省き、皮と種を除いて果肉を2cm角に切る。正味約600g","action":"update","nameEn":"Nectarines","nameJa":"ネクタリン","quantity":800,"targetNameJa":"完熟桃"}],"stepPatches":[{"title":"ネクタリンを切る","action":"replace","stepNumber":1,"actionItems":["ネクタリン800gをよく洗う。","皮が薄ければ湯むきを省き、皮が硬い場合だけ熱湯に20秒くぐらせて氷水に取り、皮をむく。","種を除き、果肉を2cm角に切る。"],"instruction":"ネクタリン800gは皮が薄ければ湯むきを省き、よく洗って皮ごと使う。皮が硬い場合だけ熱湯に20秒くぐらせて氷水に取り、皮をむく。種を除き、果肉を2cm角に切る。","cautionItems":["長く茹でると香りが抜ける。湯むきする場合も皮がゆるんだらすぐ氷水に取る。"],"changeReason":"ネクタリンは桃より皮が薄い場合が多く、湯むきを省けるため","completionCriteria":["果肉が正味約600g取れれば次へ。"]}]},{"id":"4169fc72-f919-48db-8173-14672c881b34","standardIngredientId":"ef10fea8-2ad9-4671-bfa3-1ff7703eea44","nameJa":"冷凍桃（無糖）","nameEn":"Unsweetened frozen peaches","authenticityImpact":-10,"flavorImpact":"香りは弱まるが、果肉の甘みが安定してソルベットとして成立する","textureImpact":null,"procedureChanges":["半解凍してからピュレにする"],"affectedStepNumbers":[1,3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"冷凍桃を半解凍する","action":"replace","stepNumber":1,"actionItems":["冷凍桃800gを冷蔵庫または室温で半解凍する。","包丁が入るが中心がまだ冷たい状態にする。","大きいものは2cm角程度に切る。"],"instruction":"冷凍桃800gを冷蔵庫または室温で半解凍する。包丁が入るが中心がまだ冷たい状態にし、大きいものは2cm角程度に切る。","cautionItems":["完全に解凍すると果汁が流れ出て香りが弱くなる。半解凍で止める。"],"changeReason":"冷凍桃は湯むき不要だが、半解凍しないとピュレが粗くなるため","completionCriteria":["桃が半解凍され、ミキサーにかけられる硬さになれば次へ。"]},{"title":"冷凍桃をピュレにする","action":"replace","stepNumber":3,"actionItems":["半解凍した冷凍桃、温かいシロップ、レモン汁25mlをミキサーに入れる。","なめらかなピュレにする。","ざらつきが気になる場合は細かいザルでこす。"],"instruction":"半解凍した冷凍桃、温かいシロップ、レモン汁25mlをミキサーに入れ、なめらかなピュレにする。ざらつきが気になる場合は細かいザルでこす。","cautionItems":["凍った塊が大きいままだとミキサーに負荷がかかる。半解凍してから回す。"],"changeReason":"冷凍桃を半解凍してからピュレにするため","completionCriteria":["果肉の大きな粒がなく、なめらかなピュレになれば次へ。"]}]}]},{"id":"81fcbdd2-fef6-4b88-886e-0158e287f55e","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":140,"unit":"g","role":"technique","scalingBehavior":null,"notes":"凍結時の硬さを調整する","substitutionOptions":[]},{"id":"17b2c76d-3d0c-486d-819b-b27e7d76e783","nameOriginal":"Destrosio","nameJa":"ブドウ糖","nameEn":"Dextrose","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"製菓材料店で入手可。なければ砂糖に置き換え、砂糖の総量を170gにする","substitutionOptions":[{"id":"a0146e48-4814-435b-af9a-b9539c3abe95","standardIngredientId":"17b2c76d-3d0c-486d-819b-b27e7d76e783","nameJa":"砂糖","nameEn":"Granulated sugar","authenticityImpact":-5,"flavorImpact":"甘みが少し強くなり、ブドウ糖ほど凍結を抑えないため口どけがやや硬くなる","textureImpact":null,"procedureChanges":["砂糖は既存の砂糖と合わせて総量170gにする"],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"ブドウ糖"},{"notes":"ブドウ糖を使わない場合の合計量。冷凍後の口どけはやや硬くなる","action":"update","quantity":170,"targetNameJa":"砂糖"}],"stepPatches":[{"title":"シロップを作る","action":"replace","stepNumber":2,"actionItems":["鍋に水220ml、砂糖170g、塩1gを入れて中火にかける。"],"instruction":"鍋に水220ml、砂糖170g、塩1gを入れて中火にかける。砂糖が完全に溶け、液体が透明になったら火を止める。","cautionItems":["煮詰めない。沸騰したらすぐ火を弱める。"],"changeReason":"ブドウ糖を使わず、既存の砂糖に合算するため","completionCriteria":["砂糖が完全に溶け、液体が透明になれば次へ。"]}]}]},{"id":"4dba56c5-df56-4286-9b8f-1071d71d5221","nameOriginal":"Acqua","nameJa":"水","nameEn":"Water","quantity":220,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2d5432f8-6b3f-4831-952c-dba82387906d","nameOriginal":"Succo di limone","nameJa":"レモン汁","nameEn":"Fresh lemon juice","quantity":25,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを絞る","substitutionOptions":[]},{"id":"3081ed57-c6f8-4bdb-89ad-e158838445bf","nameOriginal":"Sale fino","nameJa":"塩","nameEn":"Fine salt","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"桃800gは尻側に浅く十字の切り込みを入れる。熱湯に20〜30秒くぐらせ、氷水に取って皮をむく。皮と種を除き、果肉を2cm角に切る。","title":"桃を湯むきする","actionItems":["桃800gの尻側に浅く十字の切り込みを入れる。","熱湯に20〜30秒くぐらせ、氷水に取って皮をむく。","皮と種を除き、果肉を2cm角に切る。"],"parallelItems":[],"completionCriteria":["皮が薄くむけ、果肉が正味約600g取れれば次へ。"],"cautionItems":["長く茹でると桃の香りが抜ける。皮がゆるんだらすぐ氷水に取る。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋に水220ml、砂糖140g、ブドウ糖30g、塩1gを入れて中火にかける。砂糖類が完全に溶け、液体が透明になったら火を止める。","title":"シロップを作る","actionItems":["鍋に水220ml、砂糖140g、ブドウ糖30g、塩1gを入れて中火にかける。"],"parallelItems":[],"completionCriteria":["砂糖類が完全に溶け、液体が透明になれば次へ。"],"cautionItems":["煮詰めない。沸騰したらすぐ火を弱める。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"桃の果肉、温かいシロップ、レモン汁25mlをミキサーに入れ、なめらかなピュレにする。ざらつきが気になる場合は細かいザルでこす。","title":"桃をピュレにする","actionItems":["桃の果肉、温かいシロップ、レモン汁25mlをミキサーに入れる。","なめらかなピュレにする。","ざらつきが気になる場合は細かいザルでこす。"],"parallelItems":[],"completionCriteria":["果肉の大きな粒がなく、なめらかなピュレになれば次へ。"],"cautionItems":["熱いシロップを入れるため、ミキサーの蓋を押さえて低速から回す。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ピュレをボウルに移し、氷水に当てて混ぜながら粗熱を取る。冷蔵庫で最低2時間冷やし、ベースが5℃以下になったら次へ。","title":"ベースを冷やす","actionItems":["ピュレをボウルに移し、氷水に当てて混ぜながら粗熱を取る。","冷蔵庫で最低2時間冷やす。"],"parallelItems":[],"completionCriteria":["最低2時間。ベースが5℃以下まで冷えれば次へ。"],"cautionItems":["温かいまま回すと氷の粒が粗くなり、滑らかに仕上がらない。"],"tipItems":[],"durationMinutes":130,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"よく冷えたベースを浅い金属バットに流し、冷凍庫で45分凍らせる。縁が凍り始めたらフォークで全体を細かく崩し、中央の液体部分と混ぜる。以後30〜40分ごとに取り出して同じように崩し、全体が細かい氷の粒を含むシャーベット状になるまで3〜4回繰り返す。","title":"冷凍庫で凍らせながら崩す","actionItems":["よく冷えたベースを浅い金属バットに流す。","冷凍庫で45分凍らせる。","縁が凍り始めたらフォークで全体を細かく崩し、中央の液体部分と混ぜる。","30〜40分ごとに取り出して同じように崩す作業を3〜4回繰り返す。"],"parallelItems":[],"completionCriteria":["約3時間。全体が細かい氷の粒を含むシャーベット状になれば次へ。"],"cautionItems":["放置して完全に固めると大きな氷の塊になる。縁から凍るため、必ず縁を崩して中央に混ぜ込む。"],"tipItems":[],"durationMinutes":180,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"容器に移して表面にラップを密着させ、冷凍庫で30〜60分軽く締める。提供前に冷蔵庫で10分置き、スプーンで全体を軽く練る。すくうと丸くまとまり、表面がなめらかなら提供できる。","title":"軽く締めて提供する","actionItems":["容器に移して表面にラップを密着させる。","冷凍庫で30〜60分軽く締める。","提供前に冷蔵庫で10分置き、スプーンで全体を軽く練る。"],"parallelItems":[],"completionCriteria":["スプーンですくうと丸くまとまり、表面がなめらかなら完成。"],"cautionItems":["長時間冷凍した場合は固くなるため、提供前に冷蔵庫で15〜20分置いて戻す。"],"tipItems":[],"durationMinutes":60,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>12分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・アマルフィ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">リングイーネ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">レモン（無農薬）</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">皮のすりおろしと果汁を使う。ワックス処理されていないものを選ぶ</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">細かくすりおろす</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1小束</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">黒胡椒（粗びき）</span><span class="ingredient-qty">1少々</span></li>
-          <li><span class="ingredient-name">塩（茹で湯用）</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">水2Lに対して20g（1L当たり10g）</span></li>
+              <li data-ingredient-row="48dccc6f-caaf-43f0-ab28-6530d8f3037d"><span class="ingredient-name" data-ingredient-name>リングイーネ</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="48dccc6f-caaf-43f0-ab28-6530d8f3037d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4148376b-2370-4602-99a2-70eb6566567b"><span class="ingredient-name" data-ingredient-name>レモン（無農薬）</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">皮のすりおろしと果汁を使う。ワックス処理されていないものを選ぶ</span><button type="button" class="substitution-trigger" data-substitution-trigger="4148376b-2370-4602-99a2-70eb6566567b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f47a4329-2eab-4a10-8251-87725893f661"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="9ee608f8-b64b-4680-96fe-25e0c29f7bb8"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">細かくすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="9ee608f8-b64b-4680-96fe-25e0c29f7bb8"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="19a4a8ea-1067-45c5-b8c9-8fa113ef0111"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1小束</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="16eb2699-9a80-49f0-b786-14156be690b9"><span class="ingredient-name" data-ingredient-name>黒胡椒（粗びき）</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
+          <li data-ingredient-row="134ab14a-5ac0-4f3f-858c-f08741d3d909"><span class="ingredient-name" data-ingredient-name>塩（茹で湯用）</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">水2Lに対して20g（1L当たり10g）</span></li>
               </ul>
             </section>
           </div>
@@ -274,6 +294,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1b04ba19-1024-43ad-b224-c701166fab2f","nameJa":"レモンのリングイーネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"48dccc6f-caaf-43f0-ab28-6530d8f3037d","nameOriginal":"Linguine","nameJa":"リングイーネ","nameEn":"Linguine","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"24150e05-ac98-4195-ae95-c8646c26f226","standardIngredientId":"48dccc6f-caaf-43f0-ab28-6530d8f3037d","nameJa":"スパゲッティ","nameEn":"Spaghetti","authenticityImpact":-5,"flavorImpact":"オイルソースの絡みが若干変わるが風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"4148376b-2370-4602-99a2-70eb6566567b","nameOriginal":"Limone di Amalfi","nameJa":"レモン（無農薬）","nameEn":"Amalfi lemon (unwaxed)","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"皮のすりおろしと果汁を使う。ワックス処理されていないものを選ぶ","substitutionOptions":[{"id":"2d71a8d3-cdae-4701-a149-00b65c0aec67","standardIngredientId":"4148376b-2370-4602-99a2-70eb6566567b","nameJa":"一般的な国産レモン（無農薬）","nameEn":"Domestic unwaxed lemon","authenticityImpact":-10,"flavorImpact":"アマルフィレモン特有の甘い香気成分が少なく、酸味が強くなりやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f47a4329-2eab-4a10-8251-87725893f661","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9ee608f8-b64b-4680-96fe-25e0c29f7bb8","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かくすりおろす","substitutionOptions":[{"id":"0990bb53-b68c-450a-9dea-046786528673","standardIngredientId":"9ee608f8-b64b-4680-96fe-25e0c29f7bb8","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"旨みの深さが若干落ちるが代替として機能する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"19a4a8ea-1067-45c5-b8c9-8fa113ef0111","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"小束","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"16eb2699-9a80-49f0-b786-14156be690b9","nameOriginal":"Pepe nero","nameJa":"黒胡椒（粗びき）","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"134ab14a-5ac0-4f3f-858c-f08741d3d909","nameOriginal":"Sale","nameJa":"塩（茹で湯用）","nameEn":"Salt","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":"水2Lに対して20g（1L当たり10g）","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"レモン2個の皮をマイクロプレーンまたはチーズグレーターで細かくすりおろす（白い部分は苦みが出るため皮の黄色い部分だけを削る）。すりおろした皮を小皿に取り置く。","title":"材料を準備する","actionItems":["レモン2個の皮をマイクロプレーンまたはチーズグレーターで細かくすりおろす（白い部分は苦みが出るため皮の黄色い部分だけを削る）。","すりおろした皮を小皿に取り置く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"すりおろし後のレモン2個を絞り、果汁を大さじ3〜4（約50ml）取る。皮と果汁は別々に置いておく。","title":"材料を準備する","actionItems":["すりおろし後のレモン2個を絞り、果汁を大さじ3〜4（約50ml）取る。","皮と果汁は別々に置いておく。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"大鍋に水2Lを入れ、強火にかけて沸騰させる。沸騰したら塩20gを加え、リングイーネ320gを袋の表示時間より1分短く茹でる。\n・茹で汁をカップ1杯分（約200ml）取り置く","title":"材料を合わせる","actionItems":["大鍋に水2Lを入れ、強火にかけて沸騰させる。","沸騰したら塩20gを加え、リングイーネ320gを袋の表示時間より1分短く茹でる。","茹で汁をカップ1杯分（約200ml）取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにEVOO大さじ5（約80ml）とレモンの皮を入れ、弱火で30秒だけ温めて香りを引き出す。加熱しすぎると苦みが出るため、油がほんのり温まったら即座に火を止める。","title":"材料を合わせる","actionItems":["フライパンにEVOO大さじ5（約80ml）とレモンの皮を入れ、弱火で30秒だけ温めて香りを引き出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["加熱しすぎると苦みが出るため、油がほんのり温まったら即座に火を止める。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"火を止めたフライパンに茹で汁大さじ4（約60ml）とレモン果汁大さじ3を加え、フライパンを揺すってオイルと乳化させる。白く濁れば乳化成功。","title":"茹でる","actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止めたフライパンに茹で汁大さじ4（約60ml）とレモン果汁大さじ3を加え、フライパンを揺すってオイルと乳化させる。","白く濁れば乳化成功。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"アルデンテのリングイーネをフライパンに移し、すりおろしたパルミジャーノ60gを加えながら中火で素早くトングで和える。茹で汁を大さじ1ずつ加えながら濃度を調整し、ソースがリングイーネ全体をなめらかにコーティングした状態にする（1〜2分）。","title":"材料を準備する","actionItems":["アルデンテのリングイーネをフライパンに移し、すりおろしたパルミジャーノ60gを加えながら中火で素早くトングで和える。","茹で汁を大さじ1ずつ加えながら濃度を調整し、ソースがリングイーネ全体をなめらかにコーティングした状態にする（1〜2分）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"火を止め、イタリアンパセリをみじん切りにして加え、粗びき黒胡椒をふって全体を混ぜる。\n・皿に盛り、すぐに提供する（時間が経つと乳化が崩れる）","title":"材料を準備する","actionItems":["皿に盛り、すぐに提供する（時間が経つと乳化が崩れる）"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止め、イタリアンパセリをみじん切りにして加え、粗びき黒胡椒をふって全体を混ぜる。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ジェノヴァ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スズキ（丸ごと、鱗・内臓付き）</span><span class="ingredient-qty">700g（1尾）</span><span class="ingredient-notes">鱗はそのままでよい。内臓は除く</span></li>
-          <li><span class="ingredient-name">粗塩（海塩）</span><span class="ingredient-qty">1.5kg</span><span class="ingredient-notes">魚全体を完全に包める量</span></li>
-          <li><span class="ingredient-name">卵白</span><span class="ingredient-qty">2個分</span><span class="ingredient-notes">塩を固めるため</span></li>
-          <li><span class="ingredient-name">ローズマリー・タイム</span><span class="ingredient-qty">4枝</span><span class="ingredient-notes">魚の腹に詰める</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">半分をスライスして腹に、半分はサーブ用</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">30ml</span><span class="ingredient-notes">仕上げにかける</span></li>
+              <li data-ingredient-row="366ac92c-8659-4888-ad78-420528be1b40"><span class="ingredient-name" data-ingredient-name>スズキ（丸ごと、鱗・内臓付き）</span><span class="ingredient-qty" data-ingredient-qty>700g（1尾）</span><span class="ingredient-notes">鱗はそのままでよい。内臓は除く</span><button type="button" class="substitution-trigger" data-substitution-trigger="366ac92c-8659-4888-ad78-420528be1b40"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="84e597e1-3542-4616-8f53-9441090d9e56"><span class="ingredient-name" data-ingredient-name>粗塩（海塩）</span><span class="ingredient-qty" data-ingredient-qty>1.5kg</span><span class="ingredient-notes">魚全体を完全に包める量</span></li>
+          <li data-ingredient-row="41213eed-d464-4aa5-a5a8-626556bba87d"><span class="ingredient-name" data-ingredient-name>卵白</span><span class="ingredient-qty" data-ingredient-qty>2個分</span><span class="ingredient-notes">塩を固めるため</span></li>
+          <li data-ingredient-row="70a2add3-a3d2-43e6-8c37-448876b524b5"><span class="ingredient-name" data-ingredient-name>ローズマリー・タイム</span><span class="ingredient-qty" data-ingredient-qty>4枝</span><span class="ingredient-notes">魚の腹に詰める</span></li>
+          <li data-ingredient-row="6168e64d-231e-4f23-a435-de21b9b82cbe"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">半分をスライスして腹に、半分はサーブ用</span></li>
+          <li data-ingredient-row="2a4b8425-985b-4e98-a13d-6670ae8a4e97"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>30ml</span><span class="ingredient-notes">仕上げにかける</span></li>
               </ul>
             </section>
           </div>
@@ -243,6 +263,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"f1eb261e-34a5-4fcb-a9dd-5a016cf7b8ea","nameJa":"スズキの塩釜焼き","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"366ac92c-8659-4888-ad78-420528be1b40","nameOriginal":"Branzino intero","nameJa":"スズキ（丸ごと、鱗・内臓付き）","nameEn":"Whole sea bass","quantity":700,"unit":"g（1尾）","role":"essential","scalingBehavior":null,"notes":"鱗はそのままでよい。内臓は除く","substitutionOptions":[{"id":"b95a1090-567f-448e-93cf-ad8ad5b9f838","standardIngredientId":"366ac92c-8659-4888-ad78-420528be1b40","nameJa":"マダイ（丸ごと）","nameEn":"Whole sea bream","authenticityImpact":-5,"flavorImpact":"旨みが少し強くなるが同様に美味しい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"84e597e1-3542-4616-8f53-9441090d9e56","nameOriginal":"Sale marino grosso","nameJa":"粗塩（海塩）","nameEn":"Coarse sea salt","quantity":1.5,"unit":"kg","role":"essential","scalingBehavior":null,"notes":"魚全体を完全に包める量","substitutionOptions":[]},{"id":"41213eed-d464-4aa5-a5a8-626556bba87d","nameOriginal":"Albume d'uovo","nameJa":"卵白","nameEn":"Egg white","quantity":2,"unit":"個分","role":"essential","scalingBehavior":null,"notes":"塩を固めるため","substitutionOptions":[]},{"id":"70a2add3-a3d2-43e6-8c37-448876b524b5","nameOriginal":"Rosmarino e timo","nameJa":"ローズマリー・タイム","nameEn":"Rosemary and thyme","quantity":4,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":"魚の腹に詰める","substitutionOptions":[]},{"id":"6168e64d-231e-4f23-a435-de21b9b82cbe","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"garnish","scalingBehavior":null,"notes":"半分をスライスして腹に、半分はサーブ用","substitutionOptions":[]},{"id":"2a4b8425-985b-4e98-a13d-6670ae8a4e97","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"garnish","scalingBehavior":null,"notes":"仕上げにかける","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを220℃に予熱する。魚の腹にハーブとレモンスライスを詰める。","title":"魚に詰め物をする","actionItems":["オーブンを220℃に予熱する。","魚の腹にハーブとレモンスライスを詰める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"粗塩と卵白をよく混ぜて塩衣を作る。天板に塩を1cm厚に敷き、魚をのせ、上から残りの塩で完全に覆う。","title":"塩衣で包む","actionItems":["粗塩1.5kgと卵白2個分をよく混ぜて塩衣を作る。","天板に塩衣を1cm厚に敷き、魚をのせ、上から残りの塩で完全に覆う。"],"parallelItems":[],"completionCriteria":["魚が塩衣で完全に隙間なく覆われたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"220℃で25〜30分焼く。焼き上がりの確認：太い部分に串を刺して5秒後に唇に当て、温かければ火が通っている。","title":"焼き上げる","actionItems":["220℃で25〜30分焼く。","太い部分に串を刺して5秒後に唇に当て、温かければ火が通っているか確認する。"],"parallelItems":[],"completionCriteria":["串が温かければ完成（約25〜30分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":28,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"テーブルで塩の塊を金属製スプーンやハンマーで割り、魚の皮を剥いでフィレを取り分ける。取り分けた魚の身に上質なオリーブオイルをかけて提供。","title":"割り分ける","actionItems":["テーブルで塩の塊を金属製スプーンやハンマーで割る。","魚の皮を剥いでフィレを取り分ける。","取り分けた魚の身に上質なオリーブオイルをかけて提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

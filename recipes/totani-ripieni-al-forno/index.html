@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>19分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ヤリイカ（大、胴15cm以上）</span><span class="ingredient-qty">4尾</span><span class="ingredient-notes">胴と足を分け、胴は内臓を取り除いて洗う。足は小さく刻む</span></li>
-          <li><span class="ingredient-name">パン粉</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">詰め物をまとめるため</span></li>
-          <li><span class="ingredient-name">ケッパー</span><span class="ingredient-qty">20g</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">すりおろす</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">80ml</span><span class="ingredient-notes">オーブン焼き中にかける</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">塩・黒胡椒</span><span class="ingredient-qty">適量</span></li>
+              <li data-ingredient-row="1a2a4aaa-7d44-4f65-82bf-cb22ee693135"><span class="ingredient-name" data-ingredient-name>ヤリイカ（大、胴15cm以上）</span><span class="ingredient-qty" data-ingredient-qty>4尾</span><span class="ingredient-notes">胴と足を分け、胴は内臓を取り除いて洗う。足は小さく刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="1a2a4aaa-7d44-4f65-82bf-cb22ee693135"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2314223a-bbc0-455d-b501-8cab91783e86"><span class="ingredient-name" data-ingredient-name>パン粉</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="99472195-9ae6-4137-a348-f31990a26396"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">詰め物をまとめるため</span></li>
+          <li data-ingredient-row="d7165213-d0f6-4342-9d86-e5782e000054"><span class="ingredient-name" data-ingredient-name>ケッパー</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
+          <li data-ingredient-row="497c15b1-681b-4271-83f5-8476ec8b3a31"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="f3177754-3e2c-42ea-8447-acd5117d1663"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">すりおろす</span></li>
+          <li data-ingredient-row="22cb8314-9448-4795-a59b-42ea83be3f0d"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>80ml</span><span class="ingredient-notes">オーブン焼き中にかける</span></li>
+          <li data-ingredient-row="040de1fa-1b6f-49cd-b56f-3a3c42a9d3c5"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="1d8da98b-adb7-49f6-ba80-71fe489d9363"><span class="ingredient-name" data-ingredient-name>塩・黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>適量</span></li>
               </ul>
             </section>
           </div>
@@ -268,6 +288,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1680ce84-a7c5-4d34-821c-8693dae91041","nameJa":"ヤリイカの詰め物オーブン焼き","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"1a2a4aaa-7d44-4f65-82bf-cb22ee693135","nameOriginal":"Totani freschi","nameJa":"ヤリイカ（大、胴15cm以上）","nameEn":"Fresh squid (large)","quantity":4,"unit":"尾","role":"essential","scalingBehavior":null,"notes":"胴と足を分け、胴は内臓を取り除いて洗う。足は小さく刻む","substitutionOptions":[{"id":"bca202f6-cc8e-4f80-9055-3b0741377602","standardIngredientId":"1a2a4aaa-7d44-4f65-82bf-cb22ee693135","nameJa":"スルメイカ（大）","nameEn":"Pacific squid (large)","authenticityImpact":-5,"flavorImpact":"旨みは同等だが身が厚くなる","textureImpact":null,"procedureChanges":["焼き時間を5分延長"],"affectedStepNumbers":[5],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"厚い身に合わせて焼き上げる","action":"replace","stepNumber":5,"actionItems":["オーブン皿に並べ、オリーブオイル大さじ2をまわしかける。","200℃のオーブンで25〜30分焼く。","途中で白ワイン80mlを注ぐ。"],"instruction":"オーブン皿に並べ、オリーブオイル大さじ2をまわしかける。200℃のオーブンで25〜30分焼く。途中で白ワイン80mlを注ぐ。スルメイカに楊枝を刺して、厚い部分に弾力があり透明感が消えていれば完成（約27分）。","changeReason":"大きいスルメイカは身が厚く、標準の焼き時間では中心の火入れが不足しやすいため","completionCriteria":["スルメイカの厚い部分に楊枝を刺し、弾力があり透明感が消えていれば完成（約27分）。"]}]}]},{"id":"2314223a-bbc0-455d-b501-8cab91783e86","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"99472195-9ae6-4137-a348-f31990a26396","nameOriginal":"Uovo","nameJa":"卵","nameEn":"Egg","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"詰め物をまとめるため","substitutionOptions":[]},{"id":"d7165213-d0f6-4342-9d86-e5782e000054","nameOriginal":"Capperi","nameJa":"ケッパー","nameEn":"Capers","quantity":20,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"497c15b1-681b-4271-83f5-8476ec8b3a31","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":2,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"f3177754-3e2c-42ea-8447-acd5117d1663","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"すりおろす","substitutionOptions":[]},{"id":"22cb8314-9448-4795-a59b-42ea83be3f0d","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"オーブン焼き中にかける","substitutionOptions":[]},{"id":"040de1fa-1b6f-49cd-b56f-3a3c42a9d3c5","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1d8da98b-adb7-49f6-ba80-71fe489d9363","nameOriginal":"Sale e pepe","nameJa":"塩・黒胡椒","nameEn":"Salt and black pepper","quantity":1,"unit":"適量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・イタリアンパセリをみじん切りにする\n・にんにく1片をすりおろす","title":"材料を準備する","actionItems":["イタリアンパセリをみじん切りにする。","にんにく1片をすりおろす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"イカの足を細かく刻み、フライパンでオリーブオイル大さじ1を使い2分炒める。","title":"ゲソを炒める","actionItems":["イカの足を細かく刻む。","フライパンでオリーブオイル大さじ1を使い2分炒める。"],"parallelItems":[],"completionCriteria":["ゲソに軽く色がついたら次へ（2分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"炒めた足・パン粉・卵・ケッパー・パセリ・にんにくを混ぜてフィリングを作る。全体がしっとりまとまり、押すと軽く形が残る状態になったら、塩・黒胡椒で味を調える。","title":"フィリングを作る","actionItems":["炒めた足・パン粉80g・卵1個・ケッパー・パセリ・にんにくを混ぜてフィリングを作る。","塩・黒胡椒で味を調える。"],"parallelItems":[],"completionCriteria":["全体がしっとりまとまり、押すと軽く形が残る状態になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フィリングをイカの胴の7割まで詰める（オーブンで膨らむ）。楊枝で口をふさぐ。","title":"イカに詰める","actionItems":["フィリングをイカの胴の7割まで詰める。","楊枝で口をふさぐ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["詰めすぎると焼いたときに破裂するので7割まで。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"オーブン皿に並べ、オリーブオイル大さじ2をまわしかける。200℃のオーブンで20〜25分焼く。途中で白ワイン80mlを注ぐ。イカに楊枝を刺して弾力があれば完成（約22分）。","title":"焼き上げる","actionItems":["オーブン皿に並べ、オリーブオイル大さじ2をまわしかける。","200℃のオーブンで20〜25分焼く。","途中で白ワイン80mlを注ぐ。"],"parallelItems":[],"completionCriteria":["イカに楊枝を刺して弾力があれば完成（約22分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

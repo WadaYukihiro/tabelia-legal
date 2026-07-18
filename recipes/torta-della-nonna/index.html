@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>53分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,21 +93,28 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉（生地用）</span><span class="ingredient-qty">300g</span></li>
-          <li><span class="ingredient-name">バター（冷たい・無塩）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">1cm角に切って冷蔵庫で冷やす</span></li>
-          <li><span class="ingredient-name">砂糖（生地用）</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">卵黄（生地用）</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">レモンの皮（生地用）</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">全乳（クリーム用）</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">卵黄（クリーム用）</span><span class="ingredient-qty">4個</span></li>
-          <li><span class="ingredient-name">砂糖（クリーム用）</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">コーンスターチ（クリーム用）</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">レモンの皮（クリーム用）</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">トップに散らす</span></li>
-          <li><span class="ingredient-name">粉砂糖（仕上げ用）</span><span class="ingredient-qty">15g</span></li>
+              <li data-ingredient-row="3573342d-f5ed-42d8-a11b-924b5517a80e"><span class="ingredient-name" data-ingredient-name>薄力粉（生地用）</span><span class="ingredient-qty" data-ingredient-qty>300g</span></li>
+          <li data-ingredient-row="8c27ebfc-efe2-4613-8309-e1d0695b108e"><span class="ingredient-name" data-ingredient-name>バター（冷たい・無塩）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">1cm角に切って冷蔵庫で冷やす</span></li>
+          <li data-ingredient-row="5da45dbd-8e94-4077-952c-90f2af0e2015"><span class="ingredient-name" data-ingredient-name>砂糖（生地用）</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="f210cbba-2258-4362-b8bd-bb354459ff23"><span class="ingredient-name" data-ingredient-name>卵黄（生地用）</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="11066457-b24b-41a0-851d-a10479c435c5"><span class="ingredient-name" data-ingredient-name>レモンの皮（生地用）</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="2b5ddf27-ef6c-48c5-9b5b-87149f3c4eda"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="0fdf3224-664c-490a-9a4b-debc2f2bc922"><span class="ingredient-name" data-ingredient-name>全乳（クリーム用）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="43943d2f-4338-4cbd-833e-625be98ed8ce"><span class="ingredient-name" data-ingredient-name>卵黄（クリーム用）</span><span class="ingredient-qty" data-ingredient-qty>4個</span></li>
+          <li data-ingredient-row="cf64222e-bb46-4214-9004-fd832ac8b71c"><span class="ingredient-name" data-ingredient-name>砂糖（クリーム用）</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="806f609b-fa55-4625-be0b-3385d82f3dd0"><span class="ingredient-name" data-ingredient-name>コーンスターチ（クリーム用）</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="0cec4e2c-c2b4-405d-bd0a-0b7891e27901"><span class="ingredient-name" data-ingredient-name>レモンの皮（クリーム用）</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="201f726c-55ba-4a4d-9043-c448b4a64971"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">トップに散らす</span><button type="button" class="substitution-trigger" data-substitution-trigger="201f726c-55ba-4a4d-9043-c448b4a64971"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c2cb96b9-cf04-4083-9072-e92eb261e46a"><span class="ingredient-name" data-ingredient-name>粉砂糖（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>15g</span></li>
               </ul>
             </section>
           </div>
@@ -344,6 +364,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1a8e3344-8414-43d5-96f0-b4c3c86e9be6","nameJa":"松の実とカスタードのタルト","baseServings":8,"minServings":4,"maxServings":20},"ingredients":[{"id":"3573342d-f5ed-42d8-a11b-924b5517a80e","nameOriginal":"Farina 00","nameJa":"薄力粉（生地用）","nameEn":"All-purpose flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8c27ebfc-efe2-4613-8309-e1d0695b108e","nameOriginal":"Burro freddo","nameJa":"バター（冷たい・無塩）","nameEn":"Cold unsalted butter","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm角に切って冷蔵庫で冷やす","substitutionOptions":[]},{"id":"5da45dbd-8e94-4077-952c-90f2af0e2015","nameOriginal":"Zucchero","nameJa":"砂糖（生地用）","nameEn":"Sugar","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f210cbba-2258-4362-b8bd-bb354459ff23","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄（生地用）","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"11066457-b24b-41a0-851d-a10479c435c5","nameOriginal":"Scorza di limone","nameJa":"レモンの皮（生地用）","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"2b5ddf27-ef6c-48c5-9b5b-87149f3c4eda","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0fdf3224-664c-490a-9a4b-debc2f2bc922","nameOriginal":"Latte intero","nameJa":"全乳（クリーム用）","nameEn":"Whole milk","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"43943d2f-4338-4cbd-833e-625be98ed8ce","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄（クリーム用）","nameEn":"Egg yolks","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cf64222e-bb46-4214-9004-fd832ac8b71c","nameOriginal":"Zucchero","nameJa":"砂糖（クリーム用）","nameEn":"Sugar","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"806f609b-fa55-4625-be0b-3385d82f3dd0","nameOriginal":"Amido di mais","nameJa":"コーンスターチ（クリーム用）","nameEn":"Cornstarch","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0cec4e2c-c2b4-405d-bd0a-0b7891e27901","nameOriginal":"Scorza di limone","nameJa":"レモンの皮（クリーム用）","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"201f726c-55ba-4a4d-9043-c448b4a64971","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"トップに散らす","substitutionOptions":[{"id":"e63fa2fa-6ae9-4b08-ad57-0e51f68b7929","standardIngredientId":"201f726c-55ba-4a4d-9043-c448b4a64971","nameJa":"スライスアーモンド","nameEn":"Sliced almonds","authenticityImpact":-10,"flavorImpact":"食感と味が変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c2cb96b9-cf04-4083-9072-e92eb261e46a","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"パスタ・フロッラを作る：生地用のレモンは白いワタを避け、表皮だけをすりおろす。冷たいバター150gを指で薄力粉300gに擦り込み、砂糖100g・塩・すりおろしたレモンの皮を加えてパン粉状にする。卵黄2個を加えて素早くまとめ、べたつかない生地にする（こねすぎない）。ラップで包む。","title":"パスタ・フロッラを作る","actionItems":["生地用のレモンの表皮だけをすりおろす。","冷たいバター150gを指で薄力粉300gに擦り込み、砂糖・塩・すりおろしたレモンの皮を加えてパン粉状にする。","卵黄2個を加えて素早くまとめる。","ラップで包む。"],"parallelItems":[],"completionCriteria":["べたつかないまとまりのある生地になれば次へ。"],"cautionItems":["こねすぎない。グルテンが出るとサクサク感が失われる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"冷蔵庫で30分休ませる（バターを冷やし直してサクサクの生地に仕上げる）。","title":"生地を休ませる","actionItems":["生地を冷蔵庫で30分休ませる。"],"parallelItems":[],"completionCriteria":["30分。生地が冷えて扱いやすくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"クレーマ・パスティッチェーラを作る：クリーム用のレモンは白いワタを避け、表皮だけをすりおろす。牛乳500ml・すりおろしたレモンの皮を鍋で温める。卵黄4個・砂糖100g・コーンスターチ40gを別のボウルで白くなるまで混ぜ、温めた牛乳を少しずつ加える。鍋に戻し、中火で絶えずかき混ぜながらとろみをつける（底が焦げないよう注意）。バット（またはボウル）に移してラップを密着させ、冷ます。","title":"クレーマを作る","actionItems":["クリーム用のレモンの表皮だけをすりおろす。","牛乳500mlとすりおろしたレモンの皮を鍋で沸騰直前まで温める。","卵黄4個・砂糖100g・コーンスターチ40gを別ボウルで白くなるまで混ぜ、温めた牛乳を少しずつ加える。","鍋に戻して中火で絶えずかき混ぜながらとろみをつける。","バットに移してラップを密着させ冷ます。"],"parallelItems":[],"completionCriteria":["とろみがつきクリーム状になれば完成。冷めたら次へ。"],"cautionItems":["底が焦げないよう絶えず混ぜる。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"オーブンを180℃に予熱。直径26cmのタルト型（底が外れるタイプ）にバターを薄く塗る。生地を2:1に分け、大きい方を3〜4mm厚に麺棒で伸ばして型に敷き込む。底をフォークで刺す（ピケ）。","title":"型に生地を敷く","actionItems":["オーブンを180℃に予熱する。","直径26cmのタルト型にバターを薄く塗る。","生地を2:1に分け、大きい方を3〜4mm厚に伸ばして型に敷き込む。","底をフォークで刺す（ピケ）。"],"parallelItems":[],"completionCriteria":["生地が型全体に均一に敷ければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"冷えたクレーマを型に流し込み、平らにならす。残りの生地を薄く伸ばして蓋にする（または格子状に切って並べる）。端をしっかり押さえて閉じる。","title":"クレーマを詰め蓋をする","actionItems":["冷えたクレーマを型に流し込み平らにならす。","残りの生地を薄く伸ばして蓋にする（または格子状に切って並べる）。","端をしっかり押さえて閉じる。"],"parallelItems":[],"completionCriteria":["生地が閉じられれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"松の実80gを表面全体に散らし、180℃で40〜45分焼く（表面がきつね色になるまでが目安）。焼き上がったら型のまま30分以上冷ます。","title":"松の実タルトを焼く","actionItems":["松の実80gを表面全体に散らす。","180℃で40〜45分焼く。","型のまま30分以上冷ます。"],"parallelItems":[],"completionCriteria":["表面がきつね色になれば焼き上がり。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"型から外して皿に乗せ、粉砂糖をたっぷり振る。常温でも冷蔵でも美味しい。翌日も味が落ち着いて美味。","title":"粉砂糖を振る","actionItems":["型から外して皿に乗せる。","粉砂糖をたっぷり振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

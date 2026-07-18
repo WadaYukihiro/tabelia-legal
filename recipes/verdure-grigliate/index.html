@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>3分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・全国</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">なす</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">5mm輪切り</span></li>
-          <li><span class="ingredient-name">ズッキーニ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">縦5mm薄切り</span></li>
-          <li><span class="ingredient-name">パプリカ（赤・黄）</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">縦4等分に切る</span></li>
-          <li><span class="ingredient-name">フェンネル</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">5mm薄切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
-          <li><span class="ingredient-name">タイム（生）</span><span class="ingredient-qty">3枝</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="b8a65711-b321-41b2-8d48-19f9d2ddf114"><span class="ingredient-name" data-ingredient-name>なす</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">5mm輪切り</span></li>
+          <li data-ingredient-row="453aea8e-b943-474b-b68d-b6d1cdb16d14"><span class="ingredient-name" data-ingredient-name>ズッキーニ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">縦5mm薄切り</span></li>
+          <li data-ingredient-row="377392e2-4192-4887-9609-0df088b7a1c9"><span class="ingredient-name" data-ingredient-name>パプリカ（赤・黄）</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">縦4等分に切る</span></li>
+          <li data-ingredient-row="bb148465-e9f7-41ef-9861-112d84a3786f"><span class="ingredient-name" data-ingredient-name>フェンネル</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">5mm薄切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="bb148465-e9f7-41ef-9861-112d84a3786f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="adcbed50-7516-405d-9f62-630969206938"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="e3c85292-f1d1-4821-b9dc-0f792bb6c73c"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
+          <li data-ingredient-row="666766b4-5762-4b2d-824c-6314fadc7e6c"><span class="ingredient-name" data-ingredient-name>タイム（生）</span><span class="ingredient-qty" data-ingredient-qty>3枝</span></li>
+          <li data-ingredient-row="638c31bd-7407-4e2a-9132-d9afeb05cf19"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -275,6 +295,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6d75fdbd-6cef-4cd2-a9d3-e30c148c03ac","nameJa":"季節野菜のグリル盛り合わせ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"b8a65711-b321-41b2-8d48-19f9d2ddf114","nameOriginal":"Melanzane","nameJa":"なす","nameEn":"Eggplant","quantity":1,"unit":"本","role":"essential","scalingBehavior":null,"notes":"5mm輪切り","substitutionOptions":[]},{"id":"453aea8e-b943-474b-b68d-b6d1cdb16d14","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":1,"unit":"本","role":"essential","scalingBehavior":null,"notes":"縦5mm薄切り","substitutionOptions":[]},{"id":"377392e2-4192-4887-9609-0df088b7a1c9","nameOriginal":"Peperoni","nameJa":"パプリカ（赤・黄）","nameEn":"Bell peppers","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"縦4等分に切る","substitutionOptions":[]},{"id":"bb148465-e9f7-41ef-9861-112d84a3786f","nameOriginal":"Finocchio","nameJa":"フェンネル","nameEn":"Fennel bulb","quantity":0.5,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"5mm薄切り","substitutionOptions":[{"id":"4205d4f0-4e30-4b2e-a8ee-f1cd57cdf646","standardIngredientId":"bb148465-e9f7-41ef-9861-112d84a3786f","nameJa":"セロリ","nameEn":"Celery","authenticityImpact":-5,"flavorImpact":"フェンネル特有の甘みと香りが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"adcbed50-7516-405d-9f62-630969206938","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"e3c85292-f1d1-4821-b9dc-0f792bb6c73c","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"666766b4-5762-4b2d-824c-6314fadc7e6c","nameOriginal":"Timo fresco","nameJa":"タイム（生）","nameEn":"Fresh thyme","quantity":3,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"638c31bd-7407-4e2a-9132-d9afeb05cf19","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"グリルパンまたは炭火を強火に熱する。煙が出るくらい高温にする。","title":"グリルを熱する","actionItems":["グリルパンまたは炭火を強火に熱する。"],"parallelItems":[],"completionCriteria":["煙が出るくらい高温になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"野菜にオリーブオイルを薄く塗り、塩をふる。","title":"野菜を切って下準備する","actionItems":["なすを5mm輪切りにする。","ズッキーニを縦5mm薄切りにする。","パプリカを縦4等分に切る。","フェンネルを5mm薄切りにする。","全野菜にオリーブオイルを薄く塗り、塩をふる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"野菜を種類ごとに並べ、動かさずに片面を2〜3分焼く。格子状の焦げ目がついたらひっくり返す。","title":"野菜を焼く","actionItems":["野菜を種類ごとに並べる。","動かさずに片面を2〜3分焼く。","格子状の焦げ目がついたらひっくり返して反対面も焼く。"],"parallelItems":[],"completionCriteria":["両面に格子状の焦げ目がついたら次へ。"],"cautionItems":["頻繁に動かすと焦げ目がつかず蒸し焼きになるので注意。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"焼き上がった野菜をバットに並べ、薄切りにんにく・タイム・オリーブオイルを回しかける。表面に艶が出て香りが立ったら次へ。","title":"オイルと香草を絡める","actionItems":["焼き上がった野菜をバットに並べる。","にんにく2片（薄切り）・タイム3枝・オリーブオイルを回しかける。"],"parallelItems":[],"completionCriteria":["表面に艶が出て香りが立ったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"15分以上置いてオイルと香りを馴染ませてから盛り付ける。常温で供するのが正しい。","title":"馴染ませる","actionItems":["15分以上常温で置く。"],"parallelItems":[],"completionCriteria":["オイルと香りが野菜に馴染んだら盛り付ける（15分以上）。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>41分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・リヴォルノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,19 +93,26 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">タコ</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">生タコの場合は粗塩でよく揉んでぬめりを取ること。足を切り離し、たたいてやわらかくしておく</span></li>
-          <li><span class="ingredient-name">コウイカ</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">輪切り。墨袋は捨てる</span></li>
-          <li><span class="ingredient-name">カサゴまたはホウボウ</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">3cm幅のぶつ切り</span></li>
-          <li><span class="ingredient-name">エビ</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">殻付き</span></li>
-          <li><span class="ingredient-name">ムール貝</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">殻付き、よく洗う</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">赤ワイン</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">唐辛子（赤・乾燥）</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">カッチュッコの個性。ケチらない</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">つぶす</span></li>
-          <li><span class="ingredient-name">トスカーナパン（トースト）</span><span class="ingredient-qty">8枚</span><span class="ingredient-notes">にんにくを擦りつけてから器に敷く</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
+              <li data-ingredient-row="5abe54ff-f78e-4fd3-a31e-082ec05ed67f"><span class="ingredient-name" data-ingredient-name>タコ</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">生タコの場合は粗塩でよく揉んでぬめりを取ること。足を切り離し、たたいてやわらかくしておく</span></li>
+          <li data-ingredient-row="7f0f2b72-7e7e-4c20-9398-3c040dec34e5"><span class="ingredient-name" data-ingredient-name>コウイカ</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">輪切り。墨袋は捨てる</span></li>
+          <li data-ingredient-row="6567abd2-ae51-459f-b044-1f785ab632e3"><span class="ingredient-name" data-ingredient-name>カサゴまたはホウボウ</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">3cm幅のぶつ切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="6567abd2-ae51-459f-b044-1f785ab632e3"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="bdc71f13-455c-4b66-9c3a-73e70186a127"><span class="ingredient-name" data-ingredient-name>エビ</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">殻付き</span></li>
+          <li data-ingredient-row="80e9ddcd-d296-43e7-8f39-ad4c9a14fec4"><span class="ingredient-name" data-ingredient-name>ムール貝</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">殻付き、よく洗う</span></li>
+          <li data-ingredient-row="a4a5a79c-49ae-420a-8501-e5a3744cb41e"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="747adb1b-1da9-42f3-871f-58b4d702f590"><span class="ingredient-name" data-ingredient-name>赤ワイン</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
+          <li data-ingredient-row="a4e748eb-cd8e-47aa-a351-29438276ba41"><span class="ingredient-name" data-ingredient-name>唐辛子（赤・乾燥）</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">カッチュッコの個性。ケチらない</span></li>
+          <li data-ingredient-row="3a9c1833-fd79-48bf-bdfd-6801d7e9c352"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">つぶす</span></li>
+          <li data-ingredient-row="0efdd5d4-54c8-4c3d-8740-877bac9c8336"><span class="ingredient-name" data-ingredient-name>トスカーナパン（トースト）</span><span class="ingredient-qty" data-ingredient-qty>8枚</span><span class="ingredient-notes">にんにくを擦りつけてから器に敷く</span></li>
+          <li data-ingredient-row="c1a4bf39-ffd3-4681-8e0d-034f43d17309"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
               </ul>
             </section>
           </div>
@@ -278,6 +298,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d90f4139-3448-41f6-aa87-2c5f889a266f","nameJa":"リヴォルノ風魚介の煮込みスープ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"5abe54ff-f78e-4fd3-a31e-082ec05ed67f","nameOriginal":"Polpo","nameJa":"タコ","nameEn":"Octopus","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生タコの場合は粗塩でよく揉んでぬめりを取ること。足を切り離し、たたいてやわらかくしておく","substitutionOptions":[]},{"id":"7f0f2b72-7e7e-4c20-9398-3c040dec34e5","nameOriginal":"Seppie","nameJa":"コウイカ","nameEn":"Cuttlefish","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"輪切り。墨袋は捨てる","substitutionOptions":[]},{"id":"6567abd2-ae51-459f-b044-1f785ab632e3","nameOriginal":"Scorfano o gallinella","nameJa":"カサゴまたはホウボウ","nameEn":"Scorpionfish or gurnard","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3cm幅のぶつ切り","substitutionOptions":[{"id":"ae566f19-4b0c-4951-8760-d37b6f84b603","standardIngredientId":"6567abd2-ae51-459f-b044-1f785ab632e3","nameJa":"メバル","nameEn":"Rockfish","authenticityImpact":-5,"flavorImpact":"風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"bdc71f13-455c-4b66-9c3a-73e70186a127","nameOriginal":"Gamberi","nameJa":"エビ","nameEn":"Prawns","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"殻付き","substitutionOptions":[]},{"id":"80e9ddcd-d296-43e7-8f39-ad4c9a14fec4","nameOriginal":"Cozze","nameJa":"ムール貝","nameEn":"Mussels","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"殻付き、よく洗う","substitutionOptions":[]},{"id":"a4a5a79c-49ae-420a-8501-e5a3744cb41e","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"747adb1b-1da9-42f3-871f-58b4d702f590","nameOriginal":"Vino rosso","nameJa":"赤ワイン","nameEn":"Red wine","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a4e748eb-cd8e-47aa-a351-29438276ba41","nameOriginal":"Peperoncino rosso","nameJa":"唐辛子（赤・乾燥）","nameEn":"Dried red chili","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":"カッチュッコの個性。ケチらない","substitutionOptions":[]},{"id":"3a9c1833-fd79-48bf-bdfd-6801d7e9c352","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"つぶす","substitutionOptions":[]},{"id":"0efdd5d4-54c8-4c3d-8740-877bac9c8336","nameOriginal":"Pane toscano abbrustolito","nameJa":"トスカーナパン（トースト）","nameEn":"Toasted Tuscan bread","quantity":8,"unit":"枚","role":"garnish","scalingBehavior":null,"notes":"にんにくを擦りつけてから器に敷く","substitutionOptions":[]},{"id":"c1a4bf39-ffd3-4681-8e0d-034f43d17309","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・タコに粗塩（大さじ2）をまぶしてよく揉み、ぬめりを取る。流水でよく洗い流す\n・タコの足を切り離し、たたいて柔らかくする\n・コウイカを輪切りにし、墨袋を取り除く\n・カサゴを3cm幅のぶつ切りにする\n・にんにく4片をつぶす","title":"魚介を下処理する","actionItems":["タコに粗塩（大さじ2）をまぶしてよく揉み、ぬめりを取る。流水でよく洗い流す。","タコの足を切り離し、たたいて柔らかくする。","コウイカを輪切りにし、墨袋を取り除く。","カサゴを3cm幅のぶつ切りにする。","にんにく4片をつぶす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"厚手の鍋にオリーブオイル大さじ4とつぶしたにんにく・唐辛子を入れて中火にかけ、香りが出たらタコとコウイカを加えて強火で5分炒める。","title":"タコとイカを炒める","actionItems":["厚手の鍋にオリーブオイル大さじ4・つぶしたにんにく・唐辛子を入れて中火にかける。","香りが出たらタコとコウイカを加えて強火で5分炒める。"],"parallelItems":[],"completionCriteria":["表面が軽く色づいたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"赤ワインを注いでアルコールを飛ばし、ホールトマトを手でつぶして加え、蓋をして弱火で30分煮込む。","title":"ワインとトマトで煮込む","actionItems":["赤ワイン200mlを注いでアルコールを飛ばす。","ホールトマトを手でつぶして加え、蓋をして弱火で30分煮込む。"],"parallelItems":[],"completionCriteria":["30分後。タコとイカが柔らかくなったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":32,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"カサゴとエビを加えてさらに10分煮込む。ムール貝を加えてすべて口が開くまで5分蓋をして煮る。","title":"残りの魚介を加える","actionItems":["カサゴとエビを加えてさらに10分煮込む。","ムール貝を加えて蓋をして5分煮る。"],"parallelItems":[],"completionCriteria":["ムール貝がすべて口を開いたら完成。"],"cautionItems":["口が開かないムール貝は捨てる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"にんにくを擦りつけたトースト数枚を深皿に敷き、魚介を汁ごと注いで提供する。","title":"トーストに魚介を注ぐ","actionItems":["にんにくを擦りつけたトーストを深皿に敷く。","魚介を汁ごと注いで提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

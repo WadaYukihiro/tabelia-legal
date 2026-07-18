@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・プラート（トスカーナ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">300g</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">アーモンド（皮付き・丸ごと）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">生でも焙煎済みでも可。焙煎済みの方が香り豊か</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">3個</span></li>
-          <li><span class="ingredient-name">ベーキングパウダー</span><span class="ingredient-qty">5g</span></li>
-          <li><span class="ingredient-name">オレンジの皮</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのオレンジを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">ヴィン・サント（デザートワイン）</span><span class="ingredient-qty">100ml</span><span class="ingredient-notes">提供時に添える。浸して食べるのが正式</span></li>
+              <li data-ingredient-row="ea8d0970-3b8a-48e7-a62b-cc7ce81fa2fb"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>300g</span></li>
+          <li data-ingredient-row="b20a38ab-66d5-4c87-a94e-233dcb8fb8e1"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="d975437d-3383-49e3-9b25-1aae8a1672fd"><span class="ingredient-name" data-ingredient-name>アーモンド（皮付き・丸ごと）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">生でも焙煎済みでも可。焙煎済みの方が香り豊か</span><button type="button" class="substitution-trigger" data-substitution-trigger="d975437d-3383-49e3-9b25-1aae8a1672fd"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d333634b-2c87-4999-aeb5-047b9ba36acb"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>3個</span></li>
+          <li data-ingredient-row="daeaefa1-738d-43b2-9c88-5e7949bd5cb0"><span class="ingredient-name" data-ingredient-name>ベーキングパウダー</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
+          <li data-ingredient-row="a27766c8-9d18-47c5-bde3-683530953890"><span class="ingredient-name" data-ingredient-name>オレンジの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのオレンジを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="e6573dd7-3569-47ac-97fb-7d017a153257"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="c30f7bd9-36b3-4474-a3aa-cfc61e446656"><span class="ingredient-name" data-ingredient-name>ヴィン・サント（デザートワイン）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span><span class="ingredient-notes">提供時に添える。浸して食べるのが正式</span><button type="button" class="substitution-trigger" data-substitution-trigger="c30f7bd9-36b3-4474-a3aa-cfc61e446656"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -297,6 +317,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"865d1432-60ad-4dec-a227-0543c9110de8","nameJa":"カントゥッチとヴィン・サント","baseServings":8,"minServings":1,"maxServings":20},"ingredients":[{"id":"ea8d0970-3b8a-48e7-a62b-cc7ce81fa2fb","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b20a38ab-66d5-4c87-a94e-233dcb8fb8e1","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d975437d-3383-49e3-9b25-1aae8a1672fd","nameOriginal":"Mandorle intere non pelate","nameJa":"アーモンド（皮付き・丸ごと）","nameEn":"Whole unpeeled almonds","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生でも焙煎済みでも可。焙煎済みの方が香り豊か","substitutionOptions":[{"id":"941c0f5c-440b-40ee-8264-178e7fbc9b7c","standardIngredientId":"d975437d-3383-49e3-9b25-1aae8a1672fd","nameJa":"ヘーゼルナッツ","nameEn":"Hazelnuts","authenticityImpact":-10,"flavorImpact":"アーモンドの香ばしさが変わるが食感は似る","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d333634b-2c87-4999-aeb5-047b9ba36acb","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"daeaefa1-738d-43b2-9c88-5e7949bd5cb0","nameOriginal":"Lievito per dolci","nameJa":"ベーキングパウダー","nameEn":"Baking powder","quantity":5,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a27766c8-9d18-47c5-bde3-683530953890","nameOriginal":"Scorza di arancia","nameJa":"オレンジの皮","nameEn":"Grated orange peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのオレンジを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"e6573dd7-3569-47ac-97fb-7d017a153257","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c30f7bd9-36b3-4474-a3aa-cfc61e446656","nameOriginal":"Vin Santo Toscano","nameJa":"ヴィン・サント（デザートワイン）","nameEn":"Vin Santo Tuscan dessert wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"提供時に添える。浸して食べるのが正式","substitutionOptions":[{"id":"a6348e03-046f-40c9-a3b0-dab00a45a60b","standardIngredientId":"c30f7bd9-36b3-4474-a3aa-cfc61e446656","nameJa":"サウテルヌスまたは甘口シェリー","nameEn":"Sauternes or sweet Sherry","authenticityImpact":-10,"flavorImpact":"風味の複雑さが変わるが食べ方は同じ","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180℃に予熱する。オレンジは白いワタを避け、表皮だけをすりおろす。薄力粉・砂糖・ベーキングパウダー・塩・すりおろしたオレンジの皮をボウルで混ぜる。","title":"材料を混ぜる","actionItems":["オーブンを180℃に予熱する。","オレンジの表皮だけをすりおろす。","薄力粉・砂糖・ベーキングパウダー・塩・すりおろしたオレンジの皮をボウルで混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"卵（1個は卵液用に取り置き）を加えて生地をまとめる。アーモンドを加えて生地に折り込む（アーモンドが割れないよう注意）。","title":"生地をまとめる","actionItems":["卵2個を加えて生地をまとめる（残り1個は卵液用）。","アーモンド200gを加えて生地に折り込む。"],"parallelItems":[],"completionCriteria":["アーモンドが生地全体に均一に混ざれば次へ。"],"cautionItems":["アーモンドが割れないよう優しく折り込む。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地を2本のソーセージ状（直径4〜5cm、長さ25〜30cm）に成形し、ベーキングシートを敷いた天板に乗せる。表面に卵液をはけで塗る。","title":"ソーセージ形に成形する","actionItems":["生地を2本のソーセージ状（直径4〜5cm、長さ25〜30cm）に成形する。","ベーキングシートを敷いた天板に乗せる。","表面に卵液をはけで塗る。"],"parallelItems":[],"completionCriteria":["均一なソーセージ形に成形できれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"180℃で20〜25分焼く（表面がきつね色に色付き、生地が固まったら）。焼き上がったら15分冷ます。","title":"一度目の焼き","actionItems":["180℃で20〜25分焼く。","焼き上がったら15分冷ます。"],"parallelItems":[],"completionCriteria":["表面がきつね色に色付き、生地が固まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"対角線に1.5〜2cm幅でカットする（断面が斜めになるように）。断面を上に向けて天板に並べ、150℃で15〜20分再び焼く（カリカリになるまでが目安）。","title":"二度目の焼き","actionItems":["対角線に1.5〜2cm幅で斜めにカットする。","断面を上に向けて天板に並べる。","150℃で15〜20分再び焼く。"],"parallelItems":[],"completionCriteria":["カリカリになれば焼き上がり。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"完全に冷まして保存容器へ（1〜2週間保存可）。提供時はヴィン・サントを小さなグラスに注いで添える。カントゥッチを浸して食べる。","title":"提供する","actionItems":["完全に冷まして保存容器に入れる。","提供時はヴィン・サントをグラスに注いで添える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

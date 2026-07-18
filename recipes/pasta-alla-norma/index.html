@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>2分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">リガトーニ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">なす</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">2cm角に切り、塩をふって30分置く</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">リコッタ・サラータ（塩漬けリコッタ）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">すりおろして仕上げにかける</span></li>
-          <li><span class="ingredient-name">バジル</span><span class="ingredient-qty">10枚</span></li>
+              <li data-ingredient-row="75355100-1265-4546-ac30-c1f4455ccc83"><span class="ingredient-name" data-ingredient-name>リガトーニ</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="75355100-1265-4546-ac30-c1f4455ccc83"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="55a53a69-0264-4498-88b0-6848b6d67b18"><span class="ingredient-name" data-ingredient-name>なす</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">2cm角に切り、塩をふって30分置く</span></li>
+          <li data-ingredient-row="e72e7748-6d17-4a47-ae66-4cef18333d46"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="d14aeb56-6abe-4522-a38e-88c1768aaee1"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="76a66c8e-c6de-47ee-bba0-2d8a7c6c44db"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="2814943f-c05b-4c30-a65f-3e2a2459cc39"><span class="ingredient-name" data-ingredient-name>リコッタ・サラータ（塩漬けリコッタ）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">すりおろして仕上げにかける</span><button type="button" class="substitution-trigger" data-substitution-trigger="2814943f-c05b-4c30-a65f-3e2a2459cc39"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f233a6f9-c8a1-4842-8f5b-4cc149eecc39"><span class="ingredient-name" data-ingredient-name>バジル</span><span class="ingredient-qty" data-ingredient-qty>10枚</span></li>
               </ul>
             </section>
           </div>
@@ -254,6 +274,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"5cff08e7-fcd0-4591-a332-6484541552c8","nameJa":"揚げなすとリコッタサラータのパスタ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"75355100-1265-4546-ac30-c1f4455ccc83","nameOriginal":"Rigatoni","nameJa":"リガトーニ","nameEn":"Rigatoni","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"2c750c65-3bfa-4134-8baf-055dd64eaf13","standardIngredientId":"75355100-1265-4546-ac30-c1f4455ccc83","nameJa":"スパゲッティ","nameEn":"Spaghetti","authenticityImpact":-5,"flavorImpact":"チャンキーなナスのソースが絡みにくくなる。本場カターニャでは短いパスタが標準","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"55a53a69-0264-4498-88b0-6848b6d67b18","nameOriginal":"Melanzane","nameJa":"なす","nameEn":"Eggplant","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":"2cm角に切り、塩をふって30分置く","substitutionOptions":[]},{"id":"e72e7748-6d17-4a47-ae66-4cef18333d46","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d14aeb56-6abe-4522-a38e-88c1768aaee1","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"76a66c8e-c6de-47ee-bba0-2d8a7c6c44db","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2814943f-c05b-4c30-a65f-3e2a2459cc39","nameOriginal":"Ricotta salata","nameJa":"リコッタ・サラータ（塩漬けリコッタ）","nameEn":"Ricotta salata","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"すりおろして仕上げにかける","substitutionOptions":[{"id":"86343538-af5f-4d78-9554-d40d942d85ba","standardIngredientId":"2814943f-c05b-4c30-a65f-3e2a2459cc39","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-10,"flavorImpact":"塩気は似るがリコッタの軽さが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f233a6f9-c8a1-4842-8f5b-4cc149eecc39","nameOriginal":"Basilico","nameJa":"バジル","nameEn":"Fresh basil","quantity":10,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"なすを2cm角に切り、塩をふって30分置く。余分な水気が出たらペーパータオルで拭き取る。","title":"食材を下処理する","actionItems":["なすを2cm角に切り、塩をふって30分置く。"],"parallelItems":[],"completionCriteria":["余分な水気が出たらペーパータオルで拭き取る。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイル60mlを熱し、なすを中火で揚げ焼きにする。全面きつね色になったら（約10分）取り出す。","title":"揚げる","actionItems":["フライパンにオリーブオイル60mlを熱し、なすを中火で揚げ焼きにする。","全面きつね色になったら（約10分）取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"にんにくを薄切りにする。同じフライパンにオリーブオイル20mlを足し、にんにく（薄切り）を弱火で炒める。薄く色づいたらホールトマト400gをつぶして加え、中火で15分煮詰める。ソースにとろみがついたら次へ。","title":"材料を準備する","actionItems":["にんにくを薄切りにする。","同じフライパンにオリーブオイル20mlを足し、にんにく（薄切り）を弱火で炒める。","薄く色づいたらホールトマト400gをつぶして加え、中火で15分煮詰める。"],"parallelItems":[],"completionCriteria":["ソースにとろみがついたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":17,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"（ソースを煮詰める間に）大鍋で塩湯を沸かし、パスタを表示より1分短めに茹でる。\n・茹で汁50mlを取り置く\n・パスタをソースと和え、なすを加えて1分炒め合わせる","title":"湯を沸かす","actionItems":["茹で汁50mlを取り置く","パスタをソースと和え、なすを加えて1分炒め合わせる"],"parallelItems":["（ソースを煮詰める間に）大鍋で塩湯を沸かし、パスタを表示より1分短めに茹でる。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"皿に盛り、リコッタ・サラータをたっぷりすりおろし、バジルを手でちぎって飾る。","title":"材料を準備する","actionItems":["皿に盛り、リコッタ・サラータをたっぷりすりおろし、バジルを手でちぎって飾る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

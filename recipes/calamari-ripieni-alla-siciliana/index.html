@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,20 +93,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スルメイカまたはヤリイカ（大）</span><span class="ingredient-qty">4杯</span><span class="ingredient-notes">胴と足を分け、胴は内臓と軟骨を除いて洗う。足は粗く刻む</span></li>
-          <li><span class="ingredient-name">パン粉（細目）</span><span class="ingredient-qty">90g</span></li>
-          <li><span class="ingredient-name">レーズン</span><span class="ingredient-qty">25g</span><span class="ingredient-notes">ぬるま湯で10分戻し、水気を切る</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">20g</span></li>
-          <li><span class="ingredient-name">ケッパー</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">水気を切り、粗く刻む</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">大さじ3</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">1片はみじん切り、1片はつぶす</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">詰め物をまとめるため</span></li>
-          <li><span class="ingredient-name">トマトピューレまたは裏ごしトマト</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">塩・黒胡椒</span><span class="ingredient-qty">適量</span></li>
+              <li data-ingredient-row="6b4c125c-c889-4570-922a-e20aedf1389b"><span class="ingredient-name" data-ingredient-name>スルメイカまたはヤリイカ（大）</span><span class="ingredient-qty" data-ingredient-qty>4杯</span><span class="ingredient-notes">胴と足を分け、胴は内臓と軟骨を除いて洗う。足は粗く刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="6b4c125c-c889-4570-922a-e20aedf1389b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e1fb9ec0-8913-4fc5-b5fb-c4067ad74166"><span class="ingredient-name" data-ingredient-name>パン粉（細目）</span><span class="ingredient-qty" data-ingredient-qty>90g</span></li>
+          <li data-ingredient-row="8683b520-2de8-48bb-85cf-f09322b28681"><span class="ingredient-name" data-ingredient-name>レーズン</span><span class="ingredient-qty" data-ingredient-qty>25g</span><span class="ingredient-notes">ぬるま湯で10分戻し、水気を切る</span></li>
+          <li data-ingredient-row="91d42c1b-dc26-4ccb-abd1-0b608991bd34"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
+          <li data-ingredient-row="077ae645-266d-47c8-817e-20d4ac8430d8"><span class="ingredient-name" data-ingredient-name>ケッパー</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">水気を切り、粗く刻む</span></li>
+          <li data-ingredient-row="63291bd7-82e5-4fd0-9c51-5a5278e55af6"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>大さじ3</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="bd90b778-1b38-4c8c-b95b-346c3f34114a"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">1片はみじん切り、1片はつぶす</span></li>
+          <li data-ingredient-row="4dd94b58-462f-4a11-8e84-8bfa881010c4"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">詰め物をまとめるため</span></li>
+          <li data-ingredient-row="d732b046-2faf-4be4-a16e-e8a099202c9f"><span class="ingredient-name" data-ingredient-name>トマトピューレまたは裏ごしトマト</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="6a639ba2-e380-4bae-bf9e-90ff6cc5a6a4"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="4a49e463-0349-40cc-b6ab-3ebae3a4b624"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="b349b381-61fc-4261-8f47-74b5d008b834"><span class="ingredient-name" data-ingredient-name>塩・黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>適量</span></li>
               </ul>
             </section>
           </div>
@@ -383,6 +403,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"eebefe88-fb66-4d0d-b46c-d9cfa79d83ab","nameJa":"シチリア風イカの詰め物トマト煮","baseServings":4,"minServings":2,"maxServings":6},"ingredients":[{"id":"6b4c125c-c889-4570-922a-e20aedf1389b","nameOriginal":"Calamari freschi","nameJa":"スルメイカまたはヤリイカ（大）","nameEn":"Fresh squid (large)","quantity":4,"unit":"杯","role":"essential","scalingBehavior":null,"notes":"胴と足を分け、胴は内臓と軟骨を除いて洗う。足は粗く刻む","substitutionOptions":[{"id":"b8110ef3-c395-4b97-ac7d-5d36e6f9a1a7","standardIngredientId":"6b4c125c-c889-4570-922a-e20aedf1389b","nameJa":"小さめのイカ","nameEn":"Small squid","authenticityImpact":-5,"flavorImpact":"身が薄く火が入りやすいため、詰め物との一体感は少し弱くなる","textureImpact":null,"procedureChanges":["詰める量を減らし、煮込み時間を10分短くする"],"affectedStepNumbers":[4,5,6],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"小さめのイカに控えめに詰める","action":"replace","stepNumber":4,"actionItems":["詰め物を小さめのイカの胴の5〜6割まで詰める。","口を楊枝で留める。"],"instruction":"詰め物を小さめのイカの胴の5〜6割まで詰め、口を楊枝で留める。煮ると詰め物が膨らむため、胴に十分な余裕を残す。","cautionItems":["小さめのイカは破れやすいため、標準より詰め物を控える。"],"changeReason":"小さめのイカは容量が少なく、標準量を詰めると煮込み中に破裂しやすいため","completionCriteria":["胴を軽く押して、詰め物が動く余裕がはっきり残っていれば次へ。"]},{"title":"短く表面を焼く","action":"replace","stepNumber":5,"actionItems":["厚手の鍋に残りのオリーブオイルとつぶしたにんにくを入れて中火にかける。","香りが立ったら小さめのイカを並べる。","片面1分ずつ焼いて表面を軽く締める。"],"instruction":"厚手の鍋に残りのオリーブオイルとつぶしたにんにくを入れて中火にかける。香りが立ったら小さめのイカを並べ、片面1分ずつ焼いて表面を軽く締める。","cautionItems":["身が薄いので焼き色を強く付けず、表面を締める程度に留める。"],"changeReason":"小さめのイカは火が入りやすく、標準の焼き時間では硬くなりやすいため","completionCriteria":["イカの表面が白く締まったら次へ（約2分）。"]},{"title":"短めにトマトで煮る","action":"replace","stepNumber":6,"actionItems":["白ワイン100mlを注ぎ、2分煮立てる。","トマトピューレを加えて弱火にする。","蓋を少しずらして25〜30分煮る。","途中で一度だけイカを返す。"],"instruction":"白ワイン100mlを注ぎ、アルコールの香りが弱まるまで2分煮立てる。トマトピューレを加えて弱火にし、蓋を少しずらして25〜30分煮る。途中で一度だけイカを返す。","cautionItems":["何度も返すと胴が破れやすい。返すのは一度だけにする。"],"changeReason":"小さめのイカは標準より早く柔らかくなるため、煮込みを短くする","completionCriteria":["ソースが軽く煮詰まり、小さめのイカに串がすっと入る柔らかさになれば次へ（25〜30分）。"]}]}]},{"id":"e1fb9ec0-8913-4fc5-b5fb-c4067ad74166","nameOriginal":"Pangrattato","nameJa":"パン粉（細目）","nameEn":"Fine breadcrumbs","quantity":90,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8683b520-2de8-48bb-85cf-f09322b28681","nameOriginal":"Uvetta","nameJa":"レーズン","nameEn":"Raisins","quantity":25,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ぬるま湯で10分戻し、水気を切る","substitutionOptions":[]},{"id":"91d42c1b-dc26-4ccb-abd1-0b608991bd34","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":20,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"077ae645-266d-47c8-817e-20d4ac8430d8","nameOriginal":"Capperi","nameJa":"ケッパー","nameEn":"Capers","quantity":20,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"水気を切り、粗く刻む","substitutionOptions":[]},{"id":"63291bd7-82e5-4fd0-9c51-5a5278e55af6","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":3,"unit":"大さじ","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"bd90b778-1b38-4c8c-b95b-346c3f34114a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"1片はみじん切り、1片はつぶす","substitutionOptions":[]},{"id":"4dd94b58-462f-4a11-8e84-8bfa881010c4","nameOriginal":"Uovo","nameJa":"卵","nameEn":"Egg","quantity":1,"unit":"個","role":"technique","scalingBehavior":null,"notes":"詰め物をまとめるため","substitutionOptions":[]},{"id":"d732b046-2faf-4be4-a16e-e8a099202c9f","nameOriginal":"Passata di pomodoro","nameJa":"トマトピューレまたは裏ごしトマト","nameEn":"Tomato passata","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6a639ba2-e380-4bae-bf9e-90ff6cc5a6a4","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4a49e463-0349-40cc-b6ab-3ebae3a4b624","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b349b381-61fc-4261-8f47-74b5d008b834","nameOriginal":"Sale e pepe nero","nameJa":"塩・黒胡椒","nameEn":"Salt and black pepper","quantity":1,"unit":"適量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・イカは胴と足を分け、胴の内臓と軟骨を除いて洗い、水気をふく\n・イカの足を粗く刻む\n・レーズンをぬるま湯で10分戻し、水気を切る\n・ケッパーを粗く刻む\n・イタリアンパセリをみじん切りにする\n・にんにく1片をみじん切りにし、もう1片をつぶす","title":"材料を準備する","actionItems":["イカは胴と足を分け、胴の内臓と軟骨を除いて洗い、水気をふく。","イカの足を粗く刻む。","レーズンをぬるま湯で10分戻し、水気を切る。","ケッパーを粗く刻む。","イタリアンパセリをみじん切りにする。","にんにく1片をみじん切りにし、もう1片をつぶす。"],"parallelItems":[],"completionCriteria":["詰め物に使う材料がすべて刻まれ、イカの胴が袋状に整えば次へ。"],"cautionItems":["胴を破ると煮込み中に詰め物が出るため、内臓は指でやさしく外す。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイル大さじ1とみじん切りのにんにくを入れて弱火にかける。香りが立ったらイカの足を加えて2分炒め、パン粉を加えてさらに2分炒める。","title":"足とパン粉を炒める","actionItems":["フライパンにオリーブオイル大さじ1とみじん切りのにんにくを入れて弱火にかける。","香りが立ったらイカの足を加えて2分炒める。","パン粉を加えてさらに2分炒める。"],"parallelItems":[],"completionCriteria":["パン粉が油を吸い、軽く香ばしい香りが出たら次へ（合計4分）。"],"cautionItems":["にんにくを焦がすと苦味が出るため、弱火を保つ。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"炒めたパン粉をボウルに移し、レーズン・松の実・ケッパー・イタリアンパセリ・卵を加えて混ぜる。全体がしっとりまとまり、指で押すと軽く形が残る状態になったら、塩・黒胡椒で味を調える。","title":"詰め物を作る","actionItems":["炒めたパン粉をボウルに移す。","レーズン・松の実・ケッパー・イタリアンパセリ・卵を加えて混ぜる。","塩・黒胡椒で味を調える。"],"parallelItems":[],"completionCriteria":["全体がしっとりまとまり、指で押すと軽く形が残る状態になれば次へ。"],"cautionItems":["乾く場合は水または白ワインを小さじ1ずつ足して調整する。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"詰め物をイカの胴の6〜7割まで詰め、口を楊枝で留める。煮ると詰め物が膨らむため、胴に余裕を残す。","title":"イカに詰める","actionItems":["詰め物をイカの胴の6〜7割まで詰める。","口を楊枝で留める。"],"parallelItems":[],"completionCriteria":["胴を軽く押して、詰め物が動く余裕が残っていれば次へ。"],"cautionItems":["詰めすぎると煮込み中に破裂する。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"厚手の鍋に残りのオリーブオイルとつぶしたにんにくを入れて中火にかける。香りが立ったらイカを並べ、片面2分ずつ焼いて表面を軽く締める。","title":"表面を焼く","actionItems":["厚手の鍋に残りのオリーブオイルとつぶしたにんにくを入れて中火にかける。","香りが立ったらイカを並べる。","片面2分ずつ焼いて表面を軽く締める。"],"parallelItems":[],"completionCriteria":["イカの表面が白く締まり、うっすら焼き色がついたら次へ（約4分）。"],"cautionItems":["強く焼きすぎると身が硬くなるため、焼き色は薄く留める。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"白ワイン100mlを注ぎ、アルコールの香りが弱まるまで2分煮立てる。トマトピューレを加えて弱火にし、蓋を少しずらして35〜40分煮る。途中で一度だけイカを返す。","title":"トマトで煮る","actionItems":["白ワイン100mlを注ぎ、2分煮立てる。","トマトピューレを加えて弱火にする。","蓋を少しずらして35〜40分煮る。","途中で一度だけイカを返す。"],"parallelItems":[],"completionCriteria":["ソースが軽く煮詰まり、イカに串がすっと入る柔らかさになれば次へ（35〜40分）。"],"cautionItems":["何度も返すと胴が破れやすい。返すのは一度だけにする。"],"tipItems":[],"durationMinutes":40,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":7,"instruction":"火を止めて5分休ませ、楊枝を外す。イカを厚めの輪切りにし、ソースとともに盛る。仕上げに黒胡椒をふる。","title":"休ませて盛る","actionItems":["火を止めて5分休ませる。","楊枝を外す。","イカを厚めの輪切りにする。","ソースとともに盛る。","仕上げに黒胡椒をふる。"],"parallelItems":[],"completionCriteria":["切り口の詰め物が崩れず、ソースが皿に自然に広がれば完成。"],"cautionItems":["熱いうちにすぐ切ると詰め物が崩れやすい。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

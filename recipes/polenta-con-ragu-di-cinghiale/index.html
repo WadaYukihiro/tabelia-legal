@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>2時間30分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>12時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・グロッセート</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-06-04">2026.06.04</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,25 +94,32 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">猪肉（肩肉またはもも肉）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">3〜4cm角に切る。前夜から赤ワインとハーブでマリネする</span></li>
-          <li><span class="ingredient-name">赤ワイン（フルボディ）</span><span class="ingredient-qty">300ml</span><span class="ingredient-notes">マリネに200ml・煮込みに100ml使う。モレッリーノ・ディ・スカンサーノ等</span></li>
-          <li><span class="ingredient-name">ジュニパーベリー</span><span class="ingredient-qty">8粒</span><span class="ingredient-notes">手のひらで軽く潰してから使う</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">2枝</span></li>
-          <li><span class="ingredient-name">セージ</span><span class="ingredient-qty">4枚</span></li>
-          <li><span class="ingredient-name">黒胡椒粒</span><span class="ingredient-qty">8粒</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">潰す</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">オリーブオイル（EVO）</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">ポレンタ用とうもろこし粉</span><span class="ingredient-qty">250g</span><span class="ingredient-notes">中挽き</span></li>
-          <li><span class="ingredient-name">水（ポレンタ用）</span><span class="ingredient-qty">1000ml</span></li>
-          <li><span class="ingredient-name">無塩バター</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">ポレンタ仕上げ用</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">すりおろす。ポレンタ仕上げ用</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">10g</span></li>
+              <li data-ingredient-row="2a664a2b-3bb5-485a-aa6f-3c9fe64318c8"><span class="ingredient-name" data-ingredient-name>猪肉（肩肉またはもも肉）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">3〜4cm角に切る。前夜から赤ワインとハーブでマリネする</span><button type="button" class="substitution-trigger" data-substitution-trigger="2a664a2b-3bb5-485a-aa6f-3c9fe64318c8"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="6fa82a36-7094-45d4-8fbb-f2aed12c4539"><span class="ingredient-name" data-ingredient-name>赤ワイン（フルボディ）</span><span class="ingredient-qty" data-ingredient-qty>300ml</span><span class="ingredient-notes">マリネに200ml・煮込みに100ml使う。モレッリーノ・ディ・スカンサーノ等</span></li>
+          <li data-ingredient-row="80259b63-3581-4fce-9162-9b4268d03510"><span class="ingredient-name" data-ingredient-name>ジュニパーベリー</span><span class="ingredient-qty" data-ingredient-qty>8粒</span><span class="ingredient-notes">手のひらで軽く潰してから使う</span></li>
+          <li data-ingredient-row="38fb8d67-58a9-4aea-af01-2d8337e6a4a7"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>2枝</span></li>
+          <li data-ingredient-row="fa4ef7e9-b45b-42ca-8ab4-9da98b9e607a"><span class="ingredient-name" data-ingredient-name>セージ</span><span class="ingredient-qty" data-ingredient-qty>4枚</span></li>
+          <li data-ingredient-row="0595e746-268e-4a48-9ea7-21a773a18e86"><span class="ingredient-name" data-ingredient-name>黒胡椒粒</span><span class="ingredient-qty" data-ingredient-qty>8粒</span></li>
+          <li data-ingredient-row="e5af6a7c-740f-4914-a01e-f77c68a91618"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="5145d48d-1510-4b57-87b4-bbd7717a2a04"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="35350f56-e82e-4345-8258-029879446de2"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="86f295fa-1e73-47f6-b1d1-8083e5ed0854"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">潰す</span></li>
+          <li data-ingredient-row="416e2de8-0f1a-4c32-b3ce-e95a1c04f248"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="01f4e97f-ae02-4b49-9682-f82a784c1f5e"><span class="ingredient-name" data-ingredient-name>オリーブオイル（EVO）</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="1993b282-afaa-40e8-ba1d-e8e547dd8449"><span class="ingredient-name" data-ingredient-name>ポレンタ用とうもろこし粉</span><span class="ingredient-qty" data-ingredient-qty>250g</span><span class="ingredient-notes">中挽き</span></li>
+          <li data-ingredient-row="63d0d12b-169d-45e9-b36a-c23b704cfa22"><span class="ingredient-name" data-ingredient-name>水（ポレンタ用）</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span></li>
+          <li data-ingredient-row="23c9dbde-fe90-4692-8c91-365f8f9c1879"><span class="ingredient-name" data-ingredient-name>無塩バター</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">ポレンタ仕上げ用</span></li>
+          <li data-ingredient-row="938f1306-ec22-4b7b-b8f6-7ef90684a653"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">すりおろす。ポレンタ仕上げ用</span></li>
+          <li data-ingredient-row="da39c0b0-d5c4-464f-8a86-224871627130"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>10g</span></li>
               </ul>
             </section>
           </div>
@@ -336,6 +356,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"04ecbdac-da28-4ca9-b5c5-a3143879fd44","nameJa":"ポレンタと猪のラグー","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"2a664a2b-3bb5-485a-aa6f-3c9fe64318c8","nameOriginal":"Cinghiale (spalla o coscia)","nameJa":"猪肉（肩肉またはもも肉）","nameEn":"Wild boar shoulder or leg","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3〜4cm角に切る。前夜から赤ワインとハーブでマリネする","substitutionOptions":[{"id":"25263895-859b-4691-ae30-b8e5670f774b","standardIngredientId":"2a664a2b-3bb5-485a-aa6f-3c9fe64318c8","nameJa":"豚肩肉（かたまり）","nameEn":"Pork shoulder","authenticityImpact":-10,"flavorImpact":"野性の風味が失われ、穏やかな仕上がりになる。マリネの効果は同様に出る","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"豚肩肉を前夜マリネする（8時間）","action":"replace","stepNumber":1,"actionItems":["豚肩肉600gを3〜4cm角に切る。","保存容器に赤ワイン200ml・ジュニパーベリー8粒（軽く潰す）・ローズマリー1枝・セージ2枚・黒胡椒粒8粒・にんにく1片（潰す）を入れる。","肉をワインに漬け込み、ラップをして冷蔵庫で8時間以上マリネする。"],"instruction":"豚肩肉（かたまり）を3〜4cm角に切る。保存容器に赤ワイン200ml・ジュニパーベリー8粒（軽く潰す）・ローズマリー1枝・セージ2枚・黒胡椒粒8粒・にんにく1片（潰す）を入れ、肉全体をワインに漬ける。ラップをして冷蔵庫で8時間以上マリネする。肉の表面が深い赤紫色になれば次へ。","changeReason":"豚肩肉は猪ほど野性味が強くないためマリネ時間を12時間から8時間に短縮できる","completionCriteria":["8時間以上。肉の表面が深い赤紫色になれば次へ。"]}]}]},{"id":"6fa82a36-7094-45d4-8fbb-f2aed12c4539","nameOriginal":"Vino rosso","nameJa":"赤ワイン（フルボディ）","nameEn":"Full-bodied red wine","quantity":300,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"マリネに200ml・煮込みに100ml使う。モレッリーノ・ディ・スカンサーノ等","substitutionOptions":[]},{"id":"80259b63-3581-4fce-9162-9b4268d03510","nameOriginal":"Bacche di ginepro","nameJa":"ジュニパーベリー","nameEn":"Juniper berries","quantity":8,"unit":"粒","role":"flavor","scalingBehavior":null,"notes":"手のひらで軽く潰してから使う","substitutionOptions":[]},{"id":"38fb8d67-58a9-4aea-af01-2d8337e6a4a7","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fa4ef7e9-b45b-42ca-8ab4-9da98b9e607a","nameOriginal":"Salvia","nameJa":"セージ","nameEn":"Sage","quantity":4,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0595e746-268e-4a48-9ea7-21a773a18e86","nameOriginal":"Pepe nero intero","nameJa":"黒胡椒粒","nameEn":"Black peppercorns","quantity":8,"unit":"粒","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e5af6a7c-740f-4914-a01e-f77c68a91618","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"5145d48d-1510-4b57-87b4-bbd7717a2a04","nameOriginal":"Carota","nameJa":"にんじん","nameEn":"Carrot","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"35350f56-e82e-4345-8258-029879446de2","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"86f295fa-1e73-47f6-b1d1-8083e5ed0854","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"潰す","substitutionOptions":[]},{"id":"416e2de8-0f1a-4c32-b3ce-e95a1c04f248","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"01f4e97f-ae02-4b49-9682-f82a784c1f5e","nameOriginal":"Olio extravergine di oliva","nameJa":"オリーブオイル（EVO）","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1993b282-afaa-40e8-ba1d-e8e547dd8449","nameOriginal":"Farina di mais per polenta","nameJa":"ポレンタ用とうもろこし粉","nameEn":"Polenta cornmeal","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"中挽き","substitutionOptions":[]},{"id":"63d0d12b-169d-45e9-b36a-c23b704cfa22","nameOriginal":"Acqua","nameJa":"水（ポレンタ用）","nameEn":"Water (for polenta)","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"23c9dbde-fe90-4692-8c91-365f8f9c1879","nameOriginal":"Burro","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"ポレンタ仕上げ用","substitutionOptions":[]},{"id":"938f1306-ec22-4b7b-b8f6-7ef90684a653","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす。ポレンタ仕上げ用","substitutionOptions":[]},{"id":"da39c0b0-d5c4-464f-8a86-224871627130","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":10,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"猪肉（肩またはもも）を3〜4cm角に切る。保存容器に赤ワイン200ml・ジュニパーベリー8粒（軽く潰す）・ローズマリー1枝・セージ2枚・黒胡椒粒8粒・にんにく1片（潰す）を入れ、肉全体をワインに漬ける。ラップをして冷蔵庫で12時間以上マリネする。肉の表面が深い赤紫色になれば次へ。","title":"猪肉を前夜マリネする（12時間）","actionItems":["猪肉600gを3〜4cm角に切る。","保存容器に赤ワイン200ml・ジュニパーベリー8粒（軽く潰す）・ローズマリー1枝・セージ2枚・黒胡椒粒8粒・にんにく1片（潰す）を入れる。","肉をワインに漬け込み、ラップをして冷蔵庫で12時間以上マリネする。"],"parallelItems":[],"completionCriteria":["12時間以上。肉の表面が深い赤紫色になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":720,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"翌日、猪肉をマリネ液から取り出してキッチンペーパーで水気を拭く。マリネ液は取り置く。\n・玉ねぎ1個・にんじん1本・セロリ1本を各みじん切りにする\n・厚手の鍋にオリーブオイル40mlを入れて中火で熱し、玉ねぎ・にんじん・セロリ・にんにく1片（潰す）を加えて8〜10分炒める\n・野菜がしんなりして甘い香りが立ってきたら次へ","title":"野菜のソフリットを作る","actionItems":["猪肉を取り出してキッチンペーパーで水気をよく拭く。マリネ液は取り置く。","玉ねぎ1個・にんじん1本・セロリ1本をみじん切りにする。","厚手の鍋にオリーブオイル40mlを入れて中火で熱する。","玉ねぎ・にんじん・セロリ・にんにく1片（潰す）を加えて8〜10分炒める。"],"parallelItems":[],"completionCriteria":["8〜10分。野菜がしんなりして甘い香りが立ってきたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鍋の野菜を端に寄せ、猪肉を加えて全面に焼き色をつける。8〜10分かけてしっかり焼き付ける。肉の全面が濃いきつね色になったら次へ。","title":"猪肉を焼き付ける","actionItems":["鍋の野菜を端に寄せ、猪肉を加えて強火にする。","肉の全面に焼き色がつくまで8〜10分焼き付ける。"],"parallelItems":[],"completionCriteria":["全面に濃いきつね色がついたら次へ。"],"cautionItems":["焼き色をしっかりつけることでソースに旨みと深みが出る。急いで次のステップに進まない。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"取り置いたマリネ液100ml（残りのワイン分）を注いで中火で約2分煮立て、アルコール臭が飛んだらホールトマト缶400gを手でつぶしながら加える。残りのローズマリー1枝・セージ2枚を加え、塩5gで調味する。蓋をして弱火で2時間〜2時間30分煮込む。肉がフォークで崩れる柔らかさになれば次へ。","title":"ワインで煮詰め、トマトで煮込む","actionItems":["マリネ液100mlを注ぎ、中火で約2分煮立てアルコール臭を飛ばす。","ホールトマト缶400gを手でつぶしながら加える。","ローズマリー1枝・セージ2枚を加え、塩5gで調味する。","蓋をして弱火で2時間〜2時間30分煮込む。"],"parallelItems":[],"completionCriteria":["2時間〜2時間30分。肉がフォークを当てると崩れる柔らかさになれば次へ。","ソースが深い赤褐色になり、脂がにじんでいれば十分に煮込まれた証拠。"],"cautionItems":[],"tipItems":[],"durationMinutes":130,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"（ラグーを煮込む間の終盤30分に）別の厚手の鍋に水1000mlと塩5gを入れて強火にかける。沸騰直前になったら弱火に落とし、ポレンタ用とうもろこし粉250gを少しずつ加えながら泡立て器で混ぜる。粉が均一になったら木べらに持ち替え、弱火で30〜35分絶えず混ぜながら炊く。木べらの跡がゆっくり閉じる濃度になったら火を止め、無塩バター30g・すりおろしたパルミジャーノ・レッジャーノ30gを混ぜ込む。","title":"ポレンタを炊く","actionItems":["別の鍋に水1000ml・塩5gを入れて強火にかける。","沸騰直前に弱火にし、ポレンタ粉250gを少しずつ加えながら泡立て器で混ぜる。","木べらに持ち替えて弱火で30〜35分炊く。","火を止め、無塩バター30g・すりおろしたパルミジャーノ30gを混ぜ込む。"],"parallelItems":["ラグーを煮込む間の終盤30分に同時進行でポレンタを炊く。"],"completionCriteria":["30〜35分。木べらの跡がゆっくり閉じる濃度になれば火を止める。"],"cautionItems":["木べらの跡がゆっくり閉じる濃度になったら火を止め、無塩バター30g・すりおろしたパルミジャーノ・レッジャーノ30gを混ぜ込む。"],"tipItems":[],"durationMinutes":35,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"ラグーのハーブ（ローズマリー・セージ）を取り除く。味をみて塩で調整する。温かいポレンタを皿に広げ、猪のラグーをたっぷり中央に盛る。好みでパルミジャーノを追加してすぐに供する。","title":"ラグーを仕上げて盛り付ける","actionItems":["ラグーのハーブを取り除き、塩で味を調える。","皿にポレンタを広げ、中央に猪のラグーをたっぷり盛る。"],"parallelItems":[],"completionCriteria":["ポレンタとラグーが温かく、チーズが溶け始めていれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

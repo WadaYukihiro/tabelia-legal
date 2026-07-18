@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>29分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・バジリカータ・カラブリア</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">フレッシュポークソーセージ（サルシッチャ）</span><span class="ingredient-qty">500g（4〜6本）</span><span class="ingredient-notes">フレッシュタイプを使う。ジャーマンソーセージ・ウインナーではなく粗挽きのもの</span></li>
-          <li><span class="ingredient-name">パプリカ（赤・黄）</span><span class="ingredient-qty">4個</span><span class="ingredient-notes">1.5cm幅に切る。種を除く</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
+              <li data-ingredient-row="9d47a316-14c0-42f3-af7f-c614acfb5303"><span class="ingredient-name" data-ingredient-name>フレッシュポークソーセージ（サルシッチャ）</span><span class="ingredient-qty" data-ingredient-qty>500g（4〜6本）</span><span class="ingredient-notes">フレッシュタイプを使う。ジャーマンソーセージ・ウインナーではなく粗挽きのもの</span><button type="button" class="substitution-trigger" data-substitution-trigger="9d47a316-14c0-42f3-af7f-c614acfb5303"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d2696daf-ab84-4fce-8918-37ab6a717b4b"><span class="ingredient-name" data-ingredient-name>パプリカ（赤・黄）</span><span class="ingredient-qty" data-ingredient-qty>4個</span><span class="ingredient-notes">1.5cm幅に切る。種を除く</span></li>
+          <li data-ingredient-row="60396ab6-bc19-4128-8e2b-ac6fc191637f"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="1f57af53-feda-4f7b-b131-d00a6ac361ad"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span></li>
+          <li data-ingredient-row="d582243a-5a7b-4646-86bb-2f6e47108fc5"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="ea94c3d8-23c4-4f15-b08a-87ae773b2993"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
               </ul>
             </section>
           </div>
@@ -261,6 +281,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"615cf511-26ed-41ff-ab67-354cde0882bc","nameJa":"サルシッチャとパプリカのソテー","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"9d47a316-14c0-42f3-af7f-c614acfb5303","nameOriginal":"Salsiccia fresca (maiale)","nameJa":"フレッシュポークソーセージ（サルシッチャ）","nameEn":"Fresh Italian pork sausage","quantity":500,"unit":"g（4〜6本）","role":"essential","scalingBehavior":null,"notes":"フレッシュタイプを使う。ジャーマンソーセージ・ウインナーではなく粗挽きのもの","substitutionOptions":[{"id":"30881264-9b6a-44c6-bfd3-fed9ef12316a","standardIngredientId":"9d47a316-14c0-42f3-af7f-c614acfb5303","nameJa":"豚ひき肉（粗めの合いびき肉）を使ったミートボール","nameEn":"Pork meatballs","authenticityImpact":-20,"flavorImpact":"食感が完全に変わるが風味の組み合わせは近い","textureImpact":null,"procedureChanges":["ひき肉にフェンネルシード・塩・こしょうを混ぜて丸める"],"affectedStepNumbers":[1,2,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"フェンネルシード・塩・黒胡椒を混ぜてミートボールにする","action":"update","nameEn":"Coarse ground pork","nameJa":"豚ひき肉（粗め）","quantity":500,"targetNameJa":"フレッシュポークソーセージ（サルシッチャ）"},{"role":"flavor","unit":"小さじ","notes":"軽くつぶして豚ひき肉に混ぜる","action":"add","nameEn":"Fennel seeds","nameJa":"フェンネルシード","quantity":1},{"role":"flavor","unit":"g","action":"add","nameEn":"Salt for meatballs","nameJa":"塩（ミートボール用）","quantity":4},{"role":"flavor","unit":"少々","action":"add","nameEn":"Black pepper for meatballs","nameJa":"黒胡椒（ミートボール用）","quantity":1}],"stepPatches":[{"title":"野菜とミートボールを準備する","action":"replace","stepNumber":1,"actionItems":["パプリカ4個の種を除き1.5cm幅に切る。","玉ねぎ2個を薄切りにする。","豚ひき肉500gに軽くつぶしたフェンネルシード小さじ1・塩4g・黒胡椒少々を混ぜ、4〜6個の大きめのミートボールに丸める。"],"instruction":"・パプリカの種を除き1.5cm幅に切る\n・玉ねぎを薄切りにする\n・豚ひき肉500gに軽くつぶしたフェンネルシード小さじ1・塩4g・黒胡椒少々を混ぜ、4〜6個の大きめのミートボールに丸める","changeReason":"サルシッチャの代わりに豚ひき肉を成形し、フェンネルの香りで風味を補う","completionCriteria":["ミートボールの表面に割れ目がなく、軽く押すとまとまっていれば次へ。"]},{"title":"ミートボールを焼く","action":"replace","stepNumber":2,"actionItems":["フライパンにオリーブオイル40mlを中火で熱する。","ミートボールを転がしながら全面きつね色になるまで6〜8分焼いて取り出す。"],"instruction":"フライパンにオリーブオイルを中火で熱し、ミートボールを転がしながら全面きつね色になるまで焼いて取り出す（6〜8分）。内部に完全に火が通らなくてよい。","changeReason":"ミートボールはソーセージより表面積が広く、短めに焼き固める","completionCriteria":["全面にきつね色がついたら取り出す（内部に完全に火が通らなくてよい）。"]},{"title":"ミートボールを戻して煮込む","action":"replace","stepNumber":4,"actionItems":["白ワイン100mlを注いで2分煮詰める。","ミートボールを戻して蓋をし弱火で15分煮込む。","塩で調整する。"],"instruction":"白ワインを注いで2分煮詰める。ミートボールを戻して蓋をして弱火で15分煮込む。中心まで完全に火を通す。塩で調整。","changeReason":"煮込みに戻す対象をミートボールに合わせる","completionCriteria":["ミートボールの中心まで完全に火が通れば完成。"]}]},{"id":"583e93e8-5622-44bc-ba7a-62335421156f","standardIngredientId":"9d47a316-14c0-42f3-af7f-c614acfb5303","nameJa":"粗挽きポークソーセージ（市販）","nameEn":"Coarse ground pork sausage","authenticityImpact":-10,"flavorImpact":"ハーブや塩気が異なるが料理として成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d2696daf-ab84-4fce-8918-37ab6a717b4b","nameOriginal":"Peperoni rossi e gialli","nameJa":"パプリカ（赤・黄）","nameEn":"Red and yellow bell peppers","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"1.5cm幅に切る。種を除く","substitutionOptions":[]},{"id":"60396ab6-bc19-4128-8e2b-ac6fc191637f","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":2,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"1f57af53-feda-4f7b-b131-d00a6ac361ad","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d582243a-5a7b-4646-86bb-2f6e47108fc5","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ea94c3d8-23c4-4f15-b08a-87ae773b2993","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・パプリカの種を除き1.5cm幅に切る\n・玉ねぎを薄切りにする\n・ソーセージの表面を数か所フォークで刺す（焼いた時に皮が破裂するのを防ぐ）","title":"野菜とソーセージを準備する","actionItems":["パプリカ4個の種を除き1.5cm幅に切る。","玉ねぎ2個を薄切りにする。","ソーセージ500gの表面を数か所フォークで刺す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイルを中火で熱し、ソーセージを全面きつね色になるまで焼いて取り出す（8〜10分）。内部に完全に火が通らなくてよい。","title":"ソーセージを焼く","actionItems":["フライパンにオリーブオイル40mlを中火で熱する。","ソーセージを全面きつね色になるまで8〜10分焼いて取り出す。"],"parallelItems":[],"completionCriteria":["全面にきつね色がついたら取り出す（内部に完全に火が通らなくてよい）。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンで玉ねぎ（薄切り）・にんにく（薄切りまたはみじん切り）を中火で6分、玉ねぎが透明になるまで炒める。パプリカを加えてさらに6分炒める。","title":"野菜を炒める","actionItems":["同じフライパンで玉ねぎ（薄切り）・にんにく2片（薄切りまたはみじん切り）を中火で6分炒める。","パプリカを加えてさらに6分炒める。"],"parallelItems":[],"completionCriteria":["玉ねぎが透明になりパプリカが少し柔らかくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":13,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"白ワインを注いで2分煮詰める。ソーセージを戻して蓋をして弱火で15分煮込む。ソーセージに完全に火を通す。塩で調整。","title":"ソーセージを戻して煮込む","actionItems":["白ワイン100mlを注いで2分煮詰める。","ソーセージを戻して蓋をし弱火で15分煮込む。","塩で調整する。"],"parallelItems":[],"completionCriteria":["ソーセージに完全に火が通れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"皿に盛り付けてパンと一緒に。パプリカのジュースをパンですくうのが南イタリア流。","title":"パプリカごと皿に盛る","actionItems":["皿に盛り付けてパンと一緒に供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

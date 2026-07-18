@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">なす</span><span class="ingredient-qty">600g</span></li>
-          <li><span class="ingredient-name">揚げ油（ひまわり油）</span><span class="ingredient-qty">400ml</span></li>
-          <li><span class="ingredient-name">白ワインビネガー</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span></li>
-          <li><span class="ingredient-name">フレッシュミント</span><span class="ingredient-qty">1束</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">小さじ2</span></li>
+              <li data-ingredient-row="bbbaeb0d-9d46-4756-81d4-8ff0b7fc4112"><span class="ingredient-name" data-ingredient-name>なす</span><span class="ingredient-qty" data-ingredient-qty>600g</span></li>
+          <li data-ingredient-row="6cecef7d-e938-4fc9-be2f-8fe0d1a1eadc"><span class="ingredient-name" data-ingredient-name>揚げ油（ひまわり油）</span><span class="ingredient-qty" data-ingredient-qty>400ml</span></li>
+          <li data-ingredient-row="d54dd615-4391-4c38-9d8e-5c9e07c038f4"><span class="ingredient-name" data-ingredient-name>白ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="e363a7c2-64d9-461e-9b81-489f8f7c6b60"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span></li>
+          <li data-ingredient-row="aef9ffff-3632-42bd-8bc4-5d633a31c93e"><span class="ingredient-name" data-ingredient-name>フレッシュミント</span><span class="ingredient-qty" data-ingredient-qty>1束</span></li>
+          <li data-ingredient-row="893434d7-61bb-412a-b214-10cdf542ea7c"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>小さじ2</span></li>
               </ul>
             </section>
           </div>
@@ -203,6 +223,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"afd5424f-1c7d-4d32-9324-76639e1cc1d7","nameJa":"メランザーネ・アッラ・スカペーチェ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"bbbaeb0d-9d46-4756-81d4-8ff0b7fc4112","nameOriginal":"Melanzane","nameJa":"なす","nameEn":"Eggplant","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6cecef7d-e938-4fc9-be2f-8fe0d1a1eadc","nameOriginal":"Olio di semi","nameJa":"揚げ油（ひまわり油）","nameEn":"Sunflower oil for frying","quantity":400,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d54dd615-4391-4c38-9d8e-5c9e07c038f4","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e363a7c2-64d9-461e-9b81-489f8f7c6b60","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"aef9ffff-3632-42bd-8bc4-5d633a31c93e","nameOriginal":"Menta fresca","nameJa":"フレッシュミント","nameEn":"Fresh mint","quantity":1,"unit":"束","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"893434d7-61bb-412a-b214-10cdf542ea7c","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":2,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"なすを5mm厚の輪切りにする。コランダーに並べ、塩小さじ2をまぶして30分置き、アクと水分を抜く。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"下準備・塩もみ"},{"stepNumber":2,"instruction":"塩出ししたなすをペーパータオルでしっかり拭き取る。水分が残ると油はねの原因になる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"揚げ鍋に油を入れて175℃に熱し、なすを数枚ずつ入れて3〜4分揚げる。全面がきつね色になったら取り出し、ペーパータオルで油を切る。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"揚げる"},{"stepNumber":4,"instruction":"にんにくを薄切りにする。ミントの葉を茎から摘む。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"保存容器になすを1層並べ、にんにく少量とミントをちぎって散らし、白ワインビネガーを少量かける。これを繰り返して層を重ねる。仕上げにEVオリーブオイル大さじ2をかける。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"マリネする"},{"stepNumber":6,"instruction":"蓋をして冷蔵庫で一晩（最低4時間）休ませる。翌日が最も味がなじんで美味しい。常温で供し、余分なビネガーは省略しない。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"熟成"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

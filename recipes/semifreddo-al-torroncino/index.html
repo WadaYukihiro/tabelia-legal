@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>23分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>6時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・アルバ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,13 +94,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">5個</span><span class="ingredient-notes">新鮮なものを使用</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">120g</span></li>
-          <li><span class="ingredient-name">トローネ（かための）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">砕いておく。アーモンド入りまたはヘーゼルナッツ入り推奨</span></li>
-          <li><span class="ingredient-name">焙煎アーモンド（飾り用）</span><span class="ingredient-qty">30g</span></li>
+              <li data-ingredient-row="a256fc65-ed4c-4581-91aa-dd5521a6cb1b"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="9acb6b4b-5316-4fbd-be26-66f41571393d"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>5個</span><span class="ingredient-notes">新鮮なものを使用</span></li>
+          <li data-ingredient-row="8f125670-7b7c-4d32-b294-1452343fd4be"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>120g</span></li>
+          <li data-ingredient-row="fe0c4198-32f7-4234-b9a3-0eeafddbee08"><span class="ingredient-name" data-ingredient-name>トローネ（かための）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">砕いておく。アーモンド入りまたはヘーゼルナッツ入り推奨</span><button type="button" class="substitution-trigger" data-substitution-trigger="fe0c4198-32f7-4234-b9a3-0eeafddbee08"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a71a1921-db45-469e-96a7-fce139f91dfb"><span class="ingredient-name" data-ingredient-name>焙煎アーモンド（飾り用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
               </ul>
             </section>
           </div>
@@ -291,6 +311,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"a57e7fa9-a40d-405c-9323-1db40a301656","nameJa":"トロンチーノのセミフレッド","baseServings":8,"minServings":4,"maxServings":20},"ingredients":[{"id":"a256fc65-ed4c-4581-91aa-dd5521a6cb1b","nameOriginal":"Panna fresca da montare","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy whipping cream","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9acb6b4b-5316-4fbd-be26-66f41571393d","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄","nameEn":"Egg yolks","quantity":5,"unit":"個","role":"essential","scalingBehavior":null,"notes":"新鮮なものを使用","substitutionOptions":[]},{"id":"8f125670-7b7c-4d32-b294-1452343fd4be","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fe0c4198-32f7-4234-b9a3-0eeafddbee08","nameOriginal":"Torrone duro","nameJa":"トローネ（かための）","nameEn":"Hard nougat (torrone)","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"砕いておく。アーモンド入りまたはヘーゼルナッツ入り推奨","substitutionOptions":[{"id":"e7700f14-c67e-419f-bdab-9120b8abb875","standardIngredientId":"fe0c4198-32f7-4234-b9a3-0eeafddbee08","nameJa":"クランチーチョコ（ヘーゼルナッツ）","nameEn":"Hazelnut chocolate crunch","authenticityImpact":-10,"flavorImpact":"ヌガーらしさが減るが食感は似る","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a71a1921-db45-469e-96a7-fce139f91dfb","nameOriginal":"Mandorle tostate","nameJa":"焙煎アーモンド（飾り用）","nameEn":"Toasted almonds","quantity":30,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"トローネをビニール袋に入れてめん棒などで叩き、粗めに砕く（1cm以下の粒）。","title":"トローネを砕く","actionItems":["トローネ200gをビニール袋に入れ、めん棒で叩いて粗く砕く（1cm以下の粒）。"],"parallelItems":[],"completionCriteria":["1cm以下の不均一な粒になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"卵黄5個と砂糖120gを耐熱ボウルに入れ、電動ミキサーで5〜7分、白く泡立つまで混ぜる（湯煎なしでOK）。","title":"卵黄クリームを作る","actionItems":["卵黄5個と砂糖120gを耐熱ボウルに入れ、電動ミキサーで混ぜる。"],"parallelItems":[],"completionCriteria":["5〜7分。白く泡立ちもったりした状態になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生クリームを別のボウルで七〜八分立てにする。泡立てすぎない（角が立ちすぎるともろくなる）。","title":"生クリームを泡立てる","actionItems":["生クリーム500mlを別の冷えたボウルで七〜八分立てにする。"],"parallelItems":[],"completionCriteria":["ゆるやかな角が立つ七〜八分立てになれば次へ。"],"cautionItems":["泡立てすぎると生クリームがもろくなる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"卵黄クリームに砕いたトローネを加えて混ぜる。続いて生クリームの1/3を加えてしっかり混ぜ、残りの生クリームを2回に分けてさっくりと折り込む。","title":"クリームを合わせる","actionItems":["卵黄クリームに砕いたトローネを加えて混ぜる。","生クリームの1/3を加えてしっかり混ぜる。","残りの生クリームを2回に分けてゴムベラでさっくりと折り込む。"],"parallelItems":[],"completionCriteria":["均一に混ざり、白い筋がなくなれば次へ。"],"cautionItems":["生クリームの泡をなるべく消さないよう、切るように折り込む。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"パウンド型（1kg用）またはシリコン型にラップを敷き、生地を流し込む。表面をならし、ラップで蓋をして冷凍庫で最低6時間（できれば一晩）固める。","title":"冷凍庫で固める","actionItems":["パウンド型にラップをしっかり敷く。","生地を流し込んで表面をならし、ラップで蓋をする。","冷凍庫で最低6時間固める。"],"parallelItems":[],"completionCriteria":["最低6時間。完全に固まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":360,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"提供15〜20分前に冷凍庫から出して軽く解凍する。型から取り出して1.5〜2cm厚に切り分け、焙煎アーモンドと砕いたトローネを飾って提供。","title":"切り分けてトローネを飾る","actionItems":["提供15〜20分前に冷凍庫から出す。","型から取り出して1.5〜2cm厚に切り分ける。","焙煎アーモンドと砕いたトローネを飾って提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["切る前に15〜20分解凍しないと切りにくい。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

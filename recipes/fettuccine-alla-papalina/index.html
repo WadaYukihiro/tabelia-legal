@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">フェットゥッチーネ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">プロシュット・コット（ハム、厚切り）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">1cm角のさいの目切り</span></li>
-          <li><span class="ingredient-name">グリーンピース（生または冷凍）</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">3個</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">玉ねぎ（小）</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">細かくみじん切り</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少量</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">ソース調味用・パスタ茹で水用（各適量）</span></li>
+              <li data-ingredient-row="b00f28c9-b708-4925-83c9-81f2eba9052c"><span class="ingredient-name" data-ingredient-name>フェットゥッチーネ</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="b00f28c9-b708-4925-83c9-81f2eba9052c"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="61aeedcd-5f46-4c18-a5eb-2b407cfb591f"><span class="ingredient-name" data-ingredient-name>プロシュット・コット（ハム、厚切り）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">1cm角のさいの目切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="61aeedcd-5f46-4c18-a5eb-2b407cfb591f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="26c64cf2-1afe-40e1-b974-8cd41e2b4203"><span class="ingredient-name" data-ingredient-name>グリーンピース（生または冷凍）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><button type="button" class="substitution-trigger" data-substitution-trigger="26c64cf2-1afe-40e1-b974-8cd41e2b4203"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d0709043-82cd-4029-84dc-693109f2a913"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>3個</span><button type="button" class="substitution-trigger" data-substitution-trigger="d0709043-82cd-4029-84dc-693109f2a913"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="381d439e-f54c-43ca-a6a9-41e1f213004d"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="381d439e-f54c-43ca-a6a9-41e1f213004d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="dcc3a7b3-fe52-4b73-8e79-9bde7c533277"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><button type="button" class="substitution-trigger" data-substitution-trigger="dcc3a7b3-fe52-4b73-8e79-9bde7c533277"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c233af3d-e174-4347-af17-f75b1f5b9b69"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="5f3bd0b3-0510-4d46-a189-13ab2e5c8312"><span class="ingredient-name" data-ingredient-name>玉ねぎ（小）</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">細かくみじん切り</span></li>
+          <li data-ingredient-row="a5d8e843-3d4d-447e-93eb-6e467b4e059d"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
+          <li data-ingredient-row="a2fdd638-80a2-4ccc-b0f3-4bd20f0d3988"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">ソース調味用・パスタ茹で水用（各適量）</span></li>
               </ul>
             </section>
           </div>
@@ -359,6 +379,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d9c804ca-2caf-4704-af5f-04c4c97db628","nameJa":"ローマ風ハムと卵のフェットゥッチーネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"b00f28c9-b708-4925-83c9-81f2eba9052c","nameOriginal":"Fettuccine","nameJa":"フェットゥッチーネ","nameEn":"Fettuccine","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"a09b470b-0997-4dae-a21d-5b16be99f938","standardIngredientId":"b00f28c9-b708-4925-83c9-81f2eba9052c","nameJa":"タリアテッレ","nameEn":"Tagliatelle","authenticityImpact":-5,"flavorImpact":"食感はほぼ同じ。代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"61aeedcd-5f46-4c18-a5eb-2b407cfb591f","nameOriginal":"Prosciutto cotto","nameJa":"プロシュット・コット（ハム、厚切り）","nameEn":"Cooked ham, thick cut","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm角のさいの目切り","substitutionOptions":[{"id":"f17a4545-5ef5-4e1a-ba88-b74a646ef079","standardIngredientId":"61aeedcd-5f46-4c18-a5eb-2b407cfb591f","nameJa":"パンチェッタ","nameEn":"Pancetta","authenticityImpact":-5,"flavorImpact":"塩気と脂が強くなる。カルボナーラに近い味になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"26c64cf2-1afe-40e1-b974-8cd41e2b4203","nameOriginal":"Piselli freschi o surgelati","nameJa":"グリーンピース（生または冷凍）","nameEn":"Green peas, fresh or frozen","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"e27d5ace-5bf0-418d-95df-121d01e6b4b9","standardIngredientId":"26c64cf2-1afe-40e1-b974-8cd41e2b4203","nameJa":"枝豆（冷凍・解凍）","nameEn":"Frozen edamame, thawed","authenticityImpact":-5,"flavorImpact":"グリーンピースより豆の風味が強い。彩りは近い","textureImpact":null,"procedureChanges":["塩湯での茹で工程は不要。解凍して水気を拭いてからハムと炒め合わせる"],"affectedStepNumbers":[2,6],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"解凍して水気を切る","action":"update","nameEn":"Frozen edamame, thawed","nameJa":"枝豆（冷凍・解凍）","quantity":150,"targetNameJa":"グリーンピース（生または冷凍）"}],"stepPatches":[{"title":"枝豆を解凍する","action":"replace","stepNumber":2,"actionItems":["冷凍枝豆150gを解凍する。","さや付きの場合は豆を取り出して水気を切る。","キッチンペーパーで表面の水分を軽く拭く。"],"instruction":"冷凍枝豆150gを解凍し、さや付きの場合は豆を取り出して水気を切る。キッチンペーパーで表面の水分を軽く拭く。","cautionItems":["水分が残ると卵液が薄まるため、しっかり水気を切る。"],"changeReason":"冷凍枝豆はすでに加熱済みのため塩湯で茹でない","completionCriteria":["枝豆が解凍され、余分な水分が取れたら完了。"]},{"title":"枝豆を加える","action":"replace","stepNumber":6,"actionItems":["枝豆を加えて1〜2分炒め合わせる。","塩小さじ1/4・黒胡椒3〜4回挽きで調味する。"],"instruction":"（炒める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。枝豆を加えて1〜2分炒め合わせる。塩小さじ1/4・黒胡椒3〜4回挽きで調味する。","changeReason":"炒め合わせる具材名と加熱判断を枝豆に合わせる","parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["枝豆が温まり、1〜2分炒め合わせたら完了。"]}]}]},{"id":"d0709043-82cd-4029-84dc-693109f2a913","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄","nameEn":"Egg yolks","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"0e9b9db8-9ec3-40e3-be27-bcdecc16fcab","standardIngredientId":"d0709043-82cd-4029-84dc-693109f2a913","nameJa":"全卵2個","nameEn":"2 whole eggs","authenticityImpact":-5,"flavorImpact":"卵白が加わりソースが少し緩くなる。乳化はしやすくなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"381d439e-f54c-43ca-a6a9-41e1f213004d","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"f3d1138a-76e5-49bb-b99f-fc7c51e74af1","standardIngredientId":"381d439e-f54c-43ca-a6a9-41e1f213004d","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-10,"flavorImpact":"乳化感と濃厚さが落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"dcc3a7b3-fe52-4b73-8e79-9bde7c533277","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano, grated","quantity":80,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"b979ad3d-08a7-4ca8-8a28-f79d6b21a0cd","standardIngredientId":"dcc3a7b3-fe52-4b73-8e79-9bde7c533277","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"やや軽めの風味だが代用として十分","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c233af3d-e174-4347-af17-f75b1f5b9b69","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5f3bd0b3-0510-4d46-a189-13ab2e5c8312","nameOriginal":"Cipolla","nameJa":"玉ねぎ（小）","nameEn":"Small onion","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"細かくみじん切り","substitutionOptions":[]},{"id":"a5d8e843-3d4d-447e-93eb-6e467b4e059d","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a2fdd638-80a2-4ccc-b0f3-4bd20f0d3988","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ソース調味用・パスタ茹で水用（各適量）","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ボウルに卵黄3個・生クリーム150ml・パルミジャーノ40gを合わせ、黒胡椒3〜4回挽きを加えてよく混ぜ、卵液を作る。","title":"卵液を作る","actionItems":["ボウルに卵黄3個・生クリーム150ml・パルミジャーノ40gを合わせる。","黒胡椒3〜4回挽きを加えてよく混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざったら卵液完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"グリーンピースを塩湯（湯500ml＋塩小さじ1）で2〜3分茹でて水気を切る。","title":"グリーンピースを茹でる","actionItems":["グリーンピースを塩湯（湯500ml＋塩小さじ1）で2〜3分茹でて水気を切る。"],"parallelItems":[],"completionCriteria":["2〜3分茹でて水気を切ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"・玉ねぎを細かくみじん切りにする\n・プロシュット・コットを1cm角のさいの目切りにする","title":"食材を切る","actionItems":["玉ねぎを細かくみじん切りにする。","プロシュット・コットを1cm角のさいの目切りにする。"],"parallelItems":[],"completionCriteria":["全て切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにバター20gを溶かし、玉ねぎを弱火で5〜6分炒める。透明になってしんなりしたら次のステップへ。","title":"玉ねぎを炒める","actionItems":["フライパンにバター20gを溶かし、玉ねぎを弱火で5〜6分炒める。"],"parallelItems":[],"completionCriteria":["透明になってしんなりしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"プロシュート・コットを加えて中火で2〜3分炒める。軽く焼き色がついて脂が出てきたら次のステップへ。","title":"ハムを炒める","actionItems":["プロシュート・コットを加えて中火で2〜3分炒める。"],"parallelItems":[],"completionCriteria":["軽く焼き色がついて脂が出てきたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"（炒める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。グリーンピースを加えて1〜2分炒め合わせる。塩小さじ1/4・黒胡椒3〜4回挽きで調味する。","title":"ピースを加える","actionItems":["グリーンピースを加えて1〜2分炒め合わせる。","塩小さじ1/4・黒胡椒3〜4回挽きで調味する。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["1〜2分炒め合わせたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"フェットゥッチーネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["フェットゥッチーネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"フェットゥッチーネをアルデンテで引き上げ、フライパンの火を必ず止めてからパスタを移す。","title":"火を止めてパスタを移す","actionItems":["フェットゥッチーネをアルデンテで引き上げる。","フライパンの火を必ず止めてからパスタを移す。"],"parallelItems":[],"completionCriteria":["火が止まった状態でパスタを移したら完了。"],"cautionItems":["火を止めてからパスタを移すこと。絶対に火にかけたまま卵液を加えない。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"卵液を回しかけ、茹で汁大さじ2〜3を加えて素早く大きく混ぜ合わせる。余熱でソースが乳化し、とろりとしたクリーム状になる。絶対に火にかけない。","title":"卵液を加えて乳化","actionItems":["卵液を回しかける。","茹で汁大さじ2〜3を加えて素早く大きく混ぜ合わせる。"],"parallelItems":[],"completionCriteria":["余熱でソースが乳化し、とろりとしたクリーム状になったら完成。"],"cautionItems":["絶対に火にかけない。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":10,"instruction":"皿に盛り、残りのパルミジャーノ40gを削ってかけ、黒胡椒をひいて仕上げる。","title":"パルミジャーノと黒胡椒をかける","actionItems":["皿に盛り、残りのパルミジャーノ40gを削ってかける。","黒胡椒をひいて仕上げる。"],"parallelItems":[],"completionCriteria":["チーズと黒胡椒をかけたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・バーリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">セモリナ粉（細びき）</span><span class="ingredient-qty">250g</span><span class="ingredient-notes">手打ちオレキエッテ用。普通の小麦粉では代用不可</span></li>
-          <li><span class="ingredient-name">ぬるま湯（35〜40℃）</span><span class="ingredient-qty">125ml</span><span class="ingredient-notes">塩5gを溶かして使う</span></li>
-          <li><span class="ingredient-name">チーメ・ディ・ラーパ（菜の花の茎葉）</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">硬い茎を除く</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">アンチョビ（オイル漬け）</span><span class="ingredient-qty">4枚</span><span class="ingredient-notes">旨みのかさ増し</span></li>
-          <li><span class="ingredient-name">唐辛子</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
+              <li data-ingredient-row="0cf10137-3823-41c0-bd85-84d6da441beb"><span class="ingredient-name" data-ingredient-name>セモリナ粉（細びき）</span><span class="ingredient-qty" data-ingredient-qty>250g</span><span class="ingredient-notes">手打ちオレキエッテ用。普通の小麦粉では代用不可</span></li>
+          <li data-ingredient-row="2d51a5ff-8889-4d7e-9537-609c630d39fb"><span class="ingredient-name" data-ingredient-name>ぬるま湯（35〜40℃）</span><span class="ingredient-qty" data-ingredient-qty>125ml</span><span class="ingredient-notes">塩5gを溶かして使う</span></li>
+          <li data-ingredient-row="dcb203ac-c210-4b24-aa0d-6f5fea82cc07"><span class="ingredient-name" data-ingredient-name>チーメ・ディ・ラーパ（菜の花の茎葉）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">硬い茎を除く</span><button type="button" class="substitution-trigger" data-substitution-trigger="dcb203ac-c210-4b24-aa0d-6f5fea82cc07"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="cb20a780-cbf9-4f66-a489-94279b9eeadb"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="cbb9e991-b52a-498b-8374-de975061829c"><span class="ingredient-name" data-ingredient-name>アンチョビ（オイル漬け）</span><span class="ingredient-qty" data-ingredient-qty>4枚</span><span class="ingredient-notes">旨みのかさ増し</span></li>
+          <li data-ingredient-row="9e686edb-5382-4d35-8ab3-81732f5db0a0"><span class="ingredient-name" data-ingredient-name>唐辛子</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
+          <li data-ingredient-row="fbdffe0c-e366-4eb1-a31f-d1f0092a3001"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
               </ul>
             </section>
           </div>
@@ -264,6 +284,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7c386567-fa44-4950-81c9-72720b4870a6","nameJa":"菜の花のオレキエッテ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0cf10137-3823-41c0-bd85-84d6da441beb","nameOriginal":"Semola rimacinata","nameJa":"セモリナ粉（細びき）","nameEn":"Fine semolina flour","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手打ちオレキエッテ用。普通の小麦粉では代用不可","substitutionOptions":[]},{"id":"2d51a5ff-8889-4d7e-9537-609c630d39fb","nameOriginal":"Acqua tiepida","nameJa":"ぬるま湯（35〜40℃）","nameEn":"Lukewarm water","quantity":125,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"塩5gを溶かして使う","substitutionOptions":[]},{"id":"dcb203ac-c210-4b24-aa0d-6f5fea82cc07","nameOriginal":"Cime di rapa","nameJa":"チーメ・ディ・ラーパ（菜の花の茎葉）","nameEn":"Turnip tops (cime di rapa)","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"硬い茎を除く","substitutionOptions":[{"id":"34bb1cea-d14f-45f6-8ac8-dbbe9deda5ee","standardIngredientId":"dcb203ac-c210-4b24-aa0d-6f5fea82cc07","nameJa":"菜の花","nameEn":"Japanese nanohana (rape blossoms)","authenticityImpact":-5,"flavorImpact":"苦みが若干弱いが食感・風味ともに近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"cb20a780-cbf9-4f66-a489-94279b9eeadb","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"cbb9e991-b52a-498b-8374-de975061829c","nameOriginal":"Acciughe sott'olio","nameJa":"アンチョビ（オイル漬け）","nameEn":"Anchovies in oil","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"旨みのかさ増し","substitutionOptions":[]},{"id":"9e686edb-5382-4d35-8ab3-81732f5db0a0","nameOriginal":"Peperoncino","nameJa":"唐辛子","nameEn":"Chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fbdffe0c-e366-4eb1-a31f-d1f0092a3001","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"セモリナ粉250gに塩5gを溶かしたぬるま湯125mlを少しずつ加えながら10〜15分こねて弾力のある生地を作る。ラップに包んで30分休ませる。","title":"材料を合わせる","actionItems":["セモリナ粉250gに塩5gを溶かしたぬるま湯125mlを少しずつ加えながら10〜15分こねて弾力のある生地を作る。","ラップに包んで30分休ませる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"（生地を休ませる間に）\n・チーメ・ディ・ラーパの硬い茎を除き、食べやすい大きさに分ける\n・にんにく4片を薄切りにする","title":"休ませて落ち着かせる","actionItems":["チーメ・ディ・ラーパの硬い茎を除き、食べやすい大きさに分ける","にんにく4片を薄切りにする"],"parallelItems":["（生地を休ませる間に）"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地を細長く伸ばして小さく切り、親指の腹で台の上を手前に引くようにして耳型（直径2〜3cm）に成形する。（成形する間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。","title":"材料を準備する","actionItems":["生地を細長く伸ばして小さく切り、親指の腹で台の上を手前に引くようにして耳型（直径2〜3cm）に成形する。"],"parallelItems":["（成形する間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"沸かしておいた塩湯にチーメ・ディ・ラーパとオレキエッテを一緒に入れて茹でる（アルデンテの1分前）。\n・茹で汁100mlを取り置く","title":"茹でる","actionItems":["沸かしておいた塩湯にチーメ・ディ・ラーパとオレキエッテを一緒に入れて茹でる（アルデンテの1分前）。","茹で汁100mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"フライパンにオリーブオイル80ml・にんにく（薄切り）・唐辛子・アンチョビを入れて弱火で加熱する。アンチョビが溶けてにんにくが薄く色づいたら（約3分）火を強める。","title":"材料を準備する","actionItems":["フライパンにオリーブオイル80ml・にんにく（薄切り）・唐辛子・アンチョビを入れて弱火で加熱する。"],"parallelItems":[],"completionCriteria":["アンチョビが溶けてにんにくが薄く色づいたら（約3分）火を強める。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"オレキエッテとチーメ・ディ・ラーパを加えて強火で1〜2分炒め合わせる。茹で汁で濃度を調整し、オリーブオイルが全体に絡んだら完成。","title":"香味を炒める","actionItems":["オレキエッテとチーメ・ディ・ラーパを加えて強火で1〜2分炒め合わせる。","茹で汁で濃度を調整し、オリーブオイルが全体に絡んだら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

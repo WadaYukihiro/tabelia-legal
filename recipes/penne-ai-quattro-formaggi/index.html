@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ミラノ周辺</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-06-06">2026.06.06</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ペンネ・リガーテ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">ゴルゴンゾーラ・ドルチェ（甘口）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">小さくちぎる</span></li>
-          <li><span class="ingredient-name">フォンティーナ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">小さくちぎる</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">ペコリーノ・ロマーノ</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">20g</span></li>
-          <li><span class="ingredient-name">黒胡椒（粗挽き）</span><span class="ingredient-qty">1少量</span></li>
+              <li data-ingredient-row="01d3073a-311b-47cd-b0e3-fe02034a2300"><span class="ingredient-name" data-ingredient-name>ペンネ・リガーテ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="8ce47370-e2fb-4064-88ea-e4bb23d8114f"><span class="ingredient-name" data-ingredient-name>ゴルゴンゾーラ・ドルチェ（甘口）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">小さくちぎる</span><button type="button" class="substitution-trigger" data-substitution-trigger="8ce47370-e2fb-4064-88ea-e4bb23d8114f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="06da0bee-42c5-464e-8832-d53fbdbefd4f"><span class="ingredient-name" data-ingredient-name>フォンティーナ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">小さくちぎる</span><button type="button" class="substitution-trigger" data-substitution-trigger="06da0bee-42c5-464e-8832-d53fbdbefd4f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="847dd503-757a-491f-87f1-c8a51445bbbb"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span><button type="button" class="substitution-trigger" data-substitution-trigger="847dd503-757a-491f-87f1-c8a51445bbbb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a644dd40-1b13-4ce7-ab46-82002856b518"><span class="ingredient-name" data-ingredient-name>ペコリーノ・ロマーノ</span><span class="ingredient-qty" data-ingredient-qty>30g</span><button type="button" class="substitution-trigger" data-substitution-trigger="a644dd40-1b13-4ce7-ab46-82002856b518"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="05f81dd4-d708-4c56-a4d5-141abf99b34b"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="05f81dd4-d708-4c56-a4d5-141abf99b34b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8fbedbf1-dc50-4762-a920-5119c810dca4"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
+          <li data-ingredient-row="ae96d729-d06e-4d1f-8dc1-1bf359b7beca"><span class="ingredient-name" data-ingredient-name>黒胡椒（粗挽き）</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
               </ul>
             </section>
           </div>
@@ -293,6 +313,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6c79ac3f-e3a9-466d-91ce-13d391500800","nameJa":"4種チーズのペンネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"01d3073a-311b-47cd-b0e3-fe02034a2300","nameOriginal":"Penne rigate","nameJa":"ペンネ・リガーテ","nameEn":"Penne rigate","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8ce47370-e2fb-4064-88ea-e4bb23d8114f","nameOriginal":"Gorgonzola dolce","nameJa":"ゴルゴンゾーラ・ドルチェ（甘口）","nameEn":"Gorgonzola dolce","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"小さくちぎる","substitutionOptions":[{"id":"9471a3df-84e3-4a73-b06c-4a3770c60d0f","standardIngredientId":"8ce47370-e2fb-4064-88ea-e4bb23d8114f","nameJa":"ブルーチーズ","nameEn":"Danish blue cheese","authenticityImpact":-5,"flavorImpact":"辛みが増す。量を8割に減らして調整","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"06da0bee-42c5-464e-8832-d53fbdbefd4f","nameOriginal":"Fontina valdostana","nameJa":"フォンティーナ","nameEn":"Fontina","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"小さくちぎる","substitutionOptions":[{"id":"5c95b49a-c6a0-41fb-8946-2da311e34446","standardIngredientId":"06da0bee-42c5-464e-8832-d53fbdbefd4f","nameJa":"グリュイエール","nameEn":"Gruyère","authenticityImpact":-5,"flavorImpact":"風味は異なるが溶けやすさは同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"847dd503-757a-491f-87f1-c8a51445bbbb","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano, grated","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"3bd9fe50-b1a7-444c-9749-81277dfa3b9b","standardIngredientId":"847dd503-757a-491f-87f1-c8a51445bbbb","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"風味がやや軽くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a644dd40-1b13-4ce7-ab46-82002856b518","nameOriginal":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano, grated","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"858274cc-8875-4044-944c-935bbc8f51ab","standardIngredientId":"a644dd40-1b13-4ce7-ab46-82002856b518","nameJa":"パルミジャーノを追加","nameEn":"Extra Parmigiano Reggiano","authenticityImpact":-5,"flavorImpact":"塩気と羊乳の個性が減る","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"05f81dd4-d708-4c56-a4d5-141abf99b34b","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":200,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"54d56c19-c882-4ef5-8793-553710301d38","standardIngredientId":"05f81dd4-d708-4c56-a4d5-141abf99b34b","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-20,"flavorImpact":"チーズが分離しやすくなる。弱火と丁寧な攪拌が必須","textureImpact":null,"procedureChanges":["より低温・丁寧に溶かす"],"affectedStepNumbers":[2,3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"ゴルゴンゾーラを低温で溶かす","action":"replace","stepNumber":2,"actionItems":["フライパンにバター20gと植物性生クリーム200mlを入れ、ごく弱火にかける。","鍋肌がふつふつする前の温かい状態でゴルゴンゾーラを加え、木べらで押しながらゆっくり溶かす。"],"instruction":"フライパンにバター20gと植物性生クリーム200mlを入れ、ごく弱火にかける。鍋肌がふつふつする前の温かい状態でゴルゴンゾーラを加え、木べらで押しながらゆっくり溶かす。絶対に沸騰させない。","cautionItems":["植物性生クリームは高温で分離しやすい。湯気が強く立つ前の温度を保つ。"],"changeReason":"植物性生クリームは乳脂肪の生クリームより分離しやすいため、より低温で溶かす","completionCriteria":["ゴルゴンゾーラが滑らかに溶けたら次へ。"]},{"title":"チーズソースを低温で作る","action":"replace","stepNumber":3,"actionItems":["フォンティーナを加えてごく弱火で溶かす。","火を止め、パルミジャーノとペコリーノを加えて混ぜ、とろりとしたソースにする。","黒胡椒3〜4回挽きを加える。"],"instruction":"（溶かす間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。フォンティーナを加えてごく弱火で溶かす。火を止め、パルミジャーノとペコリーノを加えて混ぜ、とろりとしたソースにする。黒胡椒3〜4回挽きを加える。","cautionItems":["植物性生クリーム使用時は弱火でも温度が上がりすぎやすい。粉チーズは火を止めてから加える。"],"changeReason":"植物性生クリームは高温で分離しやすいため、仕上げのチーズ投入時は火を止める","parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["とろりとしたソースになったら完了。"]}]}]},{"id":"8fbedbf1-dc50-4762-a920-5119c810dca4","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ae96d729-d06e-4d1f-8dc1-1bf359b7beca","nameOriginal":"Pepe nero","nameJa":"黒胡椒（粗挽き）","nameEn":"Coarsely ground black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ゴルゴンゾーラとフォンティーナを小さくちぎる（溶けやすくするため）。パルミジャーノとペコリーノをすりおろす。","title":"チーズを準備","actionItems":["ゴルゴンゾーラとフォンティーナを小さくちぎる（溶けやすくするため）。","パルミジャーノとペコリーノをすりおろす。"],"parallelItems":[],"completionCriteria":["全てのチーズが準備できたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにバター20gと生クリーム200mlを入れ弱火にかける。温まってきたらゴルゴンゾーラを加えて木べらで押しながらゆっくり溶かす。絶対に沸騰させない——チーズが分離する。","title":"ゴルゴンゾーラを溶かす","actionItems":["フライパンにバター20gと生クリーム200mlを入れ弱火にかける。","温まってきたらゴルゴンゾーラを加えて木べらで押しながらゆっくり溶かす。"],"parallelItems":[],"completionCriteria":["ゴルゴンゾーラが滑らかに溶けたら次へ。"],"cautionItems":["絶対に沸騰させない——チーズが分離する。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（溶かす間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。フォンティーナを加えてさらに溶かす。パルミジャーノとペコリーノを加えて混ぜ、とろりとしたソースにする。黒胡椒3〜4回挽きを加える。弱火を守り続ける。","title":"チーズソースを作る","actionItems":["フォンティーナを加えてさらに溶かす。","パルミジャーノとペコリーノを加えて混ぜ、とろりとしたソースにする。","黒胡椒3〜4回挽きを加える。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["とろりとしたソースになったら完了。"],"cautionItems":["弱火を守り続ける。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ペンネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["ペンネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"ペンネをアルデンテで引き上げてソースに移し、素早く絡める。茹で汁大さじ1〜2でソースの濃度を調整する（チーズが多いので固まりやすい）。","title":"パスタを絡める","actionItems":["ペンネをアルデンテで引き上げてソースに移し、素早く絡める。","茹で汁大さじ1〜2でソースの濃度を調整する（チーズが多いので固まりやすい）。"],"parallelItems":[],"completionCriteria":["全体にソースが絡んだら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"皿に盛り、粗挽き黒胡椒をたっぷりひいて仕上げる。","title":"仕上げ","actionItems":["皿に盛り、粗挽き黒胡椒をたっぷりひいて仕上げる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

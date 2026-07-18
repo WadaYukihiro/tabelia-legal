@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★★</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>22分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・アスティ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉（00番）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">パスタ生地用</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">常温に戻したもの</span></li>
-          <li><span class="ingredient-name">混合ロースト肉（牛・豚・仔牛）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">前日に作ったロースト肉の残りを使う。フィリング用に細かく刻む</span></li>
-          <li><span class="ingredient-name">ほうれん草（茹でて絞ったもの）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">フィリング用</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">ロースト肉の焙焼き汁（脱脂したもの）</span><span class="ingredient-qty">150ml</span><span class="ingredient-notes">ソース用。脂を除いて濃縮する</span></li>
-          <li><span class="ingredient-name">ナツメグ</span><span class="ingredient-qty">1ひとつまみ</span></li>
+              <li data-ingredient-row="442c6813-6ea5-4506-86c4-54ca85f988be"><span class="ingredient-name" data-ingredient-name>薄力粉（00番）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">パスタ生地用</span></li>
+          <li data-ingredient-row="556017c9-214e-4bb8-be8f-3bb52103f363"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">常温に戻したもの</span></li>
+          <li data-ingredient-row="67fdf69a-9434-4e83-897f-1ae4a6da7aec"><span class="ingredient-name" data-ingredient-name>混合ロースト肉（牛・豚・仔牛）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">前日に作ったロースト肉の残りを使う。フィリング用に細かく刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="67fdf69a-9434-4e83-897f-1ae4a6da7aec"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2a704046-9e9a-4537-9bf2-b730196cb1e2"><span class="ingredient-name" data-ingredient-name>ほうれん草（茹でて絞ったもの）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">フィリング用</span></li>
+          <li data-ingredient-row="0e4a4489-fedb-4051-9756-eee18fb90b73"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="5069b872-f2c0-42a1-9213-7d6b16ee1c8f"><span class="ingredient-name" data-ingredient-name>ロースト肉の焙焼き汁（脱脂したもの）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><span class="ingredient-notes">ソース用。脂を除いて濃縮する</span><button type="button" class="substitution-trigger" data-substitution-trigger="5069b872-f2c0-42a1-9213-7d6b16ee1c8f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="985efc68-8d07-48dc-add5-9f4ff116f880"><span class="ingredient-name" data-ingredient-name>ナツメグ</span><span class="ingredient-qty" data-ingredient-qty>1ひとつまみ</span></li>
               </ul>
             </section>
           </div>
@@ -320,6 +340,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"693f496e-45b1-4cd6-84d8-5929ccc03b42","nameJa":"ロースト肉のソースで仕上げるアニョロッティ・デル・プリン","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"442c6813-6ea5-4506-86c4-54ca85f988be","nameOriginal":"Farina 00","nameJa":"薄力粉（00番）","nameEn":"Type 00 flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"パスタ生地用","substitutionOptions":[]},{"id":"556017c9-214e-4bb8-be8f-3bb52103f363","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"常温に戻したもの","substitutionOptions":[]},{"id":"67fdf69a-9434-4e83-897f-1ae4a6da7aec","nameOriginal":"Arrosto misto di carne","nameJa":"混合ロースト肉（牛・豚・仔牛）","nameEn":"Mixed roast meat (beef, pork, veal)","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"前日に作ったロースト肉の残りを使う。フィリング用に細かく刻む","substitutionOptions":[{"id":"ddd77dce-0a06-42ba-861f-2a8afb6a855c","standardIngredientId":"67fdf69a-9434-4e83-897f-1ae4a6da7aec","nameJa":"牛ひき肉（炒めたもの）","nameEn":"Cooked ground beef","authenticityImpact":-20,"flavorImpact":"旨みの深さと複雑さが大幅に失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2a704046-9e9a-4537-9bf2-b730196cb1e2","nameOriginal":"Spinaci","nameJa":"ほうれん草（茹でて絞ったもの）","nameEn":"Blanched spinach","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用","substitutionOptions":[]},{"id":"0e4a4489-fedb-4051-9756-eee18fb90b73","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5069b872-f2c0-42a1-9213-7d6b16ee1c8f","nameOriginal":"Sugo d'arrosto","nameJa":"ロースト肉の焙焼き汁（脱脂したもの）","nameEn":"Roast meat drippings/jus","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"ソース用。脂を除いて濃縮する","substitutionOptions":[{"id":"f8a409f5-5bf4-4459-9659-de24307bcef2","standardIngredientId":"5069b872-f2c0-42a1-9213-7d6b16ee1c8f","nameJa":"市販のデミグラスソース（薄めたもの）","nameEn":"Diluted store-bought demi-glace","authenticityImpact":-20,"flavorImpact":"家庭的な旨みが工業的な味になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"985efc68-8d07-48dc-add5-9f4ff116f880","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"ひとつまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"薄力粉300gと卵3個（常温）でパスタ生地を作る。ラップに包んで常温で30分休ませる。","title":"パスタ生地を休ませる","actionItems":["薄力粉300gと常温の卵3個をこねてパスタ生地を作る。","ラップに包んで常温で30分休ませる。"],"parallelItems":[],"completionCriteria":["生地がなめらかになり、30分の休眠後に弾力が均一になった。"],"cautionItems":["卵は常温に戻しておくこと。冷たいと生地がまとまりにくい。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"ロースト肉300g（細かく刻む）・ほうれん草100g（茹でてよく水気を絞ったもの）・パルミジャーノ60g・ナツメグひとつまみをフードプロセッサーで細かく混ぜてフィリングを作る。","title":"フィリングを作る","actionItems":["ロースト肉300gを細かく刻む。","ほうれん草100gを茹でてよく水気を絞る。","ロースト肉・ほうれん草・パルミジャーノ60g・ナツメグをフードプロセッサーで混ぜる。"],"parallelItems":[],"completionCriteria":["フィリングが均一に混ざり、適度な固さになった。"],"cautionItems":["ほうれん草の水気をしっかり絞ること。水分が多いと生地が破れる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地を薄く伸ばし（1.5mm厚）、長い帯状にする。下半分にフィリングを小さな山状に1.5cmおきに置く。","title":"生地を伸ばしてフィリングを置く","actionItems":["生地を1.5mm厚に薄く伸ばして長い帯状にする。","フィリングを下半分に1.5cmおきに小さな山状に置く。"],"parallelItems":[],"completionCriteria":["フィリングが等間隔に並んだ。"],"cautionItems":["生地が薄すぎると茹でで破れる。1.5mm厚を守ること。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"（成形する間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。生地を折りたたみ、各フィリングの間を親指と人差し指でつまんで（プリン）しっかり閉じ、カットして個々のアニョロッティにする。","title":"成形する","actionItems":["生地を折りたたむ。","各フィリングの間を親指と人差し指でつまんでしっかり閉じる（プリン）。","カットして個々のアニョロッティにする。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["全アニョロッティが閉じられ、カットされた。"],"cautionItems":["つまみが甘いと茹でで開く。しっかり閉じること。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"アニョロッティを沸かしておいた塩湯に入れ、3〜4分茹でる（浮いてから1分）。（茹でている間に）ロースト肉の焙焼き汁150mlを小鍋で温めておく。","title":"アニョロッティを茹でる","actionItems":["アニョロッティを沸かしておいた塩湯に入れて3〜4分茹でる。"],"parallelItems":["ロースト肉の焙焼き汁150mlを小鍋で温めておく。"],"completionCriteria":["アニョロッティが浮いてから1分経過し、茹で上がった。"],"cautionItems":["茹ですぎると生地が溶けるので浮いてから1分で引き上げること。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"茹でたアニョロッティと焙焼き汁を和えて皿に盛る。生地の表面に艶が出て焙焼き汁が薄く絡んだら、残りの焙焼き汁をかけ、パルミジャーノを削って提供する。","title":"焙焼き汁とチーズをかける","actionItems":["茹でたアニョロッティと焙焼き汁を和えて皿に盛る。","残りの焙焼き汁をかける。","パルミジャーノを削りかける。"],"parallelItems":[],"completionCriteria":["生地表面に艶が出て焙焼き汁が絡んだ状態で盛り付けられた。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

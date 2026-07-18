@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,11 +93,18 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">フェットゥッチーネ（卵入り生パスタ）</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">高品質発酵バター</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">室温でやわらかくしておく</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ（熟成24ヶ月以上）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">細かくすりおろす（粗いと溶けない）</span></li>
+              <li data-ingredient-row="d48f73c0-dc64-4b33-8ce0-0d2b1c414ec6"><span class="ingredient-name" data-ingredient-name>フェットゥッチーネ（卵入り生パスタ）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><button type="button" class="substitution-trigger" data-substitution-trigger="d48f73c0-dc64-4b33-8ce0-0d2b1c414ec6"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f629bbde-f161-4387-a388-0d058e539e63"><span class="ingredient-name" data-ingredient-name>高品質発酵バター</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">室温でやわらかくしておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="f629bbde-f161-4387-a388-0d058e539e63"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c68cf2f2-cb3d-4e73-9df6-7e11f0bb1424"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ（熟成24ヶ月以上）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">細かくすりおろす（粗いと溶けない）</span><button type="button" class="substitution-trigger" data-substitution-trigger="c68cf2f2-cb3d-4e73-9df6-7e11f0bb1424"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -283,6 +303,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"91b1d2d3-9d3a-4011-ac87-ee17f9804e9a","nameJa":"フェットゥッチーネ アルフレード","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"d48f73c0-dc64-4b33-8ce0-0d2b1c414ec6","nameOriginal":"Fettuccine fresche all'uovo","nameJa":"フェットゥッチーネ（卵入り生パスタ）","nameEn":"Fresh egg fettuccine","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"401f0e0f-dc3d-4d03-846e-7ad8698de1aa","standardIngredientId":"d48f73c0-dc64-4b33-8ce0-0d2b1c414ec6","nameJa":"フェットゥッチーネ（乾燥）","nameEn":"Dried fettuccine","authenticityImpact":-10,"flavorImpact":"卵の風味と乳化しやすさが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f629bbde-f161-4387-a388-0d058e539e63","nameOriginal":"Burro di alta qualità","nameJa":"高品質発酵バター","nameEn":"High-quality cultured butter","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"室温でやわらかくしておく","substitutionOptions":[{"id":"1e213e96-7cb2-47b8-9dc6-07b2bad80045","standardIngredientId":"f629bbde-f161-4387-a388-0d058e539e63","nameJa":"一般的な無塩バター","nameEn":"Unsalted butter","authenticityImpact":-5,"flavorImpact":"風味がやや弱くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c68cf2f2-cb3d-4e73-9df6-7e11f0bb1424","nameOriginal":"Parmigiano Reggiano stagionato 24 mesi","nameJa":"パルミジャーノ・レッジャーノ（熟成24ヶ月以上）","nameEn":"Aged Parmigiano Reggiano","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かくすりおろす（粗いと溶けない）","substitutionOptions":[{"id":"f060e767-3425-4052-838e-e04878f21104","standardIngredientId":"c68cf2f2-cb3d-4e73-9df6-7e11f0bb1424","nameJa":"グラーナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-10,"flavorImpact":"うまみの深さが落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]}],"steps":[{"stepNumber":1,"instruction":"大鍋に湯を沸かし始める（湯1Lに対して塩10g）。（沸かす間に）パルミジャーノ80gを細かくすりおろす（粗いと溶けにくいので必ず細かく）。","title":"チーズをすりおろして湯を沸かす","actionItems":["パルミジャーノ80gを細かくすりおろす。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["パルミジャーノが粉末状に細かくすりおろせた。"],"cautionItems":["粗いと溶けにくい。必ず細かくすりおろすこと。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"沸かしておいた塩湯でフェットゥッチーネ200gを表示より30秒短めに茹でる。\n・茹で汁100mlを必ず取り置く","title":"フェットゥッチーネを茹でる","actionItems":["フェットゥッチーネ200gを表示より30秒短めに茹でる。","茹で汁100mlを必ず取り置く。"],"parallelItems":[],"completionCriteria":["フェットゥッチーネがやや固め（al denteより少し前）に茹で上がり、茹で汁が確保された。"],"cautionItems":["茹で汁は必ず確保すること。乳化に不可欠。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"大きなボウル（またはパスタ鍋）に室温のバター100gを入れ、熱い茹で汁大さじ2を加えてバターを溶かしながら混ぜる。","title":"バターを溶かす","actionItems":["大きなボウルに室温のバター100gを入れる。","熱い茹で汁大さじ2を加えてバターを溶かしながら混ぜる。"],"parallelItems":[],"completionCriteria":["バターが溶けてなめらかなクリーム状になった。"],"cautionItems":["バターは室温のものを使うこと。冷たいと溶けにくく乳化しにくい。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"茹でたフェットゥッチーネをトングでボウルに移す（一部の茹で汁も一緒に）。素早くトングで持ち上げては落とす動作を繰り返し、すりおろしたパルミジャーノを少しずつ加えながら乳化させる（フライパンは火にかけない）。","title":"乳化させる","actionItems":["茹でたフェットゥッチーネをトングでボウルに移す（一部の茹で汁も一緒に）。","トングで持ち上げては落とす動作を繰り返しながら、すりおろしたパルミジャーノを少しずつ加えて乳化させる。"],"parallelItems":[],"completionCriteria":["ソースがクリーミーに乳化してパスタ全体に絡んだ。"],"cautionItems":["加熱しないこと。熱で乳化が壊れる。","乾いてきたら茹で汁を少量追加して調整する。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"皿に盛り、追加のパルミジャーノを削りかけてすぐに提供する。ソースが固まる前に食べ始める。","title":"パルミジャーノを削る","actionItems":["皿に盛る。","追加のパルミジャーノを削りかけてすぐに提供する。"],"parallelItems":[],"completionCriteria":["追加チーズをかけてすぐに提供できた。"],"cautionItems":["ソースが固まる前に素早く提供すること。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

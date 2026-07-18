@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボルツァーノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">フェットゥッチーネ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">アスパラガス（グリーン）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">根元の固い部分を折り、穂先5cmを切り分ける。残りは斜め薄切り</span></li>
-          <li><span class="ingredient-name">スペック（南チロルの燻製生ハム）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">1cm幅の短冊切り</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">ニンニク</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">グリュイエールチーズ</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少量</span></li>
+              <li data-ingredient-row="d7ba9f51-dcb0-4389-8a1b-0d7f4d91910b"><span class="ingredient-name" data-ingredient-name>フェットゥッチーネ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="9643726f-f343-4f93-815b-4cb2c9ccc9bb"><span class="ingredient-name" data-ingredient-name>アスパラガス（グリーン）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">根元の固い部分を折り、穂先5cmを切り分ける。残りは斜め薄切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="9643726f-f343-4f93-815b-4cb2c9ccc9bb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="889d2cd2-fc12-4c89-a792-ca97b6bf7634"><span class="ingredient-name" data-ingredient-name>スペック（南チロルの燻製生ハム）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">1cm幅の短冊切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="889d2cd2-fc12-4c89-a792-ca97b6bf7634"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="30900a77-b8b5-4132-a6f3-ec75cefc973c"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="30900a77-b8b5-4132-a6f3-ec75cefc973c"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="60d65634-3988-46b4-bf15-c4d5ee13864f"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="6ca567e9-a95c-4310-b042-500b22d7329c"><span class="ingredient-name" data-ingredient-name>ニンニク</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="f037b9d0-c23f-4779-bebc-af17a8321eff"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span><button type="button" class="substitution-trigger" data-substitution-trigger="f037b9d0-c23f-4779-bebc-af17a8321eff"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="200d9b2e-fac0-425b-8dad-6ab50afac9ad"><span class="ingredient-name" data-ingredient-name>グリュイエールチーズ</span><span class="ingredient-qty" data-ingredient-qty>30g</span><button type="button" class="substitution-trigger" data-substitution-trigger="200d9b2e-fac0-425b-8dad-6ab50afac9ad"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7af85de6-f5b6-42b9-90ef-1e578ebdded7"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="328e85b2-31cc-4800-8b7e-7a4489150a9c"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
               </ul>
             </section>
           </div>
@@ -367,6 +387,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c6a77b22-fa95-454e-a56d-7ce8eaa4efef","nameJa":"アスパラガスとスペックのフェットゥッチーネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"d7ba9f51-dcb0-4389-8a1b-0d7f4d91910b","nameOriginal":"Fettuccine","nameJa":"フェットゥッチーネ","nameEn":"Fettuccine","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9643726f-f343-4f93-815b-4cb2c9ccc9bb","nameOriginal":"Asparagi verdi","nameJa":"アスパラガス（グリーン）","nameEn":"Green asparagus","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"根元の固い部分を折り、穂先5cmを切り分ける。残りは斜め薄切り","substitutionOptions":[{"id":"046c4007-9587-4646-a693-a0ccb352b87c","standardIngredientId":"9643726f-f343-4f93-815b-4cb2c9ccc9bb","nameJa":"ブロッコリー（小房）","nameEn":"Broccoli florets","authenticityImpact":-20,"flavorImpact":"食感・風味が大きく変わる。スペックとの相性は悪くないが別の料理になる","textureImpact":null,"procedureChanges":["塩湯で2分下茹でしてから炒める"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"889d2cd2-fc12-4c89-a792-ca97b6bf7634","nameOriginal":"Speck dell'Alto Adige","nameJa":"スペック（南チロルの燻製生ハム）","nameEn":"Alto Adige Speck","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm幅の短冊切り","substitutionOptions":[{"id":"c9477454-50c4-4ca7-a324-fe17bc47ab41","standardIngredientId":"889d2cd2-fc12-4c89-a792-ca97b6bf7634","nameJa":"スモークベーコン","nameEn":"Smoked bacon","authenticityImpact":-10,"flavorImpact":"燻製の香りは出るが脂が多くなる。厚めのベーコンを使うとよい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"30900a77-b8b5-4132-a6f3-ec75cefc973c","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"e49370c5-1fd4-4c45-9715-42ce605fdc31","standardIngredientId":"30900a77-b8b5-4132-a6f3-ec75cefc973c","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-10,"flavorImpact":"乳化感が落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"60d65634-3988-46b4-bf15-c4d5ee13864f","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6ca567e9-a95c-4310-b042-500b22d7329c","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"f037b9d0-c23f-4779-bebc-af17a8321eff","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano, grated","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"06f66015-64d7-44a1-bdd5-7390bf8c8a4d","standardIngredientId":"f037b9d0-c23f-4779-bebc-af17a8321eff","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"やや軽めの風味だが代用として十分","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"200d9b2e-fac0-425b-8dad-6ab50afac9ad","nameOriginal":"Gruyère","nameJa":"グリュイエールチーズ","nameEn":"Gruyère, grated","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"fd4b2560-f048-4be9-9e4f-be5eef791131","standardIngredientId":"200d9b2e-fac0-425b-8dad-6ab50afac9ad","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"山岳地帯らしい風味が少し減る","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7af85de6-f5b6-42b9-90ef-1e578ebdded7","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"328e85b2-31cc-4800-8b7e-7a4489150a9c","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"アスパラガスの根元の固い部分をポキッと折って取り除く。穂先5cmを切り分け、残りの茎を斜め薄切りにする。","title":"アスパラガスを切る","actionItems":["アスパラガスの根元の固い部分をポキッと折って取り除く。","穂先5cmを切り分ける。","残りの茎を斜め薄切りにする。"],"parallelItems":[],"completionCriteria":["全て切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"・スペックを1cm幅の短冊切りにする\n・ニンニクを薄切りにする","title":"食材を切る","actionItems":["スペックを1cm幅の短冊切りにする。","ニンニクを薄切りにする。"],"parallelItems":[],"completionCriteria":["切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにバター30gを溶かし、ニンニク（薄切り）を弱火で1分炒める。ニンニクが薄く色づいたら次のステップへ。","title":"ニンニクを炒める","actionItems":["フライパンにバター30gを溶かし、ニンニク（薄切り）を弱火で1分炒める。"],"parallelItems":[],"completionCriteria":["薄く色づいたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"（この間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。スペックを加えて中火で2〜3分炒める。スペックの脂が溶け出してカリッとしたら取り出しておく。","title":"スペックを炒める","actionItems":["スペックを加えて中火で2〜3分炒める。","脂が溶け出してカリッとしたら取り出しておく。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["スペックがカリッとしたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"アスパラガスの斜め切り部分を加えて中火で3分炒める。表面に薄く焼き色がついてしんなりしたら次のステップへ。","title":"アスパラガスを炒める","actionItems":["アスパラガスの斜め切り部分を加えて中火で3分炒める。"],"parallelItems":[],"completionCriteria":["表面に薄く焼き色がついてしんなりしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"アスパラガスの穂先を加えてさらに1〜2分炒め、白ワイン80mlを加えてアルコールを飛ばす（約1分）。穂先は食感が残るよう加熱しすぎない。","title":"穂先を加えてワイン","actionItems":["アスパラガスの穂先を加えてさらに1〜2分炒める。","白ワイン80mlを加えてアルコールを飛ばす（約1分）。"],"parallelItems":[],"completionCriteria":["アルコールが飛んだら完了。"],"cautionItems":["穂先は食感が残るよう加熱しすぎない。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"生クリーム150mlを加えて中弱火で3分煮詰める。グリュイエールとパルミジャーノ半量を加えてソースに溶かす。塩小さじ1/4・黒胡椒3〜4回挽きで調味する（スペックの塩分があるので塩は控えめに）。","title":"ソースを仕上げる","actionItems":["生クリーム150mlを加えて中弱火で3分煮詰める。","グリュイエールとパルミジャーノ半量を加えてソースに溶かす。","塩小さじ1/4・黒胡椒3〜4回挽きで調味する（スペックの塩分があるので塩は控えめに）。"],"parallelItems":[],"completionCriteria":["チーズが溶けてソースが整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"フェットゥッチーネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","title":"パスタを茹でる","actionItems":["フェットゥッチーネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":9,"instruction":"フェットゥッチーネをアルデンテで引き上げてフライパンに移し、手早く絡める。茹で汁大さじ2〜3でソースの濃度を調整する。","title":"パスタを絡める","actionItems":["フェットゥッチーネをアルデンテで引き上げてフライパンに移す。","手早く絡める。","茹で汁大さじ2〜3でソースの濃度を調整する。"],"parallelItems":[],"completionCriteria":["全体にソースが絡んだら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":10,"instruction":"皿に盛り、残りのパルミジャーノを削ってかけ、黒胡椒をひいて仕上げる。","title":"チーズと黒胡椒をかける","actionItems":["皿に盛り、残りのパルミジャーノを削ってかける。","黒胡椒をひいて仕上げる。"],"parallelItems":[],"completionCriteria":["チーズと黒胡椒をかけたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・トリエステ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">大海老（殻付き・生）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">背わたを殻の上から楊枝で取る。殻は剥かない</span></li>
-          <li><span class="ingredient-name">トマトピューレ</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">パン粉（細目）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">ソースのとろみと旨みのため</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">60ml</span></li>
+              <li data-ingredient-row="b87c2001-dfda-40cc-8e20-287cacc69c87"><span class="ingredient-name" data-ingredient-name>大海老（殻付き・生）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">背わたを殻の上から楊枝で取る。殻は剥かない</span><button type="button" class="substitution-trigger" data-substitution-trigger="b87c2001-dfda-40cc-8e20-287cacc69c87"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4757941c-d019-45fc-af2c-765bd113d124"><span class="ingredient-name" data-ingredient-name>トマトピューレ</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
+          <li data-ingredient-row="786906c4-102f-4645-bc8a-29423ce06557"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="62f29f93-d67f-4dbf-8aff-5134876d0e12"><span class="ingredient-name" data-ingredient-name>パン粉（細目）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">ソースのとろみと旨みのため</span></li>
+          <li data-ingredient-row="dd799f95-fcdd-4f8a-b882-c122b65d8f1c"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="f9bbf5e6-2b10-4a78-94a2-276f4aceea95"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="94bde539-daab-4868-adf9-74c2f7006603"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
+          <li data-ingredient-row="9e843e8e-61c7-461a-97e2-055589913992"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
               </ul>
             </section>
           </div>
@@ -255,6 +275,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c229a011-7b05-4a32-a461-33ce2bb534f1","nameJa":"大エビのブザーラ風トマト煮","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"b87c2001-dfda-40cc-8e20-287cacc69c87","nameOriginal":"Gamberoni freschi","nameJa":"大海老（殻付き・生）","nameEn":"Large raw prawns, shell-on","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"背わたを殻の上から楊枝で取る。殻は剥かない","substitutionOptions":[{"id":"ba40e179-fee4-4ca6-837f-bf60917588fd","standardIngredientId":"b87c2001-dfda-40cc-8e20-287cacc69c87","nameJa":"車海老（殻付き）","nameEn":"Japanese tiger prawn, shell-on","authenticityImpact":0,"flavorImpact":"旨みが豊かで代替として最良","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"4757941c-d019-45fc-af2c-765bd113d124","nameOriginal":"Passata di pomodoro","nameJa":"トマトピューレ","nameEn":"Tomato passata","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"786906c4-102f-4645-bc8a-29423ce06557","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"62f29f93-d67f-4dbf-8aff-5134876d0e12","nameOriginal":"Pangrattato","nameJa":"パン粉（細目）","nameEn":"Fine breadcrumbs","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ソースのとろみと旨みのため","substitutionOptions":[]},{"id":"dd799f95-fcdd-4f8a-b882-c122b65d8f1c","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"f9bbf5e6-2b10-4a78-94a2-276f4aceea95","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":2,"unit":"大さじ","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"94bde539-daab-4868-adf9-74c2f7006603","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9e843e8e-61c7-461a-97e2-055589913992","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・にんにくをみじん切りにする\n・イタリアンパセリをみじん切りにする","title":"材料を刻む","actionItems":["にんにく2片をみじん切りにする。","イタリアンパセリをみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイル大さじ3とにんにくを入れて強火にかけ、香りが立ったら殻付きの海老を加えて両面30秒ずつ炒める。","title":"海老を炒める","actionItems":["フライパンにオリーブオイル大さじ3とにんにくを入れて強火にかける。","香りが立ったら殻付きの海老を加えて両面30秒ずつ炒める。"],"parallelItems":[],"completionCriteria":["海老の殻が赤く色づいたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"白ワインを注いでアルコールを飛ばし（1分）、トマトピューレと唐辛子を加える。","title":"ワインとトマトを加える","actionItems":["白ワイン100mlを注いで約1分煮立ててアルコールを飛ばす。","トマトピューレ200mlと唐辛子を加える。"],"parallelItems":[],"completionCriteria":["アルコールの香りが飛んだら次へ（約1分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"中火で5分煮詰め、パン粉を散らしてソースを絡める。パン粉がソースを吸いとろみが出る。","title":"ソースを絡める","actionItems":["中火で5分煮詰める。","パン粉30gを散らしてソースを絡める。"],"parallelItems":[],"completionCriteria":["パン粉がソースを吸いとろみが出たら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"パセリを散らし、殻ごと皿に盛る。食べる際にスプーンで殻から身をほぐしながらソースをすくう。","title":"殻ごと皿に盛る","actionItems":["パセリを散らし、殻ごと皿に盛る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

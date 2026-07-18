@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ブロッコレッティ（フリアリエッリ）</span><span class="ingredient-qty">800g</span><span class="ingredient-notes">茎の硬い部分を落とし葉と柔らかい茎のみ使う</span></li>
-          <li><span class="ingredient-name">コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty">15ml</span><span class="ingredient-notes">仕上げに垂らす。加熱不要</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">小口切り。ナポリ料理はやや辛め</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">小さじ1</span><span class="ingredient-notes">茹で湯用。コラトゥーラが塩辛いため最小限に</span></li>
+              <li data-ingredient-row="fe31255d-72b6-4d14-90a3-2a457a530784"><span class="ingredient-name" data-ingredient-name>ブロッコレッティ（フリアリエッリ）</span><span class="ingredient-qty" data-ingredient-qty>800g</span><span class="ingredient-notes">茎の硬い部分を落とし葉と柔らかい茎のみ使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="fe31255d-72b6-4d14-90a3-2a457a530784"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="cd1f6ef5-12c3-47f9-afe6-28f5305f7733"><span class="ingredient-name" data-ingredient-name>コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty" data-ingredient-qty>15ml</span><span class="ingredient-notes">仕上げに垂らす。加熱不要</span><button type="button" class="substitution-trigger" data-substitution-trigger="cd1f6ef5-12c3-47f9-afe6-28f5305f7733"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a0594566-877a-47cb-a592-a3a2bb9f41dd"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="bb922add-35f6-4e17-8415-c4c3b099cb87"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">小口切り。ナポリ料理はやや辛め</span></li>
+          <li data-ingredient-row="a6427729-a943-4c74-b80c-bd38e3d8c6d2"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="d2e4f23c-19ad-4ce5-92d4-be7222fb8cf6"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span><span class="ingredient-notes">茹で湯用。コラトゥーラが塩辛いため最小限に</span></li>
               </ul>
             </section>
           </div>
@@ -243,6 +263,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"f67bd0a7-c786-4151-a1cd-d48045127305","nameJa":"青菜のコラトゥーラソテー","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"fe31255d-72b6-4d14-90a3-2a457a530784","nameOriginal":"Broccoletti (friarielli)","nameJa":"ブロッコレッティ（フリアリエッリ）","nameEn":"Broccoli greens (friarielli / rapini)","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"茎の硬い部分を落とし葉と柔らかい茎のみ使う","substitutionOptions":[{"id":"297e2531-3cc7-4572-9f83-f65a397b8fd1","standardIngredientId":"fe31255d-72b6-4d14-90a3-2a457a530784","nameJa":"菜の花（カラシナ）","nameEn":"Broccoli rabe (cime di rapa)","authenticityImpact":0,"flavorImpact":"同等に伝統的。苦みのバランスはほぼ同じ","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"9ff8dbb5-fbe8-4116-af7b-3ade1d993f12","standardIngredientId":"fe31255d-72b6-4d14-90a3-2a457a530784","nameJa":"ブロッコリー（小房に分けたもの）","nameEn":"Broccoli florets","authenticityImpact":-10,"flavorImpact":"苦みが減り甘みが強くなる","textureImpact":null,"procedureChanges":["茹で時間を3〜4分に延長"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"小房に分け、茎が太ければ縦半分に切る。下茹では3〜4分","action":"update","nameEn":"Broccoli florets","nameJa":"ブロッコリー（小房に分けたもの）","quantity":800,"targetNameJa":"ブロッコレッティ（フリアリエッリ）"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"ブロッコリーを小房に分け、茎が太ければ縦半分に切る。塩少量を加えた湯で3〜4分茹でる。茎に竹串がすっと入り、房が崩れる前に引き上げ、冷水にとらず（余熱で火が入り続ける）ザルにあける。","changeReason":"ブロッコリーはブロッコレッティより茎が太く火が入りにくいため、茹で時間を延ばす"}]}]},{"id":"cd1f6ef5-12c3-47f9-afe6-28f5305f7733","nameOriginal":"Colatura di alici di Cetara","nameJa":"コラトゥーラ・ディ・アリーチ","nameEn":"Colatura di alici from Cetara","quantity":15,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"仕上げに垂らす。加熱不要","substitutionOptions":[{"id":"cc953586-f2d8-4ba6-92eb-2b27e93e76bb","standardIngredientId":"cd1f6ef5-12c3-47f9-afe6-28f5305f7733","nameJa":"アンチョビペースト","nameEn":"Anchovy paste","authenticityImpact":-10,"flavorImpact":"旨みは出るが液体の熟成香がない","textureImpact":null,"procedureChanges":["にんにくと一緒にオイルで溶かして使う"],"affectedStepNumbers":[2,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"小さじ","notes":"にんにくと一緒にオイルへ溶かす","action":"update","nameEn":"Anchovy paste","nameJa":"アンチョビペースト","quantity":2,"targetNameJa":"コラトゥーラ・ディ・アリーチ"}],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"にんにく4片を薄切りにする。大きなフライパンにオリーブオイル・にんにく・唐辛子（小口切り）を入れて中火で熱する。にんにくが薄く色づき始めたらアンチョビペースト小さじ2を加えて油に溶かし、ブロッコレッティを加える。","changeReason":"コラトゥーラのように仕上げに垂らさず、アンチョビペーストを油に溶かして旨みを出すため"},{"action":"replace","stepNumber":4,"instruction":"火を止めて全体を素早く和える。皿に盛り、好みで追加のオリーブオイルをかける。アンチョビペーストの塩気があるため、塩は最後に少量ずつ確認する。","changeReason":"アンチョビペーストは先に油へ溶かしているため、仕上げにコラトゥーラを垂らす工程を省く"}]}]},{"id":"a0594566-877a-47cb-a592-a3a2bb9f41dd","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"bb922add-35f6-4e17-8415-c4c3b099cb87","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":"小口切り。ナポリ料理はやや辛め","substitutionOptions":[]},{"id":"a6427729-a943-4c74-b80c-bd38e3d8c6d2","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d2e4f23c-19ad-4ce5-92d4-be7222fb8cf6","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":"茹で湯用。コラトゥーラが塩辛いため最小限に","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ブロッコレッティを洗い、茎の硬い部分を落とす。塩少量を加えた湯で2〜3分茹でる。芯まで柔らかくなる前に引き上げ、冷水にとらず（余熱で火が入り続ける）ザルにあける。","title":"食材を下処理する","actionItems":["ブロッコレッティを洗い、茎の硬い部分を落とす。","塩少量を加えた湯で2〜3分茹でる。","芯まで柔らかくなる前に引き上げ、冷水にとらず（余熱で火が入り続ける）ザルにあける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"にんにく4片を薄切りにする。大きなフライパンにオリーブオイル・にんにく・唐辛子（小口切り）を入れて中火で熱する。にんにくが薄く色づき始めたらブロッコレッティを加える。","title":"材料を準備する","actionItems":["にんにく4片を薄切りにする。","大きなフライパンにオリーブオイル・にんにく・唐辛子（小口切り）を入れて中火で熱する。","にんにくが薄く色づき始めたらブロッコレッティを加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"強めの中火で5〜7分炒める（リパッサーレ）。ところどころ薄く焦げ色がつき、水分が飛ぶまで炒め続ける。この工程が甘みと旨みを凝縮させる。","title":"香味を炒める","actionItems":["強めの中火で5〜7分炒める（リパッサーレ）。","この工程が甘みと旨みを凝縮させる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["ところどころ薄く焦げ色がつき、水分が飛ぶまで炒め続ける。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"火を止めてコラトゥーラを全体に均等に垂らし、素早く和える。皿に盛り、好みで追加のオリーブオイルをかける。","title":"仕上げにまとめる","actionItems":["皿に盛り、好みで追加のオリーブオイルをかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止めてコラトゥーラを全体に均等に垂らし、素早く和える。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

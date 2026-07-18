@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">じゃがいも（メークイン推奨）</span><span class="ingredient-qty">800g</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">3枝</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span></li>
-          <li><span class="ingredient-name">EVオリーブオイル</span><span class="ingredient-qty">大さじ4</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">小さじ1</span></li>
-          <li><span class="ingredient-name">粗挽き黒コショウ</span><span class="ingredient-qty">1つまみ</span></li>
+              <li data-ingredient-row="50a24050-23a9-4fdf-a16a-2edd620f5e6b"><span class="ingredient-name" data-ingredient-name>じゃがいも（メークイン推奨）</span><span class="ingredient-qty" data-ingredient-qty>800g</span></li>
+          <li data-ingredient-row="f06ae10c-026e-46d4-985c-fa60e0f09fbb"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>3枝</span></li>
+          <li data-ingredient-row="6424ed70-7429-4622-90c1-0c555a191c2c"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span></li>
+          <li data-ingredient-row="3be83530-c0c1-49b4-b106-0ba9fe4cf26d"><span class="ingredient-name" data-ingredient-name>EVオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ4</span></li>
+          <li data-ingredient-row="51c3461d-9339-4283-befb-74d365859376"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span></li>
+          <li data-ingredient-row="1fa8352a-8d11-4bc4-82ec-975d60ecb71d"><span class="ingredient-name" data-ingredient-name>粗挽き黒コショウ</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
               </ul>
             </section>
           </div>
@@ -199,6 +219,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"9679927e-78b1-4a1b-a542-0f987a95f9b6","nameJa":"じゃがいものローズマリー焼き","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"50a24050-23a9-4fdf-a16a-2edd620f5e6b","nameOriginal":"Patate","nameJa":"じゃがいも（メークイン推奨）","nameEn":"Potatoes (waxy variety)","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f06ae10c-026e-46d4-985c-fa60e0f09fbb","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Fresh rosemary","quantity":3,"unit":"枝","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6424ed70-7429-4622-90c1-0c555a191c2c","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3be83530-c0c1-49b4-b106-0ba9fe4cf26d","nameOriginal":"Olio extravergine","nameJa":"EVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":4,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"51c3461d-9339-4283-befb-74d365859376","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1fa8352a-8d11-4bc4-82ec-975d60ecb71d","nameOriginal":"Pepe nero macinato","nameJa":"粗挽き黒コショウ","nameEn":"Coarsely ground black pepper","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを220℃（ファン付きは200℃）に予熱する。じゃがいもは皮をむき、3〜4cm角に切る。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":"下準備"},{"stepNumber":2,"instruction":"切ったじゃがいもを冷水に10分さらしてでんぷんを洗い流す。ザルにあけ、ペーパータオルで水気をしっかり拭き取る。水分が残ると蒸し上がりカリカリにならない。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"天板にじゃがいもを並べ、EVオリーブオイル、塩、黒コショウを全体にまぶす。にんにく（皮ごと潰す）とローズマリーをのせる。じゃがいもが重ならないよう並べる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":"味つけ"},{"stepNumber":4,"instruction":"220℃のオーブンで20分焼き、一度全体を裏返す。さらに20〜25分焼いて表面が金褐色にカリカリに仕上げる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"waiting","sectionTitle":"焼く"},{"stepNumber":5,"instruction":"天板から取り出し、熱いうちに供する。にんにくは食べても皮を取り除いても。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":"仕上げ"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

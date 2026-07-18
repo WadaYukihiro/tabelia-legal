@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>50分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・ヌオーロ（サルデーニャ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">セモリナ粉（超細挽き）</span><span class="ingredient-qty">300g</span></li>
-          <li><span class="ingredient-name">ラード（または無塩バター）</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">ぬるま湯</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">3g</span></li>
-          <li><span class="ingredient-name">フレッシュペコリーノ（または軽く熟成）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">少し酸味があるものが本格的。フレッシュペコリーノ・カジョール・またはフィオーレ・サルドの若いもの</span></li>
-          <li><span class="ingredient-name">レモンとオレンジの皮</span><span class="ingredient-qty">1個分ずつ</span><span class="ingredient-notes">国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">揚げ油</span><span class="ingredient-qty">1000ml</span><span class="ingredient-notes">175〜180℃</span></li>
-          <li><span class="ingredient-name">コルベッゾーロ（アルブータス）蜂蜜</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">苦みがあるほど本格的。入手できなければ百花蜜で代用可</span></li>
+              <li data-ingredient-row="57100496-a03a-490b-892c-ae63751f0ba0"><span class="ingredient-name" data-ingredient-name>セモリナ粉（超細挽き）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><button type="button" class="substitution-trigger" data-substitution-trigger="57100496-a03a-490b-892c-ae63751f0ba0"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="be4fa656-f398-4183-b1c7-233e18fa52b7"><span class="ingredient-name" data-ingredient-name>ラード（または無塩バター）</span><span class="ingredient-qty" data-ingredient-qty>50g</span></li>
+          <li data-ingredient-row="c072777a-289d-465d-bcb1-d41d3faace85"><span class="ingredient-name" data-ingredient-name>ぬるま湯</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="1e0dbdc3-114f-40ba-90fe-555027e673ea"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>3g</span></li>
+          <li data-ingredient-row="09574485-fb87-4922-86b4-123a18f6ded9"><span class="ingredient-name" data-ingredient-name>フレッシュペコリーノ（または軽く熟成）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">少し酸味があるものが本格的。フレッシュペコリーノ・カジョール・またはフィオーレ・サルドの若いもの</span><button type="button" class="substitution-trigger" data-substitution-trigger="09574485-fb87-4922-86b4-123a18f6ded9"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c6060836-02fa-4dbd-a28b-f7925fcb90bc"><span class="ingredient-name" data-ingredient-name>レモンとオレンジの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分ずつ</span><span class="ingredient-notes">国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="8dbf4786-3708-4f89-9ddf-330ecf67a99a"><span class="ingredient-name" data-ingredient-name>揚げ油</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span><span class="ingredient-notes">175〜180℃</span></li>
+          <li data-ingredient-row="185a9872-8a2c-4f53-9711-9f17f0da6cd6"><span class="ingredient-name" data-ingredient-name>コルベッゾーロ（アルブータス）蜂蜜</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">苦みがあるほど本格的。入手できなければ百花蜜で代用可</span><button type="button" class="substitution-trigger" data-substitution-trigger="185a9872-8a2c-4f53-9711-9f17f0da6cd6"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -305,6 +325,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"9003388c-6fc5-46a9-a9b0-b575371c3ef6","nameJa":"サルデーニャ風チーズフリット はちみつ添え","baseServings":6,"minServings":1,"maxServings":20},"ingredients":[{"id":"57100496-a03a-490b-892c-ae63751f0ba0","nameOriginal":"Semola rimacinata di grano duro","nameJa":"セモリナ粉（超細挽き）","nameEn":"Fine durum wheat semolina","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"c69663f4-5d41-46f4-999e-296a6fe78352","standardIngredientId":"57100496-a03a-490b-892c-ae63751f0ba0","nameJa":"薄力粉（00）","nameEn":"All-purpose flour","authenticityImpact":-10,"flavorImpact":"食感が軽くなりサルデーニャらしさが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"be4fa656-f398-4183-b1c7-233e18fa52b7","nameOriginal":"Strutto o Burro","nameJa":"ラード（または無塩バター）","nameEn":"Lard or unsalted butter","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c072777a-289d-465d-bcb1-d41d3faace85","nameOriginal":"Acqua tiepida","nameJa":"ぬるま湯","nameEn":"Warm water","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1e0dbdc3-114f-40ba-90fe-555027e673ea","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":3,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"09574485-fb87-4922-86b4-123a18f6ded9","nameOriginal":"Formaggio fresco di pecora","nameJa":"フレッシュペコリーノ（または軽く熟成）","nameEn":"Fresh sheep's milk cheese (slightly aged)","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"少し酸味があるものが本格的。フレッシュペコリーノ・カジョール・またはフィオーレ・サルドの若いもの","substitutionOptions":[{"id":"627f43a5-5d85-49d8-9ddd-a6e3f358bde6","standardIngredientId":"09574485-fb87-4922-86b4-123a18f6ded9","nameJa":"リコッタ・サラータ（ごく薄切り）","nameEn":"Ricotta Salata (very thin slices)","authenticityImpact":-10,"flavorImpact":"より塩辛くなるが風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"715b6a4f-cab4-4cb0-bc49-36802218b2f1","standardIngredientId":"09574485-fb87-4922-86b4-123a18f6ded9","nameJa":"水牛モッツァレラ","nameEn":"Buffalo mozzarella","authenticityImpact":-20,"flavorImpact":"塩気と羊乳の風味が完全に失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c6060836-02fa-4dbd-a28b-f7925fcb90bc","nameOriginal":"Scorza di limone e arancia","nameJa":"レモンとオレンジの皮","nameEn":"Grated lemon and orange peel","quantity":1,"unit":"個分ずつ","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"8dbf4786-3708-4f89-9ddf-330ecf67a99a","nameOriginal":"Olio per friggere","nameJa":"揚げ油","nameEn":"Frying oil","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"175〜180℃","substitutionOptions":[]},{"id":"185a9872-8a2c-4f53-9711-9f17f0da6cd6","nameOriginal":"Miele amaro di corbezzolo","nameJa":"コルベッゾーロ（アルブータス）蜂蜜","nameEn":"Corbezzolo honey (bitter arbutus honey)","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"苦みがあるほど本格的。入手できなければ百花蜜で代用可","substitutionOptions":[{"id":"4ac9800b-d7c9-4a08-a215-4336469b10ef","standardIngredientId":"185a9872-8a2c-4f53-9711-9f17f0da6cd6","nameJa":"ミレフィオーリ（百花蜜）","nameEn":"Wildflower honey","authenticityImpact":-10,"flavorImpact":"コルベッゾーロ蜂蜜特有の苦みが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]}],"steps":[{"stepNumber":1,"instruction":"生地を作る：セモリナ粉300g・ラード50g・塩3g・ぬるま湯150mlを合わせてなめらかで均一な生地にこねる（10分）。ラップして30分休ませる。","title":"生地を作り休ませる","actionItems":["セモリナ粉300g・ラード50g・塩3g・ぬるま湯150mlを合わせてなめらかな生地にこねる（10分）。","ラップして30分休ませる。"],"parallelItems":[],"completionCriteria":["なめらかで均一な生地になれば次へ（30分後）。"],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フレッシュペコリーノ400gをすりおろすか細かく砕く。レモンとオレンジは白いワタを避け、表皮だけをすりおろす。すりおろした柑橘の皮をチーズに加えて混ぜる。","title":"チーズを準備する","actionItems":["フレッシュペコリーノ400gをすりおろすか細かく砕く。","レモンとオレンジの表皮だけをすりおろす。","すりおろした柑橘の皮をチーズに加えて混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地をパスタマシンまたは麺棒で2〜3mm厚に伸ばし、直径10〜12cmの円に抜く。","title":"生地を伸ばして円に抜く","actionItems":["生地を2〜3mm厚に伸ばす。","直径10〜12cmの円に抜く。"],"parallelItems":[],"completionCriteria":["均一な厚さの円に抜ければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"チーズを円の中央（直径6〜7cm分）に平たく乗せ、もう一枚の生地で蓋をする。フォークで縁を押しつけ、すき間が見えなくなるまでしっかり閉じる（すき間があると揚げた時に溶けたチーズが漏れる）。","title":"チーズを包んで閉じる","actionItems":["チーズを円の中央に平たく乗せる。","もう一枚の生地で蓋をする。","フォークで縁をしっかり押しつけてすき間なく閉じる。"],"parallelItems":[],"completionCriteria":["縁が完全に閉じられれば次へ。"],"cautionItems":["すき間があると揚げた時に溶けたチーズが漏れる。しっかり閉じる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"揚げ油を175〜180℃に熱し、セアダスを数枚ずつ揚げる。きつね色になるまで片面2〜3分、裏返してさらに2〜3分。","title":"揚げる","actionItems":["揚げ油を175〜180℃に熱する。","セアダスを数枚ずつ揚げる。片面2〜3分、裏返してさらに2〜3分。"],"parallelItems":[],"completionCriteria":["きつね色になれば揚げ上がり。"],"cautionItems":["一度に入れすぎない。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"ペーパータオルで油を切り、熱々のうちに皿に盛る。コルベッゾーロ蜂蜜をたっぷり（惜しみなく）かけて提供する。蜂蜜はかけてから食べるまでのタイミングを逃さないこと。","title":"蜂蜜をかけて提供する","actionItems":["ペーパータオルで油を切る。","熱々のうちに皿に盛る。","コルベッゾーロ蜂蜜をたっぷりかけて提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["冷えると食感が落ちる。熱々のうちに提供する。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

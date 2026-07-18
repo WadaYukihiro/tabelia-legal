@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・マルサーラ（シチリア）→全国</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">鶏胸肉（または骨なし鶏もも肉）</span><span class="ingredient-qty">600g（4枚）</span><span class="ingredient-notes">胸肉は厚みを横に開いて均一に。もも肉はそのまま使う</span></li>
-          <li><span class="ingredient-name">マルサラワイン（辛口）</span><span class="ingredient-qty">150ml</span><span class="ingredient-notes">辛口（secco）を使う。甘口だと甘すぎる</span></li>
-          <li><span class="ingredient-name">マッシュルーム</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">4等分に切る</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">50g</span><span class="ingredient-notes">ソースの乳化に使う</span></li>
-          <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">50g</span><span class="ingredient-notes">肉にまぶして焼き色とソースのとろみを出す</span></li>
-          <li><span class="ingredient-name">チキンブロード</span><span class="ingredient-qty">80ml</span><span class="ingredient-notes">ソースの液体量を調整するのに使う</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ（みじん切り）</span><span class="ingredient-qty">1枝</span></li>
+              <li data-ingredient-row="0cb1c62a-5bb2-4d3d-954e-950225f372ff"><span class="ingredient-name" data-ingredient-name>鶏胸肉（または骨なし鶏もも肉）</span><span class="ingredient-qty" data-ingredient-qty>600g（4枚）</span><span class="ingredient-notes">胸肉は厚みを横に開いて均一に。もも肉はそのまま使う</span></li>
+          <li data-ingredient-row="285bb4d5-d61e-41ac-9774-3028ac99cabe"><span class="ingredient-name" data-ingredient-name>マルサラワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><span class="ingredient-notes">辛口（secco）を使う。甘口だと甘すぎる</span><button type="button" class="substitution-trigger" data-substitution-trigger="285bb4d5-d61e-41ac-9774-3028ac99cabe"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f4fde087-2ee4-42dd-a6f9-9c9a623434c8"><span class="ingredient-name" data-ingredient-name>マッシュルーム</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">4等分に切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="f4fde087-2ee4-42dd-a6f9-9c9a623434c8"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7f2c7850-9677-41f1-be52-964b5661565a"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>50g</span><span class="ingredient-notes">ソースの乳化に使う</span></li>
+          <li data-ingredient-row="4dd001b2-a073-45ae-b697-e9e8a12bbf98"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>50g</span><span class="ingredient-notes">肉にまぶして焼き色とソースのとろみを出す</span></li>
+          <li data-ingredient-row="02d1a9a8-361d-42b2-8ee3-dd75ff97a51d"><span class="ingredient-name" data-ingredient-name>チキンブロード</span><span class="ingredient-qty" data-ingredient-qty>80ml</span><span class="ingredient-notes">ソースの液体量を調整するのに使う</span></li>
+          <li data-ingredient-row="68d1f174-91a7-4967-a0f9-b0dc2e8c8c2b"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ（みじん切り）</span><span class="ingredient-qty" data-ingredient-qty>1枝</span></li>
               </ul>
             </section>
           </div>
@@ -272,6 +292,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e5c43b33-81fb-4b2e-a903-26a7dab74599","nameJa":"鶏肉のマルサラワインソース","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0cb1c62a-5bb2-4d3d-954e-950225f372ff","nameOriginal":"Petto di pollo (o cosce disossate)","nameJa":"鶏胸肉（または骨なし鶏もも肉）","nameEn":"Chicken breast or boneless thighs","quantity":600,"unit":"g（4枚）","role":"essential","scalingBehavior":null,"notes":"胸肉は厚みを横に開いて均一に。もも肉はそのまま使う","substitutionOptions":[]},{"id":"285bb4d5-d61e-41ac-9774-3028ac99cabe","nameOriginal":"Vino Marsala secco","nameJa":"マルサラワイン（辛口）","nameEn":"Dry Marsala wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"辛口（secco）を使う。甘口だと甘すぎる","substitutionOptions":[{"id":"ba1c9bbd-d5fa-4c0f-b599-72d93129ffcb","standardIngredientId":"285bb4d5-d61e-41ac-9774-3028ac99cabe","nameJa":"白ワイン150ml＋ブランデー大さじ1","nameEn":"White wine with brandy","authenticityImpact":-20,"flavorImpact":"マルサラ特有の濃厚さが失われるがソースとして成立","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"e3d4d3ba-6be0-4c31-b96c-4434fc537120","standardIngredientId":"285bb4d5-d61e-41ac-9774-3028ac99cabe","nameJa":"シェリー酒（アモンティリャード）","nameEn":"Amontillado sherry","authenticityImpact":-5,"flavorImpact":"風味は近い。アルコール度数が高いので量を1割減らす","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f4fde087-2ee4-42dd-a6f9-9c9a623434c8","nameOriginal":"Funghi champignon","nameJa":"マッシュルーム","nameEn":"Button mushrooms","quantity":200,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"4等分に切る","substitutionOptions":[{"id":"cf98a1a8-291c-4b31-ba46-08766e294de1","standardIngredientId":"f4fde087-2ee4-42dd-a6f9-9c9a623434c8","nameJa":"しめじまたはえのき","nameEn":"Shimeji or enoki mushrooms","authenticityImpact":-5,"flavorImpact":"食感と香りが変わるが日本では手軽に使える代替","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7f2c7850-9677-41f1-be52-964b5661565a","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ソースの乳化に使う","substitutionOptions":[]},{"id":"4dd001b2-a073-45ae-b697-e9e8a12bbf98","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Plain flour","quantity":50,"unit":"g","role":"technique","scalingBehavior":null,"notes":"肉にまぶして焼き色とソースのとろみを出す","substitutionOptions":[]},{"id":"02d1a9a8-361d-42b2-8ee3-dd75ff97a51d","nameOriginal":"Brodo di pollo","nameJa":"チキンブロード","nameEn":"Chicken broth","quantity":80,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"ソースの液体量を調整するのに使う","substitutionOptions":[]},{"id":"68d1f174-91a7-4967-a0f9-b0dc2e8c8c2b","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ（みじん切り）","nameEn":"Flat-leaf parsley, chopped","quantity":1,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"マッシュルーム200gを4等分に切る。","title":"マッシュルームを切る","actionItems":["マッシュルーム200gを4等分に切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鶏肉に塩・こしょうをして薄力粉を全体にまぶし、余分な粉を払う。","title":"鶏肉に粉をまぶす","actionItems":["鶏肉600gに塩・こしょうをする。","薄力粉50gを全体にまぶし、余分な粉を払う。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンでバター半量を溶かし（中火）、鶏肉を入れて両面きつね色になるまで各4〜5分焼いて取り出す。","title":"鶏肉を焼く","actionItems":["フライパンでバター25gを中火で溶かす。","鶏肉を入れて両面きつね色になるまで各4〜5分焼いて取り出す。"],"parallelItems":[],"completionCriteria":["両面にきつね色がついたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":11,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"同じフライパンにマッシュルームを入れて3分炒める。マルサラワインを注いでアルコールを飛ばしながら1分強火で煮詰める。","title":"マッシュルームとマルサラで炒める","actionItems":["同じフライパンにマッシュルームを入れて3分炒める。","マルサラワイン150mlを注いで強火で1分、アルコールを飛ばしながら煮詰める。"],"parallelItems":[],"completionCriteria":["アルコールが飛んだら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"チキンブロードを加え、鶏肉を戻す。弱火で8〜10分煮て鶏肉に完全に火を通す。残りのバターを加えてソースを乳化させる。","title":"鶏肉を戻してソースを仕上げる","actionItems":["チキンブロード80mlを加え、鶏肉を戻す。","弱火で8〜10分煮て鶏肉に完全に火を通す。","残りのバター25gを加えてソースを乳化させる。"],"parallelItems":[],"completionCriteria":["鶏肉に完全に火が通り、ソースにとろみが出れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"パセリを散らして完成。ソースが少ないようならブロードを少量足して調整。","title":"パセリとブロードで調整する","actionItems":["パセリを散らす。","ソースが少なければブロードを少量足して調整する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

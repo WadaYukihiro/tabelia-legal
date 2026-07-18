@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>4時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,17 +94,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">サヴォイアルディ（指ビスケット）</span><span class="ingredient-qty">250g</span></li>
-          <li><span class="ingredient-name">アルケルメス（赤いリキュール）</span><span class="ingredient-qty">100ml</span><span class="ingredient-notes">伝統的な赤いリキュール。色と独特の香りがポイント</span></li>
-          <li><span class="ingredient-name">ラムまたはコニャック</span><span class="ingredient-qty">50ml</span></li>
-          <li><span class="ingredient-name">全乳</span><span class="ingredient-qty">500ml</span><span class="ingredient-notes">クレーマ用</span></li>
-          <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">5個</span><span class="ingredient-notes">クレーマ用</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">120g</span><span class="ingredient-notes">クレーマ用</span></li>
-          <li><span class="ingredient-name">コーンスターチ</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">クレーマ用</span></li>
-          <li><span class="ingredient-name">レモンの皮</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">純ココア（無糖）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">チョコクリーム用</span></li>
+              <li data-ingredient-row="1988997d-adf5-46be-9b06-11809535c3a4"><span class="ingredient-name" data-ingredient-name>サヴォイアルディ（指ビスケット）</span><span class="ingredient-qty" data-ingredient-qty>250g</span><button type="button" class="substitution-trigger" data-substitution-trigger="1988997d-adf5-46be-9b06-11809535c3a4"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8096ae28-3050-4ca5-9457-f625036a14bb"><span class="ingredient-name" data-ingredient-name>アルケルメス（赤いリキュール）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span><span class="ingredient-notes">伝統的な赤いリキュール。色と独特の香りがポイント</span><button type="button" class="substitution-trigger" data-substitution-trigger="8096ae28-3050-4ca5-9457-f625036a14bb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a5f4757b-5e09-4c4a-89c2-e33c780132fc"><span class="ingredient-name" data-ingredient-name>ラムまたはコニャック</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
+          <li data-ingredient-row="4e6ddc09-e5f1-467f-884d-79ba46e4115b"><span class="ingredient-name" data-ingredient-name>全乳</span><span class="ingredient-qty" data-ingredient-qty>500ml</span><span class="ingredient-notes">クレーマ用</span></li>
+          <li data-ingredient-row="3ea0e480-644b-45ae-9c34-1ddca9d0cbc4"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>5個</span><span class="ingredient-notes">クレーマ用</span></li>
+          <li data-ingredient-row="4578473f-387b-483a-971b-f69fadbb48ae"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>120g</span><span class="ingredient-notes">クレーマ用</span></li>
+          <li data-ingredient-row="74391656-8f8a-4ec3-8541-c6a3d5d54374"><span class="ingredient-name" data-ingredient-name>コーンスターチ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">クレーマ用</span></li>
+          <li data-ingredient-row="a5376e6d-ec5a-4f2f-bc1a-0a84e8c1cbfc"><span class="ingredient-name" data-ingredient-name>レモンの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="fd24a342-cc2f-4700-bff3-a8032cebe4d9"><span class="ingredient-name" data-ingredient-name>純ココア（無糖）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">チョコクリーム用</span><button type="button" class="substitution-trigger" data-substitution-trigger="fd24a342-cc2f-4700-bff3-a8032cebe4d9"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -309,6 +329,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"8bae5232-ecc7-411a-81a5-43be23d16e0e","nameJa":"ズッパ・イングレーゼ","baseServings":6,"minServings":1,"maxServings":20},"ingredients":[{"id":"1988997d-adf5-46be-9b06-11809535c3a4","nameOriginal":"Savoiardi","nameJa":"サヴォイアルディ（指ビスケット）","nameEn":"Ladyfinger biscuits","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"aee3fbee-9d52-48c4-b0d4-fc2605216408","standardIngredientId":"1988997d-adf5-46be-9b06-11809535c3a4","nameJa":"パン・ディ・スパーニャ（薄切り）","nameEn":"Sliced sponge cake","authenticityImpact":-5,"flavorImpact":"リキュールの浸み込みが均一になりやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"8096ae28-3050-4ca5-9457-f625036a14bb","nameOriginal":"Alchermes","nameJa":"アルケルメス（赤いリキュール）","nameEn":"Alchermes liqueur","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"伝統的な赤いリキュール。色と独特の香りがポイント","substitutionOptions":[{"id":"75ff8ade-caa2-4e37-98fd-c463d6d3d0a3","standardIngredientId":"8096ae28-3050-4ca5-9457-f625036a14bb","nameJa":"ルチェルノ（ザクロシロップ＋ラム）","nameEn":"Grenadine + rum syrup","authenticityImpact":-10,"flavorImpact":"香りが簡素になるが色調は保てる","textureImpact":null,"procedureChanges":["ザクロシロップ80mlとラム20mlを混ぜてアルケルメスの代わりに使う"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"アルケルメス（赤いリキュール）"},{"role":"essential","unit":"ml","action":"add","nameEn":"Grenadine syrup","nameJa":"ザクロシロップ","quantity":80},{"role":"flavor","unit":"ml","action":"add","nameEn":"Rum for grenadine syrup","nameJa":"ラム（ルチェルノ用）","quantity":20}],"stepPatches":[{"title":"サヴォイアルディを浸す","action":"replace","stepNumber":3,"actionItems":["ザクロシロップ80ml・ラム20ml・ラムまたはコニャック50mlを浅いボウルで混ぜる。","サヴォイアルディを1〜2秒でさっとくぐらせる。"],"instruction":"ザクロシロップ80ml・ラム20ml・ラムまたはコニャック50mlを浅いボウルに混ぜる。サヴォイアルディ250gを手早くくぐらせる（浸しすぎると崩れる。1〜2秒で十分）。","cautionItems":["浸しすぎると崩れる。1〜2秒で十分。"],"changeReason":"アルケルメスの代わりにザクロシロップとラムで色と香りを補うため","completionCriteria":["全体に赤い色がつけば次へ。"]}]},{"id":"9813e75a-25e1-4394-8101-2295ebc10307","standardIngredientId":"8096ae28-3050-4ca5-9457-f625036a14bb","nameJa":"ラム（ダーク）","nameEn":"Dark rum","authenticityImpact":-20,"flavorImpact":"赤色と独特の植物性の香りが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a5f4757b-5e09-4c4a-89c2-e33c780132fc","nameOriginal":"Rum o Cognac","nameJa":"ラムまたはコニャック","nameEn":"Rum or Cognac","quantity":50,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4e6ddc09-e5f1-467f-884d-79ba46e4115b","nameOriginal":"Latte intero","nameJa":"全乳","nameEn":"Whole milk","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"クレーマ用","substitutionOptions":[]},{"id":"3ea0e480-644b-45ae-9c34-1ddca9d0cbc4","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄","nameEn":"Egg yolks","quantity":5,"unit":"個","role":"essential","scalingBehavior":null,"notes":"クレーマ用","substitutionOptions":[]},{"id":"4578473f-387b-483a-971b-f69fadbb48ae","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":"クレーマ用","substitutionOptions":[]},{"id":"74391656-8f8a-4ec3-8541-c6a3d5d54374","nameOriginal":"Amido di mais","nameJa":"コーンスターチ","nameEn":"Cornstarch","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":"クレーマ用","substitutionOptions":[]},{"id":"a5376e6d-ec5a-4f2f-bc1a-0a84e8c1cbfc","nameOriginal":"Scorza di limone","nameJa":"レモンの皮","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"fd24a342-cc2f-4700-bff3-a8032cebe4d9","nameOriginal":"Cacao amaro in polvere","nameJa":"純ココア（無糖）","nameEn":"Unsweetened cocoa powder","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"チョコクリーム用","substitutionOptions":[{"id":"fcf0cd01-a856-45e7-aa48-159d7688e7ce","standardIngredientId":"fd24a342-cc2f-4700-bff3-a8032cebe4d9","nameJa":"ダークチョコレート（70%）","nameEn":"Dark chocolate (70%)","authenticityImpact":-5,"flavorImpact":"風味が豊かになる","textureImpact":null,"procedureChanges":["ミルク加熱後にチョコを溶かして加える"],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"細かく刻み、熱いクリームに溶かす","action":"update","nameEn":"Dark chocolate (70%)","nameJa":"ダークチョコレート（70%）","quantity":60,"targetNameJa":"純ココア（無糖）"}],"stepPatches":[{"title":"クリームを仕上げる","action":"replace","stepNumber":2,"actionItems":["鍋に戻して中火で絶えず混ぜながらとろみをつける。火を止める。","クリームの半量を別ボウルに取り分ける。","刻んだダークチョコレート60gを熱いうちに加え、完全に溶かしてチョコクリームにする。","両方のクリームにラップを密着させて冷ます。"],"instruction":"鍋に戻して中火で、底が焦げないよう絶えず混ぜながら加熱する（とろみがついてクリーム状になったら火を止める）。クリームの半量を別のボウルに取り分け、刻んだダークチョコレート60gを熱いうちに加えて完全に溶かし、チョコクリームにする。両方のクリームにラップを密着させて冷ます（30分以上）。","cautionItems":["底が焦げないよう絶えず混ぜる。チョコレートは火を止めてから加え、分離させない。"],"changeReason":"ココア粉ではなく刻んだダークチョコレートを熱いクリームに溶かし込むため","completionCriteria":["とろみがついてクリーム状になれば火を止める。ダークチョコレートが完全に溶け、30分以上冷ませば次へ。"]}]}]}],"steps":[{"stepNumber":1,"instruction":"クレーマ・パスティッチェーラを作る：レモンは白いワタを避け、表皮だけをすりおろす。牛乳500ml・すりおろしたレモンの皮を鍋で沸騰直前まで温める。別のボウルで卵黄5個・砂糖120g・コーンスターチ40gをよく混ぜ、温めた牛乳を少しずつ加えながら混ぜる。","title":"クレーマを作る","actionItems":["レモンの表皮だけをすりおろす。","牛乳500mlとすりおろしたレモンの皮を鍋で沸騰直前まで温める。","別のボウルで卵黄5個・砂糖120g・コーンスターチ40gをよく混ぜる。","温めた牛乳を少しずつ加えながら混ぜる。"],"parallelItems":[],"completionCriteria":["ダマなく均一に混ざれば次へ。"],"cautionItems":["牛乳は沸騰させない。沸騰直前で止める。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋に戻して中火で、底が焦げないよう絶えず混ぜながら加熱する（とろみがついてクリーム状になったら火を止める）。クリームの半量を別のボウルに取り分け、ふるった純ココア30gを加えてチョコクリームにする。両方のクリームにラップを密着させて冷ます（30分以上）。","title":"クリームを仕上げる","actionItems":["鍋に戻して中火で絶えず混ぜながらとろみをつける。火を止める。","クリームの半量を別ボウルに取り分ける。","ふるった純ococoa30gを取り分けたクリームに加えてチョコクリームにする。","両方のクリームにラップを密着させて冷ます。"],"parallelItems":[],"completionCriteria":["とろみがついてクリーム状になれば火を止める。30分以上冷ませば次へ。"],"cautionItems":["底が焦げないよう絶えず混ぜる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"アルケルメス100mlとラム50mlを浅いボウルに混ぜる。サヴォイアルディ250gを手早くくぐらせる（浸しすぎると崩れる。1〜2秒で十分）。","title":"サヴォイアルディを浸す","actionItems":["アルケルメス100mlとラム50mlを浅いボウルで混ぜる。","サヴォイアルディを1〜2秒でさっとくぐらせる。"],"parallelItems":[],"completionCriteria":["全体に色がつけば次へ。"],"cautionItems":["浸しすぎると崩れる。1〜2秒で十分。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ガラスの器（トライフルボウルや長方形のグラタン皿）に、チョコクリーム → サヴォイアルディ → バニラクリーム → サヴォイアルディ → チョコクリームの順に重ねる。","title":"重ねる","actionItems":["ガラスの器にチョコクリームを敷く。","サヴォイアルディを並べる。","バニラクリームをかける。","サヴォイアルディを並べる。","チョコクリームで仕上げる。"],"parallelItems":[],"completionCriteria":["全層重ね終わったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ラップをかけて冷蔵庫で最低4時間（理想は一晩）冷やす。提供前に純ококоаを振る。","title":"冷やし固める","actionItems":["ラップをかけて冷蔵庫で最低4時間冷やす。","提供前に純ококоаを振る。"],"parallelItems":[],"completionCriteria":["最低4時間。全体が冷えてクリームが落ち着けば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

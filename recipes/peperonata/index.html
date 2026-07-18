@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">オリーブオイル</span><span class="ingredient-qty">大さじ3</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span></li>
-          <li><span class="ingredient-name">バジル</span><span class="ingredient-qty">5枚</span></li>
-          <li><span class="ingredient-name">パプリカ（赤・黄各1個）</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">200g</span></li>
+              <li data-ingredient-row="001576a4-fd7c-4e7c-951a-1c51bfbc3e5e"><span class="ingredient-name" data-ingredient-name>オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ3</span></li>
+          <li data-ingredient-row="16985fd3-1d71-46a1-89ff-a614d6cbdc52"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span></li>
+          <li data-ingredient-row="3ff61244-80a2-4e45-9653-70084f4f954b"><span class="ingredient-name" data-ingredient-name>バジル</span><span class="ingredient-qty" data-ingredient-qty>5枚</span></li>
+          <li data-ingredient-row="56217c65-c267-490b-b9c8-f8eb045f67ef"><span class="ingredient-name" data-ingredient-name>パプリカ（赤・黄各1個）</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="98b9182f-be7a-4b9d-9cae-8a7dbe4cc587"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span></li>
+          <li data-ingredient-row="fff9ff68-1779-45b2-89f9-0d246fc424fa"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
               </ul>
             </section>
           </div>
@@ -182,6 +202,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"50bad5d6-3885-4cbd-9808-07eb6d6a89d8","nameJa":"三色パプリカのトマト煮","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"001576a4-fd7c-4e7c-951a-1c51bfbc3e5e","nameOriginal":"Olio d'oliva","nameJa":"オリーブオイル","nameEn":"Olive oil","quantity":3,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"16985fd3-1d71-46a1-89ff-a614d6cbdc52","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3ff61244-80a2-4e45-9653-70084f4f954b","nameOriginal":"Basilico","nameJa":"バジル","nameEn":"Fresh basil","quantity":5,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"56217c65-c267-490b-b9c8-f8eb045f67ef","nameOriginal":"Peperoni","nameJa":"パプリカ（赤・黄各1個）","nameEn":"Bell peppers (red and yellow)","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"98b9182f-be7a-4b9d-9cae-8a7dbe4cc587","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fff9ff68-1779-45b2-89f9-0d246fc424fa","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"パプリカは種とワタを取り除き、1.5cm幅の細切りにする。玉ねぎは薄切りにする。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイル大さじ3を中火で熱し、玉ねぎとにんにく（潰す）を入れて3分炒める。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パプリカを加えてさらに5分炒める。ホールトマト缶を手で崩しながら加え、蓋をして弱火で20分煮込む。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"塩で味を調え、火を止めてバジルをちぎって加える。室温でも温かくても美味しい。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

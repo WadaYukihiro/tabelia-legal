@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>12時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,16 +94,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">赤黄パプリカ</span><span class="ingredient-qty">4個</span><span class="ingredient-notes">直火で焼き、皮をむく</span></li>
-          <li><span class="ingredient-name">アンチョビ</span><span class="ingredient-qty">4枚</span><span class="ingredient-notes">細かく刻む</span></li>
-          <li><span class="ingredient-name">ケッパー</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">塩抜きする</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">白ワインビネガー</span><span class="ingredient-qty">15ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">4枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">2g</span></li>
+              <li data-ingredient-row="d8f3c55c-1c0a-4b1d-841d-69b47622e3db"><span class="ingredient-name" data-ingredient-name>赤黄パプリカ</span><span class="ingredient-qty" data-ingredient-qty>4個</span><span class="ingredient-notes">直火で焼き、皮をむく</span></li>
+          <li data-ingredient-row="0e57e085-09a7-447d-a01f-ba164d123bb6"><span class="ingredient-name" data-ingredient-name>アンチョビ</span><span class="ingredient-qty" data-ingredient-qty>4枚</span><span class="ingredient-notes">細かく刻む</span></li>
+          <li data-ingredient-row="099c78a3-6265-4771-9566-179b380c0f78"><span class="ingredient-name" data-ingredient-name>ケッパー</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">塩抜きする</span></li>
+          <li data-ingredient-row="bb43e082-7f31-4482-8e9b-bf2395fd8f7b"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="64915f0b-5171-44e6-bdc2-04a675e29289"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="5fe2c89b-3ff3-42ba-9d84-d8419c7e7479"><span class="ingredient-name" data-ingredient-name>白ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>15ml</span></li>
+          <li data-ingredient-row="d3a91145-92a0-4092-a3bb-1bd7fb2e0b62"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>4枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="d124fa0a-55db-41c0-aec4-ad0fb6dd52e0"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>2g</span></li>
               </ul>
             </section>
           </div>
@@ -264,6 +284,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0622a82b-3263-4d0f-9bf6-3f2f652ef350","nameJa":"焼きピーマンのアンチョビ・ケッパーマリネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"d8f3c55c-1c0a-4b1d-841d-69b47622e3db","nameOriginal":"Peperoni rossi e gialli","nameJa":"赤黄パプリカ","nameEn":"Red and yellow bell peppers","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"直火で焼き、皮をむく","substitutionOptions":[]},{"id":"0e57e085-09a7-447d-a01f-ba164d123bb6","nameOriginal":"Acciughe sottolio","nameJa":"アンチョビ","nameEn":"Anchovies in oil","quantity":4,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"細かく刻む","substitutionOptions":[]},{"id":"099c78a3-6265-4771-9566-179b380c0f78","nameOriginal":"Capperi sotto sale","nameJa":"ケッパー","nameEn":"Salt-packed capers","quantity":20,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"塩抜きする","substitutionOptions":[]},{"id":"bb43e082-7f31-4482-8e9b-bf2395fd8f7b","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"64915f0b-5171-44e6-bdc2-04a675e29289","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5fe2c89b-3ff3-42ba-9d84-d8419c7e7479","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":15,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d3a91145-92a0-4092-a3bb-1bd7fb2e0b62","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":4,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"d124fa0a-55db-41c0-aec4-ad0fb6dd52e0","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":2,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ケッパー20gを水に10分浸けて塩抜きする。アンチョビ4枚は細かく刻む。にんにく1片は薄切りにする。イタリアンパセリ4枝はみじん切りにする。ケッパーの塩気が穏やかになったら次へ。","title":"香味を準備する","actionItems":["ケッパー20gを水に10分浸けて塩抜きする。","アンチョビ4枚は細かく刻む。","にんにく1片は薄切りにする。","イタリアンパセリ4枝はみじん切りにする。"],"parallelItems":[],"completionCriteria":["ケッパーの塩気が穏やかになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"赤黄パプリカ4個を直火または魚焼きグリルで焼く。表面全体が黒く焦げ、果肉が少し沈むほど柔らかくなったらボウルに移す。","title":"パプリカを直火で焼く","actionItems":["赤黄パプリカ4個を直火または魚焼きグリルで焼く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["表面全体が黒く焦げ、果肉が少し沈むほど柔らかくなったらボウルに移す。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ボウルにラップをかけて10分蒸らす。赤黄パプリカの焦げた皮を手でむき、種を取り、包丁で細切りに切る。果肉が裂けずにしっとりしていれば次へ。","title":"蒸らして皮をむく","actionItems":["ボウルにラップをかけて10分蒸らす。"],"parallelItems":[],"completionCriteria":["果肉が裂けずにしっとりしていれば次へ。"],"cautionItems":["赤黄パプリカの焦げた皮を手でむき、種を取り、包丁で細切りに切る。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"保存容器に赤黄パプリカ、アンチョビ、ケッパー、にんにく、エクストラバージンオリーブオイル60ml、白ワインビネガー15ml、塩2gを入れて合わせる。冷蔵庫で12時間置き、油と野菜の汁が一体になったら次へ。","title":"一晩マリネする","actionItems":["保存容器に赤黄パプリカ、アンチョビ、ケッパー、にんにく、エクストラバージンオリーブオイル60ml、白ワインビネガー15ml、塩2gを入れて合わせる。"],"parallelItems":[],"completionCriteria":["冷蔵庫で12時間置き、油と野菜の汁が一体になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":720,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"常温に15分戻し、イタリアンパセリを散らす。パプリカの甘い香りとアンチョビの塩気がなじんだら完成。","title":"仕上げる","actionItems":["常温に15分戻し、イタリアンパセリを散らす。"],"parallelItems":[],"completionCriteria":["パプリカの甘い香りとアンチョビの塩気がなじんだら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

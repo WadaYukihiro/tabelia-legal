@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・バーリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ブロッコリーラーブ（菜の花）</span><span class="ingredient-qty">500g</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span></li>
-          <li><span class="ingredient-name">赤唐辛子</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">EVオリーブオイル</span><span class="ingredient-qty">大さじ3</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">小さじ1</span></li>
+              <li data-ingredient-row="4839ad7e-534f-47bb-8b2b-52b00b1a9437"><span class="ingredient-name" data-ingredient-name>ブロッコリーラーブ（菜の花）</span><span class="ingredient-qty" data-ingredient-qty>500g</span></li>
+          <li data-ingredient-row="fe0b7a4e-8a71-4a38-84a5-9b44d430527a"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span></li>
+          <li data-ingredient-row="a3515141-3e1c-4ff2-87ca-cbe4811eed4b"><span class="ingredient-name" data-ingredient-name>赤唐辛子</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
+          <li data-ingredient-row="2b0e743c-db3c-44a0-9c6d-168f645e2165"><span class="ingredient-name" data-ingredient-name>EVオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ3</span></li>
+          <li data-ingredient-row="d0e09a3d-67aa-45d9-a8f0-56aedb0adcea"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span></li>
               </ul>
             </section>
           </div>
@@ -193,6 +213,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"a26b63a0-08d6-4ad4-98cf-f7d3770db22c","nameJa":"ブロッコリーラーベのガーリックソテー","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"4839ad7e-534f-47bb-8b2b-52b00b1a9437","nameOriginal":"Broccoletti di rapa","nameJa":"ブロッコリーラーブ（菜の花）","nameEn":"Broccoli rabe (rapini)","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fe0b7a4e-8a71-4a38-84a5-9b44d430527a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a3515141-3e1c-4ff2-87ca-cbe4811eed4b","nameOriginal":"Peperoncino","nameJa":"赤唐辛子","nameEn":"Red chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2b0e743c-db3c-44a0-9c6d-168f645e2165","nameOriginal":"Olio extravergine","nameJa":"EVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":3,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d0e09a3d-67aa-45d9-a8f0-56aedb0adcea","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ブロッコリーラーブの太い茎の下部（5cm）を切り落とす。大きな葉は残し、黄色くなったものは取り除く。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":"下準備"},{"stepNumber":2,"instruction":"塩を加えた沸騰した湯でブロッコリーラーブを3〜4分下茹でする。太い茎が柔らかくなり、葉が鮮やかな緑色になったらザルにあける。流水で冷まして絞る。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":"下茹で"},{"stepNumber":3,"instruction":"フライパンにEVオリーブオイルを中火で熱し、薄切りにんにくと半分に割った赤唐辛子を入れて30秒炒める。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ブロッコリーラーブを加えて強火で3〜4分炒める。全体にオイルとにんにくの香りが移ったら塩で味を調えて完成。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":"仕上げ"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

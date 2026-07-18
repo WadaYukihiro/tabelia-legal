@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・アマルフィ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">カルナローリ米</span><span class="ingredient-qty">180g</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">皮を黄色い部分だけすりおろし、果汁を絞る</span></li>
-          <li><span class="ingredient-name">野菜ブロード</span><span class="ingredient-qty">700ml</span><span class="ingredient-notes">温めておく</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">45g</span><span class="ingredient-notes">冷やしておく</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">すりおろす</span></li>
-          <li><span class="ingredient-name">エシャロット</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">4g</span></li>
+              <li data-ingredient-row="7a73a170-8020-4bff-82f6-cc8c40cf990c"><span class="ingredient-name" data-ingredient-name>カルナローリ米</span><span class="ingredient-qty" data-ingredient-qty>180g</span></li>
+          <li data-ingredient-row="793ccaed-8bb2-4e7c-8aa9-f841cb6617c6"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">皮を黄色い部分だけすりおろし、果汁を絞る</span></li>
+          <li data-ingredient-row="c7f36b2e-232f-4ac4-ade1-d78250b1417b"><span class="ingredient-name" data-ingredient-name>野菜ブロード</span><span class="ingredient-qty" data-ingredient-qty>700ml</span><span class="ingredient-notes">温めておく</span></li>
+          <li data-ingredient-row="307173c8-fc2d-4d8e-b1cf-5e73c94ae686"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="ed2b2804-78f9-468c-863a-d2dac158add5"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>45g</span><span class="ingredient-notes">冷やしておく</span></li>
+          <li data-ingredient-row="fc4a5aac-7180-45c2-bdc3-fe6122c65035"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">すりおろす</span></li>
+          <li data-ingredient-row="0e2b9028-fd09-477f-95f6-7a1cf59106c9"><span class="ingredient-name" data-ingredient-name>エシャロット</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="b890c41d-59a8-4a0d-b77e-78f3ed3e37d6"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>4g</span></li>
               </ul>
             </section>
           </div>
@@ -245,6 +265,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0e3cfa39-a260-4ab8-95d3-535709655f38","nameJa":"レモンのリゾット","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"7a73a170-8020-4bff-82f6-cc8c40cf990c","nameOriginal":"Riso Carnaroli","nameJa":"カルナローリ米","nameEn":"Carnaroli rice","quantity":180,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"793ccaed-8bb2-4e7c-8aa9-f841cb6617c6","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"皮を黄色い部分だけすりおろし、果汁を絞る","substitutionOptions":[]},{"id":"c7f36b2e-232f-4ac4-ade1-d78250b1417b","nameOriginal":"Brodo vegetale","nameJa":"野菜ブロード","nameEn":"Vegetable broth","quantity":700,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"温めておく","substitutionOptions":[]},{"id":"307173c8-fc2d-4d8e-b1cf-5e73c94ae686","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ed2b2804-78f9-468c-863a-d2dac158add5","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":45,"unit":"g","role":"technique","scalingBehavior":null,"notes":"冷やしておく","substitutionOptions":[]},{"id":"fc4a5aac-7180-45c2-bdc3-fe6122c65035","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":"すりおろす","substitutionOptions":[]},{"id":"0e2b9028-fd09-477f-95f6-7a1cf59106c9","nameOriginal":"Scalogno","nameJa":"エシャロット","nameEn":"Shallot","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"b890c41d-59a8-4a0d-b77e-78f3ed3e37d6","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":4,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"野菜ブロード700mlを温める。レモン1個は黄色い皮だけをすりおろし、果汁を絞る。パルミジャーノ40gをすりおろす。エシャロット1個はみじん切りにする。ブロードが湯気を立てる温度になったら次へ。","title":"香りとブロードを準備する","actionItems":["野菜ブロード700mlを温める。","レモン1個は黄色い皮だけをすりおろし、果汁を絞る。","パルミジャーノ40gをすりおろす。","エシャロット1個はみじん切りにする。"],"parallelItems":[],"completionCriteria":["ブロードが湯気を立てる温度になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋にバター15gとエシャロットを入れて弱火で炒める。エシャロットが透明になったらカルナローリ米180gを加え、米の縁が透き通るまで炒める。","title":"米を炒める","actionItems":["鍋にバター15gとエシャロットを入れて弱火で炒める。","エシャロットが透明になったらカルナローリ米180gを加え、米の縁が透き通るまで炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"白ワイン60mlを加えてアルコールの香りが飛んだら、温かい野菜ブロードを少しずつ加える。米が常に軽く踊る火加減を保ち、芯が細く残るアルデンテになったら火を止める。","title":"炊く","actionItems":["白ワイン60mlを加えてアルコールの香りが飛んだら、温かい野菜ブロードを少しずつ加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["米が常に軽く踊る火加減を保ち、芯が細く残るアルデンテになったら火を止める。"],"tipItems":[],"durationMinutes":17,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"冷たいバター30g、パルミジャーノ、レモンの皮、レモン果汁少量、塩4gを加えて鍋を揺すりながら混ぜる。米が波のように広がる all onda の濃度になったら完成。","title":"マンテカーレする","actionItems":["冷たいバター30g、パルミジャーノ、レモンの皮、レモン果汁少量、塩4gを加えて鍋を揺すりながら混ぜる。"],"parallelItems":[],"completionCriteria":["米が波のように広がる all onda の濃度になったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

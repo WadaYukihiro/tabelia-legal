@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         </div>
 
         <p class="recipe-description">チーズと黒胡椒だけで作るローマ最古のパスタ。材料はシンプルだが乳化の技術が問われる。</p>
@@ -68,6 +68,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -79,11 +92,18 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">トンナレッリ（またはスパゲッティ）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">角断面のトンナレッリが本場。スパゲッティでも可</span></li>
-          <li><span class="ingredient-name">ペコリーノ・ロマーノ</span><span class="ingredient-qty">70g</span><span class="ingredient-notes">細かくすりおろす</span></li>
-          <li><span class="ingredient-name">黒胡椒（粗挽き）</span><span class="ingredient-qty">小さじ0.5</span><span class="ingredient-notes">フライパンで軽くトーストしてから使う</span></li>
+              <li data-ingredient-row="ee4f2ca4-19dd-4447-8320-71d4955f2007"><span class="ingredient-name" data-ingredient-name>トンナレッリ（またはスパゲッティ）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">角断面のトンナレッリが本場。スパゲッティでも可</span><button type="button" class="substitution-trigger" data-substitution-trigger="ee4f2ca4-19dd-4447-8320-71d4955f2007"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="cb06b97e-cbe7-4c28-8c7c-0f45f28b5c96"><span class="ingredient-name" data-ingredient-name>ペコリーノ・ロマーノ</span><span class="ingredient-qty" data-ingredient-qty>70g</span><span class="ingredient-notes">細かくすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="cb06b97e-cbe7-4c28-8c7c-0f45f28b5c96"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="34bdd8c7-428e-4f8f-8d6f-6918fbe114f6"><span class="ingredient-name" data-ingredient-name>黒胡椒（粗挽き）</span><span class="ingredient-qty" data-ingredient-qty>小さじ0.5</span><span class="ingredient-notes">フライパンで軽くトーストしてから使う</span></li>
               </ul>
             </section>
           </div>
@@ -275,6 +295,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"ca5cc5af-85a4-49af-b655-77d1ccbb6a09","nameJa":"カチョ・エ・ペペ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"ee4f2ca4-19dd-4447-8320-71d4955f2007","nameOriginal":"Tonnarelli o Spaghetti","nameJa":"トンナレッリ（またはスパゲッティ）","nameEn":"Tonnarelli or Spaghetti","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"角断面のトンナレッリが本場。スパゲッティでも可","substitutionOptions":[{"id":"c622cf17-87e4-4906-bbc7-925a6d6c2f77","standardIngredientId":"ee4f2ca4-19dd-4447-8320-71d4955f2007","nameJa":"リガトーニ","nameEn":"Rigatoni","authenticityImpact":0,"flavorImpact":"ショートパスタ版の正統な選択。チーズソースが筒の内側に入り、ペコリーノと黒胡椒の濃度を強く感じられる","textureImpact":null,"procedureChanges":["乾燥重量はトンナレッリと同量。袋記載の茹で時間で。"],"affectedStepNumbers":[3],"notes":null,"variantType":"authentic_variant","ingredientPatches":[],"stepPatches":[{"title":"リガトーニを移して乳化させる","action":"replace","stepNumber":3,"actionItems":["リガトーニを袋記載の茹で時間を目安に茹でてからフライパンに加える。","ゆで汁を少しずつ足しながら中火で炒め、ソースにでんぷんを出して乳化させる。"],"instruction":"リガトーニを袋記載の茹で時間を目安に茹でてからフライパンに加え、ゆで汁を少しずつ足しながら中火で炒め、ソースにでんぷんを出して乳化させる。","changeReason":"リガトーニはトンナレッリより茹で時間とソースの入り方が異なるため","completionCriteria":["約3〜4分。ソースにとろみがつき、筒の内側にもチーズソースが入ったら次へ。"]}]}]},{"id":"cb06b97e-cbe7-4c28-8c7c-0f45f28b5c96","nameOriginal":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","quantity":70,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かくすりおろす","substitutionOptions":[{"id":"50385595-0ed8-4758-952b-7160267a0e58","standardIngredientId":"cb06b97e-cbe7-4c28-8c7c-0f45f28b5c96","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","authenticityImpact":-20,"flavorImpact":"カチョエペペの命であるペコリーノの塩気と羊の風味が消え、別の料理に近くなる","textureImpact":null,"procedureChanges":["全量をパルミジャーノにすると溶けにくいため、少量のバターを加えると安定する"],"affectedStepNumbers":[2,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"role":"technique","unit":"g","notes":"パルミジャーノをなめらかに溶かす補助として仕上げに使う","action":"add","nameEn":"Unsalted butter","nameJa":"バター（無塩）","quantity":10}],"stepPatches":[{"title":"黒胡椒をトーストしゆで汁を加える","action":"replace","stepNumber":2,"actionItems":["パルミジャーノ・レッジャーノ100gを目の細かいおろし金で細かくすりおろしておく。","黒胡椒小さじ3をフライパンで中火で1分乾煎りし、香りを十分に出す。","胡椒が踊り始めたらパスタのゆで汁100mlを加えて弱火にする。"],"instruction":"（パスタが茹でている間に）パルミジャーノ・レッジャーノ100gを目の細かいおろし金で細かくすりおろしておく。\n・黒胡椒小さじ3をフライパンで中火で1分乾煎りし、香りを十分に出す。胡椒が踊り始めたらパスタのゆで汁100mlを加えて弱火にする","changeReason":"置換後のチーズ名に合わせるため","parallelItems":["パスタが茹でている間にパルミジャーノをすりおろし、黒胡椒を乾煎りする。"],"completionCriteria":["1分。黒胡椒が乾煎りされ香りが立ち、ゆで汁を加えて弱火にしたら次へ。"]},{"title":"バターとチーズを溶かして仕上げる","action":"replace","stepNumber":4,"actionItems":["火を止め、バター10gを加えて余熱で溶かす。","すりおろしパルミジャーノ100gを3回に分けて加える。","その都度ゆで汁を大さじ1ずつ足しながら素早く混ぜる。"],"instruction":"火を止め、バター10gを加えて余熱で溶かす。すりおろしパルミジャーノ100gを3回に分けて加え、その都度ゆで汁を大さじ1ずつ足しながら素早く混ぜる。チーズが均一に溶けてソースがなめらかでクリーミーになれば完成。チーズが固まってダマになったらフライパンを極弱火に数秒かけてゆで汁を少し足し、混ぜ直す。","cautionItems":["チーズが固まってダマになったら極弱火に数秒かけてゆで汁を少し足し、混ぜ直す。"],"changeReason":"パルミジャーノはペコリーノより溶けにくいため、少量のバターで乳化を補う","completionCriteria":["チーズが均一に溶けてソースがなめらかでクリーミーになれば完成。"]}]}]},{"id":"34bdd8c7-428e-4f8f-8d6f-6918fbe114f6","nameOriginal":"Pepe nero","nameJa":"黒胡椒（粗挽き）","nameEn":"Black pepper, coarsely ground","quantity":0.5,"unit":"小さじ","role":"essential","scalingBehavior":null,"notes":"フライパンで軽くトーストしてから使う","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"大きな鍋に湯を沸かし、塩は少量（小さじ1程度）だけ入れる。チーズが塩辛いため、茹で塩は最小限にする。沸騰したらパスタを入れる。","title":"湯を沸かしパスタを茹でる","actionItems":["大きな鍋に湯を沸かし、塩（湯量の0.7〜0.8%程度）を入れる。","沸騰したらパスタ200gを入れる。"],"parallelItems":[],"completionCriteria":["約10分。パスタが表示時間より2分短い状態になったら次へ。"],"cautionItems":["チーズが塩辛いため、茹で塩は通常より控えめ"],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":2,"instruction":"（パスタが茹でている間に）ペコリーノ・ロマーノ100gを目の細かいおろし金で細かくすりおろしておく。\n・黒胡椒小さじ3をフライパンで中火で1分乾煎りし、香りを十分に出す。胡椒が踊り始めたらパスタのゆで汁100mlを加えて弱火にする","title":"ソースを準備する","actionItems":["ペコリーノ・ロマーノを目の細かいおろし金で細かくすりおろしておく。","黒胡椒をフライパンで中火で1分乾煎りし、香りを十分に出す。","胡椒が踊り始めたらパスタのゆで汁100mlを加えて弱火にする。"],"parallelItems":["パスタが茹でている間にペコリーノをすりおろし、黒胡椒を乾煎りする。"],"completionCriteria":["1分。黒胡椒が乾煎りされ香りが立ち、ゆで汁を加えて弱火にしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パスタを表示より2分早めに引き上げ、フライパンに加えてゆで汁を少しずつ足しながら中火で炒め、麺にでんぷんを出して乳化させる。","title":"パスタを移して乳化させる","actionItems":["パスタを表示より2分早めに引き上げ、フライパンに加える。","ゆで汁を少しずつ足しながら中火で炒め、麺にでんぷんを出して乳化させる。"],"parallelItems":[],"completionCriteria":["約4分。ソースにとろみがついてきたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"火を止め、すりおろしペコリーノを3回に分けて加え、その都度ゆで汁を大さじ1ずつ足しながら素早く混ぜる。チーズが均一に溶けてソースがなめらかでクリーミーになれば完成。チーズが固まってダマになったらフライパンを極弱火に数秒かけてゆで汁を少し足し、混ぜ直す。","title":"チーズを溶かして仕上げる","actionItems":["火を止め、すりおろしペコリーノを3回に分けて加える。","その都度ゆで汁を足しながら素早く混ぜる。"],"parallelItems":[],"completionCriteria":["チーズが均一に溶けてソースがなめらかでクリーミーになれば完成。"],"cautionItems":["チーズが固まってダマになったら極弱火に数秒かけてゆで汁を少し足し、混ぜ直す。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"クリーミーなソースが麺全体に絡まった状態で盛り付け、黒胡椒を追いがけして供する。","title":"盛り付けて仕上げる","actionItems":["クリーミーなソースが麺全体に絡まった状態で盛り付ける。","黒胡椒を追いがけして供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

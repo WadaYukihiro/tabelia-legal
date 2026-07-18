@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">牛サーロインかたまり（または厚切りステーキ）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">厚さ3〜4cm。室温に30分以上出しておく</span></li>
-          <li><span class="ingredient-name">ルーコラ（ロケット）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">根元を切り、よく洗って水気を切る</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ（30ヶ月熟成）</span><span class="ingredient-qty">50g</span><span class="ingredient-notes">スライサーまたはピーラーで削る</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">粗塩（フルール・ド・セル）</span><span class="ingredient-qty">1つまみ</span><span class="ingredient-notes">焼きあがった後に振る。焼く前には振らない（水分が出る）</span></li>
-          <li><span class="ingredient-name">黒胡椒（粗挽き）</span><span class="ingredient-qty">1つまみ</span></li>
+              <li data-ingredient-row="9e2a762b-5f38-44e4-a73d-7d7337be1f42"><span class="ingredient-name" data-ingredient-name>牛サーロインかたまり（または厚切りステーキ）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">厚さ3〜4cm。室温に30分以上出しておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="9e2a762b-5f38-44e4-a73d-7d7337be1f42"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="ab85b319-defc-481f-a634-f5cd5eb8d24b"><span class="ingredient-name" data-ingredient-name>ルーコラ（ロケット）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">根元を切り、よく洗って水気を切る</span></li>
+          <li data-ingredient-row="5e15b44a-f19c-4283-b5be-54a5793e4038"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ（30ヶ月熟成）</span><span class="ingredient-qty" data-ingredient-qty>50g</span><span class="ingredient-notes">スライサーまたはピーラーで削る</span><button type="button" class="substitution-trigger" data-substitution-trigger="5e15b44a-f19c-4283-b5be-54a5793e4038"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9a33492f-036f-4d66-95cf-64b7a6192470"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span></li>
+          <li data-ingredient-row="6c0c12c1-6d1d-47c8-954f-a7dbc71fc1af"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="45dd81f3-715a-4719-b851-58a67fc7a8d9"><span class="ingredient-name" data-ingredient-name>粗塩（フルール・ド・セル）</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span><span class="ingredient-notes">焼きあがった後に振る。焼く前には振らない（水分が出る）</span></li>
+          <li data-ingredient-row="d63bcb88-39af-4191-949c-1b423790b778"><span class="ingredient-name" data-ingredient-name>黒胡椒（粗挽き）</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
               </ul>
             </section>
           </div>
@@ -296,6 +316,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"60321ad7-7b80-45f7-89c7-9904e62c6464","nameJa":"牛肉のタリアータ ルッコラ添え","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"9e2a762b-5f38-44e4-a73d-7d7337be1f42","nameOriginal":"Controfiletto di manzo","nameJa":"牛サーロインかたまり（または厚切りステーキ）","nameEn":"Beef sirloin or striploin","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"厚さ3〜4cm。室温に30分以上出しておく","substitutionOptions":[{"id":"36d2103f-fd3d-4ccc-84b1-9833ebfb8ddf","standardIngredientId":"9e2a762b-5f38-44e4-a73d-7d7337be1f42","nameJa":"牛リブロース","nameEn":"Beef ribeye","authenticityImpact":-5,"flavorImpact":"脂の旨みが増す。サーロインより甘みがある","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"ab85b319-defc-481f-a634-f5cd5eb8d24b","nameOriginal":"Rucola","nameJa":"ルーコラ（ロケット）","nameEn":"Arugula (rocket)","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"根元を切り、よく洗って水気を切る","substitutionOptions":[]},{"id":"5e15b44a-f19c-4283-b5be-54a5793e4038","nameOriginal":"Parmigiano Reggiano stagionato 30 mesi","nameJa":"パルミジャーノ・レッジャーノ（30ヶ月熟成）","nameEn":"Aged Parmigiano Reggiano (30-month)","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":"スライサーまたはピーラーで削る","substitutionOptions":[{"id":"ade6ac91-453f-4bff-832f-be50d363b18d","standardIngredientId":"5e15b44a-f19c-4283-b5be-54a5793e4038","nameJa":"パルミジャーノ・レッジャーノ（通常品）","nameEn":"Regular Parmigiano Reggiano","authenticityImpact":-5,"flavorImpact":"深みが若干落ちるが十分美味しい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9a33492f-036f-4d66-95cf-64b7a6192470","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6c0c12c1-6d1d-47c8-954f-a7dbc71fc1af","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"45dd81f3-715a-4719-b851-58a67fc7a8d9","nameOriginal":"Sale marino grosso","nameJa":"粗塩（フルール・ド・セル）","nameEn":"Coarse sea salt","quantity":1,"unit":"つまみ","role":"essential","scalingBehavior":null,"notes":"焼きあがった後に振る。焼く前には振らない（水分が出る）","substitutionOptions":[]},{"id":"d63bcb88-39af-4191-949c-1b423790b778","nameOriginal":"Pepe nero macinato fresco","nameJa":"黒胡椒（粗挽き）","nameEn":"Freshly ground black pepper","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・ルーコラの根元を切り、よく洗って水気をしっかり切る\n・牛肉を室温に30分以上出しておく","title":"ルーコラと牛肉を準備する","actionItems":["ルーコラ100gの根元を切り、よく洗って水気をしっかり切る。","牛肉を室温に30分以上出しておく。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鉄製フライパンまたはグリルパンを強火で5〜7分予熱する。煙が出るほど熱く。肉は直前に塩・こしょうをする（早くすると水分が出る）。","title":"フライパンを予熱する","actionItems":["鉄製フライパンまたはグリルパンを強火で5〜7分予熱する。","肉の直前に塩・こしょうをする。"],"parallelItems":[],"completionCriteria":["煙が出るほど熱くなれば次へ。"],"cautionItems":["塩・こしょうは焼く直前に。早くすると水分が出る。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"肉を置いて動かさずに3〜4分焼く。裏返して3〜4分。内部はミディアムレア（中心温度55〜58℃）を目指す。","title":"肉を焼く","actionItems":["肉を置いて動かさずに3〜4分焼く。","裏返してさらに3〜4分焼く。"],"parallelItems":[],"completionCriteria":["内部温度55〜58℃（ミディアムレア）になれば次へ。"],"cautionItems":["焼いている間は動かさないこと。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"アルミホイルで包み5分休ませる（ここで肉汁が再分配される。この工程を省くと肉汁が全部出る）。","title":"肉を休ませる","actionItems":["アルミホイルで包み5分休ませる。"],"parallelItems":[],"completionCriteria":["5分経ったら次へ。"],"cautionItems":["この工程を省くと切った瞬間に肉汁が全部出る。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"繊維と垂直に5mm厚に切る。ルーコラを皿に広げ、肉を重ねてのせる。","title":"切り分けて盛り付ける","actionItems":["繊維と垂直に5mm厚に切る。","ルーコラを皿に広げ、肉を重ねてのせる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"パルミジャーノを薄く削ってのせ、粗塩・こしょうを振り、レモン汁を絞り、皿全体にオリーブオイルを回しかけて完成。すぐに食べる。","title":"チーズとレモンをかける","actionItems":["パルミジャーノ50gを薄く削ってのせる。","粗塩・こしょうを振り、レモン汁を絞る。","オリーブオイル40mlを皿全体に回しかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

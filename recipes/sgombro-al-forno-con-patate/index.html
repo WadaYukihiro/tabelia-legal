@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>35分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・バーリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">サバ切り身</span><span class="ingredient-qty">700g</span><span class="ingredient-notes">骨を確認し、水気を拭く。皮付きがよい</span></li>
-          <li><span class="ingredient-name">じゃがいも</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">皮をむき、3mm厚の輪切り</span></li>
-          <li><span class="ingredient-name">ミニトマト</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">半分に切る</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">ローズマリー（生）</span><span class="ingredient-qty">2枝</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">7g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1g</span></li>
+              <li data-ingredient-row="d1d0c65c-0226-4393-bfc1-b58f724a2cb9"><span class="ingredient-name" data-ingredient-name>サバ切り身</span><span class="ingredient-qty" data-ingredient-qty>700g</span><span class="ingredient-notes">骨を確認し、水気を拭く。皮付きがよい</span><button type="button" class="substitution-trigger" data-substitution-trigger="d1d0c65c-0226-4393-bfc1-b58f724a2cb9"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7a60dc5f-b72f-431f-8e7b-1ed5583b9ecf"><span class="ingredient-name" data-ingredient-name>じゃがいも</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">皮をむき、3mm厚の輪切り</span></li>
+          <li data-ingredient-row="daf15975-bb9a-471e-9c53-d5f7354547a8"><span class="ingredient-name" data-ingredient-name>ミニトマト</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">半分に切る</span></li>
+          <li data-ingredient-row="327d298d-bd7d-4a6c-8d16-4b78452867de"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="e9a51846-f688-46e1-8ee1-a26a7b141f87"><span class="ingredient-name" data-ingredient-name>ローズマリー（生）</span><span class="ingredient-qty" data-ingredient-qty>2枝</span></li>
+          <li data-ingredient-row="97eae2d5-3359-4c14-8840-b9f919ce30ee"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="7ede3406-0f7b-481f-9435-2966461f1d5c"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="ebcaf29a-b44b-4487-b6b6-d530345d5985"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>7g</span></li>
+          <li data-ingredient-row="4dfbb6cd-8bb4-46b2-8aaf-28cc157bc6e7"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
               </ul>
             </section>
           </div>
@@ -296,6 +316,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"a52569c7-ca7e-4304-8520-6454ab330706","nameJa":"サバとじゃがいものオーブン焼き","baseServings":4,"minServings":2,"maxServings":20},"ingredients":[{"id":"d1d0c65c-0226-4393-bfc1-b58f724a2cb9","nameOriginal":"Sgombro","nameJa":"サバ切り身","nameEn":"Mackerel fillets","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"骨を確認し、水気を拭く。皮付きがよい","substitutionOptions":[{"id":"abd7da32-2689-4ebc-861c-33dff0e53541","standardIngredientId":"d1d0c65c-0226-4393-bfc1-b58f724a2cb9","nameJa":"真イワシ","nameEn":"Sardines","authenticityImpact":-5,"flavorImpact":"より小型で旨みが濃くなる。焼き時間は短くする","textureImpact":null,"procedureChanges":["焼き時間を10〜12分に短縮する"],"affectedStepNumbers":[2,5,6],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"真イワシ700gはうろこ・頭・内臓を除き、流水で洗って水気を拭く。両面に塩と黒胡椒を振り、皮目を上にして10分置く。表面に出た水分を軽く拭く。","changeReason":"サバ切り身から真イワシに変わるため、丸魚としての下処理に置き換える"},{"action":"replace","stepNumber":5,"instruction":"下焼きしたじゃがいもの上に真イワシを皮目を上にして置く。ミニトマト、にんにく、残りのローズマリー、辛口白ワイン80ml、エクストラバージンオリーブオイル20mlを加える。魚がじゃがいもに直接触れ、白ワインが皿底に薄く広がったら次へ。","changeReason":"置換後の魚名に合わせ、じゃがいもの上に置く対象を真イワシにする"},{"action":"replace","stepNumber":6,"instruction":"200℃のオーブンで10〜12分焼く。真イワシの中心まで火が入り、皮目が軽く縮み、じゃがいもに竹串がすっと入れば完成。","changeReason":"真イワシはサバ切り身より小さく火が入りやすいため、焼き時間を短くする"}]}]},{"id":"7a60dc5f-b72f-431f-8e7b-1ed5583b9ecf","nameOriginal":"Patate","nameJa":"じゃがいも","nameEn":"Potatoes","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮をむき、3mm厚の輪切り","substitutionOptions":[]},{"id":"daf15975-bb9a-471e-9c53-d5f7354547a8","nameOriginal":"Pomodorini","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","quantity":200,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"半分に切る","substitutionOptions":[]},{"id":"327d298d-bd7d-4a6c-8d16-4b78452867de","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"e9a51846-f688-46e1-8ee1-a26a7b141f87","nameOriginal":"Rosmarino fresco","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"97eae2d5-3359-4c14-8840-b9f919ce30ee","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7ede3406-0f7b-481f-9435-2966461f1d5c","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ebcaf29a-b44b-4487-b6b6-d530345d5985","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":7,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4dfbb6cd-8bb4-46b2-8aaf-28cc157bc6e7","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"じゃがいも500gは皮をむき、3mm厚の輪切りにする。水に5分さらして表面のでんぷんを落とし、水気をしっかり拭く。ミニトマト200gは半分に切る。にんにく2片は薄切りにする。","title":"材料を準備する","actionItems":["じゃがいも500gは皮をむき、3mm厚の輪切りにする。","水に5分さらして表面のでんぷんを落とし、水気をしっかり拭く。","ミニトマト200gは半分に切る。","にんにく2片は薄切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"サバ切り身700gは骨を確認し、キッチンペーパーで水気を拭く。両面に塩と黒胡椒を振り、皮目を上にして10分置く。表面に出た水分を軽く拭く。","title":"食材を下処理する","actionItems":["サバ切り身700gは骨を確認し、キッチンペーパーで水気を拭く。","両面に塩と黒胡椒を振り、皮目を上にして10分置く。","表面に出た水分を軽く拭く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"オーブンを200℃に予熱する。耐熱皿にじゃがいも、エクストラバージンオリーブオイル40ml、塩、黒胡椒、ローズマリー1枝を入れて広げる。じゃがいもが重なりすぎない状態にする。","title":"オーブンを整える","actionItems":["オーブンを200℃に予熱する。","耐熱皿にじゃがいも、エクストラバージンオリーブオイル40ml、塩、黒胡椒、ローズマリー1枝を入れて広げる。"],"parallelItems":[],"completionCriteria":["じゃがいもが重なりすぎない状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"じゃがいもを200℃のオーブンで15分下焼きする。縁が透き通り、表面が少し乾いて曲がりやすくなったら取り出す。","title":"焼き上げる","actionItems":["じゃがいもを200℃のオーブンで15分下焼きする。","縁が透き通り、表面が少し乾いて曲がりやすくなったら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"下焼きしたじゃがいもの上にサバを皮目を上にして置く。ミニトマト、にんにく、残りのローズマリー、辛口白ワイン80ml、エクストラバージンオリーブオイル20mlを加える。魚がじゃがいもに直接触れ、白ワインが皿底に薄く広がったら次へ。","title":"休ませて落ち着かせる","actionItems":["下焼きしたじゃがいもの上にサバを皮目を上にして置く。","ミニトマト、にんにく、残りのローズマリー、辛口白ワイン80ml、エクストラバージンオリーブオイル20mlを加える。"],"parallelItems":[],"completionCriteria":["魚がじゃがいもに直接触れ、白ワインが皿底に薄く広がったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"200℃のオーブンで15〜18分焼く。サバの中心まで火が入り、皮目が軽く縮み、じゃがいもに竹串がすっと入れば完成。","title":"焼き上げる","actionItems":["200℃のオーブンで15〜18分焼く。","サバの中心まで火が入り、皮目が軽く縮み、じゃがいもに竹串がすっと入れば完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"耐熱皿の底の焼き汁をサバにかけ、3分休ませる。魚の身が大きな層でほぐれ、じゃがいもに焼き汁が染みていれば皿に盛る。","title":"休ませて落ち着かせる","actionItems":["耐熱皿の底の焼き汁をサバにかけ、3分休ませる。","魚の身が大きな層でほぐれ、じゃがいもに焼き汁が染みていれば皿に盛る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

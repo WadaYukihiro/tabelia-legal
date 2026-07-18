@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・チェターラ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">トターニ（矢イカ）</span><span class="ingredient-qty">800g</span><span class="ingredient-notes">ワタと軟骨を除き洗う。水気を完全に拭く（水分があると焦げ色がつかない）</span></li>
-          <li><span class="ingredient-name">コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty">20ml</span><span class="ingredient-notes">仕上げに回しかける。加熱時間は最小限に</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">軽く潰す</span></li>
-          <li><span class="ingredient-name">レモン汁</span><span class="ingredient-qty">30ml</span><span class="ingredient-notes">仕上げに絞る</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">小口切り</span></li>
-          <li><span class="ingredient-name">塩（海塩）</span><span class="ingredient-qty">小さじ1</span><span class="ingredient-notes">コラトゥーラが塩辛いため最小限に</span></li>
+              <li data-ingredient-row="8a6ee177-0927-4a11-9737-3e5975e3fac1"><span class="ingredient-name" data-ingredient-name>トターニ（矢イカ）</span><span class="ingredient-qty" data-ingredient-qty>800g</span><span class="ingredient-notes">ワタと軟骨を除き洗う。水気を完全に拭く（水分があると焦げ色がつかない）</span><button type="button" class="substitution-trigger" data-substitution-trigger="8a6ee177-0927-4a11-9737-3e5975e3fac1"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e49329c3-4160-4edf-8107-5dc13abd59de"><span class="ingredient-name" data-ingredient-name>コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty" data-ingredient-qty>20ml</span><span class="ingredient-notes">仕上げに回しかける。加熱時間は最小限に</span><button type="button" class="substitution-trigger" data-substitution-trigger="e49329c3-4160-4edf-8107-5dc13abd59de"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="ac609183-7c09-4d6b-b948-e06b32583ee2"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">軽く潰す</span></li>
+          <li data-ingredient-row="1605ba01-0489-4555-af52-e88e2c0a25f2"><span class="ingredient-name" data-ingredient-name>レモン汁</span><span class="ingredient-qty" data-ingredient-qty>30ml</span><span class="ingredient-notes">仕上げに絞る</span></li>
+          <li data-ingredient-row="7059f370-6cf4-4ca9-b7a8-35604bc6601b"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="c3ea8fd9-d245-490f-b105-3f9eec82f067"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="3a799e0a-bc8b-4c1a-bcd4-a14b0ee1f114"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">小口切り</span></li>
+          <li data-ingredient-row="f2e2fe5e-f832-4279-9d04-e38dfe57679a"><span class="ingredient-name" data-ingredient-name>塩（海塩）</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span><span class="ingredient-notes">コラトゥーラが塩辛いため最小限に</span></li>
               </ul>
             </section>
           </div>
@@ -253,6 +273,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0c7db628-4301-4eac-be09-fb54998826b8","nameJa":"スルメイカのコラトゥーラソテー","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"8a6ee177-0927-4a11-9737-3e5975e3fac1","nameOriginal":"Totani","nameJa":"トターニ（矢イカ）","nameEn":"Flying squid (Todarodes pacificus)","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ワタと軟骨を除き洗う。水気を完全に拭く（水分があると焦げ色がつかない）","substitutionOptions":[{"id":"2c6c8aa9-66ae-4b5f-a1d2-d799b0baaf5c","standardIngredientId":"8a6ee177-0927-4a11-9737-3e5975e3fac1","nameJa":"コウイカ","nameEn":"Cuttlefish","authenticityImpact":-10,"flavorImpact":"身が厚く食感が変わる","textureImpact":null,"procedureChanges":["炒め時間を2〜3分延長"],"affectedStepNumbers":[1,2],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"・コウイカを洗い、胴体は2cm幅に切り、厚い部分は浅く格子状に切り込みを入れる。触腕は食べやすい長さに切る\n・キッチンペーパーで水気を完全に拭く（水分が残っていると強火で蒸されてしまい焦げ色がつかない）\n・イタリアンパセリをみじん切りにする\n・唐辛子を小口切りにする","changeReason":"コウイカは身が厚いため、切り込みを入れて火の入りを均一にする"},{"action":"replace","stepNumber":2,"instruction":"鉄製フライパンまたは厚手のフライパンを強火にかけ、白煙が出るほど熱する。フライパンにオリーブオイルとにんにく（包丁の腹で軽く潰したもの）を加え、すぐにコウイカを並べ入れる。触らずに1分焼き付けて焦げ色をつける。全体を一度返し、唐辛子を加えてさらに3〜4分炒める。","changeReason":"コウイカはトターニより厚く、中心に火が入るまで炒め時間を延ばす"}]},{"id":"b4fe865f-47a3-496b-8086-dd7e6801ff42","standardIngredientId":"8a6ee177-0927-4a11-9737-3e5975e3fac1","nameJa":"カラマリ（ヤリイカ）","nameEn":"Calamari (squid)","authenticityImpact":-5,"flavorImpact":"柔らかさが増す。火の入り方は同じ","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e49329c3-4160-4edf-8107-5dc13abd59de","nameOriginal":"Colatura di alici di Cetara","nameJa":"コラトゥーラ・ディ・アリーチ","nameEn":"Colatura di alici from Cetara","quantity":20,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"仕上げに回しかける。加熱時間は最小限に","substitutionOptions":[{"id":"4fa98981-4c8d-427e-ac9c-c727d1d14bd9","standardIngredientId":"e49329c3-4160-4edf-8107-5dc13abd59de","nameJa":"ナンプラー","nameEn":"Fish sauce","authenticityImpact":-20,"flavorImpact":"塩辛さは近いが熟成香がない","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"ac609183-7c09-4d6b-b948-e06b32583ee2","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"essential","scalingBehavior":null,"notes":"軽く潰す","substitutionOptions":[]},{"id":"1605ba01-0489-4555-af52-e88e2c0a25f2","nameOriginal":"Succo di limone","nameJa":"レモン汁","nameEn":"Fresh lemon juice","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"仕上げに絞る","substitutionOptions":[]},{"id":"7059f370-6cf4-4ca9-b7a8-35604bc6601b","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c3ea8fd9-d245-490f-b105-3f9eec82f067","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"3a799e0a-bc8b-4c1a-bcd4-a14b0ee1f114","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"小口切り","substitutionOptions":[]},{"id":"f2e2fe5e-f832-4279-9d04-e38dfe57679a","nameOriginal":"Sale marino","nameJa":"塩（海塩）","nameEn":"Sea salt","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":"コラトゥーラが塩辛いため最小限に","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・トターニを洗い、胴体を2cm幅の輪切りに、触腕は食べやすいよう根元でまとめて切る\n・キッチンペーパーで水気を完全に拭く（水分が残っていると強火で蒸されてしまい焦げ色がつかない）\n・イタリアンパセリをみじん切りにする\n・唐辛子を小口切りにする","title":"食材を下処理する","actionItems":["トターニを洗い、胴体を2cm幅の輪切りに、触腕は食べやすいよう根元でまとめて切る","イタリアンパセリをみじん切りにする","唐辛子を小口切りにする"],"parallelItems":[],"completionCriteria":[],"cautionItems":["キッチンペーパーで水気を完全に拭く（水分が残っていると強火で蒸されてしまい焦げ色がつかない）"],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鉄製フライパンまたは厚手のフライパンを強火にかけ、白煙が出るほど熱する。フライパンにオリーブオイルとにんにく（包丁の腹で軽く潰したもの）を加え、すぐにトターニを並べ入れる。触らずに1分焼き付けて焦げ色をつける。全体を一度返し、唐辛子を加えてさらに1〜2分炒める。","title":"材料を合わせる","actionItems":["鉄製フライパンまたは厚手のフライパンを強火にかけ、白煙が出るほど熱する。","フライパンにオリーブオイルとにんにく（包丁の腹で軽く潰したもの）を加え、すぐにトターニを並べ入れる。","全体を一度返し、唐辛子を加えてさらに1〜2分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["触らずに1分焼き付けて焦げ色をつける。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"火を中火に落としてコラトゥーラを鍋肌から回しかける（火が飛ぶことがあるので注意）。素早く全体を混ぜる。","title":"材料を合わせる","actionItems":["素早く全体を混ぜる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を中火に落としてコラトゥーラを鍋肌から回しかける（火が飛ぶことがあるので注意）。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"火を止めてレモン汁を絞り、パセリを散らす。皿に盛ってすぐに供する。余熱で火が入りすぎる前に食べ始める。","title":"仕上げにまとめる","actionItems":["皿に盛ってすぐに供する。","余熱で火が入りすぎる前に食べ始める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止めてレモン汁を絞り、パセリを散らす。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

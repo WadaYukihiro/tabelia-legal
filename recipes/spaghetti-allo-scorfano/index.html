@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">カサゴ</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">うろこ、えら、内臓を取り除く</span></li>
-          <li><span class="ingredient-name">スパゲッティ</span><span class="ingredient-qty">180g</span></li>
-          <li><span class="ingredient-name">ミニトマト</span><span class="ingredient-qty">12個</span><span class="ingredient-notes">半割り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">つぶす</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">50ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">5枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">8g</span></li>
+              <li data-ingredient-row="667b6b88-015f-4d76-931f-20971dde21fd"><span class="ingredient-name" data-ingredient-name>カサゴ</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">うろこ、えら、内臓を取り除く</span></li>
+          <li data-ingredient-row="0eb666bb-94e9-4244-9618-1ee2114f9117"><span class="ingredient-name" data-ingredient-name>スパゲッティ</span><span class="ingredient-qty" data-ingredient-qty>180g</span></li>
+          <li data-ingredient-row="ece05e2c-5818-4570-a3d0-24dafe210db9"><span class="ingredient-name" data-ingredient-name>ミニトマト</span><span class="ingredient-qty" data-ingredient-qty>12個</span><span class="ingredient-notes">半割り</span></li>
+          <li data-ingredient-row="96dffa03-660f-42f8-b500-40403589b678"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">つぶす</span></li>
+          <li data-ingredient-row="4bf16c20-a3e3-438f-a14f-a3099a21ffc4"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="e85cdf23-563b-4349-9893-6c2ba759d0bf"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
+          <li data-ingredient-row="45968477-26b2-4083-baf3-bda0365b8c1a"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>5枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="bd7d6908-3ca3-4b95-9f3f-3475fd97a5a3"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>8g</span></li>
               </ul>
             </section>
           </div>
@@ -275,6 +295,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c5080692-1930-40db-9c32-c1143b586e34","nameJa":"カサゴのスパゲッティ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"667b6b88-015f-4d76-931f-20971dde21fd","nameOriginal":"Scorfano intero","nameJa":"カサゴ","nameEn":"Whole scorpionfish","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"うろこ、えら、内臓を取り除く","substitutionOptions":[]},{"id":"0eb666bb-94e9-4244-9618-1ee2114f9117","nameOriginal":"Spaghetti","nameJa":"スパゲッティ","nameEn":"Spaghetti","quantity":180,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ece05e2c-5818-4570-a3d0-24dafe210db9","nameOriginal":"Pomodorini","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","quantity":12,"unit":"個","role":"essential","scalingBehavior":null,"notes":"半割り","substitutionOptions":[]},{"id":"96dffa03-660f-42f8-b500-40403589b678","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"つぶす","substitutionOptions":[]},{"id":"4bf16c20-a3e3-438f-a14f-a3099a21ffc4","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e85cdf23-563b-4349-9893-6c2ba759d0bf","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"45968477-26b2-4083-baf3-bda0365b8c1a","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":5,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"bd7d6908-3ca3-4b95-9f3f-3475fd97a5a3","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"カサゴ600gはうろこ、えら、内臓を取り除く。ミニトマト12個は半割りにする。にんにく1片はつぶす。イタリアンパセリ5枝はみじん切りにする。魚の血合いが洗い流せたら次へ。","title":"魚と香味を準備する","actionItems":["カサゴ600gはうろこ、えら、内臓を取り除く。","ミニトマト12個は半割りにする。","にんにく1片はつぶす。","イタリアンパセリ5枝はみじん切りにする。"],"parallelItems":[],"completionCriteria":["魚の血合いが洗い流せたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋にエクストラバージンオリーブオイル25mlとにんにくを入れて香りを出す。カサゴを入れて白ワイン80mlを注ぎ、水500mlを加える。（魚を20分煮る間に）大鍋に湯を沸かし始める。魚に火が通り身が骨から外れやすくなったら取り出す。","title":"魚のスープを取る","actionItems":["鍋にエクストラバージンオリーブオイル25mlとにんにくを入れて香りを出す。","カサゴを入れて白ワイン80mlを注ぎ、水500mlを加える。","魚に火が通り身が骨から外れやすくなったら取り出す。"],"parallelItems":["（魚を20分煮る間に）大鍋に湯を沸かし始める。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":28,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"カサゴの身を骨から外し、骨と頭はスープに戻して10分煮る。スープを濾し、骨が残っていない状態にする。","title":"身をほぐす","actionItems":["カサゴの身を骨から外し、骨と頭はスープに戻して10分煮る。"],"parallelItems":[],"completionCriteria":["スープを濾し、骨が残っていない状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにエクストラバージンオリーブオイル25ml、ミニトマト、魚のスープを入れて煮る。（ソースを煮詰める間に）大鍋の湯を沸騰状態に整える。トマトが崩れ、ソースが軽くとろむまで煮詰める。","title":"ソースを作る","actionItems":["フライパンにエクストラバージンオリーブオイル25ml、ミニトマト、魚のスープを入れて煮る。","トマトが崩れ、ソースが軽くとろむまで煮詰める。"],"parallelItems":["（ソースを煮詰める間に）大鍋の湯を沸騰状態に整える。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"沸騰した湯に、湯1Lに対して塩10gを加える。スパゲッティ180gを茹で、アルデンテでソースに移す。カサゴのほぐし身とイタリアンパセリを加え、麺に魚の旨みが絡んだら完成。","title":"パスタを仕上げる","actionItems":["沸騰した湯に、湯1Lに対して塩10gを加える。","スパゲッティ180gを茹で、アルデンテでソースに移す。","カサゴのほぐし身とイタリアンパセリを加え、麺に魚の旨みが絡んだら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

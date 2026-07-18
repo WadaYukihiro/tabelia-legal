@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>18分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・テンピオ・パウザーニア（ガッルーラ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">カラザウ（サルデーニャの薄焼きパン）または田舎パン</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">1cm厚にスライス（カラザウは割って使う）</span></li>
-          <li><span class="ingredient-name">羊または牛のブロード</span><span class="ingredient-qty">1500ml</span></li>
-          <li><span class="ingredient-name">ペコリーノ・サルド（半熟成）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">薄くスライスまたは粗くすりおろす</span></li>
-          <li><span class="ingredient-name">パセリとミント</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">層の間に散らす</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">最上層に点在させる</span></li>
+              <li data-ingredient-row="8fcc3733-e575-4059-bf12-c29f09d2a436"><span class="ingredient-name" data-ingredient-name>カラザウ（サルデーニャの薄焼きパン）または田舎パン</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">1cm厚にスライス（カラザウは割って使う）</span><button type="button" class="substitution-trigger" data-substitution-trigger="8fcc3733-e575-4059-bf12-c29f09d2a436"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9f0eac7a-bb8d-415d-89ea-13f359be5dc7"><span class="ingredient-name" data-ingredient-name>羊または牛のブロード</span><span class="ingredient-qty" data-ingredient-qty>1500ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="9f0eac7a-bb8d-415d-89ea-13f359be5dc7"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f88ac0ac-0044-4545-a662-d5c6c6a39977"><span class="ingredient-name" data-ingredient-name>ペコリーノ・サルド（半熟成）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">薄くスライスまたは粗くすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="f88ac0ac-0044-4545-a662-d5c6c6a39977"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="5d14591f-45cc-4dca-bacd-fd2ee9de6782"><span class="ingredient-name" data-ingredient-name>パセリとミント</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">層の間に散らす</span></li>
+          <li data-ingredient-row="d8522f39-4bab-4b81-b586-665394376ca4"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">最上層に点在させる</span></li>
               </ul>
             </section>
           </div>
@@ -294,6 +314,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1d0c01a4-6930-4288-aa0a-8d0a2a567730","nameJa":"ガッルーラ風パンとチーズのオーブン焼きスープ","baseServings":6,"minServings":1,"maxServings":20},"ingredients":[{"id":"8fcc3733-e575-4059-bf12-c29f09d2a436","nameOriginal":"Pane carasau o pane di tipo locale","nameJa":"カラザウ（サルデーニャの薄焼きパン）または田舎パン","nameEn":"Pane carasau or country bread","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm厚にスライス（カラザウは割って使う）","substitutionOptions":[{"id":"52c97ec1-6a78-4b16-8d5c-57a840049cbb","standardIngredientId":"8fcc3733-e575-4059-bf12-c29f09d2a436","nameJa":"前日のバゲット（薄切り）","nameEn":"Stale baguette slices","authenticityImpact":-10,"flavorImpact":"カラザウの独特の薄さと風味が失われるが成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9f0eac7a-bb8d-415d-89ea-13f359be5dc7","nameOriginal":"Brodo di pecora o manzo","nameJa":"羊または牛のブロード","nameEn":"Mutton or beef broth","quantity":1500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"8506422d-2612-4a7a-afa5-2bb59a4b434c","standardIngredientId":"9f0eac7a-bb8d-415d-89ea-13f359be5dc7","nameJa":"市販チキンブロード","nameEn":"Store-bought chicken broth","authenticityImpact":-20,"flavorImpact":"ガッルーラ特有の牧畜文化の旨みが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f88ac0ac-0044-4545-a662-d5c6c6a39977","nameOriginal":"Pecorino sardo semistagionato","nameJa":"ペコリーノ・サルド（半熟成）","nameEn":"Semi-aged Sardinian pecorino","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄くスライスまたは粗くすりおろす","substitutionOptions":[{"id":"a02092f9-a791-4f7c-a563-14d306348af4","standardIngredientId":"f88ac0ac-0044-4545-a662-d5c6c6a39977","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-10,"flavorImpact":"塩気が強くなるため量を減らす","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"5d14591f-45cc-4dca-bacd-fd2ee9de6782","nameOriginal":"Prezzemolo e menta","nameJa":"パセリとミント","nameEn":"Parsley and mint","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"層の間に散らす","substitutionOptions":[]},{"id":"d8522f39-4bab-4b81-b586-665394376ca4","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"最上層に点在させる","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ペコリーノ・サルド300gを薄くスライスするか、粗くすりおろす。","title":"チーズを準備する","actionItems":["ペコリーノ・サルド300gを薄くスライスするか粗くすりおろす。"],"parallelItems":[],"completionCriteria":["チーズが薄くスライスまたはすりおろせた。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"オーブンを180℃に予熱する。ブロード1500mlを鍋で温める。耐熱深皿の底にブロードを薄く敷く（底が見えなくなる程度）。","title":"オーブンとブロードを準備する","actionItems":["オーブンを180℃に予熱する。","ブロード1500mlを鍋で温める。","耐熱深皿の底にブロードを薄く敷く。"],"parallelItems":[],"completionCriteria":["オーブンが予熱でき、ブロードが温まった。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パン → ペコリーノ（薄切り）→ パセリ・ミント → ブロードをひたひたに注ぐ、の順で4〜5層重ねる。各層でパンをブロードに押しつけてよく吸わせる。","title":"層を重ねる","actionItems":["パン → ペコリーノ → パセリ・ミント → ブロードの順で4〜5層重ねる。","各層でパンをブロードに押しつけてよく吸わせる。"],"parallelItems":[],"completionCriteria":["4〜5層に重なりパンがブロードを吸い込んだ。"],"cautionItems":["各層でパンをしっかりブロードに押しつけること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"最上層にペコリーノをたっぷりのせ、バター30gを点在させる。残りのブロードをパンがひたひたになるまで注ぐ（浸るくらいが正しい）。","title":"最上層を仕上げてブロードを注ぐ","actionItems":["最上層にペコリーノをたっぷりのせる。","バター30gを点在させる。","残りのブロードをパンがひたひたになるまで注ぐ。"],"parallelItems":[],"completionCriteria":["最上層が仕上がりブロードがひたひたになった。"],"cautionItems":["ブロードはたっぷり注ぐこと。焼いてもパンが乾かないように。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"180℃のオーブンで30〜35分焼く。表面のチーズが黄金色に焼けたら完成。","title":"焼き上げる","actionItems":["180℃のオーブンで30〜35分焼く。"],"parallelItems":[],"completionCriteria":["表面のチーズが黄金色に焼けた。"],"cautionItems":[],"tipItems":[],"durationMinutes":35,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"オーブンから取り出して10分休ませる。深い皿によそって提供する。","title":"休ませて提供する","actionItems":["オーブンから取り出して10分休ませる。","深い皿によそって提供する。"],"parallelItems":[],"completionCriteria":["10分休ませてから盛り付けた。"],"cautionItems":["すぐに切ると崩れる。10分休ませること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

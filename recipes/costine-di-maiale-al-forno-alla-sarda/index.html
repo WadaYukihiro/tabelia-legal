@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>18分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間30分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・ヌオーロ（バルバジア地方）</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,16 +94,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">豚スペアリブ</span><span class="ingredient-qty">1500g（2ラック）</span><span class="ingredient-notes">骨に沿って切り分けるか、ラックのままオーブンで焼く</span></li>
-          <li><span class="ingredient-name">ローズマリー（生）</span><span class="ingredient-qty">4枝</span><span class="ingredient-notes">葉を外してみじん切り</span></li>
-          <li><span class="ingredient-name">フェンネルシード</span><span class="ingredient-qty">10g（大さじ1）</span><span class="ingredient-notes">指で軽く潰して香りを出す</span></li>
-          <li><span class="ingredient-name">ミルトの実（または杜松の実）</span><span class="ingredient-qty">10粒</span><span class="ingredient-notes">軽くつぶす。サルデーニャの象徴的スパイス</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">すりおろすかみじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">仕上げに絞る</span></li>
-          <li><span class="ingredient-name">塩（粗塩）</span><span class="ingredient-qty">15g</span></li>
+              <li data-ingredient-row="0d53364e-eb49-4e1b-9258-c5ce43a69d3f"><span class="ingredient-name" data-ingredient-name>豚スペアリブ</span><span class="ingredient-qty" data-ingredient-qty>1500g（2ラック）</span><span class="ingredient-notes">骨に沿って切り分けるか、ラックのままオーブンで焼く</span><button type="button" class="substitution-trigger" data-substitution-trigger="0d53364e-eb49-4e1b-9258-c5ce43a69d3f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7a046d37-9acc-4df0-901d-d924d35171df"><span class="ingredient-name" data-ingredient-name>ローズマリー（生）</span><span class="ingredient-qty" data-ingredient-qty>4枝</span><span class="ingredient-notes">葉を外してみじん切り</span></li>
+          <li data-ingredient-row="59d72227-144d-4ce7-8389-f0d9e3a6ccb0"><span class="ingredient-name" data-ingredient-name>フェンネルシード</span><span class="ingredient-qty" data-ingredient-qty>10g（大さじ1）</span><span class="ingredient-notes">指で軽く潰して香りを出す</span><button type="button" class="substitution-trigger" data-substitution-trigger="59d72227-144d-4ce7-8389-f0d9e3a6ccb0"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="837ee567-7bc1-4fd0-8acd-910a4df3e0a7"><span class="ingredient-name" data-ingredient-name>ミルトの実（または杜松の実）</span><span class="ingredient-qty" data-ingredient-qty>10粒</span><span class="ingredient-notes">軽くつぶす。サルデーニャの象徴的スパイス</span><button type="button" class="substitution-trigger" data-substitution-trigger="837ee567-7bc1-4fd0-8acd-910a4df3e0a7"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="966918ac-2535-4309-ba4c-8950f2c58ef8"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">すりおろすかみじん切り</span></li>
+          <li data-ingredient-row="861cec25-77c6-4f58-b03a-f23544bbc101"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
+          <li data-ingredient-row="ecb41dbe-870d-444a-a6d7-67bbe0868224"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">仕上げに絞る</span></li>
+          <li data-ingredient-row="25071868-d4a2-4f23-a168-a4181ba0b9dd"><span class="ingredient-name" data-ingredient-name>塩（粗塩）</span><span class="ingredient-qty" data-ingredient-qty>15g</span></li>
               </ul>
             </section>
           </div>
@@ -264,6 +284,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"ab98b12f-5ffd-405c-a51b-26074da714b8","nameJa":"豚スペアリブのサルデーニャ風オーブン焼き","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"0d53364e-eb49-4e1b-9258-c5ce43a69d3f","nameOriginal":"Costine di maiale (spare ribs)","nameJa":"豚スペアリブ","nameEn":"Pork spare ribs","quantity":1500,"unit":"g（2ラック）","role":"essential","scalingBehavior":null,"notes":"骨に沿って切り分けるか、ラックのままオーブンで焼く","substitutionOptions":[{"id":"def237e1-2e08-41b4-8e36-3167f99b66ec","standardIngredientId":"0d53364e-eb49-4e1b-9258-c5ce43a69d3f","nameJa":"豚バックリブ（ベビーバック）","nameEn":"Pork baby back ribs","authenticityImpact":-5,"flavorImpact":"肉が柔らかく上品。スペアリブより焼き時間が短い","textureImpact":null,"procedureChanges":["焼き時間を70分に短縮"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"バックリブを短めに焼き上げる","action":"replace","stepNumber":4,"actionItems":["220℃で15分焼いて表面を焼き固める。","160℃に下げてアルミホイルをかぶせ、さらに45分焼く。","最後の10分はアルミを外して表面をパリッとさせる。"],"instruction":"220℃で15分焼いて表面を焼き固める。160℃に下げてアルミホイルをかぶせ、さらに45分焼く。最後の10分はアルミを外して表面をパリッとさせる。","changeReason":"ベビーバックリブはスペアリブより小さく柔らかいため、標準より短い焼き時間にする","completionCriteria":["表面がパリッとし、骨の端から肉が少し縮んで内部に火が通れば完成。"]}]}]},{"id":"7a046d37-9acc-4df0-901d-d924d35171df","nameOriginal":"Rosmarino","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":4,"unit":"枝","role":"essential","scalingBehavior":null,"notes":"葉を外してみじん切り","substitutionOptions":[]},{"id":"59d72227-144d-4ce7-8389-f0d9e3a6ccb0","nameOriginal":"Semi di finocchio","nameJa":"フェンネルシード","nameEn":"Fennel seeds","quantity":10,"unit":"g（大さじ1）","role":"essential","scalingBehavior":null,"notes":"指で軽く潰して香りを出す","substitutionOptions":[{"id":"44d6e268-8d2b-49b0-bebc-ad5438d532a1","standardIngredientId":"59d72227-144d-4ce7-8389-f0d9e3a6ccb0","nameJa":"ウイキョウの葉（生）","nameEn":"Fresh fennel fronds","authenticityImpact":-5,"flavorImpact":"香りは近い。大さじ2〜3使う","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"837ee567-7bc1-4fd0-8acd-910a4df3e0a7","nameOriginal":"Mirto (bacche) o ginepro","nameJa":"ミルトの実（または杜松の実）","nameEn":"Myrtle berries or juniper berries","quantity":10,"unit":"粒","role":"essential","scalingBehavior":null,"notes":"軽くつぶす。サルデーニャの象徴的スパイス","substitutionOptions":[{"id":"c3866e4e-fbf4-4f46-8c78-80807243ce28","standardIngredientId":"837ee567-7bc1-4fd0-8acd-910a4df3e0a7","nameJa":"杜松の実（ジュニパーベリー）","nameEn":"Juniper berries","authenticityImpact":0,"flavorImpact":"ミルトと杜松はどちらもサルデーニャ料理で使われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"966918ac-2535-4309-ba4c-8950f2c58ef8","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"すりおろすかみじん切り","substitutionOptions":[]},{"id":"861cec25-77c6-4f58-b03a-f23544bbc101","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ecb41dbe-870d-444a-a6d7-67bbe0868224","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"仕上げに絞る","substitutionOptions":[]},{"id":"25071868-d4a2-4f23-a168-a4181ba0b9dd","nameOriginal":"Sale marino","nameJa":"塩（粗塩）","nameEn":"Coarse sea salt","quantity":15,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"マリネ液を作る：\n・ローズマリーの葉をみじん切りにする\n・にんにくをすりおろすかみじん切りにする\n・ボウルにローズマリー（みじん切り）・フェンネルシード（指で潰す）・ミルト（またはジュニパー、潰す）・にんにく（すりおろすかみじん切り）・粗塩・こしょう・オリーブオイルを入れて混ぜる","title":"マリネ液を作る","actionItems":["ローズマリー4枝の葉をみじん切りにする。","にんにく4片をすりおろすかみじん切りにする。","ボウルにローズマリー・フェンネルシード10g（指で潰す）・ミルト10粒（潰す）・にんにく・粗塩15g・こしょう・オリーブオイル50mlを入れて混ぜる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"スペアリブ全体にマリネ液を塗り込む。ラップをして冷蔵庫で最低2時間（できれば一晩）マリネする。表面に香草と塩がなじみ、肉の色が少し濃くなったら次へ。","title":"マリネする","actionItems":["スペアリブ1500g全体にマリネ液を塗り込む。","ラップをして冷蔵庫で最低2時間（できれば一晩）マリネする。"],"parallelItems":[],"completionCriteria":["表面に香草と塩がなじみ、肉の色が少し濃くなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"オーブンを220℃に予熱。スペアリブを天板の上に並べる（骨側を下にする）。","title":"オーブンを予熱して並べる","actionItems":["オーブンを220℃に予熱する。","スペアリブを天板の上に並べる（骨側を下にする）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"220℃で20分焼いて表面を焼き固める。160℃に下げてアルミホイルをかぶせ、さらに60分焼く。最後の10分はアルミを外して表面をパリッとさせる。","title":"焼き上げる","actionItems":["220℃で20分焼いて表面を焼き固める。","160℃に下げてアルミホイルをかぶせ、さらに60分焼く。","最後の10分はアルミを外して表面をパリッとさせる。"],"parallelItems":[],"completionCriteria":["表面がパリッとして内部に火が通れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":92,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"骨に沿って切り分け、仕上げにレモンを絞る。サルデーニャのパン（カラサウ）またはフォカッチャと合わせて食べる。","title":"切り分けて仕上げる","actionItems":["骨に沿って切り分ける。","仕上げにレモン1個を絞る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

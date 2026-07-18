@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★★</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>3時間</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>12人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">12人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ（カンパーニャ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,22 +93,29 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（12人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">12</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">12</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉（生地用）</span><span class="ingredient-qty">500g</span></li>
-          <li><span class="ingredient-name">水（生地用）</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">塩（生地用）</span><span class="ingredient-qty">5g</span></li>
-          <li><span class="ingredient-name">ラード（または無塩バター・層状に伸ばす用）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">常温で非常に柔らかく。伝統的にはラードを使う</span></li>
-          <li><span class="ingredient-name">セモリナ粉</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">水（フィリング用）</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">リコッタ</span><span class="ingredient-qty">250g</span><span class="ingredient-notes">水切り済み</span></li>
-          <li><span class="ingredient-name">砂糖（フィリング用）</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">卵（フィリング用）</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">キャンディドシトロン（刻む）</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">オレンジフラワーウォーター</span><span class="ingredient-qty">10ml</span></li>
-          <li><span class="ingredient-name">シナモン（粉）</span><span class="ingredient-qty">3g</span></li>
-          <li><span class="ingredient-name">バニラ</span><span class="ingredient-qty">5ml</span></li>
-          <li><span class="ingredient-name">粉砂糖（仕上げ用）</span><span class="ingredient-qty">20g</span></li>
+              <li data-ingredient-row="616c600a-a708-4232-bc45-1565c3a2e131"><span class="ingredient-name" data-ingredient-name>薄力粉（生地用）</span><span class="ingredient-qty" data-ingredient-qty>500g</span></li>
+          <li data-ingredient-row="d20abc62-681f-470f-9e5b-2367b6fafff3"><span class="ingredient-name" data-ingredient-name>水（生地用）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
+          <li data-ingredient-row="abd8f5c6-ab7a-43e4-aaa9-a7a746bd003f"><span class="ingredient-name" data-ingredient-name>塩（生地用）</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
+          <li data-ingredient-row="7002df6b-743d-416b-a12c-fb9ae46198c7"><span class="ingredient-name" data-ingredient-name>ラード（または無塩バター・層状に伸ばす用）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">常温で非常に柔らかく。伝統的にはラードを使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="7002df6b-743d-416b-a12c-fb9ae46198c7"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e2b0f2c1-2966-4fea-a969-4bb02ebe4a10"><span class="ingredient-name" data-ingredient-name>セモリナ粉</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="d1505272-e7fd-48df-9106-90993cbb84e3"><span class="ingredient-name" data-ingredient-name>水（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="7e452033-d178-4cce-896d-037ba15bebb5"><span class="ingredient-name" data-ingredient-name>リコッタ</span><span class="ingredient-qty" data-ingredient-qty>250g</span><span class="ingredient-notes">水切り済み</span></li>
+          <li data-ingredient-row="756b3cdc-91ca-40c5-9c6b-ac39e5f3b820"><span class="ingredient-name" data-ingredient-name>砂糖（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="e4c538b7-30b9-442d-8516-8a31ab933beb"><span class="ingredient-name" data-ingredient-name>卵（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="ff31e774-3e6c-4831-9773-59766abfaafb"><span class="ingredient-name" data-ingredient-name>キャンディドシトロン（刻む）</span><span class="ingredient-qty" data-ingredient-qty>50g</span><button type="button" class="substitution-trigger" data-substitution-trigger="ff31e774-3e6c-4831-9773-59766abfaafb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="1e4dab48-f924-4bd6-a978-d6ba5f33d409"><span class="ingredient-name" data-ingredient-name>オレンジフラワーウォーター</span><span class="ingredient-qty" data-ingredient-qty>10ml</span></li>
+          <li data-ingredient-row="107449d4-bee2-45d9-8c9f-20f3fff217e5"><span class="ingredient-name" data-ingredient-name>シナモン（粉）</span><span class="ingredient-qty" data-ingredient-qty>3g</span></li>
+          <li data-ingredient-row="bfbe6a77-75c6-4ffe-ab21-baef669ac4d7"><span class="ingredient-name" data-ingredient-name>バニラ</span><span class="ingredient-qty" data-ingredient-qty>5ml</span></li>
+          <li data-ingredient-row="fbe79d04-f1d9-4ca5-82dc-4c415ef3464f"><span class="ingredient-name" data-ingredient-name>粉砂糖（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
               </ul>
             </section>
           </div>
@@ -319,6 +339,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"12361dcf-e285-4d47-9a11-9deeb1caca11","nameJa":"貝殻形のパリパリ焼き菓子 スフォリアテッレ","baseServings":12,"minServings":6,"maxServings":20},"ingredients":[{"id":"616c600a-a708-4232-bc45-1565c3a2e131","nameOriginal":"Farina 00","nameJa":"薄力粉（生地用）","nameEn":"All-purpose flour","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d20abc62-681f-470f-9e5b-2367b6fafff3","nameOriginal":"Acqua","nameJa":"水（生地用）","nameEn":"Water","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"abd8f5c6-ab7a-43e4-aaa9-a7a746bd003f","nameOriginal":"Sale","nameJa":"塩（生地用）","nameEn":"Salt","quantity":5,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7002df6b-743d-416b-a12c-fb9ae46198c7","nameOriginal":"Strutto o burro","nameJa":"ラード（または無塩バター・層状に伸ばす用）","nameEn":"Lard or unsalted butter for layering","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"常温で非常に柔らかく。伝統的にはラードを使う","substitutionOptions":[{"id":"d742869d-032c-4d72-a8a4-e329cb2a8b14","standardIngredientId":"7002df6b-743d-416b-a12c-fb9ae46198c7","nameJa":"無塩バター","nameEn":"Unsalted butter","authenticityImpact":-10,"flavorImpact":"層がやや崩れやすくなるがサクサク感は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e2b0f2c1-2966-4fea-a969-4bb02ebe4a10","nameOriginal":"Semolino","nameJa":"セモリナ粉","nameEn":"Semolina flour","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d1505272-e7fd-48df-9106-90993cbb84e3","nameOriginal":"Acqua","nameJa":"水（フィリング用）","nameEn":"Water","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7e452033-d178-4cce-896d-037ba15bebb5","nameOriginal":"Ricotta","nameJa":"リコッタ","nameEn":"Ricotta","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"水切り済み","substitutionOptions":[]},{"id":"756b3cdc-91ca-40c5-9c6b-ac39e5f3b820","nameOriginal":"Zucchero","nameJa":"砂糖（フィリング用）","nameEn":"Sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e4c538b7-30b9-442d-8516-8a31ab933beb","nameOriginal":"Uova","nameJa":"卵（フィリング用）","nameEn":"Eggs","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ff31e774-3e6c-4831-9773-59766abfaafb","nameOriginal":"Cedro candito","nameJa":"キャンディドシトロン（刻む）","nameEn":"Candied citron","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"f71cc621-f42b-4d04-9799-3b49f98a23a6","standardIngredientId":"ff31e774-3e6c-4831-9773-59766abfaafb","nameJa":"キャンディドオレンジピール","nameEn":"Candied orange peel","authenticityImpact":-5,"flavorImpact":"風味が若干変わるが食感は同じ","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"1e4dab48-f924-4bd6-a978-d6ba5f33d409","nameOriginal":"Acqua di fiori d'arancio","nameJa":"オレンジフラワーウォーター","nameEn":"Orange blossom water","quantity":10,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"107449d4-bee2-45d9-8c9f-20f3fff217e5","nameOriginal":"Cannella in polvere","nameJa":"シナモン（粉）","nameEn":"Ground cinnamon","quantity":3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bfbe6a77-75c6-4ffe-ab21-baef669ac4d7","nameOriginal":"Vaniglia","nameJa":"バニラ","nameEn":"Vanilla","quantity":5,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fbe79d04-f1d9-4ca5-82dc-4c415ef3464f","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":20,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"生地を作る：薄力粉500g・水200ml・塩5gを混ぜて固めのなめらかな生地にこねる（10分）。ラップして30分休ませる。","title":"生地をこねて休ませる","actionItems":["薄力粉500g・水200ml・塩5gを混ぜて10分こねる。","ラップして30分休ませる。"],"parallelItems":[],"completionCriteria":["固めのなめらかな生地になれば次へ（30分後）。"],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フィリングを作る：鍋に水500mlと塩少々を煮立て、セモリナ150gを少しずつ加えながら絶えず混ぜて10分煮る（ポレンタ状に仕上がったらバットに広げて冷ます）。冷めたら水切りリコッタ250g・砂糖150g・卵2個・キャンディドシトロン・オレンジフラワーウォーター・シナモン・バニラを加えてよく混ぜる。","title":"フィリングを作る","actionItems":["鍋に水500mlと塩少々を煮立て、セモリナ150gを少しずつ加えながら絶えず混ぜて10分煮る。","バットに広げて冷ます。","冷めたら水切りリコッタ250g・砂糖150g・卵2個・キャンディドシトロン・オレンジフラワーウォーター・シナモン・バニラを加えてよく混ぜる。"],"parallelItems":[],"completionCriteria":["ポレンタ状になりフィリングが均一に混ざれば次へ。"],"cautionItems":["セモリナを加える際、ダマにならないよう絶えず混ぜる。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地をパスタマシンで最薄クラスまで伸ばし、常温で柔らかくしたラード（またはバター）を全面に薄く塗りながら巻いてロール状にする（直径5〜6cmの筒）。ラップして冷蔵庫で1時間休ませる。","title":"生地を薄く伸ばしてロールにする","actionItems":["生地をパスタマシンで最薄クラスまで伸ばす。","ラードを全面に薄く塗りながら巻いてロール状にする（直径5〜6cm）。","ラップして冷蔵庫で1時間休ませる。"],"parallelItems":[],"completionCriteria":["直径5〜6cmのロールができ、冷蔵庫で1時間休ませれば次へ。"],"cautionItems":["手が止まると生地が乾燥してひびが入る。伸ばしたらすぐにラードを塗って巻く。"],"tipItems":[],"durationMinutes":70,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ロールを2cm厚の円盤に切り分ける。両手の親指を中央に当てて押し込みながら回転させ、貝殻（コーン）型に成形する。","title":"貝殻型に成形する","actionItems":["ロールを2cm厚の円盤に切り分ける。","両手の親指を中央に当てて押し込みながら回転させ、貝殻（コーン）型に成形する。"],"parallelItems":[],"completionCriteria":["貝殻型（コーン型）に成形できれば次へ。"],"cautionItems":["生地が乾いていると割れる。手早く成形する。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"フィリングをスプーンで詰め、端をしっかり閉じる。表面にラードを薄く塗る。210℃に予熱したオーブンで25〜30分焼く（層がカリカリに剥がれてきつね色になるまで）。","title":"フィリングを詰めて焼く","actionItems":["フィリングをスプーンで詰め、端をしっかり閉じる。","表面にラードを薄く塗る。","210℃のオーブンで25〜30分焼く。"],"parallelItems":[],"completionCriteria":["層がカリカリに剥がれてきつね色になれば焼き上がり。"],"cautionItems":["端が閉じていないとフィリングが漏れる。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"焼き上がったらすぐに粉砂糖を振り、表面の熱で砂糖が薄くなじんだら温かいうちに食べる（時間が経つと層の食感が落ちる）。","title":"粉砂糖を振って温かく出す","actionItems":["焼き上がったらすぐに粉砂糖20gを振る。","温かいうちに提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["時間が経つと層の食感が落ちる。温かいうちに食べる。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

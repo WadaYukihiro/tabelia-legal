@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>46分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">パッケリ（大型スムースパスタ管）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">凹凸なしのスムースタイプ。リガトーニで代用しない</span></li>
-          <li><span class="ingredient-name">トターニ（矢イカ）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">ワタと軟骨を除き洗う。胴体2cm角・触腕はぶつ切り</span></li>
-          <li><span class="ingredient-name">ホールトマト（缶）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">手で潰しながら加える</span></li>
-          <li><span class="ingredient-name">コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty">20ml</span><span class="ingredient-notes">煮込み完了後に加える。加熱で香りが飛ぶため火を止めてから</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り。仕上げ用</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">小口切り</span></li>
+              <li data-ingredient-row="feb8d32d-208c-4fc7-b14f-657e8aecacfa"><span class="ingredient-name" data-ingredient-name>パッケリ（大型スムースパスタ管）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">凹凸なしのスムースタイプ。リガトーニで代用しない</span><button type="button" class="substitution-trigger" data-substitution-trigger="feb8d32d-208c-4fc7-b14f-657e8aecacfa"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="028c37f2-bef9-424b-a80a-a2b710e32ce3"><span class="ingredient-name" data-ingredient-name>トターニ（矢イカ）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">ワタと軟骨を除き洗う。胴体2cm角・触腕はぶつ切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="028c37f2-bef9-424b-a80a-a2b710e32ce3"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="fd2811a9-7e35-4612-9d6d-329f8e6e5618"><span class="ingredient-name" data-ingredient-name>ホールトマト（缶）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">手で潰しながら加える</span><button type="button" class="substitution-trigger" data-substitution-trigger="fd2811a9-7e35-4612-9d6d-329f8e6e5618"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="44112a98-e6ba-48c3-9f0e-757817370479"><span class="ingredient-name" data-ingredient-name>コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty" data-ingredient-qty>20ml</span><span class="ingredient-notes">煮込み完了後に加える。加熱で香りが飛ぶため火を止めてから</span><button type="button" class="substitution-trigger" data-substitution-trigger="44112a98-e6ba-48c3-9f0e-757817370479"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="dafaa6cd-1ac0-4731-b259-5fdfacc84d8c"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="26fe302b-a73b-45dd-a630-0cee5c2874f8"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="3f22fa19-9fb6-4d31-87a4-79af7abeb377"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="c23d47d7-6d52-4c8e-a29c-dc75e1ca7000"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="aa724aa4-a26e-4af4-997f-2b3583a9e2ab"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り。仕上げ用</span></li>
+          <li data-ingredient-row="5e9698a7-0579-4fe8-9aa8-ae094035b586"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">小口切り</span></li>
               </ul>
             </section>
           </div>
@@ -295,6 +315,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"da5ac7ba-5566-413b-a4c9-0ee61b1b4881","nameJa":"スルメイカのラグーとコラトゥーラのパッケリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"feb8d32d-208c-4fc7-b14f-657e8aecacfa","nameOriginal":"Paccheri","nameJa":"パッケリ（大型スムースパスタ管）","nameEn":"Paccheri","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"凹凸なしのスムースタイプ。リガトーニで代用しない","substitutionOptions":[{"id":"7bc4dcfe-1265-4d90-83db-6a14d29ff533","standardIngredientId":"feb8d32d-208c-4fc7-b14f-657e8aecacfa","nameJa":"リガトーニ","nameEn":"Rigatoni","authenticityImpact":-5,"flavorImpact":"ソースの受け方が変わるが風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"028c37f2-bef9-424b-a80a-a2b710e32ce3","nameOriginal":"Totani","nameJa":"トターニ（矢イカ）","nameEn":"Flying squid","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ワタと軟骨を除き洗う。胴体2cm角・触腕はぶつ切り","substitutionOptions":[{"id":"f2180fd5-56ec-47a7-acd3-ce0871860811","standardIngredientId":"028c37f2-bef9-424b-a80a-a2b710e32ce3","nameJa":"カラマリ（ヤリイカ）","nameEn":"Calamari (squid)","authenticityImpact":-5,"flavorImpact":"柔らかく仕上がる","textureImpact":null,"procedureChanges":["煮込み時間を30〜35分に短縮"],"affectedStepNumbers":[1,2,4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"カラマリ（ヤリイカ）を洗い、ワタと軟骨を除く。胴体を2cm角、触腕をぶつ切りにする。水気をキッチンペーパーで拭く。唐辛子を小口切りにする。","changeReason":"置換後のイカ名に合わせて下処理の対象を明確にする"},{"action":"replace","stepNumber":2,"instruction":"玉ねぎをみじん切りに、にんにく3片をみじん切りにする。厚手の鍋にオリーブオイル・玉ねぎ・にんにくを入れ中火で炒める。玉ねぎが透明になったら（8〜10分）、カラマリを加えて強火で2分炒め、表面を軽く焼き付ける。","changeReason":"カラマリはトターニより柔らかく、焼き付けを短くする"},{"action":"replace","stepNumber":4,"instruction":"（炒めている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。ホールトマトを手で潰しながら加え、唐辛子を加える。ふたをせず弱火〜中火で30〜35分煮込む。ラグーが濃厚になり、カラマリが柔らかくなれば完成。途中で水分が飛びすぎたら少量の水を加える。","changeReason":"カラマリはトターニより早く柔らかくなるため、煮込み時間を短くする"}]}]},{"id":"fd2811a9-7e35-4612-9d6d-329f8e6e5618","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト（缶）","nameEn":"Whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手で潰しながら加える","substitutionOptions":[{"id":"7cddf6bb-bc1d-421e-97a8-61b1a9a8f799","standardIngredientId":"fd2811a9-7e35-4612-9d6d-329f8e6e5618","nameJa":"パッサータ","nameEn":"Passata (tomato purée)","authenticityImpact":-5,"flavorImpact":"なめらかになるが問題なし","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"44112a98-e6ba-48c3-9f0e-757817370479","nameOriginal":"Colatura di alici di Cetara","nameJa":"コラトゥーラ・ディ・アリーチ","nameEn":"Colatura di alici from Cetara","quantity":20,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"煮込み完了後に加える。加熱で香りが飛ぶため火を止めてから","substitutionOptions":[{"id":"355f95be-46c4-40e3-9534-43eeda52d56e","standardIngredientId":"44112a98-e6ba-48c3-9f0e-757817370479","nameJa":"ナンプラー＋アンチョビペースト","nameEn":"Fish sauce + anchovy paste","authenticityImpact":-20,"flavorImpact":"旨みは出るが熟成香がない","textureImpact":null,"procedureChanges":["ナンプラー大さじ1＋アンチョビペースト小さじ1を火を止めてから混ぜる"],"affectedStepNumbers":[5],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"コラトゥーラ・ディ・アリーチ"},{"role":"essential","unit":"ml","action":"add","nameEn":"Fish sauce","nameJa":"ナンプラー","quantity":15},{"role":"essential","unit":"小さじ","action":"add","nameEn":"Anchovy paste","nameJa":"アンチョビペースト","quantity":1}],"stepPatches":[{"action":"replace","stepNumber":5,"instruction":"火を止め、ナンプラー15mlでアンチョビペースト小さじ1を溶いてからラグーに加えて混ぜる。塩で味を確認する（ナンプラーとアンチョビペーストに塩分があるため追加塩は控えめに）。","changeReason":"コラトゥーラをナンプラーとアンチョビペーストで近似し、火を止めてから加えるため"}]}]},{"id":"dafaa6cd-1ac0-4731-b259-5fdfacc84d8c","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"26fe302b-a73b-45dd-a630-0cee5c2874f8","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"3f22fa19-9fb6-4d31-87a4-79af7abeb377","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"c23d47d7-6d52-4c8e-a29c-dc75e1ca7000","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"aa724aa4-a26e-4af4-997f-2b3583a9e2ab","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"みじん切り。仕上げ用","substitutionOptions":[]},{"id":"5e9698a7-0579-4fe8-9aa8-ae094035b586","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"小口切り","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"トターニを洗い、ワタと軟骨を除く。胴体を2cm角、触腕をぶつ切りにする。水気をキッチンペーパーで拭く。唐辛子を小口切りにする。","title":"食材を下処理する","actionItems":["トターニを洗い、ワタと軟骨を除く。","胴体を2cm角、触腕をぶつ切りにする。","水気をキッチンペーパーで拭く。","唐辛子を小口切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"玉ねぎをみじん切りに、にんにく3片をみじん切りにする。厚手の鍋にオリーブオイル・玉ねぎ・にんにくを入れ中火で炒める。玉ねぎが透明になったら（8〜10分）、トターニを加えて強火で2〜3分炒め、表面を焼き付ける。","title":"材料を準備する","actionItems":["玉ねぎをみじん切りに、にんにく3片をみじん切りにする。","厚手の鍋にオリーブオイル・玉ねぎ・にんにくを入れ中火で炒める。","玉ねぎが透明になったら（8〜10分）、トターニを加えて強火で2〜3分炒め、表面を焼き付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":13,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"白ワインを注いで強火でアルコールを飛ばす（2〜3分）。鍋底についた旨みを木べらでこそぎながら混ぜる。","title":"煮詰める","actionItems":["白ワインを注いで強火でアルコールを飛ばす（2〜3分）。","鍋底についた旨みを木べらでこそぎながら混ぜる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"（炒めている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。ホールトマトを手で潰しながら加え、唐辛子を加える。ふたをせず弱火〜中火で40〜45分煮込む。ラグーが濃厚になり、イカが柔らかくなれば完成。途中で水分が飛びすぎたら少量の水を加える。","title":"湯を沸かす","actionItems":["ホールトマトを手で潰しながら加え、唐辛子を加える。","ふたをせず弱火〜中火で40〜45分煮込む。","途中で水分が飛びすぎたら少量の水を加える。"],"parallelItems":["（炒めている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["ラグーが濃厚になり、イカが柔らかくなれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"火を止めてコラトゥーラを加えて混ぜる。塩で味を確認する（コラトゥーラが塩辛いため追加塩は控えめに）。","title":"仕上げにまとめる","actionItems":["塩で味を確認する（コラトゥーラが塩辛いため追加塩は控えめに）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止めてコラトゥーラを加えて混ぜる。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"パッケリを沸かしておいた塩湯に入れ、表示より1分短く茹でる。\n・茹で汁50mlを取り置く\n・ラグーにパスタを加えて混ぜ、茹で汁で濃さを調整しながら1〜2分馴染ませる\n・イタリアンパセリをみじん切りにして散らして盛る","title":"茹でる","actionItems":["パッケリを沸かしておいた塩湯に入れ、表示より1分短く茹でる。","茹で汁50mlを取り置く","ラグーにパスタを加えて混ぜ、茹で汁で濃さを調整しながら1〜2分馴染ませる","イタリアンパセリをみじん切りにして散らして盛る"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":13,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">牛ロースまたは肩ロース（薄切りステーキ）</span><span class="ingredient-qty">600g（4枚）</span><span class="ingredient-notes">1.5cm厚のステーキ4枚。薄すぎると焼きすぎる</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">手で潰す</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">ドライオレガノ</span><span class="ingredient-qty">5g（小さじ2）</span><span class="ingredient-notes">ナポリ料理においてオレガノは外せない</span></li>
-          <li><span class="ingredient-name">赤唐辛子（乾燥）</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">お好みで</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
+              <li data-ingredient-row="93691d97-5e39-4d90-9670-7cf5150b4a97"><span class="ingredient-name" data-ingredient-name>牛ロースまたは肩ロース（薄切りステーキ）</span><span class="ingredient-qty" data-ingredient-qty>600g（4枚）</span><span class="ingredient-notes">1.5cm厚のステーキ4枚。薄すぎると焼きすぎる</span><button type="button" class="substitution-trigger" data-substitution-trigger="93691d97-5e39-4d90-9670-7cf5150b4a97"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="6da1fb1e-cb72-41f6-9e7a-f9b9c14e20a9"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">手で潰す</span></li>
+          <li data-ingredient-row="2b1ea509-5522-4cd1-a67b-cf6dc08597ab"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="485a88fd-6edc-4ca4-824b-465435b31223"><span class="ingredient-name" data-ingredient-name>ドライオレガノ</span><span class="ingredient-qty" data-ingredient-qty>5g（小さじ2）</span><span class="ingredient-notes">ナポリ料理においてオレガノは外せない</span></li>
+          <li data-ingredient-row="b0b3b0d0-968e-4676-807f-86e53eb9b052"><span class="ingredient-name" data-ingredient-name>赤唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">お好みで</span></li>
+          <li data-ingredient-row="d70ad531-129a-40af-854b-ff91c13eb623"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
               </ul>
             </section>
           </div>
@@ -261,6 +281,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c4c75458-01a0-4819-8478-9efa600be1c8","nameJa":"牛ステーキのピッツァイオーラ風","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"93691d97-5e39-4d90-9670-7cf5150b4a97","nameOriginal":"Bistecca di manzo","nameJa":"牛ロースまたは肩ロース（薄切りステーキ）","nameEn":"Beef sirloin or chuck eye steak","quantity":600,"unit":"g（4枚）","role":"essential","scalingBehavior":null,"notes":"1.5cm厚のステーキ4枚。薄すぎると焼きすぎる","substitutionOptions":[{"id":"40c68218-964b-4e81-b308-2ee32b446f27","standardIngredientId":"93691d97-5e39-4d90-9670-7cf5150b4a97","nameJa":"牛薄切り肉（しゃぶしゃぶ用）","nameEn":"Thin-sliced beef","authenticityImpact":-5,"flavorImpact":"火が通りやすいので焦げに注意。柔らかく仕上がる","textureImpact":null,"procedureChanges":["焼き時間を各面1分に短縮"],"affectedStepNumbers":[3,4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"薄切り肉を短く焼く","action":"replace","stepNumber":3,"actionItems":["牛薄切り肉を広げて重ならないように入れる。","動かさずに45〜60秒焼く。","裏返してさらに45〜60秒焼く。"],"instruction":"牛薄切り肉を広げて重ならないように入れ、動かさずに45〜60秒焼く。裏返してさらに45〜60秒焼き、赤い部分が少し残る程度で次へ。","cautionItems":["薄切り肉は火が入りやすいため、完全に火を通し切る前にソース工程へ進む。"],"changeReason":"しゃぶしゃぶ用の薄切り肉は標準の2分ずつでは硬くなりやすいため","completionCriteria":["両面に軽い焼き色がつき、赤い部分が少し残る程度で次へ。"]},{"title":"ソースで短く仕上げる","action":"replace","stepNumber":4,"actionItems":["ソースを肉の上にのせ、弱火で30秒〜1分だけ温める。"],"instruction":"ソースを肉の上にのせ、弱火で30秒〜1分だけ温める。肉にソースの香りが移り、赤い部分が消えたら完成。","changeReason":"薄切り肉はソースの余熱でも火が進むため、標準より短く仕上げる","completionCriteria":["肉にソースの香りが移り、赤い部分が消えたら完成。"]}]}]},{"id":"6da1fb1e-cb72-41f6-9e7a-f9b9c14e20a9","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手で潰す","substitutionOptions":[]},{"id":"2b1ea509-5522-4cd1-a67b-cf6dc08597ab","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"485a88fd-6edc-4ca4-824b-465435b31223","nameOriginal":"Origano secco","nameJa":"ドライオレガノ","nameEn":"Dried oregano","quantity":5,"unit":"g（小さじ2）","role":"essential","scalingBehavior":null,"notes":"ナポリ料理においてオレガノは外せない","substitutionOptions":[]},{"id":"b0b3b0d0-968e-4676-807f-86e53eb9b052","nameOriginal":"Peperoncino","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"お好みで","substitutionOptions":[]},{"id":"d70ad531-129a-40af-854b-ff91c13eb623","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ピッツァイオーラソースを作る：にんにくを薄切りにする。フライパンにオリーブオイルとにんにくを入れて中火にかけ、にんにくが薄く色づいたらホールトマト（手で潰す）・オレガノ・唐辛子を加えて5分煮る。塩で調整してソースを取り出す。","title":"ピッツァイオーラソースを作る","actionItems":["にんにく3片を薄切りにする。","フライパンにオリーブオイル50mlとにんにくを入れて中火にかける。","にんにくが薄く色づいたらホールトマト400g（手で潰す）・オレガノ5g・唐辛子1本を加えて5分煮る。","塩で調整してソースを取り出す。"],"parallelItems":[],"completionCriteria":["ソースが軽くとろみづいたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"同じフライパンをきれいにして強火で煙が出るまで熱する。牛肉に塩・こしょうをする。","title":"フライパンを予熱する","actionItems":["同じフライパンをきれいにして強火で煙が出るまで熱する。","牛肉4枚に塩・こしょうをする。"],"parallelItems":[],"completionCriteria":["煙が出るほど熱くなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"牛肉を入れて動かさずに2分焼く。裏返して2分（ミディアム目安。厚みによって調整）。","title":"肉を焼く","actionItems":["牛肉を入れて動かさずに2分焼く。","裏返して2分焼く。"],"parallelItems":[],"completionCriteria":["両面に焼き色がついたら次へ（ミディアム目安）。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ソースを肉の上にのせ、弱火で蓋をして3分温める。肉にソースの香りを移す。","title":"ソースで仕上げる","actionItems":["ソースを肉の上にのせ、弱火で蓋をして3分温める。"],"parallelItems":[],"completionCriteria":["ソースが温まり肉に香りが移れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"仕上げに新鮮なオレガノまたはパセリを散らして完成。チャバタやフォカッチャと一緒に食べるとソースをすくって最高。","title":"ハーブを散らす","actionItems":["仕上げにオレガノまたはパセリを散らす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

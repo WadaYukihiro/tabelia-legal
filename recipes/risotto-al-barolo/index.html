@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>7分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・クーネオ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">カルナローリ米</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">バローロ（赤ワイン）</span><span class="ingredient-qty">400ml</span><span class="ingredient-notes">料理用でも高品質なものを使う</span></li>
-          <li><span class="ingredient-name">牛ブロード</span><span class="ingredient-qty">1000ml</span><span class="ingredient-notes">温かい状態を保つ</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">マンテカトゥーラ用に半量を冷たいまま取り置く</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span></li>
+              <li data-ingredient-row="d51ac812-daa1-4507-8168-895c687c79c7"><span class="ingredient-name" data-ingredient-name>カルナローリ米</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="d51ac812-daa1-4507-8168-895c687c79c7"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="87d0db98-2d16-4478-8bb4-4c90b37af513"><span class="ingredient-name" data-ingredient-name>バローロ（赤ワイン）</span><span class="ingredient-qty" data-ingredient-qty>400ml</span><span class="ingredient-notes">料理用でも高品質なものを使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="87d0db98-2d16-4478-8bb4-4c90b37af513"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="28360cdb-d632-4c79-a100-e7e5b0f71c9d"><span class="ingredient-name" data-ingredient-name>牛ブロード</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span><span class="ingredient-notes">温かい状態を保つ</span></li>
+          <li data-ingredient-row="2280f1dc-a5b0-4f04-83df-78ac9177733c"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="2f0e9c3e-5aa4-46a7-8bae-9ebc17bc3800"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">マンテカトゥーラ用に半量を冷たいまま取り置く</span></li>
+          <li data-ingredient-row="e8709ae0-d641-40c9-b287-1f8532da51b9"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
               </ul>
             </section>
           </div>
@@ -277,6 +297,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"cf21a8cb-0306-498e-a03b-4baa47aeb2fc","nameJa":"バローロワインのリゾット","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"d51ac812-daa1-4507-8168-895c687c79c7","nameOriginal":"Riso Carnaroli","nameJa":"カルナローリ米","nameEn":"Carnaroli rice","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"33001bdf-e44b-42fe-836e-d224948156e2","standardIngredientId":"d51ac812-daa1-4507-8168-895c687c79c7","nameJa":"アルボリオ米","nameEn":"Arborio rice","authenticityImpact":-5,"flavorImpact":"クリーミーさが若干落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"87d0db98-2d16-4478-8bb4-4c90b37af513","nameOriginal":"Barolo","nameJa":"バローロ（赤ワイン）","nameEn":"Barolo wine","quantity":400,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"料理用でも高品質なものを使う","substitutionOptions":[{"id":"d999fff0-534a-428c-a5fc-dce279bae9a0","standardIngredientId":"87d0db98-2d16-4478-8bb4-4c90b37af513","nameJa":"一般的な赤ワイン（フルボディ）","nameEn":"Full-bodied red wine","authenticityImpact":-20,"flavorImpact":"バローロ特有のタンニン構造が失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"f07f1d70-b083-4039-9fc0-3d3c18d0fc08","standardIngredientId":"87d0db98-2d16-4478-8bb4-4c90b37af513","nameJa":"ネッビオーロ種赤ワイン","nameEn":"Nebbiolo red wine","authenticityImpact":-10,"flavorImpact":"品種は同じだが産地の複雑さが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"28360cdb-d632-4c79-a100-e7e5b0f71c9d","nameOriginal":"Brodo di carne","nameJa":"牛ブロード","nameEn":"Beef broth","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"温かい状態を保つ","substitutionOptions":[]},{"id":"2280f1dc-a5b0-4f04-83df-78ac9177733c","nameOriginal":"Cipolla dorata","nameJa":"玉ねぎ","nameEn":"Golden onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"2f0e9c3e-5aa4-46a7-8bae-9ebc17bc3800","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"マンテカトゥーラ用に半量を冷たいまま取り置く","substitutionOptions":[]},{"id":"e8709ae0-d641-40c9-b287-1f8532da51b9","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"鍋でバター40gを中火で溶かし、みじん切りの玉ねぎ1個を加えて弱火で10分、透明になるまで炒める。","title":"玉ねぎを炒める","actionItems":["鍋でバター40gを中火で溶かす。","みじん切りの玉ねぎ1個を加えて弱火で10分、透明になるまで炒める。"],"parallelItems":[],"completionCriteria":["玉ねぎが透明になりしんなりした。"],"cautionItems":["焦がすと苦みが出る。弱火でじっくり炒めること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"カルナローリ米320gを加えて中火で2分炒る（米粒が透き通るまで）。バローロ400mlを一度に注いでかき混ぜながらアルコールを飛ばす（約5分）。ワインの色が米に移る。","title":"米を炒りバローロを注ぐ","actionItems":["カルナローリ米320gを加えて中火で2分炒る。","バローロ400mlを一度に注いでかき混ぜながらアルコールを飛ばす（約5分）。"],"parallelItems":[],"completionCriteria":["アルコールの香りが飛び、ワインの色が米に移った。"],"cautionItems":["米をしっかり炒ることで表面が固まりデンプンが溶け出しにくくなる。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"温かい牛ブロードをお玉1杯ずつ加え、かき混ぜながら吸わせる。これを15〜18分繰り返す。常にブロードを温かく保つ。","title":"ブロードを加えながら炊く","actionItems":["温かい牛ブロードをお玉1杯加え、かき混ぜながら吸わせる。","ブロードが吸われたら次の1杯を加える。これを15〜18分繰り返す。"],"parallelItems":[],"completionCriteria":["米がアルデンテになった。"],"cautionItems":["ブロードは必ず温かい状態を保つこと。冷たいと米の炊きが止まる。"],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"米がアルデンテになったら火を止め、残りの冷たいバター40gとパルミジャーノ60gを加えて力強く混ぜる（マンテカトゥーラ）。","title":"マンテカトゥーラ","actionItems":["火を止めて冷たいバター40gとパルミジャーノ60gを加え、力強く混ぜる。"],"parallelItems":[],"completionCriteria":["バターとチーズが乳化してクリーミーなリゾットになった。"],"cautionItems":["バターは冷たいものを使うこと。温まったバターは乳化しにくい。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"蓋をして1〜2分休ませ、皿に盛る。バローロの深紅が美しく映える状態で提供する。","title":"休ませて盛り付ける","actionItems":["蓋をして1〜2分休ませる。","皿に盛って提供する。"],"parallelItems":[],"completionCriteria":["リゾットが1〜2分休んで温度が均一になった。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

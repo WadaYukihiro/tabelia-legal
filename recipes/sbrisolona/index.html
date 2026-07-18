@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・マントヴァ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,19 +93,26 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">コーンフラワー（細挽き）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">細挽き（フィオレット）が理想。粗挽きポレンタ用は粒感が粗くなりすぎる</span></li>
-          <li><span class="ingredient-name">アーモンドパウダー</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">アーモンド（ホール）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">粗く刻む（4〜6mm程度の不均一な粒）。皮あり・皮なしどちらも可</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">バター（無塩・冷たい）</span><span class="ingredient-qty">130g</span><span class="ingredient-notes">1cm角に切り使用直前まで冷蔵庫で冷やす</span></li>
-          <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">レモンの皮</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">バニラエッセンス</span><span class="ingredient-qty">3ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">2g</span></li>
-          <li><span class="ingredient-name">粉砂糖（仕上げ用）</span><span class="ingredient-qty">15g</span></li>
+              <li data-ingredient-row="5a436f3e-fee9-4c50-ad6e-8dfe3a121866"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="9c3a720f-cf8f-4e4d-8c95-06214beddb4b"><span class="ingredient-name" data-ingredient-name>コーンフラワー（細挽き）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">細挽き（フィオレット）が理想。粗挽きポレンタ用は粒感が粗くなりすぎる</span><button type="button" class="substitution-trigger" data-substitution-trigger="9c3a720f-cf8f-4e4d-8c95-06214beddb4b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e5432df9-cea6-4647-b942-f18e392a228b"><span class="ingredient-name" data-ingredient-name>アーモンドパウダー</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="e1bdc642-4be0-4092-8d66-f0a664607ebe"><span class="ingredient-name" data-ingredient-name>アーモンド（ホール）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">粗く刻む（4〜6mm程度の不均一な粒）。皮あり・皮なしどちらも可</span><button type="button" class="substitution-trigger" data-substitution-trigger="e1bdc642-4be0-4092-8d66-f0a664607ebe"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3b0f0881-e65c-4a18-967b-f9189de00dfa"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="d4af9cef-a808-464e-ae8c-d4ca3bc9d9aa"><span class="ingredient-name" data-ingredient-name>バター（無塩・冷たい）</span><span class="ingredient-qty" data-ingredient-qty>130g</span><span class="ingredient-notes">1cm角に切り使用直前まで冷蔵庫で冷やす</span></li>
+          <li data-ingredient-row="80be54b6-9ec1-44a2-9b06-7996833ab805"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="49ded070-5ff1-4d0d-8f29-bc3d088714ac"><span class="ingredient-name" data-ingredient-name>レモンの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="0ed9f570-aa8d-4d47-bcd3-11363dcb3304"><span class="ingredient-name" data-ingredient-name>バニラエッセンス</span><span class="ingredient-qty" data-ingredient-qty>3ml</span></li>
+          <li data-ingredient-row="7d8eb0bc-2418-4902-ae15-b03d4f4b0777"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>2g</span></li>
+          <li data-ingredient-row="25ca5d79-159f-44f8-aeb9-a32108b77797"><span class="ingredient-name" data-ingredient-name>粉砂糖（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>15g</span></li>
               </ul>
             </section>
           </div>
@@ -306,6 +326,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"3c9fbecd-caaa-43b8-bfe5-2eaebad7af85","nameJa":"スブリゾローナ","baseServings":8,"minServings":6,"maxServings":20},"ingredients":[{"id":"5a436f3e-fee9-4c50-ad6e-8dfe3a121866","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9c3a720f-cf8f-4e4d-8c95-06214beddb4b","nameOriginal":"Farina di mais fioretto","nameJa":"コーンフラワー（細挽き）","nameEn":"Fine cornmeal","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細挽き（フィオレット）が理想。粗挽きポレンタ用は粒感が粗くなりすぎる","substitutionOptions":[{"id":"e309beac-4f9b-4fb8-bef6-fb23a56c3dc8","standardIngredientId":"9c3a720f-cf8f-4e4d-8c95-06214beddb4b","nameJa":"コーングリッツ（細目）","nameEn":"Fine corn grits","authenticityImpact":-5,"flavorImpact":"粒感が若干粗くなるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e5432df9-cea6-4647-b942-f18e392a228b","nameOriginal":"Farina di mandorle","nameJa":"アーモンドパウダー","nameEn":"Almond flour","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e1bdc642-4be0-4092-8d66-f0a664607ebe","nameOriginal":"Mandorle intere","nameJa":"アーモンド（ホール）","nameEn":"Whole almonds","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"粗く刻む（4〜6mm程度の不均一な粒）。皮あり・皮なしどちらも可","substitutionOptions":[{"id":"45078517-669d-4f80-b6c5-0be932bceda6","standardIngredientId":"e1bdc642-4be0-4092-8d66-f0a664607ebe","nameJa":"アーモンドスライス","nameEn":"Sliced almonds","authenticityImpact":-5,"flavorImpact":"粗さが変わるが風味はほぼ同等","textureImpact":null,"procedureChanges":["刻む工程をスキップし、割れすぎないよう最後に軽く混ぜる"],"affectedStepNumbers":[1,2],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"刻まずに使う。割れすぎないよう最後に軽く混ぜる","action":"update","nameEn":"Sliced almonds","nameJa":"アーモンドスライス","quantity":150,"targetNameJa":"アーモンド（ホール）"}],"stepPatches":[{"title":"仕込みと準備","action":"replace","stepNumber":1,"actionItems":["オーブンを180℃に予熱する。","バター130gを1cm角に切って冷蔵庫に戻す。","アーモンドスライス150gの割れた細片を軽く取り除く。","直径26〜28cmの丸型にバターを薄く塗る。"],"instruction":"オーブンを180℃に予熱する。バター130gを1cm角に切って冷蔵庫に戻しておく。アーモンドスライス150gは刻まず、割れた細片を軽く取り除く。直径26〜28cmの丸型（底外れ型）にバターを薄く塗る。","cautionItems":["バターは使用直前まで冷やしておく。アーモンドスライスは細かく刻まない。"],"changeReason":"アーモンドスライスは刻むと細かくなりすぎるため","completionCriteria":["準備が整えば次へ。"]},{"title":"そぼろ生地を作る","action":"replace","stepNumber":2,"actionItems":["レモンの表皮だけをすりおろす。","薄力粉・コーンフラワー・アーモンドパウダー・砂糖・すりおろしたレモンの皮・塩をボウルで混ぜる。","冷たいバターを加え、指先で素早くすり混ぜてサラサラの砂状にする。","卵黄2個とバニラ3mlを加えてさらに混ぜ、湿った粗いそぼろ状にする。","アーモンドスライスを加えて割れすぎないよう軽く混ぜる。"],"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。大きなボウルに薄力粉150g・コーンフラワー150g・アーモンドパウダー80g・砂糖150g・すりおろしたレモンの皮・塩2gを入れて混ぜる。冷たいバター130gを1cm角に切って加え、指先で素早くすり混ぜてサラサラの砂状にする。卵黄2個・バニラ3mlを加えてさらに混ぜ、全体が湿った粗いそぼろ状になるまで仕上げる。アーモンドスライスを加えて割れすぎないよう軽く混ぜる。決してまとめて練らないこと——崩れやすい食感はこのそぼろ状から生まれる。","cautionItems":["決してまとめて練らない。アーモンドスライスは割れやすいため最後に軽く混ぜる。"],"changeReason":"刻んだホールアーモンドではなくアーモンドスライスをそのまま使うため","completionCriteria":["全体が湿った粗いそぼろ状になれば次へ。"]}]}]},{"id":"3b0f0881-e65c-4a18-967b-f9189de00dfa","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d4af9cef-a808-464e-ae8c-d4ca3bc9d9aa","nameOriginal":"Burro freddo","nameJa":"バター（無塩・冷たい）","nameEn":"Cold unsalted butter","quantity":130,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm角に切り使用直前まで冷蔵庫で冷やす","substitutionOptions":[]},{"id":"80be54b6-9ec1-44a2-9b06-7996833ab805","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"49ded070-5ff1-4d0d-8f29-bc3d088714ac","nameOriginal":"Scorza di limone","nameJa":"レモンの皮","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"0ed9f570-aa8d-4d47-bcd3-11363dcb3304","nameOriginal":"Vaniglia","nameJa":"バニラエッセンス","nameEn":"Vanilla extract","quantity":3,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7d8eb0bc-2418-4902-ae15-b03d4f4b0777","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":2,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"25ca5d79-159f-44f8-aeb9-a32108b77797","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180℃に予熱する。バター130gを1cm角に切って冷蔵庫に戻しておく。アーモンド150gをまな板の上で粗く刻む（4〜6mm程度の不均一な粒でよい）。直径26〜28cmの丸型（底外れ型）にバターを薄く塗る。","title":"仕込みと準備","actionItems":["オーブンを180℃に予熱する。","バター130gを1cm角に切って冷蔵庫に戻す。","アーモンド150gをまな板で粗く刻む（4〜6mm程度）。","直径26〜28cmの丸型にバターを薄く塗る。"],"parallelItems":[],"completionCriteria":["準備が整えば次へ。"],"cautionItems":["バターは使用直前まで冷やしておく。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。大きなボウルに薄力粉150g・コーンフラワー150g・アーモンドパウダー80g・砂糖150g・すりおろしたレモンの皮・塩2gを入れて混ぜる。冷たいバター130gを1cm角に切って加え、指先で素早くすり混ぜてサラサラの砂状にする。卵黄2個・バニラ3mlを加えてさらに混ぜ、全体が湿った粗いそぼろ状になるまで仕上げる。刻んだアーモンドを加えて軽く混ぜる。決してまとめて練らないこと——崩れやすい食感はこのそぼろ状から生まれる。","title":"そぼろ生地を作る","actionItems":["レモンの表皮だけをすりおろす。","薄力粉・コーンフラワー・アーモンドパウダー・砂糖・すりおろしたレモンの皮・塩をボウルで混ぜる。","冷たいバターを加え、指先で素早くすり混ぜてサラサラの砂状にする。","卵黄2個とバニラ3mlを加えてさらに混ぜ、湿った粗いそぼろ状にする。","刻んだアーモンドを加えて軽く混ぜる。"],"parallelItems":[],"completionCriteria":["全体が湿った粗いそぼろ状になれば次へ。"],"cautionItems":["決してまとめて練らない。練ると崩れやすい食感が失われる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"そぼろ状の生地を全量型に入れ、押し固めずに手で軽くならす（表面が不均一で隙間がある状態でよい）。","title":"型に入れる","actionItems":["そぼろ状の生地を全量型に入れる。","押し固めずに手で軽くならす。"],"parallelItems":[],"completionCriteria":["型全体に均等に広がれば次へ。"],"cautionItems":["押し固めない。表面が不均一で隙間がある状態が正しい。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"180℃で40〜45分焼く。表面がきつね色〜薄茶色になり縁がやや濃くなったら焼き上がり。焼き不足だと崩れすぎるので、しっかり焼くこと。型のまま完全に冷ます。","title":"スブリゾローナを焼く","actionItems":["180℃で40〜45分焼く。","型のまま完全に冷ます。"],"parallelItems":[],"completionCriteria":["表面がきつね色〜薄茶色になり縁がやや濃くなれば焼き上がり。"],"cautionItems":["焼き不足だと崩れすぎる。しっかり焼くこと。"],"tipItems":[],"durationMinutes":45,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"型から外したら、ナイフで切らずに手またはスプーンの柄で叩いて割って提供する。粉砂糖15gを振る。スプマンテやヴィン・サントと合わせても。密閉容器で常温3〜4日保存可能。","title":"割って提供する","actionItems":["型から外す。","ナイフは使わず手またはスプーンの柄で叩いて割る。","粉砂糖15gを振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

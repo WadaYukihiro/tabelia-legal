@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スパゲッティまたはパスタ・ミスタ（混合パスタ）</span><span class="ingredient-qty">320g</span><span class="ingredient-notes">パスタ・ミスタは食料庫の残り物を混ぜて使う伝統から来る</span></li>
-          <li><span class="ingredient-name">卵（全卵）</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">常温に戻したもの</span></li>
-          <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">コクと乳化のために追加。全卵3個＋卵黄2個が基本</span></li>
-          <li><span class="ingredient-name">ペコリーノ・ロマーノ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">細かくすりおろす。塩気が強いためパスタの茹で塩は少なめに</span></li>
-          <li><span class="ingredient-name">ラルド（豚の背脂の塩漬け）またはストルット（豚の精製脂）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">コクと香りを出す。省略するとシンプルだが旨みが落ちる</span></li>
-          <li><span class="ingredient-name">黒胡椒（粗びき）</span><span class="ingredient-qty">1少々（多め）</span></li>
-          <li><span class="ingredient-name">塩（茹で湯用）</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">ペコリーノの塩気があるため通常の半量（水2Lに対して5g）</span></li>
+              <li data-ingredient-row="a9c96b75-a5a9-4bd8-85b0-f4f06700d1a5"><span class="ingredient-name" data-ingredient-name>スパゲッティまたはパスタ・ミスタ（混合パスタ）</span><span class="ingredient-qty" data-ingredient-qty>320g</span><span class="ingredient-notes">パスタ・ミスタは食料庫の残り物を混ぜて使う伝統から来る</span><button type="button" class="substitution-trigger" data-substitution-trigger="a9c96b75-a5a9-4bd8-85b0-f4f06700d1a5"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="6e83fbf4-90ea-46a0-b893-6c24fac7565a"><span class="ingredient-name" data-ingredient-name>卵（全卵）</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">常温に戻したもの</span></li>
+          <li data-ingredient-row="f7f3b92d-c8ab-4465-b2d4-6f41c374e839"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">コクと乳化のために追加。全卵3個＋卵黄2個が基本</span></li>
+          <li data-ingredient-row="933da26f-15ab-49d3-98b1-5a51270b0539"><span class="ingredient-name" data-ingredient-name>ペコリーノ・ロマーノ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">細かくすりおろす。塩気が強いためパスタの茹で塩は少なめに</span><button type="button" class="substitution-trigger" data-substitution-trigger="933da26f-15ab-49d3-98b1-5a51270b0539"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4e1e7943-ffce-4896-a1f9-2d6040e7fe9f"><span class="ingredient-name" data-ingredient-name>ラルド（豚の背脂の塩漬け）またはストルット（豚の精製脂）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">コクと香りを出す。省略するとシンプルだが旨みが落ちる</span><button type="button" class="substitution-trigger" data-substitution-trigger="4e1e7943-ffce-4896-a1f9-2d6040e7fe9f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c9ee13e5-e3eb-4b04-aba6-ca74da150baa"><span class="ingredient-name" data-ingredient-name>黒胡椒（粗びき）</span><span class="ingredient-qty" data-ingredient-qty>1少々（多め）</span></li>
+          <li data-ingredient-row="abfa7bfd-222e-4efb-82b2-eeec9be027f1"><span class="ingredient-name" data-ingredient-name>塩（茹で湯用）</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">ペコリーノの塩気があるため通常の半量（水2Lに対して5g）</span></li>
               </ul>
             </section>
           </div>
@@ -259,6 +279,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"efa81477-cf5d-40c4-86f7-34f17380adc3","nameJa":"チーズと卵のパスタ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"a9c96b75-a5a9-4bd8-85b0-f4f06700d1a5","nameOriginal":"Spaghetti o pasta mista","nameJa":"スパゲッティまたはパスタ・ミスタ（混合パスタ）","nameEn":"Spaghetti or mixed pasta","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":"パスタ・ミスタは食料庫の残り物を混ぜて使う伝統から来る","substitutionOptions":[{"id":"7a8a57ef-2635-4760-9633-361766ffcd74","standardIngredientId":"a9c96b75-a5a9-4bd8-85b0-f4f06700d1a5","nameJa":"ペンネ","nameEn":"Penne","authenticityImpact":-5,"flavorImpact":"食感は変わるが味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"6e83fbf4-90ea-46a0-b893-6c24fac7565a","nameOriginal":"Uova intere","nameJa":"卵（全卵）","nameEn":"Whole eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"常温に戻したもの","substitutionOptions":[]},{"id":"f7f3b92d-c8ab-4465-b2d4-6f41c374e839","nameOriginal":"Tuorli","nameJa":"卵黄","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"コクと乳化のために追加。全卵3個＋卵黄2個が基本","substitutionOptions":[]},{"id":"933da26f-15ab-49d3-98b1-5a51270b0539","nameOriginal":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かくすりおろす。塩気が強いためパスタの茹で塩は少なめに","substitutionOptions":[{"id":"d0e38c6f-957d-4224-a7a4-62d102475ccb","standardIngredientId":"933da26f-15ab-49d3-98b1-5a51270b0539","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","authenticityImpact":-10,"flavorImpact":"ナポリ特有の鋭い塩気とコクが失われ、よりマイルドな仕上がりになる","textureImpact":null,"procedureChanges":["茹で塩を通常量に戻す"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"notes":"パルミジャーノ使用時は水2Lに対して20g（水1Lあたり10g）に戻す","action":"update","quantity":20,"targetNameJa":"塩（茹で湯用）"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"大鍋に水2Lを入れ、強火にかけて沸騰させる。パルミジャーノを使うため茹で塩は通常量の20g（水1Lあたり10g）にする。\n・沸騰したら塩を加え、スパゲッティ320gを茹でる\n・茹で汁をカップ1杯分（約200ml）取り置く","changeReason":"パルミジャーノはペコリーノより塩気が弱いため、茹で塩を通常量に戻す"}]}]},{"id":"4e1e7943-ffce-4896-a1f9-2d6040e7fe9f","nameOriginal":"Lardo o strutto","nameJa":"ラルド（豚の背脂の塩漬け）またはストルット（豚の精製脂）","nameEn":"Lardo or strutto (rendered pork fat)","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"コクと香りを出す。省略するとシンプルだが旨みが落ちる","substitutionOptions":[{"id":"0d0b9420-fcf4-4028-b4fd-a3a94c9f459f","standardIngredientId":"4e1e7943-ffce-4896-a1f9-2d6040e7fe9f","nameJa":"オリーブオイル","nameEn":"Olive oil","authenticityImpact":-10,"flavorImpact":"コクが大幅に落ちるが、ヴェジタリアン対応になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"c7ef4af6-60ef-4e9e-96e6-26e335db26e2","standardIngredientId":"4e1e7943-ffce-4896-a1f9-2d6040e7fe9f","nameJa":"バター","nameEn":"Butter","authenticityImpact":-10,"flavorImpact":"豚脂特有の旨みが失われ、乳製品のコクに変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c9ee13e5-e3eb-4b04-aba6-ca74da150baa","nameOriginal":"Pepe nero","nameJa":"黒胡椒（粗びき）","nameEn":"Freshly ground black pepper","quantity":1,"unit":"少々（多め）","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"abfa7bfd-222e-4efb-82b2-eeec9be027f1","nameOriginal":"Sale","nameJa":"塩（茹で湯用）","nameEn":"Salt","quantity":5,"unit":"g","role":"technique","scalingBehavior":null,"notes":"ペコリーノの塩気があるため通常の半量（水2Lに対して5g）","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"大鍋に水2Lを入れ、強火にかけて沸騰させる。ペコリーノを使うため茹で塩は5g（水1Lあたり2.5g）と控えめにする。\n・沸騰したら塩を加え、スパゲッティ320gを茹でる\n・茹で汁をカップ1杯分（約200ml）取り置く","title":"材料を合わせる","actionItems":["大鍋に水2Lを入れ、強火にかけて沸騰させる。","ペコリーノを使うため茹で塩は5g（水1Lあたり2.5g）と控えめにする。","沸騰したら塩を加え、スパゲッティ320gを茹でる","茹で汁をカップ1杯分（約200ml）取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにラルド（またはストルット）30gを入れて中火にかけ、脂が透明に溶けたら弱火にして1〜2分かけて香りを引き出す。焦がさないよう注意する。","title":"材料を合わせる","actionItems":["フライパンにラルド（またはストルット）30gを入れて中火にかけ、脂が透明に溶けたら弱火にして1〜2分かけて香りを引き出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["焦がさないよう注意する。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（パスタが茹でる間に）ボウルに全卵3個・卵黄2個を割り入れ、すりおろしたペコリーノ80gと粗びき黒胡椒を加えてよく混ぜる。茹で汁大さじ2を加えてソースをのばす（全体が均一なクリーム状になるまで混ぜる）。","title":"材料を準備する","actionItems":["茹で汁大さじ2を加えてソースをのばす（全体が均一なクリーム状になるまで混ぜる）。"],"parallelItems":["（パスタが茹でる間に）ボウルに全卵3個・卵黄2個を割り入れ、すりおろしたペコリーノ80gと粗びき黒胡椒を加えてよく混ぜる。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンの火を止め、アルデンテのスパゲッティをフライパンに移す。卵ソースを加え、トングで素早く和える。フライパンの余熱とパスタの熱だけでソースをクリーミーに仕上げる。卵が固まり始めたら茹で汁を大さじ1ずつ加えて温度を下げながら濃度を調整する（目標: 卵を固めずクリーミーな状態）。","title":"仕上げにまとめる","actionItems":["卵ソースを加え、トングで素早く和える。","フライパンの余熱とパスタの熱だけでソースをクリーミーに仕上げる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["フライパンの火を止め、アルデンテのスパゲッティをフライパンに移す。","卵が固まり始めたら茹で汁を大さじ1ずつ加えて温度を下げながら濃度を調整する（目標: 卵を固めずクリーミーな状態）。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"皿に盛り、ペコリーノと粗びき黒胡椒をたっぷりかけて仕上げる。ソースが底に溜まらず、パスタ全体を均一にコーティングしている状態が完成の目安。","title":"材料を合わせる","actionItems":["皿に盛り、ペコリーノと粗びき黒胡椒をたっぷりかけて仕上げる。"],"parallelItems":[],"completionCriteria":["ソースが底に溜まらず、パスタ全体を均一にコーティングしている状態が完成の目安。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

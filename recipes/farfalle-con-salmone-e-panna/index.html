@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ミラノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ファルファッレ（蝶々型パスタ）</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">スモークサーモン</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">ひと口大にちぎる。細かく刻みすぎない</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">万能ねぎまたはポロねぎ（白い部分）</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">斜め薄切り</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">20g</span></li>
-          <li><span class="ingredient-name">レモンの皮（国産・ノーワックス）</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">ディル（生）</span><span class="ingredient-qty">1束</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少量</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">ソース調味用・パスタ茹で水用（各少量）</span></li>
+              <li data-ingredient-row="0f4b1c88-98e1-4391-9353-ae1a5c80458d"><span class="ingredient-name" data-ingredient-name>ファルファッレ（蝶々型パスタ）</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="8142b6cb-f386-4dcf-bf47-b88b9c567959"><span class="ingredient-name" data-ingredient-name>スモークサーモン</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">ひと口大にちぎる。細かく刻みすぎない</span><button type="button" class="substitution-trigger" data-substitution-trigger="8142b6cb-f386-4dcf-bf47-b88b9c567959"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2189fa7f-004f-4370-89db-268503609b5b"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="2189fa7f-004f-4370-89db-268503609b5b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="12b96fc0-82ed-4162-bdcf-a9b47b491867"><span class="ingredient-name" data-ingredient-name>万能ねぎまたはポロねぎ（白い部分）</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">斜め薄切り</span></li>
+          <li data-ingredient-row="473fc487-905f-4eb2-93ca-18db68f39a16"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="ddc3e250-8699-435c-8472-4864aaa1a7cc"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
+          <li data-ingredient-row="2ea80e23-778e-4c79-849d-ca1aa077c195"><span class="ingredient-name" data-ingredient-name>レモンの皮（国産・ノーワックス）</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">白いワタを避けて表皮だけをすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="2ea80e23-778e-4c79-849d-ca1aa077c195"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="09992f95-df22-4f7a-a9b5-bc7843d79ef9"><span class="ingredient-name" data-ingredient-name>ディル（生）</span><span class="ingredient-qty" data-ingredient-qty>1束</span><button type="button" class="substitution-trigger" data-substitution-trigger="09992f95-df22-4f7a-a9b5-bc7843d79ef9"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e0ba2234-39e1-4712-ba1e-f5fd57d73559"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
+          <li data-ingredient-row="b3276676-040c-48db-9b43-05bac87af739"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">ソース調味用・パスタ茹で水用（各少量）</span></li>
               </ul>
             </section>
           </div>
@@ -343,6 +363,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"3b75bc68-8a32-4079-b2e8-cfb79c02dacc","nameJa":"サーモンクリームのファルファッレ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0f4b1c88-98e1-4391-9353-ae1a5c80458d","nameOriginal":"Farfalle","nameJa":"ファルファッレ（蝶々型パスタ）","nameEn":"Farfalle","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8142b6cb-f386-4dcf-bf47-b88b9c567959","nameOriginal":"Salmone affumicato","nameJa":"スモークサーモン","nameEn":"Smoked salmon","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ひと口大にちぎる。細かく刻みすぎない","substitutionOptions":[{"id":"36a883a1-c6f3-462e-a0d5-0b487223a8a2","standardIngredientId":"8142b6cb-f386-4dcf-bf47-b88b9c567959","nameJa":"スモークマス（ニジマス燻製）","nameEn":"Smoked trout","authenticityImpact":-5,"flavorImpact":"風味はやや淡くなるが同様に使える","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2189fa7f-004f-4370-89db-268503609b5b","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"281d9327-1fcc-4c75-9fbc-0306697775fe","standardIngredientId":"2189fa7f-004f-4370-89db-268503609b5b","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-10,"flavorImpact":"乳化感が落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"12b96fc0-82ed-4162-bdcf-a9b47b491867","nameOriginal":"Cipollotto","nameJa":"万能ねぎまたはポロねぎ（白い部分）","nameEn":"Spring onion or leek, white part","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":"斜め薄切り","substitutionOptions":[]},{"id":"473fc487-905f-4eb2-93ca-18db68f39a16","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ddc3e250-8699-435c-8472-4864aaa1a7cc","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2ea80e23-778e-4c79-849d-ca1aa077c195","nameOriginal":"Scorza di limone","nameJa":"レモンの皮（国産・ノーワックス）","nameEn":"Grated unwaxed lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"白いワタを避けて表皮だけをすりおろす","substitutionOptions":[{"id":"6da42bbf-0f4d-480f-a166-13decabbc9d7","standardIngredientId":"2ea80e23-778e-4c79-849d-ca1aa077c195","nameJa":"ライムの皮","nameEn":"Grated lime peel","authenticityImpact":-5,"flavorImpact":"酸味が少し強くなる","textureImpact":null,"procedureChanges":["国産・ノーワックスのライムを使い、白いワタを避けて表皮だけをすりおろす"],"affectedStepNumbers":[3,6],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"ライムの皮をすりおろす","action":"replace","stepNumber":3,"actionItems":["ライムの皮は白いワタを避け、表皮だけをすりおろす。"],"instruction":"ライムの皮は国産・ノーワックスのものを使い、白いワタを避けて表皮だけをすりおろす。","changeReason":"置換後の柑橘に合わせ、下処理をライムに変更する","completionCriteria":["すりおろしたら完了。"]},{"title":"クリームを煮詰める","action":"replace","stepNumber":6,"actionItems":["生クリーム200mlを加えて中弱火で3〜4分煮詰める。","ライムの皮の半量・塩小さじ1/4・黒胡椒3〜4回挽きを加えて調味する（サーモンの塩分があるので塩は控えめに）。"],"instruction":"（煮詰める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。生クリーム200mlを加えて中弱火で3〜4分煮詰める。ライムの皮の半量・塩小さじ1/4・黒胡椒3〜4回挽きを加えて調味する（サーモンの塩分があるので塩は控えめに）。","changeReason":"ソースに加える柑橘の皮をライムに揃える","completionCriteria":["3〜4分煮詰めて調味が整ったら完了。"]}]}]},{"id":"09992f95-df22-4f7a-a9b5-bc7843d79ef9","nameOriginal":"Aneto fresco","nameJa":"ディル（生）","nameEn":"Fresh dill","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"a6aa0c94-df0c-4784-824d-3af5ee6a2f38","standardIngredientId":"09992f95-df22-4f7a-a9b5-bc7843d79ef9","nameJa":"乾燥ディル小さじ1","nameEn":"Dried dill, 1 tsp","authenticityImpact":-5,"flavorImpact":"香りがやや弱くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e0ba2234-39e1-4712-ba1e-f5fd57d73559","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b3276676-040c-48db-9b43-05bac87af739","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ソース調味用・パスタ茹で水用（各少量）","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"スモークサーモンを1.5〜2cm幅にちぎる（包丁で細かく刻まない——食感が残るサイズが正解）。","title":"サーモンをちぎる","actionItems":["スモークサーモンを1.5〜2cm幅にちぎる（包丁で細かく刻まない——食感が残るサイズが正解）。"],"parallelItems":[],"completionCriteria":["ちぎり終えたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"万能ねぎの白い部分と緑の部分を分けて斜め薄切りにする。","title":"ねぎを切る","actionItems":["万能ねぎの白い部分と緑の部分を分けて斜め薄切りにする。"],"parallelItems":[],"completionCriteria":["切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"レモンの皮は白いワタを避け、表皮だけをすりおろす。","title":"レモンの皮をすりおろす","actionItems":["レモンの皮は表皮だけをすりおろす。"],"parallelItems":[],"completionCriteria":["すりおろしたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにバター20gを弱火で溶かし、万能ねぎの白い部分を2〜3分炒める。しんなりして甘みが出たら次のステップへ。","title":"ねぎを炒める","actionItems":["フライパンにバター20gを弱火で溶かし、万能ねぎの白い部分を2〜3分炒める。"],"parallelItems":[],"completionCriteria":["しんなりして甘みが出たら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"白ワイン80mlを加えて強火でアルコールを飛ばす（約1分）。","title":"ワインを加える","actionItems":["白ワイン80mlを加えて強火でアルコールを飛ばす（約1分）。"],"parallelItems":[],"completionCriteria":["アルコールが飛んだら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"（煮詰める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。生クリーム200mlを加えて中弱火で3〜4分煮詰める。レモンの皮の半量・塩小さじ1/4・黒胡椒3〜4回挽きを加えて調味する（サーモンの塩分があるので塩は控えめに）。","title":"クリームを煮詰める","actionItems":["生クリーム200mlを加えて中弱火で3〜4分煮詰める。","レモンの皮の半量・塩小さじ1/4・黒胡椒3〜4回挽きを加えて調味する（サーモンの塩分があるので塩は控えめに）。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["3〜4分煮詰めて調味が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"ファルファッレを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["ファルファッレを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"ファルファッレをアルデンテで引き上げてフライパンに移す。茹で汁大さじ1〜2を加えて1〜2分絡める。","title":"パスタを絡める","actionItems":["ファルファッレをアルデンテで引き上げてフライパンに移す。","茹で汁大さじ1〜2を加えて1〜2分絡める。"],"parallelItems":[],"completionCriteria":["全体にソースが絡んだら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"火を止め、スモークサーモンを加えて余熱で10〜15秒だけさっくりと混ぜる。加熱しすぎるとサーモンが縮んで固くなる——余熱が全て。","title":"サーモンを加える","actionItems":["火を止め、スモークサーモンを加えて余熱で10〜15秒だけさっくりと混ぜる。"],"parallelItems":[],"completionCriteria":["10〜15秒で混ぜたら完了。"],"cautionItems":["加熱しすぎるとサーモンが縮んで固くなる——余熱が全て。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":10,"instruction":"万能ねぎの緑の部分・ディルをちぎって散らし、黒胡椒をひいて仕上げる。","title":"ハーブと黒胡椒を散らす","actionItems":["万能ねぎの緑の部分・ディルをちぎって散らす。","黒胡椒をひいて仕上げる。"],"parallelItems":[],"completionCriteria":["トッピングをかけたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

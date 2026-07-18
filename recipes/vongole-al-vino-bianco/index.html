@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>3分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,14 +94,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">あさり</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">つぶす</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">8枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">オリーブオイル（EVO）</span><span class="ingredient-qty">40ml</span></li>
+              <li data-ingredient-row="b3f33cd1-eec9-4dc5-bc83-bd2639c1cb23"><span class="ingredient-name" data-ingredient-name>あさり</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする</span></li>
+          <li data-ingredient-row="fd0abd84-3f57-4699-8d79-b94122997f7a"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">つぶす</span></li>
+          <li data-ingredient-row="4df4fc8d-c3f3-4613-9012-f8c3c1801835"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="78c35a7d-fe0d-41cf-99e5-f9e7d7102ae6"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>8枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="f4547f78-9928-46e5-a18a-b559d8f3ecab"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
+          <li data-ingredient-row="919f1660-04d4-4e49-baf2-3c2fe6174f0d"><span class="ingredient-name" data-ingredient-name>オリーブオイル（EVO）</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
               </ul>
             </section>
           </div>
@@ -260,6 +280,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"ce051694-d421-46e6-b1e0-51144a07a535","nameJa":"あさりの白ワイン蒸し","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"b3f33cd1-eec9-4dc5-bc83-bd2639c1cb23","nameOriginal":"Vongole","nameJa":"あさり","nameEn":"Clams","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする","substitutionOptions":[]},{"id":"fd0abd84-3f57-4699-8d79-b94122997f7a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"つぶす","substitutionOptions":[]},{"id":"4df4fc8d-c3f3-4613-9012-f8c3c1801835","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"78c35a7d-fe0d-41cf-99e5-f9e7d7102ae6","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":8,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"f4547f78-9928-46e5-a18a-b559d8f3ecab","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"919f1660-04d4-4e49-baf2-3c2fe6174f0d","nameOriginal":"Olio d'oliva EVO","nameJa":"オリーブオイル（EVO）","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"あさり600gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。アルミホイルなどで覆い、暗所で2時間砂抜きする。","title":"材料を合わせる","actionItems":["アルミホイルなどで覆い、暗所で2時間砂抜きする。"],"parallelItems":[],"completionCriteria":["あさり600gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"・砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る\n・割れた貝や口が開いたまま閉じない貝を除く\n・にんにく3片を包丁の腹でつぶす\n・イタリアンパセリ8枝をみじん切りにする","title":"砂抜きする","actionItems":["砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る","割れた貝や口が開いたまま閉じない貝を除く","にんにく3片を包丁の腹でつぶす","イタリアンパセリ8枝をみじん切りにする"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにオリーブオイル40mlを中火で熱し、つぶしたにんにく・唐辛子を入れて香りが出るまで炒める（1〜2分）。","title":"香味を炒める","actionItems":["フライパンにオリーブオイル40mlを中火で熱し、つぶしたにんにく・唐辛子を入れて香りが出るまで炒める（1〜2分）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"あさりを加えて白ワインを注ぎ、蓋をして強火で4〜5分蒸す。貝が開き、煮汁が白く濁ったら次へ。","title":"蒸す","actionItems":["あさりを加えて白ワインを注ぎ、蓋をして強火で4〜5分蒸す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["貝が開き、煮汁が白く濁ったら次へ。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"貝がすべて開いたらイタリアンパセリを散らし、火を止める。開かない貝は除く。","title":"仕上げにまとめる","actionItems":["開かない貝は除く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["貝がすべて開いたらイタリアンパセリを散らし、火を止める。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"煮汁ごと深皿に盛り、パンと一緒に供する。","title":"煮る","actionItems":["煮汁ごと深皿に盛り、パンと一緒に供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

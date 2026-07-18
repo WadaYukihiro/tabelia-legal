@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ソレント</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">パッケリまたはリガトーニ</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">水牛モッツァレッラ</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">1.5cm角に切り、水気をよく切っておく</span></li>
-          <li><span class="ingredient-name">サンマルツァーノ系ホールトマト缶（または完熟生トマト）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">サンマルツァーノ系が理想。缶または完熟生トマト</span></li>
-          <li><span class="ingredient-name">生バジル</span><span class="ingredient-qty">1束</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">軽くつぶす（皮をむいて）</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">45ml</span><span class="ingredient-notes">ソース炒め用（大さじ3）</span></li>
+              <li data-ingredient-row="0e6ad610-9bd2-4fcf-a722-9de60d16f0d8"><span class="ingredient-name" data-ingredient-name>パッケリまたはリガトーニ</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="9fa31820-314e-49d8-9b6f-40b3f189865c"><span class="ingredient-name" data-ingredient-name>水牛モッツァレッラ</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">1.5cm角に切り、水気をよく切っておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="9fa31820-314e-49d8-9b6f-40b3f189865c"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e12e219d-1f9c-4409-b8e2-08d2c8ded73f"><span class="ingredient-name" data-ingredient-name>サンマルツァーノ系ホールトマト缶（または完熟生トマト）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">サンマルツァーノ系が理想。缶または完熟生トマト</span><button type="button" class="substitution-trigger" data-substitution-trigger="e12e219d-1f9c-4409-b8e2-08d2c8ded73f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d56c7455-eae7-4dcd-95d9-ed596778f048"><span class="ingredient-name" data-ingredient-name>生バジル</span><span class="ingredient-qty" data-ingredient-qty>1束</span></li>
+          <li data-ingredient-row="821dc9d4-2ee7-4ab9-b5e8-43851da723c8"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">軽くつぶす（皮をむいて）</span></li>
+          <li data-ingredient-row="c6038878-a2b8-4803-8ff4-79f6aaf12734"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="22e40dcc-cee9-472e-b0fa-2b83e347bba2"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span><span class="ingredient-notes">ソース炒め用（大さじ3）</span></li>
               </ul>
             </section>
           </div>
@@ -294,6 +314,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4f2e8c80-a464-42ba-bd6c-c55309fd1b47","nameJa":"ソレント風トマトとモッツァレラのパスタ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0e6ad610-9bd2-4fcf-a722-9de60d16f0d8","nameOriginal":"Paccheri o Rigatoni","nameJa":"パッケリまたはリガトーニ","nameEn":"Paccheri or rigatoni","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9fa31820-314e-49d8-9b6f-40b3f189865c","nameOriginal":"Mozzarella di bufala","nameJa":"水牛モッツァレッラ","nameEn":"Buffalo mozzarella","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1.5cm角に切り、水気をよく切っておく","substitutionOptions":[{"id":"82ac0463-f918-47ad-ba47-c35f1a5c1431","standardIngredientId":"9fa31820-314e-49d8-9b6f-40b3f189865c","nameJa":"牛乳モッツァレッラ（フィオル・ディ・ラッテ）","nameEn":"Fior di latte mozzarella","authenticityImpact":-10,"flavorImpact":"水牛の濃厚さと独特の酸味が失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e12e219d-1f9c-4409-b8e2-08d2c8ded73f","nameOriginal":"Pomodori pelati","nameJa":"サンマルツァーノ系ホールトマト缶（または完熟生トマト）","nameEn":"San Marzano peeled tomatoes or fresh ripe tomatoes","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"サンマルツァーノ系が理想。缶または完熟生トマト","substitutionOptions":[{"id":"e7619be0-d1c9-49c6-9a4f-67db41085f81","standardIngredientId":"e12e219d-1f9c-4409-b8e2-08d2c8ded73f","nameJa":"一般的なホールトマト缶","nameEn":"Regular canned tomatoes","authenticityImpact":-10,"flavorImpact":"酸味と甘みのバランスが変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d56c7455-eae7-4dcd-95d9-ed596778f048","nameOriginal":"Basilico fresco","nameJa":"生バジル","nameEn":"Fresh basil","quantity":1,"unit":"束","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"821dc9d4-2ee7-4ab9-b5e8-43851da723c8","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"軽くつぶす（皮をむいて）","substitutionOptions":[]},{"id":"c6038878-a2b8-4803-8ff4-79f6aaf12734","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"22e40dcc-cee9-472e-b0fa-2b83e347bba2","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"ソース炒め用（大さじ3）","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"モッツァレッラ300gを1.5cm角に切り、ザルに入れて水気をよく切っておく（15分程度）。","title":"モッツァレッラを切って水切りする","actionItems":["モッツァレッラ300gを1.5cm角に切る。","ザルに入れて15分程度水気を切る。"],"parallelItems":[],"completionCriteria":["モッツァレッラの水気が切れた。"],"cautionItems":["水気をしっかり切ること。水分が多いと焼いたときに水っぽくなる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"（ソースを作る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。フライパンにオリーブオイル大さじ3を入れ、にんにく2片（つぶしたもの）を弱火で香りを出す。にんにくが薄く色づいたら取り出し、トマト600gを加えて中火で15分煮詰める。\n・バジルの半量を加えて塩で調味し、シンプルなポモドーロソースを作る","title":"トマトソースを作る","actionItems":["フライパンにオリーブオイル大さじ3を入れにんにく2片（つぶしたもの）を弱火で香りを出す。","にんにくが薄く色づいたら取り出す。","トマト600gを加えて中火で15分煮詰める。","バジルの半量を加えて塩で調味する。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["トマトソースが煮詰まり、バジルと塩で調味できた。"],"cautionItems":["にんにくを焦がさないこと。"],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パスタ400gを沸かしておいた塩湯に入れ、表示より2分短めに茹でる（al dente よりかため）。\n・ソースと和える","title":"パスタを茹でてソースと和える","actionItems":["パスタ400gを塩湯に入れ表示より2分短めに茹でる。","ソースと和える。"],"parallelItems":[],"completionCriteria":["パスタがやや固めに茹で上がりソースと和えられた。"],"cautionItems":["表示より2分短め。オーブンでさらに火が通る。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"耐熱皿にパスタを移し、水気を切ったモッツァレッラとパルミジャーノ40gを散らし、残りのバジルを乗せる。","title":"耐熱皿に並べる","actionItems":["耐熱皿にパスタを移す。","水気を切ったモッツァレッラとパルミジャーノ40gを散らす。","残りのバジルを乗せる。"],"parallelItems":[],"completionCriteria":["耐熱皿にパスタ・モッツァレッラ・バジルが並んだ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"200℃に予熱したオーブンで10〜15分焼く。モッツァレッラが溶けて焦げ目がつけば完成。すぐに提供する。","title":"焼き上げる","actionItems":["200℃に予熱したオーブンで10〜15分焼く。"],"parallelItems":[],"completionCriteria":["モッツァレッラが溶けて焦げ目がついた。"],"cautionItems":["焦げすぎに注意。チーズが溶けた時点で確認する。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

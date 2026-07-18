@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>12分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ミラノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">カルナローリ米</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">ポルチーニ茸（乾燥）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">温水400mlで30分戻す。戻し汁は漉してブロードに加える</span></li>
-          <li><span class="ingredient-name">野菜または肉のブロード</span><span class="ingredient-qty">1000ml</span><span class="ingredient-notes">ポルチーニ戻し汁と合わせて温かく保つ</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">軽くつぶす（香りをバターに移すため）</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">マンテカトゥーラ用に半量を冷たいまま取り置く</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り。仕上げに散らす</span></li>
+              <li data-ingredient-row="9b70e164-a701-4cbb-a1bd-e4251801ba96"><span class="ingredient-name" data-ingredient-name>カルナローリ米</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="25c54637-e9ef-4574-9adc-52c6cce5a6ab"><span class="ingredient-name" data-ingredient-name>ポルチーニ茸（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">温水400mlで30分戻す。戻し汁は漉してブロードに加える</span><button type="button" class="substitution-trigger" data-substitution-trigger="25c54637-e9ef-4574-9adc-52c6cce5a6ab"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2b68cb7f-00d6-4b5d-8eba-b032cfa89957"><span class="ingredient-name" data-ingredient-name>野菜または肉のブロード</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span><span class="ingredient-notes">ポルチーニ戻し汁と合わせて温かく保つ</span></li>
+          <li data-ingredient-row="5bcbda98-8071-4de8-8d5e-1445725435e9"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">軽くつぶす（香りをバターに移すため）</span></li>
+          <li data-ingredient-row="9e4b7b15-bf1e-4651-aad5-d50b5631dec3"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="1cd1705e-5589-47f1-9354-4967d9ad0e36"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="268600b2-e220-495c-b68c-a67a9a087946"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">マンテカトゥーラ用に半量を冷たいまま取り置く</span></li>
+          <li data-ingredient-row="d82bd763-d5bd-41ce-ae5d-732c227d644d"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="8df3232c-4381-4930-a1a7-80e84b135b02"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り。仕上げに散らす</span></li>
               </ul>
             </section>
           </div>
@@ -296,6 +316,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c9dafab9-a329-4209-86c6-c879ab8c3ec6","nameJa":"ポルチーニ茸のリゾット","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"9b70e164-a701-4cbb-a1bd-e4251801ba96","nameOriginal":"Riso Carnaroli","nameJa":"カルナローリ米","nameEn":"Carnaroli rice","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"25c54637-e9ef-4574-9adc-52c6cce5a6ab","nameOriginal":"Porcini secchi","nameJa":"ポルチーニ茸（乾燥）","nameEn":"Dried porcini mushrooms","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"温水400mlで30分戻す。戻し汁は漉してブロードに加える","substitutionOptions":[{"id":"33cbc0e4-ff18-46c7-976c-1ac068c5e292","standardIngredientId":"25c54637-e9ef-4574-9adc-52c6cce5a6ab","nameJa":"生ポルチーニ","nameEn":"Fresh porcini","authenticityImpact":0,"flavorImpact":"旬の時期は生が最高。200g使用し戻し汁は不要","textureImpact":null,"procedureChanges":["戻し工程不要。汚れを落として薄切りにし、ブロードは戻し汁を加えず温めて使う"],"affectedStepNumbers":[1,2,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"汚れを乾いた刷毛で落とし、石づきを薄く削って5mm厚に薄切り","action":"update","nameEn":"Fresh porcini mushrooms","nameJa":"生ポルチーニ","quantity":200,"targetNameJa":"ポルチーニ茸（乾燥）"},{"notes":"温かく保つ","action":"update","targetNameJa":"野菜または肉のブロード"}],"stepPatches":[{"action":"remove","stepNumber":1,"changeReason":"生ポルチーニは戻す必要がなく、戻し汁も出ないため"},{"title":"生ポルチーニを炒める","action":"replace","stepNumber":2,"actionItems":["生ポルチーニ200gの泥を乾いた刷毛で落とす。","石づきを薄く削って5mm厚に薄切りにする。","フライパンにバター40gとにんにく1片（つぶしたもの）を入れ中火で熱する。","ポルチーニを強火で3〜4分炒める。","表面がきつね色になったら塩胡椒で調味し、みじん切りパセリを加えて取り出す（にんにくも取り出す）。"],"instruction":"生ポルチーニ200gは泥を乾いた刷毛で落とし、石づきを薄く削って5mm厚に薄切りにする。フライパンにバター40gとにんにく1片（つぶしたもの）を入れ中火で熱し、ポルチーニを強火で3〜4分炒める。表面がきつね色になったら塩胡椒で調味し、みじん切りパセリを加えて取り出す（にんにくは取り出す）。","cautionItems":["ポルチーニは水洗いせず、乾いた刷毛で汚れを落とす。強火で素早く炒め、弱火で水分を出しすぎない。"],"changeReason":"生ポルチーニは戻し汁を切る工程がなく、汚れ落としと薄切りから始めるため","completionCriteria":["ポルチーニの表面がきつね色になり、香ばしい香りがしたら完了。"]},{"title":"ブロードを加えながら炊く","action":"replace","stepNumber":4,"actionItems":["温かいブロードをお玉1杯ずつ加えかき混ぜながら約18分炊く。"],"instruction":"温かいブロードをお玉1杯ずつ加え、かき混ぜながら約18分炊く。常にブロードを温かく保つ。","cautionItems":["ブロードは常に温かく保つこと。冷たいブロードは炊きを妨げる。"],"changeReason":"生ポルチーニでは戻し汁をブロードに加えないため","completionCriteria":["米がアルデンテになった。"]}]}]},{"id":"2b68cb7f-00d6-4b5d-8eba-b032cfa89957","nameOriginal":"Brodo di verdure o carne","nameJa":"野菜または肉のブロード","nameEn":"Vegetable or meat broth","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"ポルチーニ戻し汁と合わせて温かく保つ","substitutionOptions":[]},{"id":"5bcbda98-8071-4de8-8d5e-1445725435e9","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"軽くつぶす（香りをバターに移すため）","substitutionOptions":[]},{"id":"9e4b7b15-bf1e-4651-aad5-d50b5631dec3","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"1cd1705e-5589-47f1-9354-4967d9ad0e36","nameOriginal":"Vino bianco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"268600b2-e220-495c-b68c-a67a9a087946","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"マンテカトゥーラ用に半量を冷たいまま取り置く","substitutionOptions":[]},{"id":"d82bd763-d5bd-41ce-ae5d-732c227d644d","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8df3232c-4381-4930-a1a7-80e84b135b02","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":"みじん切り。仕上げに散らす","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"乾燥ポルチーニ30gを温水400mlに30分浸けて戻す。戻し汁を細かい目のザルで漉し、ブロードと合わせて温かく保つ。","title":"ポルチーニを戻す","actionItems":["乾燥ポルチーニ30gを温水400mlに30分浸けて戻す。","戻し汁を細かい目のザルで漉す。","ブロードと合わせて温かく保つ。"],"parallelItems":[],"completionCriteria":["ポルチーニが柔らかく戻り、戻し汁が漉せた。"],"cautionItems":["戻し汁を漉さないと砂が混じる。細かい目のザルを使うこと。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにバター40gとにんにく1片（つぶしたもの）を入れ中火で熱し、水気を切ったポルチーニを強火で3〜4分炒める。表面がきつね色になったら塩胡椒で調味し、みじん切りパセリを加えて取り出す（にんにくは取り出す）。","title":"ポルチーニを炒める","actionItems":["フライパンにバター40gとにんにく1片（つぶしたもの）を中火で熱する。","水気を切ったポルチーニを強火で3〜4分炒める。","表面がきつね色になったら塩胡椒で調味しみじん切りパセリを加えて取り出す（にんにくも取り出す）。"],"parallelItems":[],"completionCriteria":["ポルチーニの表面がきつね色になり、香ばしい香りがした。"],"cautionItems":["ポルチーニは強火で素早く炒めること。弱火だと水が出て煮えてしまう。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鍋でバター40gを溶かし、みじん切り玉ねぎをしんなりするまで中火で6分炒める。カルナローリ米320gを加えて中火で2分炒る。白ワイン100mlを加えてアルコールを飛ばす（2〜3分）。","title":"玉ねぎを炒めて米を加える","actionItems":["鍋でバター40gを溶かし玉ねぎをしんなりするまで中火で6分炒める。","カルナローリ米320gを加えて中火で2分炒る。","白ワイン100mlを加えてアルコールを飛ばす（2〜3分）。"],"parallelItems":[],"completionCriteria":["アルコールの香りが飛んだ。"],"cautionItems":[],"tipItems":[],"durationMinutes":11,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"温かいブロード（ポルチーニ戻し汁入り）をお玉1杯ずつ加え、かき混ぜながら約18分炊く。常にブロードを温かく保つ。","title":"ブロードを加えながら炊く","actionItems":["温かいブロードをお玉1杯ずつ加えかき混ぜながら約18分炊く。"],"parallelItems":[],"completionCriteria":["米がアルデンテになった。"],"cautionItems":["ブロードは常に温かく保つこと。冷たいブロードは炊きを妨げる。"],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"米がアルデンテになったら炒めたポルチーニを戻し入れ、火を止めて冷たいバターとパルミジャーノ60gでマンテカトゥーラ（乳化）する。皿に盛り、パセリを散らして完成。","title":"ポルチーニを戻してマンテカトゥーラ","actionItems":["炒めたポルチーニを戻し入れる。","火を止めて冷たいバターとパルミジャーノ60gでマンテカトゥーラする。","皿に盛りパセリを散らす。"],"parallelItems":[],"completionCriteria":["バターとチーズが乳化してクリーミーなリゾットになった。"],"cautionItems":["バターは冷たいものを使うこと。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

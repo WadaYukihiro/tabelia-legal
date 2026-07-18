@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>32分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>1時間30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,14 +94,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">豚ロース（かたまり）</span><span class="ingredient-qty">900g</span><span class="ingredient-notes">タコ糸で縛って形を整える</span></li>
-          <li><span class="ingredient-name">全脂牛乳</span><span class="ingredient-qty">800ml</span><span class="ingredient-notes">量は肉が7割浸かる程度。鍋の大きさで調整</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">皮付きのまま使う</span></li>
-          <li><span class="ingredient-name">セージ（生）</span><span class="ingredient-qty">8枚</span></li>
-          <li><span class="ingredient-name">ナツメグ</span><span class="ingredient-qty">1つまみ</span><span class="ingredient-notes">すりおろして使う</span></li>
+              <li data-ingredient-row="1901a32d-9a36-4e76-8174-33e6c2f2d35e"><span class="ingredient-name" data-ingredient-name>豚ロース（かたまり）</span><span class="ingredient-qty" data-ingredient-qty>900g</span><span class="ingredient-notes">タコ糸で縛って形を整える</span><button type="button" class="substitution-trigger" data-substitution-trigger="1901a32d-9a36-4e76-8174-33e6c2f2d35e"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f544c550-aab0-4043-ba89-39eaa7b30899"><span class="ingredient-name" data-ingredient-name>全脂牛乳</span><span class="ingredient-qty" data-ingredient-qty>800ml</span><span class="ingredient-notes">量は肉が7割浸かる程度。鍋の大きさで調整</span></li>
+          <li data-ingredient-row="dbf35ccd-8997-4df8-bfb0-292e560c97fd"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="18a8142b-7b6a-4d72-a8e7-690d4e2dbf59"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">皮付きのまま使う</span></li>
+          <li data-ingredient-row="e0ccb0a7-f1a8-4825-8120-f6d3e016ccee"><span class="ingredient-name" data-ingredient-name>セージ（生）</span><span class="ingredient-qty" data-ingredient-qty>8枚</span></li>
+          <li data-ingredient-row="12c1c76e-9291-4ada-80f5-ce73184f469a"><span class="ingredient-name" data-ingredient-name>ナツメグ</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span><span class="ingredient-notes">すりおろして使う</span></li>
               </ul>
             </section>
           </div>
@@ -270,6 +290,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"14a255af-25d0-4010-b5a9-0b5deb9a1b4c","nameJa":"豚ロースのミルク煮込み","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"1901a32d-9a36-4e76-8174-33e6c2f2d35e","nameOriginal":"Lonza di maiale","nameJa":"豚ロース（かたまり）","nameEn":"Pork loin roast","quantity":900,"unit":"g","role":"essential","scalingBehavior":null,"notes":"タコ糸で縛って形を整える","substitutionOptions":[{"id":"b92a6a5d-65fe-4ebd-90dc-395858f5e85f","standardIngredientId":"1901a32d-9a36-4e76-8174-33e6c2f2d35e","nameJa":"豚肩ロース（かたまり）","nameEn":"Pork shoulder roast","authenticityImpact":-5,"flavorImpact":"脂が多くジューシーになる。ミルクの吸収が良い","textureImpact":null,"procedureChanges":["煮込み時間を110分に延長"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"肩ロースをミルクで長めに煮込む","action":"replace","stepNumber":4,"actionItems":["全脂牛乳800mlを注ぐ。","沸騰したら弱火にして蓋をずらして乗せ、110分煮込む。","途中で肉を数回裏返す。"],"instruction":"牛乳を注ぐ。沸騰したら弱火にして蓋をずらして乗せ、110分煮込む。途中で肉を数回裏返す。牛乳が分離してカード状になるのは正常。","cautionItems":["牛乳が分離してカード状になるのは正常。捨てないこと。"],"changeReason":"豚肩ロースはロースより筋繊維と脂が多く、柔らかくするため長めの煮込みが必要なため","completionCriteria":["豚肩ロースに完全に火が通り、竹串が抵抗少なく入り、牛乳が分離してカード状になれば次へ。"]}]}]},{"id":"f544c550-aab0-4043-ba89-39eaa7b30899","nameOriginal":"Latte intero","nameJa":"全脂牛乳","nameEn":"Whole milk","quantity":800,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"量は肉が7割浸かる程度。鍋の大きさで調整","substitutionOptions":[]},{"id":"dbf35ccd-8997-4df8-bfb0-292e560c97fd","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"18a8142b-7b6a-4d72-a8e7-690d4e2dbf59","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"皮付きのまま使う","substitutionOptions":[]},{"id":"e0ccb0a7-f1a8-4825-8120-f6d3e016ccee","nameOriginal":"Salvia","nameJa":"セージ（生）","nameEn":"Fresh sage leaves","quantity":8,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"12c1c76e-9291-4ada-80f5-ce73184f469a","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":"すりおろして使う","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"豚肉に塩・こしょうをして全体になじませる。タコ糸で縛って丸い形にする。","title":"豚肉を下準備する","actionItems":["豚肉900gに塩・こしょうを全体になじませる。","タコ糸で縛って丸い形に整える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"厚手の鍋にバターを溶かし、中強火で豚肉の全面に濃い焼き色をつける（合計8分程度）。","title":"全面に焼き色をつける","actionItems":["厚手の鍋にバター40gを溶かし、中強火にする。","豚肉の全面に濃い焼き色をつける（合計8分程度）。"],"parallelItems":[],"completionCriteria":["全面にきつね色がついたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"にんにく（皮付き）とセージを加えて1分炒める。ナツメグをすりおろして加える。","title":"香味を加える","actionItems":["にんにく4片（皮付き）とセージ8枚を加えて1分炒める。","ナツメグをすりおろして加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"牛乳を注ぐ。沸騰したら弱火にして蓋をずらして乗せ、90分煮込む。途中で肉を数回裏返す。牛乳が分離してカード状になるのは正常。","title":"ミルクで煮込む","actionItems":["全脂牛乳800mlを注ぐ。","沸騰したら弱火にして蓋をずらして乗せ、90分煮込む。","途中で肉を数回裏返す。"],"parallelItems":[],"completionCriteria":["肉に完全に火が通り、牛乳が分離してカード状になれば次へ（これが正しい状態）。"],"cautionItems":["牛乳が分離してカード状になるのは正常。捨てないこと。"],"tipItems":[],"durationMinutes":90,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"肉を取り出して休ませる。残った液体（分離しているが問題ない）を中火で煮詰め、木べらで混ぜながらキャラメル色のとろりとしたソースにする。薄切りにして盛り付け、ソースをかける。","title":"ソースを仕上げる","actionItems":["肉を取り出して休ませる。","残った液体を中火で煮詰め、木べらで混ぜながらキャラメル色のとろりとしたソースにする。","肉を薄切りにして盛り付け、ソースをかける。"],"parallelItems":[],"completionCriteria":["ソースがキャラメル色のとろりとした状態になれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

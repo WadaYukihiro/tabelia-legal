@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間45分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>20時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>10人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">10人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ（シチリア）</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,17 +94,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（10人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">10</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">10</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スポンジケーキ（パン・ディ・スパーニャ）</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">市販でも可。自作する場合：卵5個・砂糖150g・薄力粉150g・じゃがいもでんぷん30g</span></li>
-          <li><span class="ingredient-name">羊乳リコッタ（水切り済み）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">一晩水切り必須</span></li>
-          <li><span class="ingredient-name">粉砂糖（フィリング用）</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">ダークチョコレート（刻む）</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">キャンディドシトロン・オレンジ・ズッカータ（混合）</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">パスタ・レアーレ（緑のマジパン）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">緑色はピスタチオペーストで着色。市販の白いマジパンにグリーン食用色素でも可</span></li>
-          <li><span class="ingredient-name">ホワイトアイシング（砂糖衣）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">市販のロールフォンダン、または粉砂糖300g＋水30〜40mlで手作り</span></li>
-          <li><span class="ingredient-name">キャンディドフルーツ（飾り用・各種）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">さくらんぼ・オレンジ・ピスタチオなど色とりどりに</span></li>
-          <li><span class="ingredient-name">オレンジリキュール（またはラム）</span><span class="ingredient-qty">50ml</span><span class="ingredient-notes">スポンジに浸み込ませる</span></li>
+              <li data-ingredient-row="294fb993-ba00-425b-a168-a6f6b3a1cacd"><span class="ingredient-name" data-ingredient-name>スポンジケーキ（パン・ディ・スパーニャ）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">市販でも可。自作する場合：卵5個・砂糖150g・薄力粉150g・じゃがいもでんぷん30g</span></li>
+          <li data-ingredient-row="6ce28194-d58d-4a94-af5d-8697be5d8e43"><span class="ingredient-name" data-ingredient-name>羊乳リコッタ（水切り済み）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">一晩水切り必須</span><button type="button" class="substitution-trigger" data-substitution-trigger="6ce28194-d58d-4a94-af5d-8697be5d8e43"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2ea421f6-64e1-4616-9527-42d8759abd26"><span class="ingredient-name" data-ingredient-name>粉砂糖（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="344d8c0d-a63d-40ff-b978-1a4d170c8edd"><span class="ingredient-name" data-ingredient-name>ダークチョコレート（刻む）</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="d9576707-3b0d-4011-9d00-ad2c2852db88"><span class="ingredient-name" data-ingredient-name>キャンディドシトロン・オレンジ・ズッカータ（混合）</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="833f5fd1-9974-410e-9f36-2b52df670e2e"><span class="ingredient-name" data-ingredient-name>パスタ・レアーレ（緑のマジパン）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">緑色はピスタチオペーストで着色。市販の白いマジパンにグリーン食用色素でも可</span><button type="button" class="substitution-trigger" data-substitution-trigger="833f5fd1-9974-410e-9f36-2b52df670e2e"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="aee6bfe7-2053-4f72-b949-9239d7e8d21e"><span class="ingredient-name" data-ingredient-name>ホワイトアイシング（砂糖衣）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">市販のロールフォンダン、または粉砂糖300g＋水30〜40mlで手作り</span></li>
+          <li data-ingredient-row="c025a58b-aa03-4fcb-81ec-17dfdd61ea46"><span class="ingredient-name" data-ingredient-name>キャンディドフルーツ（飾り用・各種）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">さくらんぼ・オレンジ・ピスタチオなど色とりどりに</span></li>
+          <li data-ingredient-row="6e972bb0-cd34-4c0a-946a-8c97f9ead6b7"><span class="ingredient-name" data-ingredient-name>オレンジリキュール（またはラム）</span><span class="ingredient-qty" data-ingredient-qty>50ml</span><span class="ingredient-notes">スポンジに浸み込ませる</span></li>
               </ul>
             </section>
           </div>
@@ -335,6 +355,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d5261583-b309-46a7-a5b3-8d51b75141e9","nameJa":"シチリア風カッサータ","baseServings":10,"minServings":6,"maxServings":20},"ingredients":[{"id":"294fb993-ba00-425b-a168-a6f6b3a1cacd","nameOriginal":"Pan di Spagna","nameJa":"スポンジケーキ（パン・ディ・スパーニャ）","nameEn":"Sponge cake","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"市販でも可。自作する場合：卵5個・砂糖150g・薄力粉150g・じゃがいもでんぷん30g","substitutionOptions":[]},{"id":"6ce28194-d58d-4a94-af5d-8697be5d8e43","nameOriginal":"Ricotta di pecora fresca","nameJa":"羊乳リコッタ（水切り済み）","nameEn":"Fresh sheep's milk ricotta (drained)","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"一晩水切り必須","substitutionOptions":[{"id":"288ca6de-5cee-416e-96b5-53c0384423c8","standardIngredientId":"6ce28194-d58d-4a94-af5d-8697be5d8e43","nameJa":"牛乳リコッタ","nameEn":"Cow's milk ricotta","authenticityImpact":-10,"flavorImpact":"濃厚さが落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2ea421f6-64e1-4616-9527-42d8759abd26","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（フィリング用）","nameEn":"Powdered sugar","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"344d8c0d-a63d-40ff-b978-1a4d170c8edd","nameOriginal":"Cioccolato fondente","nameJa":"ダークチョコレート（刻む）","nameEn":"Dark chocolate","quantity":100,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d9576707-3b0d-4011-9d00-ad2c2852db88","nameOriginal":"Cedro, arancia, zuccata canditi","nameJa":"キャンディドシトロン・オレンジ・ズッカータ（混合）","nameEn":"Mixed candied citrus peel and squash","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"833f5fd1-9974-410e-9f36-2b52df670e2e","nameOriginal":"Pasta reale (marzapane verde)","nameJa":"パスタ・レアーレ（緑のマジパン）","nameEn":"Green marzipan (almond paste)","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"緑色はピスタチオペーストで着色。市販の白いマジパンにグリーン食用色素でも可","substitutionOptions":[{"id":"3f50eee5-ad53-4517-a2fb-4ceef7415175","standardIngredientId":"833f5fd1-9974-410e-9f36-2b52df670e2e","nameJa":"白いマジパン（着色なし）","nameEn":"Plain white marzipan","authenticityImpact":-10,"flavorImpact":"見た目の特徴が失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"aee6bfe7-2053-4f72-b949-9239d7e8d21e","nameOriginal":"Glassa bianca (fondente o zucchero a velo + acqua)","nameJa":"ホワイトアイシング（砂糖衣）","nameEn":"White fondant icing","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"市販のロールフォンダン、または粉砂糖300g＋水30〜40mlで手作り","substitutionOptions":[]},{"id":"c025a58b-aa03-4fcb-81ec-17dfdd61ea46","nameOriginal":"Frutta candita mista","nameJa":"キャンディドフルーツ（飾り用・各種）","nameEn":"Mixed candied fruits for decoration","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"さくらんぼ・オレンジ・ピスタチオなど色とりどりに","substitutionOptions":[]},{"id":"6e972bb0-cd34-4c0a-946a-8c97f9ead6b7","nameOriginal":"Liquore all'arancia o Rum","nameJa":"オレンジリキュール（またはラム）","nameEn":"Orange liqueur or Rum","quantity":50,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"スポンジに浸み込ませる","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"羊乳リコッタ600gをざるに置き、一晩冷蔵庫で水切りする（最低8時間）。","title":"リコッタを水切りする","actionItems":["羊乳リコッタ600gをざるに置き、一晩冷蔵庫で水切りする。"],"parallelItems":[],"completionCriteria":["最低8時間。水分が十分に切れれば次へ。"],"cautionItems":["水切りが不十分だとフィリングが水っぽくなる。"],"tipItems":[],"durationMinutes":480,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"水切りしたリコッタ600gに粉砂糖200gを加えてなめらかに混ぜる。刻んだダークチョコレート100g・キャンディドシトラス150gを加えてフィリングを作る。冷蔵庫で1時間冷やす（フィリングが固まって型に入れやすくなる）。","title":"リコッタフィリングを作る","actionItems":["水切りしたリコッタ600gに粉砂糖200gを加えてなめらかに混ぜる。","刻んだダークチョコレート100gとキャンディドシトラス150gを加えて混ぜる。","冷蔵庫で1時間冷やす。"],"parallelItems":[],"completionCriteria":["均一なフィリングになり、冷蔵庫で1時間冷えれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":70,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"スポンジを横3〜4枚にスライスする。最も薄いスライスを底面用に切り出す（円形に整える）。","title":"スポンジをスライスする","actionItems":["スポンジを横3〜4枚にスライスする。","最も薄いスライスを底面用に円形に整える。"],"parallelItems":[],"completionCriteria":["均一にスライスできれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ドーム型または丸型（直径24〜26cm）にラップをしっかり敷く。内側の側面にマジパンを薄く（3〜4mm）伸ばして貼り付ける（カッサータの緑の縁が完成）。底にスポンジを敷き、リキュール少量を刷毛で浸み込ませる。","title":"マジパンを貼りスポンジを敷く","actionItems":["直径24〜26cmの型にラップをしっかり敷く。","内側の側面にマジパンを3〜4mm厚に伸ばして貼り付ける。","底にスポンジを敷き、リキュールを刷毛で浸み込ませる。"],"parallelItems":[],"completionCriteria":["マジパンが側面全体に貼れ、底にスポンジが敷ければ次へ。"],"cautionItems":["隙間なくマジパンを貼る。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"リコッタフィリングを流し込み、スポンジで蓋をする。ラップで覆って冷蔵庫で最低3〜4時間（理想は一晩）冷やす。","title":"フィリングを詰め冷やす","actionItems":["リコッタフィリングを全量流し込む。","スポンジで蓋をする。","ラップで覆って冷蔵庫で最低3〜4時間冷やす。"],"parallelItems":[],"completionCriteria":["最低3〜4時間。フィリングが固まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"ひっくり返して型から取り出し、ラップを剥がす。表面にアイシングをかけて均一に伸ばす（パレットナイフで滑らかに）。","title":"アンモールドしてアイシングをかける","actionItems":["ひっくり返して型から取り出し、ラップを剥がす。","アイシングを表面にかけてパレットナイフで滑らかに伸ばす。"],"parallelItems":[],"completionCriteria":["アイシングが均一に広がれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"アイシングが固まる前にキャンディドフルーツで伝統的なパターン（格子や花模様）に飾り付ける。","title":"キャンディドフルーツで飾る","actionItems":["アイシングが固まる前にキャンディドフルーツで格子や花模様に飾り付ける。"],"parallelItems":[],"completionCriteria":["伝統的なパターンに飾れれば次へ。"],"cautionItems":["アイシングが固まる前に素早く飾る。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"一晩冷蔵庫で落ち着かせてから提供（アイシングが完全に固まり、各層の味が馴染む）。","title":"一晩冷蔵庫で落ち着かせる","actionItems":["一晩冷蔵庫で落ち着かせる。"],"parallelItems":[],"completionCriteria":["一晩（約8時間）。アイシングが完全に固まり各層の味が馴染めば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":480,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

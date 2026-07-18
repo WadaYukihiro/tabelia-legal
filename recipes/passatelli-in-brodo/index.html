@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">細かくすりおろす</span></li>
-          <li><span class="ingredient-name">パン粉（乾燥・細かい）</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">3個</span></li>
-          <li><span class="ingredient-name">ナツメグ</span><span class="ingredient-qty">1ひとつまみ</span></li>
-          <li><span class="ingredient-name">肉のブロード（牛・鶏）</span><span class="ingredient-qty">1500ml</span></li>
+              <li data-ingredient-row="cb06a4a1-7bb7-4881-88e2-c17878864230"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">細かくすりおろす</span></li>
+          <li data-ingredient-row="290d72ef-282e-40fa-98cd-34a3d16769cf"><span class="ingredient-name" data-ingredient-name>パン粉（乾燥・細かい）</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="a5f1a6a8-38cc-4a98-a083-0b8ba97a5c9e"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>3個</span></li>
+          <li data-ingredient-row="ba1e8270-0a70-4500-9c02-d955a33953b5"><span class="ingredient-name" data-ingredient-name>ナツメグ</span><span class="ingredient-qty" data-ingredient-qty>1ひとつまみ</span></li>
+          <li data-ingredient-row="e54db3aa-d0f4-4cfb-a456-e40c7e5a61b3"><span class="ingredient-name" data-ingredient-name>肉のブロード（牛・鶏）</span><span class="ingredient-qty" data-ingredient-qty>1500ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="e54db3aa-d0f4-4cfb-a456-e40c7e5a61b3"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -230,6 +250,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d0bd3ac4-f1ff-4207-9b16-93c3ecd93124","nameJa":"ブロードで味わうパッサテッリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"cb06a4a1-7bb7-4881-88e2-c17878864230","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かくすりおろす","substitutionOptions":[]},{"id":"290d72ef-282e-40fa-98cd-34a3d16769cf","nameOriginal":"Pangrattato","nameJa":"パン粉（乾燥・細かい）","nameEn":"Fine dry breadcrumbs","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a5f1a6a8-38cc-4a98-a083-0b8ba97a5c9e","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ba1e8270-0a70-4500-9c02-d955a33953b5","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"ひとつまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e54db3aa-d0f4-4cfb-a456-e40c7e5a61b3","nameOriginal":"Brodo di carne","nameJa":"肉のブロード（牛・鶏）","nameEn":"Meat broth","quantity":1500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"11192bab-db03-47b2-9ff1-5d1874dd8220","standardIngredientId":"e54db3aa-d0f4-4cfb-a456-e40c7e5a61b3","nameJa":"市販チキンブロード","nameEn":"Store-bought chicken broth","authenticityImpact":-5,"flavorImpact":"深みが若干落ちるが成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]}],"steps":[{"stepNumber":1,"instruction":"パルミジャーノを細かくすりおろす。","title":"材料を準備する","actionItems":["パルミジャーノを細かくすりおろす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"パルミジャーノ・パン粉・卵・ナツメグを混ぜ、まとまるまでこねる。固ければパン粉、柔らかければパルミジャーノを足す。","title":"衣をつける","actionItems":["パルミジャーノ・パン粉・卵・ナツメグを混ぜ、まとまるまでこねる。"],"parallelItems":[],"completionCriteria":["固ければパン粉、柔らかければパルミジャーノを足す。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地をパッサテッリ専用器（または穴の大きいフードミルやスパゲッティマシン）に詰めて押し出す。長さ4〜5cmで切る。","title":"形を整える","actionItems":["生地をパッサテッリ専用器（または穴の大きいフードミルやスパゲッティマシン）に詰めて押し出す。","長さ4〜5cmで切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ブロード1500mlを沸騰させ、パッサテッリを入れて2〜3分煮る。表面に浮いてきたら火が通った合図。すぐに椀に盛り、熱々のうちに供する。","title":"煮る","actionItems":["ブロード1500mlを沸騰させ、パッサテッリを入れて2〜3分煮る。","すぐに椀に盛り、熱々のうちに供する。"],"parallelItems":[],"completionCriteria":["表面に浮いてきたら火が通った合図。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>35分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・パヴィア（ロンバルディア）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">じゃがいもデンプン</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">フェコラが理想。コーンスターチではしっとり感が少し弱まり、薄力粉のみに変えるとトルタ・マルゲリータ特有の軽さが失われる</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">4個</span><span class="ingredient-notes">卵黄と卵白に分ける。常温に戻す</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">120g</span><span class="ingredient-notes">常温でクリーム状に戻す</span></li>
-          <li><span class="ingredient-name">ベーキングパウダー</span><span class="ingredient-qty">8g</span></li>
-          <li><span class="ingredient-name">レモンの皮</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">粉砂糖（仕上げ用）</span><span class="ingredient-qty">15g</span></li>
+              <li data-ingredient-row="f9c0530a-9b1e-4048-9ea7-97885e6278c4"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="c03bb188-ae50-437a-82ee-7bea6d1fbee0"><span class="ingredient-name" data-ingredient-name>じゃがいもデンプン</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">フェコラが理想。コーンスターチではしっとり感が少し弱まり、薄力粉のみに変えるとトルタ・マルゲリータ特有の軽さが失われる</span><button type="button" class="substitution-trigger" data-substitution-trigger="c03bb188-ae50-437a-82ee-7bea6d1fbee0"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="72e53abc-f351-404d-b37d-84692cd2f932"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="33654f31-7be3-4798-befe-7de0b922de31"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>4個</span><span class="ingredient-notes">卵黄と卵白に分ける。常温に戻す</span></li>
+          <li data-ingredient-row="8f6c28d8-522a-4faf-b232-be00e2f059e0"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>120g</span><span class="ingredient-notes">常温でクリーム状に戻す</span></li>
+          <li data-ingredient-row="bc274cf5-8c59-48e2-b905-49d24490a05a"><span class="ingredient-name" data-ingredient-name>ベーキングパウダー</span><span class="ingredient-qty" data-ingredient-qty>8g</span></li>
+          <li data-ingredient-row="9bda6efc-ff4e-4082-b563-aea856271de6"><span class="ingredient-name" data-ingredient-name>レモンの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="9bda6efc-ff4e-4082-b563-aea856271de6"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2470c413-87ce-47a3-890e-f2276f996beb"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="5f1c904b-9553-4532-9c17-781d53b311ec"><span class="ingredient-name" data-ingredient-name>粉砂糖（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>15g</span></li>
               </ul>
             </section>
           </div>
@@ -314,6 +334,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0d02e554-5822-4035-8d9c-30a715bfae45","nameJa":"トルタ・マルゲリータ","baseServings":8,"minServings":6,"maxServings":20},"ingredients":[{"id":"f9c0530a-9b1e-4048-9ea7-97885e6278c4","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c03bb188-ae50-437a-82ee-7bea6d1fbee0","nameOriginal":"Fecola di patate","nameJa":"じゃがいもデンプン","nameEn":"Potato starch","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フェコラが理想。コーンスターチではしっとり感が少し弱まり、薄力粉のみに変えるとトルタ・マルゲリータ特有の軽さが失われる","substitutionOptions":[{"id":"97d46314-5e9a-4ac4-965a-0a624dd41fc8","standardIngredientId":"c03bb188-ae50-437a-82ee-7bea6d1fbee0","nameJa":"コーンスターチ","nameEn":"Cornstarch","authenticityImpact":-5,"flavorImpact":"フェコラ特有のしっとり感が若干弱まるが、軽さは維持できる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"a25f3e2e-33e1-43f3-9a5c-15ce91f3dd00","standardIngredientId":"c03bb188-ae50-437a-82ee-7bea6d1fbee0","nameJa":"薄力粉（追加）","nameEn":"Additional all-purpose flour","authenticityImpact":-20,"flavorImpact":"生地が重くなりトルタ・マルゲリータ本来の口どけが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"72e53abc-f351-404d-b37d-84692cd2f932","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"33654f31-7be3-4798-befe-7de0b922de31","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"卵黄と卵白に分ける。常温に戻す","substitutionOptions":[]},{"id":"8f6c28d8-522a-4faf-b232-be00e2f059e0","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":"常温でクリーム状に戻す","substitutionOptions":[]},{"id":"bc274cf5-8c59-48e2-b905-49d24490a05a","nameOriginal":"Lievito per dolci","nameJa":"ベーキングパウダー","nameEn":"Baking powder","quantity":8,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9bda6efc-ff4e-4082-b563-aea856271de6","nameOriginal":"Scorza di limone","nameJa":"レモンの皮","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[{"id":"5efc1bb4-7a10-4964-ac37-8d8c42067e9d","standardIngredientId":"9bda6efc-ff4e-4082-b563-aea856271de6","nameJa":"バニラエッセンス","nameEn":"Vanilla extract","authenticityImpact":-10,"flavorImpact":"レモンの清々しい香りがなくなり風味が変わる","textureImpact":null,"procedureChanges":["レモンをすりおろす工程を省き、数滴をバター混ぜの工程で加える"],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"ml","notes":"卵黄を混ぜた後に加える","action":"update","nameEn":"Vanilla extract","nameJa":"バニラエッセンス","quantity":3,"targetNameJa":"レモンの皮"}],"stepPatches":[{"title":"バター生地を作る","action":"replace","stepNumber":2,"actionItems":["常温のバター120gと砂糖150gをハンドミキサーで3〜4分混ぜる。","卵黄4個を1個ずつ加えてその都度よく混ぜる。","バニラエッセンス3mlを加えて混ぜる。"],"instruction":"常温に戻したバター120gと砂糖150gをハンドミキサーで白っぽくふんわりするまで3〜4分混ぜる。卵黄4個を1個ずつ加えてその都度よく混ぜる。バニラエッセンス3mlを加えて混ぜる。","changeReason":"バニラエッセンス使用時はレモンの皮をすりおろさないため","completionCriteria":["白っぽくふんわりしたクリーム状になれば次へ。"]}]}]},{"id":"2470c413-87ce-47a3-890e-f2276f996beb","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5f1c904b-9553-4532-9c17-781d53b311ec","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180℃に予熱する。直径22cmの丸型にバターを薄く塗り、薄力粉を振って余分を落とす。","title":"型とオーブンを準備する","actionItems":["オーブンを180℃に予熱する。","直径22cmの丸型にバターを薄く塗り、薄力粉を振って余分を落とす。"],"parallelItems":[],"completionCriteria":["オーブンが温まり、型の準備が整えば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。常温に戻したバター120gと砂糖150gをハンドミキサーで白っぽくふんわりするまで3〜4分混ぜる。卵黄4個を1個ずつ加えてその都度よく混ぜる。すりおろしたレモンの皮1個分を加えて混ぜる。","title":"バター生地を作る","actionItems":["レモンの表皮だけをすりおろす。","常温のバター120gと砂糖150gをハンドミキサーで3〜4分混ぜる。","卵黄4個を1個ずつ加えてその都度よく混ぜる。","すりおろしたレモンの皮1個分を加えて混ぜる。"],"parallelItems":[],"completionCriteria":["白っぽくふんわりしたクリーム状になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"薄力粉100g・じゃがいもデンプン100g・ベーキングパウダー8gを合わせてふるい、生地に2〜3回に分けて加えてゴムベラでさっくりと混ぜる。","title":"粉類を折り込む","actionItems":["薄力粉・じゃがいもデンプン・ベーキングパウダーを合わせてふるう。","生地に2〜3回に分けて加え、ゴムベラでさっくりと混ぜる。"],"parallelItems":[],"completionCriteria":["粉が見えなくなれば次へ。"],"cautionItems":["混ぜすぎるとグルテンが出てケーキが重くなる。さっくりと混ぜる。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"別のボウルで卵白4個と塩1gを角が立つまで泡立てる。卵白の1/3を生地に加えてよく混ぜてほぐしてから、残りを2回に分けてゴムベラで切るように折り込む（泡をなるべく消さないよう、すくいあげるように混ぜる）。","title":"卵白を折り込む","actionItems":["卵白4個と塩1gを角が立つまで泡立てる。","卵白の1/3を生地に加えてよく混ぜてほぐす。","残りを2回に分けてゴムベラで切るように折り込む。"],"parallelItems":[],"completionCriteria":["白い筋がなくなり均一に混ざれば次へ。"],"cautionItems":["泡をなるべく消さないよう、すくいあげるように混ぜる。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"生地を型に流し込み、台に軽く打ちつけて気泡を抜く。180℃で30〜35分焼く。竹串を中心に刺して何もついてこなければ焼き上がり。焦げそうなときはアルミホイルをかぶせる。","title":"マルゲリータ生地を焼く","actionItems":["生地を型に流し込み、台に軽く打ちつけて気泡を抜く。","180℃で30〜35分焼く。"],"parallelItems":[],"completionCriteria":["竹串を中心に刺して何もついてこなければ焼き上がり。"],"cautionItems":["焦げそうなときはアルミホイルをかぶせる。"],"tipItems":[],"durationMinutes":35,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"型のまま10分冷ましてから取り出し、網の上で完全に冷ます。仕上げに粉砂糖15gをたっぷり振る。常温で2〜3日保存可能。","title":"冷まして仕上げる","actionItems":["型のまま10分冷ます。","型から取り出して網の上で完全に冷ます。","粉砂糖15gをたっぷり振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["熱いうちに型から外すと崩れる。10分待つ。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★★</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>54分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・ヌオーロ（オリャーストラ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">セモリナ粉（細挽き）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">パスタ生地用</span></li>
-          <li><span class="ingredient-name">じゃがいも（粉質品種）</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">フィリング用。茹でて熱いうちに裏ごす</span></li>
-          <li><span class="ingredient-name">ペコリーノ・サルド（フレッシュ）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">フィリング用。すりおろす</span></li>
-          <li><span class="ingredient-name">フレッシュミント</span><span class="ingredient-qty">10枚</span><span class="ingredient-notes">フィリングの決め手。フレッシュのみ</span></li>
-          <li><span class="ingredient-name">サフラン</span><span class="ingredient-qty">0.5g</span><span class="ingredient-notes">フィリングに混ぜる</span></li>
-          <li><span class="ingredient-name">シンプルなトマトソース</span><span class="ingredient-qty">400ml</span><span class="ingredient-notes">提供用ソース</span></li>
-          <li><span class="ingredient-name">ペコリーノ・サルド（熟成）</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">仕上げに削りかける</span></li>
+              <li data-ingredient-row="7bae916d-7f49-4e14-8980-e7847591d3a4"><span class="ingredient-name" data-ingredient-name>セモリナ粉（細挽き）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">パスタ生地用</span></li>
+          <li data-ingredient-row="934113a6-2b8e-450e-bd0e-e7d7a9038ae0"><span class="ingredient-name" data-ingredient-name>じゃがいも（粉質品種）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">フィリング用。茹でて熱いうちに裏ごす</span></li>
+          <li data-ingredient-row="ba771528-5475-4e55-84b4-1014b59d4bea"><span class="ingredient-name" data-ingredient-name>ペコリーノ・サルド（フレッシュ）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">フィリング用。すりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="ba771528-5475-4e55-84b4-1014b59d4bea"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="233616ca-4d8f-470d-9c60-fce35540038e"><span class="ingredient-name" data-ingredient-name>フレッシュミント</span><span class="ingredient-qty" data-ingredient-qty>10枚</span><span class="ingredient-notes">フィリングの決め手。フレッシュのみ</span></li>
+          <li data-ingredient-row="940a3d6e-3317-4499-ac01-8a0db80c7f49"><span class="ingredient-name" data-ingredient-name>サフラン</span><span class="ingredient-qty" data-ingredient-qty>0.5g</span><span class="ingredient-notes">フィリングに混ぜる</span></li>
+          <li data-ingredient-row="ffd5ef13-4853-4a46-a54f-52f8077b3f4c"><span class="ingredient-name" data-ingredient-name>シンプルなトマトソース</span><span class="ingredient-qty" data-ingredient-qty>400ml</span><span class="ingredient-notes">提供用ソース</span></li>
+          <li data-ingredient-row="fe215418-880d-4a3e-a768-6a32c0a50945"><span class="ingredient-name" data-ingredient-name>ペコリーノ・サルド（熟成）</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">仕上げに削りかける</span></li>
               </ul>
             </section>
           </div>
@@ -290,6 +310,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"f1871d6d-b76a-4026-8db2-56797ab48ec0","nameJa":"オリアストラ風クルルジョーネス","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"7bae916d-7f49-4e14-8980-e7847591d3a4","nameOriginal":"Semola rimacinata di grano duro","nameJa":"セモリナ粉（細挽き）","nameEn":"Fine remilled semolina","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"パスタ生地用","substitutionOptions":[]},{"id":"934113a6-2b8e-450e-bd0e-e7d7a9038ae0","nameOriginal":"Patate","nameJa":"じゃがいも（粉質品種）","nameEn":"Floury potatoes","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用。茹でて熱いうちに裏ごす","substitutionOptions":[]},{"id":"ba771528-5475-4e55-84b4-1014b59d4bea","nameOriginal":"Pecorino sardo fresco","nameJa":"ペコリーノ・サルド（フレッシュ）","nameEn":"Fresh Sardinian pecorino","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用。すりおろす","substitutionOptions":[{"id":"c39bcfb9-a0c1-4783-bb35-762aba099046","standardIngredientId":"ba771528-5475-4e55-84b4-1014b59d4bea","nameJa":"ペコリーノ・ロマーノ（減量）","nameEn":"Pecorino Romano (reduced amount)","authenticityImpact":-10,"flavorImpact":"塩気が強くなるため80gに減らす","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"233616ca-4d8f-470d-9c60-fce35540038e","nameOriginal":"Menta fresca","nameJa":"フレッシュミント","nameEn":"Fresh mint","quantity":10,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"フィリングの決め手。フレッシュのみ","substitutionOptions":[]},{"id":"940a3d6e-3317-4499-ac01-8a0db80c7f49","nameOriginal":"Zafferano","nameJa":"サフラン","nameEn":"Saffron","quantity":0.25,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"フィリングに混ぜる","substitutionOptions":[]},{"id":"ffd5ef13-4853-4a46-a54f-52f8077b3f4c","nameOriginal":"Sugo di pomodoro semplice","nameJa":"シンプルなトマトソース","nameEn":"Simple tomato sauce","quantity":400,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"提供用ソース","substitutionOptions":[]},{"id":"fe215418-880d-4a3e-a768-6a32c0a50945","nameOriginal":"Pecorino stagionato","nameJa":"ペコリーノ・サルド（熟成）","nameEn":"Aged Sardinian pecorino","quantity":40,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"仕上げに削りかける","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"じゃがいも500gを茹でて熱いうちに裏ごしし、すりおろしたペコリーノ150g・みじん切りミント10枚・サフラン0.25gを混ぜてフィリングを作る。常温まで冷ます。","title":"フィリングを作る","actionItems":["じゃがいも500gを茹でて熱いうちに裏ごしする。","すりおろしたペコリーノ150g・みじん切りミント10枚・サフラン0.25gを混ぜてフィリングを作る。","常温まで冷ます。"],"parallelItems":[],"completionCriteria":["フィリングが均一に混ざり常温に冷めた。"],"cautionItems":["じゃがいもは熱いうちに裏ごすこと。冷めると固くなる。"],"tipItems":[],"durationMinutes":25,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"セモリナ粉300g・水150ml程度・塩小さじ1でなめらかな生地を作り、ラップに包んで30分休ませる。","title":"パスタ生地を休ませる","actionItems":["セモリナ粉300g・水150ml程度・塩小さじ1でなめらかな生地を作る。","ラップに包んで30分休ませる。"],"parallelItems":[],"completionCriteria":["生地がなめらかになり30分休んだ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"生地を直径8cmの円形に薄く伸ばす。フィリングを小さじ1のせ、「ピンツァトゥーラ」（麦の穂状の編み込み）で閉じる：片側の皮を細かく折りたたみながら指でつまんで留める。","title":"成形する（ピンツァトゥーラ）","actionItems":["生地を直径8cmの円形に薄く伸ばす。","フィリングを小さじ1のせる。","片側の皮を細かく折りたたみながら指でつまんで留める（ピンツァトゥーラ）。"],"parallelItems":[],"completionCriteria":["全てのクルルジョーネスが麦の穂状に成形できた。"],"cautionItems":["しっかり閉じないと茹でで開く。"],"tipItems":[],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"・塩水でクルルジョーネスを5〜7分茹でる（浮いてから2分）\n・シンプルなトマトソース400mlを温めておく","title":"茹でてソースを温める","actionItems":["塩水でクルルジョーネスを5〜7分茹でる（浮いてから2分）。"],"parallelItems":["シンプルなトマトソース400mlを温めておく。"],"completionCriteria":["クルルジョーネスが浮いてから2分で茹で上がった。"],"cautionItems":["茹ですぎると皮が破れる。浮いてから2分で引き上げること。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"皿にトマトソースを敷き、クルルジョーネスを盛り、熟成ペコリーノ40gを削りかける。","title":"トマトソースに盛る","actionItems":["皿にトマトソースを敷く。","クルルジョーネスを盛る。","熟成ペコリーノ40gを削りかける。"],"parallelItems":[],"completionCriteria":["ソースの上にクルルジョーネスが盛られ、チーズが削りかけられた。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

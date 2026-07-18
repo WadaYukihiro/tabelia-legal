@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">玉ねぎ（大）</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">皮ごと使う</span></li>
-          <li><span class="ingredient-name">オリーブオイル（EVO）</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">バルサミコ酢</span><span class="ingredient-qty">20ml</span></li>
-          <li><span class="ingredient-name">タイム（生）</span><span class="ingredient-qty">3枝</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="d45b9d8f-7633-43e8-81b8-5e61f2ef9ff0"><span class="ingredient-name" data-ingredient-name>玉ねぎ（大）</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">皮ごと使う</span></li>
+          <li data-ingredient-row="e0546c85-89e9-46fe-977f-120e7c383a27"><span class="ingredient-name" data-ingredient-name>オリーブオイル（EVO）</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="3f57e772-4a51-4e1a-b495-5a8fb15d7476"><span class="ingredient-name" data-ingredient-name>バルサミコ酢</span><span class="ingredient-qty" data-ingredient-qty>20ml</span></li>
+          <li data-ingredient-row="fc1c1b9d-296d-408f-9ea7-92336841467c"><span class="ingredient-name" data-ingredient-name>タイム（生）</span><span class="ingredient-qty" data-ingredient-qty>3枝</span></li>
+          <li data-ingredient-row="0429a694-4afa-418c-aef0-9df8616b9858"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -226,6 +246,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"8c85a56e-a377-42d4-a002-863f72bb5471","nameJa":"玉ねぎの丸ごとオーブン焼き","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"d45b9d8f-7633-43e8-81b8-5e61f2ef9ff0","nameOriginal":"Cipolle dorate","nameJa":"玉ねぎ（大）","nameEn":"Large onions","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"皮ごと使う","substitutionOptions":[]},{"id":"e0546c85-89e9-46fe-977f-120e7c383a27","nameOriginal":"Olio d'oliva EVO","nameJa":"オリーブオイル（EVO）","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3f57e772-4a51-4e1a-b495-5a8fb15d7476","nameOriginal":"Aceto balsamico","nameJa":"バルサミコ酢","nameEn":"Balsamic vinegar","quantity":20,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fc1c1b9d-296d-408f-9ea7-92336841467c","nameOriginal":"Timo fresco","nameJa":"タイム（生）","nameEn":"Fresh thyme","quantity":3,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0429a694-4afa-418c-aef0-9df8616b9858","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180℃に予熱する。玉ねぎは皮をつけたまま洗い、水気を拭く。","title":"オーブンを整える","actionItems":["オーブンを180℃に予熱する。","玉ねぎは皮をつけたまま洗い、水気を拭く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"玉ねぎにオリーブオイルを塗り、塩をふる。アルミホイルで包む。","title":"食材を下処理する","actionItems":["玉ねぎにオリーブオイルを塗り、塩をふる。","アルミホイルで包む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"180℃のオーブンで60〜70分焼く。竹串がすっと通れば完成。","title":"焼き上げる","actionItems":["180℃のオーブンで60〜70分焼く。"],"parallelItems":[],"completionCriteria":["竹串がすっと通れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":65,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"粗熱が取れたら皮を剥き、玉ねぎにタイム・バルサミコ酢・オリーブオイルをかけて供する。","title":"休ませて落ち着かせる","actionItems":["粗熱が取れたら皮を剥き、玉ねぎにタイム・バルサミコ酢・オリーブオイルをかけて供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-25">2026.05.25</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">チコリ菜</span><span class="ingredient-qty">700g</span><span class="ingredient-notes">根元を落とし、葉と柔らかい茎を使う</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">乾燥唐辛子</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">種を取り小口切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">45ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">6g</span></li>
+              <li data-ingredient-row="2b4b9b2a-b433-4380-8ba9-3fe954b92205"><span class="ingredient-name" data-ingredient-name>チコリ菜</span><span class="ingredient-qty" data-ingredient-qty>700g</span><span class="ingredient-notes">根元を落とし、葉と柔らかい茎を使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="2b4b9b2a-b433-4380-8ba9-3fe954b92205"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="5e42d3e7-9600-4948-a5bb-8356cb70ce6a"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="dc2c0761-8527-4a3b-8344-badc3d47f212"><span class="ingredient-name" data-ingredient-name>乾燥唐辛子</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">種を取り小口切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="dc2c0761-8527-4a3b-8344-badc3d47f212"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c9e4e829-aa40-437b-894c-36d9019cebf0"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span></li>
+          <li data-ingredient-row="80e0be9e-7d20-4a30-8768-d4185fbb777f"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>6g</span></li>
               </ul>
             </section>
           </div>
@@ -238,6 +258,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"b37e5f9c-7091-46c1-ab3d-95b844f11392","nameJa":"チコリ菜のガーリックソテー","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"2b4b9b2a-b433-4380-8ba9-3fe954b92205","nameOriginal":"Cicoria","nameJa":"チコリ菜","nameEn":"Chicory greens","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"根元を落とし、葉と柔らかい茎を使う","substitutionOptions":[{"id":"e6ff55c6-6079-4782-839c-07668f35542f","standardIngredientId":"2b4b9b2a-b433-4380-8ba9-3fe954b92205","nameJa":"小松菜","nameEn":"Komatsuna greens","authenticityImpact":-10,"flavorImpact":"苦みが弱くなり、ローマらしい輪郭は穏やかになる","textureImpact":null,"procedureChanges":["下茹では1分に短縮する"],"affectedStepNumbers":[1,2,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"根元を落としてよく洗い、下茹では1分にする","action":"update","nameEn":"Komatsuna greens","nameJa":"小松菜","quantity":700,"targetNameJa":"チコリ菜"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"（下処理の間に）大鍋に湯を沸かし始める。小松菜700gは根元を落とし、葉と茎をよく洗う。にんにく2片は薄切りにする。乾燥唐辛子1本は種を取り小口切りにする。","changeReason":"置換後の食材名と下処理に合わせるため"},{"action":"replace","stepNumber":2,"instruction":"沸いた湯に塩3gを加え、小松菜を1分茹でる。茎が少ししなり、鮮やかな緑色になったら冷水に取り、水気を強く絞る。","changeReason":"小松菜はチコリ菜より火が通りやすいため、下茹でを短くする"},{"action":"replace","stepNumber":4,"instruction":"小松菜を加えて中火にし、塩3gを振って3〜4分炒め直す。余分な水分が飛び、葉に油の艶が出て、にんにくの香りが全体に回ったら完成。","changeReason":"小松菜はチコリ菜より柔らかいため、炒め直しを少し短くする"}]}]},{"id":"5e42d3e7-9600-4948-a5bb-8356cb70ce6a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"dc2c0761-8527-4a3b-8344-badc3d47f212","nameOriginal":"Peperoncino secco","nameJa":"乾燥唐辛子","nameEn":"Dried chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"種を取り小口切り","substitutionOptions":[{"id":"dcb897bf-30ac-4856-840a-bf4ee7bd3ab3","standardIngredientId":"dc2c0761-8527-4a3b-8344-badc3d47f212","nameJa":"唐辛子フレーク 小さじ1/4","nameEn":"Chili flakes","authenticityImpact":-5,"flavorImpact":"辛みは近いが、油に移る香りはやや単調になる","textureImpact":null,"procedureChanges":["焦げやすいため、にんにくが色づいてから加える"],"affectedStepNumbers":[1,3],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"小さじ","notes":"焦げやすいため、にんにくが色づいてから加える","action":"update","nameEn":"Chili flakes","nameJa":"唐辛子フレーク","quantity":0.25,"targetNameJa":"乾燥唐辛子"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"（下処理の間に）大鍋に湯を沸かし始める。チコリ菜700gは根元を落とし、葉と柔らかい茎をよく洗う。にんにく2片は薄切りにする。唐辛子フレーク小さじ1/4を計量する。","changeReason":"唐辛子フレークは種取りや小口切りが不要なため"},{"action":"replace","stepNumber":3,"instruction":"フライパンにエクストラバージンオリーブオイル45mlとにんにくを入れて弱火にかける。にんにくが薄いきつね色になったら唐辛子フレーク小さじ1/4を加え、10〜15秒だけ香りを立てたら次へ。","changeReason":"唐辛子フレークは焦げやすいため、にんにくが色づいてから短時間だけ加える"}]}]},{"id":"c9e4e829-aa40-437b-894c-36d9019cebf0","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"80e0be9e-7d20-4a30-8768-d4185fbb777f","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":6,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"（下処理の間に）大鍋に湯を沸かし始める。チコリ菜700gは根元を落とし、葉と柔らかい茎をよく洗う。にんにく2片は薄切りにする。乾燥唐辛子1本は種を取り小口切りにする。","title":"湯を沸かす","actionItems":["にんにく2片は薄切りにする。","乾燥唐辛子1本は種を取り小口切りにする。"],"parallelItems":["（下処理の間に）大鍋に湯を沸かし始める。"],"completionCriteria":["チコリ菜700gは根元を落とし、葉と柔らかい茎をよく洗う。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"沸いた湯に塩3gを加え、チコリ菜を3〜4分茹でる。茎がしなやかに曲がり、濃い緑色になったら冷水に取り、水気を強く絞る。","title":"茹でる","actionItems":["沸いた湯に塩3gを加え、チコリ菜を3〜4分茹でる。"],"parallelItems":[],"completionCriteria":["茎がしなやかに曲がり、濃い緑色になったら冷水に取り、水気を強く絞る。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにエクストラバージンオリーブオイル45ml、にんにく、乾燥唐辛子を入れて弱火にかける。にんにくが薄いきつね色になり、唐辛子の香りが油に移ったら次へ。","title":"材料を合わせる","actionItems":["フライパンにエクストラバージンオリーブオイル45ml、にんにく、乾燥唐辛子を入れて弱火にかける。"],"parallelItems":[],"completionCriteria":["にんにくが薄いきつね色になり、唐辛子の香りが油に移ったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"チコリ菜を加えて中火にし、塩3gを振って4〜5分炒め直す。余分な水分が飛び、葉に油の艶が出て、にんにくの香りが全体に回ったら完成。","title":"香味を炒める","actionItems":["チコリ菜を加えて中火にし、塩3gを振って4〜5分炒め直す。"],"parallelItems":[],"completionCriteria":["余分な水分が飛び、葉に油の艶が出て、にんにくの香りが全体に回ったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

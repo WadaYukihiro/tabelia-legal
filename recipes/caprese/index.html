@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">モッツァレラ・ディ・ブーファラ</span><span class="ingredient-qty">250g</span></li>
-          <li><span class="ingredient-name">完熟トマト（大きめ）</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">10枚</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">塩（海塩）</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="03e2b4d5-1e7b-47e7-acb7-4a0d7ed53480"><span class="ingredient-name" data-ingredient-name>モッツァレラ・ディ・ブーファラ</span><span class="ingredient-qty" data-ingredient-qty>250g</span><button type="button" class="substitution-trigger" data-substitution-trigger="03e2b4d5-1e7b-47e7-acb7-4a0d7ed53480"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="20b9addc-744a-4973-94a7-2544f6949dc4"><span class="ingredient-name" data-ingredient-name>完熟トマト（大きめ）</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="bbb2e213-d56c-43d7-b57c-d8bf5d7da332"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>10枚</span></li>
+          <li data-ingredient-row="fbd37d37-2b7c-4c0f-b6b1-2f3c64f4d252"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="a5c2ebe3-252c-45c0-a7f2-6d8561d56c49"><span class="ingredient-name" data-ingredient-name>塩（海塩）</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -208,6 +228,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"fe6694ce-1f67-4959-af1b-ab1d22cc17e6","nameJa":"カプレーゼサラダ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"03e2b4d5-1e7b-47e7-acb7-4a0d7ed53480","nameOriginal":"Mozzarella di bufala","nameJa":"モッツァレラ・ディ・ブーファラ","nameEn":"Buffalo mozzarella","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"de7fe69d-bc05-4a6b-9674-184ae00aaa2d","standardIngredientId":"03e2b4d5-1e7b-47e7-acb7-4a0d7ed53480","nameJa":"モッツァレラ（牛乳）","nameEn":"Cow milk mozzarella (fior di latte)","authenticityImpact":-10,"flavorImpact":"コクと香りが弱まるがサラダとして成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"20b9addc-744a-4973-94a7-2544f6949dc4","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト（大きめ）","nameEn":"Ripe tomatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bbb2e213-d56c-43d7-b57c-d8bf5d7da332","nameOriginal":"Basilico fresco","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":10,"unit":"枚","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fbd37d37-2b7c-4c0f-b6b1-2f3c64f4d252","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a5c2ebe3-252c-45c0-a7f2-6d8561d56c49","nameOriginal":"Sale marino","nameJa":"塩（海塩）","nameEn":"Sea salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"モッツァレラとトマトを同じ厚さ（約1cm）にスライスする。","title":"材料を準備する","actionItems":["モッツァレラとトマトを同じ厚さ（約1cm）にスライスする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"皿にトマト・モッツァレラを交互に並べ、バジルを間に挟む。","title":"材料を合わせる","actionItems":["皿にトマト・モッツァレラを交互に並べ、バジルを間に挟む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"トマトとモッツァレッラ全体にオリーブオイルをかけ、塩をひとつまみ振って完成。バルサミコ酢は本場では使わない。","title":"材料を合わせる","actionItems":["バルサミコ酢は本場では使わない。"],"parallelItems":[],"completionCriteria":["トマトとモッツァレッラ全体にオリーブオイルをかけ、塩をひとつまみ振って完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

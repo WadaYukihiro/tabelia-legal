@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">豚ロース薄切り</span><span class="ingredient-qty">480g</span><span class="ingredient-notes">脂身を少し残し、肉叩きで厚さ4mmに整える</span></li>
-          <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">肉に薄くまぶす</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">果汁を搾り、皮の黄色い部分を少量削る</span></li>
-          <li><span class="ingredient-name">無塩バター</span><span class="ingredient-qty">35g</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">20ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">8g</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1g</span></li>
+              <li data-ingredient-row="780ac662-620d-4e0b-945f-80d03750e325"><span class="ingredient-name" data-ingredient-name>豚ロース薄切り</span><span class="ingredient-qty" data-ingredient-qty>480g</span><span class="ingredient-notes">脂身を少し残し、肉叩きで厚さ4mmに整える</span><button type="button" class="substitution-trigger" data-substitution-trigger="780ac662-620d-4e0b-945f-80d03750e325"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="957463ee-ca3e-42ed-8c9f-bf6f6d878019"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">肉に薄くまぶす</span></li>
+          <li data-ingredient-row="19b6923c-4851-44f8-9255-4119919520b5"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>80ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="19b6923c-4851-44f8-9255-4119919520b5"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="38750fb4-b437-4786-a62d-7b69a4632f37"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">果汁を搾り、皮の黄色い部分を少量削る</span></li>
+          <li data-ingredient-row="210023fe-d6eb-4ab0-b177-34cb15b11cec"><span class="ingredient-name" data-ingredient-name>無塩バター</span><span class="ingredient-qty" data-ingredient-qty>35g</span></li>
+          <li data-ingredient-row="873b79e1-819f-4180-b5ef-5dbb8519b474"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>20ml</span></li>
+          <li data-ingredient-row="214c18c4-547b-47ea-a00e-15d757990253"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>8g</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="24894ce4-182f-49bb-a993-42ffea8699d9"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
+          <li data-ingredient-row="0342be2a-d9cd-4b89-833a-40c692d88df2"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
               </ul>
             </section>
           </div>
@@ -296,6 +316,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0d5cf639-d37c-48c2-8009-01e3cedbda66","nameJa":"豚肉のレモンスカロッピーネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"780ac662-620d-4e0b-945f-80d03750e325","nameOriginal":"Lonza di maiale a fettine","nameJa":"豚ロース薄切り","nameEn":"Thin-sliced pork loin","quantity":480,"unit":"g","role":"essential","scalingBehavior":null,"notes":"脂身を少し残し、肉叩きで厚さ4mmに整える","substitutionOptions":[{"id":"4718a711-39bc-4a51-8c87-4311bbec0474","standardIngredientId":"780ac662-620d-4e0b-945f-80d03750e325","nameJa":"豚ヒレ肉","nameEn":"Pork tenderloin","authenticityImpact":-5,"flavorImpact":"脂の香りは弱まるが、柔らかく上品に仕上がる","textureImpact":null,"procedureChanges":["1cm厚に切り、厚さ5mmまで叩く"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"957463ee-ca3e-42ed-8c9f-bf6f6d878019","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Cake flour","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"肉に薄くまぶす","substitutionOptions":[]},{"id":"19b6923c-4851-44f8-9255-4119919520b5","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"a83324f8-b3d9-4ca9-a7d0-c10a4227b464","standardIngredientId":"19b6923c-4851-44f8-9255-4119919520b5","nameJa":"水60ml + レモン汁小さじ1","nameEn":"Water with lemon juice","authenticityImpact":-10,"flavorImpact":"ワインの香りは消えるが、酸味の輪郭は保てる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"38750fb4-b437-4786-a62d-7b69a4632f37","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"果汁を搾り、皮の黄色い部分を少量削る","substitutionOptions":[]},{"id":"210023fe-d6eb-4ab0-b177-34cb15b11cec","nameOriginal":"Burro","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":35,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"873b79e1-819f-4180-b5ef-5dbb8519b474","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":20,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"214c18c4-547b-47ea-a00e-15d757990253","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Fresh flat-leaf parsley","quantity":8,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"24894ce4-182f-49bb-a993-42ffea8699d9","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0342be2a-d9cd-4b89-833a-40c692d88df2","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"豚ロース薄切り480gは筋を数か所切り、ラップで挟んで肉叩きか麺棒で厚さ4mmに整える。表面が均一に薄くなり、破れていない状態にする。","title":"材料を準備する","actionItems":["豚ロース薄切り480gは筋を数か所切り、ラップで挟んで肉叩きか麺棒で厚さ4mmに整える。"],"parallelItems":[],"completionCriteria":["表面が均一に薄くなり、破れていない状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"レモン1個は果汁を搾り、皮の黄色い部分を少量削る。イタリアンパセリ8gをみじん切りにする。豚肉の両面に塩と黒胡椒を軽く振る。","title":"材料を準備する","actionItems":["レモン1個は果汁を搾り、皮の黄色い部分を少量削る。","イタリアンパセリ8gをみじん切りにする。","豚肉の両面に塩と黒胡椒を軽く振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"薄力粉30gをバットに広げ、豚肉の両面に薄くまぶす。余分な粉をはたき、肉の表面に粉が白く厚く残らない状態にする。","title":"衣をつける","actionItems":["薄力粉30gをバットに広げ、豚肉の両面に薄くまぶす。"],"parallelItems":[],"completionCriteria":["余分な粉をはたき、肉の表面に粉が白く厚く残らない状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにエクストラバージンオリーブオイル20mlと無塩バター20gを入れて中火で熱し、泡が細かくなったら豚肉を並べる。片面1分ずつ焼き、縁が白く変わり薄い焼き色がついたら取り出す。","title":"材料を合わせる","actionItems":["フライパンにエクストラバージンオリーブオイル20mlと無塩バター20gを入れて中火で熱し、泡が細かくなったら豚肉を並べる。","片面1分ずつ焼き、縁が白く変わり薄い焼き色がついたら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"同じフライパンに辛口白ワイン80mlを注ぎ、木べらで焼き跡をこそげながら中火で2分煮詰める。アルコール臭が消え、液体が半量ほどになったら次へ。","title":"形を整える","actionItems":["同じフライパンに辛口白ワイン80mlを注ぎ、木べらで焼き跡をこそげながら中火で2分煮詰める。"],"parallelItems":[],"completionCriteria":["アルコール臭が消え、液体が半量ほどになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"レモン果汁大さじ2と無塩バター15gを加え、フライパンを揺すって乳化させる。ソースが薄くとろみ、木べらの跡がすぐ消える程度になったら豚肉を戻す。","title":"仕上げにまとめる","actionItems":["レモン果汁大さじ2と無塩バター15gを加え、フライパンを揺すって乳化させる。"],"parallelItems":[],"completionCriteria":["ソースが薄くとろみ、木べらの跡がすぐ消える程度になったら豚肉を戻す。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"豚肉をソースに30秒絡める。表面に艶が出て、中心まで火が入りすぎず柔らかさが残っていれば完成。レモンの皮とイタリアンパセリを散らす。","title":"ソースを作る","actionItems":["豚肉をソースに30秒絡める。","レモンの皮とイタリアンパセリを散らす。"],"parallelItems":[],"completionCriteria":["表面に艶が出て、中心まで火が入りすぎず柔らかさが残っていれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

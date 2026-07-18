@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         </div>
 
         <p class="recipe-description">ルッコラ・モッツァレラ・トマトのイタリア国旗色サラダ。素材の質が問われる一品。EXVオリーブオイルと塩だけで完成する。</p>
@@ -68,6 +68,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -79,14 +92,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ルッコラ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">葉が若く小ぶりのものが辛みが出すぎず良い</span></li>
-          <li><span class="ingredient-name">完熟トマト</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">5mm厚の輪切りにする</span></li>
-          <li><span class="ingredient-name">モッツァレラ（フレッシュ）</span><span class="ingredient-qty">125g</span><span class="ingredient-notes">ブッファラ種が理想。スーパーの冷蔵品でも可</span></li>
-          <li><span class="ingredient-name">EXVオリーブオイル</span><span class="ingredient-qty">大さじ2</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">小さじ0.5</span><span class="ingredient-notes">フレークソルト推奨</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="6e66e6a7-179d-4e0e-9781-baa06018510f"><span class="ingredient-name" data-ingredient-name>ルッコラ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">葉が若く小ぶりのものが辛みが出すぎず良い</span><button type="button" class="substitution-trigger" data-substitution-trigger="6e66e6a7-179d-4e0e-9781-baa06018510f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8e343ddb-8fd2-4600-9de8-563834f11a9f"><span class="ingredient-name" data-ingredient-name>完熟トマト</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">5mm厚の輪切りにする</span></li>
+          <li data-ingredient-row="68713476-df56-4dcb-bba1-ceedda8b11f7"><span class="ingredient-name" data-ingredient-name>モッツァレラ（フレッシュ）</span><span class="ingredient-qty" data-ingredient-qty>125g</span><span class="ingredient-notes">ブッファラ種が理想。スーパーの冷蔵品でも可</span><button type="button" class="substitution-trigger" data-substitution-trigger="68713476-df56-4dcb-bba1-ceedda8b11f7"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="74eda34d-534b-4f70-bbac-11c5313c7037"><span class="ingredient-name" data-ingredient-name>EXVオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span><button type="button" class="substitution-trigger" data-substitution-trigger="74eda34d-534b-4f70-bbac-11c5313c7037"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="845a0d3b-4299-4e17-97ef-52edc5e86bef"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>小さじ0.5</span><span class="ingredient-notes">フレークソルト推奨</span></li>
+          <li data-ingredient-row="1f5da375-5e64-473d-88f8-8ef762451ead"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -204,6 +224,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"71146e61-21eb-4a69-8d4f-381e872ce92c","nameJa":"トリコローレサラダ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"6e66e6a7-179d-4e0e-9781-baa06018510f","nameOriginal":"Rucola","nameJa":"ルッコラ","nameEn":"Arugula / Rocket","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"葉が若く小ぶりのものが辛みが出すぎず良い","substitutionOptions":[{"id":"984a86a8-68e4-474b-8fef-fb3c16d20425","standardIngredientId":"6e66e6a7-179d-4e0e-9781-baa06018510f","nameJa":"ベビーほうれん草","nameEn":"Baby spinach","authenticityImpact":-20,"flavorImpact":"ルッコラのピリッとした苦みと辛みが失われ、まったく異なる印象になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"8e343ddb-8fd2-4600-9de8-563834f11a9f","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト","nameEn":"Ripe tomatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"5mm厚の輪切りにする","substitutionOptions":[]},{"id":"68713476-df56-4dcb-bba1-ceedda8b11f7","nameOriginal":"Mozzarella fresca","nameJa":"モッツァレラ（フレッシュ）","nameEn":"Fresh mozzarella","quantity":125,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ブッファラ種が理想。スーパーの冷蔵品でも可","substitutionOptions":[{"id":"0eff163f-ce45-42a4-8c48-2db09764ede4","standardIngredientId":"68713476-df56-4dcb-bba1-ceedda8b11f7","nameJa":"スモークモッツァレラ","nameEn":"Smoked mozzarella","authenticityImpact":-10,"flavorImpact":"水分が少なく食感が変わり、燻製香が加わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"74eda34d-534b-4f70-bbac-11c5313c7037","nameOriginal":"Olio EVO","nameJa":"EXVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":2,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"51ec55d2-896a-4914-84cf-a91acf8b8a8a","standardIngredientId":"74eda34d-534b-4f70-bbac-11c5313c7037","nameJa":"ピュアオリーブオイル","nameEn":"Pure olive oil","authenticityImpact":-10,"flavorImpact":"フルーティーな香りが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"845a0d3b-4299-4e17-97ef-52edc5e86bef","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":0.5,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":"フレークソルト推奨","substitutionOptions":[]},{"id":"1f5da375-5e64-473d-88f8-8ef762451ead","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"モッツァレラ125gと完熟トマト2個をそれぞれ5mm厚の輪切りにする。","title":"食材を切る","actionItems":["モッツァレラ125gを5mm厚の輪切りにする。","完熟トマト2個を5mm厚の輪切りにする。"],"parallelItems":[],"completionCriteria":["全食材が5mm厚の輪切りになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"皿にルッコラ80gを敷き、完熟トマトとモッツァレラを交互に重ねながら並べる。","title":"ルッコラに具材を並べる","actionItems":["皿にルッコラ80gを敷く。","完熟トマトとモッツァレラを交互に重ねながら並べる。"],"parallelItems":[],"completionCriteria":["トマトとモッツァレラが交互に並んだら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"サラダ全体にEXVオリーブオイル大さじ2をまんべんなくかけ、フレークソルト小さじ1/2と黒胡椒少々で味を整える。盛り付けたら10分以内に食べる。","title":"ドレッシングをかけて仕上げる","actionItems":["サラダ全体にEXVオリーブオイル大さじ2をまんべんなくかける。","フレークソルト小さじ1/2と黒胡椒少々で味を整える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["盛り付けたら10分以内に食べる。時間が経つとルッコラがしんなりする。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

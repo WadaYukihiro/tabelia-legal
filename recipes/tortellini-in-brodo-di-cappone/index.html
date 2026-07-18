@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★★</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間6分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>3時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉（00番）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">パスタ生地用</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">4個</span></li>
-          <li><span class="ingredient-name">豚ロース肉</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">フィリング用。バターで炒めておく</span></li>
-          <li><span class="ingredient-name">プロシュート・ディ・パルマ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">フィリング用</span></li>
-          <li><span class="ingredient-name">モルタデッラ・ディ・ボローニャ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">フィリング用</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ（熟成24ヶ月以上）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">フィリング用</span></li>
-          <li><span class="ingredient-name">去勢鶏（カッポーネ）丸鶏</span><span class="ingredient-qty">1羽（約2kg）</span><span class="ingredient-notes">ブロード用</span></li>
-          <li><span class="ingredient-name">ナツメグ</span><span class="ingredient-qty">1ひとつまみ</span><span class="ingredient-notes">フィリング用</span></li>
+              <li data-ingredient-row="c4851dac-332d-425b-be65-26b81f26b900"><span class="ingredient-name" data-ingredient-name>薄力粉（00番）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">パスタ生地用</span></li>
+          <li data-ingredient-row="b31ee52f-0b8e-4d1e-9303-a71a77a86d9b"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>4個</span></li>
+          <li data-ingredient-row="9296c559-3720-41e4-8acc-6fb690896903"><span class="ingredient-name" data-ingredient-name>豚ロース肉</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">フィリング用。バターで炒めておく</span></li>
+          <li data-ingredient-row="7a9e35cf-8a77-48e2-be18-9e8d7b42013e"><span class="ingredient-name" data-ingredient-name>プロシュート・ディ・パルマ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">フィリング用</span></li>
+          <li data-ingredient-row="90548613-47f7-4fbc-9bee-273d01a77d6b"><span class="ingredient-name" data-ingredient-name>モルタデッラ・ディ・ボローニャ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">フィリング用</span></li>
+          <li data-ingredient-row="7de1d66b-cb11-49f6-8a3b-06920c1d342e"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ（熟成24ヶ月以上）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">フィリング用</span></li>
+          <li data-ingredient-row="2426e5b9-46e6-4d9c-9f25-f952ae4c5082"><span class="ingredient-name" data-ingredient-name>去勢鶏（カッポーネ）丸鶏</span><span class="ingredient-qty" data-ingredient-qty>1羽（約2kg）</span><span class="ingredient-notes">ブロード用</span><button type="button" class="substitution-trigger" data-substitution-trigger="2426e5b9-46e6-4d9c-9f25-f952ae4c5082"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f690d070-eec7-40a0-9ff9-fa8b361b9233"><span class="ingredient-name" data-ingredient-name>ナツメグ</span><span class="ingredient-qty" data-ingredient-qty>1ひとつまみ</span><span class="ingredient-notes">フィリング用</span></li>
               </ul>
             </section>
           </div>
@@ -313,6 +333,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"66a176d9-13bd-43a3-94ec-35660560feba","nameJa":"去勢鶏のブロードで味わうトルテッリーニ","baseServings":6,"minServings":4,"maxServings":8},"ingredients":[{"id":"c4851dac-332d-425b-be65-26b81f26b900","nameOriginal":"Farina 00","nameJa":"薄力粉（00番）","nameEn":"Type 00 flour","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"パスタ生地用","substitutionOptions":[]},{"id":"b31ee52f-0b8e-4d1e-9303-a71a77a86d9b","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9296c559-3720-41e4-8acc-6fb690896903","nameOriginal":"Lonza di maiale","nameJa":"豚ロース肉","nameEn":"Pork loin","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用。バターで炒めておく","substitutionOptions":[]},{"id":"7a9e35cf-8a77-48e2-be18-9e8d7b42013e","nameOriginal":"Prosciutto crudo di Parma","nameJa":"プロシュート・ディ・パルマ","nameEn":"Prosciutto di Parma","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用","substitutionOptions":[]},{"id":"90548613-47f7-4fbc-9bee-273d01a77d6b","nameOriginal":"Mortadella di Bologna","nameJa":"モルタデッラ・ディ・ボローニャ","nameEn":"Bologna mortadella","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用","substitutionOptions":[]},{"id":"7de1d66b-cb11-49f6-8a3b-06920c1d342e","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ（熟成24ヶ月以上）","nameEn":"Aged Parmigiano Reggiano","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フィリング用","substitutionOptions":[]},{"id":"2426e5b9-46e6-4d9c-9f25-f952ae4c5082","nameOriginal":"Cappone intero","nameJa":"去勢鶏（カッポーネ）丸鶏","nameEn":"Whole capon","quantity":1,"unit":"羽（約2kg）","role":"essential","scalingBehavior":null,"notes":"ブロード用","substitutionOptions":[{"id":"0750dd68-9589-4506-b3e2-0ae53f559b3b","standardIngredientId":"2426e5b9-46e6-4d9c-9f25-f952ae4c5082","nameJa":"丸鶏（普通）","nameEn":"Whole chicken","authenticityImpact":-20,"flavorImpact":"去勢鶏特有の甘みと脂のコクが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f690d070-eec7-40a0-9ff9-fa8b361b9233","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"ひとつまみ","role":"flavor","scalingBehavior":null,"notes":"フィリング用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ブロードを作る：カッポーネを冷水から入れ、玉ねぎ・にんじん・セロリ・塩を加えて弱火で3時間煮る。丁寧にアクを取り除き、漉す。","title":"ブロードを引く","actionItems":["カッポーネを冷水から入れ玉ねぎ・にんじん・セロリ・塩を加えて弱火で3時間煮る。","丁寧にアクを取り除く。","漉す。"],"parallelItems":[],"completionCriteria":["ブロードが黄金色になり、漉して澄んだ。"],"cautionItems":["アクを丁寧に取り除くこと。澄んだ黄金色のブロードが完成の証。"],"tipItems":[],"durationMinutes":180,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":2,"instruction":"フィリングを作る：バターで炒めた豚ロース100g・プロシュート80g・モルタデッラ80gをフードプロセッサーで細かく挽く。パルミジャーノ80g・ナツメグひとつまみを加えてよく混ぜ、冷蔵庫で30分休ませる。","title":"フィリングを作る","actionItems":["バターで炒めた豚ロース100g・プロシュート80g・モルタデッラ80gをフードプロセッサーで細かく挽く。","パルミジャーノ80g・ナツメグひとつまみを加えてよく混ぜる。","冷蔵庫で30分休ませる。"],"parallelItems":[],"completionCriteria":["フィリングが均一に混ざり冷蔵庫で休んだ。"],"cautionItems":["豚ロースは必ずバターで炒めてから使うこと。生肉は使わない。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（フィリングを休ませる間に）薄力粉400gと卵4個でパスタ生地を作り、ラップに包んで30分休ませる。","title":"パスタ生地を休ませる","actionItems":["薄力粉400gと卵4個でパスタ生地を作る。","ラップに包んで30分休ませる。"],"parallelItems":[],"completionCriteria":["生地が均一でなめらかになり、30分休んだ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"パスタ生地を極薄（1mm以下）に伸ばし、3cm角の正方形にカットする。フィリングを米粒大のせ、三角形に折りたたんで2つの角を合わせてリング状にする（トルテッリーニの形）。","title":"成形する","actionItems":["パスタ生地を1mm以下に極薄に伸ばし3cm角の正方形にカットする。","フィリングを米粒大のせ三角形に折りたたむ。","2つの角を合わせてリング状にする（トルテッリーニの形）。"],"parallelItems":[],"completionCriteria":["全てのトルテッリーニがリング状に成形できた。"],"cautionItems":["生地は1mm以下に薄くすること。厚いと茹でで開かない。"],"tipItems":[],"durationMinutes":45,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ブロードを再加熱して沸騰させる。トルテッリーニを入れて2〜3分茹でる。浮いて少ししたら完成。","title":"ブロードで茹でる","actionItems":["ブロードを再加熱して沸騰させる。","トルテッリーニを入れて2〜3分茹でる。"],"parallelItems":[],"completionCriteria":["トルテッリーニが浮いてから少し経ち、茹で上がった。"],"cautionItems":["水ではなくブロードで茹でること。これがこの料理の真髄。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"深めのスープ皿にたっぷりのブロードとともに盛る。チーズは加えない——ブロードの黄金色をそのまま楽しむ。","title":"ブロードと共に盛り付ける","actionItems":["深めのスープ皿にたっぷりのブロードとともに盛る。"],"parallelItems":[],"completionCriteria":["黄金色のブロードの中にトルテッリーニが美しく盛られた。"],"cautionItems":["チーズは加えないこと。ブロードの純粋な味を損なう。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

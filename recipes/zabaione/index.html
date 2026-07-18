@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・トリノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,11 +93,18 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">6個</span><span class="ingredient-notes">常温に戻す</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">マルサラ（辛口）</span><span class="ingredient-qty">120ml</span><span class="ingredient-notes">Florio または Pellegrino の Marsala Fine DOC 推奨</span></li>
+              <li data-ingredient-row="7a4c1b6a-1947-4533-83ae-9bad17d3ca42"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>6個</span><span class="ingredient-notes">常温に戻す</span></li>
+          <li data-ingredient-row="c0379c38-5903-45b4-973e-93cacdceb383"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="44eff9e5-63e8-4ba8-89f5-8c7018ee7212"><span class="ingredient-name" data-ingredient-name>マルサラ（辛口）</span><span class="ingredient-qty" data-ingredient-qty>120ml</span><span class="ingredient-notes">Florio または Pellegrino の Marsala Fine DOC 推奨</span><button type="button" class="substitution-trigger" data-substitution-trigger="44eff9e5-63e8-4ba8-89f5-8c7018ee7212"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -250,6 +270,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0d4fcc21-a30c-45bb-940a-9ccdbaa3333d","nameJa":"ザバイオーネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"7a4c1b6a-1947-4533-83ae-9bad17d3ca42","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄","nameEn":"Egg yolks","quantity":6,"unit":"個","role":"essential","scalingBehavior":null,"notes":"常温に戻す","substitutionOptions":[]},{"id":"c0379c38-5903-45b4-973e-93cacdceb383","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"44eff9e5-63e8-4ba8-89f5-8c7018ee7212","nameOriginal":"Vino Marsala secco","nameJa":"マルサラ（辛口）","nameEn":"Dry Marsala wine","quantity":120,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"Florio または Pellegrino の Marsala Fine DOC 推奨","substitutionOptions":[{"id":"44462097-16d2-4fe5-ae37-bd7ff4ac3a9b","standardIngredientId":"44eff9e5-63e8-4ba8-89f5-8c7018ee7212","nameJa":"シェリー（フィノ）","nameEn":"Fino Sherry","authenticityImpact":-10,"flavorImpact":"マルサラ特有のカラメル様の甘みが弱まる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"6b6ce9a8-599a-43c2-99ea-16634f830b55","standardIngredientId":"44eff9e5-63e8-4ba8-89f5-8c7018ee7212","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","authenticityImpact":-20,"flavorImpact":"風味が大幅に変わり、本来のコクが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"b062f931-2ac3-4110-bf2e-b89990e3b878","standardIngredientId":"44eff9e5-63e8-4ba8-89f5-8c7018ee7212","nameJa":"マルサラ（甘口）","nameEn":"Sweet Marsala","authenticityImpact":-5,"flavorImpact":"甘みが強くなりバランスが崩れるが使用可","textureImpact":null,"procedureChanges":["砂糖を10g減らす"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"update","quantity":70,"targetNameJa":"砂糖"}],"stepPatches":[{"title":"卵黄と砂糖を混ぜる","action":"replace","stepNumber":1,"actionItems":["卵黄6個と砂糖70gを耐熱ボウルに入れ、電動ハンドミキサーまたは泡立て器で混ぜる。"],"instruction":"卵黄6個と砂糖70gを耐熱ボウルに入れ、電動ハンドミキサーまたは泡立て器で白っぽくもったりするまで混ぜる（約3分）。","changeReason":"甘口マルサラは甘みが強いため、砂糖を10g減らす","completionCriteria":["約3分。白っぽくもったりとした状態になれば次へ。"]}]}]}],"steps":[{"stepNumber":1,"instruction":"卵黄6個と砂糖80gを耐熱ボウルに入れ、電動ハンドミキサーまたは泡立て器で白っぽくもったりするまで混ぜる（約3分）。","title":"卵黄と砂糖を混ぜる","actionItems":["卵黄6個と砂糖80gを耐熱ボウルに入れ、電動ハンドミキサーまたは泡立て器で混ぜる。"],"parallelItems":[],"completionCriteria":["約3分。白っぽくもったりとした状態になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"マルサラワイン120mlを加えて混ぜ合わせる。","title":"マルサラを加える","actionItems":["マルサラワイン120mlを加えて泡立て器で混ぜ合わせる。"],"parallelItems":[],"completionCriteria":["均一に混ざれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ボウルを湯煎（80〜85℃のお湯）にかけ、泡立て器で絶えず混ぜながら加熱する。底に生地がつかないようかき混ぜ続け、全体が細かい泡でふくらみ始めたら次へ。","title":"湯煎で泡立てる","actionItems":["ボウルを湯煎（80〜85℃のお湯）にかけ、泡立て器で絶えず混ぜながら加熱する。"],"parallelItems":[],"completionCriteria":["約10分。全体が細かい泡でふくらみ始めたら次へ。"],"cautionItems":["底に生地がつかないようかき混ぜ続ける。湯煎の湯温が高すぎると卵が固まる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"クリームがリボン状に落ちるほどのもったりした泡状（80℃程度）になったら湯煎から外す。泡立て器を持ち上げると太い帯状に落ちる状態が目安。","title":"仕上がりを確認する","actionItems":["クリームがリボン状になったことを確認し、湯煎から外す。"],"parallelItems":[],"completionCriteria":["泡立て器を持ち上げると太い帯状に落ちれば完成。"],"cautionItems":["加熱しすぎると卵が固まり、ぼそぼそになる。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ワイングラスや小さなボウルに注ぎ、熱々のうちにすぐ提供する。ビスコッティ（カントゥッチなど）を添えても。","title":"提供する","actionItems":["ワイングラスまたは小さなボウルに均等に注ぐ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["時間が経つと泡が消えるため、作ったらすぐに提供する。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

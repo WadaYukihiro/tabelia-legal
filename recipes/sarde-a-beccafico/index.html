@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">生いわし（大）</span><span class="ingredient-qty">600g（12〜14尾）</span><span class="ingredient-notes">頭と内臓を除き、観音開きにする。背骨も除く</span></li>
-          <li><span class="ingredient-name">パン粉（細目）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">オリーブオイルで事前にきつね色になるまで炒める</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">レーズン（水で戻す）</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">アンチョビ（オイル漬け）</span><span class="ingredient-qty">4枚</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">オレンジ果汁・皮</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのオレンジを使用。果汁はかける用、皮は白いワタを避けて表皮だけをすりおろしフィリングに混ぜる。パレルモの特徴</span></li>
-          <li><span class="ingredient-name">ローリエ</span><span class="ingredient-qty">12枚</span><span class="ingredient-notes">いわしの間に挟む。香りと見た目の演出</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
+              <li data-ingredient-row="b51c0fa7-e1c4-47f6-8239-bd260f153d7b"><span class="ingredient-name" data-ingredient-name>生いわし（大）</span><span class="ingredient-qty" data-ingredient-qty>600g（12〜14尾）</span><span class="ingredient-notes">頭と内臓を除き、観音開きにする。背骨も除く</span><button type="button" class="substitution-trigger" data-substitution-trigger="b51c0fa7-e1c4-47f6-8239-bd260f153d7b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7d1d377f-5f1f-4f8a-81a8-3af0e62eb305"><span class="ingredient-name" data-ingredient-name>パン粉（細目）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">オリーブオイルで事前にきつね色になるまで炒める</span></li>
+          <li data-ingredient-row="f7f9385d-bbcc-4d5c-b3b4-d7603b590547"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="de15c631-6195-4ab3-8e40-86c56b4a4a5c"><span class="ingredient-name" data-ingredient-name>レーズン（水で戻す）</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="cc748e21-de61-44a3-abf2-7887da7f7c8e"><span class="ingredient-name" data-ingredient-name>アンチョビ（オイル漬け）</span><span class="ingredient-qty" data-ingredient-qty>4枚</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="d6a2884b-5397-410f-9024-1ef9efa93b2d"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="1a323222-6998-491c-aaaa-aa3ef4d2a1bd"><span class="ingredient-name" data-ingredient-name>オレンジ果汁・皮</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのオレンジを使用。果汁はかける用、皮は白いワタを避けて表皮だけをすりおろしフィリングに混ぜる。パレルモの特徴</span></li>
+          <li data-ingredient-row="b170d8b6-09f8-44af-b799-cf0dae6d34a5"><span class="ingredient-name" data-ingredient-name>ローリエ</span><span class="ingredient-qty" data-ingredient-qty>12枚</span><span class="ingredient-notes">いわしの間に挟む。香りと見た目の演出</span></li>
+          <li data-ingredient-row="a89d3c80-db4e-4241-9973-67e907fe9a99"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
               </ul>
             </section>
           </div>
@@ -272,6 +292,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"84aefa5f-f2f7-49b1-93c7-d0fd24537c21","nameJa":"いわしのベッカフィーコ風","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"b51c0fa7-e1c4-47f6-8239-bd260f153d7b","nameOriginal":"Sardine fresche","nameJa":"生いわし（大）","nameEn":"Fresh sardines","quantity":600,"unit":"g（12〜14尾）","role":"essential","scalingBehavior":null,"notes":"頭と内臓を除き、観音開きにする。背骨も除く","substitutionOptions":[{"id":"fa2844ca-4f6d-457a-8993-cbd4f55eb5c0","standardIngredientId":"b51c0fa7-e1c4-47f6-8239-bd260f153d7b","nameJa":"カタクチイワシ（大）","nameEn":"Large anchovies","authenticityImpact":-5,"flavorImpact":"風味が凝縮されて美味しいが扱いが難しい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7d1d377f-5f1f-4f8a-81a8-3af0e62eb305","nameOriginal":"Pangrattato","nameJa":"パン粉（細目）","nameEn":"Fine breadcrumbs","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"オリーブオイルで事前にきつね色になるまで炒める","substitutionOptions":[]},{"id":"f7f9385d-bbcc-4d5c-b3b4-d7603b590547","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"de15c631-6195-4ab3-8e40-86c56b4a4a5c","nameOriginal":"Uvetta","nameJa":"レーズン（水で戻す）","nameEn":"Raisins, soaked","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cc748e21-de61-44a3-abf2-7887da7f7c8e","nameOriginal":"Acciughe sott'olio","nameJa":"アンチョビ（オイル漬け）","nameEn":"Anchovy fillets in oil","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"d6a2884b-5397-410f-9024-1ef9efa93b2d","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":2,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"1a323222-6998-491c-aaaa-aa3ef4d2a1bd","nameOriginal":"Succo e buccia di arancia","nameJa":"オレンジ果汁・皮","nameEn":"Orange juice and grated peel","quantity":1,"unit":"個分","role":"essential","scalingBehavior":null,"notes":"国産・ノーワックスのオレンジを使用。果汁はかける用、皮は白いワタを避けて表皮だけをすりおろしフィリングに混ぜる。パレルモの特徴","substitutionOptions":[]},{"id":"b170d8b6-09f8-44af-b799-cf0dae6d34a5","nameOriginal":"Foglie di alloro","nameJa":"ローリエ","nameEn":"Bay leaves","quantity":12,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"いわしの間に挟む。香りと見た目の演出","substitutionOptions":[]},{"id":"a89d3c80-db4e-4241-9973-67e907fe9a99","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・アンチョビをみじん切りにする\n・イタリアンパセリをみじん切りにする\n・オレンジは白いワタを避け、表皮だけをすりおろす\n・オーブンを180℃に予熱する","title":"材料を準備する","actionItems":["アンチョビ4枚をみじん切りにする。","イタリアンパセリをみじん切りにする。","オレンジの表皮だけをすりおろす。","オーブンを180℃に予熱する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"パン粉をオリーブオイル大さじ2でフライパン炒りし、きつね色になったら冷ます。松の実・レーズン・アンチョビ・パセリ・すりおろしたオレンジの皮と混ぜてフィリングを作る。","title":"フィリングを作る","actionItems":["パン粉100gをオリーブオイル大さじ2でフライパン炒りし、きつね色になったら冷ます。","松の実40g・レーズン40g・アンチョビ・パセリ・すりおろしたオレンジの皮と混ぜてフィリングを作る。"],"parallelItems":[],"completionCriteria":["パン粉がきつね色になったら冷まして次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"いわしの皮側を下に広げ、フィリングを少量のせ（のせすぎない）、くるくると尾から頭側へ巻く。","title":"いわしを巻く","actionItems":["いわしの皮側を下に広げる。","フィリングを少量のせ（のせすぎない）、くるくると尾から頭側へ巻く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"オーブン皿にオリーブオイルを塗り、ロール状のいわしを巻き終わりを下にして横に並べる。ローリエを1枚ずつ間に挟む。","title":"オーブン皿に並べる","actionItems":["オーブン皿にオリーブオイルを塗る。","ロール状のいわしを巻き終わりを下にして横に並べる。","ローリエを1枚ずつ間に挟む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"オレンジ果汁とオリーブオイルを全体にかけ、残ったパン粉を散らす。180℃のオーブンで18〜20分焼く。","title":"焼き上げる","actionItems":["オレンジ果汁とオリーブオイルを全体にかける。","残ったパン粉を散らす。","180℃のオーブンで18〜20分焼く。"],"parallelItems":[],"completionCriteria":["18〜20分後。表面が色づき香ばしくなったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

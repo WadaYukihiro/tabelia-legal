@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ペンネ・リガーテ（溝付き）</span><span class="ingredient-qty">320g</span><span class="ingredient-notes">溝付きペンネ（リスト）がソースをよく絡める</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">手でつぶしておく</span></li>
-          <li><span class="ingredient-name">ニンニク</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">薄切りまたは包丁の腹でつぶす</span></li>
-          <li><span class="ingredient-name">赤唐辛子（乾燥）</span><span class="ingredient-qty">3本</span><span class="ingredient-notes">からさに応じて種ごと使う（辛い）か種を除く（やや辛い）か選ぶ</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">粗く刻む</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少量</span></li>
+              <li data-ingredient-row="ee06ebfe-b7cb-45cd-a56f-22f41ff691b5"><span class="ingredient-name" data-ingredient-name>ペンネ・リガーテ（溝付き）</span><span class="ingredient-qty" data-ingredient-qty>320g</span><span class="ingredient-notes">溝付きペンネ（リスト）がソースをよく絡める</span><button type="button" class="substitution-trigger" data-substitution-trigger="ee06ebfe-b7cb-45cd-a56f-22f41ff691b5"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="08e227ee-3be0-490e-9591-8f4571745b4a"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">手でつぶしておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="08e227ee-3be0-490e-9591-8f4571745b4a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4637fc14-c05e-4df5-bbb8-66c5485f1d50"><span class="ingredient-name" data-ingredient-name>ニンニク</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">薄切りまたは包丁の腹でつぶす</span></li>
+          <li data-ingredient-row="a0c51c44-6187-483d-8fa4-17a4f3e301c8"><span class="ingredient-name" data-ingredient-name>赤唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>3本</span><span class="ingredient-notes">からさに応じて種ごと使う（辛い）か種を除く（やや辛い）か選ぶ</span><button type="button" class="substitution-trigger" data-substitution-trigger="a0c51c44-6187-483d-8fa4-17a4f3e301c8"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c0483cf0-e3ae-4234-b6a7-ed0ac8ff7c65"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="6b08f546-7dab-42f7-9136-d5f7c75ceb9a"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">粗く刻む</span></li>
+          <li data-ingredient-row="45312eb6-8649-488b-abd4-4a831d7d5e4a"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
               </ul>
             </section>
           </div>
@@ -316,6 +336,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"2e587d2d-0080-47cd-858b-8250aa11ab9a","nameJa":"ペンネ アラビアータ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"ee06ebfe-b7cb-45cd-a56f-22f41ff691b5","nameOriginal":"Penne rigate","nameJa":"ペンネ・リガーテ（溝付き）","nameEn":"Penne rigate","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":"溝付きペンネ（リスト）がソースをよく絡める","substitutionOptions":[{"id":"da05a088-001b-43ec-aaa6-d2fa81df612b","standardIngredientId":"ee06ebfe-b7cb-45cd-a56f-22f41ff691b5","nameJa":"ペンネ（ツルツル）","nameEn":"Smooth penne","authenticityImpact":-5,"flavorImpact":"ソースの絡みが少し落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"08e227ee-3be0-490e-9591-8f4571745b4a","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手でつぶしておく","substitutionOptions":[{"id":"63d4d313-6097-461a-aaaa-5a2a1fde75b1","standardIngredientId":"08e227ee-3be0-490e-9591-8f4571745b4a","nameJa":"フレッシュトマト（完熟）500g","nameEn":"Fresh ripe tomatoes, 500g","authenticityImpact":-5,"flavorImpact":"季節によって風味が変わる。水分が多いので煮詰め時間を5分延長","textureImpact":null,"procedureChanges":["皮を湯むきして手でつぶす。煮詰め時間を5分増やす"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"4637fc14-c05e-4df5-bbb8-66c5485f1d50","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":4,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切りまたは包丁の腹でつぶす","substitutionOptions":[]},{"id":"a0c51c44-6187-483d-8fa4-17a4f3e301c8","nameOriginal":"Peperoncino rosso secco","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":3,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"からさに応じて種ごと使う（辛い）か種を除く（やや辛い）か選ぶ","substitutionOptions":[{"id":"eb10fe9c-0977-4017-85e8-bb0c97ebb590","standardIngredientId":"a0c51c44-6187-483d-8fa4-17a4f3e301c8","nameJa":"唐辛子フレーク小さじ1〜2","nameEn":"Red chili flakes, 1-2 tsp","authenticityImpact":-5,"flavorImpact":"辛みの均一性が変わるが代用として問題ない","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c0483cf0-e3ae-4234-b6a7-ed0ac8ff7c65","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6b08f546-7dab-42f7-9136-d5f7c75ceb9a","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Fresh parsley","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":"粗く刻む","substitutionOptions":[]},{"id":"45312eb6-8649-488b-abd4-4a831d7d5e4a","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ホールトマト缶を手でつぶしておく（ミキサーはかけない——粗めの食感が正解）。","title":"トマトをつぶす","actionItems":["ホールトマト缶を手でつぶしておく（ミキサーはかけない——粗めの食感が正解）。"],"parallelItems":[],"completionCriteria":["粗めにつぶしたら完了。"],"cautionItems":["ミキサーにはかけない——粗めの食感が正解。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"・ニンニクを薄切りまたは包丁の腹でつぶす\n・ペペロンチーノは好みの辛さに合わせて種を除くかどうか決める","title":"食材を準備","actionItems":["ニンニクを薄切りまたは包丁の腹でつぶす。","ペペロンチーノは好みの辛さに合わせて種を除くかどうか決める。"],"parallelItems":[],"completionCriteria":["準備が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにEVOO大さじ4・ニンニク・ペペロンチーノを入れ弱火にかける。ニンニクが薄く色づき香りが立つまで（約3〜4分）炒める。絶対に焦がさない——焦げると苦みが出て台無しになる。","title":"ニンニクを炒める","actionItems":["フライパンにEVOO大さじ4・ニンニク・ペペロンチーノを入れ弱火にかける。"],"parallelItems":[],"completionCriteria":["約3〜4分。薄く色づき香りが立ったら次へ。"],"cautionItems":["絶対に焦がさない——焦げると苦みが出て台無しになる。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"（煮詰める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。つぶしたトマトを加えて強めの中火で15〜20分煮詰め、水分を飛ばしてソースを凝縮させる。","title":"トマトを煮詰める","actionItems":["つぶしたトマトを加えて強めの中火で15〜20分煮詰め、水分を飛ばしてソースを凝縮させる。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["水分が飛んでソースが凝縮したら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":17,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"塩小さじ1/2で調味する。","title":"塩で調味","actionItems":["塩小さじ1/2で調味する。"],"parallelItems":[],"completionCriteria":["味が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"ペンネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["ペンネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"ペンネをアルデンテで引き上げ、茹で汁大さじ3〜4をソースに加えて乳化させてからペンネを移す。強火で1〜2分炒め合わせ、ソースをペンネの内側まで絡ませる。","title":"パスタを絡める","actionItems":["茹で汁大さじ3〜4をソースに加えて乳化させる。","ペンネを移して強火で1〜2分炒め合わせる。"],"parallelItems":[],"completionCriteria":["ソースがペンネの内側まで絡まったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"皿に盛り、パセリをちぎって散らす。チーズは不要——これが本場ローマのスタイル。","title":"パセリを散らす","actionItems":["皿に盛り、パセリをちぎって散らす。"],"parallelItems":[],"completionCriteria":["パセリを散らしたら完成。"],"cautionItems":["チーズは不要——これが本場ローマのスタイル。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

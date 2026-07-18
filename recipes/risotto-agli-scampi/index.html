@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ヴェネツィア</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スカンピ</span><span class="ingredient-qty">8尾</span><span class="ingredient-notes">頭と殻を外し、身は背わたを取る</span></li>
-          <li><span class="ingredient-name">カルナローリ米</span><span class="ingredient-qty">180g</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">35g</span><span class="ingredient-notes">冷やしておく</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">35ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">4枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">6g</span></li>
+              <li data-ingredient-row="b6fe5dd9-2651-4c78-996d-3f023a54b6e9"><span class="ingredient-name" data-ingredient-name>スカンピ</span><span class="ingredient-qty" data-ingredient-qty>8尾</span><span class="ingredient-notes">頭と殻を外し、身は背わたを取る</span></li>
+          <li data-ingredient-row="c9f05bee-8cf8-4cfc-b67b-56a9aa0e89c1"><span class="ingredient-name" data-ingredient-name>カルナローリ米</span><span class="ingredient-qty" data-ingredient-qty>180g</span></li>
+          <li data-ingredient-row="849fc96e-abc9-4b8e-813f-51e95b028739"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="d79220ae-7403-42fd-9ea6-9b81e4d2c762"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="50c25b6a-e14b-4386-8aa3-c3f66b543104"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="36f866bf-4ba1-4a92-ae6a-e2df837d92eb"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="988de4f5-e729-4836-9581-f6297f934317"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>35g</span><span class="ingredient-notes">冷やしておく</span></li>
+          <li data-ingredient-row="f3e620bf-6e8c-4156-a15e-57fde3a939c3"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>35ml</span></li>
+          <li data-ingredient-row="af8ecce3-7e6e-4e35-9122-4cd176fde1b1"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>4枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="d79fbca3-37cf-4935-9ead-026452cc21de"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>6g</span></li>
               </ul>
             </section>
           </div>
@@ -261,6 +281,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"34fdd150-fc5e-4cb3-89a8-33a91c73c176","nameJa":"スカンピのリゾット","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"b6fe5dd9-2651-4c78-996d-3f023a54b6e9","nameOriginal":"Scampi interi","nameJa":"スカンピ","nameEn":"Whole scampi","quantity":8,"unit":"尾","role":"essential","scalingBehavior":null,"notes":"頭と殻を外し、身は背わたを取る","substitutionOptions":[]},{"id":"c9f05bee-8cf8-4cfc-b67b-56a9aa0e89c1","nameOriginal":"Riso Carnaroli","nameJa":"カルナローリ米","nameEn":"Carnaroli rice","quantity":180,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"849fc96e-abc9-4b8e-813f-51e95b028739","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":0.5,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"d79220ae-7403-42fd-9ea6-9b81e4d2c762","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":0.5,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"50c25b6a-e14b-4386-8aa3-c3f66b543104","nameOriginal":"Carota","nameJa":"にんじん","nameEn":"Carrot","quantity":0.5,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"36f866bf-4ba1-4a92-ae6a-e2df837d92eb","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"988de4f5-e729-4836-9581-f6297f934317","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":35,"unit":"g","role":"technique","scalingBehavior":null,"notes":"冷やしておく","substitutionOptions":[]},{"id":"f3e620bf-6e8c-4156-a15e-57fde3a939c3","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":35,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"af8ecce3-7e6e-4e35-9122-4cd176fde1b1","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":4,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"d79fbca3-37cf-4935-9ead-026452cc21de","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":6,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"スカンピ8尾は頭と殻を外し、身の背わたを取る。玉ねぎ、セロリ、にんじんはみじん切りにする。イタリアンパセリ4枝はみじん切りにする。","title":"スカンピを準備する","actionItems":["スカンピ8尾は頭と殻を外し、身の背わたを取る。","玉ねぎ、セロリ、にんじんはみじん切りにする。","イタリアンパセリ4枝はみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋にエクストラバージンオリーブオイル20mlを熱し、スカンピの頭と殻を炒める。赤く色づいたら香味野菜の半量と白ワイン50ml、水700mlを加え、25分煮る。潰して濾し、塩3gで調える。","title":"ブロードを取る","actionItems":["鍋にエクストラバージンオリーブオイル20mlを熱し、スカンピの頭と殻を炒める。","赤く色づいたら香味野菜の半量と白ワイン50ml、水700mlを加え、25分煮る。","潰して濾し、塩3gで調える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":35,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"別鍋にエクストラバージンオリーブオイル15mlと残りの玉ねぎを入れて炒める。カルナローリ米180gを加え、縁が透き通ったら白ワイン50mlを注ぐ。温かいスカンピブロードを少しずつ加え、米がアルデンテになるまで炊く。","title":"米を炊く","actionItems":["別鍋にエクストラバージンオリーブオイル15mlと残りの玉ねぎを入れて炒める。","カルナローリ米180gを加え、縁が透き通ったら白ワイン50mlを注ぐ。","温かいスカンピブロードを少しずつ加え、米がアルデンテになるまで炊く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"スカンピの身を加えて1分だけ火を通す。身が白くなり、中心がしっとり残る状態で火を止める。","title":"スカンピを合わせる","actionItems":["スカンピの身を加えて1分だけ火を通す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["身が白くなり、中心がしっとり残る状態で火を止める。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"冷たいバター35g、塩3g、イタリアンパセリを加えて混ぜる。米が皿の上でゆっくり広がる濃度になったら完成。","title":"仕上げる","actionItems":["冷たいバター35g、塩3g、イタリアンパセリを加えて混ぜる。"],"parallelItems":[],"completionCriteria":["米が皿の上でゆっくり広がる濃度になったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

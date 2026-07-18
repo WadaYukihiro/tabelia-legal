@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>12分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>3時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ / 全国区</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,17 +94,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">全乳</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">ダークチョコレート（65〜70%）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">細かく刻む</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">コーンスターチ</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">ゼラチンや寒天は使わない。コーンスターチが独特のなめらかな質感を作る</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">仕上げに加えることで艶とコクが出る</span></li>
-          <li><span class="ingredient-name">バニラエッセンス</span><span class="ingredient-qty">3ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">純cocoa（無糖）</span><span class="ingredient-qty">10g</span><span class="ingredient-notes">仕上げ用</span></li>
+              <li data-ingredient-row="40e5b7d1-d637-4105-a04b-9e3075966e4c"><span class="ingredient-name" data-ingredient-name>全乳</span><span class="ingredient-qty" data-ingredient-qty>500ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="40e5b7d1-d637-4105-a04b-9e3075966e4c"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="00e2a9a7-ed20-4787-b742-c387b8047c0e"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="7136a236-b460-4868-82bc-8753669b2d0d"><span class="ingredient-name" data-ingredient-name>ダークチョコレート（65〜70%）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">細かく刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="7136a236-b460-4868-82bc-8753669b2d0d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="b88c7ed6-c9a7-4378-8b66-30f0d0ae659d"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="28816d43-be63-4476-8794-309135641a80"><span class="ingredient-name" data-ingredient-name>コーンスターチ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">ゼラチンや寒天は使わない。コーンスターチが独特のなめらかな質感を作る</span></li>
+          <li data-ingredient-row="2de487af-ffb6-4a05-a99c-5e5c70ad8f67"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">仕上げに加えることで艶とコクが出る</span></li>
+          <li data-ingredient-row="870e1eec-6736-42bb-a4c4-166aa9062747"><span class="ingredient-name" data-ingredient-name>バニラエッセンス</span><span class="ingredient-qty" data-ingredient-qty>3ml</span></li>
+          <li data-ingredient-row="9443dc42-7c90-4142-b31b-bedcc94fc097"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="51595ffe-721f-4800-a05e-9579f664eac7"><span class="ingredient-name" data-ingredient-name>純cocoa（無糖）</span><span class="ingredient-qty" data-ingredient-qty>10g</span><span class="ingredient-notes">仕上げ用</span></li>
               </ul>
             </section>
           </div>
@@ -317,6 +337,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c7fa2ef7-45a4-417a-9ff5-21e7c98e1721","nameJa":"チョコレートのブディーノ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"40e5b7d1-d637-4105-a04b-9e3075966e4c","nameOriginal":"Latte intero","nameJa":"全乳","nameEn":"Whole milk","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"c5fe5bd1-72ff-4291-b1eb-6080488a3d20","standardIngredientId":"40e5b7d1-d637-4105-a04b-9e3075966e4c","nameJa":"低脂肪乳","nameEn":"Low-fat milk","authenticityImpact":-10,"flavorImpact":"コクが落ち薄い仕上がりになる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"00e2a9a7-ed20-4787-b742-c387b8047c0e","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7136a236-b460-4868-82bc-8753669b2d0d","nameOriginal":"Cioccolato fondente","nameJa":"ダークチョコレート（65〜70%）","nameEn":"Dark chocolate","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かく刻む","substitutionOptions":[{"id":"7ed47bfa-6d9b-4055-b7b1-d3a798978acb","standardIngredientId":"7136a236-b460-4868-82bc-8753669b2d0d","nameJa":"ダークチョコレート（80%以上）","nameEn":"Extra dark chocolate (80%+)","authenticityImpact":-5,"flavorImpact":"苦みが強くなる。砂糖を20g増やすとバランスが取れる","textureImpact":null,"procedureChanges":["砂糖を20g増量する"],"affectedStepNumbers":[1,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"update","quantity":100,"targetNameJa":"砂糖"}],"stepPatches":[{"title":"チョコと粉類を準備する","action":"replace","stepNumber":1,"actionItems":["ダークチョコレート（80%以上）150gを細かく刻む。","別のボウルに砂糖100g・コーンスターチ40g・塩1gを合わせてよく混ぜる。"],"instruction":"ダークチョコレート（80%以上）150gを細かく刻む。別のボウルに砂糖100g・コーンスターチ40g・塩1gを合わせてよく混ぜる。","changeReason":"80%以上のチョコレートは苦みが強いため、砂糖を20g増やす","completionCriteria":["均一に混ざれば次へ。"]},{"title":"とろみをつけチョコを溶かす","action":"replace","stepNumber":4,"actionItems":["絶えず泡立て器でかき混ぜながら中火で加熱する。","ぷっくりした気泡が立ったら火を止める。","刻んだダークチョコレート（80%以上）150gとバター20gを加えてよく混ぜ完全に溶かす。"],"instruction":"絶えず泡立て器でかき混ぜながら加熱する。3〜5分でとろみが出始め、ぷっくりとした気泡が立つようになったら（82〜85℃）火を止める。刻んだダークチョコレート（80%以上）150gとバター20gを加えてよく混ぜ、完全に溶かす。","cautionItems":["絶えずかき混ぜる。底が焦げやすい。"],"changeReason":"置換後のチョコレート名と増量した砂糖に合わせるため","completionCriteria":["3〜5分。ぷっくりとした気泡が立てば火を止める。チョコとバターが完全に溶けたら次へ。"]}]}]},{"id":"b88c7ed6-c9a7-4378-8b66-30f0d0ae659d","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"28816d43-be63-4476-8794-309135641a80","nameOriginal":"Amido di mais","nameJa":"コーンスターチ","nameEn":"Cornstarch","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":"ゼラチンや寒天は使わない。コーンスターチが独特のなめらかな質感を作る","substitutionOptions":[]},{"id":"2de487af-ffb6-4a05-a99c-5e5c70ad8f67","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":"仕上げに加えることで艶とコクが出る","substitutionOptions":[]},{"id":"870e1eec-6736-42bb-a4c4-166aa9062747","nameOriginal":"Vaniglia","nameJa":"バニラエッセンス","nameEn":"Vanilla extract","quantity":3,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9443dc42-7c90-4142-b31b-bedcc94fc097","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"51595ffe-721f-4800-a05e-9579f664eac7","nameOriginal":"Cacao amaro in polvere","nameJa":"純cocoa（無糖）","nameEn":"Unsweetened cocoa powder","quantity":10,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"仕上げ用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ダークチョコレート150gを細かく刻む。別のボウルに砂糖80g・コーンスターチ40g・塩1gを合わせてよく混ぜる。","title":"チョコと粉類を準備する","actionItems":["ダークチョコレート150gを細かく刻む。","別のボウルに砂糖80g・コーンスターチ40g・塩1gを合わせてよく混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"小鍋に全乳500ml・生クリーム100ml・バニラエッセンス3mlを入れて中火で温める。縁がふつふつしてきたら（沸騰直前）火から外す。","title":"牛乳を温める","actionItems":["小鍋に全乳500ml・生クリーム100ml・バニラエッセンス3mlを入れて中火で温める。","縁がふつふつしてきたら火から外す。"],"parallelItems":[],"completionCriteria":["縁がふつふつしてきたら次へ。"],"cautionItems":["沸騰させない。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"砂糖＋コーンスターチの混合に、温めた牛乳液を少量ずつ加えながら泡立て器でよく混ぜてダマをなくす。全量混ぜ合わせたら鍋に戻し、中火にかける。","title":"混ぜ合わせる","actionItems":["砂糖・コーンスターチの混合に温めた牛乳を少量ずつ加えながら泡立て器でよく混ぜる。","全量混ぜ合わせたら鍋に戻して中火にかける。"],"parallelItems":[],"completionCriteria":["ダマがなく均一に混ざれば次へ。"],"cautionItems":["一気に加えるとダマができる。少量ずつ加える。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"絶えず泡立て器でかき混ぜながら加熱する。3〜5分でとろみが出始め、ぷっくりとした気泡が立つようになったら（82〜85℃）火を止める。刻んだチョコレート150gとバター20gを加えてよく混ぜ、完全に溶かす。","title":"とろみをつけチョコを溶かす","actionItems":["絶えず泡立て器でかき混ぜながら中火で加熱する。","ぷっくりした気泡が立ったら火を止める。","刻んだチョコレート150gとバター20gを加えてよく混ぜ完全に溶かす。"],"parallelItems":[],"completionCriteria":["3〜5分。ぷっくりとした気泡が立てば火を止める。チョコとバターが完全に溶けたら次へ。"],"cautionItems":["絶えずかき混ぜる。底が焦げやすい。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"4つのグラスまたはラメキンに均等に注ぐ。表面にラップを密着させて膜が張るのを防ぎ、粗熱を取る。","title":"型に注ぐ","actionItems":["4つのグラスまたはラメキンに均等に注ぐ。","表面にラップを密着させる。","粗熱を取る。"],"parallelItems":[],"completionCriteria":["表面に膜が張らず、容器が熱くなくなれば次へ。"],"cautionItems":["ラップを密着させないと表面に膜が張る。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"冷蔵庫で最低3時間冷やす。中心まで冷えて、容器を軽く揺らしたときに表面がゆっくり震える程度に固まれば次へ。","title":"冷蔵庫で固める","actionItems":["冷蔵庫で最低3時間冷やす。"],"parallelItems":[],"completionCriteria":["最低3時間。中心まで冷え、表面がゆっくり震える程度に固まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":180,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":7,"instruction":"食べる直前に純cocoa10gを茶こしで表面に振る。冷蔵で2〜3日保存可能。","title":"ココアを振る","actionItems":["食べる直前に純cocoa10gを茶こしで表面に振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

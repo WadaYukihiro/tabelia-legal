@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ローマ・ミラノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">鶏胸肉</span><span class="ingredient-qty">600g（4枚）</span><span class="ingredient-notes">1枚を横に開いて2枚にし（8枚分）、ラップを挟んで5mm厚に叩く</span></li>
-          <li><span class="ingredient-name">レモン（無農薬）</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">果汁＋輪切りを飾りに使う</span></li>
-          <li><span class="ingredient-name">ケッパー（塩漬け）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">水で塩を洗い流す</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">冷たいまま使う。ソースの乳化用</span></li>
-          <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">肉にまぶして焼き色を出す</span></li>
-          <li><span class="ingredient-name">チキンブロード</span><span class="ingredient-qty">80ml</span><span class="ingredient-notes">ソース用。市販コンソメ可</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ（みじん切り）</span><span class="ingredient-qty">1束</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">30ml</span></li>
+              <li data-ingredient-row="7fc0191c-c03f-4703-bfc2-f4028f42b66a"><span class="ingredient-name" data-ingredient-name>鶏胸肉</span><span class="ingredient-qty" data-ingredient-qty>600g（4枚）</span><span class="ingredient-notes">1枚を横に開いて2枚にし（8枚分）、ラップを挟んで5mm厚に叩く</span></li>
+          <li data-ingredient-row="654e0d5b-5257-47a2-b7f2-dc6a93043ec0"><span class="ingredient-name" data-ingredient-name>レモン（無農薬）</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">果汁＋輪切りを飾りに使う</span></li>
+          <li data-ingredient-row="81095639-d01b-498b-885f-6fe92cbe254d"><span class="ingredient-name" data-ingredient-name>ケッパー（塩漬け）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">水で塩を洗い流す</span><button type="button" class="substitution-trigger" data-substitution-trigger="81095639-d01b-498b-885f-6fe92cbe254d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9bfe69c5-878d-4fef-9f24-606d67cef866"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">冷たいまま使う。ソースの乳化用</span></li>
+          <li data-ingredient-row="6c0e87f4-743f-4930-98f9-2d240c36b39c"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">肉にまぶして焼き色を出す</span></li>
+          <li data-ingredient-row="67e13eb0-c80d-48f6-9f27-4f5e800a69a5"><span class="ingredient-name" data-ingredient-name>チキンブロード</span><span class="ingredient-qty" data-ingredient-qty>80ml</span><span class="ingredient-notes">ソース用。市販コンソメ可</span></li>
+          <li data-ingredient-row="4e528123-2899-4d51-a309-744ed8c4646f"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ（みじん切り）</span><span class="ingredient-qty" data-ingredient-qty>1束</span></li>
+          <li data-ingredient-row="2e096eb3-3edb-436d-9f53-d657399c4f9b"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
               </ul>
             </section>
           </div>
@@ -275,6 +295,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"de570fd6-94b3-4f7d-8282-b9e195b06d38","nameJa":"鶏肉のレモンピッカータ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"7fc0191c-c03f-4703-bfc2-f4028f42b66a","nameOriginal":"Petto di pollo","nameJa":"鶏胸肉","nameEn":"Chicken breast","quantity":600,"unit":"g（4枚）","role":"essential","scalingBehavior":null,"notes":"1枚を横に開いて2枚にし（8枚分）、ラップを挟んで5mm厚に叩く","substitutionOptions":[]},{"id":"654e0d5b-5257-47a2-b7f2-dc6a93043ec0","nameOriginal":"Limone di Amalfi","nameJa":"レモン（無農薬）","nameEn":"Lemon (preferably unwaxed)","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"果汁＋輪切りを飾りに使う","substitutionOptions":[]},{"id":"81095639-d01b-498b-885f-6fe92cbe254d","nameOriginal":"Capperi sotto sale","nameJa":"ケッパー（塩漬け）","nameEn":"Capers in salt","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"水で塩を洗い流す","substitutionOptions":[{"id":"59ecdc58-a921-43fe-a274-2744e670bcc4","standardIngredientId":"81095639-d01b-498b-885f-6fe92cbe254d","nameJa":"ケッパー（酢漬け・水切り）","nameEn":"Capers in vinegar, drained","authenticityImpact":-5,"flavorImpact":"酸味が少し強くなる。よく水切りすれば代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9bfe69c5-878d-4fef-9f24-606d67cef866","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"冷たいまま使う。ソースの乳化用","substitutionOptions":[]},{"id":"6c0e87f4-743f-4930-98f9-2d240c36b39c","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Plain flour","quantity":60,"unit":"g","role":"technique","scalingBehavior":null,"notes":"肉にまぶして焼き色を出す","substitutionOptions":[]},{"id":"67e13eb0-c80d-48f6-9f27-4f5e800a69a5","nameOriginal":"Brodo di pollo","nameJa":"チキンブロード","nameEn":"Chicken broth","quantity":80,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"ソース用。市販コンソメ可","substitutionOptions":[]},{"id":"4e528123-2899-4d51-a309-744ed8c4646f","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ（みじん切り）","nameEn":"Flat-leaf parsley, chopped","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2e096eb3-3edb-436d-9f53-d657399c4f9b","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"鶏胸肉を横に開いて半分の厚さにし、ラップで挟んで肉叩きまたはびんの底で5mm厚に均一に叩く。塩・こしょうをして薄力粉を両面にまぶし、余分な粉を払う。","title":"鶏肉を叩いて粉をまぶす","actionItems":["鶏胸肉4枚を横に開いて半分の厚さにする。","ラップで挟んで肉叩きまたはびんの底で5mm厚に均一に叩く。","塩・こしょうをして薄力粉60gを両面にまぶし、余分な粉を払う。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["厚みが均一でないと焼きムラができる。均一に叩くこと。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイルを強火に熱し、鶏肉を小分けにして入れ、各面2〜3分ずつ黄金色に焼いて取り出す（全体的に白くなるまで）。","title":"鶏肉を焼く","actionItems":["フライパンにオリーブオイル30mlを強火に熱する。","鶏肉を小分けにして入れ、各面2〜3分ずつ黄金色に焼いて取り出す。"],"parallelItems":[],"completionCriteria":["両面が黄金色になり全体が白くなれば取り出す。"],"cautionItems":["一度に入れず小分けにして焼くこと。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンにチキンブロードとレモン果汁（1個分）を加えて強火で1〜2分煮詰める。ケッパーを加える。","title":"ソースのベースを作る","actionItems":["同じフライパンにチキンブロード80mlとレモン果汁1個分を加えて強火で1〜2分煮詰める。","ケッパー30gを加える。"],"parallelItems":[],"completionCriteria":["ソースが少し煮詰まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"鶏肉を戻し、冷たいバターを小さく切って加えながら鍋を振ってソースを乳化させる。ソースがとろりとクリーム状になれば完成。","title":"バターでソースを乳化させる","actionItems":["鶏肉を戻す。","冷たいバター60gを小さく切って加えながら鍋を振ってソースを乳化させる。"],"parallelItems":[],"completionCriteria":["ソースがとろりとクリーム状になれば完成。"],"cautionItems":["バターは冷たいまま使うこと。温かいと乳化せず分離する。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"パセリを散らし、レモンを輪切りにして飾る。すぐに食べること。ソースが時間とともに分離する。","title":"パセリとレモンを飾る","actionItems":["パセリを散らし、レモンを輪切りにして飾る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["ソースが時間とともに分離するため、すぐに食べること。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

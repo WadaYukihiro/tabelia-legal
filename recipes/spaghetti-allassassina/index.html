@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・バーリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スパゲッティ（乾燥）</span><span class="ingredient-qty">160g</span><span class="ingredient-notes">1.8〜2.0mm太さ。細すぎると焦げが進みすぎる。茹でない</span></li>
-          <li><span class="ingredient-name">トマトペースト（ダブル）</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">パッサータ（トマトピューレ）</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">薄切り。香りを出したら取り出さずそのまま残す</span></li>
-          <li><span class="ingredient-name">赤唐辛子（乾燥）</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">手で細かくほぐす。アッサシーナは辛みが必要——省略しない</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">熱湯</span><span class="ingredient-qty">400ml</span><span class="ingredient-notes">常に沸騰した状態でポットに用意しておく。常温水は使わない</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">トマトソースの調味用</span></li>
+              <li data-ingredient-row="bdf3bbf8-536c-41b7-a53b-758754a82f68"><span class="ingredient-name" data-ingredient-name>スパゲッティ（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>160g</span><span class="ingredient-notes">1.8〜2.0mm太さ。細すぎると焦げが進みすぎる。茹でない</span><button type="button" class="substitution-trigger" data-substitution-trigger="bdf3bbf8-536c-41b7-a53b-758754a82f68"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a86151af-f5b6-4da9-80a4-cf09d8f39181"><span class="ingredient-name" data-ingredient-name>トマトペースト（ダブル）</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="070032b0-fedf-4b25-a188-2d077b5fcd15"><span class="ingredient-name" data-ingredient-name>パッサータ（トマトピューレ）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="070032b0-fedf-4b25-a188-2d077b5fcd15"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="fa53125d-3147-4423-bb44-f7c7e13c6b54"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">薄切り。香りを出したら取り出さずそのまま残す</span></li>
+          <li data-ingredient-row="12d0be4f-dc16-48f6-8bc2-602f9b79c3a8"><span class="ingredient-name" data-ingredient-name>赤唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">手で細かくほぐす。アッサシーナは辛みが必要——省略しない</span><button type="button" class="substitution-trigger" data-substitution-trigger="12d0be4f-dc16-48f6-8bc2-602f9b79c3a8"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="932db67b-114a-42d4-83f2-863d52b0128b"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="df16478f-d1ee-4aa6-bb7a-fbc6d8047e45"><span class="ingredient-name" data-ingredient-name>熱湯</span><span class="ingredient-qty" data-ingredient-qty>400ml</span><span class="ingredient-notes">常に沸騰した状態でポットに用意しておく。常温水は使わない</span></li>
+          <li data-ingredient-row="af8576c8-396e-4e73-bf67-21068c3b53a9"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">トマトソースの調味用</span></li>
               </ul>
             </section>
           </div>
@@ -295,6 +315,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"19401688-4b5a-46b9-a967-a88d458b1e74","nameJa":"焦がしトマトの暗殺者風スパゲッティ","baseServings":2,"minServings":1,"maxServings":2},"ingredients":[{"id":"bdf3bbf8-536c-41b7-a53b-758754a82f68","nameOriginal":"Spaghetti","nameJa":"スパゲッティ（乾燥）","nameEn":"Dry spaghetti","quantity":160,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1.8〜2.0mm太さ。細すぎると焦げが進みすぎる。茹でない","substitutionOptions":[{"id":"b5b93699-1696-4d4d-a6b8-09538d410076","standardIngredientId":"bdf3bbf8-536c-41b7-a53b-758754a82f68","nameJa":"スパゲッティーニ（1.6mm）","nameEn":"Spaghettini (1.6mm)","authenticityImpact":-5,"flavorImpact":"細いため焦げが進みやすい。火加減の調整が難しくなる","textureImpact":null,"procedureChanges":["熱湯を加えるタイミングを早める"],"affectedStepNumbers":[4,5],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":4,"instruction":"スパゲッティーニ（1.6mm・乾燥のまま）をフライパンに投入し、強火のまま箸かトングで広げながら20〜30秒だけ炒める。表面が油でコーティングされ、一部が薄く色づき始めたらすぐ次へ。","changeReason":"スパゲッティーニは細く焦げやすいため、乾麺を炒める時間を短くする"},{"action":"replace","stepNumber":5,"instruction":"トマトソースの1/3量（約80ml）をスパゲッティーニに回しかける。強火を維持したまま、絶えず動かしながらソースを吸わせる。水分が半分ほど飛んだ時点で熱湯を80〜100mlお玉で早めに加える。再び吸収されるまで炒め、この「ソース→早めの熱湯→吸収」のサイクルをアルデンテになるまで続ける（3〜4サイクル、計9〜11分）。","changeReason":"スパゲッティーニは焦げと吸水が早いため、熱湯を加えるタイミングを早める"}]}]},{"id":"a86151af-f5b6-4da9-80a4-cf09d8f39181","nameOriginal":"Concentrato di pomodoro","nameJa":"トマトペースト（ダブル）","nameEn":"Double-concentrated tomato paste","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"070032b0-fedf-4b25-a188-2d077b5fcd15","nameOriginal":"Passata di pomodoro","nameJa":"パッサータ（トマトピューレ）","nameEn":"Tomato passata","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"3b6de7ae-5942-41ac-b4a8-74ac5b21f990","standardIngredientId":"070032b0-fedf-4b25-a188-2d077b5fcd15","nameJa":"ホールトマト缶（手でつぶして裏ごし）","nameEn":"Whole peeled tomatoes, strained","authenticityImpact":0,"flavorImpact":"同等。種を除くと滑らかになる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"fa53125d-3147-4423-bb44-f7c7e13c6b54","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り。香りを出したら取り出さずそのまま残す","substitutionOptions":[]},{"id":"12d0be4f-dc16-48f6-8bc2-602f9b79c3a8","nameOriginal":"Peperoncino secco","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":2,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"手で細かくほぐす。アッサシーナは辛みが必要——省略しない","substitutionOptions":[{"id":"75cda1a0-059c-43aa-a971-6d1e749d33f1","standardIngredientId":"12d0be4f-dc16-48f6-8bc2-602f9b79c3a8","nameJa":"唐辛子フレーク 小さじ1","nameEn":"Chili flakes, 1 tsp","authenticityImpact":0,"flavorImpact":"辛みの調整がしやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"932db67b-114a-42d4-83f2-863d52b0128b","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"df16478f-d1ee-4aa6-bb7a-fbc6d8047e45","nameOriginal":"Acqua bollente","nameJa":"熱湯","nameEn":"Boiling water","quantity":400,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"常に沸騰した状態でポットに用意しておく。常温水は使わない","substitutionOptions":[]},{"id":"af8576c8-396e-4e73-bf67-21068c3b53a9","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"トマトソースの調味用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"トマトソースを作る。小鍋にパッサータ200mlとトマトペースト60gを合わせてよく混ぜ、塩小さじ1/2を加えて中火で5分煮詰める。やや濃いめのソースになったら火を止めて取り置く。同時に熱湯400mlをポットに用意して沸騰状態を保つ。","title":"ソースを作る","actionItems":["トマトソースを作る。","小鍋にパッサータ200mlとトマトペースト60gを合わせてよく混ぜ、塩小さじ1/2を加えて中火で5分煮詰める。"],"parallelItems":["同時に熱湯400mlをポットに用意して沸騰状態を保つ。"],"completionCriteria":[],"cautionItems":["やや濃いめのソースになったら火を止めて取り置く。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"にんにく3片を薄切りにする。赤唐辛子2本を手でほぐす。","title":"材料を準備する","actionItems":["にんにく3片を薄切りにする。","赤唐辛子2本を手でほぐす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鉄製フライパン（または厚手のステンレス、28cm）にエクストラバージンオリーブオイル60mlを入れ、強火で煙が出るほど熱する（約2〜3分）。にんにく（薄切り）と赤唐辛子（ほぐしたもの）を加えてにんにくが薄く色づき香りが立つまで30〜40秒炒める。","title":"材料を合わせる","actionItems":["鉄製フライパン（または厚手のステンレス、28cm）にエクストラバージンオリーブオイル60mlを入れ、強火で煙が出るほど熱する（約2〜3分）。","にんにく（薄切り）と赤唐辛子（ほぐしたもの）を加えてにんにくが薄く色づき香りが立つまで30〜40秒炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"スパゲッティ（乾燥のまま）をフライパンに投入し、強火のまま箸かトングで広げながら30秒〜1分炒める。スパゲッティの表面が油でコーティングされ、一部が薄く色づいてきたら次へ——この焦げは正常であり目的。","title":"香味を炒める","actionItems":["スパゲッティ（乾燥のまま）をフライパンに投入し、強火のまま箸かトングで広げながら30秒〜1分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["スパゲッティの表面が油でコーティングされ、一部が薄く色づいてきたら次へ——この焦げは正常であり目的。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"トマトソースの1/3量（約80ml）をスパゲッティに回しかける。強火を維持したまま、スパゲッティをトングで絶えず動かしながらソースを吸わせる。水分が吸収されてほぼなくなったら（約2〜3分）、熱湯を80〜100mlお玉で加える。再び吸収されるまで炒める。この「ソース→吸収→熱湯→吸収」のサイクルをスパゲッティがアルデンテになるまで続ける（4〜5サイクル、計12〜15分）。","title":"ソースを作る","actionItems":["トマトソースの1/3量（約80ml）をスパゲッティに回しかける。","強火を維持したまま、スパゲッティをトングで絶えず動かしながらソースを吸わせる。","水分が吸収されてほぼなくなったら（約2〜3分）、熱湯を80〜100mlお玉で加える。","再び吸収されるまで炒める。"],"parallelItems":[],"completionCriteria":["この「ソース→吸収→熱湯→吸収」のサイクルをスパゲッティがアルデンテになるまで続ける（4〜5サイクル、計12〜15分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"スパゲッティの中心にわずかに芯が残り、表面に茶褐色の焦げ斑点がついた状態がゴール。残りのトマトソースを加え、最後に1分強火で炒め合わせてパスタ全体にソースを絡める。","title":"仕上げにまとめる","actionItems":["残りのトマトソースを加え、最後に1分強火で炒め合わせてパスタ全体にソースを絡める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["スパゲッティの中心にわずかに芯が残り、表面に茶褐色の焦げ斑点がついた状態がゴール。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"皿に盛る。仕上げの追加油は使わない——シンプルに仕上げる。","title":"盛り付ける","actionItems":["皿に盛る。","仕上げの追加油は使わない——シンプルに仕上げる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

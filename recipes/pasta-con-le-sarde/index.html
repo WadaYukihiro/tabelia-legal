@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ブカティーニまたはスパゲッティ</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">イワシ（生・新鮮なもの）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">頭・内臓を取り三枚おろし</span></li>
-          <li><span class="ingredient-name">野生ウイキョウ（フィノッキオ）の葉</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">茹でて細かく刻む。茹で汁はパスタに使う</span></li>
-          <li><span class="ingredient-name">アンチョビ（塩漬け）</span><span class="ingredient-qty">4枚</span><span class="ingredient-notes">塩を洗い流して溶かし込む</span></li>
-          <li><span class="ingredient-name">レーズン（干しぶどう）</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">水で戻す</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">サフラン</span><span class="ingredient-qty">1袋（0.125g）</span><span class="ingredient-notes">温水に溶かす</span></li>
-          <li><span class="ingredient-name">白玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">60ml</span><span class="ingredient-notes">炒め用（大さじ4）</span></li>
+              <li data-ingredient-row="2d4eb09a-3288-4ded-8575-d0109055c294"><span class="ingredient-name" data-ingredient-name>ブカティーニまたはスパゲッティ</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="9f919d6b-bb15-4385-9b49-3be69c27b530"><span class="ingredient-name" data-ingredient-name>イワシ（生・新鮮なもの）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">頭・内臓を取り三枚おろし</span></li>
+          <li data-ingredient-row="3cfe2e76-1646-4d5a-8789-97810e379af4"><span class="ingredient-name" data-ingredient-name>野生ウイキョウ（フィノッキオ）の葉</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">茹でて細かく刻む。茹で汁はパスタに使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="3cfe2e76-1646-4d5a-8789-97810e379af4"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="5a236581-810e-4000-acbb-d84cab5820a6"><span class="ingredient-name" data-ingredient-name>アンチョビ（塩漬け）</span><span class="ingredient-qty" data-ingredient-qty>4枚</span><span class="ingredient-notes">塩を洗い流して溶かし込む</span></li>
+          <li data-ingredient-row="a41434e2-fd71-453f-9670-e1fa3428defd"><span class="ingredient-name" data-ingredient-name>レーズン（干しぶどう）</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">水で戻す</span></li>
+          <li data-ingredient-row="953ae724-4b88-466b-b298-eb9f8a15d42c"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="3e6dfe08-fd78-4388-a5f4-4775f4857532"><span class="ingredient-name" data-ingredient-name>サフラン</span><span class="ingredient-qty" data-ingredient-qty>1袋（0.125g）</span><span class="ingredient-notes">温水に溶かす</span></li>
+          <li data-ingredient-row="1547df08-bf63-413b-b06c-4920641b5002"><span class="ingredient-name" data-ingredient-name>白玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="d6a5e559-d77b-4a03-806b-09607b6397df"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span><span class="ingredient-notes">炒め用（大さじ4）</span></li>
               </ul>
             </section>
           </div>
@@ -292,6 +312,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"f80b0e77-05b8-48df-9150-0d3d3ef95300","nameJa":"いわしとフェンネルのパスタ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"2d4eb09a-3288-4ded-8575-d0109055c294","nameOriginal":"Bucatini o Spaghetti","nameJa":"ブカティーニまたはスパゲッティ","nameEn":"Bucatini or spaghetti","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9f919d6b-bb15-4385-9b49-3be69c27b530","nameOriginal":"Sarde fresche","nameJa":"イワシ（生・新鮮なもの）","nameEn":"Fresh sardines","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"頭・内臓を取り三枚おろし","substitutionOptions":[]},{"id":"3cfe2e76-1646-4d5a-8789-97810e379af4","nameOriginal":"Finocchio selvatico","nameJa":"野生ウイキョウ（フィノッキオ）の葉","nameEn":"Wild fennel fronds","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"茹でて細かく刻む。茹で汁はパスタに使う","substitutionOptions":[{"id":"4a91219d-4ab1-4351-96e7-0d94d8c880e5","standardIngredientId":"3cfe2e76-1646-4d5a-8789-97810e379af4","nameJa":"フェンネル（栽培品）の葉 + ディル","nameEn":"Cultivated fennel fronds + dill","authenticityImpact":-10,"flavorImpact":"野生種の力強い香りが弱まる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"5a236581-810e-4000-acbb-d84cab5820a6","nameOriginal":"Acciughe salate","nameJa":"アンチョビ（塩漬け）","nameEn":"Salt-cured anchovies","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"塩を洗い流して溶かし込む","substitutionOptions":[]},{"id":"a41434e2-fd71-453f-9670-e1fa3428defd","nameOriginal":"Uvetta","nameJa":"レーズン（干しぶどう）","nameEn":"Raisins","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"水で戻す","substitutionOptions":[]},{"id":"953ae724-4b88-466b-b298-eb9f8a15d42c","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3e6dfe08-fd78-4388-a5f4-4775f4857532","nameOriginal":"Zafferano","nameJa":"サフラン","nameEn":"Saffron","quantity":1,"unit":"袋（0.125g）","role":"flavor","scalingBehavior":null,"notes":"温水に溶かす","substitutionOptions":[]},{"id":"1547df08-bf63-413b-b06c-4920641b5002","nameOriginal":"Cipolla bianca","nameJa":"白玉ねぎ","nameEn":"White onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"d6a5e559-d77b-4a03-806b-09607b6397df","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"炒め用（大さじ4）","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・イワシ400gの頭・内臓を取り除き三枚おろしにしておく\n・ウイキョウの葉200gを塩水で5分茹で、細かく刻む\n・茹で汁2000mlを取り置く（パスタ茹で用）\n・レーズン40gを温水で10分戻す","title":"食材を下処理する","actionItems":["イワシ400gの頭・内臓を取り除き三枚おろしにする。","ウイキョウの葉200gを塩水で5分茹で細かく刻む。","茹で汁2000mlを取り置く。","レーズン40gを温水で10分戻す。"],"parallelItems":[],"completionCriteria":["イワシの下処理・ウイキョウの下茹で・茹で汁の確保・レーズンの戻しが完了した。"],"cautionItems":["茹で汁は必ず確保すること。パスタを茹でるのに使う。"],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"白玉ねぎをみじん切りにする。フライパンにオリーブオイル大さじ4と白玉ねぎ1個（みじん切り）を入れ中火で炒める。玉ねぎが透明になったらアンチョビ4枚を加えてへらで溶かす。","title":"玉ねぎとアンチョビを炒める","actionItems":["白玉ねぎをみじん切りにする。","フライパンにオリーブオイル大さじ4と白玉ねぎを入れ中火で炒める。","玉ねぎが透明になったらアンチョビ4枚を加えてへらで溶かす。"],"parallelItems":[],"completionCriteria":["アンチョビがオイルに溶け込んだ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（ソースを煮る間に）ウイキョウの茹で汁を大鍋に移して沸かし始める（湯1Lに対して塩10g）。イワシの半量を加えてへらで崩しながら炒め、ソースのベースにする（3〜4分）。","title":"イワシの半量を加えてソースのベースを作る","actionItems":["イワシの半量を加えてへらで崩しながら3〜4分炒める。"],"parallelItems":["ウイキョウの茹で汁を大鍋に移して沸かし始める（塩10g）。"],"completionCriteria":["イワシが崩れてソースのベースになった。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"戻したレーズン・松の実30g・サフラン（温水に溶かしたもの）・刻んだウイキョウを加えて5分煮る。\n・残りのイワシを加えて2分で火を通し、形を残す","title":"残りの食材を加えて煮る","actionItems":["戻したレーズン・松の実30g・サフラン（温水に溶かしたもの）・刻んだウイキョウを加えて5分煮る。","残りのイワシを加えて2分で火を通し形を残す。"],"parallelItems":[],"completionCriteria":["全ての食材が加わり残りのイワシに火が通った。"],"cautionItems":["残りのイワシは形を残すため2分で止めること。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ブカティーニ400gを沸かしておいたウイキョウ茹で汁で茹でる。\n・ソースと和えて皿に盛る。好みでパン粉をフライパンで炒った「ムッディカタ（貧者のチーズ）」を散らして仕上げる","title":"パスタを茹でてソースと和える","actionItems":["ブカティーニ400gをウイキョウ茹で汁で茹でる。","ソースと和えて皿に盛る。","好みでパン粉をフライパンで炒ったムッディカタを散らす。"],"parallelItems":[],"completionCriteria":["ブカティーニが茹で上がりソースと和えられた。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

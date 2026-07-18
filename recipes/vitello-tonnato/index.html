@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>27分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間15分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>24時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・トリノ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,21 +94,28 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">仔牛もも塊肉</span><span class="ingredient-qty">800g</span><span class="ingredient-notes">形の整った塊。室温に戻す</span></li>
-          <li><span class="ingredient-name">ツナ（オイル漬け）</span><span class="ingredient-qty">180g</span><span class="ingredient-notes">油を軽く切る</span></li>
-          <li><span class="ingredient-name">アンチョビ</span><span class="ingredient-qty">4枚</span><span class="ingredient-notes">細かく刻む</span></li>
-          <li><span class="ingredient-name">ケッパー</span><span class="ingredient-qty">25g</span><span class="ingredient-notes">塩抜きして一部を飾り用に残す</span></li>
-          <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">120ml</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">ざく切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">ざく切り</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">半割り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">120ml</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">果汁を絞る</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">8g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="d3ae354a-dd1f-4e70-92f3-2780af132702"><span class="ingredient-name" data-ingredient-name>仔牛もも塊肉</span><span class="ingredient-qty" data-ingredient-qty>800g</span><span class="ingredient-notes">形の整った塊。室温に戻す</span></li>
+          <li data-ingredient-row="1a7eb802-4048-4e1e-b24e-b6745c1f0f8e"><span class="ingredient-name" data-ingredient-name>ツナ（オイル漬け）</span><span class="ingredient-qty" data-ingredient-qty>180g</span><span class="ingredient-notes">油を軽く切る</span></li>
+          <li data-ingredient-row="78e924b4-f829-4b57-b29d-d2c24c16aece"><span class="ingredient-name" data-ingredient-name>アンチョビ</span><span class="ingredient-qty" data-ingredient-qty>4枚</span><span class="ingredient-notes">細かく刻む</span></li>
+          <li data-ingredient-row="f6196db8-1115-4a08-9316-53282c89b98d"><span class="ingredient-name" data-ingredient-name>ケッパー</span><span class="ingredient-qty" data-ingredient-qty>25g</span><span class="ingredient-notes">塩抜きして一部を飾り用に残す</span></li>
+          <li data-ingredient-row="8ce4d9cb-0f13-4156-be5e-628abfc78dec"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="4a12cfe8-a26b-4f6c-b0a1-00e64d401af7"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>120ml</span></li>
+          <li data-ingredient-row="5b8f7af2-c68f-4b5d-904e-c3adb0fa447e"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">ざく切り</span></li>
+          <li data-ingredient-row="a535499a-b16e-4b54-b861-d3a4d92002f0"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">ざく切り</span></li>
+          <li data-ingredient-row="b46e5d1e-32b2-4872-a54b-81a883200458"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">半割り</span></li>
+          <li data-ingredient-row="3b729d2a-7ae1-4bb7-aca6-0f656bcea2d8"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>120ml</span></li>
+          <li data-ingredient-row="1875cdab-a29a-453a-ac7f-85a6bdfa5e4b"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">果汁を絞る</span></li>
+          <li data-ingredient-row="b7969747-6e4a-444d-8e07-54d23edfb4b8"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>8g</span></li>
+          <li data-ingredient-row="990ed7fb-1d0d-4a75-886d-84ca1577e280"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -265,6 +285,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1bc74c22-a4eb-44b7-9e35-ec5b6851f241","nameJa":"ヴィテッロ・トンナート","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"d3ae354a-dd1f-4e70-92f3-2780af132702","nameOriginal":"Girello di vitello","nameJa":"仔牛もも塊肉","nameEn":"Veal eye round","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"形の整った塊。室温に戻す","substitutionOptions":[]},{"id":"1a7eb802-4048-4e1e-b24e-b6745c1f0f8e","nameOriginal":"Tonno sottolio","nameJa":"ツナ（オイル漬け）","nameEn":"Tuna in olive oil","quantity":180,"unit":"g","role":"essential","scalingBehavior":null,"notes":"油を軽く切る","substitutionOptions":[]},{"id":"78e924b4-f829-4b57-b29d-d2c24c16aece","nameOriginal":"Acciughe sotto sale","nameJa":"アンチョビ","nameEn":"Salted anchovies","quantity":4,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"細かく刻む","substitutionOptions":[]},{"id":"f6196db8-1115-4a08-9316-53282c89b98d","nameOriginal":"Capperi sotto sale","nameJa":"ケッパー","nameEn":"Salt-packed capers","quantity":25,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"塩抜きして一部を飾り用に残す","substitutionOptions":[]},{"id":"8ce4d9cb-0f13-4156-be5e-628abfc78dec","nameOriginal":"Tuorli","nameJa":"卵黄","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4a12cfe8-a26b-4f6c-b0a1-00e64d401af7","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":120,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5b8f7af2-c68f-4b5d-904e-c3adb0fa447e","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"ざく切り","substitutionOptions":[]},{"id":"a535499a-b16e-4b54-b861-d3a4d92002f0","nameOriginal":"Carota","nameJa":"にんじん","nameEn":"Carrot","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"ざく切り","substitutionOptions":[]},{"id":"b46e5d1e-32b2-4872-a54b-81a883200458","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"半割り","substitutionOptions":[]},{"id":"3b729d2a-7ae1-4bb7-aca6-0f656bcea2d8","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":120,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1875cdab-a29a-453a-ac7f-85a6bdfa5e4b","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":0.5,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"果汁を絞る","substitutionOptions":[]},{"id":"b7969747-6e4a-444d-8e07-54d23edfb4b8","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"990ed7fb-1d0d-4a75-886d-84ca1577e280","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"仔牛もも塊肉800gを室温に戻す。セロリ1本とにんじん1本はざく切りにする。玉ねぎ1個は半割りにする。肉の表面に塩4gと黒胡椒をなじませ、表面が冷たくなくなったら次へ。","title":"肉と香味野菜を準備する","actionItems":["仔牛もも塊肉800gを室温に戻す。","セロリ1本とにんじん1本はざく切りにする。","玉ねぎ1個は半割りにする。"],"parallelItems":[],"completionCriteria":["肉の表面に塩4gと黒胡椒をなじませ、表面が冷たくなくなったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋に仔牛もも塊肉、セロリ、にんじん、玉ねぎ、白ワイン120ml、水600mlを入れて弱火にかける。液面が静かに揺れる火加減を保ち、中心まで火が通って串を刺した肉汁が透明になったら火を止める。","title":"仔牛を火入れする","actionItems":["鍋に仔牛もも塊肉、セロリ、にんじん、玉ねぎ、白ワイン120ml、水600mlを入れて弱火にかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["液面が静かに揺れる火加減を保ち、中心まで火が通って串を刺した肉汁が透明になったら火を止める。"],"tipItems":[],"durationMinutes":60,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"仔牛もも塊肉を煮汁ごと冷まし、冷蔵庫で24時間休ませる。肉が締まり、薄切りできる硬さになったら次へ。","title":"一晩休ませる","actionItems":["仔牛もも塊肉を煮汁ごと冷まし、冷蔵庫で24時間休ませる。","肉が締まり、薄切りできる硬さになったら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1440,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"フードプロセッサーにツナ180g、刻んだアンチョビ4枚、塩抜きしたケッパー20g、卵黄2個、レモン果汁、煮汁60mlを入れて撹拌する。フードプロセッサーへエクストラバージンオリーブオイル120mlを少しずつ加え、とろりと流れる濃度になったら塩4gで調える。","title":"トンナートソースを作る","actionItems":["フードプロセッサーにツナ180g、刻んだアンチョビ4枚、塩抜きしたケッパー20g、卵黄2個、レモン果汁、煮汁60mlを入れて撹拌する。","フードプロセッサーへエクストラバージンオリーブオイル120mlを少しずつ加え、とろりと流れる濃度になったら塩4gで調える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"仔牛もも塊肉を繊維を断つように薄切りにする。皿に並べ、トンナートソースを全体にかける。残したケッパーを散らし、肉の端までソースがなじんだら完成。","title":"薄切りして仕上げる","actionItems":["仔牛もも塊肉を繊維を断つように薄切りにする。","皿に並べ、トンナートソースを全体にかける。"],"parallelItems":[],"completionCriteria":["残したケッパーを散らし、肉の端までソースがなじんだら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★★</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,19 +93,26 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">00粉（パスタ生地用）</span><span class="ingredient-qty">525g</span><span class="ingredient-notes">緑のラザニアシート用。ほうれん草の水分で粉量を微調整する</span></li>
-          <li><span class="ingredient-name">ほうれん草（生）</span><span class="ingredient-qty">700g</span><span class="ingredient-notes">茹でて強く絞り、正味260g程度を生地に使う</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">緑のラザニアシート用</span></li>
-          <li><span class="ingredient-name">ボロネーゼ・ラグー（タリアテッレ・アル・ラグーのレシピで用意）</span><span class="ingredient-qty">750g</span></li>
-          <li><span class="ingredient-name">牛乳（ベシャメル用）</span><span class="ingredient-qty">750ml</span></li>
-          <li><span class="ingredient-name">バター（ベシャメル用）</span><span class="ingredient-qty">75g</span></li>
-          <li><span class="ingredient-name">薄力粉（ベシャメル用）</span><span class="ingredient-qty">75g</span></li>
-          <li><span class="ingredient-name">ナツメグ</span><span class="ingredient-qty">1ひとつまみ</span><span class="ingredient-notes">ベシャメル用</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">適量</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">各層と仕上げにかける用</span></li>
-          <li><span class="ingredient-name">バター（仕上げ用）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">最上層に点在させる</span></li>
+              <li data-ingredient-row="d2364f8e-b53a-483d-b1b4-315b252ba91f"><span class="ingredient-name" data-ingredient-name>00粉（パスタ生地用）</span><span class="ingredient-qty" data-ingredient-qty>525g</span><span class="ingredient-notes">緑のラザニアシート用。ほうれん草の水分で粉量を微調整する</span></li>
+          <li data-ingredient-row="510f7123-660d-492e-916a-5501198696d4"><span class="ingredient-name" data-ingredient-name>ほうれん草（生）</span><span class="ingredient-qty" data-ingredient-qty>700g</span><span class="ingredient-notes">茹でて強く絞り、正味260g程度を生地に使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="510f7123-660d-492e-916a-5501198696d4"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8bf0351f-c08f-4319-b15f-cb83239391f6"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">緑のラザニアシート用</span></li>
+          <li data-ingredient-row="e08ea003-c069-4bbd-b523-8420e17db513"><span class="ingredient-name" data-ingredient-name>ボロネーゼ・ラグー（タリアテッレ・アル・ラグーのレシピで用意）</span><span class="ingredient-qty" data-ingredient-qty>750g</span></li>
+          <li data-ingredient-row="d4b2ddd1-2d60-44b7-8303-ed4d5ea15082"><span class="ingredient-name" data-ingredient-name>牛乳（ベシャメル用）</span><span class="ingredient-qty" data-ingredient-qty>750ml</span></li>
+          <li data-ingredient-row="8fd2aaeb-5978-4c5d-81a8-d6bf8663f666"><span class="ingredient-name" data-ingredient-name>バター（ベシャメル用）</span><span class="ingredient-qty" data-ingredient-qty>75g</span></li>
+          <li data-ingredient-row="ab0c3d7e-cd74-4396-bc4d-5fd31c185db3"><span class="ingredient-name" data-ingredient-name>薄力粉（ベシャメル用）</span><span class="ingredient-qty" data-ingredient-qty>75g</span></li>
+          <li data-ingredient-row="3fad831b-cddb-4a9b-bfd5-5bd3b00bfe01"><span class="ingredient-name" data-ingredient-name>ナツメグ</span><span class="ingredient-qty" data-ingredient-qty>1ひとつまみ</span><span class="ingredient-notes">ベシャメル用</span></li>
+          <li data-ingredient-row="c822621c-b4d3-4105-8004-218dff41011e"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>適量</span></li>
+          <li data-ingredient-row="65a41055-ed5a-49bf-8738-549d641ba8a9"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">各層と仕上げにかける用</span></li>
+          <li data-ingredient-row="dbd537f0-e760-44ff-a6cc-d23e1c4c21a0"><span class="ingredient-name" data-ingredient-name>バター（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">最上層に点在させる</span></li>
               </ul>
             </section>
           </div>
@@ -288,6 +308,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"39d7ed76-9ee0-4ac1-8421-8f25ca222c8c","nameJa":"ラザニア ボロネーゼ","baseServings":6,"minServings":4,"maxServings":20},"ingredients":[{"id":"d2364f8e-b53a-483d-b1b4-315b252ba91f","nameOriginal":"Farina 00","nameJa":"00粉（パスタ生地用）","nameEn":"Tipo 00 flour for pasta dough","quantity":525,"unit":"g","role":"essential","scalingBehavior":null,"notes":"緑のラザニアシート用。ほうれん草の水分で粉量を微調整する","substitutionOptions":[]},{"id":"510f7123-660d-492e-916a-5501198696d4","nameOriginal":"Spinaci freschi","nameJa":"ほうれん草（生）","nameEn":"Fresh spinach","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"茹でて強く絞り、正味260g程度を生地に使う","substitutionOptions":[{"id":"b91deb70-c31c-4249-9574-b4106fd62cd1","standardIngredientId":"510f7123-660d-492e-916a-5501198696d4","nameJa":"冷凍ほうれん草","nameEn":"Frozen spinach","authenticityImpact":0,"flavorImpact":"解凍後しっかり水気を絞れば同等に使える","textureImpact":null,"procedureChanges":["解凍→水気絞り→細かく刻む"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"解凍して布巾で強く絞り、正味260g程度にしてから刻む","action":"update","nameEn":"Frozen spinach","nameJa":"冷凍ほうれん草","quantity":400,"targetNameJa":"ほうれん草（生）"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"冷凍ほうれん草400gを解凍し、両手で強く絞る。さらに布巾に包んでもう一度ひねって水気を抜き、正味260g程度をごく細かく刻む。00粉525gに刻んだほうれん草と卵3個を加えてまとめ、10分こねる。表面がなめらかになったらラップに包んで30分休ませる。","changeReason":"冷凍ほうれん草は下茹で済みのため、解凍と強い水切りに置き換える"}]},{"id":"de3e0f06-fbad-4fff-b35c-bc8e61623ad4","standardIngredientId":"510f7123-660d-492e-916a-5501198696d4","nameJa":"省略（黄色い卵パスタにする）","nameEn":"Omit spinach and make yellow egg pasta","authenticityImpact":0,"flavorImpact":"ボローニャ登録版の緑色は失われるが、エミリア＝ロマーニャの卵生地として自然な仕上がりになる","textureImpact":null,"procedureChanges":["ほうれん草の下処理を省き、00粉500gと卵5個の黄色い卵パスタ生地に切り替える"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"ほうれん草（生）"},{"notes":"黄色い卵パスタ用。粉100gに卵1個を基準にする","action":"update","quantity":500,"targetNameJa":"00粉（パスタ生地用）"},{"notes":"黄色い卵パスタ用","action":"update","quantity":5,"targetNameJa":"卵"}],"stepPatches":[{"title":"黄色い卵パスタ生地を作る","action":"replace","stepNumber":1,"actionItems":["00粉500gを作業台に山にし、中央に大きなくぼみを作る。","卵5個をくぼみに割り入れ、フォークでほぐしながら内側の粉を少しずつ取り込む。","まとまったら手で10分こね、表面がなめらかで弾力のある生地にする。","ラップに包んで30分休ませる。"],"instruction":"00粉500gを作業台に山にして中央にくぼみを作る。卵5個を割り入れ、フォークで卵をほぐしながら内側の粉を少しずつ取り込む。まとまったら手で10分こね、表面がなめらかで弾力のある生地になったらラップに包んで30分休ませる。","cautionItems":["ほうれん草の水分が入らないため、生地が硬ければ手を水で軽く湿らせてこねる。"],"changeReason":"ほうれん草なしの黄色い卵パスタに最適化","completionCriteria":["生地表面がなめらかで、指で押すとゆっくり戻る弾力が出たら休ませる。"]}]}]},{"id":"8bf0351f-c08f-4319-b15f-cb83239391f6","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"緑のラザニアシート用","substitutionOptions":[]},{"id":"e08ea003-c069-4bbd-b523-8420e17db513","nameOriginal":"Ragù bolognese","nameJa":"ボロネーゼ・ラグー（タリアテッレ・アル・ラグーのレシピで用意）","nameEn":"Bolognese ragù","quantity":750,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d4b2ddd1-2d60-44b7-8303-ed4d5ea15082","nameOriginal":"Latte intero","nameJa":"牛乳（ベシャメル用）","nameEn":"Whole milk for béchamel","quantity":750,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8fd2aaeb-5978-4c5d-81a8-d6bf8663f666","nameOriginal":"Burro","nameJa":"バター（ベシャメル用）","nameEn":"Butter for béchamel","quantity":75,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ab0c3d7e-cd74-4396-bc4d-5fd31c185db3","nameOriginal":"Farina 00","nameJa":"薄力粉（ベシャメル用）","nameEn":"Flour for béchamel","quantity":75,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3fad831b-cddb-4a9b-bfd5-5bd3b00bfe01","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"ひとつまみ","role":"flavor","scalingBehavior":null,"notes":"ベシャメル用","substitutionOptions":[]},{"id":"c822621c-b4d3-4105-8004-218dff41011e","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"適量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"65a41055-ed5a-49bf-8738-549d641ba8a9","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"各層と仕上げにかける用","substitutionOptions":[]},{"id":"dbd537f0-e760-44ff-a6cc-d23e1c4c21a0","nameOriginal":"Burro","nameJa":"バター（仕上げ用）","nameEn":"Butter for finishing","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"最上層に点在させる","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ほうれん草700gを塩湯で2分茹で、冷水にとって冷ます。両手で強く絞り、布巾に包んでもう一度ひねって水気を抜き、正味260g程度をごく細かく刻む。00粉525gに刻んだほうれん草と卵3個を加えてまとめ、10分こねる。表面がなめらかになったらラップに包んで30分休ませる。","title":"茹でる","actionItems":["ほうれん草700gを塩湯で2分茹で、冷水にとって冷ます。","両手で強く絞り、布巾に包んでもう一度ひねって水気を抜き、正味260g程度をごく細かく刻む。","00粉525gに刻んだほうれん草と卵3個を加えてまとめ、10分こねる。"],"parallelItems":[],"completionCriteria":["表面がなめらかになったらラップに包んで30分休ませる。"],"cautionItems":[],"tipItems":[],"durationMinutes":35,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"（ラザニア生地を休ませる間に）バター75gを溶かして薄力粉75gを加え、弱火で2分炒める。牛乳750mlを少しずつ加えながら混ぜ、とろみがついたら塩とナツメグで調える。鍋底をへらで引くと一瞬線が残る濃度になったら火を止める。","title":"ベシャメルを作る","actionItems":["牛乳750mlを少しずつ加えながら混ぜ、とろみがついたら塩とナツメグで調える。"],"parallelItems":["（ラザニア生地を休ませる間に）バター75gを溶かして薄力粉75gを加え、弱火で2分炒める。"],"completionCriteria":[],"cautionItems":["鍋底をへらで引くと一瞬線が残る濃度になったら火を止める。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ラザニア生地を薄く（約1mm）伸ばし、耐熱皿に合わせてカットする。塩湯で30秒ほど下茹でして冷水にとり、清潔な布巾に広げて水気を取る。オーブンを200℃に予熱する。","title":"材料を合わせる","actionItems":["ラザニア生地を薄く（約1mm）伸ばし、耐熱皿に合わせてカットする。","塩湯で30秒ほど下茹でして冷水にとり、清潔な布巾に広げて水気を取る。","オーブンを200℃に予熱する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"耐熱皿の底にベシャメルを薄く敷く。ラザニアシート→ラグー約150g→ベシャメル約120ml→パルミジャーノ約50gの順に重ねる。これを5層作り、層ごとの端が重なりすぎないようならす。","title":"形を整える","actionItems":["耐熱皿の底にベシャメルを薄く敷く。","ラザニアシート→ラグー約150g→ベシャメル約120ml→パルミジャーノ約50gの順に重ねる。","これを5層作り、層ごとの端が重なりすぎないようならす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"最上層はラザニアシートにベシャメルを薄く広げ、残りのパルミジャーノとバター30gを小さくちぎって点在させる。表面が白く覆われ、端までソースが行き渡ったら焼成へ進む。","title":"形を整える","actionItems":["最上層はラザニアシートにベシャメルを薄く広げ、残りのパルミジャーノとバター30gを小さくちぎって点在させる。","表面が白く覆われ、端までソースが行き渡ったら焼成へ進む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"200℃で25〜30分焼く。表面がきつね色になり、端のソースがふつふつ沸いたら取り出す。10分休ませ、層が落ち着いてから切り分ける。","title":"焼き上げる","actionItems":["200℃で25〜30分焼く。","表面がきつね色になり、端のソースがふつふつ沸いたら取り出す。","10分休ませ、層が落ち着いてから切り分ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

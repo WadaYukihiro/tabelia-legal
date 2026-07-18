@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>2分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>4時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・トリノ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,12 +94,19 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">ゼラチン（板ゼラチン）</span><span class="ingredient-qty">8g</span><span class="ingredient-notes">冷水で5分ふやかしておく</span></li>
-          <li><span class="ingredient-name">バニラビーンズ</span><span class="ingredient-qty">1本</span></li>
+              <li data-ingredient-row="756ff473-56a3-497f-9f9f-458a0b4b90b6"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="7c8768ed-bd67-4e98-b864-f1b639acd002"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="f2791dc2-667a-4ea4-a66f-3b6aba6f1c77"><span class="ingredient-name" data-ingredient-name>ゼラチン（板ゼラチン）</span><span class="ingredient-qty" data-ingredient-qty>8g</span><span class="ingredient-notes">冷水で5分ふやかしておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="f2791dc2-667a-4ea4-a66f-3b6aba6f1c77"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="16541ab3-5301-4245-8069-0c1c5e1364c8"><span class="ingredient-name" data-ingredient-name>バニラビーンズ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><button type="button" class="substitution-trigger" data-substitution-trigger="16541ab3-5301-4245-8069-0c1c5e1364c8"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -207,6 +227,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"9d3f2a26-baf7-4221-ba3c-cda6c49de612","nameJa":"パンナコッタ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"756ff473-56a3-497f-9f9f-458a0b4b90b6","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7c8768ed-bd67-4e98-b864-f1b639acd002","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f2791dc2-667a-4ea4-a66f-3b6aba6f1c77","nameOriginal":"Gelatina","nameJa":"ゼラチン（板ゼラチン）","nameEn":"Gelatin sheets","quantity":8,"unit":"g","role":"essential","scalingBehavior":null,"notes":"冷水で5分ふやかしておく","substitutionOptions":[{"id":"a12ff613-f95d-4e47-9ee3-f50eb5266df8","standardIngredientId":"f2791dc2-667a-4ea4-a66f-3b6aba6f1c77","nameJa":"粉ゼラチン","nameEn":"Powdered gelatin","authenticityImpact":0,"flavorImpact":"仕上がりは同等","textureImpact":null,"procedureChanges":["水20mlで溶かしてから加える"],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"水20mlに振り入れて5分ふやかす","action":"update","nameEn":"Powdered gelatin","nameJa":"粉ゼラチン","quantity":8,"targetNameJa":"ゼラチン（板ゼラチン）"},{"role":"technique","unit":"ml","notes":"粉ゼラチンをふやかす用","action":"add","nameEn":"Water","nameJa":"水","quantity":20}],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"粉ゼラチン8gを水20mlに振り入れ、5分置いてふやかす。火を止めた生クリームに加え、粒が残らず完全に溶けるまで混ぜる。","changeReason":"粉ゼラチンは板ゼラチンと違い、水20mlでふやかしてから加える必要がある"}]}]},{"id":"16541ab3-5301-4245-8069-0c1c5e1364c8","nameOriginal":"Vaniglia","nameJa":"バニラビーンズ","nameEn":"Vanilla bean","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"883f4c06-f01d-497f-bc28-f96d52a8b4d2","standardIngredientId":"16541ab3-5301-4245-8069-0c1c5e1364c8","nameJa":"バニラエッセンス","nameEn":"Vanilla extract","authenticityImpact":-5,"flavorImpact":"香りがやや人工的になる","textureImpact":null,"procedureChanges":["加熱後に3ml加える"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"role":"flavor","unit":"ml","notes":"火を止めてから加える","action":"update","nameEn":"Vanilla extract","nameJa":"バニラエッセンス","quantity":3,"targetNameJa":"バニラビーンズ"}],"stepPatches":[{"title":"ベースを温める","action":"replace","stepNumber":1,"actionItems":["生クリーム500mlと砂糖60gを鍋に入れ、中火で砂糖が溶けるまで温める。","火を止めてからバニラエッセンス3mlを加えて混ぜる。"],"instruction":"・生クリームと砂糖を鍋に入れ、中火で砂糖が溶けるまで温める（沸騰させない）\n・火を止めてからバニラエッセンス3mlを加えて混ぜる","cautionItems":["沸騰させると乳臭さが出やすいので、表面が大きく煮立つ前に止める。"],"changeReason":"バニラエッセンスは揮発しやすいため、加熱後に加える必要がある","completionCriteria":["砂糖が溶け、鍋肌に小さな泡がつき始めたら火を止める。"]}]}]}],"steps":[{"stepNumber":1,"instruction":"生クリーム・砂糖・バニラビーンズ（さやを割いて種をこそぐ）を鍋に入れ、中火で砂糖が溶けるまで温める（沸騰させない）。","title":"ソースを作る","actionItems":["生クリーム・砂糖・バニラビーンズ（さやを割いて種をこそぐ）を鍋に入れ、中火で砂糖が溶けるまで温める（沸騰させない）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"火を止めてふやかしたゼラチンを加え、完全に溶けるまで混ぜる。","title":"仕上げにまとめる","actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止めてふやかしたゼラチンを加え、完全に溶けるまで混ぜる。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"型またはグラスに注ぎ、粗熱が取れたら冷蔵庫で4時間以上冷やし固める。揺らしてぷるぷると揺れるが崩れない状態になれば完成。","title":"休ませて落ち着かせる","actionItems":["型またはグラスに注ぎ、粗熱が取れたら冷蔵庫で4時間以上冷やし固める。"],"parallelItems":[],"completionCriteria":["揺らしてぷるぷると揺れるが崩れない状態になれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

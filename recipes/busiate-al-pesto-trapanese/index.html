@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>12分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ブジアーテ（乾燥）</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">完熟トマト</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">湯むきして種を軽く除き、2cm角に切る</span></li>
-          <li><span class="ingredient-name">皮むきアーモンド</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">軽く乾煎りして粗く砕く</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">葉だけを使う。包丁で刻まず乳鉢で潰す</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">芯を除いて粗く刻む</span></li>
-          <li><span class="ingredient-name">ペコリーノ</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">細かくすりおろす</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">90ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">34g</span><span class="ingredient-notes">パスタ茹で水用30g、ペスト用4g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1g</span></li>
+              <li data-ingredient-row="4a786bac-5e19-4f26-94e2-312eb3f4fb52"><span class="ingredient-name" data-ingredient-name>ブジアーテ（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="4a786bac-5e19-4f26-94e2-312eb3f4fb52"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8fa92d08-f7a0-4c07-8349-19aaa9d73d33"><span class="ingredient-name" data-ingredient-name>完熟トマト</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">湯むきして種を軽く除き、2cm角に切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="8fa92d08-f7a0-4c07-8349-19aaa9d73d33"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="edec5d95-f7f9-4ca8-b49d-cc08cde24bec"><span class="ingredient-name" data-ingredient-name>皮むきアーモンド</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">軽く乾煎りして粗く砕く</span><button type="button" class="substitution-trigger" data-substitution-trigger="edec5d95-f7f9-4ca8-b49d-cc08cde24bec"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7c3b07ec-232b-4e91-87b5-397d49d81014"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">葉だけを使う。包丁で刻まず乳鉢で潰す</span><button type="button" class="substitution-trigger" data-substitution-trigger="7c3b07ec-232b-4e91-87b5-397d49d81014"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="74e79c5f-d461-4ecb-b9cb-f1e38b8c5132"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">芯を除いて粗く刻む</span></li>
+          <li data-ingredient-row="f6bab1b3-df1f-4a68-be35-b05418c765be"><span class="ingredient-name" data-ingredient-name>ペコリーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">細かくすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="f6bab1b3-df1f-4a68-be35-b05418c765be"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e8c08904-8a85-4460-95a2-d0ddc8ef324e"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>90ml</span></li>
+          <li data-ingredient-row="7c1df512-bb19-467e-b4e0-15f95692c76b"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>34g</span><span class="ingredient-notes">パスタ茹で水用30g、ペスト用4g</span></li>
+          <li data-ingredient-row="d9093a25-17f3-41f2-a82e-6564c9e170d2"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
               </ul>
             </section>
           </div>
@@ -318,6 +338,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"46795e4e-7a56-434d-a223-c41df8a21374","nameJa":"トラーパニ風ペストのブジアーテ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"4a786bac-5e19-4f26-94e2-312eb3f4fb52","nameOriginal":"Busiate secche","nameJa":"ブジアーテ（乾燥）","nameEn":"Dried busiate","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"77b6946f-6bdb-468d-b63e-36da14510cb8","standardIngredientId":"4a786bac-5e19-4f26-94e2-312eb3f4fb52","nameJa":"フジッリ","nameEn":"Fusilli","authenticityImpact":-10,"flavorImpact":"螺旋の絡みは近いが、トラーパニらしい細長い食感は弱まる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"aed4f521-7350-466b-9e2e-8c41240ccfcb","standardIngredientId":"4a786bac-5e19-4f26-94e2-312eb3f4fb52","nameJa":"カサレッチェ","nameEn":"Casarecce","authenticityImpact":-5,"flavorImpact":"ねじれた形状がペストをよく絡めるため、乾燥品として現実的な代替になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"8fa92d08-f7a0-4c07-8349-19aaa9d73d33","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト","nameEn":"Ripe tomatoes","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"湯むきして種を軽く除き、2cm角に切る","substitutionOptions":[{"id":"dac5551e-1c1a-43fc-b5c8-4fc0b1e72c81","standardIngredientId":"8fa92d08-f7a0-4c07-8349-19aaa9d73d33","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","authenticityImpact":-5,"flavorImpact":"甘みが強くなる。水分が少ないため茹で汁を少し多めに使う","textureImpact":null,"procedureChanges":["ペストを和える際に茹で汁を20ml追加する"],"affectedStepNumbers":[1,7],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"ヘタを取り、横半分に切る。水分が少ないため茹で汁を多めに使う","action":"update","nameEn":"Cherry tomatoes","nameJa":"ミニトマト","quantity":500,"targetNameJa":"完熟トマト"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"ミニトマト500gはヘタを取り、横半分に切る。果汁をボウルに受けながら切り、種は軽く残して甘みと水分を活かす。","changeReason":"ミニトマトは湯むきせず、半割りにして果汁をペストに使うため"},{"action":"replace","stepNumber":7,"instruction":"大きなボウルにペストを移し、茹で汁80mlを加えてのばす。ブジアーテを加え、火にかけずに1分ほどよく和える。ペストが螺旋の溝に入り込み、ボウルの底に油だけが分離していなければよい。","changeReason":"ミニトマトは完熟トマトより水分が少ないため、和える茹で汁を20ml増やす"}]}]},{"id":"edec5d95-f7f9-4ca8-b49d-cc08cde24bec","nameOriginal":"Mandorle pelate","nameJa":"皮むきアーモンド","nameEn":"Blanched almonds","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"軽く乾煎りして粗く砕く","substitutionOptions":[{"id":"449a8ac0-2e59-4571-b992-92dc7319d33f","standardIngredientId":"edec5d95-f7f9-4ca8-b49d-cc08cde24bec","nameJa":"皮付きアーモンド","nameEn":"Natural almonds","authenticityImpact":-5,"flavorImpact":"渋皮の香ばしさが出るが、ペストの色が暗くなる","textureImpact":null,"procedureChanges":["熱湯に1分浸けて皮をむくと近い仕上がりになる"],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"熱湯に1分浸けて皮をむき、乾かしてから軽く乾煎りする","action":"update","nameEn":"Natural almonds","nameJa":"皮付きアーモンド","quantity":100,"targetNameJa":"皮むきアーモンド"}],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"皮付きアーモンド100gを熱湯に1分浸け、ざるに上げて粗熱を取る。指で押して皮をむき、表面の水分を拭いてから乾いたフライパンで弱めの中火にかけ、3〜4分乾煎りする。表面に薄い焼き色がつき、甘い香りが立ったら取り出して粗熱を取る。","changeReason":"皮付きアーモンドは渋皮を外し、水分を飛ばしてからペストに使うため"}]}]},{"id":"7c3b07ec-232b-4e91-87b5-397d49d81014","nameOriginal":"Basilico fresco","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":"葉だけを使う。包丁で刻まず乳鉢で潰す","substitutionOptions":[{"id":"3d4f623b-19af-409f-b1e4-7791a956850f","standardIngredientId":"7c3b07ec-232b-4e91-87b5-397d49d81014","nameJa":"大葉","nameEn":"Shiso leaves","authenticityImpact":-35,"flavorImpact":"香りの方向が完全に変わり、トラーパニのペストではなくなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"74e79c5f-d461-4ecb-b9cb-f1e38b8c5132","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"芯を除いて粗く刻む","substitutionOptions":[]},{"id":"f6bab1b3-df1f-4a68-be35-b05418c765be","nameOriginal":"Pecorino Siciliano grattugiato","nameJa":"ペコリーノ","nameEn":"Grated Pecorino cheese","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"細かくすりおろす","substitutionOptions":[{"id":"a02ac89d-29a9-4620-b832-592aff0c4258","standardIngredientId":"f6bab1b3-df1f-4a68-be35-b05418c765be","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-5,"flavorImpact":"塩気が強くなる。塩の量を控える","textureImpact":null,"procedureChanges":["ペストに加える塩を小さじ1/4に減らす"],"affectedStepNumbers":[4,5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"細かくすりおろす。塩気が強いためペストの塩を減らす","action":"update","nameEn":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ","quantity":60,"targetNameJa":"ペコリーノ"}],"stepPatches":[{"action":"replace","stepNumber":4,"instruction":"乳鉢ににんにくと塩小さじ1/4を入れて潰す。アーモンドを加え、粒が2〜3mm程度残る粗いペーストになるまで叩き潰す。完全な粉にしない。","changeReason":"ペコリーノ・ロマーノは塩気が強いため、ペストに入れる塩を小さじ1/4に減らす"},{"action":"replace","stepNumber":5,"instruction":"（ペストを仕上げる間に）大鍋に湯3Lを沸かし始める。乳鉢にバジルを数回に分けて加え、乳棒で押しつぶす。葉が細かく裂けて香りが立ったら、トマトを加えて軽く潰す。乳鉢のペーストにエクストラバージンオリーブオイル90mlとペコリーノ・ロマーノ60gを加えて混ぜ、赤みを帯びた粗いペストになったら止める。","changeReason":"置換後のチーズ名に合わせるため"}]}]},{"id":"e8c08904-8a85-4460-95a2-d0ddc8ef324e","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":90,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7c1df512-bb19-467e-b4e0-15f95692c76b","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":34,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"パスタ茹で水用30g、ペスト用4g","substitutionOptions":[]},{"id":"d9093a25-17f3-41f2-a82e-6564c9e170d2","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"完熟トマト500gのヘタに浅く十字を入れ、熱湯に20秒くぐらせて冷水に取る。皮をむき、横半分に切って種を軽く除き、2cm角に切る。果肉が崩れすぎず角が残っていればよい。","title":"材料を合わせる","actionItems":["完熟トマト500gのヘタに浅く十字を入れ、熱湯に20秒くぐらせて冷水に取る。","皮をむき、横半分に切って種を軽く除き、2cm角に切る。"],"parallelItems":[],"completionCriteria":["果肉が崩れすぎず角が残っていればよい。"],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"皮むきアーモンド100gを乾いたフライパンで弱めの中火にかけ、3〜4分乾煎りする。表面に薄い焼き色がつき、甘い香りが立ったら取り出して粗熱を取る。","title":"香ばしく煎る","actionItems":["皮むきアーモンド100gを乾いたフライパンで弱めの中火にかけ、3〜4分乾煎りする。","表面に薄い焼き色がつき、甘い香りが立ったら取り出して粗熱を取る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"にんにく2片は芯を除いて粗く刻む。バジル40gは葉だけを摘む。ペコリーノ60gを細かくすりおろす。","title":"材料を準備する","actionItems":["にんにく2片は芯を除いて粗く刻む。","バジル40gは葉だけを摘む。","ペコリーノ60gを細かくすりおろす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"乳鉢ににんにくと塩小さじ1/2を入れて潰す。アーモンドを加え、粒が2〜3mm程度残る粗いペーストになるまで叩き潰す。完全な粉にしない。","title":"材料を準備する","actionItems":["乳鉢ににんにくと塩小さじ1/2を入れて潰す。","アーモンドを加え、粒が2〜3mm程度残る粗いペーストになるまで叩き潰す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["完全な粉にしない。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"（ペストを仕上げる間に）大鍋に湯3Lを沸かし始める。乳鉢にバジルを数回に分けて加え、乳棒で押しつぶす。葉が細かく裂けて香りが立ったら、トマトを加えて軽く潰す。乳鉢のペーストにエクストラバージンオリーブオイル90mlとペコリーノ60gを加えて混ぜ、赤みを帯びた粗いペストになったら止める。","title":"湯を沸かす","actionItems":["乳鉢にバジルを数回に分けて加え、乳棒で押しつぶす。","葉が細かく裂けて香りが立ったら、トマトを加えて軽く潰す。","乳鉢のペーストにエクストラバージンオリーブオイル90mlとペコリーノ60gを加えて混ぜ、赤みを帯びた粗いペストになったら止める。"],"parallelItems":["（ペストを仕上げる間に）大鍋に湯3Lを沸かし始める。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"沸かしておいた湯に塩30gを加える。ブジアーテ320gを入れ、袋表示より1分短く茹でる。\n・茹で汁120mlを取り置く","title":"材料を合わせる","actionItems":["沸かしておいた湯に塩30gを加える。","ブジアーテ320gを入れ、袋表示より1分短く茹でる。","茹で汁120mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"大きなボウルにペストを移し、茹で汁60mlを加えてのばす。ブジアーテを加え、火にかけずに1分ほどよく和える。ペストが螺旋の溝に入り込み、ボウルの底に油だけが分離していなければよい。","title":"茹でる","actionItems":["大きなボウルにペストを移し、茹で汁60mlを加えてのばす。","ブジアーテを加え、火にかけずに1分ほどよく和える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["ペストが螺旋の溝に入り込み、ボウルの底に油だけが分離していなければよい。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"皿に盛り、黒胡椒を2〜3回挽く。必要なら茹で汁を残りから10mlずつ足し、ソースが重く固まらず麺にまとわりつく状態に整える。","title":"盛り付ける","actionItems":["皿に盛り、黒胡椒を2〜3回挽く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["必要なら茹で汁を残りから10mlずつ足し、ソースが重く固まらず麺にまとわりつく状態に整える。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

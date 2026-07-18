@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>22分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,20 +94,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">パッケリ</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">あさり</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする</span></li>
-          <li><span class="ingredient-name">ムール貝</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">足糸（ひげ）を引き抜き、殻をたわしでこすり洗い</span></li>
-          <li><span class="ingredient-name">エビ（殻付き中エビ）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">殻をむき、背ワタを取る</span></li>
-          <li><span class="ingredient-name">ヤリイカ</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">内臓と骨板を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">10g</span><span class="ingredient-notes">粗みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">45ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span><span class="ingredient-notes">トマトソース用・パスタ茹で湯用</span></li>
+              <li data-ingredient-row="4af677d8-5b04-437d-825f-4e8a123597c6"><span class="ingredient-name" data-ingredient-name>パッケリ</span><span class="ingredient-qty" data-ingredient-qty>200g</span><button type="button" class="substitution-trigger" data-substitution-trigger="4af677d8-5b04-437d-825f-4e8a123597c6"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="14bf7587-1b11-4987-90b6-4dcddb5641d7"><span class="ingredient-name" data-ingredient-name>あさり</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする</span></li>
+          <li data-ingredient-row="9bf3fd53-8c23-4d34-aa8f-d88e68fa564a"><span class="ingredient-name" data-ingredient-name>ムール貝</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">足糸（ひげ）を引き抜き、殻をたわしでこすり洗い</span></li>
+          <li data-ingredient-row="4c69c89c-b949-4799-9565-7c6376130d47"><span class="ingredient-name" data-ingredient-name>エビ（殻付き中エビ）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">殻をむき、背ワタを取る</span></li>
+          <li data-ingredient-row="591e76cb-0baf-48d8-8a53-43767a5d7d7f"><span class="ingredient-name" data-ingredient-name>ヤリイカ</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">内臓と骨板を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る</span></li>
+          <li data-ingredient-row="431087f5-a901-4fc3-b012-5ae5bd51da85"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="cc6709b5-af2d-4785-b39e-740ba229367b"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="0dc5bd4f-790e-4cc9-9e09-48df23aa1d18"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="c5f1ce06-e414-4e2e-900b-41a6bee971f3"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
+          <li data-ingredient-row="4bf54192-a55b-4b34-b969-f88369a11497"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>10g</span><span class="ingredient-notes">粗みじん切り</span></li>
+          <li data-ingredient-row="3bc492ec-396b-4c5a-a6a8-a97944308e28"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span></li>
+          <li data-ingredient-row="6c9157b3-fe86-4a8a-b915-2b369b15940d"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span><span class="ingredient-notes">トマトソース用・パスタ茹で湯用</span></li>
               </ul>
             </section>
           </div>
@@ -352,6 +372,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4c1bcf32-e731-422c-aab8-bbaf1697bd0b","nameJa":"魚介のパッケリ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"4af677d8-5b04-437d-825f-4e8a123597c6","nameOriginal":"Paccheri","nameJa":"パッケリ","nameEn":"Paccheri","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"26399d31-9861-4f65-ab4d-519bf40c81ef","standardIngredientId":"4af677d8-5b04-437d-825f-4e8a123597c6","nameJa":"スパゲッティ","nameEn":"Spaghetti","authenticityImpact":-10,"flavorImpact":"ソースを内包するパッケリの特性が失われる。細麺では海鮮との絡みのバランスが変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"14bf7587-1b11-4987-90b6-4dcddb5641d7","nameOriginal":"Vongole","nameJa":"あさり","nameEn":"Clams","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする","substitutionOptions":[]},{"id":"9bf3fd53-8c23-4d34-aa8f-d88e68fa564a","nameOriginal":"Cozze","nameJa":"ムール貝","nameEn":"Mussels","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"足糸（ひげ）を引き抜き、殻をたわしでこすり洗い","substitutionOptions":[]},{"id":"4c69c89c-b949-4799-9565-7c6376130d47","nameOriginal":"Gamberi","nameJa":"エビ（殻付き中エビ）","nameEn":"Shrimp","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"殻をむき、背ワタを取る","substitutionOptions":[]},{"id":"591e76cb-0baf-48d8-8a53-43767a5d7d7f","nameOriginal":"Calamari","nameJa":"ヤリイカ","nameEn":"Squid","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"内臓と骨板を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る","substitutionOptions":[]},{"id":"431087f5-a901-4fc3-b012-5ae5bd51da85","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cc6709b5-af2d-4785-b39e-740ba229367b","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0dc5bd4f-790e-4cc9-9e09-48df23aa1d18","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"c5f1ce06-e414-4e2e-900b-41a6bee971f3","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4bf54192-a55b-4b34-b969-f88369a11497","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":10,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"粗みじん切り","substitutionOptions":[]},{"id":"3bc492ec-396b-4c5a-a6a8-a97944308e28","nameOriginal":"Olio extra vergine","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6c9157b3-fe86-4a8a-b915-2b369b15940d","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":"トマトソース用・パスタ茹で湯用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"あさり400gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。アルミホイルなどで覆い、暗所で2時間砂抜きする。","title":"材料を合わせる","actionItems":["アルミホイルなどで覆い、暗所で2時間砂抜きする。"],"parallelItems":[],"completionCriteria":["あさり400gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"・砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る\n・割れた貝や口が開いたまま閉じない貝を除く\n・ムール貝の足糸（ひげ）をペンチまたは指でしっかり引き抜き、殻をたわしでこすり洗いする","title":"砂抜きする","actionItems":["砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る","割れた貝や口が開いたまま閉じない貝を除く","ムール貝の足糸（ひげ）をペンチまたは指でしっかり引き抜き、殻をたわしでこすり洗いする"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ヤリイカの内臓と骨板（透明なプラスチック状の軟骨）を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る。","title":"食材を下処理する","actionItems":["ヤリイカの内臓と骨板（透明なプラスチック状の軟骨）を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"エビは殻をむき、背に浅く切り込みを入れて背ワタを除去する。","title":"材料を準備する","actionItems":["エビは殻をむき、背に浅く切り込みを入れて背ワタを除去する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"にんにく3片を薄切りにする。大きめのフライパン（直径28cm以上）にEVOO大さじ2を中火で熱し、にんにくと唐辛子1本を入れる。にんにくがほんのり色づくまで1〜2分炒めて香りを出す。","title":"材料を準備する","actionItems":["にんにく3片を薄切りにする。","大きめのフライパン（直径28cm以上）にEVOO大さじ2を中火で熱し、にんにくと唐辛子1本を入れる。","にんにくがほんのり色づくまで1〜2分炒めて香りを出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"あさりとムール貝を加え、白ワイン100mlを注ぐ。蓋をして強火で2〜3分蒸らす。貝が開いたらバットに取り出す。\n・蒸し汁はそのままフライパンに残す\n・2分後も開かない貝は除く","title":"材料を合わせる","actionItems":["あさりとムール貝を加え、白ワイン100mlを注ぐ。","蓋をして強火で2〜3分蒸らす。","貝が開いたらバットに取り出す。","蒸し汁はそのままフライパンに残す","2分後も開かない貝は除く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"エビとヤリイカを同じフライパンで中火で炒める。エビがピンク色に変わり、イカが白く不透明になったら（約2分）取り出す。炒めすぎると硬くなるため、色が変わった瞬間に火から離す。","title":"香味を炒める","actionItems":["エビとヤリイカを同じフライパンで中火で炒める。","エビがピンク色に変わり、イカが白く不透明になったら（約2分）取り出す。","炒めすぎると硬くなるため、色が変わった瞬間に火から離す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"（エビ・イカを炒めている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。ホールトマト200gを手でつぶしながらフライパンに加え、中火で8分煮詰めてソースにする。","title":"湯を沸かす","actionItems":["ホールトマト200gを手でつぶしながらフライパンに加え、中火で8分煮詰めてソースにする。"],"parallelItems":["（エビ・イカを炒めている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":9,"instruction":"パッケリ200gを沸かしておいた塩湯に入れ、袋表示より2分短めに茹でる。\n・茹で汁150mlを取り置く","title":"茹でる","actionItems":["パッケリ200gを沸かしておいた塩湯に入れ、袋表示より2分短めに茹でる。","茹で汁150mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":10,"instruction":"貝・エビ・イカをフライパンのソースに戻し、アルデンテのパッケリを加えて中火で2分炒め合わせる。茹で汁を大さじ1ずつ加えながらソースの濃度を調整し、パッケリに絡まる状態にする。","title":"ソースを作る","actionItems":["貝・エビ・イカをフライパンのソースに戻し、アルデンテのパッケリを加えて中火で2分炒め合わせる。","茹で汁を大さじ1ずつ加えながらソースの濃度を調整し、パッケリに絡まる状態にする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":11,"instruction":"パスタ全体に残りのEVOO大さじ1を回しかけ、粗みじん切りにしたイタリアンパセリを散らして仕上げる。すぐに提供する。","title":"材料を準備する","actionItems":["パスタ全体に残りのEVOO大さじ1を回しかけ、粗みじん切りにしたイタリアンパセリを散らして仕上げる。","すぐに提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

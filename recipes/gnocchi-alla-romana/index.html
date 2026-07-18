@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>13分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">セモリナ粉（粗挽きデュラム）</span><span class="ingredient-qty">250g</span></li>
-          <li><span class="ingredient-name">牛乳（全脂）</span><span class="ingredient-qty">1000ml</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">生地用60gと、仕上げ用20gに分ける</span></li>
-          <li><span class="ingredient-name">卵黄</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">生地用70gと、仕上げ用30gに分ける</span></li>
-          <li><span class="ingredient-name">ナツメグ</span><span class="ingredient-qty">1ひとつまみ</span></li>
+              <li data-ingredient-row="eea23012-e17a-43f0-9710-fbc226cdd9c1"><span class="ingredient-name" data-ingredient-name>セモリナ粉（粗挽きデュラム）</span><span class="ingredient-qty" data-ingredient-qty>250g</span></li>
+          <li data-ingredient-row="38b36a02-09c5-41c8-bd0b-b67c08c06f8c"><span class="ingredient-name" data-ingredient-name>牛乳（全脂）</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span></li>
+          <li data-ingredient-row="ec736978-6510-4723-aa1f-eaa8c3ae8d53"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">生地用60gと、仕上げ用20gに分ける</span></li>
+          <li data-ingredient-row="7ddddf1e-38d3-4a38-838b-8958ef853052"><span class="ingredient-name" data-ingredient-name>卵黄</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="3a418c36-2567-49a8-a294-8eb83afbea6f"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">生地用70gと、仕上げ用30gに分ける</span></li>
+          <li data-ingredient-row="8ed4a36d-ee08-41ea-b300-e61d167a6198"><span class="ingredient-name" data-ingredient-name>ナツメグ</span><span class="ingredient-qty" data-ingredient-qty>1ひとつまみ</span></li>
               </ul>
             </section>
           </div>
@@ -273,6 +293,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e47aca51-15bf-48a4-a643-19987ee9789c","nameJa":"ローマ風セモリナのニョッキ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"eea23012-e17a-43f0-9710-fbc226cdd9c1","nameOriginal":"Semolino di grano duro","nameJa":"セモリナ粉（粗挽きデュラム）","nameEn":"Fine semolina","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"38b36a02-09c5-41c8-bd0b-b67c08c06f8c","nameOriginal":"Latte intero","nameJa":"牛乳（全脂）","nameEn":"Whole milk","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ec736978-6510-4723-aa1f-eaa8c3ae8d53","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生地用60gと、仕上げ用20gに分ける","substitutionOptions":[]},{"id":"7ddddf1e-38d3-4a38-838b-8958ef853052","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3a418c36-2567-49a8-a294-8eb83afbea6f","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生地用70gと、仕上げ用30gに分ける","substitutionOptions":[]},{"id":"8ed4a36d-ee08-41ea-b300-e61d167a6198","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"ひとつまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"牛乳1000ml・塩小さじ1を鍋で沸かし、セモリナ粉250gを細く流し込みながら木べらで絶えず混ぜる。固まってくるまで中火で5〜7分かき混ぜ続ける。","title":"セモリナを炊く","actionItems":["牛乳1000ml・塩小さじ1を鍋で沸かす。","セモリナ粉250gを細く流し込みながら木べらで絶えず混ぜる。","固まってくるまで中火で5〜7分かき混ぜ続ける。"],"parallelItems":[],"completionCriteria":["セモリナが固まりへらで持ち上げられる状態になった。"],"cautionItems":["絶えず混ぜ続けること。止めるとダマになる。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"火を止め、バター60g・卵黄2個・パルミジャーノ70g・ナツメグひとつまみを加えてよく混ぜる。","title":"バター・卵黄・チーズを混ぜる","actionItems":["火を止めてバター60g・卵黄2個・パルミジャーノ70g・ナツメグひとつまみを加え、よく混ぜる。"],"parallelItems":[],"completionCriteria":["全ての材料が均一に混ざった。"],"cautionItems":["卵黄は火を止めてから加えること。加熱中に加えると固まる。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"濡らした天板かまな板に1cm厚で伸ばし、冷蔵庫で30分冷やし固める。","title":"伸ばして冷やし固める","actionItems":["濡らした天板かまな板に1cm厚で伸ばす。","冷蔵庫で30分冷やし固める。"],"parallelItems":[],"completionCriteria":["セモリナが固まり型でくり抜ける硬さになった。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"5cm丸型でくり抜き（または四角く切る）、重ねながら耐熱皿に並べる。残りのバター20gを溶かしてかけ、パルミジャーノ30gを振る。","title":"くり抜いて耐熱皿に並べる","actionItems":["5cm丸型でくり抜く（または四角く切る）。","重ねながら耐熱皿に並べる。","残りのバター20gを溶かしてかけパルミジャーノ30gを振る。"],"parallelItems":[],"completionCriteria":["耐熱皿にニョッキが並び、バターとチーズがかかった。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"180℃に予熱したオーブンで20〜25分焼く。表面が黄金色でカリッとすれば完成。","title":"焼き上げる","actionItems":["180℃に予熱したオーブンで20〜25分焼く。"],"parallelItems":[],"completionCriteria":["表面が黄金色でカリッとした。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

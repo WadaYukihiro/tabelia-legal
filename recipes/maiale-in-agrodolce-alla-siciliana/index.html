@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">豚ロース（またはカツレツ用ロース）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">2cm厚に切るか、ロース薄切りなら重ならないよう注意</span></li>
-          <li><span class="ingredient-name">白ワインビネガー</span><span class="ingredient-qty">80ml</span><span class="ingredient-notes">アグロドルチェの酸味の核心</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">20g（大さじ1.5）</span><span class="ingredient-notes">はちみつ大さじ1で代用するとよりシチリアらしい</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">2大</span><span class="ingredient-notes">薄切り。アグロドルチェの主役の一つ</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">乾煎りしておく</span></li>
-          <li><span class="ingredient-name">干しぶどう（レーズン）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">水またはマルサラで10分戻す</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">フレッシュミント</span><span class="ingredient-qty">1枝</span><span class="ingredient-notes">シチリア料理にミントはよく使われる</span></li>
+              <li data-ingredient-row="c8792a93-b5d7-4dc9-aa31-1994f0181aaa"><span class="ingredient-name" data-ingredient-name>豚ロース（またはカツレツ用ロース）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">2cm厚に切るか、ロース薄切りなら重ならないよう注意</span><button type="button" class="substitution-trigger" data-substitution-trigger="c8792a93-b5d7-4dc9-aa31-1994f0181aaa"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="de0d6ced-eac6-4155-8ecc-2bc37908b790"><span class="ingredient-name" data-ingredient-name>白ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>80ml</span><span class="ingredient-notes">アグロドルチェの酸味の核心</span></li>
+          <li data-ingredient-row="cd9b5d05-cb8a-4d26-aa88-831f31ea5a74"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>20g（大さじ1.5）</span><span class="ingredient-notes">はちみつ大さじ1で代用するとよりシチリアらしい</span></li>
+          <li data-ingredient-row="0e422dd3-e9ee-4242-b789-4dcd2b941017"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>2大</span><span class="ingredient-notes">薄切り。アグロドルチェの主役の一つ</span></li>
+          <li data-ingredient-row="ac1d3590-f7d0-4b42-9970-872ce6060764"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">乾煎りしておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="ac1d3590-f7d0-4b42-9970-872ce6060764"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c50007b4-59e2-4391-9904-6b127a16407d"><span class="ingredient-name" data-ingredient-name>干しぶどう（レーズン）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">水またはマルサラで10分戻す</span></li>
+          <li data-ingredient-row="36c82b6b-b7f0-4dd1-bbc4-eaf4ca8e1d9f"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="17d8a412-397b-4da2-9f38-8f563916630f"><span class="ingredient-name" data-ingredient-name>フレッシュミント</span><span class="ingredient-qty" data-ingredient-qty>1枝</span><span class="ingredient-notes">シチリア料理にミントはよく使われる</span></li>
               </ul>
             </section>
           </div>
@@ -289,6 +309,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"28890e03-70b3-44f8-85f5-9b4e0fca4b33","nameJa":"豚肉のシチリア風アグロドルチェ","baseServings":4,"minServings":2,"maxServings":20},"ingredients":[{"id":"c8792a93-b5d7-4dc9-aa31-1994f0181aaa","nameOriginal":"Lonza di maiale (o costolette)","nameJa":"豚ロース（またはカツレツ用ロース）","nameEn":"Pork loin or pork chops","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"2cm厚に切るか、ロース薄切りなら重ならないよう注意","substitutionOptions":[{"id":"4cd400b3-2a16-4165-b2e2-cf6c84fd1bed","standardIngredientId":"c8792a93-b5d7-4dc9-aa31-1994f0181aaa","nameJa":"豚肩ロース薄切り","nameEn":"Thin-cut pork shoulder","authenticityImpact":-5,"flavorImpact":"脂が多くよりコクが出る。食感が柔らかくなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"de0d6ced-eac6-4155-8ecc-2bc37908b790","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"アグロドルチェの酸味の核心","substitutionOptions":[]},{"id":"cd9b5d05-cb8a-4d26-aa88-831f31ea5a74","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":20,"unit":"g（大さじ1.5）","role":"essential","scalingBehavior":null,"notes":"はちみつ大さじ1で代用するとよりシチリアらしい","substitutionOptions":[]},{"id":"0e422dd3-e9ee-4242-b789-4dcd2b941017","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":2,"unit":"大","role":"essential","scalingBehavior":null,"notes":"薄切り。アグロドルチェの主役の一つ","substitutionOptions":[]},{"id":"ac1d3590-f7d0-4b42-9970-872ce6060764","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"乾煎りしておく","substitutionOptions":[{"id":"0100b664-5269-4d09-b2f9-e3413712f84c","standardIngredientId":"ac1d3590-f7d0-4b42-9970-872ce6060764","nameJa":"アーモンドスライス（乾煎り）","nameEn":"Toasted sliced almonds","authenticityImpact":-5,"flavorImpact":"食感は近いが風味が異なる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c50007b4-59e2-4391-9904-6b127a16407d","nameOriginal":"Uvetta","nameJa":"干しぶどう（レーズン）","nameEn":"Raisins","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"水またはマルサラで10分戻す","substitutionOptions":[]},{"id":"36c82b6b-b7f0-4dd1-bbc4-eaf4ca8e1d9f","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"17d8a412-397b-4da2-9f38-8f563916630f","nameOriginal":"Menta fresca","nameJa":"フレッシュミント","nameEn":"Fresh mint","quantity":1,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"シチリア料理にミントはよく使われる","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"玉ねぎを薄切りにする。干しぶどう30gを水（またはマルサラ）に10分浸けて戻す。松の実30gをフライパンで乾煎りして取り出す。","title":"玉ねぎとレーズンを準備する","actionItems":["玉ねぎ2個を薄切りにする。","干しぶどう30gを水（またはマルサラ）に10分浸けて戻す。","松の実30gをフライパンで乾煎りして取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":13,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"豚肉に塩・こしょうをする。フライパンにオリーブオイルを中火で熱し、豚肉の両面に焼き色をつけて取り出す（各3分）。","title":"豚肉を焼く","actionItems":["豚肉600gに塩・こしょうをする。","フライパンにオリーブオイル40mlを中火で熱し、豚肉の両面に焼き色をつけて取り出す（各3分）。"],"parallelItems":[],"completionCriteria":["両面にきつね色がついたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンで玉ねぎを弱火で15分じっくり炒める（透明で甘くなるまで）。","title":"玉ねぎをじっくり炒める","actionItems":["同じフライパンで玉ねぎを弱火で15分じっくり炒める。"],"parallelItems":[],"completionCriteria":["玉ねぎが透明で甘くなれば次へ。"],"cautionItems":["弱火でじっくり炒めること。強火だと焦げる。"],"tipItems":[],"durationMinutes":16,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"砂糖を加えて1分混ぜ、白ワインビネガーを注ぐ。一瞬強火にしてアルコール分を飛ばし、弱火に戻す。","title":"アグロドルチェを作る","actionItems":["砂糖20gを加えて1分混ぜる。","白ワインビネガー80mlを注ぎ、一瞬強火にしてアルコール分を飛ばす。","弱火に戻す。"],"parallelItems":[],"completionCriteria":["ビネガーの酸味が和らいだら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"戻した干しぶどうと松の実を加え、豚肉を戻す。蓋をして10分弱火で煮込む。ソースが少なければ水を少量加える。","title":"豚肉を戻して煮込む","actionItems":["戻した干しぶどうと松の実を加える。","豚肉を戻し、蓋をして10分弱火で煮込む。","ソースが少なければ水を少量加える。"],"parallelItems":[],"completionCriteria":["豚肉に火が通り、ソースがとろりとしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"塩・こしょうで調整。ミントの葉を散らして完成。常温でも美味しく食べられる。","title":"ミントを散らす","actionItems":["塩・こしょうで調整する。","ミントの葉を散らして盛り付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

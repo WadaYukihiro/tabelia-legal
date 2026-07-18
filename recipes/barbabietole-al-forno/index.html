@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ヴェネツィア</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ビーツ</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">皮ごとホイルに包んで焼く</span></li>
-          <li><span class="ingredient-name">バルサミコ酢</span><span class="ingredient-qty">20ml</span></li>
-          <li><span class="ingredient-name">オリーブオイル（EVO）</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">タイム（生）</span><span class="ingredient-qty">3枝</span></li>
-          <li><span class="ingredient-name">粗塩</span><span class="ingredient-qty">5g</span></li>
+              <li data-ingredient-row="e127cf11-e2a9-4cc6-83d3-3b04d44a0c00"><span class="ingredient-name" data-ingredient-name>ビーツ</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">皮ごとホイルに包んで焼く</span></li>
+          <li data-ingredient-row="a55e0be5-5619-4a37-bf34-50a6f08f6225"><span class="ingredient-name" data-ingredient-name>バルサミコ酢</span><span class="ingredient-qty" data-ingredient-qty>20ml</span></li>
+          <li data-ingredient-row="e41ccfb9-d666-409e-b1c4-2e9fc7d5f929"><span class="ingredient-name" data-ingredient-name>オリーブオイル（EVO）</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="8e31fa7b-13d0-41af-bf89-183d296d302a"><span class="ingredient-name" data-ingredient-name>タイム（生）</span><span class="ingredient-qty" data-ingredient-qty>3枝</span></li>
+          <li data-ingredient-row="6b647f9e-8d9d-44bd-85de-955567ebd6b7"><span class="ingredient-name" data-ingredient-name>粗塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
               </ul>
             </section>
           </div>
@@ -226,6 +246,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"920bb2f9-5e29-4405-8771-aa9b08ece162","nameJa":"ビーツのオーブン焼き","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"e127cf11-e2a9-4cc6-83d3-3b04d44a0c00","nameOriginal":"Barbabietole","nameJa":"ビーツ","nameEn":"Beets","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮ごとホイルに包んで焼く","substitutionOptions":[]},{"id":"a55e0be5-5619-4a37-bf34-50a6f08f6225","nameOriginal":"Aceto balsamico","nameJa":"バルサミコ酢","nameEn":"Balsamic vinegar","quantity":20,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e41ccfb9-d666-409e-b1c4-2e9fc7d5f929","nameOriginal":"Olio d'oliva EVO","nameJa":"オリーブオイル（EVO）","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8e31fa7b-13d0-41af-bf89-183d296d302a","nameOriginal":"Timo fresco","nameJa":"タイム（生）","nameEn":"Fresh thyme","quantity":3,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6b647f9e-8d9d-44bd-85de-955567ebd6b7","nameOriginal":"Sale grosso","nameJa":"粗塩","nameEn":"Coarse salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを190℃に予熱する。ビーツを洗い、皮ごとアルミホイルに個別に包む。","title":"オーブンを整える","actionItems":["オーブンを190℃に予熱する。","ビーツを洗い、皮ごとアルミホイルに個別に包む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"190℃のオーブンで50〜60分焼く。竹串がすっと通れば完成。","title":"焼き上げる","actionItems":["190℃のオーブンで50〜60分焼く。"],"parallelItems":[],"completionCriteria":["竹串がすっと通れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":60,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"・粗熱が取れたらホイルを開き、皮を手でむく（手袋着用推奨）\n・食べやすい大きさに切る","title":"休ませて落ち着かせる","actionItems":["食べやすい大きさに切る"],"parallelItems":[],"completionCriteria":["粗熱が取れたらホイルを開き、皮を手でむく（手袋着用推奨）"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ボウルにオリーブオイル・バルサミコ酢・粗塩・タイムを合わせてドレッシングを作り、ビーツを和えて供する。","title":"仕上げにまとめる","actionItems":["ボウルにオリーブオイル・バルサミコ酢・粗塩・タイムを合わせてドレッシングを作り、ビーツを和えて供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

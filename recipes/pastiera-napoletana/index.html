@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>2時間30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間10分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>24時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>10人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">10人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ（カンパーニャ）</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,22 +94,29 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（10人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">10</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">10</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉（生地用）</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">ラード（または無塩バター）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">伝統的にはラードを使う</span></li>
-          <li><span class="ingredient-name">砂糖（生地用）</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">全卵＋卵黄（生地用）</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">全卵1個＋卵黄2個</span></li>
-          <li><span class="ingredient-name">グラーノ・コット（缶詰の煮た小麦）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">イタリア食材店または輸入食材店で入手。前処理済みで便利</span></li>
-          <li><span class="ingredient-name">全乳（小麦煮込み用）</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">バター（小麦煮込み用）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">羊乳リコッタ</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">容器の水分を捨て、ペーパーで軽く押さえて水切りする</span></li>
-          <li><span class="ingredient-name">砂糖（フィリング用）</span><span class="ingredient-qty">250g</span></li>
-          <li><span class="ingredient-name">全卵（フィリング用）</span><span class="ingredient-qty">5個</span><span class="ingredient-notes">卵黄と卵白に分ける</span></li>
-          <li><span class="ingredient-name">オレンジフラワーウォーター</span><span class="ingredient-qty">30ml</span><span class="ingredient-notes">パスティエーラの特徴的な香り。量を惜しまないこと</span></li>
-          <li><span class="ingredient-name">キャンディドオレンジ・シトロンピール</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">シナモン（粉）</span><span class="ingredient-qty">3g</span></li>
-          <li><span class="ingredient-name">バニラ（ペーストまたはエッセンス）</span><span class="ingredient-qty">5ml</span></li>
+              <li data-ingredient-row="046c4441-1e38-4fbe-a9ca-75cbce8f7f24"><span class="ingredient-name" data-ingredient-name>薄力粉（生地用）</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="71113d32-975e-4b2a-b835-9a93ed159073"><span class="ingredient-name" data-ingredient-name>ラード（または無塩バター）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">伝統的にはラードを使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="71113d32-975e-4b2a-b835-9a93ed159073"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="84cba39b-20f6-4e7a-a3d3-ab0a0af3f6db"><span class="ingredient-name" data-ingredient-name>砂糖（生地用）</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="0ad9a515-4b0f-495e-ac34-440f558b18e7"><span class="ingredient-name" data-ingredient-name>全卵＋卵黄（生地用）</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">全卵1個＋卵黄2個</span></li>
+          <li data-ingredient-row="641d5f57-8974-4679-b588-d81af148d74a"><span class="ingredient-name" data-ingredient-name>グラーノ・コット（缶詰の煮た小麦）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">イタリア食材店または輸入食材店で入手。前処理済みで便利</span><button type="button" class="substitution-trigger" data-substitution-trigger="641d5f57-8974-4679-b588-d81af148d74a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="93cdf2e6-1a56-4eb1-bb73-cda677720fb0"><span class="ingredient-name" data-ingredient-name>全乳（小麦煮込み用）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
+          <li data-ingredient-row="0bd90752-680e-402c-84fa-cc9595e5950d"><span class="ingredient-name" data-ingredient-name>バター（小麦煮込み用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="4ae60943-dfa7-4e0f-baa5-627a02baf521"><span class="ingredient-name" data-ingredient-name>羊乳リコッタ</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">容器の水分を捨て、ペーパーで軽く押さえて水切りする</span><button type="button" class="substitution-trigger" data-substitution-trigger="4ae60943-dfa7-4e0f-baa5-627a02baf521"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9ce8d1b4-cb98-4e57-bb12-1f87283a04bc"><span class="ingredient-name" data-ingredient-name>砂糖（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>250g</span></li>
+          <li data-ingredient-row="1c01b07c-9d1f-4cb4-bea8-aa7757e8c2ee"><span class="ingredient-name" data-ingredient-name>全卵（フィリング用）</span><span class="ingredient-qty" data-ingredient-qty>5個</span><span class="ingredient-notes">卵黄と卵白に分ける</span></li>
+          <li data-ingredient-row="75c0f1d7-b2f7-4503-8459-bce997ac7404"><span class="ingredient-name" data-ingredient-name>オレンジフラワーウォーター</span><span class="ingredient-qty" data-ingredient-qty>30ml</span><span class="ingredient-notes">パスティエーラの特徴的な香り。量を惜しまないこと</span></li>
+          <li data-ingredient-row="f993bccf-1722-4d86-86a2-6dc0cc010460"><span class="ingredient-name" data-ingredient-name>キャンディドオレンジ・シトロンピール</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="25256d0b-43c3-4993-8227-8fa5bf055efc"><span class="ingredient-name" data-ingredient-name>シナモン（粉）</span><span class="ingredient-qty" data-ingredient-qty>3g</span></li>
+          <li data-ingredient-row="e5839d18-29ce-4e08-aeb5-97ca33b99975"><span class="ingredient-name" data-ingredient-name>バニラ（ペーストまたはエッセンス）</span><span class="ingredient-qty" data-ingredient-qty>5ml</span></li>
               </ul>
             </section>
           </div>
@@ -372,6 +392,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6a4cc63b-0ece-41ec-945e-482dce3087e8","nameJa":"ナポリ風リコッタと小麦のタルト","baseServings":10,"minServings":6,"maxServings":20},"ingredients":[{"id":"046c4441-1e38-4fbe-a9ca-75cbce8f7f24","nameOriginal":"Farina 00","nameJa":"薄力粉（生地用）","nameEn":"All-purpose flour","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"71113d32-975e-4b2a-b835-9a93ed159073","nameOriginal":"Strutto o Burro","nameJa":"ラード（または無塩バター）","nameEn":"Lard or unsalted butter","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"伝統的にはラードを使う","substitutionOptions":[{"id":"af74e512-31ea-4d01-a789-fc4499302bb8","standardIngredientId":"71113d32-975e-4b2a-b835-9a93ed159073","nameJa":"無塩バター","nameEn":"Unsalted butter","authenticityImpact":-5,"flavorImpact":"風味が若干変わるが完全に代替可能","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"84cba39b-20f6-4e7a-a3d3-ab0a0af3f6db","nameOriginal":"Zucchero","nameJa":"砂糖（生地用）","nameEn":"Sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0ad9a515-4b0f-495e-ac34-440f558b18e7","nameOriginal":"Uova","nameJa":"全卵＋卵黄（生地用）","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"全卵1個＋卵黄2個","substitutionOptions":[]},{"id":"641d5f57-8974-4679-b588-d81af148d74a","nameOriginal":"Grano cotto (in lattina)","nameJa":"グラーノ・コット（缶詰の煮た小麦）","nameEn":"Cooked wheat berries (canned)","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"イタリア食材店または輸入食材店で入手。前処理済みで便利","substitutionOptions":[{"id":"d458c2c2-8b25-4ab2-a0aa-bb4b89c0eb62","standardIngredientId":"641d5f57-8974-4679-b588-d81af148d74a","nameJa":"スペルト小麦（乾燥・前日から水に浸して茹でる）","nameEn":"Dried spelt wheat (soaked and cooked)","authenticityImpact":-5,"flavorImpact":"風味が若干変わるが代替として最適","textureImpact":null,"procedureChanges":["乾燥状態から：前日に水に浸し、翌日30〜40分茹でる"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"93cdf2e6-1a56-4eb1-bb73-cda677720fb0","nameOriginal":"Latte intero","nameJa":"全乳（小麦煮込み用）","nameEn":"Whole milk","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0bd90752-680e-402c-84fa-cc9595e5950d","nameOriginal":"Burro","nameJa":"バター（小麦煮込み用）","nameEn":"Butter","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4ae60943-dfa7-4e0f-baa5-627a02baf521","nameOriginal":"Ricotta di pecora","nameJa":"羊乳リコッタ","nameEn":"Sheep's milk ricotta","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"容器の水分を捨て、ペーパーで軽く押さえて水切りする","substitutionOptions":[{"id":"f829d3c2-98bc-4f8c-a8e3-e9aa060ed51d","standardIngredientId":"4ae60943-dfa7-4e0f-baa5-627a02baf521","nameJa":"牛乳リコッタ","nameEn":"Cow's milk ricotta","authenticityImpact":-5,"flavorImpact":"風味のコクが若干落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9ce8d1b4-cb98-4e57-bb12-1f87283a04bc","nameOriginal":"Zucchero","nameJa":"砂糖（フィリング用）","nameEn":"Sugar","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1c01b07c-9d1f-4cb4-bea8-aa7757e8c2ee","nameOriginal":"Uova","nameJa":"全卵（フィリング用）","nameEn":"Eggs","quantity":5,"unit":"個","role":"essential","scalingBehavior":null,"notes":"卵黄と卵白に分ける","substitutionOptions":[]},{"id":"75c0f1d7-b2f7-4503-8459-bce997ac7404","nameOriginal":"Acqua di fiori d'arancio","nameJa":"オレンジフラワーウォーター","nameEn":"Orange blossom water","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"パスティエーラの特徴的な香り。量を惜しまないこと","substitutionOptions":[]},{"id":"f993bccf-1722-4d86-86a2-6dc0cc010460","nameOriginal":"Scorza di arancia e cedro canditi","nameJa":"キャンディドオレンジ・シトロンピール","nameEn":"Candied orange and citron peel","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"25256d0b-43c3-4993-8227-8fa5bf055efc","nameOriginal":"Cannella","nameJa":"シナモン（粉）","nameEn":"Ground cinnamon","quantity":3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e5839d18-29ce-4e08-aeb5-97ca33b99975","nameOriginal":"Vaniglia","nameJa":"バニラ（ペーストまたはエッセンス）","nameEn":"Vanilla","quantity":5,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"羊乳リコッタ400gを水切りする。容器内の水分をそのまま捨て、キッチンペーパーで表面を軽く押さえる。時間があればザルに30分ほど置くとより扱いやすくなる。","title":"リコッタを水切りする","actionItems":["羊乳リコッタ400gの容器内の水分を捨てる。","キッチンペーパーで表面を軽く押さえる。"],"parallelItems":[],"completionCriteria":["30分。水分が十分に切れれば次へ。"],"cautionItems":["水分が多いとフィリングが水っぽくなる。しっかり水切りする。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。グラーノ・コット400g（缶詰の煮た小麦）を鍋に入れ、牛乳200ml・バター30g・すりおろしたレモンの皮（分量外）を加えて中火で15〜20分煮る（牛乳を吸ってクリーム状になるまで混ぜ続ける）。冷ます。","title":"グラーノ・コットを煮る","actionItems":["レモンの表皮だけをすりおろす。","グラーノ・コット400gを鍋に入れ、牛乳200ml・バター30g・すりおろしたレモンの皮を加える。","中火で15〜20分、牛乳を吸ってクリーム状になるまで混ぜ続ける。","冷ます。"],"parallelItems":[],"completionCriteria":["15〜20分。牛乳を吸ってクリーム状になれば次へ（冷めるまで待つ）。"],"cautionItems":["底が焦げないよう混ぜ続ける。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パスタ・フロッラを作る：ラード（または無塩バター）200gを薄力粉400gに擦り込み、砂糖150g・卵3個を加えて素早くまとめる。ラップして冷蔵庫で1時間休ませる。","title":"パスタ・フロッラを作り休ませる","actionItems":["ラード200gを薄力粉400gに擦り込む。","砂糖150g・卵3個を加えて素早くまとめる。","ラップして冷蔵庫で1時間休ませる。"],"parallelItems":[],"completionCriteria":["まとまりのある生地になれば次へ（冷蔵庫で1時間後）。"],"cautionItems":["こねすぎない。"],"tipItems":[],"durationMinutes":70,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"水切りしたリコッタ400gと砂糖250gを滑らかになるまで混ぜ、卵黄（フィリング用の卵5個から分けた卵黄）・オレンジフラワーウォーター30ml・バニラ・シナモン・刻んだキャンディドシトラス100gを加える。冷ました小麦クリームを加えてよく混ぜる。","title":"フィリングを作る","actionItems":["水切りしたリコッタ400gと砂糖250gを滑らかになるまで混ぜる。","卵黄・オレンジフラワーウォーター30ml・バニラ・シナモン・刻んだキャンディドシトラスを加える。","冷ました小麦クリームを加えてよく混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざれば次へ。"],"cautionItems":["オレンジフラワーウォーターを惜しまない。パスティエーラの香りの核心。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"卵白を固めに泡立て、リコッタ混合物に2回に分けてさっくり折り込む。","title":"卵白を折り込む","actionItems":["卵白5個を固めに泡立てる。","リコッタ混合物に2回に分けてさっくり折り込む。"],"parallelItems":[],"completionCriteria":["白い筋がなくなれば次へ。"],"cautionItems":["泡をなるべく消さないよう折り込む。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"オーブンを180℃に予熱。直径30cmのタルト型に生地の2/3を薄く敷き込む（側面も）。フィリングを流し込む（型の9割まで）。残りの生地で細い帯（幅1cm）を作り、格子状に飾る。","title":"型に詰め格子を飾る","actionItems":["オーブンを180℃に予熱する。","直径30cmのタルト型に生地の2/3を薄く敷き込む（側面も）。","フィリングを型の9割まで流し込む。","残りの生地で幅1cmの帯を作り格子状に飾る。"],"parallelItems":[],"completionCriteria":["格子模様が完成すれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"180℃で65〜70分焼く（表面がきつね色に、フィリングが固まるまでが目安。表面が割れるのは正常）。","title":"パスティエラを焼く","actionItems":["180℃で65〜70分焼く。"],"parallelItems":[],"completionCriteria":["表面がきつね色に、フィリングが固まれば焼き上がり。"],"cautionItems":["表面が割れるのは正常。"],"tipItems":[],"durationMinutes":70,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"完全に冷めてから冷蔵庫へ。最低1日（できれば2日）置いてから食べる（置くほど各素材が馴染んで風味が一体化する）。","title":"冷まして寝かせる","actionItems":["完全に冷めてから冷蔵庫へ入れる。","最低1日置いてから提供する。"],"parallelItems":[],"completionCriteria":["最低1日（できれば2日）。置くほど風味が一体化する。"],"cautionItems":[],"tipItems":[],"durationMinutes":1440,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

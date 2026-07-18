@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・アルバ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">完熟桃</span><span class="ingredient-qty">4個</span><span class="ingredient-notes">半割りにテストメモ更新して種を取る</span></li>
-          <li><span class="ingredient-name">アマレッティ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">砕く</span></li>
-          <li><span class="ingredient-name">ヘーゼルナッツ</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">刻む</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">小さく切る</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">無糖ココア</span><span class="ingredient-qty">8g</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">60ml</span></li>
+              <li data-ingredient-row="ab713488-7ce6-4586-8228-42c2b0b9f322"><span class="ingredient-name" data-ingredient-name>完熟桃</span><span class="ingredient-qty" data-ingredient-qty>4個</span><span class="ingredient-notes">半割りにテストメモ更新して種を取る</span></li>
+          <li data-ingredient-row="46063808-11f9-437e-8f4a-f23d78b063bb"><span class="ingredient-name" data-ingredient-name>アマレッティ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">砕く</span></li>
+          <li data-ingredient-row="4114eac2-cd68-4ec5-8b5f-74b839e25abf"><span class="ingredient-name" data-ingredient-name>ヘーゼルナッツ</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">刻む</span></li>
+          <li data-ingredient-row="b7bc989f-e1eb-4170-9963-d950381cb4b6"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">小さく切る</span></li>
+          <li data-ingredient-row="329fc8b6-aada-413f-81a1-40e279aab099"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="07a8511e-e9d9-4d15-88fb-c075b37369f6"><span class="ingredient-name" data-ingredient-name>無糖ココア</span><span class="ingredient-qty" data-ingredient-qty>8g</span></li>
+          <li data-ingredient-row="ccb46af7-9863-4345-9abd-4a85776813a4"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
               </ul>
             </section>
           </div>
@@ -241,6 +261,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"3e4559cf-02dc-4a73-95b8-6c5f06fde504","nameJa":"桃のリピエーネ アマレッティとナッツの詰め物","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"ab713488-7ce6-4586-8228-42c2b0b9f322","nameOriginal":"Pesche mature","nameJa":"完熟桃","nameEn":"Ripe peaches","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"半割りにテストメモ更新して種を取る","substitutionOptions":[]},{"id":"46063808-11f9-437e-8f4a-f23d78b063bb","nameOriginal":"Amaretti","nameJa":"アマレッティ","nameEn":"Amaretti cookies","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"砕く","substitutionOptions":[]},{"id":"4114eac2-cd68-4ec5-8b5f-74b839e25abf","nameOriginal":"Nocciole","nameJa":"ヘーゼルナッツ","nameEn":"Hazelnuts","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"刻む","substitutionOptions":[]},{"id":"b7bc989f-e1eb-4170-9963-d950381cb4b6","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":"小さく切る","substitutionOptions":[]},{"id":"329fc8b6-aada-413f-81a1-40e279aab099","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"07a8511e-e9d9-4d15-88fb-c075b37369f6","nameOriginal":"Cacao amaro","nameJa":"無糖ココア","nameEn":"Unsweetened cocoa","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ccb46af7-9863-4345-9abd-4a85776813a4","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180度に予熱する。完熟桃4個は半割りにして種を取る。アマレッティ80gは砕く。ヘーゼルナッツ30gは刻む。バター40gは小さく切る。桃のくぼみが詰め物を受けられる大きさになったら次へ。","title":null,"actionItems":["オーブンを180度に予熱する。","完熟桃4個は半割りにして種を取る。","アマレッティ80gは砕く。","ヘーゼルナッツ30gは刻む。","バター40gは小さく切る。","桃のくぼみが詰め物を受けられる大きさになったら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"砕いたアマレッティ、ヘーゼルナッツ、砂糖30g、無糖ココア8g、バター半量を混ぜる。しっとりまとまり、手で軽く押すと形が残る状態になったら次へ。","title":"詰め物を作る","actionItems":["砕いたアマレッティ、ヘーゼルナッツ、砂糖30g、無糖ココア8g、バター半量を混ぜる。"],"parallelItems":[],"completionCriteria":["しっとりまとまり、手で軽く押すと形が残る状態になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"桃に詰め物をのせ、耐熱皿に並べる。白ワイン60mlを皿の底に注ぎ、残りのバターを点在させる。180度で25〜30分焼く。桃が柔らかくなり、詰め物の表面が香ばしく色づいたら完成。","title":"焼く","actionItems":["桃に詰め物をのせ、耐熱皿に並べる。","白ワイン60mlを皿の底に注ぎ、残りのバターを点在させる。","180度で25〜30分焼く。","桃が柔らかくなり、詰め物の表面が香ばしく色づいたら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>50分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ジェノヴァ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">タリオリーニ</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">殻付きエビ</span><span class="ingredient-qty">10尾</span><span class="ingredient-notes">頭と殻を外し、身は背わたを取る</span></li>
-          <li><span class="ingredient-name">ミニトマト</span><span class="ingredient-qty">8個</span><span class="ingredient-notes">半割り</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">45ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">4枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">7g</span></li>
+              <li data-ingredient-row="00279fcf-ff6b-4b83-aeeb-c07f9b959eeb"><span class="ingredient-name" data-ingredient-name>タリオリーニ</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="6054016a-d9ac-4a9c-abf4-858bef2c81ce"><span class="ingredient-name" data-ingredient-name>殻付きエビ</span><span class="ingredient-qty" data-ingredient-qty>10尾</span><span class="ingredient-notes">頭と殻を外し、身は背わたを取る</span></li>
+          <li data-ingredient-row="a13a4c09-1170-4e1b-8df5-e90daf5fc655"><span class="ingredient-name" data-ingredient-name>ミニトマト</span><span class="ingredient-qty" data-ingredient-qty>8個</span><span class="ingredient-notes">半割り</span></li>
+          <li data-ingredient-row="301b84c1-acff-4ef0-a56a-667e5d83b806"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="55a2c0e5-c3cb-4335-917b-7056392107a9"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="574ce941-556a-40c0-bc82-45ec3091260c"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="9c51fb20-64c0-4ddf-9410-ab33d60aeb6b"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="498db3a1-1e96-49e9-ad48-608624112f8a"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span></li>
+          <li data-ingredient-row="34c6e094-03a6-4eeb-9a3d-6cba951cf1a3"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>4枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="28cd217c-95fa-4809-b204-b80cd1123f9b"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>7g</span></li>
               </ul>
             </section>
           </div>
@@ -265,6 +285,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"8880e916-9311-4bb3-91de-ebb0e397e113","nameJa":"エビのビスク仕立てタリオリーニ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"00279fcf-ff6b-4b83-aeeb-c07f9b959eeb","nameOriginal":"Tagliolini freschi","nameJa":"タリオリーニ","nameEn":"Fresh tagliolini","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6054016a-d9ac-4a9c-abf4-858bef2c81ce","nameOriginal":"Gamberi interi","nameJa":"殻付きエビ","nameEn":"Whole shrimp","quantity":10,"unit":"尾","role":"essential","scalingBehavior":null,"notes":"頭と殻を外し、身は背わたを取る","substitutionOptions":[]},{"id":"a13a4c09-1170-4e1b-8df5-e90daf5fc655","nameOriginal":"Pomodorini","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","quantity":8,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"半割り","substitutionOptions":[]},{"id":"301b84c1-acff-4ef0-a56a-667e5d83b806","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":0.25,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"55a2c0e5-c3cb-4335-917b-7056392107a9","nameOriginal":"Carota","nameJa":"にんじん","nameEn":"Carrot","quantity":0.5,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"574ce941-556a-40c0-bc82-45ec3091260c","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":0.5,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"9c51fb20-64c0-4ddf-9410-ab33d60aeb6b","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"498db3a1-1e96-49e9-ad48-608624112f8a","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"34c6e094-03a6-4eeb-9a3d-6cba951cf1a3","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":4,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"28cd217c-95fa-4809-b204-b80cd1123f9b","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":7,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"殻付きエビ10尾は頭と殻を外し、身の背わたを取る。玉ねぎ、にんじん、セロリはみじん切りにする。ミニトマト8個は半割りにする。イタリアンパセリ4枝はみじん切りにする。","title":"エビと野菜を準備する","actionItems":["殻付きエビ10尾は頭と殻を外し、身の背わたを取る。","玉ねぎ、にんじん、セロリはみじん切りにする。","ミニトマト8個は半割りにする。","イタリアンパセリ4枝はみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋にエクストラバージンオリーブオイル25mlを熱し、エビの頭と殻を強めの中火で炒める。殻が赤くなり、香ばしい甲殻類の香りが立ったらみじん切りにした玉ねぎ、にんじん、セロリを加える。","title":"殻を炒める","actionItems":["鍋にエクストラバージンオリーブオイル25mlを熱し、エビの頭と殻を強めの中火で炒める。","殻が赤くなり、香ばしい甲殻類の香りが立ったらみじん切りにした玉ねぎ、にんじん、セロリを加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"白ワイン80mlを加えて鍋底をこそげ、水500mlとミニトマトを加える。煮た殻と野菜を潰しながら濾し、液体が赤橙色で濃い香りになったら次へ。（ビスクを20分煮る間に）大鍋に湯を沸かし始める。","title":"ビスクを取る","actionItems":["白ワイン80mlを加えて鍋底をこそげ、水500mlとミニトマトを加える。"],"parallelItems":["（ビスクを20分煮る間に）大鍋に湯を沸かし始める。"],"completionCriteria":["煮た殻と野菜を潰しながら濾し、液体が赤橙色で濃い香りになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにビスクを戻して半量まで煮詰める。エビの身を加え、表面が白く変わり中心がしっとりしている状態で火を止める。","title":"ソースにする","actionItems":["フライパンにビスクを戻して半量まで煮詰める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["エビの身を加え、表面が白く変わり中心がしっとりしている状態で火を止める。"],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"沸騰した湯に塩7gを加える。タリオリーニ200gを茹で、アルデンテでソースのフライパンに移す。フライパンへエクストラバージンオリーブオイル20mlとイタリアンパセリを加え、麺にビスクが艶よく絡んだら完成。","title":"パスタを絡める","actionItems":["沸騰した湯に塩7gを加える。","タリオリーニ200gを茹で、アルデンテでソースのフライパンに移す。","フライパンへエクストラバージンオリーブオイル20mlとイタリアンパセリを加え、麺にビスクが艶よく絡んだら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

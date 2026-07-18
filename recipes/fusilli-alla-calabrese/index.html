@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・カラブリア州</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">フジッリ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">ンドゥイヤ（カラブリアの発酵腸詰）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">輸入食材店（カルディ等）で購入可。チューブ式または腸詰タイプ</span></li>
-          <li><span class="ingredient-name">ミニトマト</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">半分に切る</span></li>
-          <li><span class="ingredient-name">リコッタチーズ（フレッシュ）</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">ニンニク</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">1束</span></li>
-          <li><span class="ingredient-name">ペコリーノ</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少量</span><span class="ingredient-notes">ソース調味用（ンドゥイヤに塩分があるので控えめに）</span></li>
+              <li data-ingredient-row="539135ea-96e3-4545-a62d-546d0d2f7411"><span class="ingredient-name" data-ingredient-name>フジッリ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="7e6b220d-46bf-4f82-9e94-87d4623b4b43"><span class="ingredient-name" data-ingredient-name>ンドゥイヤ（カラブリアの発酵腸詰）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">輸入食材店（カルディ等）で購入可。チューブ式または腸詰タイプ</span><button type="button" class="substitution-trigger" data-substitution-trigger="7e6b220d-46bf-4f82-9e94-87d4623b4b43"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="396a31b1-af49-47c6-a4fd-268b231b9662"><span class="ingredient-name" data-ingredient-name>ミニトマト</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">半分に切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="396a31b1-af49-47c6-a4fd-268b231b9662"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3c0a917f-0aae-4f41-84c9-1fcc02ed9714"><span class="ingredient-name" data-ingredient-name>リコッタチーズ（フレッシュ）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><button type="button" class="substitution-trigger" data-substitution-trigger="3c0a917f-0aae-4f41-84c9-1fcc02ed9714"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="aa4d04d8-4709-4f9d-b56d-e3523a1f317e"><span class="ingredient-name" data-ingredient-name>ニンニク</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="60af15fa-cb05-4de4-98ac-a4a25f0a4755"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="35afd25f-c87c-48a9-9581-c15c9762a7de"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>1束</span></li>
+          <li data-ingredient-row="279d1038-199a-4164-b04e-da383db87534"><span class="ingredient-name" data-ingredient-name>ペコリーノ</span><span class="ingredient-qty" data-ingredient-qty>30g</span><button type="button" class="substitution-trigger" data-substitution-trigger="279d1038-199a-4164-b04e-da383db87534"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="22abfcbb-4edd-4887-b641-45dff29e578e"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少量</span><span class="ingredient-notes">ソース調味用（ンドゥイヤに塩分があるので控えめに）</span></li>
               </ul>
             </section>
           </div>
@@ -308,6 +328,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"5491b97f-2027-4df3-826e-40ed397e9c6a","nameJa":"カラブリア風フジッリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"539135ea-96e3-4545-a62d-546d0d2f7411","nameOriginal":"Fusilli","nameJa":"フジッリ","nameEn":"Fusilli","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7e6b220d-46bf-4f82-9e94-87d4623b4b43","nameOriginal":"'Nduja calabrese","nameJa":"ンドゥイヤ（カラブリアの発酵腸詰）","nameEn":"'Nduja spreadable sausage","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"輸入食材店（カルディ等）で購入可。チューブ式または腸詰タイプ","substitutionOptions":[{"id":"6ad9a3cd-3607-4790-9c62-112fb3c0f51c","standardIngredientId":"7e6b220d-46bf-4f82-9e94-87d4623b4b43","nameJa":"辛口サラミ（細かく刻む）＋唐辛子フレーク","nameEn":"Spicy salami + red chili flakes","authenticityImpact":-20,"flavorImpact":"ンドゥイヤ特有の発酵した脂のソース感が出ない。風味が大きく変わる","textureImpact":null,"procedureChanges":["ンドゥイヤを辛口サラミと唐辛子フレークに分け、サラミの脂を引き出してから辛みを加える"],"affectedStepNumbers":[2,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"ンドゥイヤ（カラブリアの発酵腸詰）"},{"role":"essential","unit":"g","notes":"細かく刻む","action":"add","nameEn":"Spicy salami","nameJa":"辛口サラミ","quantity":80},{"role":"flavor","unit":"小さじ","action":"add","nameEn":"Red chili flakes","nameJa":"唐辛子フレーク","quantity":1}],"stepPatches":[{"title":"サラミの脂を引き出す","action":"replace","stepNumber":2,"actionItems":["辛口サラミ80gを細かく刻む。","フライパンにEVOO大さじ3とニンニクを弱火で熱する。","香りが出たらサラミを加え、脂がにじむまで2〜3分炒める。","唐辛子フレーク小さじ1を加える。"],"instruction":"辛口サラミ80gを細かく刻む。フライパンにEVOO大さじ3とニンニクを弱火で熱する。香りが出たらサラミを加え、脂がにじむまで2〜3分炒める。唐辛子フレーク小さじ1を加え、油が赤く色づいたら次へ。","cautionItems":["唐辛子フレークは焦げやすいため、サラミの脂が出てから加える。"],"changeReason":"ンドゥイヤの発酵脂をサラミの脂と唐辛子で近似するため","completionCriteria":["サラミの脂がにじみ、油が赤く色づいたら次へ。"]},{"title":"調味する","action":"replace","stepNumber":4,"actionItems":["バジルをちぎって加える。","塩小さじ1/4で調味する（辛口サラミに塩分があるので控えめに）。"],"instruction":"バジルをちぎって加える。塩小さじ1/4で調味する（辛口サラミに塩分があるので控えめに）。","changeReason":"調味説明をンドゥイヤから辛口サラミに合わせる","completionCriteria":["調味が整ったら完了。"]}]}]},{"id":"396a31b1-af49-47c6-a4fd-268b231b9662","nameOriginal":"Pomodorini ciliegino","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"半分に切る","substitutionOptions":[{"id":"854f67c8-5b1e-47a3-8b9b-f939c0af7490","standardIngredientId":"396a31b1-af49-47c6-a4fd-268b231b9662","nameJa":"ホールトマト缶200g（手でつぶす）","nameEn":"Canned whole tomatoes, 200g","authenticityImpact":-5,"flavorImpact":"酸味が均一になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3c0a917f-0aae-4f41-84c9-1fcc02ed9714","nameOriginal":"Ricotta fresca","nameJa":"リコッタチーズ（フレッシュ）","nameEn":"Fresh ricotta cheese","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"b704de84-0c87-4fe1-889b-5768956d1448","standardIngredientId":"3c0a917f-0aae-4f41-84c9-1fcc02ed9714","nameJa":"カッテージチーズ","nameEn":"Cottage cheese","authenticityImpact":-10,"flavorImpact":"水分量が異なる。ザルで水切りして使う","textureImpact":null,"procedureChanges":["ガーゼやキッチンペーパーで1時間水切りする"],"affectedStepNumbers":[5],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"aa4d04d8-4709-4f9d-b56d-e3523a1f317e","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"60af15fa-cb05-4de4-98ac-a4a25f0a4755","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"35afd25f-c87c-48a9-9581-c15c9762a7de","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"279d1038-199a-4164-b04e-da383db87534","nameOriginal":"Pecorino","nameJa":"ペコリーノ","nameEn":"Pecorino, grated","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"419041dd-1ad2-4081-826a-edeb79642c5b","standardIngredientId":"279d1038-199a-4164-b04e-da383db87534","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","authenticityImpact":-5,"flavorImpact":"羊乳の野性味が減る","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"22abfcbb-4edd-4887-b641-45dff29e578e","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":"ソース調味用（ンドゥイヤに塩分があるので控えめに）","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・ミニトマトを半分に切る\n・ニンニクを薄切りにする","title":"食材を切る","actionItems":["ミニトマトを半分に切る。","ニンニクを薄切りにする。"],"parallelItems":[],"completionCriteria":["全て切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにEVOO大さじ3とニンニクを弱火で熱する。香りが出たらンドゥイヤを加え、木べらで押しながら2〜3分炒める。赤い脂が溶け出してオイル状になったらソースの核心が完成。","title":"ンドゥイヤを炒める","actionItems":["フライパンにEVOO大さじ3とニンニクを弱火で熱する。","ンドゥイヤを加え、木べらで押しながら2〜3分炒める。"],"parallelItems":[],"completionCriteria":["赤い脂が溶け出してオイル状になったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（炒める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。ミニトマトを加えて中火で7〜8分炒める。トマトをつぶしながら水分を飛ばし、ソースを凝縮させる。","title":"トマトを炒める","actionItems":["ミニトマトを加えて中火で7〜8分炒める。","トマトをつぶしながら水分を飛ばし、ソースを凝縮させる。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["水分が飛んでソースが凝縮したら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"バジルをちぎって加える。塩小さじ1/4で調味する（ンドゥイヤに塩分があるので控えめに）。","title":"調味する","actionItems":["バジルをちぎって加える。","塩小さじ1/4で調味する（ンドゥイヤに塩分があるので控えめに）。"],"parallelItems":[],"completionCriteria":["調味が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"フジッリを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["フジッリを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"フジッリをアルデンテで引き上げてフライパンに移す。茹で汁大さじ2〜3と共に1〜2分絡める。","title":"パスタを絡める","actionItems":["フジッリをアルデンテで引き上げてフライパンに移す。","茹で汁大さじ2〜3と共に1〜2分絡める。"],"parallelItems":[],"completionCriteria":["全体が絡まったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"皿に盛り、リコッタをスプーンで大きめに点々とのせる（混ぜない——白とオレンジのコントラストが美しい）。ペコリーノを削って散らし、バジルを飾って仕上げる。","title":"リコッタとバジルをのせる","actionItems":["皿に盛り、リコッタをスプーンで大きめに点々とのせる（混ぜない——白とオレンジのコントラストが美しい）。","ペコリーノを削って散らし、バジルを飾って仕上げる。"],"parallelItems":[],"completionCriteria":["リコッタ・ペコリーノ・バジルをのせたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

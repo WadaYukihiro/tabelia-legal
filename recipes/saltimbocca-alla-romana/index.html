@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">仔牛もも肉（薄切り）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">薄くたたいて均一にする</span></li>
-          <li><span class="ingredient-name">生ハム（プロシュート・クルード）</span><span class="ingredient-qty">4枚</span></li>
-          <li><span class="ingredient-name">セージ（生）</span><span class="ingredient-qty">8枚</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">80ml</span></li>
+              <li data-ingredient-row="ae0d0afd-8d16-445c-9a1f-8aafef73765f"><span class="ingredient-name" data-ingredient-name>仔牛もも肉（薄切り）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">薄くたたいて均一にする</span><button type="button" class="substitution-trigger" data-substitution-trigger="ae0d0afd-8d16-445c-9a1f-8aafef73765f"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="1a3f49df-4254-4be9-9c74-2c56107fc872"><span class="ingredient-name" data-ingredient-name>生ハム（プロシュート・クルード）</span><span class="ingredient-qty" data-ingredient-qty>4枚</span></li>
+          <li data-ingredient-row="5905c1e9-cdde-4060-bb4f-f7a112b98440"><span class="ingredient-name" data-ingredient-name>セージ（生）</span><span class="ingredient-qty" data-ingredient-qty>8枚</span></li>
+          <li data-ingredient-row="2f533608-2317-4dd6-beb0-ca27ccbe39f3"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="4161b8d2-d284-4bd4-be60-4e41d9881cda"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
               </ul>
             </section>
           </div>
@@ -233,6 +253,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"58d89673-4c3a-4028-ae1e-b662e681f66b","nameJa":"ローマ風サルティンボッカ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"ae0d0afd-8d16-445c-9a1f-8aafef73765f","nameOriginal":"Vitello","nameJa":"仔牛もも肉（薄切り）","nameEn":"Veal escalope","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄くたたいて均一にする","substitutionOptions":[{"id":"a7046193-c8a9-4423-8529-79d0e1acb044","standardIngredientId":"ae0d0afd-8d16-445c-9a1f-8aafef73765f","nameJa":"豚ヒレ肉（薄切り）","nameEn":"Pork tenderloin","authenticityImpact":-10,"flavorImpact":"仔牛特有の繊細な風味は失われるが料理として成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"1a3f49df-4254-4be9-9c74-2c56107fc872","nameOriginal":"Prosciutto crudo","nameJa":"生ハム（プロシュート・クルード）","nameEn":"Prosciutto crudo","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5905c1e9-cdde-4060-bb4f-f7a112b98440","nameOriginal":"Salvia","nameJa":"セージ（生）","nameEn":"Fresh sage leaves","quantity":8,"unit":"枚","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2f533608-2317-4dd6-beb0-ca27ccbe39f3","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4161b8d2-d284-4bd4-be60-4e41d9881cda","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"仔牛肉を麺棒やハンマーで薄くたたいて均一な厚さ（約5mm）にする。片面にセージを1〜2枚置き、その上に生ハムを重ねてはみ出ないように乗せ、爪楊枝で2〜3箇所固定する。","title":"材料を準備する","actionItems":["仔牛肉を麺棒やハンマーで薄くたたいて均一な厚さ（約5mm）にする。","片面にセージを1〜2枚置き、その上に生ハムを重ねてはみ出ないように乗せ、爪楊枝で2〜3箇所固定する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"バター40gをフライパンで溶かし、泡が出たら生ハム側を下にして中火で焼く。生ハムがカリッとして縁が褐色になったら（約2分）ひっくり返す。","title":"焼き上げる","actionItems":["バター40gをフライパンで溶かし、泡が出たら生ハム側を下にして中火で焼く。"],"parallelItems":[],"completionCriteria":["生ハムがカリッとして縁が褐色になったら（約2分）ひっくり返す。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"肉側を1分焼いて火が通ったら（押して弾力があればOK）フライパンから取り出して皿に置く。","title":"休ませて落ち着かせる","actionItems":["肉側を1分焼いて火が通ったら（押して弾力があればOK）フライパンから取り出して皿に置く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"同じフライパンに白ワイン80mlを加え、焦げ付きをこそげながら強火で30秒〜1分煮詰めてソースを作り、肉の上にかける。","title":"ソースを作る","actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":["同じフライパンに白ワイン80mlを加え、焦げ付きをこそげながら強火で30秒〜1分煮詰めてソースを作り、肉の上にかける。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

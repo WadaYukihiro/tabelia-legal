@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ゴルゴンゾーラ（ミラノ近郊）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ファルファッレ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">ゴルゴンゾーラ・ドルチェ（甘口）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">ドルチェ（甘口）を使う。ピカンテ（辛口）は味が強すぎる</span></li>
-          <li><span class="ingredient-name">クルミ（粗く刻む）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">フライパンで乾煎りして香りを出す</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">20g</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">ラディッキオ</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">千切り。ゴルゴンゾーラの甘さに対する苦みのコントラストになる</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少量</span></li>
+              <li data-ingredient-row="c94fdbd0-37af-4c6a-8103-071900face33"><span class="ingredient-name" data-ingredient-name>ファルファッレ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="2e3e5ef7-d7d9-4c72-bc10-32b41fec8ec2"><span class="ingredient-name" data-ingredient-name>ゴルゴンゾーラ・ドルチェ（甘口）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">ドルチェ（甘口）を使う。ピカンテ（辛口）は味が強すぎる</span><button type="button" class="substitution-trigger" data-substitution-trigger="2e3e5ef7-d7d9-4c72-bc10-32b41fec8ec2"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="6e4d4d9b-a76c-4638-9861-0863b5cdb06d"><span class="ingredient-name" data-ingredient-name>クルミ（粗く刻む）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">フライパンで乾煎りして香りを出す</span><button type="button" class="substitution-trigger" data-substitution-trigger="6e4d4d9b-a76c-4638-9861-0863b5cdb06d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a249339e-b568-4b76-aca4-087291ee0982"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="a249339e-b568-4b76-aca4-087291ee0982"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="57cdde2e-293a-403f-abd8-7b00c152741e"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
+          <li data-ingredient-row="342f9874-077d-43ce-b355-34ad1041638e"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><button type="button" class="substitution-trigger" data-substitution-trigger="342f9874-077d-43ce-b355-34ad1041638e"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="1b59dddf-e122-444a-a8b8-42f1ba41db2c"><span class="ingredient-name" data-ingredient-name>ラディッキオ</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">千切り。ゴルゴンゾーラの甘さに対する苦みのコントラストになる</span><button type="button" class="substitution-trigger" data-substitution-trigger="1b59dddf-e122-444a-a8b8-42f1ba41db2c"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="de6a1c5a-3622-4a53-bc28-20b40fb368ce"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
               </ul>
             </section>
           </div>
@@ -335,6 +355,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4ff793f5-4c7f-4ebe-a208-2a39749ffd57","nameJa":"ゴルゴンゾーラクリームとくるみのファルファッレ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"c94fdbd0-37af-4c6a-8103-071900face33","nameOriginal":"Farfalle","nameJa":"ファルファッレ","nameEn":"Farfalle","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2e3e5ef7-d7d9-4c72-bc10-32b41fec8ec2","nameOriginal":"Gorgonzola dolce","nameJa":"ゴルゴンゾーラ・ドルチェ（甘口）","nameEn":"Gorgonzola dolce","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ドルチェ（甘口）を使う。ピカンテ（辛口）は味が強すぎる","substitutionOptions":[{"id":"8fc959b1-1de8-46f9-b8f8-140fdf3f637e","standardIngredientId":"2e3e5ef7-d7d9-4c72-bc10-32b41fec8ec2","nameJa":"ブルーチーズ","nameEn":"Danish blue cheese","authenticityImpact":-5,"flavorImpact":"辛みが増す。量を8割に減らして調整","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"6e4d4d9b-a76c-4638-9861-0863b5cdb06d","nameOriginal":"Noci","nameJa":"クルミ（粗く刻む）","nameEn":"Walnuts, roughly chopped","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"フライパンで乾煎りして香りを出す","substitutionOptions":[{"id":"0d05abf6-8519-437a-a9dc-8c8a993cf3cc","standardIngredientId":"6e4d4d9b-a76c-4638-9861-0863b5cdb06d","nameJa":"ヘーゼルナッツ（ロースト・粗刻み）","nameEn":"Roasted hazelnuts, roughly chopped","authenticityImpact":-5,"flavorImpact":"甘みと香りのプロファイルが変わるが合う","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a249339e-b568-4b76-aca4-087291ee0982","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":150,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"cb3d137e-2714-4e25-ab11-0678074fc7f6","standardIngredientId":"a249339e-b568-4b76-aca4-087291ee0982","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-20,"flavorImpact":"チーズが分離しやすくなる。弱火と丁寧な攪拌が必須","textureImpact":null,"procedureChanges":["より低温・丁寧に溶かす"],"affectedStepNumbers":[4,5],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"クリームを低温で温める","action":"replace","stepNumber":4,"actionItems":["フライパンにバター20gと植物性生クリーム150mlを入れ、ごく弱火にかける。"],"instruction":"フライパンにバター20gと植物性生クリーム150mlを入れ、ごく弱火にかける。鍋肌がふつふつする前の温かい状態になったら次へ。","cautionItems":["植物性生クリームは高温で分離しやすい。沸騰させない。"],"changeReason":"植物性生クリームは乳脂肪の生クリームより分離しやすいため、より低温で温める","completionCriteria":["鍋肌がふつふつする前の温かい状態になったら次へ。"]},{"title":"ゴルゴンゾーラを低温で溶かす","action":"replace","stepNumber":5,"actionItems":["火を止めるかごく弱火に落とし、ゴルゴンゾーラを加えて木べらで押しながらゆっくり溶かす。","ソースが重ければ茹で汁を小さじ1ずつ加える。"],"instruction":"温まってきたら火を止めるかごく弱火に落とし、ゴルゴンゾーラを加えて木べらで押しながらゆっくり溶かす。ソースが重ければ茹で汁を小さじ1ずつ加える。絶対に沸騰させない。","cautionItems":["植物性生クリームとゴルゴンゾーラは高温で油分が分離しやすい。湯気が強く立つ前の温度を保つ。"],"changeReason":"植物性生クリーム使用時はゴルゴンゾーラをより低温で丁寧に溶かす必要がある","completionCriteria":["ゴルゴンゾーラが滑らかに溶けたら次へ。"]}]}]},{"id":"57cdde2e-293a-403f-abd8-7b00c152741e","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"342f9874-077d-43ce-b355-34ad1041638e","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano, grated","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"47341185-72e5-4d72-8432-f33ee8bbcf8a","standardIngredientId":"342f9874-077d-43ce-b355-34ad1041638e","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"やや軽めの風味だが代用として十分","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"1b59dddf-e122-444a-a8b8-42f1ba41db2c","nameOriginal":"Radicchio rosso","nameJa":"ラディッキオ","nameEn":"Red radicchio","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"千切り。ゴルゴンゾーラの甘さに対する苦みのコントラストになる","substitutionOptions":[{"id":"23b3aba7-7b17-4426-98bc-da3873ba35b3","standardIngredientId":"1b59dddf-e122-444a-a8b8-42f1ba41db2c","nameJa":"ベルギーエンダイブ（チコリ）","nameEn":"Belgian endive (chicory)","authenticityImpact":-5,"flavorImpact":"苦みのプロファイルが異なるが同様のコントラスト効果がある","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"de6a1c5a-3622-4a53-bc28-20b40fb368ce","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"クルミをフライパンで中火3〜4分乾煎りし、薄く色づいて香りが立ったら取り出して粗く刻む。","title":"クルミを乾煎り","actionItems":["クルミをフライパンで中火3〜4分乾煎りする。","薄く色づいて香りが立ったら取り出して粗く刻む。"],"parallelItems":[],"completionCriteria":["薄く色づいて香りが立ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ゴルゴンゾーラを小さくちぎる（溶けやすくするため）。","title":"チーズを準備","actionItems":["ゴルゴンゾーラを小さくちぎる（溶けやすくするため）。"],"parallelItems":[],"completionCriteria":["ちぎり終えたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ラディッキオを千切りにする。","title":"ラディッキオを切る","actionItems":["ラディッキオを千切りにする。"],"parallelItems":[],"completionCriteria":["切り終えたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにバター20gと生クリーム150mlを入れ弱火にかける。","title":"クリームを温める","actionItems":["フライパンにバター20gと生クリーム150mlを入れ弱火にかける。"],"parallelItems":[],"completionCriteria":["温まってきたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"温まってきたらゴルゴンゾーラを加えて木べらで押しながらゆっくり溶かす。絶対に沸騰させない——ゴルゴンゾーラは高温で油分が分離してザラザラになる。","title":"ゴルゴンゾーラを溶かす","actionItems":["ゴルゴンゾーラを加えて木べらで押しながらゆっくり溶かす。"],"parallelItems":[],"completionCriteria":["ゴルゴンゾーラが滑らかに溶けたら次へ。"],"cautionItems":["絶対に沸騰させない——ゴルゴンゾーラは高温で油分が分離してザラザラになる。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"（この間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。パルミジャーノ40gを加えてソースに溶かす。ラディッキオを加えて弱火で1〜2分、しんなりするまで炒める。黒胡椒3〜4回挽きを加える。","title":"ソースを仕上げる","actionItems":["パルミジャーノ40gを加えてソースに溶かす。","ラディッキオを加えて弱火で1〜2分、しんなりするまで炒める。","黒胡椒3〜4回挽きを加える。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["ラディッキオがしんなりしてソースが整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"ファルファッレを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["ファルファッレを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"ファルファッレをアルデンテで引き上げてフライパンに移して絡める。茹で汁大さじ2〜3でソースの濃度を調整する（ゴルゴンゾーラが多いので固まりやすい）。","title":"パスタを絡める","actionItems":["ファルファッレをアルデンテで引き上げてフライパンに移して絡める。","茹で汁大さじ2〜3でソースの濃度を調整する（ゴルゴンゾーラが多いので固まりやすい）。"],"parallelItems":[],"completionCriteria":["全体にソースが絡んだら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"皿に盛り、乾煎りしたクルミをたっぷり散らし、黒胡椒をひいて仕上げる。","title":"クルミと黒胡椒を散らす","actionItems":["皿に盛り、乾煎りしたクルミをたっぷり散らす。","黒胡椒をひいて仕上げる。"],"parallelItems":[],"completionCriteria":["クルミと黒胡椒をかけたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

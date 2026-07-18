@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>9分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ノルチャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">デュラム小麦粉</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">ストランゴッツィ生地用。水と塩のみ（卵なし）</span></li>
-          <li><span class="ingredient-name">黒トリュフ（生）</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">ブラシで泥を落とし、薄くスライスまたはすりおろす</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">軽くつぶす（皮をむいて）。オイルに香りを移したら取り出す</span></li>
-          <li><span class="ingredient-name">アンチョビ（オイル漬け）</span><span class="ingredient-qty">3枚</span><span class="ingredient-notes">ソースに溶かして旨みのベースに</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
+              <li data-ingredient-row="cc5704c4-fe7f-42f0-90a4-725ce74d5a79"><span class="ingredient-name" data-ingredient-name>デュラム小麦粉</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">ストランゴッツィ生地用。水と塩のみ（卵なし）</span></li>
+          <li data-ingredient-row="4507216d-4205-43ec-8290-089a931f8850"><span class="ingredient-name" data-ingredient-name>黒トリュフ（生）</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">ブラシで泥を落とし、薄くスライスまたはすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="4507216d-4205-43ec-8290-089a931f8850"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a571d819-0681-4bf0-b8b6-ae17cc4157cb"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">軽くつぶす（皮をむいて）。オイルに香りを移したら取り出す</span></li>
+          <li data-ingredient-row="28701253-4d53-48e7-8a01-edefebd3ce86"><span class="ingredient-name" data-ingredient-name>アンチョビ（オイル漬け）</span><span class="ingredient-qty" data-ingredient-qty>3枚</span><span class="ingredient-notes">ソースに溶かして旨みのベースに</span></li>
+          <li data-ingredient-row="19b9b8a6-d2e1-4287-9158-723d17df82b9"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
               </ul>
             </section>
           </div>
@@ -310,6 +330,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"b6d8bf09-7df4-4cfb-a9e5-91ee2b8f4dd2","nameJa":"ノルチャ産黒トリュフのストランゴッツィ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"cc5704c4-fe7f-42f0-90a4-725ce74d5a79","nameOriginal":"Farina di grano duro","nameJa":"デュラム小麦粉","nameEn":"Durum wheat flour","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ストランゴッツィ生地用。水と塩のみ（卵なし）","substitutionOptions":[]},{"id":"4507216d-4205-43ec-8290-089a931f8850","nameOriginal":"Tartufo nero di Norcia","nameJa":"黒トリュフ（生）","nameEn":"Fresh black truffle from Norcia","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ブラシで泥を落とし、薄くスライスまたはすりおろす","substitutionOptions":[{"id":"4523e6c7-dd85-48a8-8519-67e6ce41a468","standardIngredientId":"4507216d-4205-43ec-8290-089a931f8850","nameJa":"黒トリュフペースト（瓶詰め）","nameEn":"Black truffle paste (jarred)","authenticityImpact":-20,"flavorImpact":"香りが大幅に弱まるが風味は伝わる","textureImpact":null,"procedureChanges":["30g使用し、ソースに直接混ぜる"],"affectedStepNumbers":[2,4,6],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"ソースに直接混ぜる。仕上げのスライスは行わない","action":"update","nameEn":"Black truffle paste (jarred)","nameJa":"黒トリュフペースト（瓶詰め）","quantity":30,"targetNameJa":"黒トリュフ（生）"}],"stepPatches":[{"title":"トリュフペーストを準備する","action":"replace","stepNumber":2,"actionItems":["黒トリュフペースト（瓶詰め）30gを計量し、室温に置く。"],"instruction":"（ソースを作る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。黒トリュフペースト（瓶詰め）30gを計量し、ソースにすぐ混ぜられるよう室温に置く。","cautionItems":["瓶詰めペーストは生トリュフのようにスライスしない。"],"changeReason":"黒トリュフペーストはブラシで泥を落としたりスライスしたりする下処理が不要なため","parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["トリュフペースト30gが計量できたら次へ。"]},{"title":"トリュフペーストを加える","action":"replace","stepNumber":4,"actionItems":["黒トリュフペースト（瓶詰め）30gをソースに直接加える。","弱火で30秒だけ温めて火を止める。"],"instruction":"黒トリュフペースト（瓶詰め）30gをソースに直接加え、弱火で30秒だけ温めて火を止める（長く加熱すると香りが飛ぶ）。","cautionItems":["30秒以上加熱しないこと。香りが飛ぶ。"],"changeReason":"瓶詰めペーストはソースに直接混ぜて香りを移すため","completionCriteria":["30秒温めて香りが立ち、火を止めたら次へ。"]},{"action":"remove","stepNumber":6,"changeReason":"瓶詰めトリュフペーストでは生トリュフのスライス仕上げができないため"}]}]},{"id":"a571d819-0681-4bf0-b8b6-ae17cc4157cb","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"軽くつぶす（皮をむいて）。オイルに香りを移したら取り出す","substitutionOptions":[]},{"id":"28701253-4d53-48e7-8a01-edefebd3ce86","nameOriginal":"Acciughe sott'olio","nameJa":"アンチョビ（オイル漬け）","nameEn":"Anchovies in oil","quantity":3,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"ソースに溶かして旨みのベースに","substitutionOptions":[]},{"id":"19b9b8a6-d2e1-4287-9158-723d17df82b9","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ストランゴッツィを打つ：デュラム粉400g・塩小さじ1・水200mlをこねて30分休ませる。2mm厚に伸ばし、幅4mmの平打ち麺に切る。","title":"ストランゴッツィを打つ","actionItems":["デュラム粉400g・塩小さじ1・水200mlをこねる。","30分休ませる。","2mm厚に伸ばし幅4mmの平打ち麺に切る。"],"parallelItems":[],"completionCriteria":["生地が30分休み、幅4mmの平打ち麺に切れた。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"（ソースを作る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。トリュフをブラシで丁寧に泥を落とし、半量（20g）を薄くスライスする。残り半量（20g）はすりおろしておく。","title":"トリュフを準備する","actionItems":["トリュフをブラシで丁寧に泥を落とす。","半量（20g）を薄くスライスする。","残り半量（20g）をすりおろす。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["トリュフが半量スライス・半量すりおろしに準備できた。"],"cautionItems":["ブラシは柔らかいものを使い、トリュフを傷つけないよう丁寧に。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにオリーブオイル80mlを入れ、にんにく2片（つぶしたもの）を弱火でゆっくり香りを出す（焦がさない）。にんにくがきつね色になったら取り出し、アンチョビ3枚を加えてヘラで溶かす。","title":"にんにくとアンチョビで旨みを出す","actionItems":["フライパンにオリーブオイル80mlを入れにんにく2片（つぶしたもの）を弱火でゆっくり香りを出す。","にんにくがきつね色になったら取り出す。","アンチョビ3枚を加えてヘラで溶かす。"],"parallelItems":[],"completionCriteria":["アンチョビがオイルに溶け込んだ。"],"cautionItems":["にんにくを焦がすと苦くなる。きつね色で取り出すこと。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"すりおろしたトリュフ20gを加えて弱火で30秒だけ温め、火を止める（長く加熱すると香りが飛ぶ）。","title":"すりおろしトリュフを加える","actionItems":["すりおろしたトリュフ20gを加えて弱火で30秒温め、火を止める。"],"parallelItems":[],"completionCriteria":["30秒温めて香りが立ち、火を止めた。"],"cautionItems":["30秒以上加熱しないこと。香りが飛ぶ。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ストランゴッツィを沸かしておいた塩湯に入れ、5〜7分茹でる。茹で汁大さじ2とともにソースに加えて和える。","title":"ストランゴッツィを茹でてソースと和える","actionItems":["ストランゴッツィを沸かしておいた塩湯に入れ5〜7分茹でる。","茹で汁大さじ2とともにソースに加えて和える。"],"parallelItems":[],"completionCriteria":["ストランゴッツィが茹で上がりソースと和えられた。"],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"皿に盛り、スライスした生トリュフ20gを散らす。チーズは加えない（トリュフとチーズは競合する）。","title":"スライストリュフを散らして盛り付ける","actionItems":["皿にストランゴッツィを盛る。","スライスした生トリュフ20gを散らす。"],"parallelItems":[],"completionCriteria":["生トリュフが散らされ、香り立つ状態で盛り付けられた。"],"cautionItems":["チーズは加えないこと。トリュフの香りを消す。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>6分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">大エビ</span><span class="ingredient-qty">8尾</span><span class="ingredient-notes">殻付き。背側に切り込みを入れ背わたを取る</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">果汁を絞る</span></li>
-          <li><span class="ingredient-name">乾燥オレガノ</span><span class="ingredient-qty">小さじ1</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">3枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">55ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">4g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="7487b34a-3104-4c49-aa8b-c80ee7700fc2"><span class="ingredient-name" data-ingredient-name>大エビ</span><span class="ingredient-qty" data-ingredient-qty>8尾</span><span class="ingredient-notes">殻付き。背側に切り込みを入れ背わたを取る</span></li>
+          <li data-ingredient-row="a9b47faa-f3e3-4193-8f67-c7ad914ad422"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">果汁を絞る</span></li>
+          <li data-ingredient-row="e9a17320-d437-4523-93bf-b61d453af596"><span class="ingredient-name" data-ingredient-name>乾燥オレガノ</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span></li>
+          <li data-ingredient-row="705b5f62-7863-4951-ba11-78ba51c9cb40"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>3枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="82910577-23f6-4759-b467-c9a3a13bcdde"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>55ml</span></li>
+          <li data-ingredient-row="e5339871-3dcf-4e4e-ad77-bf70b3edc5e2"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>4g</span></li>
+          <li data-ingredient-row="b900fdfa-bb43-4dea-b797-e644db9d9ced"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -230,6 +250,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"8bd09567-70ed-4915-a9ed-e16485f36de8","nameJa":"グリルガンベロとサルモリーリョ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"7487b34a-3104-4c49-aa8b-c80ee7700fc2","nameOriginal":"Gamberoni","nameJa":"大エビ","nameEn":"Large prawns","quantity":8,"unit":"尾","role":"essential","scalingBehavior":null,"notes":"殻付き。背側に切り込みを入れ背わたを取る","substitutionOptions":[]},{"id":"a9b47faa-f3e3-4193-8f67-c7ad914ad422","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"果汁を絞る","substitutionOptions":[]},{"id":"e9a17320-d437-4523-93bf-b61d453af596","nameOriginal":"Origano secco","nameJa":"乾燥オレガノ","nameEn":"Dried oregano","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"705b5f62-7863-4951-ba11-78ba51c9cb40","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":3,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"82910577-23f6-4759-b467-c9a3a13bcdde","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":55,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e5339871-3dcf-4e4e-ad77-bf70b3edc5e2","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":4,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b900fdfa-bb43-4dea-b797-e644db9d9ced","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"大エビ8尾は殻付きのまま背側に切り込みを入れ、背わたを取る。レモン1個は果汁を絞る。イタリアンパセリ3枝はみじん切りにする。小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を入れて混ぜ、サルモリーリョが乳化したら次へ。","title":"エビとソースを準備する","actionItems":["大エビ8尾は殻付きのまま背側に切り込みを入れ、背わたを取る。","レモン1個は果汁を絞る。","イタリアンパセリ3枝はみじん切りにする。","小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を入れて混ぜ、サルモリーリョが乳化したら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ボウルで大エビにエクストラバージンオリーブオイル15mlと塩2gをなじませる。強く熱したグリルで片面2〜3分ずつ焼く。殻が赤く香ばしくなり、身が白く締まったら取り出す。","title":"殻付きで焼く","actionItems":["強く熱したグリルで片面2〜3分ずつ焼く。","殻が赤く香ばしくなり、身が白く締まったら取り出す。"],"parallelItems":[],"completionCriteria":["ボウルで大エビにエクストラバージンオリーブオイル15mlと塩2gをなじませる。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"熱い大エビにサルモリーリョをかけ、イタリアンパセリを散らす。殻の香りとレモンの香りが立っているうちに完成。","title":"仕上げる","actionItems":["熱い大エビにサルモリーリョをかけ、イタリアンパセリを散らす。"],"parallelItems":[],"completionCriteria":["殻の香りとレモンの香りが立っているうちに完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

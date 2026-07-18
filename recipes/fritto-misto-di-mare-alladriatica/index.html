@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ヴェネツィア</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スルメイカ（リング切り）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">1.5cm幅のリング状に切り、よく水気を拭く</span></li>
-          <li><span class="ingredient-name">エビ（中サイズ）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">殻を剥き、背わたを除く</span></li>
-          <li><span class="ingredient-name">タラの小切り（または白身魚のぶつ切り）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">3cm角に切る</span></li>
-          <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">衣は薄くまぶすだけ。溶かない</span></li>
-          <li><span class="ingredient-name">ピーナッツ油（揚げ油）</span><span class="ingredient-qty">1L</span><span class="ingredient-notes">180-185℃に熱する</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">2個</span></li>
+              <li data-ingredient-row="40511b22-4456-45d7-a219-c5d08f6b8045"><span class="ingredient-name" data-ingredient-name>スルメイカ（リング切り）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">1.5cm幅のリング状に切り、よく水気を拭く</span></li>
+          <li data-ingredient-row="ea78b157-c1c5-4937-91a0-43f0de8b2e01"><span class="ingredient-name" data-ingredient-name>エビ（中サイズ）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">殻を剥き、背わたを除く</span></li>
+          <li data-ingredient-row="0e7b8c1d-c272-4c4a-a61e-2b4a353130a7"><span class="ingredient-name" data-ingredient-name>タラの小切り（または白身魚のぶつ切り）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">3cm角に切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="0e7b8c1d-c272-4c4a-a61e-2b4a353130a7"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="1d31d518-72dd-4664-a2b4-6901bff59354"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">衣は薄くまぶすだけ。溶かない</span><button type="button" class="substitution-trigger" data-substitution-trigger="1d31d518-72dd-4664-a2b4-6901bff59354"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="49aec960-0668-4256-bda1-f2816ea22d2a"><span class="ingredient-name" data-ingredient-name>ピーナッツ油（揚げ油）</span><span class="ingredient-qty" data-ingredient-qty>1L</span><span class="ingredient-notes">180-185℃に熱する</span></li>
+          <li data-ingredient-row="1f92e55c-a996-4454-97dc-92bb2b7d0aac"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
               </ul>
             </section>
           </div>
@@ -251,6 +271,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"40b1ae33-9e24-4261-bd78-e82cf4367fa9","nameJa":"アドリア海風 魚介のフリットミスト","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"40511b22-4456-45d7-a219-c5d08f6b8045","nameOriginal":"Calamari","nameJa":"スルメイカ（リング切り）","nameEn":"Squid rings","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1.5cm幅のリング状に切り、よく水気を拭く","substitutionOptions":[]},{"id":"ea78b157-c1c5-4937-91a0-43f0de8b2e01","nameOriginal":"Gamberi","nameJa":"エビ（中サイズ）","nameEn":"Medium prawns","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"殻を剥き、背わたを除く","substitutionOptions":[]},{"id":"0e7b8c1d-c272-4c4a-a61e-2b4a353130a7","nameOriginal":"Merluzzetti","nameJa":"タラの小切り（または白身魚のぶつ切り）","nameEn":"Small cod or white fish pieces","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3cm角に切る","substitutionOptions":[{"id":"9be78937-8da7-47d5-a8b1-cdef1738325a","standardIngredientId":"0e7b8c1d-c272-4c4a-a61e-2b4a353130a7","nameJa":"アジのフィレ","nameEn":"Horse mackerel fillet","authenticityImpact":-5,"flavorImpact":"脂が多めだが食感は良い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"1d31d518-72dd-4664-a2b4-6901bff59354","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Fine wheat flour (type 00)","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"衣は薄くまぶすだけ。溶かない","substitutionOptions":[{"id":"f69c55a7-34c7-42c1-afc2-0ac3611e309e","standardIngredientId":"1d31d518-72dd-4664-a2b4-6901bff59354","nameJa":"米粉","nameEn":"Rice flour","authenticityImpact":-5,"flavorImpact":"よりサクサクになるが本場の食感とは若干異なる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"49aec960-0668-4256-bda1-f2816ea22d2a","nameOriginal":"Olio di semi di arachide","nameJa":"ピーナッツ油（揚げ油）","nameEn":"Peanut oil for frying","quantity":1,"unit":"L","role":"essential","scalingBehavior":null,"notes":"180-185℃に熱する","substitutionOptions":[]},{"id":"1f92e55c-a996-4454-97dc-92bb2b7d0aac","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":2,"unit":"個","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・イカを1.5cm幅のリング状に切る\n・エビは殻を剥き、背わたを除く\n・タラを3cm角に切る\n・全ての魚介をキッチンペーパーでしっかり水気を拭く（水分が残ると衣がベタつく）","title":"魚介を下処理する","actionItems":["イカを1.5cm幅のリング状に切る。","エビは殻を剥き、背わたを除く。","タラを3cm角に切る。","全ての魚介をキッチンペーパーでしっかり水気を拭く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["水分が残ると衣がベタつくので、しっかり拭き取る。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"薄力粉をバットに広げ、魚介を入れて全体にまんべんなくまぶし、余分な粉を払う。衣は薄く均一に。","title":"粉をまぶす","actionItems":["薄力粉をバットに広げる。","魚介を入れて全体にまんべんなくまぶし、余分な粉を払う。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"油を180℃に熱する。温度計で180℃に戻ったら、タラなど厚みのある食材から先に揚げ始め、次にイカ、最後にエビの順で。小分けにして油温を下げない。","title":"魚介を揚げる","actionItems":["油を180℃に熱する。","タラなど厚みのある食材から先に揚げ始め、次にイカ、最後にエビの順で小分けにして揚げる。"],"parallelItems":[],"completionCriteria":["各食材が薄い金色になったら取り出す。"],"cautionItems":["小分けにして揚げ、油温が下がらないようにする。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"各食材が薄い金色になったら取り出し、網に立てかけてよく油を切る。揚げたてにレモンを絞ってすぐ食べる。","title":"油を切って提供する","actionItems":["揚がった食材を網に立てかけてよく油を切る。","揚げたてにレモンを絞って提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

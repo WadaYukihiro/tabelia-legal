@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>50分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">完熟トマト（ローマ種推奨）</span><span class="ingredient-qty">6個</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span></li>
-          <li><span class="ingredient-name">ドライオレガノ</span><span class="ingredient-qty">小さじ1</span></li>
-          <li><span class="ingredient-name">EVオリーブオイル</span><span class="ingredient-qty">大さじ4</span></li>
-          <li><span class="ingredient-name">パン粉</span><span class="ingredient-qty">大さじ3</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1つまみ</span></li>
+              <li data-ingredient-row="f3161a46-13fe-440d-b34e-3fb9790b7822"><span class="ingredient-name" data-ingredient-name>完熟トマト（ローマ種推奨）</span><span class="ingredient-qty" data-ingredient-qty>6個</span></li>
+          <li data-ingredient-row="0c24aacd-e3dd-48c9-9477-d4fcaef7c947"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span></li>
+          <li data-ingredient-row="98d99dea-960c-43bb-b006-8a8013f8cec9"><span class="ingredient-name" data-ingredient-name>ドライオレガノ</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span></li>
+          <li data-ingredient-row="0c4a7a28-d8d6-44a2-92b0-cd3d45fa4343"><span class="ingredient-name" data-ingredient-name>EVオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ4</span></li>
+          <li data-ingredient-row="8ddc8467-fdb8-41d6-8fd5-1911fef2ec02"><span class="ingredient-name" data-ingredient-name>パン粉</span><span class="ingredient-qty" data-ingredient-qty>大さじ3</span></li>
+          <li data-ingredient-row="0ade4aad-89b7-4b1f-81ae-97f3e5487290"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
               </ul>
             </section>
           </div>
@@ -195,6 +215,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"83ab953b-8c9e-48b6-9af4-923c8b774b04","nameJa":"トマトのオーブン焼き","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"f3161a46-13fe-440d-b34e-3fb9790b7822","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト（ローマ種推奨）","nameEn":"Ripe tomatoes (Roma type recommended)","quantity":6,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0c24aacd-e3dd-48c9-9477-d4fcaef7c947","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"98d99dea-960c-43bb-b006-8a8013f8cec9","nameOriginal":"Origano secco","nameJa":"ドライオレガノ","nameEn":"Dried oregano","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0c4a7a28-d8d6-44a2-92b0-cd3d45fa4343","nameOriginal":"Olio extravergine","nameJa":"EVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":4,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8ddc8467-fdb8-41d6-8fd5-1911fef2ec02","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":3,"unit":"大さじ","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0ade4aad-89b7-4b1f-81ae-97f3e5487290","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180℃に予熱する。トマトを横半分に切り、断面を上にして耐熱皿に並べる。スプーンの先で種の部分を軽くくり抜く（すべて取り切らなくてよい）。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"準備"},{"stepNumber":2,"instruction":"にんにくをみじん切りにし、オレガノと混ぜる。各トマトの断面ににんにく・オレガノを少量のせ、EVオリーブオイルをひとたらしし、塩をひとつまみふる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"調味する"},{"stepNumber":3,"instruction":"180℃で30分焼く。トマトが縮んでじわじわと旨みが凝縮してきたら、パン粉を表面に散らしてさらに15〜20分焼く。パン粉が黄金色になったら完成。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"焼く"},{"stepNumber":4,"instruction":"粗熱を取り、常温または温かい状態で供する。肉料理・魚料理どちらにも合わせやすい。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"仕上げ"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

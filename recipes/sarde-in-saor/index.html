@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>35分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>35分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>24時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ヴェネツィア</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,17 +94,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">イワシ</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">頭と内臓を取り、開いて水気を拭く</span></li>
-          <li><span class="ingredient-name">白玉ねぎ</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">白ワインビネガー</span><span class="ingredient-qty">160ml</span></li>
-          <li><span class="ingredient-name">干しブドウ</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">ぬるま湯で戻す</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">小麦粉</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">揚げ油</span><span class="ingredient-qty">600ml</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">8g</span></li>
+              <li data-ingredient-row="6eef1ec2-b04f-49f5-92c5-251fa9ecc93a"><span class="ingredient-name" data-ingredient-name>イワシ</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">頭と内臓を取り、開いて水気を拭く</span></li>
+          <li data-ingredient-row="7bbddbde-1aec-4a21-ab6e-62209eccef2f"><span class="ingredient-name" data-ingredient-name>白玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="835b109b-1eac-4d7c-a487-792d9ae431b3"><span class="ingredient-name" data-ingredient-name>白ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>160ml</span></li>
+          <li data-ingredient-row="b9080bc0-dee8-4518-96e3-132222f7a071"><span class="ingredient-name" data-ingredient-name>干しブドウ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">ぬるま湯で戻す</span></li>
+          <li data-ingredient-row="e840da1f-f4c2-47bd-a414-dc8ceb2cba31"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="bf3eb5cf-2b73-4e66-9d07-cd9709c49172"><span class="ingredient-name" data-ingredient-name>小麦粉</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="231cf184-2f4d-478e-8a91-7dd8ee76f63e"><span class="ingredient-name" data-ingredient-name>揚げ油</span><span class="ingredient-qty" data-ingredient-qty>600ml</span></li>
+          <li data-ingredient-row="f0e7c725-fb2a-4c74-9f8e-03528cd6bf16"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="a95a38ee-29ce-4e08-821a-13c0f36e1603"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>8g</span></li>
               </ul>
             </section>
           </div>
@@ -265,6 +285,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"33a75057-dde0-43f8-8477-754a8df622b9","nameJa":"イワシの甘酢マリネ（サオール）","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"6eef1ec2-b04f-49f5-92c5-251fa9ecc93a","nameOriginal":"Sarde fresche","nameJa":"イワシ","nameEn":"Fresh sardines","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"頭と内臓を取り、開いて水気を拭く","substitutionOptions":[]},{"id":"7bbddbde-1aec-4a21-ab6e-62209eccef2f","nameOriginal":"Cipolle bianche","nameJa":"白玉ねぎ","nameEn":"White onions","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"835b109b-1eac-4d7c-a487-792d9ae431b3","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":160,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b9080bc0-dee8-4518-96e3-132222f7a071","nameOriginal":"Uvetta","nameJa":"干しブドウ","nameEn":"Raisins","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ぬるま湯で戻す","substitutionOptions":[]},{"id":"e840da1f-f4c2-47bd-a414-dc8ceb2cba31","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bf3eb5cf-2b73-4e66-9d07-cd9709c49172","nameOriginal":"Farina","nameJa":"小麦粉","nameEn":"Flour","quantity":60,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"231cf184-2f4d-478e-8a91-7dd8ee76f63e","nameOriginal":"Olio per friggere","nameJa":"揚げ油","nameEn":"Frying oil","quantity":600,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f0e7c725-fb2a-4c74-9f8e-03528cd6bf16","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a95a38ee-29ce-4e08-821a-13c0f36e1603","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"イワシ600gは頭と内臓を取り、開いて水気を拭く。白玉ねぎ600gは薄切りにする。干しブドウ40gはぬるま湯で戻す。イワシの表面が乾いたら次へ。","title":"イワシと副材料を準備する","actionItems":["イワシ600gは頭と内臓を取り、開いて水気を拭く。","白玉ねぎ600gは薄切りにする。","干しブドウ40gはぬるま湯で戻す。"],"parallelItems":[],"completionCriteria":["イワシの表面が乾いたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"イワシに塩4gを振り、小麦粉60gを薄くまぶす。揚げ油600mlを170度に熱してイワシを揚げる。表面が薄いきつね色になり、身がふっくらしたら取り出す。","title":"イワシを揚げる","actionItems":["イワシに塩4gを振り、小麦粉60gを薄くまぶす。","揚げ油600mlを170度に熱してイワシを揚げる。","表面が薄いきつね色になり、身がふっくらしたら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鍋にエクストラバージンオリーブオイル40mlと白玉ねぎを入れて弱火で炒める。玉ねぎが透き通って甘い香りが出たら、白ワインビネガー160ml、塩4g、干しブドウ、松の実30gを加える。酸の角が丸くなるまで5分煮る。","title":"サオールを作る","actionItems":["鍋にエクストラバージンオリーブオイル40mlと白玉ねぎを入れて弱火で炒める。","玉ねぎが透き通って甘い香りが出たら、白ワインビネガー160ml、塩4g、干しブドウ、松の実30gを加える。","酸の角が丸くなるまで5分煮る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"容器にイワシと温かいサオールを交互に重ねる。最後に玉ねぎで覆い、粗熱が取れたら冷蔵庫に入れる。","title":"重ねて漬ける","actionItems":["容器にイワシと温かいサオールを交互に重ねる。","最後に玉ねぎで覆い、粗熱が取れたら冷蔵庫に入れる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"冷蔵庫で24〜48時間寝かせる。イワシに甘酢が染み、玉ねぎと魚の香りが一体になったら完成。","title":"寝かせる","actionItems":["冷蔵庫で24〜48時間寝かせる。"],"parallelItems":[],"completionCriteria":["イワシに甘酢が染み、玉ねぎと魚の香りが一体になったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1440,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

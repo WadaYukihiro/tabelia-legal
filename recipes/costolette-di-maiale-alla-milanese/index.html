@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ミラノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">豚ロース（厚切り・骨付きまたは骨なし）</span><span class="ingredient-qty">4枚（各180〜200g）</span><span class="ingredient-notes">骨付きの場合は骨周りの余分な脂を除く。厚さ1.5cm</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">よく溶く。塩を一つまみ加える</span></li>
-          <li><span class="ingredient-name">パン粉（生パン粉推奨）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">生パン粉を使うとサクサクに仕上がる</span></li>
-          <li><span class="ingredient-name">高品質バター（無塩）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">揚げ焼き用。本場はバターのみで揚げる</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">2個</span></li>
+              <li data-ingredient-row="94e7bdb5-70da-450b-807b-4463c622396b"><span class="ingredient-name" data-ingredient-name>豚ロース（厚切り・骨付きまたは骨なし）</span><span class="ingredient-qty" data-ingredient-qty>4枚（各180〜200g）</span><span class="ingredient-notes">骨付きの場合は骨周りの余分な脂を除く。厚さ1.5cm</span><button type="button" class="substitution-trigger" data-substitution-trigger="94e7bdb5-70da-450b-807b-4463c622396b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8778cb1a-59e3-48d6-826e-8be753f27aa3"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">よく溶く。塩を一つまみ加える</span></li>
+          <li data-ingredient-row="0f0a5479-c89c-448d-8b0b-8e2d6e4507fd"><span class="ingredient-name" data-ingredient-name>パン粉（生パン粉推奨）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">生パン粉を使うとサクサクに仕上がる</span></li>
+          <li data-ingredient-row="2ce01495-d12d-4867-ba4a-b60a4dcfd7c5"><span class="ingredient-name" data-ingredient-name>高品質バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">揚げ焼き用。本場はバターのみで揚げる</span><button type="button" class="substitution-trigger" data-substitution-trigger="2ce01495-d12d-4867-ba4a-b60a4dcfd7c5"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9a4d88f9-c3ae-469e-9cad-13c762363147"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
               </ul>
             </section>
           </div>
@@ -268,6 +288,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"ca1b1a3c-9c3c-41e9-8075-b8c8cdb1f832","nameJa":"骨付き豚ロースのミラノ風カツレツ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"94e7bdb5-70da-450b-807b-4463c622396b","nameOriginal":"Costolette di maiale","nameJa":"豚ロース（厚切り・骨付きまたは骨なし）","nameEn":"Pork loin chops","quantity":4,"unit":"枚（各180〜200g）","role":"essential","scalingBehavior":null,"notes":"骨付きの場合は骨周りの余分な脂を除く。厚さ1.5cm","substitutionOptions":[{"id":"96077924-0541-4bd8-b3c2-7ad930522930","standardIngredientId":"94e7bdb5-70da-450b-807b-4463c622396b","nameJa":"豚肩ロース厚切り","nameEn":"Thick-cut pork shoulder chop","authenticityImpact":-5,"flavorImpact":"脂肪分が多く風味豊か。食感は若干変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"8778cb1a-59e3-48d6-826e-8be753f27aa3","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"よく溶く。塩を一つまみ加える","substitutionOptions":[]},{"id":"0f0a5479-c89c-448d-8b0b-8e2d6e4507fd","nameOriginal":"Pangrattato","nameJa":"パン粉（生パン粉推奨）","nameEn":"Breadcrumbs","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生パン粉を使うとサクサクに仕上がる","substitutionOptions":[]},{"id":"2ce01495-d12d-4867-ba4a-b60a4dcfd7c5","nameOriginal":"Burro di alta qualità","nameJa":"高品質バター（無塩）","nameEn":"High-quality unsalted butter","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"揚げ焼き用。本場はバターのみで揚げる","substitutionOptions":[{"id":"3b57d0d4-bc59-4fba-ad87-407f8e425f5a","standardIngredientId":"2ce01495-d12d-4867-ba4a-b60a4dcfd7c5","nameJa":"バター60g＋太白ごま油またはグレープシードオイル40ml","nameEn":"Butter and neutral oil","authenticityImpact":-5,"flavorImpact":"焦げにくくなりバター風味が若干弱まるが扱いやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9a4d88f9-c3ae-469e-9cad-13c762363147","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":2,"unit":"個","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"豚肉を肉叩き（またはラップをかけてびんの底）で1cm厚に均一に叩く。骨付きの場合は骨の周りを削ぎ落とさずに整形する。両面に塩・こしょう。","title":"肉を叩いて衣の準備をする","actionItems":["豚肉4枚を肉叩き（またはびんの底）で1cm厚に均一に叩く。","両面に塩・こしょうをする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"バットに卵液を入れ、別のバットにパン粉を広げる。肉を卵液にくぐらせ、パン粉の入ったバットに置いて手でしっかり押しつけてまんべんなく密着させる。","title":"衣をつける","actionItems":["バットに卵液（卵2個＋塩ひとつまみ）を入れる。","別のバットにパン粉150gを広げる。","肉を卵液にくぐらせ、パン粉を手でしっかり押しつけてまんべんなく密着させる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにバターを入れて中火で溶かし、泡が収まって色が薄く変わってきたら（ブール・ノワゼット手前）肉を入れる。","title":"バターを溶かす","actionItems":["フライパンにバター100gを入れて中火で溶かす。","泡が収まって色が薄く変わってきたら（ブール・ノワゼット手前）肉を入れる。"],"parallelItems":[],"completionCriteria":["バターが薄い黄金色になったら肉を投入。"],"cautionItems":["バターが焦げて黒くなる前に肉を入れること。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"中火で片面4〜5分、動かさずに揚げ焼きする。こんがりと金色になったら裏返して同様に焼く。バターが焦げすぎる場合は火を弱める。","title":"揚げ焼きする","actionItems":["中火で片面4〜5分、動かさずに揚げ焼きする。","こんがり金色になったら裏返して同様に焼く。"],"parallelItems":[],"completionCriteria":["両面がこんがり金色になれば次へ。"],"cautionItems":["バターが焦げすぎる場合は火を弱める。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"キッチンペーパーで余分な油を吸い取り、表面の油の艶が落ち着いたらすぐに塩を振ってレモンを絞る。揚げたてを食べること。時間が経つと衣が湿る。","title":"塩とレモンを振る","actionItems":["キッチンペーパーで余分な油を吸い取る。","すぐに塩を振ってレモンを絞る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["時間が経つと衣が湿るため、揚げたてをすぐに食べること。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

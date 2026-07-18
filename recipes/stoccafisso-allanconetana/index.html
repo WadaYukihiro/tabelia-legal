@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>50分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・アンコーナ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ストッカフィッソ（3日間水戻し済みの干し鱈）</span><span class="ingredient-qty">800g</span><span class="ingredient-notes">水戻し後、4cm角に切る。小骨を抜く</span></li>
-          <li><span class="ingredient-name">じゃがいも</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">2cm角に切る</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">ブラックオリーブ</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">ケッパー（塩漬け、水洗い済み）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">2枝</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">水</span><span class="ingredient-qty">200ml</span></li>
+              <li data-ingredient-row="1a29c78e-a00f-40f6-b668-2a69d0981478"><span class="ingredient-name" data-ingredient-name>ストッカフィッソ（3日間水戻し済みの干し鱈）</span><span class="ingredient-qty" data-ingredient-qty>800g</span><span class="ingredient-notes">水戻し後、4cm角に切る。小骨を抜く</span><button type="button" class="substitution-trigger" data-substitution-trigger="1a29c78e-a00f-40f6-b668-2a69d0981478"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3dd4d788-4e75-4844-8555-fbe1e7769019"><span class="ingredient-name" data-ingredient-name>じゃがいも</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">2cm角に切る</span></li>
+          <li data-ingredient-row="30629882-73ea-4909-b72e-86561ba46b7c"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="06ad1bc7-a558-4252-b19e-1278f484eefc"><span class="ingredient-name" data-ingredient-name>ブラックオリーブ</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="c5e6edc1-57ba-40df-be63-74f959a63510"><span class="ingredient-name" data-ingredient-name>ケッパー（塩漬け、水洗い済み）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="d036aa18-dc29-4612-b3cb-72ece4be124a"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>2枝</span></li>
+          <li data-ingredient-row="ed267f25-ea48-4a6d-9185-e8973079dacf"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="cc229548-dccd-468c-81f9-a9fac6d919d7"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="c4a68d3c-1318-4355-aa81-af3aa19efb92"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="8f68186a-dbf7-4032-8c1e-bb26a4a27dba"><span class="ingredient-name" data-ingredient-name>水</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
               </ul>
             </section>
           </div>
@@ -277,6 +297,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4617f216-00c3-4e0d-813b-0ad40350c179","nameJa":"アンコーナ風干し鱈の煮込み","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"1a29c78e-a00f-40f6-b668-2a69d0981478","nameOriginal":"Stoccafisso ammollato","nameJa":"ストッカフィッソ（3日間水戻し済みの干し鱈）","nameEn":"Soaked dried stockfish","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"水戻し後、4cm角に切る。小骨を抜く","substitutionOptions":[{"id":"94256e51-0f33-4b2b-b053-77c8da0cccdf","standardIngredientId":"1a29c78e-a00f-40f6-b668-2a69d0981478","nameJa":"バッカラ（塩干し鱈）","nameEn":"Baccalà (salted dried cod)","authenticityImpact":-5,"flavorImpact":"風味がやや異なるが料理として同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3dd4d788-4e75-4844-8555-fbe1e7769019","nameOriginal":"Patate","nameJa":"じゃがいも","nameEn":"Potatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"2cm角に切る","substitutionOptions":[]},{"id":"30629882-73ea-4909-b72e-86561ba46b7c","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"06ad1bc7-a558-4252-b19e-1278f484eefc","nameOriginal":"Olive nere di Ascoli","nameJa":"ブラックオリーブ","nameEn":"Black olives","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c5e6edc1-57ba-40df-be63-74f959a63510","nameOriginal":"Capperi","nameJa":"ケッパー（塩漬け、水洗い済み）","nameEn":"Capers","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d036aa18-dc29-4612-b3cb-72ece4be124a","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ed267f25-ea48-4a6d-9185-e8973079dacf","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"White wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cc229548-dccd-468c-81f9-a9fac6d919d7","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"c4a68d3c-1318-4355-aa81-af3aa19efb92","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8f68186a-dbf7-4032-8c1e-bb26a4a27dba","nameOriginal":"Acqua","nameJa":"水","nameEn":"Water","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・ストッカフィッソを4cm角に切り、小骨を抜く\n・じゃがいもを2cm角に切る\n・玉ねぎをみじん切りにする","title":"材料を切る","actionItems":["ストッカフィッソを4cm角に切り、小骨を抜く。","じゃがいも400gを2cm角に切る。","玉ねぎ1個をみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋にオリーブオイル大さじ4を入れ、玉ねぎをあめ色になるまで10分炒め、白ワインを加えてアルコールを飛ばす。","title":"玉ねぎを炒める","actionItems":["鍋にオリーブオイル大さじ4を入れ、玉ねぎをあめ色になるまで10分炒める。","白ワイン150mlを加えてアルコールを飛ばす。"],"parallelItems":[],"completionCriteria":["玉ねぎがあめ色になったら次へ（約10分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ホールトマトを手でつぶして加え、オリーブ・ケッパー・ローズマリーを入れて10分煮る。","title":"トマトとオリーブを加える","actionItems":["ホールトマトを手でつぶして加える。","オリーブ・ケッパー・ローズマリーを入れて10分煮る。"],"parallelItems":[],"completionCriteria":["10分後に次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"じゃがいもを加え、水200mlも加えて15分煮る。","title":"じゃがいもを加える","actionItems":["じゃがいもを加え、水200mlも加えて15分煮る。"],"parallelItems":[],"completionCriteria":["15分後に次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":16,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"ストッカフィッソを加え、蓋をして弱火で50〜60分、じゃがいもが完全に柔らかくなるまで煮込む。焦げ注意。","title":"魚を煮込む","actionItems":["ストッカフィッソを加え、蓋をして弱火で50〜60分煮込む。"],"parallelItems":[],"completionCriteria":["じゃがいもが完全に柔らかくなったら完成（50〜60分）。"],"cautionItems":["焦げやすいので時々確認し、必要なら水を少し足す。"],"tipItems":[],"durationMinutes":55,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

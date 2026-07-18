@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>6分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ツナ（オイル漬け缶）</span><span class="ingredient-qty">160g</span><span class="ingredient-notes">良質なオリーブオイル漬けを使う。油は軽く切る</span></li>
-          <li><span class="ingredient-name">カンネッリーニ豆（缶詰）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">缶汁を切り、さっと水洗いする</span></li>
-          <li><span class="ingredient-name">赤玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">薄切りにして水に10分さらして辛みを抜く</span></li>
-          <li><span class="ingredient-name">オリーブオイル（EVO）</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">5枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="ba2cd8eb-504c-4866-b42b-bdad83fea600"><span class="ingredient-name" data-ingredient-name>ツナ（オイル漬け缶）</span><span class="ingredient-qty" data-ingredient-qty>160g</span><span class="ingredient-notes">良質なオリーブオイル漬けを使う。油は軽く切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="ba2cd8eb-504c-4866-b42b-bdad83fea600"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2e1e0218-4ceb-4fa3-b683-5b14d8213edf"><span class="ingredient-name" data-ingredient-name>カンネッリーニ豆（缶詰）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">缶汁を切り、さっと水洗いする</span><button type="button" class="substitution-trigger" data-substitution-trigger="2e1e0218-4ceb-4fa3-b683-5b14d8213edf"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="45635daa-b2f4-43b4-ac78-2b50b026c3e3"><span class="ingredient-name" data-ingredient-name>赤玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">薄切りにして水に10分さらして辛みを抜く</span></li>
+          <li data-ingredient-row="b55485da-2caa-499f-8a6f-94df88952cda"><span class="ingredient-name" data-ingredient-name>オリーブオイル（EVO）</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="2ada0fb1-b1ea-4203-931a-3626c6524d03"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>5枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="7ecedf84-7982-4640-a4c4-1b7328f88dc0"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
+          <li data-ingredient-row="77385721-01b2-4bcb-b180-0a43098b1ef2"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -234,6 +254,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"dd6bdf6d-326d-479e-97e7-a55e4a9e4bee","nameJa":"ツナと白いんげん豆のサラダ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"ba2cd8eb-504c-4866-b42b-bdad83fea600","nameOriginal":"Tonno sott'olio","nameJa":"ツナ（オイル漬け缶）","nameEn":"Canned tuna in olive oil","quantity":160,"unit":"g","role":"essential","scalingBehavior":null,"notes":"良質なオリーブオイル漬けを使う。油は軽く切る","substitutionOptions":[{"id":"498ae801-ce48-448d-bf20-5c07f9b0d9a7","standardIngredientId":"ba2cd8eb-504c-4866-b42b-bdad83fea600","nameJa":"ツナ（水煮缶）","nameEn":"Canned tuna in water","authenticityImpact":-10,"flavorImpact":"旨みと脂の風味が大幅に弱まる","textureImpact":null,"procedureChanges":["オリーブオイルを大さじ1多く加える"],"affectedStepNumbers":[3,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"水気をしっかり切る","action":"update","nameEn":"Canned tuna in water","nameJa":"ツナ（水煮缶）","quantity":160,"targetNameJa":"ツナ（オイル漬け缶）"},{"notes":"水煮ツナ使用時は大さじ1（約15ml）多く加える","action":"update","quantity":55,"targetNameJa":"オリーブオイル（EVO）"}],"stepPatches":[{"action":"replace","stepNumber":3,"instruction":"水気をしっかり切ったツナ（水煮缶）を大きめにほぐしながら豆の上に乗せる。","changeReason":"水煮缶は余分な水分を切ってから使うため"},{"action":"replace","stepNumber":4,"instruction":"ボウルに赤玉ねぎ・イタリアンパセリを加え、豆とツナ全体にオリーブオイル55mlを回しかける。","changeReason":"水煮ツナは脂の風味が弱いため、オリーブオイルを大さじ1多く加える"}]}]},{"id":"2e1e0218-4ceb-4fa3-b683-5b14d8213edf","nameOriginal":"Fagioli cannellini","nameJa":"カンネッリーニ豆（缶詰）","nameEn":"Canned cannellini beans","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"缶汁を切り、さっと水洗いする","substitutionOptions":[{"id":"81a961cd-a67c-4120-8ce0-92126c3f4f9e","standardIngredientId":"2e1e0218-4ceb-4fa3-b683-5b14d8213edf","nameJa":"大豆（水煮缶）","nameEn":"Canned soybeans","authenticityImpact":-10,"flavorImpact":"食感と風味が異なり、イタリア料理らしさが薄れる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"45635daa-b2f4-43b4-ac78-2b50b026c3e3","nameOriginal":"Cipolla rossa","nameJa":"赤玉ねぎ","nameEn":"Red onion","quantity":0.5,"unit":"個","role":"essential","scalingBehavior":null,"notes":"薄切りにして水に10分さらして辛みを抜く","substitutionOptions":[]},{"id":"b55485da-2caa-499f-8a6f-94df88952cda","nameOriginal":"Olio d'oliva EVO","nameJa":"オリーブオイル（EVO）","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2ada0fb1-b1ea-4203-931a-3626c6524d03","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":5,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"7ecedf84-7982-4640-a4c4-1b7328f88dc0","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"77385721-01b2-4bcb-b180-0a43098b1ef2","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・赤玉ねぎを薄切りにして冷水に10分さらし、辛みを抜く\n・水気を切る\n・イタリアンパセリをみじん切りにする","title":"材料を準備する","actionItems":["赤玉ねぎを薄切りにして冷水に10分さらし、辛みを抜く","水気を切る","イタリアンパセリをみじん切りにする"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"カンネッリーニ豆の缶汁を切り、さっと水洗いしてボウルに入れる。","title":"食材を下処理する","actionItems":["カンネッリーニ豆の缶汁を切り、さっと水洗いしてボウルに入れる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ツナを大きめにほぐしながら豆の上に乗せる。","title":"材料を準備する","actionItems":["ツナを大きめにほぐしながら豆の上に乗せる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ボウルに赤玉ねぎ・イタリアンパセリを加え、豆とツナ全体にオリーブオイルを回しかける。","title":"材料を合わせる","actionItems":["ボウルに赤玉ねぎ・イタリアンパセリを加え、豆とツナ全体にオリーブオイルを回しかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"塩・黒胡椒で調味してやさしく混ぜ、10分置いて味を馴染ませてから盛り付ける。","title":"仕上げにまとめる","actionItems":["塩・黒胡椒で調味してやさしく混ぜ、10分置いて味を馴染ませてから盛り付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

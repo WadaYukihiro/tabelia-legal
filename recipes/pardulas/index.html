@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>50分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・カリャリ（サルデーニャ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,20 +93,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">セモリナ粉（超細挽き）</span><span class="ingredient-qty">250g</span></li>
-          <li><span class="ingredient-name">ラード（または無塩バター）</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">ぬるま湯</span><span class="ingredient-qty">120ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">2g</span></li>
-          <li><span class="ingredient-name">フレッシュ羊乳リコッタ</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">水切り済み</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">120g</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">3個</span></li>
-          <li><span class="ingredient-name">サフラン</span><span class="ingredient-qty">少量g</span><span class="ingredient-notes">サフランを温水大さじ2で溶いてから使用。お湯に15分浸してから使う</span></li>
-          <li><span class="ingredient-name">レモンとオレンジの皮</span><span class="ingredient-qty">1個分ずつ</span><span class="ingredient-notes">国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">オレンジフラワーウォーター</span><span class="ingredient-qty">10ml</span></li>
-          <li><span class="ingredient-name">レーズン</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">お好みで</span></li>
-          <li><span class="ingredient-name">粉砂糖（仕上げ用）</span><span class="ingredient-qty">15g</span></li>
+              <li data-ingredient-row="c66d45c5-2611-4d8d-979a-2775d2f11571"><span class="ingredient-name" data-ingredient-name>セモリナ粉（超細挽き）</span><span class="ingredient-qty" data-ingredient-qty>250g</span></li>
+          <li data-ingredient-row="c17b2c8d-1274-4189-807e-86894cebfea9"><span class="ingredient-name" data-ingredient-name>ラード（または無塩バター）</span><span class="ingredient-qty" data-ingredient-qty>50g</span></li>
+          <li data-ingredient-row="71ad41b5-61d8-4596-b060-0fe74338f831"><span class="ingredient-name" data-ingredient-name>ぬるま湯</span><span class="ingredient-qty" data-ingredient-qty>120ml</span></li>
+          <li data-ingredient-row="c2d8129c-2fb1-45a4-a11c-21ed882075b5"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>2g</span></li>
+          <li data-ingredient-row="ae08d9ed-1aae-4b36-a9d8-e0a12e5e05ef"><span class="ingredient-name" data-ingredient-name>フレッシュ羊乳リコッタ</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">水切り済み</span><button type="button" class="substitution-trigger" data-substitution-trigger="ae08d9ed-1aae-4b36-a9d8-e0a12e5e05ef"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a94557e7-6908-4f29-a21d-fbdd79542b4a"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>120g</span></li>
+          <li data-ingredient-row="b964ef8e-d64c-47a3-9a1a-0061ba60056e"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>3個</span></li>
+          <li data-ingredient-row="401598e2-c79d-47cd-8c15-7a4b07bace51"><span class="ingredient-name" data-ingredient-name>サフラン</span><span class="ingredient-qty" data-ingredient-qty>少量g</span><span class="ingredient-notes">サフランを温水大さじ2で溶いてから使用。お湯に15分浸してから使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="401598e2-c79d-47cd-8c15-7a4b07bace51"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e01be056-8d07-44ed-b59c-f835854bc6b3"><span class="ingredient-name" data-ingredient-name>レモンとオレンジの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分ずつ</span><span class="ingredient-notes">国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="66a2d801-245b-4b3c-9383-679e6d86bb72"><span class="ingredient-name" data-ingredient-name>オレンジフラワーウォーター</span><span class="ingredient-qty" data-ingredient-qty>10ml</span></li>
+          <li data-ingredient-row="a415d3ac-7f46-4d8f-a9de-457d0d454dee"><span class="ingredient-name" data-ingredient-name>レーズン</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">お好みで</span></li>
+          <li data-ingredient-row="7f6f3b45-97c3-475d-8e28-628e338c7de4"><span class="ingredient-name" data-ingredient-name>粉砂糖（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>15g</span></li>
               </ul>
             </section>
           </div>
@@ -297,6 +317,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"43298fac-4406-4bce-85bf-b41ab0d2b41f","nameJa":"サフラン香るリコッタの焼き菓子 パルドゥラス","baseServings":8,"minServings":1,"maxServings":20},"ingredients":[{"id":"c66d45c5-2611-4d8d-979a-2775d2f11571","nameOriginal":"Semola rimacinata di grano duro","nameJa":"セモリナ粉（超細挽き）","nameEn":"Fine durum wheat semolina","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c17b2c8d-1274-4189-807e-86894cebfea9","nameOriginal":"Strutto o Burro","nameJa":"ラード（または無塩バター）","nameEn":"Lard or unsalted butter","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"71ad41b5-61d8-4596-b060-0fe74338f831","nameOriginal":"Acqua tiepida","nameJa":"ぬるま湯","nameEn":"Warm water","quantity":120,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c2d8129c-2fb1-45a4-a11c-21ed882075b5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":2,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ae08d9ed-1aae-4b36-a9d8-e0a12e5e05ef","nameOriginal":"Ricotta fresca di pecora","nameJa":"フレッシュ羊乳リコッタ","nameEn":"Fresh sheep's milk ricotta","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"水切り済み","substitutionOptions":[{"id":"55bba143-bf26-4f20-9cee-d19314fdc204","standardIngredientId":"ae08d9ed-1aae-4b36-a9d8-e0a12e5e05ef","nameJa":"牛乳リコッタ","nameEn":"Cow's milk ricotta","authenticityImpact":-5,"flavorImpact":"コクが若干落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a94557e7-6908-4f29-a21d-fbdd79542b4a","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b964ef8e-d64c-47a3-9a1a-0061ba60056e","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"401598e2-c79d-47cd-8c15-7a4b07bace51","nameOriginal":"Zafferano","nameJa":"サフラン","nameEn":"Saffron","quantity":0.2,"unit":"g","role":"essential","scalingBehavior":null,"notes":"サフランを温水大さじ2で溶いてから使用。お湯に15分浸してから使う","substitutionOptions":[{"id":"804a9488-e12b-43cd-817e-e406652260cb","standardIngredientId":"401598e2-c79d-47cd-8c15-7a4b07bace51","nameJa":"他産地のサフラン","nameEn":"Non-Sardinian saffron","authenticityImpact":-5,"flavorImpact":"同量使用で品質差はあるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e01be056-8d07-44ed-b59c-f835854bc6b3","nameOriginal":"Scorza di limone e arancia","nameJa":"レモンとオレンジの皮","nameEn":"Grated lemon and orange peel","quantity":1,"unit":"個分ずつ","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"66a2d801-245b-4b3c-9383-679e6d86bb72","nameOriginal":"Acqua di fiori d'arancio","nameJa":"オレンジフラワーウォーター","nameEn":"Orange blossom water","quantity":10,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a415d3ac-7f46-4d8f-a9de-457d0d454dee","nameOriginal":"Uvetta","nameJa":"レーズン","nameEn":"Raisins","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"お好みで","substitutionOptions":[]},{"id":"7f6f3b45-97c3-475d-8e28-628e338c7de4","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"サフラン0.2gを温水大さじ2で溶かし、15〜30分置いて十分に色と香りを出す。","title":"サフランを溶かす","actionItems":["サフラン0.2gを温水大さじ2で溶かす。","15〜30分置いて十分に色と香りを出す。"],"parallelItems":[],"completionCriteria":["15〜30分。鮮やかな黄色になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"生地を作る：セモリナ粉250g・ラード50g・塩2g・ぬるま湯120mlをこねてなめらかな生地にする（10分）。ラップして30分休ませる。","title":"生地を作り休ませる","actionItems":["セモリナ粉250g・ラード50g・塩2g・ぬるま湯120mlをこねてなめらかな生地にする（10分）。","ラップして30分休ませる。"],"parallelItems":[],"completionCriteria":["なめらかな生地になれば次へ（30分後）。"],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フィリングを作る：レモンとオレンジは白いワタを避け、表皮だけをすりおろす。水切りリコッタ400g・砂糖120g・卵3個・サフラン液・すりおろした柑橘の皮・オレンジフラワーウォーター10ml・レーズンをよく混ぜる（フィリングは鮮やかな黄色になる）。","title":"フィリングを作る","actionItems":["レモンとオレンジの表皮だけをすりおろす。","水切りリコッタ400g・砂糖120g・卵3個・サフラン液・すりおろした柑橘の皮・オレンジフラワーウォーター10ml・レーズンをよく混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざり鮮やかな黄色になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"生地を薄く（2〜3mm）伸ばし、直径10〜12cmの円に抜く。円の縁を指で細かくつまみ上げて花型（またはカップ型）に成形する（縁は1〜1.5cm高に立てる）。","title":"花型に成形する","actionItems":["生地を2〜3mm厚に伸ばし、直径10〜12cmの円に抜く。","円の縁を指で細かくつまみ上げて花型に成形する（縁は1〜1.5cm高に立てる）。"],"parallelItems":[],"completionCriteria":["花型の縁が均一に立てられれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"オーブンを190℃に予熱。天板に並べたパルドゥラスにフィリングをスプーン1〜2杯詰める（縁まで入れるが溢れさせない）。","title":"フィリングを詰める","actionItems":["オーブンを190℃に予熱する。","天板に並べたパルドゥラスにフィリングをスプーン1〜2杯詰める。"],"parallelItems":[],"completionCriteria":["フィリングが縁ぎりぎりまで詰められれば次へ。"],"cautionItems":["溢れさせない。焼いた時に膨れる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"190℃で20〜25分焼く（生地がきつね色に、フィリングが固まるまで）。完全に冷めてから粉砂糖を振る。常温で当日中が最も美味しい。","title":"焼いて仕上げる","actionItems":["190℃で20〜25分焼く。","完全に冷めてから粉砂糖15gを振る。"],"parallelItems":[],"completionCriteria":["生地がきつね色に、フィリングが固まれば焼き上がり。"],"cautionItems":["熱いうちに粉砂糖を振ると溶けてしまう。完全に冷めてから振る。"],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

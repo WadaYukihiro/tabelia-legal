@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・メッシーナ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">メカジキ（薄切り）</span><span class="ingredient-qty">400g（薄切り8枚）</span><span class="ingredient-notes">3mm厚に薄切りに。購入時にお願いするとよい</span></li>
-          <li><span class="ingredient-name">パン粉</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">軽くローストする</span></li>
-          <li><span class="ingredient-name">レーズン（水で戻す）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">カチョカヴァッロ</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">ローリエ</span><span class="ingredient-qty">8枚</span><span class="ingredient-notes">串に交互に刺す</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
+              <li data-ingredient-row="09d72910-5a2f-4195-aa6b-e9205d13e91a"><span class="ingredient-name" data-ingredient-name>メカジキ（薄切り）</span><span class="ingredient-qty" data-ingredient-qty>400g（薄切り8枚）</span><span class="ingredient-notes">3mm厚に薄切りに。購入時にお願いするとよい</span><button type="button" class="substitution-trigger" data-substitution-trigger="09d72910-5a2f-4195-aa6b-e9205d13e91a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3aaad658-3561-4428-a483-47d30c0904a8"><span class="ingredient-name" data-ingredient-name>パン粉</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="3069354e-ceb0-441a-8b91-45897824f930"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">軽くローストする</span></li>
+          <li data-ingredient-row="7fa0565d-7d92-4389-bafc-e0ca84e7d055"><span class="ingredient-name" data-ingredient-name>レーズン（水で戻す）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="bd24fecb-2a4b-4da3-b3b6-fbf5aacb90ba"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="67ae356b-57d2-4451-b17c-d0edda7e2519"><span class="ingredient-name" data-ingredient-name>カチョカヴァッロ</span><span class="ingredient-qty" data-ingredient-qty>30g</span><button type="button" class="substitution-trigger" data-substitution-trigger="67ae356b-57d2-4451-b17c-d0edda7e2519"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7ea3b084-933f-437a-8f52-83f3fba69a34"><span class="ingredient-name" data-ingredient-name>ローリエ</span><span class="ingredient-qty" data-ingredient-qty>8枚</span><span class="ingredient-notes">串に交互に刺す</span></li>
+          <li data-ingredient-row="92c3cefc-429e-43b9-b016-51f121952ab2"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
               </ul>
             </section>
           </div>
@@ -235,6 +255,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"955a2f4b-0575-4863-8037-439ea0d36bba","nameJa":"メカジキのインヴォルティーニ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"09d72910-5a2f-4195-aa6b-e9205d13e91a","nameOriginal":"Pesce spada a fette sottili","nameJa":"メカジキ（薄切り）","nameEn":"Swordfish, thinly sliced","quantity":400,"unit":"g（薄切り8枚）","role":"essential","scalingBehavior":null,"notes":"3mm厚に薄切りに。購入時にお願いするとよい","substitutionOptions":[{"id":"592608e3-94e8-4386-9bb1-550faa9d7008","standardIngredientId":"09d72910-5a2f-4195-aa6b-e9205d13e91a","nameJa":"マグロ（薄切り）","nameEn":"Tuna, thinly sliced","authenticityImpact":-10,"flavorImpact":"ロールにしやすいが食感が異なる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3aaad658-3561-4428-a483-47d30c0904a8","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3069354e-ceb0-441a-8b91-45897824f930","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"軽くローストする","substitutionOptions":[]},{"id":"7fa0565d-7d92-4389-bafc-e0ca84e7d055","nameOriginal":"Uvetta","nameJa":"レーズン（水で戻す）","nameEn":"Raisins, soaked","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bd24fecb-2a4b-4da3-b3b6-fbf5aacb90ba","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":2,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"67ae356b-57d2-4451-b17c-d0edda7e2519","nameOriginal":"Caciocavallo grattugiato","nameJa":"カチョカヴァッロ","nameEn":"Grated caciocavallo cheese","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"7e582dcd-8389-4a63-ba7b-4f808b3da7b6","standardIngredientId":"67ae356b-57d2-4451-b17c-d0edda7e2519","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-5,"flavorImpact":"塩気が強くなるが近い風味","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7ea3b084-933f-437a-8f52-83f3fba69a34","nameOriginal":"Foglie di alloro","nameJa":"ローリエ","nameEn":"Bay leaves","quantity":8,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"串に交互に刺す","substitutionOptions":[]},{"id":"92c3cefc-429e-43b9-b016-51f121952ab2","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"イタリアンパセリをみじん切りにする。","title":"パセリを刻む","actionItems":["イタリアンパセリをみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"パン粉・松の実・レーズン・パセリ・チーズをオリーブオイルで混ぜてフィリングを作る。","title":"フィリングを作る","actionItems":["パン粉60g・松の実30g・レーズン30g・パセリ・チーズ30gをオリーブオイルで混ぜてフィリングを作る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"メカジキの薄切りにフィリングをのせ、くるくると巻いて楊枝で固定する。","title":"ロールに巻く","actionItems":["メカジキの薄切りにフィリングをのせる。","くるくると巻いて楊枝で固定する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"金串に「メカジキのロール → ローリエ → メカジキのロール → ローリエ」の順で交互に刺す。","title":"串に刺す","actionItems":["金串に「メカジキのロール → ローリエ → メカジキのロール → ローリエ」の順で交互に刺す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"グリルまたは魚焼きグリルで、オリーブオイルを塗りながら全面を各2〜3分ずつ焼く（合計10〜12分）。焼き色がついたら完成。","title":"グリルで焼く","actionItems":["グリルまたは魚焼きグリルで、オリーブオイルを塗りながら全面を各2〜3分ずつ焼く（合計10〜12分）。"],"parallelItems":[],"completionCriteria":["全面に焼き色がついたら完成（合計10〜12分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

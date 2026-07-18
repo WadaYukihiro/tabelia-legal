@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>40分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ（カンパーニャ）</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,20 +94,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">強力粉（W280以上）</span><span class="ingredient-qty">250g</span><span class="ingredient-notes">グルテン量が多いほどシロップの吸収が良い</span></li>
-          <li><span class="ingredient-name">生イースト</span><span class="ingredient-qty">15g</span><span class="ingredient-notes">ドライイーストなら7g</span></li>
-          <li><span class="ingredient-name">卵（新鮮）</span><span class="ingredient-qty">4個</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">常温で柔らかく</span></li>
-          <li><span class="ingredient-name">砂糖（生地用）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span></li>
-          <li><span class="ingredient-name">ぬるい牛乳</span><span class="ingredient-qty">30ml</span><span class="ingredient-notes">40℃前後</span></li>
-          <li><span class="ingredient-name">水（シロップ用）</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">砂糖（シロップ用）</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">ダークラム（ジャマイカン系）</span><span class="ingredient-qty">200ml</span><span class="ingredient-notes">高品質のダークラムほどシロップが豊かになる</span></li>
-          <li><span class="ingredient-name">オレンジ・レモンの皮</span><span class="ingredient-qty">1個分ずつ</span></li>
-          <li><span class="ingredient-name">ホイップクリーム（添える用）</span><span class="ingredient-qty">200ml</span></li>
+              <li data-ingredient-row="676f7f9d-b970-4c48-9398-23a8a3f78b2d"><span class="ingredient-name" data-ingredient-name>強力粉（W280以上）</span><span class="ingredient-qty" data-ingredient-qty>250g</span><span class="ingredient-notes">グルテン量が多いほどシロップの吸収が良い</span><button type="button" class="substitution-trigger" data-substitution-trigger="676f7f9d-b970-4c48-9398-23a8a3f78b2d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="140717fc-0bfc-4665-a342-9993c7049c39"><span class="ingredient-name" data-ingredient-name>生イースト</span><span class="ingredient-qty" data-ingredient-qty>15g</span><span class="ingredient-notes">ドライイーストなら7g</span></li>
+          <li data-ingredient-row="c402f072-253c-4dd8-a533-9e570666cd7c"><span class="ingredient-name" data-ingredient-name>卵（新鮮）</span><span class="ingredient-qty" data-ingredient-qty>4個</span></li>
+          <li data-ingredient-row="4615fda4-4f65-4b2b-a747-8e5478ec6c8b"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">常温で柔らかく</span></li>
+          <li data-ingredient-row="0bebef0b-0eb5-472c-8f88-4e656050af1d"><span class="ingredient-name" data-ingredient-name>砂糖（生地用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="842f41cc-d462-4341-b262-8255d996f65d"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
+          <li data-ingredient-row="e5d4ee24-cdbf-4779-87d0-93fef40fb2ca"><span class="ingredient-name" data-ingredient-name>ぬるい牛乳</span><span class="ingredient-qty" data-ingredient-qty>30ml</span><span class="ingredient-notes">40℃前後</span></li>
+          <li data-ingredient-row="bf369e0e-5057-4095-a01d-0fb613a0a80c"><span class="ingredient-name" data-ingredient-name>水（シロップ用）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="455f68d1-a8d0-4585-8585-3d8cd540f08e"><span class="ingredient-name" data-ingredient-name>砂糖（シロップ用）</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="1a0933d4-3e5a-44a8-9587-1f6196af8dfb"><span class="ingredient-name" data-ingredient-name>ダークラム（ジャマイカン系）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span><span class="ingredient-notes">高品質のダークラムほどシロップが豊かになる</span><button type="button" class="substitution-trigger" data-substitution-trigger="1a0933d4-3e5a-44a8-9587-1f6196af8dfb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e626e304-7151-4ca5-b55e-3a99e9902ba6"><span class="ingredient-name" data-ingredient-name>オレンジ・レモンの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分ずつ</span></li>
+          <li data-ingredient-row="538ddf0e-be74-4887-ab6c-d0fff241831b"><span class="ingredient-name" data-ingredient-name>ホイップクリーム（添える用）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
               </ul>
             </section>
           </div>
@@ -346,6 +366,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"22edb74b-88eb-4547-ba0e-1ea6fcc77608","nameJa":"ラム酒香るナポリ風ババ","baseServings":8,"minServings":1,"maxServings":20},"ingredients":[{"id":"676f7f9d-b970-4c48-9398-23a8a3f78b2d","nameOriginal":"Farina forte (W280+)","nameJa":"強力粉（W280以上）","nameEn":"Bread flour (high gluten)","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"グルテン量が多いほどシロップの吸収が良い","substitutionOptions":[{"id":"402f2601-1317-460d-8f3f-d016c8ed33c9","standardIngredientId":"676f7f9d-b970-4c48-9398-23a8a3f78b2d","nameJa":"中力粉","nameEn":"All-purpose flour","authenticityImpact":-10,"flavorImpact":"グルテン量が減りシロップの保水力がやや落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"140717fc-0bfc-4665-a342-9993c7049c39","nameOriginal":"Lievito di birra fresco","nameJa":"生イースト","nameEn":"Fresh yeast","quantity":15,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ドライイーストなら7g","substitutionOptions":[]},{"id":"c402f072-253c-4dd8-a533-9e570666cd7c","nameOriginal":"Uova fresche","nameJa":"卵（新鮮）","nameEn":"Fresh eggs","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4615fda4-4f65-4b2b-a747-8e5478ec6c8b","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"常温で柔らかく","substitutionOptions":[]},{"id":"0bebef0b-0eb5-472c-8f88-4e656050af1d","nameOriginal":"Zucchero","nameJa":"砂糖（生地用）","nameEn":"Sugar","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"842f41cc-d462-4341-b262-8255d996f65d","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e5d4ee24-cdbf-4779-87d0-93fef40fb2ca","nameOriginal":"Latte tiepido","nameJa":"ぬるい牛乳","nameEn":"Warm milk","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"40℃前後","substitutionOptions":[]},{"id":"bf369e0e-5057-4095-a01d-0fb613a0a80c","nameOriginal":"Acqua","nameJa":"水（シロップ用）","nameEn":"Water","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"455f68d1-a8d0-4585-8585-3d8cd540f08e","nameOriginal":"Zucchero","nameJa":"砂糖（シロップ用）","nameEn":"Sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1a0933d4-3e5a-44a8-9587-1f6196af8dfb","nameOriginal":"Rum scuro (Jamaican)","nameJa":"ダークラム（ジャマイカン系）","nameEn":"Dark Jamaican rum","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"高品質のダークラムほどシロップが豊かになる","substitutionOptions":[{"id":"f21389b9-b524-46b8-8972-772c21748c17","standardIngredientId":"1a0933d4-3e5a-44a8-9587-1f6196af8dfb","nameJa":"ラム（白）","nameEn":"White rum","authenticityImpact":-10,"flavorImpact":"風味の深みが大幅に弱まる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e626e304-7151-4ca5-b55e-3a99e9902ba6","nameOriginal":"Scorza di arancia e limone","nameJa":"オレンジ・レモンの皮","nameEn":"Orange and lemon peel","quantity":1,"unit":"個分ずつ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"538ddf0e-be74-4887-ab6c-d0fff241831b","nameOriginal":"Panna montata","nameJa":"ホイップクリーム（添える用）","nameEn":"Whipped cream","quantity":200,"unit":"ml","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ぬるい牛乳に生イーストと砂糖ひとつまみを溶かし、5分置いて発泡させる。強力粉をボウルに入れ、イースト液・卵を1個ずつ加えながら10分こねる（非常に柔らかく粘る生地になる）。","title":"イーストを活性化し生地をこねる","actionItems":["ぬるい牛乳30mlに生イーストと砂糖ひとつまみを溶かし5分置く。","強力粉をボウルに入れ、イースト液・卵を1個ずつ加えながら10分こねる。"],"parallelItems":[],"completionCriteria":["イースト液が発泡し、柔らかく粘る生地になれば次へ。"],"cautionItems":["牛乳が熱すぎるとイーストが死ぬ。40℃前後に保つ。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"塩5gと砂糖30gを加え、常温に戻したバター60gを小さく分けて少しずつ加えながら更に10〜15分こねる（滑らかで弾力のある生地になる）。","title":"バターを加えてこねる","actionItems":["塩5gと砂糖30gを加える。","常温のバター60gを小さく分けて少しずつ加えながら10〜15分こねる。"],"parallelItems":[],"completionCriteria":["滑らかで弾力のある生地になれば次へ。"],"cautionItems":["バターを一度に加えない。少しずつ加えてグルテンを育てる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ボウルにラップをかけて暖かい場所（28℃）で2倍に膨らむまで発酵させる（1〜1.5時間）。","title":"一次発酵させる","actionItems":["生地をボウルにラップをかけ、28℃の暖かい場所で発酵させる。"],"parallelItems":[],"completionCriteria":["1〜1.5時間。2倍に膨らんだら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":90,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"ババ型（または直径8cmのマフィン型）にバターを塗る。発酵した生地を型の1/3〜1/2まで入れる（膨らむので詰めすぎない）。型の縁まで膨らむまで再発酵させる（30〜40分）。","title":"型に入れ二次発酵させる","actionItems":["ババ型にバターを塗る。","発酵した生地を型の1/3〜1/2まで入れる。","型の縁まで膨らむまで30〜40分再発酵させる。"],"parallelItems":[],"completionCriteria":["30〜40分。生地が型の縁まで膨らんだら次へ。"],"cautionItems":["生地を詰めすぎない。膨らんで溢れる。"],"tipItems":[],"durationMinutes":40,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"190℃のオーブンで25〜30分焼く（表面がきつね色になったら焼き上がり）。焼き上がったらすぐに型から外す。","title":"ババを焼いて型から外す","actionItems":["190℃のオーブンで25〜30分焼く。","焼き上がったらすぐに型から外す。"],"parallelItems":[],"completionCriteria":["表面がきつね色になれば焼き上がり。"],"cautionItems":["焼き上がったらすぐに型から外さないと蒸れる。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"シロップを作る：鍋に水500ml・砂糖150g・柑橘の皮を入れて3〜5分煮てシロップ状にする。粗熱が取れたらダークラム200mlを加える（熱いとアルコールが飛ぶ）。","title":"シロップを作る","actionItems":["鍋に水500ml・砂糖150g・柑橘の皮を入れて3〜5分煮る。","粗熱が取れたらダークラム200mlを加える。"],"parallelItems":[],"completionCriteria":["砂糖が完全に溶けシロップ状になれば次へ。"],"cautionItems":["熱いうちにラムを加えるとアルコールが飛ぶ。粗熱が取れてから加える。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"焼き上がったババを完全に温かいシロップに沈め（完全に浸す）、15〜20分間ひっくり返しながら全体に行き渡らせる（持ち上げると重みを感じるくらい吸い込んだら完成）。","title":"シロップに浸す","actionItems":["ババを温かいシロップに完全に沈める。","15〜20分間ひっくり返しながら全体にシロップを行き渡らせる。"],"parallelItems":[],"completionCriteria":["15〜20分。持ち上げると重みを感じるくらいシロップを吸い込んだら完成。"],"cautionItems":["シロップを惜しまない。たっぷり吸わせることがナポリ流。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"シロップから取り出して皿に乗せる。冷えたホイップクリーム200mlを添え、お好みでサワーチェリー（アマレーナ）を飾る。","title":"提供する","actionItems":["シロップから取り出して皿に乗せる。","ホイップクリーム200mlを添える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

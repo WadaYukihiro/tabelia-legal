@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ・ボローニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ペンネ・リガーテ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">パンチェッタ（角切り）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">5mm角のさいの目切り</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">手でつぶしておく</span></li>
-          <li><span class="ingredient-name">ウォッカ</span><span class="ingredient-qty">80ml</span><span class="ingredient-notes">安価なもので十分</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">玉ねぎ（中）</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">細かくみじん切り</span></li>
-          <li><span class="ingredient-name">ニンニク</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少量</span></li>
+              <li data-ingredient-row="698be34b-a939-4144-8bcc-dd22d6eece6d"><span class="ingredient-name" data-ingredient-name>ペンネ・リガーテ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="c23c9c5b-78ef-4d7e-a50b-577a67f8e66b"><span class="ingredient-name" data-ingredient-name>パンチェッタ（角切り）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">5mm角のさいの目切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="c23c9c5b-78ef-4d7e-a50b-577a67f8e66b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="deaad5aa-ee21-4efd-b744-4cc435d1f287"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">手でつぶしておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="deaad5aa-ee21-4efd-b744-4cc435d1f287"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a6748830-ac86-44e4-8acc-19fe549be059"><span class="ingredient-name" data-ingredient-name>ウォッカ</span><span class="ingredient-qty" data-ingredient-qty>80ml</span><span class="ingredient-notes">安価なもので十分</span><button type="button" class="substitution-trigger" data-substitution-trigger="a6748830-ac86-44e4-8acc-19fe549be059"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7471d55a-e3e8-4f53-9c09-fe9fff4b2d75"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="7471d55a-e3e8-4f53-9c09-fe9fff4b2d75"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="afa32891-e3aa-43d5-aab6-bf223ac4242f"><span class="ingredient-name" data-ingredient-name>玉ねぎ（中）</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">細かくみじん切り</span></li>
+          <li data-ingredient-row="45d28c60-7554-4c9e-92c5-c7f172e2e2f9"><span class="ingredient-name" data-ingredient-name>ニンニク</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="2f794662-d77c-4bb8-91bc-11c37d2d8ad8"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="3aa244f9-e571-4d3a-9126-94d7f17341ca"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>50g</span><button type="button" class="substitution-trigger" data-substitution-trigger="3aa244f9-e571-4d3a-9126-94d7f17341ca"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="73fae910-2601-4d52-8294-84a2b3cb1e7b"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
               </ul>
             </section>
           </div>
@@ -325,6 +345,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"854f80b8-6589-4c59-b0fd-7f1fa90ad2b7","nameJa":"ウォッカソースのペンネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"698be34b-a939-4144-8bcc-dd22d6eece6d","nameOriginal":"Penne rigate","nameJa":"ペンネ・リガーテ","nameEn":"Penne rigate","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c23c9c5b-78ef-4d7e-a50b-577a67f8e66b","nameOriginal":"Pancetta","nameJa":"パンチェッタ（角切り）","nameEn":"Pancetta, diced","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"5mm角のさいの目切り","substitutionOptions":[{"id":"13ea9f53-0ba0-42a5-b4f9-e15db442bbbd","standardIngredientId":"c23c9c5b-78ef-4d7e-a50b-577a67f8e66b","nameJa":"ベーコン","nameEn":"Bacon","authenticityImpact":-5,"flavorImpact":"燻製香が加わる。風味は変わるが代用として自然","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"deaad5aa-ee21-4efd-b744-4cc435d1f287","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手でつぶしておく","substitutionOptions":[{"id":"8a650273-05cc-45d6-8409-cf9e4573a86f","standardIngredientId":"deaad5aa-ee21-4efd-b744-4cc435d1f287","nameJa":"ミニトマト400g（半分に切る）","nameEn":"Cherry tomatoes, halved","authenticityImpact":-5,"flavorImpact":"甘みが増す。水分量が少ないため煮詰め時間が短縮される","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a6748830-ac86-44e4-8acc-19fe549be059","nameOriginal":"Vodka","nameJa":"ウォッカ","nameEn":"Vodka","quantity":80,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"安価なもので十分","substitutionOptions":[{"id":"46e3ba6f-079a-482b-8a46-0d50ad92622c","standardIngredientId":"a6748830-ac86-44e4-8acc-19fe549be059","nameJa":"ジン 60ml","nameEn":"Gin, 60ml","authenticityImpact":-5,"flavorImpact":"ジュニパーの香りが加わる。アルコールの旨み引き出し効果は同様","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7471d55a-e3e8-4f53-9c09-fe9fff4b2d75","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"f2769c41-a490-487e-ab86-ef91216ae7f2","standardIngredientId":"7471d55a-e3e8-4f53-9c09-fe9fff4b2d75","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-10,"flavorImpact":"乳化感と濃厚さが落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"afa32891-e3aa-43d5-aab6-bf223ac4242f","nameOriginal":"Cipolla","nameJa":"玉ねぎ（中）","nameEn":"Medium onion","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"細かくみじん切り","substitutionOptions":[]},{"id":"45d28c60-7554-4c9e-92c5-c7f172e2e2f9","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"2f794662-d77c-4bb8-91bc-11c37d2d8ad8","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3aa244f9-e571-4d3a-9126-94d7f17341ca","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano, grated","quantity":50,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"d69d6ec0-b1d8-4a38-9369-f0b1f969b334","standardIngredientId":"3aa244f9-e571-4d3a-9126-94d7f17341ca","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"やや軽めの風味だが代用として十分","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"73fae910-2601-4d52-8294-84a2b3cb1e7b","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"パンチェッタを5mm角のさいの目切りにする。","title":"パンチェッタを切る","actionItems":["パンチェッタを5mm角のさいの目切りにする。"],"parallelItems":[],"completionCriteria":["切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"・玉ねぎを細かくみじん切りにする\n・ニンニクを薄切りにする\n・ホールトマトを手でつぶしておく","title":"食材を切る","actionItems":["玉ねぎを細かくみじん切りにする。","ニンニクを薄切りにする。","ホールトマトを手でつぶしておく。"],"parallelItems":[],"completionCriteria":["全て準備が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにEVOO大さじ2を熱し、パンチェッタを中火で3〜4分炒める。カリッとして脂が十分に出たら次のステップへ。","title":"パンチェッタを炒める","actionItems":["フライパンにEVOO大さじ2を熱し、パンチェッタを中火で3〜4分炒める。"],"parallelItems":[],"completionCriteria":["カリッとして脂が十分に出たら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"玉ねぎとニンニクを加えて弱火で5〜6分炒める。透明になってしんなりしたら次のステップへ。","title":"玉ねぎとニンニクを炒める","actionItems":["玉ねぎとニンニクを加えて弱火で5〜6分炒める。"],"parallelItems":[],"completionCriteria":["透明になってしんなりしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ウォッカ80mlを加えて強火で2〜3分煮立て、アルコールを完全に飛ばす。刺激のあるアルコール臭が消え、ウォッカの香りが丸くなったら次へ。","title":"ウォッカを加える","actionItems":["ウォッカ80mlを加えて強火で2〜3分煮立て、アルコールを完全に飛ばす。"],"parallelItems":[],"completionCriteria":["刺激のあるアルコール臭が消え、ウォッカの香りが丸くなったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"（ソースを煮詰める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。つぶしたトマトを加えて中火で10〜12分煮詰め、水分が飛んでソースが凝縮するまで待つ。","title":"トマトを煮詰める","actionItems":["つぶしたトマトを加えて中火で10〜12分煮詰め、水分が飛んでソースが凝縮するまで待つ。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["水分が飛んでソースが凝縮したら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"・生クリーム150mlを加えて弱火で3〜4分煮る\n・塩小さじ1/4・黒胡椒3〜4回挽きで調味する","title":"クリームを加える","actionItems":["生クリーム150mlを加えて弱火で3〜4分煮る。","塩小さじ1/4・黒胡椒3〜4回挽きで調味する。"],"parallelItems":[],"completionCriteria":["3〜4分煮て調味が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"ペンネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","title":"パスタを茹でる","actionItems":["ペンネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":9,"instruction":"・ペンネをアルデンテで引き上げてソースに移し、1〜2分絡める\n・パルミジャーノをかけて仕上げる","title":"ペンネを絡めてチーズをかける","actionItems":["ペンネをアルデンテで引き上げてソースに移し、1〜2分絡める。","パルミジャーノをかけて仕上げる。"],"parallelItems":[],"completionCriteria":["全体が絡まったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

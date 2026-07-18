@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・カリャリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">マダコ（茹で用）</span><span class="ingredient-qty">1kg</span><span class="ingredient-notes">冷凍解凍でも可。生の場合は粗塩でよく揉んでぬめりを取ること。コルクを一緒に入れると柔らかくなる</span></li>
-          <li><span class="ingredient-name">じゃがいも（男爵または新じゃが）</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">皮付きで茹でる</span></li>
-          <li><span class="ingredient-name">フレッシュミント</span><span class="ingredient-qty">15枚</span><span class="ingredient-notes">サルデーニャらしさを決めるハーブ</span></li>
-          <li><span class="ingredient-name">ドライオレガノ</span><span class="ingredient-qty">小さじ1</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">レモン汁</span><span class="ingredient-qty">1個分</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">塩・黒胡椒</span><span class="ingredient-qty">適量</span></li>
+              <li data-ingredient-row="a407e3e0-a395-481d-8972-72127d17cbbe"><span class="ingredient-name" data-ingredient-name>マダコ（茹で用）</span><span class="ingredient-qty" data-ingredient-qty>1kg</span><span class="ingredient-notes">冷凍解凍でも可。生の場合は粗塩でよく揉んでぬめりを取ること。コルクを一緒に入れると柔らかくなる</span><button type="button" class="substitution-trigger" data-substitution-trigger="a407e3e0-a395-481d-8972-72127d17cbbe"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8d535638-5ca7-4617-8076-f9ab48506929"><span class="ingredient-name" data-ingredient-name>じゃがいも（男爵または新じゃが）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">皮付きで茹でる</span></li>
+          <li data-ingredient-row="f427488a-8db1-407d-b356-52bc319272d6"><span class="ingredient-name" data-ingredient-name>フレッシュミント</span><span class="ingredient-qty" data-ingredient-qty>15枚</span><span class="ingredient-notes">サルデーニャらしさを決めるハーブ</span></li>
+          <li data-ingredient-row="b058e05b-2392-44d5-ba57-f6fe9098d342"><span class="ingredient-name" data-ingredient-name>ドライオレガノ</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span></li>
+          <li data-ingredient-row="2206505c-4071-4618-a7f4-2943492bd8c7"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="3da6c910-fb2b-4cca-ac99-e9d2b4f2a69a"><span class="ingredient-name" data-ingredient-name>レモン汁</span><span class="ingredient-qty" data-ingredient-qty>1個分</span></li>
+          <li data-ingredient-row="e0398580-59cf-413b-8921-0142090f3922"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="c0f870d8-fcea-45e6-bd1f-d2521780e467"><span class="ingredient-name" data-ingredient-name>塩・黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>適量</span></li>
               </ul>
             </section>
           </div>
@@ -263,6 +283,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1e60cee6-0218-4bf6-a909-49ca09ac90cc","nameJa":"タコとじゃがいものサルデーニャ風サラダ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"a407e3e0-a395-481d-8972-72127d17cbbe","nameOriginal":"Polpo","nameJa":"マダコ（茹で用）","nameEn":"Octopus","quantity":1,"unit":"kg","role":"essential","scalingBehavior":null,"notes":"冷凍解凍でも可。生の場合は粗塩でよく揉んでぬめりを取ること。コルクを一緒に入れると柔らかくなる","substitutionOptions":[{"id":"7fa7f7b5-a061-45e3-98bb-44e7da8e24d9","standardIngredientId":"a407e3e0-a395-481d-8972-72127d17cbbe","nameJa":"冷凍タコ（ボイル済み）","nameEn":"Frozen pre-boiled octopus","authenticityImpact":-5,"flavorImpact":"茹で時間が不要になり風味は近い","textureImpact":null,"procedureChanges":["タコの下処理と茹で工程を省き、解凍して水気を拭いてから使う"],"affectedStepNumbers":[1,3,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"冷蔵庫で解凍し、水気を拭いてから使う","action":"update","nameJa":"冷凍タコ（ボイル済み）","quantity":700,"targetNameJa":"マダコ（茹で用）"}],"stepPatches":[{"title":"タコを解凍し、パセリを刻む","action":"replace","stepNumber":1,"actionItems":["冷凍ボイルタコ700gを冷蔵庫で解凍する。","キッチンペーパーで水気を拭く。","イタリアンパセリをみじん切りにする。"],"instruction":"冷凍ボイルタコ700gを冷蔵庫で解凍し、キッチンペーパーで水気を拭く。イタリアンパセリをみじん切りにする。","changeReason":"ボイル済みタコはぬめり取りと内臓処理が不要なため","completionCriteria":["タコの表面の水気が取れ、切れる状態になったら次へ。"]},{"action":"remove","stepNumber":3,"changeReason":"ボイル済みタコは茹で直すと硬くなりやすいため"},{"title":"タコを切って合わせる","action":"replace","stepNumber":4,"actionItems":["解凍したボイルタコを一口大に切る（足は2〜3cm幅に）。","ボウルにタコ・じゃがいも・ミント・パセリ・オレガノを合わせる。"],"instruction":"解凍したボイルタコを一口大に切る（足は2〜3cm幅に）。ボウルにタコ・じゃがいも・ミント・パセリ・オレガノを合わせる。","changeReason":"ボイル済みタコに合わせて切り出しから始める"}]}]},{"id":"8d535638-5ca7-4617-8076-f9ab48506929","nameOriginal":"Patate","nameJa":"じゃがいも（男爵または新じゃが）","nameEn":"Potatoes (floury variety)","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮付きで茹でる","substitutionOptions":[]},{"id":"f427488a-8db1-407d-b356-52bc319272d6","nameOriginal":"Menta fresca","nameJa":"フレッシュミント","nameEn":"Fresh mint","quantity":15,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"サルデーニャらしさを決めるハーブ","substitutionOptions":[]},{"id":"b058e05b-2392-44d5-ba57-f6fe9098d342","nameOriginal":"Origano secco","nameJa":"ドライオレガノ","nameEn":"Dried oregano","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2206505c-4071-4618-a7f4-2943492bd8c7","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3da6c910-fb2b-4cca-ac99-e9d2b4f2a69a","nameOriginal":"Succo di limone","nameJa":"レモン汁","nameEn":"Fresh lemon juice","quantity":1,"unit":"個分","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e0398580-59cf-413b-8921-0142090f3922","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"c0f870d8-fcea-45e6-bd1f-d2521780e467","nameOriginal":"Sale e pepe","nameJa":"塩・黒胡椒","nameEn":"Salt and black pepper","quantity":1,"unit":"適量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・生タコを使う場合は粗塩（大さじ2）をまぶしてよく揉み、ぬめりを取る。流水でよく洗い流す\n・頭を裏返して内臓・目・くちばしを除き、よく洗う\n・イタリアンパセリをみじん切りにする","title":"タコを下処理する","actionItems":["生タコを使う場合は粗塩（大さじ2）をまぶしてよく揉み、ぬめりを取る。流水でよく洗い流す。","頭を裏返して内臓・目・くちばしを除き、よく洗う。","イタリアンパセリをみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"じゃがいもを塩水で皮付きのまま茹で、竹串が通れば取り出す（約20分）。粗熱が取れたら皮を剥き、一口大に切る。","title":"じゃがいもを茹でる","actionItems":["じゃがいも500gを塩水で皮付きのまま茹でる（約20分）。","竹串が通れば取り出し、粗熱が取れたら皮を剥き、一口大に切る。"],"parallelItems":[],"completionCriteria":["竹串がスッと通れば完成（約20分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":22,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"タコを塩水（コルク1個も入れる）で弱火で40分茹でる。竹串が太い足にスッと入ればよい。そのままゆで汁で冷ます。","title":"タコを茹でる","actionItems":["タコを塩水（コルク1個も入れる）で弱火で40分茹でる。","そのままゆで汁で冷ます。"],"parallelItems":[],"completionCriteria":["竹串が太い足にスッと入れば完成（約40分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"タコを一口大に切る（足は2〜3cm幅に）。ボウルにタコ・じゃがいも・ミント・パセリ・オレガノを合わせる。","title":"タコを切って合わせる","actionItems":["タコを一口大に切る（足は2〜3cm幅に）。","ボウルにタコ・じゃがいも・ミント・パセリ・オレガノを合わせる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ボウルのタコとじゃがいもにオリーブオイルとレモン汁を加えてよく混ぜ、塩胡椒で味を調える。常温または温かいうちに盛り付ける。","title":"和えて盛り付ける","actionItems":["オリーブオイル80mlとレモン汁を加えてよく混ぜる。","塩胡椒で味を調える。","常温または温かいうちに盛り付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

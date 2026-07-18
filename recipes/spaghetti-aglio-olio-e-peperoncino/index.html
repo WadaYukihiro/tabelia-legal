@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スパゲッティ</span><span class="ingredient-qty">320g</span><span class="ingredient-notes">スパゲッティーニでもよい</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">薄切りにする（つぶさない）</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">90ml</span><span class="ingredient-notes">フルーティな品種が最適</span></li>
-          <li><span class="ingredient-name">乾燥唐辛子</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">辛さの好みで加減。種を除くと辛みが和らぐ</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1小束</span><span class="ingredient-notes">仕上げ用。みじん切り</span></li>
-          <li><span class="ingredient-name">塩（茹で湯用）</span><span class="ingredient-qty">10g</span><span class="ingredient-notes">1リットルの水に対して10gが目安</span></li>
+              <li data-ingredient-row="0e68867b-f76c-44b2-8755-4e09437afc68"><span class="ingredient-name" data-ingredient-name>スパゲッティ</span><span class="ingredient-qty" data-ingredient-qty>320g</span><span class="ingredient-notes">スパゲッティーニでもよい</span><button type="button" class="substitution-trigger" data-substitution-trigger="0e68867b-f76c-44b2-8755-4e09437afc68"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="57ace9a2-39ce-4fe8-a23d-5ae702e3d62b"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">薄切りにする（つぶさない）</span></li>
+          <li data-ingredient-row="0aae0e41-b9ba-4337-8eed-992b2b9deffb"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>90ml</span><span class="ingredient-notes">フルーティな品種が最適</span><button type="button" class="substitution-trigger" data-substitution-trigger="0aae0e41-b9ba-4337-8eed-992b2b9deffb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="88547897-b5c0-47bc-b47d-c46b0ea54337"><span class="ingredient-name" data-ingredient-name>乾燥唐辛子</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">辛さの好みで加減。種を除くと辛みが和らぐ</span><button type="button" class="substitution-trigger" data-substitution-trigger="88547897-b5c0-47bc-b47d-c46b0ea54337"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c56e859a-1613-4efd-8474-1671655f6275"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1小束</span><span class="ingredient-notes">仕上げ用。みじん切り</span></li>
+          <li data-ingredient-row="9aa48681-dcca-462f-b647-b84b0f7cc372"><span class="ingredient-name" data-ingredient-name>塩（茹で湯用）</span><span class="ingredient-qty" data-ingredient-qty>10g</span><span class="ingredient-notes">1リットルの水に対して10gが目安</span></li>
               </ul>
             </section>
           </div>
@@ -292,6 +312,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1289f29f-7782-46af-92c2-cbe8d0d63b19","nameJa":"スパゲッティ アーリオ・オーリオ・エ・ペペロンチーノ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0e68867b-f76c-44b2-8755-4e09437afc68","nameOriginal":"Spaghetti","nameJa":"スパゲッティ","nameEn":"Spaghetti","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":"スパゲッティーニでもよい","substitutionOptions":[{"id":"797983a6-5202-4183-8224-53ef080e4ba7","standardIngredientId":"0e68867b-f76c-44b2-8755-4e09437afc68","nameJa":"リングイーネ","nameEn":"Linguine","authenticityImpact":-5,"flavorImpact":"オイルの絡み方が変わるが風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"98f7ec6d-1627-407f-9d85-88b163e3532e","standardIngredientId":"0e68867b-f76c-44b2-8755-4e09437afc68","nameJa":"スパゲッティーニ","nameEn":"Spaghettini","authenticityImpact":-5,"flavorImpact":"細いため茹で時間が短く、オイルの絡みが若干変わる","textureImpact":null,"procedureChanges":["茹で時間を1〜2分短縮する"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":4,"instruction":"沸騰した湯に塩20g（水2Lに対して10g/L）を加え、スパゲッティーニ320gを袋の表示時間より1分短く茹で始める。\n・茹で汁をお玉1杯分（約80ml）取り置く","changeReason":"スパゲッティーニは細く火通りが早いため、茹で時間を短くする"}]}]},{"id":"57ace9a2-39ce-4fe8-a23d-5ae702e3d62b","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切りにする（つぶさない）","substitutionOptions":[]},{"id":"0aae0e41-b9ba-4337-8eed-992b2b9deffb","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":90,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"フルーティな品種が最適","substitutionOptions":[{"id":"c00f9259-3f03-4b5f-b885-fe63b91b6366","standardIngredientId":"0aae0e41-b9ba-4337-8eed-992b2b9deffb","nameJa":"普通のオリーブオイル","nameEn":"Pure olive oil","authenticityImpact":-10,"flavorImpact":"香りと複雑さが落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"88547897-b5c0-47bc-b47d-c46b0ea54337","nameOriginal":"Peperoncino secco","nameJa":"乾燥唐辛子","nameEn":"Dried chili pepper","quantity":2,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"辛さの好みで加減。種を除くと辛みが和らぐ","substitutionOptions":[{"id":"98007696-75b6-42d8-a6c2-05b2e0d04f1f","standardIngredientId":"88547897-b5c0-47bc-b47d-c46b0ea54337","nameJa":"赤唐辛子フレーク","nameEn":"Red chili flakes","authenticityImpact":-5,"flavorImpact":"辛みの出方が均一になり、整粒乾燥唐辛子特有の香りが弱くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c56e859a-1613-4efd-8474-1671655f6275","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"小束","role":"flavor","scalingBehavior":null,"notes":"仕上げ用。みじん切り","substitutionOptions":[]},{"id":"9aa48681-dcca-462f-b647-b84b0f7cc372","nameOriginal":"Sale","nameJa":"塩（茹で湯用）","nameEn":"Salt","quantity":10,"unit":"g","role":"technique","scalingBehavior":null,"notes":"1リットルの水に対して10gが目安","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"大鍋に水2Lを入れ、強火にかけて沸騰させる。","title":"材料を合わせる","actionItems":["大鍋に水2Lを入れ、強火にかけて沸騰させる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":2,"instruction":"（湯が沸く間に）にんにく4片を包丁の腹で軽くつぶし、繊維に沿って薄切りにする。","title":"材料を準備する","actionItems":[],"parallelItems":["（湯が沸く間に）にんにく4片を包丁の腹で軽くつぶし、繊維に沿って薄切りにする。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（湯が沸く間に）イタリアンパセリをみじん切りにする。","title":"材料を準備する","actionItems":[],"parallelItems":["（湯が沸く間に）イタリアンパセリをみじん切りにする。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"沸騰した湯に塩20g（水2Lに対して10g/L）を加え、スパゲッティ320gを袋の表示時間より2分短く茹で始める。\n・茹で汁をお玉1杯分（約80ml）取り置く","title":"茹でる","actionItems":["沸騰した湯に塩20g（水2Lに対して10g/L）を加え、スパゲッティ320gを袋の表示時間より2分短く茹で始める。","茹で汁をお玉1杯分（約80ml）取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"フライパンにEVOO大さじ6（約90ml）と薄切りにんにくを入れ、冷たい状態から弱火にかける。にんにくが薄いきつね色になるまで4〜5分かけてゆっくり加熱する。焦げると苦みが出るため、端が色づき始めたらすぐ火から外す。","title":"材料を準備する","actionItems":["フライパンにEVOO大さじ6（約90ml）と薄切りにんにくを入れ、冷たい状態から弱火にかける。"],"parallelItems":[],"completionCriteria":["にんにくが薄いきつね色になるまで4〜5分かけてゆっくり加熱する。"],"cautionItems":["焦げると苦みが出るため、端が色づき始めたらすぐ火から外す。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"にんにくをフライパンから取り出す。火を止め、フライパンを15秒ほど冷ます。乾燥唐辛子2本をちぎって加え、取り置いた茹で汁80mlを注いでオイルと混ぜ合わせる。フライパンを揺すると白く濁ってくれば乳化成功。","title":"仕上げにまとめる","actionItems":["にんにくをフライパンから取り出す。","乾燥唐辛子2本をちぎって加え、取り置いた茹で汁80mlを注いでオイルと混ぜ合わせる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止め、フライパンを15秒ほど冷ます。","フライパンを揺すると白く濁ってくれば乳化成功。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"スパゲッティをアルデンテで引き上げてフライパンに移す。\n・中火にかけ、トングで大きく混ぜながら1〜2分炒め合わせる\n・茹で汁を大さじ1ずつ足しながらオイルを完全に乳化させる。ソースがパスタに絡んでクリーミーな状態が目標（オイルと水が分離していない状態）","title":"仕上げにまとめる","actionItems":["スパゲッティをアルデンテで引き上げてフライパンに移す。","中火にかけ、トングで大きく混ぜながら1〜2分炒め合わせる"],"parallelItems":[],"completionCriteria":[],"cautionItems":["茹で汁を大さじ1ずつ足しながらオイルを完全に乳化させる。ソースがパスタに絡んでクリーミーな状態が目標（オイルと水が分離していない状態）"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"火を止めてイタリアンパセリを加え、炒めたにんにくを戻して全体を混ぜる。パセリの香りが立ち、油が麺に薄く艶を作ったら完成。\n・皿に盛り、良質なEVOOをひとたらしして仕上げる","title":"香味を炒める","actionItems":["パセリの香りが立ち、油が麺に薄く艶を作ったら完成。"],"parallelItems":[],"completionCriteria":["皿に盛り、良質なEVOOをひとたらしして仕上げる"],"cautionItems":["火を止めてイタリアンパセリを加え、炒めたにんにくを戻して全体を混ぜる。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

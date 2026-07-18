@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間13分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ミラノ・フィレンツェ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,19 +94,26 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">牛肩肉またはスネ肉（一口大）</span><span class="ingredient-qty">700g</span><span class="ingredient-notes">3〜4cm角に切る</span></li>
-          <li><span class="ingredient-name">じゃがいも（メークインまたは北あかり）</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">大きめの一口大に切る。煮崩れにくい種類を選ぶ</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">手で潰す</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">1cm幅の輪切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">牛または鶏のブロード（スープ）</span><span class="ingredient-qty">300ml</span><span class="ingredient-notes">市販のコンソメスープで代用可</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">2枝</span></li>
-          <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">肉にまぶして旨みと絡みを出す</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
+              <li data-ingredient-row="c24f1720-bed3-4c1e-8513-cc0efb06d405"><span class="ingredient-name" data-ingredient-name>牛肩肉またはスネ肉（一口大）</span><span class="ingredient-qty" data-ingredient-qty>700g</span><span class="ingredient-notes">3〜4cm角に切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="c24f1720-bed3-4c1e-8513-cc0efb06d405"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="663d1443-0e9d-4911-97f5-75c5ac227515"><span class="ingredient-name" data-ingredient-name>じゃがいも（メークインまたは北あかり）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">大きめの一口大に切る。煮崩れにくい種類を選ぶ</span></li>
+          <li data-ingredient-row="7e9af1a8-1d7b-4a4e-ae8d-074692eabe0b"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">手で潰す</span></li>
+          <li data-ingredient-row="9c65518b-d841-4a6e-9995-3206560119ea"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="1f984dbf-9468-4236-b5cf-0999c60ff7ea"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">1cm幅の輪切り</span></li>
+          <li data-ingredient-row="62efe2ed-6a9a-40a3-84d7-32aa2f00dcc8"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="46c83264-8997-4834-a82d-6a5f0fced77b"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="7e9ba5b4-5f8f-498f-9f5c-1419e3c838e0"><span class="ingredient-name" data-ingredient-name>牛または鶏のブロード（スープ）</span><span class="ingredient-qty" data-ingredient-qty>300ml</span><span class="ingredient-notes">市販のコンソメスープで代用可</span></li>
+          <li data-ingredient-row="4f13a9ea-4789-4f50-ad9d-b4bfa2419dd9"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>2枝</span></li>
+          <li data-ingredient-row="0f8512a5-0746-4369-bb73-43a479c10f71"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">肉にまぶして旨みと絡みを出す</span></li>
+          <li data-ingredient-row="274ac6ad-1b66-4ff3-a000-9ef9d84b2e7c"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
               </ul>
             </section>
           </div>
@@ -305,6 +325,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"9ca79a0c-5bd3-4d36-bdb8-e309d15a2695","nameJa":"牛肉とじゃがいものスペッツァティーノ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"c24f1720-bed3-4c1e-8513-cc0efb06d405","nameOriginal":"Manzo (spalla o collo)","nameJa":"牛肩肉またはスネ肉（一口大）","nameEn":"Beef chuck or shin, cubed","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3〜4cm角に切る","substitutionOptions":[{"id":"7d6235eb-57a2-4d76-acec-b11ebe514667","standardIngredientId":"c24f1720-bed3-4c1e-8513-cc0efb06d405","nameJa":"牛カレー用角切り肉","nameEn":"Pre-cut beef stew meat","authenticityImpact":0,"flavorImpact":"同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"663d1443-0e9d-4911-97f5-75c5ac227515","nameOriginal":"Patate","nameJa":"じゃがいも（メークインまたは北あかり）","nameEn":"Waxy potatoes","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"大きめの一口大に切る。煮崩れにくい種類を選ぶ","substitutionOptions":[]},{"id":"7e9af1a8-1d7b-4a4e-ae8d-074692eabe0b","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手で潰す","substitutionOptions":[]},{"id":"9c65518b-d841-4a6e-9995-3206560119ea","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"1f984dbf-9468-4236-b5cf-0999c60ff7ea","nameOriginal":"Carote","nameJa":"にんじん","nameEn":"Carrot","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"1cm幅の輪切り","substitutionOptions":[]},{"id":"62efe2ed-6a9a-40a3-84d7-32aa2f00dcc8","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"46c83264-8997-4834-a82d-6a5f0fced77b","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":150,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7e9ba5b4-5f8f-498f-9f5c-1419e3c838e0","nameOriginal":"Brodo di carne","nameJa":"牛または鶏のブロード（スープ）","nameEn":"Beef or chicken broth","quantity":300,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"市販のコンソメスープで代用可","substitutionOptions":[]},{"id":"4f13a9ea-4789-4f50-ad9d-b4bfa2419dd9","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0f8512a5-0746-4369-bb73-43a479c10f71","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Flour","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"肉にまぶして旨みと絡みを出す","substitutionOptions":[]},{"id":"274ac6ad-1b66-4ff3-a000-9ef9d84b2e7c","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・牛肩肉を3〜4cm角に切る\n・じゃがいもを大きめの一口大に切る\n・玉ねぎをみじん切りに、にんじんを1cm幅の輪切りに、セロリを薄切りにする","title":"食材を切る","actionItems":["牛肩肉700gを3〜4cm角に切る。","じゃがいも500gを大きめの一口大に切る。","玉ねぎをみじん切りに、にんじんを1cm幅の輪切りに、セロリを薄切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"牛肉に塩・こしょうをして薄力粉を全体にまぶし、余分な粉を払う。","title":"肉に粉をまぶす","actionItems":["牛肉に塩・こしょうをする。","薄力粉30gを全体にまぶし、余分な粉を払う。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"厚手の鍋でオリーブオイルを強火に熱し、牛肉を数回に分けて全面に濃い焼き色をつけて取り出す。一度に入れると温度が下がるので注意。","title":"肉を焼き付ける","actionItems":["厚手の鍋でオリーブオイル40mlを強火に熱する。","牛肉を数回に分けて全面に濃い焼き色をつけて取り出す。"],"parallelItems":[],"completionCriteria":["全面に濃いきつね色がついたら取り出す。"],"cautionItems":["一度に入れると温度が下がるので、数回に分けて焼くこと。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"同じ鍋でソフリット（玉ねぎ・にんじん・セロリ）を中火で10分炒める。白ワインを注いで鍋底の焦げを溶かしながら3分煮詰める。","title":"ソフリットを炒める","actionItems":["同じ鍋でソフリット（玉ねぎ・にんじん・セロリ）を中火で10分炒める。","白ワイン150mlを注いで鍋底の焦げを溶かしながら3分煮詰める。"],"parallelItems":[],"completionCriteria":["ワインが半量になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"牛肉を戻し、ホールトマト（手で潰す）・ブロード・ローズマリーを加える。蓋をして弱火で2時間煮込む。","title":"牛肉とじゃがいもを煮込む","actionItems":["牛肉を戻す。","ホールトマト400g（手で潰す）・ブロード300ml・ローズマリーを加える。","蓋をして弱火で2時間煮込む。"],"parallelItems":[],"completionCriteria":["肉がフォークで崩れるくらい柔らかくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"じゃがいもを加えてさらに30分煮込む。じゃがいもに火が通り、ソースがとろりとしたら完成。塩で調整する。","title":"じゃがいもを加えて仕上げる","actionItems":["じゃがいも500gを加えてさらに30分煮込む。","塩で味を調整する。"],"parallelItems":[],"completionCriteria":["じゃがいもに火が通り、ソースがとろりとしたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":32,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ミラノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">白キャベツ（またはサヴォイキャベツ）</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">芯を除き粗く切る</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">つぶす</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="176b1b91-f9a4-408f-9a24-fcd1fbd33205"><span class="ingredient-name" data-ingredient-name>白キャベツ（またはサヴォイキャベツ）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">芯を除き粗く切る</span></li>
+          <li data-ingredient-row="0a6dcea7-8f35-4648-8ed4-880d9b1a54c7"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">つぶす</span></li>
+          <li data-ingredient-row="a5e3d0e3-569a-45e5-9ab9-e86478956dcf"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="c8f98129-d4c3-4dd0-916c-89bb390f8417"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="6516a413-321e-4ae1-900c-6a8c9c291fae"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
+          <li data-ingredient-row="259badf6-247f-4b2f-87b5-8c4f3c7a36ff"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -233,6 +253,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7ec2623d-03f2-4108-a4fe-e56f2fa45b3c","nameJa":"サヴォイキャベツの白ワイン蒸し煮","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"176b1b91-f9a4-408f-9a24-fcd1fbd33205","nameOriginal":"Verza","nameJa":"白キャベツ（またはサヴォイキャベツ）","nameEn":"Savoy or white cabbage","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"芯を除き粗く切る","substitutionOptions":[]},{"id":"0a6dcea7-8f35-4648-8ed4-880d9b1a54c7","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"つぶす","substitutionOptions":[]},{"id":"a5e3d0e3-569a-45e5-9ab9-e86478956dcf","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c8f98129-d4c3-4dd0-916c-89bb390f8417","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6516a413-321e-4ae1-900c-6a8c9c291fae","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"259badf6-247f-4b2f-87b5-8c4f3c7a36ff","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"白キャベツの芯を除き、粗く切る（5cm角程度）。","title":"材料を準備する","actionItems":["白キャベツの芯を除き、粗く切る（5cm角程度）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"大きな鍋にバターを溶かし、にんにくを中火で1〜2分炒めて香りを出す。","title":"香味を炒める","actionItems":["大きな鍋にバターを溶かし、にんにくを中火で1〜2分炒めて香りを出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"白キャベツを加えて中火で5分炒め、全体にバターをなじませる。","title":"香味を炒める","actionItems":["白キャベツを加えて中火で5分炒め、全体にバターをなじませる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"白ワイン・塩・黒胡椒を加えて蓋をし、弱火で20〜25分蒸し煮にする。途中で一度混ぜる。","title":"蒸す","actionItems":["白ワイン・塩・黒胡椒を加えて蓋をし、弱火で20〜25分蒸し煮にする。","途中で一度混ぜる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"白キャベツが柔らかくなり飴色に変わったら完成。煮汁が残れば中火で飛ばす。","title":"仕上げる","actionItems":["煮汁が残れば中火で飛ばす。"],"parallelItems":[],"completionCriteria":["白キャベツが柔らかくなり飴色に変わったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

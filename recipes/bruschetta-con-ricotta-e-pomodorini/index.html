@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>5分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">田舎パン（2cm厚切り）</span><span class="ingredient-qty">4枚</span><span class="ingredient-notes">2cm厚にスライス</span></li>
-          <li><span class="ingredient-name">リコッタ（フレッシュ）</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">チェリートマト</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">半分に切る</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">パンを擦る用</span></li>
-          <li><span class="ingredient-name">蜂蜜</span><span class="ingredient-qty">10ml</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">6枚</span></li>
-          <li><span class="ingredient-name">オリーブオイル（EVO）</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="2937f520-cfd2-46f4-bec7-2304e562050d"><span class="ingredient-name" data-ingredient-name>田舎パン（2cm厚切り）</span><span class="ingredient-qty" data-ingredient-qty>4枚</span><span class="ingredient-notes">2cm厚にスライス</span><button type="button" class="substitution-trigger" data-substitution-trigger="2937f520-cfd2-46f4-bec7-2304e562050d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="89151880-3d84-4209-8ae8-4ee05307ac4a"><span class="ingredient-name" data-ingredient-name>リコッタ（フレッシュ）</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="c2433e21-7504-4173-aa8c-4cfca0b796a6"><span class="ingredient-name" data-ingredient-name>チェリートマト</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">半分に切る</span></li>
+          <li data-ingredient-row="98ded06e-85c4-4b9c-ad40-1c61d3c142ac"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">パンを擦る用</span></li>
+          <li data-ingredient-row="d4818056-451c-46c1-afab-1fa938e73782"><span class="ingredient-name" data-ingredient-name>蜂蜜</span><span class="ingredient-qty" data-ingredient-qty>10ml</span></li>
+          <li data-ingredient-row="a5f0b788-74c2-41c7-90e6-42d636aad0f4"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>6枚</span></li>
+          <li data-ingredient-row="09ae4fca-8522-409c-afa3-464f76ed692e"><span class="ingredient-name" data-ingredient-name>オリーブオイル（EVO）</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="4e3ca9a8-da22-4aa7-826a-b0c8fee66c0d"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -239,6 +259,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"aa894668-0de4-4bde-90b0-73424e9ffde1","nameJa":"リコッタとミニトマトのブルスケッタ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"2937f520-cfd2-46f4-bec7-2304e562050d","nameOriginal":"Pane casereccio","nameJa":"田舎パン（2cm厚切り）","nameEn":"Rustic country bread","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"2cm厚にスライス","substitutionOptions":[{"id":"586f3886-d429-4781-98cf-fedd84934b1b","standardIngredientId":"2937f520-cfd2-46f4-bec7-2304e562050d","nameJa":"バゲット（厚切り）","nameEn":"Baguette slices","authenticityImpact":-5,"flavorImpact":"食感が若干異なるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"89151880-3d84-4209-8ae8-4ee05307ac4a","nameOriginal":"Ricotta fresca","nameJa":"リコッタ（フレッシュ）","nameEn":"Fresh ricotta","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c2433e21-7504-4173-aa8c-4cfca0b796a6","nameOriginal":"Pomodorini","nameJa":"チェリートマト","nameEn":"Cherry tomatoes","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"半分に切る","substitutionOptions":[]},{"id":"98ded06e-85c4-4b9c-ad40-1c61d3c142ac","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"パンを擦る用","substitutionOptions":[]},{"id":"d4818056-451c-46c1-afab-1fa938e73782","nameOriginal":"Miele","nameJa":"蜂蜜","nameEn":"Honey","quantity":10,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a5f0b788-74c2-41c7-90e6-42d636aad0f4","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":6,"unit":"枚","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"09ae4fca-8522-409c-afa3-464f76ed692e","nameOriginal":"Olio d'oliva EVO","nameJa":"オリーブオイル（EVO）","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4e3ca9a8-da22-4aa7-826a-b0c8fee66c0d","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"チェリートマトを半分に切り、ボウルで塩ひとつまみ・オリーブオイル小さじ1と和えて10分置く。","title":"材料を準備する","actionItems":["チェリートマトを半分に切り、ボウルで塩ひとつまみ・オリーブオイル小さじ1と和えて10分置く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"パンをグリルパンまたはトースターで両面こんがりと焼く。表面が乾いて薄い焼き色がついたら次へ。","title":"焼き上げる","actionItems":["パンをグリルパンまたはトースターで両面こんがりと焼く。","表面が乾いて薄い焼き色がついたら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"焼き上がったパンの表面をにんにくの断面で擦る。表面に軽く香りが移ったら止める。","title":"材料を合わせる","actionItems":["焼き上がったパンの表面をにんにくの断面で擦る。"],"parallelItems":[],"completionCriteria":["表面に軽く香りが移ったら止める。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"パンにリコッタをたっぷりと塗る。","title":"形を整える","actionItems":["パンにリコッタをたっぷりと塗る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"チェリートマトを乗せ、蜂蜜を細く垂らし、バジルを手でちぎって散らす。ブルスケッタ全体にオリーブオイルを回しかけてすぐに供する。","title":"仕上げる","actionItems":["チェリートマトを乗せ、蜂蜜を細く垂らし、バジルを手でちぎって散らす。","ブルスケッタ全体にオリーブオイルを回しかけてすぐに供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

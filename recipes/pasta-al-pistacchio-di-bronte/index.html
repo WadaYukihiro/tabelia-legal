@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ブロンテ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">リガトーニまたはメッツェ・マニケ</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">ピスタチオ（無塩・無焙煎）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">皮をむいてペースト状にする（または市販のピスタチオペースト）</span></li>
-          <li><span class="ingredient-name">生クリーム（35%）</span><span class="ingredient-qty">200ml</span></li>
-          <li><span class="ingredient-name">エシャロット</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">15g</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">50g</span><span class="ingredient-notes">すりおろす</span></li>
-          <li><span class="ingredient-name">ピスタチオ（粗く刻む）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">仕上げ用</span></li>
+              <li data-ingredient-row="aee0a8d9-4e41-44ef-8fb5-ace355e92a2c"><span class="ingredient-name" data-ingredient-name>リガトーニまたはメッツェ・マニケ</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="c047dd36-ba7a-4d03-b0ba-b2866f40830a"><span class="ingredient-name" data-ingredient-name>ピスタチオ（無塩・無焙煎）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">皮をむいてペースト状にする（または市販のピスタチオペースト）</span><button type="button" class="substitution-trigger" data-substitution-trigger="c047dd36-ba7a-4d03-b0ba-b2866f40830a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="95062bea-841d-4b10-b83d-f28c8703ab31"><span class="ingredient-name" data-ingredient-name>生クリーム（35%）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
+          <li data-ingredient-row="2d1251ad-635f-4f9b-b648-2fb428401f6a"><span class="ingredient-name" data-ingredient-name>エシャロット</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="5e0e1d9d-8369-4ccd-a7ec-671d6d7864c6"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>15g</span></li>
+          <li data-ingredient-row="78e87015-feee-4593-acc2-eb2c136e3c45"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>50g</span><span class="ingredient-notes">すりおろす</span></li>
+          <li data-ingredient-row="42764c3a-d764-4042-a9b6-12b37a1c1efd"><span class="ingredient-name" data-ingredient-name>ピスタチオ（粗く刻む）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">仕上げ用</span></li>
               </ul>
             </section>
           </div>
@@ -302,6 +322,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"771530d2-cabb-4cd1-9111-9dbaf1f03c80","nameJa":"ブロンテ産ピスタチオのパスタ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"aee0a8d9-4e41-44ef-8fb5-ace355e92a2c","nameOriginal":"Rigatoni o Mezze Maniche","nameJa":"リガトーニまたはメッツェ・マニケ","nameEn":"Rigatoni or mezze maniche","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c047dd36-ba7a-4d03-b0ba-b2866f40830a","nameOriginal":"Pistacchio","nameJa":"ピスタチオ（無塩・無焙煎）","nameEn":"Pistachios (raw, unsalted)","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮をむいてペースト状にする（または市販のピスタチオペースト）","substitutionOptions":[{"id":"97727db6-bfbe-4de8-a95b-9286b6271d77","standardIngredientId":"c047dd36-ba7a-4d03-b0ba-b2866f40830a","nameJa":"一般的なピスタチオ（無塩）","nameEn":"Regular pistachios (unsalted)","authenticityImpact":-20,"flavorImpact":"ブロンテ産特有の甘みと濃い緑色・強い風味が失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"95062bea-841d-4b10-b83d-f28c8703ab31","nameOriginal":"Panna fresca","nameJa":"生クリーム（35%）","nameEn":"Heavy cream (35%)","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2d1251ad-635f-4f9b-b648-2fb428401f6a","nameOriginal":"Scalogno","nameJa":"エシャロット","nameEn":"Shallot","quantity":2,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"5e0e1d9d-8369-4ccd-a7ec-671d6d7864c6","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":15,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"78e87015-feee-4593-acc2-eb2c136e3c45","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":50,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす","substitutionOptions":[]},{"id":"42764c3a-d764-4042-a9b6-12b37a1c1efd","nameOriginal":"Pistacchi tritati","nameJa":"ピスタチオ（粗く刻む）","nameEn":"Chopped pistachios","quantity":30,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"仕上げ用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・ピスタチオ100gを熱湯に1分漬けて薄皮をむき、フードプロセッサーでなめらかなペースト状にする（市販ペーストを使う場合はこの工程不要）\n・エシャロットをみじん切りにする\n・仕上げ用ピスタチオ30gを粗く刻んでおく","title":"食材を下処理する","actionItems":["ピスタチオ100gを熱湯に1分漬けて薄皮をむく。","フードプロセッサーでなめらかなペースト状にする。","エシャロットをみじん切りにする。","仕上げ用ピスタチオ30gを粗く刻む。"],"parallelItems":[],"completionCriteria":["ピスタチオペーストができ、エシャロットがみじん切りになった。"],"cautionItems":["薄皮が残ると食感が悪くなる。しっかりむくこと。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにバター15gを入れ中火で溶かし、エシャロット（みじん切り）を加えて3分炒める。エシャロットが透明になりしんなりしたら次へ。","title":"エシャロットを炒める","actionItems":["フライパンにバター15gを中火で溶かす。","エシャロット（みじん切り）を加えて3分炒める。"],"parallelItems":[],"completionCriteria":["エシャロットが透明になりしんなりした。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（ソースを作る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。\n・ピスタチオペーストを加えて1分ほど混ぜ合わせる\n・生クリーム200mlを加えて弱火で3分煮詰める。ソースに軽くトロみがついたら次へ","title":"ソースを作る","actionItems":["ピスタチオペーストを加えて1分ほど混ぜ合わせる。","生クリーム200mlを加えて弱火で3分煮詰める。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["ソースに軽くとろみがついた。"],"cautionItems":["弱火で煮詰めること。強火だとクリームが飛ぶ。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"リガトーニを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋の表示より1分早く引き上げる）。\n・茹で汁を100ml取り置く\n・茹で汁50mlをソースに加えて中火で乳化させる\n・パスタを加えて1〜2分炒め合わせる。ソースがパスタ全体にツヤよく絡んだら次へ","title":"パスタを茹でてソースと和える","actionItems":["リガトーニを塩湯に入れアルデンテに茹でる（表示より1分早く引き上げる）。","茹で汁100mlを取り置く。","茹で汁50mlをソースに加えて中火で乳化させる。","パスタを加えて1〜2分炒め合わせる。"],"parallelItems":[],"completionCriteria":["ソースがパスタ全体にツヤよく絡んだ。"],"cautionItems":["茹で汁を忘れずに確保すること。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"皿に盛り、パルミジャーノをすりおろして散らし、粗く刻んだピスタチオ30gをのせる。","title":"チーズとピスタチオをのせて盛り付ける","actionItems":["皿に盛る。","パルミジャーノをすりおろして散らす。","粗く刻んだピスタチオ30gをのせる。"],"parallelItems":[],"completionCriteria":["チーズとピスタチオをのせて鮮やかな緑色の一皿が完成した。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

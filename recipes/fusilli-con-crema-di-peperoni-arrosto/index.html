@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>35分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・バジリカータ・カンパーニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">フジッリ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">赤パプリカ（大）</span><span class="ingredient-qty">3個（約600g）</span><span class="ingredient-notes">直火またはオーブンで焦がして皮をむく</span></li>
-          <li><span class="ingredient-name">プロシュート・クルード（生ハム）</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">細切り。仕上げに使う</span></li>
-          <li><span class="ingredient-name">ニンニク</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">50ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">ソース調味用・パスタ茹で水用</span></li>
-          <li><span class="ingredient-name">黒胡椒（挽きたて）</span><span class="ingredient-qty">1少量</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">1束</span></li>
+              <li data-ingredient-row="12cb00d9-9326-4349-a339-ba0ffab8d386"><span class="ingredient-name" data-ingredient-name>フジッリ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="8c28fac9-63c0-4ea0-8671-fecb100398bb"><span class="ingredient-name" data-ingredient-name>赤パプリカ（大）</span><span class="ingredient-qty" data-ingredient-qty>3個（約600g）</span><span class="ingredient-notes">直火またはオーブンで焦がして皮をむく</span><button type="button" class="substitution-trigger" data-substitution-trigger="8c28fac9-63c0-4ea0-8671-fecb100398bb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="0a911a91-0eb3-424e-8965-bc8f0f371d72"><span class="ingredient-name" data-ingredient-name>プロシュート・クルード（生ハム）</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">細切り。仕上げに使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="0a911a91-0eb3-424e-8965-bc8f0f371d72"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3d8a92fa-b184-4966-8c0c-5cee4a3b0832"><span class="ingredient-name" data-ingredient-name>ニンニク</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="54461247-29fe-45de-976a-8f47e41662bf"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
+          <li data-ingredient-row="37285c4f-6f9d-4481-9dad-61b36594fc65"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">ソース調味用・パスタ茹で水用</span></li>
+          <li data-ingredient-row="71ce1db3-abe1-4f5b-9858-884079c1fcbe"><span class="ingredient-name" data-ingredient-name>黒胡椒（挽きたて）</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
+          <li data-ingredient-row="afa64f4f-8156-4dbc-b900-0901b4875058"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span><button type="button" class="substitution-trigger" data-substitution-trigger="afa64f4f-8156-4dbc-b900-0901b4875058"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c58c28c9-2f2d-4ed5-9fe0-6b56112e0d2d"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>50g</span><button type="button" class="substitution-trigger" data-substitution-trigger="c58c28c9-2f2d-4ed5-9fe0-6b56112e0d2d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="20df57a7-4080-4944-8292-c87094bf3c4a"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>1束</span></li>
               </ul>
             </section>
           </div>
@@ -337,6 +357,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1ff19e14-e7d1-4b30-b6bc-59e941175235","nameJa":"焼きパプリカクリームのフジッリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"12cb00d9-9326-4349-a339-ba0ffab8d386","nameOriginal":"Fusilli","nameJa":"フジッリ","nameEn":"Fusilli","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8c28fac9-63c0-4ea0-8671-fecb100398bb","nameOriginal":"Peperoni rossi","nameJa":"赤パプリカ（大）","nameEn":"Large red bell peppers","quantity":3,"unit":"個（約600g）","role":"essential","scalingBehavior":null,"notes":"直火またはオーブンで焦がして皮をむく","substitutionOptions":[{"id":"d276ea17-14b0-4f03-94cf-a8351683a0bd","standardIngredientId":"8c28fac9-63c0-4ea0-8671-fecb100398bb","nameJa":"黄パプリカ（大）3個","nameEn":"Large yellow bell peppers","authenticityImpact":0,"flavorImpact":"甘みは同等。仕上がりの色が黄色になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"0a911a91-0eb3-424e-8965-bc8f0f371d72","nameOriginal":"Prosciutto crudo","nameJa":"プロシュート・クルード（生ハム）","nameEn":"Prosciutto crudo","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細切り。仕上げに使う","substitutionOptions":[{"id":"665e7863-2bb7-40ad-ab2b-ddee68faa383","standardIngredientId":"0a911a91-0eb3-424e-8965-bc8f0f371d72","nameJa":"スペック","nameEn":"Speck","authenticityImpact":-5,"flavorImpact":"燻製の香りが加わりより複雑に","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3d8a92fa-b184-4966-8c0c-5cee4a3b0832","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"54461247-29fe-45de-976a-8f47e41662bf","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"37285c4f-6f9d-4481-9dad-61b36594fc65","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ソース調味用・パスタ茹で水用","substitutionOptions":[]},{"id":"71ce1db3-abe1-4f5b-9858-884079c1fcbe","nameOriginal":"Pepe nero","nameJa":"黒胡椒（挽きたて）","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"afa64f4f-8156-4dbc-b900-0901b4875058","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":100,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"0a1b7950-60e9-4b67-9eba-196c08e67b7b","standardIngredientId":"afa64f4f-8156-4dbc-b900-0901b4875058","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-10,"flavorImpact":"乳化感が落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c58c28c9-2f2d-4ed5-9fe0-6b56112e0d2d","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano, grated","quantity":50,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"7e66f027-0867-4039-abf0-b74e8751f514","standardIngredientId":"c58c28c9-2f2d-4ed5-9fe0-6b56112e0d2d","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"やや軽めの風味だが代用として十分","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"20df57a7-4080-4944-8292-c87094bf3c4a","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"赤パプリカをガスコンロの直火で網にのせ、全面が真っ黒に焦げるまで10〜15分焼く。ガスがない場合は200℃のオーブンで30〜40分焼く。","title":"パプリカを焼く","actionItems":["赤パプリカをガスコンロの直火で網にのせ、全面が真っ黒に焦げるまで10〜15分焼く。"],"parallelItems":[],"completionCriteria":["全面が真っ黒に焦げたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"焼きたてのパプリカを熱いうちにビニール袋に入れて口を閉じ、10分蒸らす。","title":"パプリカを蒸らす","actionItems":["焼きたてのパプリカを熱いうちにビニール袋に入れて口を閉じ、10分蒸らす。"],"parallelItems":[],"completionCriteria":["10分蒸らしたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"・蒸らし終えたパプリカの焦げた皮を水を使わずに手でむく（水で洗うと旨みが流れる）。薄皮が抵抗なくはがれれば次へ\n・種とヘタを除き、ざく切りにする","title":"皮をむく","actionItems":["焦げた皮を水を使わずに手でむく（水で洗うと旨みが流れる）。","種とヘタを除き、ざく切りにする。"],"parallelItems":[],"completionCriteria":["皮がむけてざく切りにしたら完了。"],"cautionItems":["水で洗うと旨みが流れる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ニンニクを薄切りにする。フライパンにEVOO大さじ3とニンニク（薄切り）を弱火で熱する。ニンニクが薄く色づいて香りが立ったら（約2分）、焼きパプリカを加えて2〜3分炒める。","title":"ニンニクとパプリカを炒める","actionItems":["ニンニクを薄切りにする。","フライパンにEVOO大さじ3とニンニク（薄切り）を弱火で熱し、薄く色づくまで約2分炒める。","焼きパプリカを加えて2〜3分炒める。"],"parallelItems":[],"completionCriteria":["2〜3分炒めたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ブレンダーにかけて滑らかなクリームにする。","title":"クリームにする","actionItems":["ブレンダーにかけて滑らかなクリームにする。"],"parallelItems":[],"completionCriteria":["滑らかなクリームになったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"（煮る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。鍋に戻して生クリーム100mlを加え、弱火で3〜4分煮る。塩小さじ1/4・黒胡椒3〜4回挽きで調味する。","title":"ソースを煮詰める","actionItems":["クリームを鍋に戻して生クリーム100mlを加え、弱火で3〜4分煮る。","塩小さじ1/4・黒胡椒3〜4回挽きで調味する。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["3〜4分煮て調味が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"別のフライパンにEVOO大さじ1を熱し、プロシュートを中火で1〜2分、軽くカリッとするまで炒める。","title":"生ハムを炒める","actionItems":["別のフライパンにEVOO大さじ1を熱し、プロシュートを中火で1〜2分炒める。"],"parallelItems":[],"completionCriteria":["軽くカリッとしたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"フジッリを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["フジッリを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":9,"instruction":"フジッリをアルデンテで引き上げてペッパークリームに移して絡める。皿に盛り、プロシュート・バジル・パルミジャーノを散らして仕上げる。","title":"クリームに絡めて具材を散らす","actionItems":["フジッリをアルデンテで引き上げてペッパークリームに移して絡める。","皿に盛り、プロシュート・バジル・パルミジャーノを散らして仕上げる。"],"parallelItems":[],"completionCriteria":["トッピングをのせたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

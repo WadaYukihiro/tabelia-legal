@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         </div>
 
         <p class="recipe-description">イタリア全土のトラットリアで出てくる定番の混合サラダ。ルッコラの苦みとトマトの酸味、シンプルなビネグレットで構成する。</p>
@@ -68,6 +68,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -79,14 +92,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ルッコラ</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">ミニトマト</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">レタス</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">エクストラヴァージンオリーブオイル</span><span class="ingredient-qty">大さじ2</span></li>
-          <li><span class="ingredient-name">赤玉ねぎ</span><span class="ingredient-qty">1個</span></li>
-          <li><span class="ingredient-name">赤ワインビネガー</span><span class="ingredient-qty">大さじ1</span></li>
+              <li data-ingredient-row="0aa6535a-b6da-42b3-91f2-322a82c2b4dc"><span class="ingredient-name" data-ingredient-name>ルッコラ</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="27a0436c-8071-4cbf-b08b-dd02faea23ba"><span class="ingredient-name" data-ingredient-name>ミニトマト</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="29e390c7-6c6a-4a29-8455-8261ec8984bc"><span class="ingredient-name" data-ingredient-name>レタス</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="48cd7fcb-6947-4862-8b1b-94639f0d7fa9"><span class="ingredient-name" data-ingredient-name>エクストラヴァージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span></li>
+          <li data-ingredient-row="9c779b08-0e0f-4135-be2c-0fc569574f81"><span class="ingredient-name" data-ingredient-name>赤玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span></li>
+          <li data-ingredient-row="b4ea55ba-5c4d-4356-8c7a-4eb14fec6ea8"><span class="ingredient-name" data-ingredient-name>赤ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>大さじ1</span></li>
               </ul>
             </section>
           </div>
@@ -153,6 +173,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"af0d52bc-8380-482f-a60c-bd6199da6d63","nameJa":"季節の野菜サラダ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"0aa6535a-b6da-42b3-91f2-322a82c2b4dc","nameOriginal":"Rucola","nameJa":"ルッコラ","nameEn":"Arugula","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"27a0436c-8071-4cbf-b08b-dd02faea23ba","nameOriginal":"Pomodorini","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"29e390c7-6c6a-4a29-8455-8261ec8984bc","nameOriginal":"Lattuga","nameJa":"レタス","nameEn":"Lettuce","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"48cd7fcb-6947-4862-8b1b-94639f0d7fa9","nameOriginal":"Olio d'oliva extra vergine","nameJa":"エクストラヴァージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":2,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9c779b08-0e0f-4135-be2c-0fc569574f81","nameOriginal":"Cipolla rossa","nameJa":"赤玉ねぎ","nameEn":"Red onion","quantity":0.25,"unit":"個","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b4ea55ba-5c4d-4356-8c7a-4eb14fec6ea8","nameOriginal":"Aceto di vino rosso","nameJa":"赤ワインビネガー","nameEn":"Red wine vinegar","quantity":1,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ルッコラとレタスは水洗いし、スピナーやペーパータオルでしっかり水気を切る。食べやすいサイズにちぎる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ミニトマトは半分に切る。赤玉ねぎは薄いスライスにして水に5分さらし、辛みを抜く。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"食べる直前にボウルに野菜を合わせ、塩少々を振る。オリーブオイルと赤ワインビネガーをかけて全体をざっくり和える。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

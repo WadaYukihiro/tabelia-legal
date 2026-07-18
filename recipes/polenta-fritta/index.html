@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ヴェネツィア</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-06-04">2026.06.04</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,15 +94,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ポレンタ用とうもろこし粉</span><span class="ingredient-qty">250g</span><span class="ingredient-notes">中挽き</span></li>
-          <li><span class="ingredient-name">水</span><span class="ingredient-qty">1000ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">10g</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">2枝</span><span class="ingredient-notes">葉をみじん切りにしてポレンタに混ぜ込む</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">すりおろしてポレンタに混ぜ込む</span></li>
-          <li><span class="ingredient-name">落花生油（揚げ油）</span><span class="ingredient-qty">600ml</span><span class="ingredient-notes">揚げ油。190℃まで熱して使う</span></li>
-          <li><span class="ingredient-name">粗塩（仕上げ用）</span><span class="ingredient-qty">2g</span><span class="ingredient-notes">揚げたてに振りかける</span></li>
+              <li data-ingredient-row="a2ff6d1c-9a98-4b3c-a966-4a8382994d56"><span class="ingredient-name" data-ingredient-name>ポレンタ用とうもろこし粉</span><span class="ingredient-qty" data-ingredient-qty>250g</span><span class="ingredient-notes">中挽き</span></li>
+          <li data-ingredient-row="f8316df6-1008-4e85-b587-cc9779547858"><span class="ingredient-name" data-ingredient-name>水</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span></li>
+          <li data-ingredient-row="127c45e0-014e-4b70-8d74-36e3e23b1ce9"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>10g</span></li>
+          <li data-ingredient-row="e5d9f444-e98c-4fad-b2d3-5aa7921d8d5d"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>2枝</span><span class="ingredient-notes">葉をみじん切りにしてポレンタに混ぜ込む</span></li>
+          <li data-ingredient-row="65f391dd-fd3f-43fb-bd0e-34e9adf37a0e"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">すりおろしてポレンタに混ぜ込む</span></li>
+          <li data-ingredient-row="068a8ab2-ca3f-485b-89bb-2a646e144f95"><span class="ingredient-name" data-ingredient-name>落花生油（揚げ油）</span><span class="ingredient-qty" data-ingredient-qty>600ml</span><span class="ingredient-notes">揚げ油。190℃まで熱して使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="068a8ab2-ca3f-485b-89bb-2a646e144f95"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="6ec51993-7fca-4d2f-a1e2-8565abe5a320"><span class="ingredient-name" data-ingredient-name>粗塩（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>2g</span><span class="ingredient-notes">揚げたてに振りかける</span></li>
               </ul>
             </section>
           </div>
@@ -298,6 +318,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"ed44688d-1145-48ff-a364-9ed6855c1e12","nameJa":"ポレンタ・フリッタ","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"a2ff6d1c-9a98-4b3c-a966-4a8382994d56","nameOriginal":"Farina di mais per polenta","nameJa":"ポレンタ用とうもろこし粉","nameEn":"Polenta cornmeal","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"中挽き","substitutionOptions":[]},{"id":"f8316df6-1008-4e85-b587-cc9779547858","nameOriginal":"Acqua","nameJa":"水","nameEn":"Water","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"127c45e0-014e-4b70-8d74-36e3e23b1ce9","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":10,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e5d9f444-e98c-4fad-b2d3-5aa7921d8d5d","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":"葉をみじん切りにしてポレンタに混ぜ込む","substitutionOptions":[]},{"id":"65f391dd-fd3f-43fb-bd0e-34e9adf37a0e","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろしてポレンタに混ぜ込む","substitutionOptions":[]},{"id":"068a8ab2-ca3f-485b-89bb-2a646e144f95","nameOriginal":"Olio di semi di arachide","nameJa":"落花生油（揚げ油）","nameEn":"Peanut oil (for frying)","quantity":600,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"揚げ油。190℃まで熱して使う","substitutionOptions":[{"id":"39c14f61-3b72-4323-8a6f-a2c39339b5bc","standardIngredientId":"068a8ab2-ca3f-485b-89bb-2a646e144f95","nameJa":"ひまわり油","nameEn":"Sunflower oil","authenticityImpact":0,"flavorImpact":"風味はほぼ同等。高温に強く代用として十分成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"authentic_variant","ingredientPatches":[],"stepPatches":[]}]},{"id":"6ec51993-7fca-4d2f-a1e2-8565abe5a320","nameOriginal":"Sale marino grosso","nameJa":"粗塩（仕上げ用）","nameEn":"Coarse sea salt (for finishing)","quantity":2,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"揚げたてに振りかける","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ローズマリー2枝の葉をみじん切りにする。厚手の鍋に水1000mlと塩10gを入れて強火にかける。沸騰直前に弱火にし、ポレンタ粉250gを少しずつ加えながら泡立て器で混ぜる。木べらに持ち替えて弱火で30分炊く。火を止め、ローズマリー（みじん切り）とパルミジャーノ・レッジャーノ40g（すりおろし）を加えて混ぜ込む。","title":"ポレンタを炊いてローズマリーとチーズを混ぜ込む","actionItems":["ローズマリー2枝の葉をみじん切りにする。","厚手の鍋に水1000ml・塩10gを入れて強火にかける。","沸騰直前に弱火にし、ポレンタ粉250gを少しずつ加えながら泡立て器で混ぜる。","木べらに持ち替えて弱火で30分炊く。","火を止め、ローズマリー（みじん切り）・パルミジャーノ40g（すりおろし）を加えて混ぜ込む。"],"parallelItems":[],"completionCriteria":["30分。木べらの跡がゆっくり閉じる濃度になり、ローズマリーの香りが立っていれば次へ。"],"cautionItems":["火を止め、ローズマリー（みじん切り）とパルミジャーノ・レッジャーノ40g（すりおろし）を加えて混ぜ込む。"],"tipItems":[],"durationMinutes":35,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"バット（バッコットまたはオーブン皿、20×25cm程度）に薄くオリーブオイルまたは水を塗り、炊いたポレンタを高さ約2cmに均一に流し込んで平らにする。常温で30分ほど冷ましてから冷蔵庫に入れ、最低2時間（できれば一晩）冷やして完全に固める。","title":"型に流して固める（2時間以上）","actionItems":["バット（20×25cm程度）に薄くオリーブオイルを塗る。","ポレンタを高さ2cmに均一に流し込み、平らにする。","常温で30分冷ましてから冷蔵庫で最低2時間（できれば一晩）冷やす。"],"parallelItems":[],"completionCriteria":["2時間以上の冷却後、指で押しても跡が残らないほど固まれば次へ。ナイフで端から剥がれれば十分。"],"cautionItems":["固める時間が短いと揚げるときに崩れる。必ず2時間以上冷やすこと。"],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"固まったポレンタを型から取り出し、約2×8cmのスティック状に切る。包丁ではなくスケッパー（カード）を使うと崩れにくい。切り終えたらキッチンペーパーの上に並べて表面の余分な水分を取る。","title":"ポレンタをスティック状に切る","actionItems":["ポレンタを型から取り出す。","約2×8cmのスティック状に切る。","キッチンペーパーの上に並べて表面の水分を取る。"],"parallelItems":[],"completionCriteria":["均一なスティック状に切れ、表面に余分な水分がなければ次へ。"],"cautionItems":["水分が残ったまま揚げると油はねが起きる。表面は必ず乾いた状態にすること。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"深めのフライパンまたは鍋に落花生油600mlを入れて190℃に加熱する。油温を確認したらポレンタスティックを数本ずつ入れて4〜5分揚げる。表面が黄金色になり、油の泡が細かくなってきたら引き上げる。キッチンペーパーに並べて油を切り、すぐに粗塩2gを振る。全て揚げたらすぐに供する。","title":"カリカリに揚げる","actionItems":["鍋に落花生油600mlを入れて190℃に加熱する。","ポレンタスティックを数本ずつ入れて4〜5分揚げる。","黄金色になったらキッチンペーパーに引き上げる。","揚げたてに粗塩2gを振る。"],"parallelItems":[],"completionCriteria":["4〜5分。表面が均一な黄金色になり、油の泡が細かくなって少なくなれば完成。"],"cautionItems":["一度に多く入れると油温が下がりベタつく。少量ずつ揚げること。","油温が低いと衣が吸油してべったりする。190℃を維持すること。"],"tipItems":["揚げたてが最も美味しい。仕上げから5分以内に食べること。"],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

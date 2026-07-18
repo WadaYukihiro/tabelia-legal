@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">丸鶏（1羽）</span><span class="ingredient-qty">1400g（1羽）</span><span class="ingredient-notes">背骨に沿って切り開いてスパッチコックにする。または骨付きもも肉4本で代用可</span></li>
-          <li><span class="ingredient-name">赤唐辛子（乾燥）</span><span class="ingredient-qty">3本</span><span class="ingredient-notes">みじん切りまたはフレーク。悪魔風なのでたっぷり使う</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">マリネ用に絞る＋仕上げ用</span></li>
-          <li><span class="ingredient-name">ローズマリー（生）</span><span class="ingredient-qty">3枝</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">すりおろすかみじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
-          <li><span class="ingredient-name">黒胡椒（粗挽き）</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">たっぷり使う</span></li>
+              <li data-ingredient-row="809abcf1-c8ba-4b07-b6b4-fa5aca1ccfb0"><span class="ingredient-name" data-ingredient-name>丸鶏（1羽）</span><span class="ingredient-qty" data-ingredient-qty>1400g（1羽）</span><span class="ingredient-notes">背骨に沿って切り開いてスパッチコックにする。または骨付きもも肉4本で代用可</span><button type="button" class="substitution-trigger" data-substitution-trigger="809abcf1-c8ba-4b07-b6b4-fa5aca1ccfb0"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3b83527c-2a72-415a-b634-11f8ece657e7"><span class="ingredient-name" data-ingredient-name>赤唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>3本</span><span class="ingredient-notes">みじん切りまたはフレーク。悪魔風なのでたっぷり使う</span></li>
+          <li data-ingredient-row="a539eff3-ce5c-4564-b099-11e2fc77dc42"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">マリネ用に絞る＋仕上げ用</span></li>
+          <li data-ingredient-row="2dd76325-2f36-4156-9afc-1b6ba9f8054c"><span class="ingredient-name" data-ingredient-name>ローズマリー（生）</span><span class="ingredient-qty" data-ingredient-qty>3枝</span></li>
+          <li data-ingredient-row="9a9c5603-e0d8-4727-989c-0399f659aff8"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">すりおろすかみじん切り</span></li>
+          <li data-ingredient-row="05f0c8fd-e1d2-4924-8f61-e5d62749c1b8"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
+          <li data-ingredient-row="33de51a5-ee93-4fd5-b5cb-7f7e0fe20695"><span class="ingredient-name" data-ingredient-name>黒胡椒（粗挽き）</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">たっぷり使う</span></li>
               </ul>
             </section>
           </div>
@@ -286,6 +306,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"cc269c19-d29b-4333-89ef-3c260705db12","nameJa":"鶏肉のディアボラ風グリル","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"809abcf1-c8ba-4b07-b6b4-fa5aca1ccfb0","nameOriginal":"Pollo intero","nameJa":"丸鶏（1羽）","nameEn":"Whole chicken","quantity":1400,"unit":"g（1羽）","role":"essential","scalingBehavior":null,"notes":"背骨に沿って切り開いてスパッチコックにする。または骨付きもも肉4本で代用可","substitutionOptions":[{"id":"65fc5c41-2da7-40c0-b308-65af58bb2833","standardIngredientId":"809abcf1-c8ba-4b07-b6b4-fa5aca1ccfb0","nameJa":"骨付き鶏もも肉","nameEn":"Bone-in chicken thighs","authenticityImpact":-10,"flavorImpact":"均一に仕上げやすく扱いやすい。ただし丸鶏の迫力は失われる","textureImpact":null,"procedureChanges":["スパッチコック工程不要。骨付きもも肉は余分な水気を拭き、皮面を押さえて焼く"],"affectedStepNumbers":[1,3,4,5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"本","notes":"余分な水気を拭き、皮を広げて使う","action":"update","nameEn":"Bone-in chicken thighs","nameJa":"骨付き鶏もも肉","quantity":4,"targetNameJa":"丸鶏（1羽）"}],"stepPatches":[{"title":"骨付きもも肉を整える","action":"replace","stepNumber":1,"actionItems":["骨付き鶏もも肉4本の余分な水気をキッチンペーパーで拭く。","皮が縮まないよう広げる。","余分な脂や大きな筋があれば取り除く。"],"instruction":"骨付き鶏もも肉4本は余分な水気をキッチンペーパーで拭き、皮が縮まないよう広げる。余分な脂や大きな筋があれば取り除く。","changeReason":"骨付きもも肉ではスパッチコック工程が不要なため","completionCriteria":["皮が広がり、表面の水気が取れたら次へ。"]},{"title":"皮面から押さえて焼く","action":"replace","stepNumber":3,"actionItems":["グリルパンを強火で煙が出るまで熱する。","骨付き鶏もも肉を皮側下にしてのせ、重い鍋で上から軽く押さえる。","強火で6〜7分焼く。"],"instruction":"グリルパン（または鉄のフライパン）を強火で煙が出るまで熱する。骨付き鶏もも肉を皮側下にしてのせ、重い鍋で上から軽く押さえる。強火で6〜7分焼く。","cautionItems":["煙が出るレベルまで十分に予熱すること。押さえすぎて肉汁を出しすぎない。"],"changeReason":"骨付きもも肉は丸鶏より薄いため皮面の焼き時間を短くする","completionCriteria":["皮面に濃い焼き色がつき、皮がパリッとしたら裏返す。"]},{"title":"裏返して焼く","action":"replace","stepNumber":4,"actionItems":["裏返して骨側を下にする。","弱めの中火で10〜12分焼く。"],"instruction":"裏返して骨側を下にし、弱めの中火で10〜12分焼く。皮がパリパリでこんがりし、骨の近くの内部温度が75℃になれば完成。","changeReason":"骨付きもも肉は骨の近くまで火が通ったかを確認する必要があるため","completionCriteria":["皮がパリパリでこんがりし、骨の近くの内部温度が75℃になれば完成。"]},{"title":"休ませて盛る","action":"replace","stepNumber":5,"actionItems":["5分休ませる。","レモンを添えて盛り付ける。"],"instruction":"5分休ませてから、レモンを添えて盛り付ける。","changeReason":"骨付きもも肉は切り分けずに提供できるため","completionCriteria":["肉汁が落ち着いたら完成。"]}]}]},{"id":"3b83527c-2a72-415a-b634-11f8ece657e7","nameOriginal":"Peperoncino","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":3,"unit":"本","role":"essential","scalingBehavior":null,"notes":"みじん切りまたはフレーク。悪魔風なのでたっぷり使う","substitutionOptions":[]},{"id":"a539eff3-ce5c-4564-b099-11e2fc77dc42","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"マリネ用に絞る＋仕上げ用","substitutionOptions":[]},{"id":"2dd76325-2f36-4156-9afc-1b6ba9f8054c","nameOriginal":"Rosmarino","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":3,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9a9c5603-e0d8-4727-989c-0399f659aff8","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"すりおろすかみじん切り","substitutionOptions":[]},{"id":"05f0c8fd-e1d2-4924-8f61-e5d62749c1b8","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"33de51a5-ee93-4fd5-b5cb-7f7e0fe20695","nameOriginal":"Pepe nero","nameJa":"黒胡椒（粗挽き）","nameEn":"Coarsely ground black pepper","quantity":5,"unit":"g","role":"essential","scalingBehavior":null,"notes":"たっぷり使う","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"丸鶏を背骨に沿ってキッチンバサミで切り開く（背骨を取り除く）。胸骨を手で押して平らにする（スパッチコック）。扱いにくければ骨付きもも肉を代用する。","title":"スパッチコックにする","actionItems":["丸鶏1羽を背骨に沿ってキッチンバサミで切り開く（背骨を取り除く）。","胸骨を手で押して平らにする（スパッチコック）。"],"parallelItems":[],"completionCriteria":["鶏全体が平らになれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"にんにくをすりおろし（またはみじん切り）、唐辛子をみじん切り（またはフレーク）にする。マリネ液（オリーブオイル・レモン汁・にんにく・唐辛子・ローズマリー・黒胡椒・塩）を混ぜ、鶏全体に塗り込む。30分以上（できれば一晩）冷蔵庫でマリネ。","title":"マリネする","actionItems":["にんにく3片をすりおろし（またはみじん切り）、唐辛子3本をみじん切りにする。","マリネ液（オリーブオイル50ml・レモン汁1個分・にんにく・唐辛子・ローズマリー・黒胡椒5g・塩）を混ぜ、鶏全体に塗り込む。","30分以上（できれば一晩）冷蔵庫でマリネする。"],"parallelItems":[],"completionCriteria":["マリネ時間が終わったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"グリルパン（または鉄のフライパン）を強火で煙が出るまで熱する。鶏を皮側下にしてのせ、重い鍋やアルミホイルで包んだレンガ等で上から押さえる。強火で8分。","title":"皮面から押さえて焼く","actionItems":["グリルパンを強火で煙が出るまで熱する。","鶏を皮側下にしてのせ、重い鍋等で上から押さえる。","強火で8分焼く。"],"parallelItems":[],"completionCriteria":["皮面に濃いグリル跡がついたら裏返す。"],"cautionItems":["煙が出るレベルまで十分に予熱すること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"裏返して肉面を下にし、再び重さで押さえる。弱めの中火にして15分焼く。皮がパリパリでこんがりした焦げ色になれば完成。内部温度75℃。","title":"裏返して焼く","actionItems":["裏返して肉面を下にし、再び重さで押さえる。","弱めの中火にして15分焼く。"],"parallelItems":[],"completionCriteria":["皮がパリパリでこんがりした焦げ色になり、内部温度75℃になれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"5分休ませてから切り分ける。レモンを添えて食べる。","title":"休ませて切り分ける","actionItems":["5分休ませる。","切り分けてレモンを添えて盛り付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

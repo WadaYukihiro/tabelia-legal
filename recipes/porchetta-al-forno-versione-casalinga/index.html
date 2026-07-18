@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>2時間</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>1時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・アリッチャ（ローマ県）</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,15 +94,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">豚バラ肉（皮付きかたまり）</span><span class="ingredient-qty">1500g</span><span class="ingredient-notes">平らに広げられるよう、スキンサイドを下にして開いた状態で用意する</span></li>
-          <li><span class="ingredient-name">野生フィノッキオの葉（またはフェンネルシード）</span><span class="ingredient-qty">20g（または大さじ1）</span><span class="ingredient-notes">フェンネルシードはスパイス売り場で購入可</span></li>
-          <li><span class="ingredient-name">ローズマリー（生）</span><span class="ingredient-qty">4枝</span><span class="ingredient-notes">葉を外してみじん切り</span></li>
-          <li><span class="ingredient-name">セージ（生）</span><span class="ingredient-qty">10枚</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">6片</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">赤唐辛子（乾燥）</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">種ごと細かく刻む</span></li>
-          <li><span class="ingredient-name">粗塩</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">皮側にもしっかり振る</span></li>
+              <li data-ingredient-row="6844aada-5449-44b5-9b73-603cbadbc6f5"><span class="ingredient-name" data-ingredient-name>豚バラ肉（皮付きかたまり）</span><span class="ingredient-qty" data-ingredient-qty>1500g</span><span class="ingredient-notes">平らに広げられるよう、スキンサイドを下にして開いた状態で用意する</span><button type="button" class="substitution-trigger" data-substitution-trigger="6844aada-5449-44b5-9b73-603cbadbc6f5"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f4d3244a-2b90-45f2-88cc-33020eae8974"><span class="ingredient-name" data-ingredient-name>野生フィノッキオの葉（またはフェンネルシード）</span><span class="ingredient-qty" data-ingredient-qty>20g（または大さじ1）</span><span class="ingredient-notes">フェンネルシードはスパイス売り場で購入可</span></li>
+          <li data-ingredient-row="316a2c98-9269-4b6f-91a3-603a2db9f361"><span class="ingredient-name" data-ingredient-name>ローズマリー（生）</span><span class="ingredient-qty" data-ingredient-qty>4枝</span><span class="ingredient-notes">葉を外してみじん切り</span></li>
+          <li data-ingredient-row="788ef4c9-6a07-4ef9-b2c4-68944d52a415"><span class="ingredient-name" data-ingredient-name>セージ（生）</span><span class="ingredient-qty" data-ingredient-qty>10枚</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="3e286779-2c96-4f3d-9049-0e216b262211"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>6片</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="e49a726c-a343-40ff-b55f-6b32dbefe264"><span class="ingredient-name" data-ingredient-name>赤唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">種ごと細かく刻む</span></li>
+          <li data-ingredient-row="265e140a-f0dc-46c7-a175-6b144889a540"><span class="ingredient-name" data-ingredient-name>粗塩</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">皮側にもしっかり振る</span></li>
               </ul>
             </section>
           </div>
@@ -295,6 +315,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"cbae4318-54d3-4b45-ba94-58b9cb022d38","nameJa":"ハーブを詰めた豚バラ肉のポルケッタ","baseServings":6,"minServings":4,"maxServings":10},"ingredients":[{"id":"6844aada-5449-44b5-9b73-603cbadbc6f5","nameOriginal":"Pancia di maiale","nameJa":"豚バラ肉（皮付きかたまり）","nameEn":"Pork belly, skin-on","quantity":1500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"平らに広げられるよう、スキンサイドを下にして開いた状態で用意する","substitutionOptions":[{"id":"386550b2-0a53-4e7f-b2ac-ac782ecc1e38","standardIngredientId":"6844aada-5449-44b5-9b73-603cbadbc6f5","nameJa":"豚バラ肉（皮なし）","nameEn":"Pork belly, skinless","authenticityImpact":-10,"flavorImpact":"皮のパリパリ感がなくなるが風味は同等","textureImpact":null,"procedureChanges":["仕上げ温度を220℃に上げる必要なし"],"affectedStepNumbers":[1,2,3,4,5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"平らに広げられるよう開いた状態で用意する。皮なしのため仕上げの高温焼きは不要","action":"update","nameEn":"Pork belly, skinless","nameJa":"豚バラ肉（皮なし）","quantity":1500,"targetNameJa":"豚バラ肉（皮付きかたまり）"}],"stepPatches":[{"title":"ハーブを刻んでフィリングを作る","action":"replace","stepNumber":1,"actionItems":["ローズマリーの葉をみじん切りにする。","セージ10枚をみじん切りにする。","にんにく6片をみじん切りにする。","唐辛子2本を種ごと細かく刻む。","皮なし豚バラ肉1500gを脂の多い面を下にして広げ、内側全体に塩・こしょうを振る。","ハーブミックス（ローズマリー・セージ・にんにく・フェンネルシード・唐辛子）を内側全体に均等に広げる。"],"instruction":"・ローズマリーの葉をみじん切りにする\n・セージをみじん切りにする\n・にんにくをみじん切りにする\n・唐辛子を種ごと細かく刻む\n皮なし豚バラ肉を脂の多い面を下にして広げる。内側全体に塩・こしょうを振る。ハーブミックス（ローズマリー・セージ・にんにく・フェンネルシード・唐辛子）を作り、内側全体に均等に広げる。","changeReason":"皮なし豚バラ肉では皮側を基準にできないため、脂の多い面を外側にする準備へ置き換える"},{"title":"ロールに巻いて縛る","action":"replace","stepNumber":2,"actionItems":["きつく丸めてロール状にし、タコ糸を2〜3cm間隔で縛る。","外側の脂の面に粗塩20gを振る。"],"instruction":"きつく丸めてロール状にし、タコ糸を2〜3cm間隔で縛る。外側の脂の面に粗塩を振る。皮がないため、フォークで穴を開ける工程は行わない。","cautionItems":["皮がないため、フォークで穴を開ける工程は行わない。"],"changeReason":"皮なしでは蒸気抜きの穴開けが不要で、脂の面に塩を当てる方が焼き色が安定するため"},{"title":"冷蔵庫で表面を乾かす","action":"replace","stepNumber":3,"actionItems":["冷蔵庫で最低1時間（できれば一晩）置いて表面を乾かす。"],"instruction":"冷蔵庫で最低1時間（できれば一晩）置いて表面を乾かす。皮のパリパリ感ではなく、脂の面の焼き色と香ばしさを出すための乾燥にする。","changeReason":"皮なしでも表面の水分を飛ばすと焼き色がつきやすくなるため","completionCriteria":["表面の水分が引き、触ると少し乾いた状態になれば次へ。"]},{"title":"皮なしに合わせて焼き上げる","action":"replace","stepNumber":4,"actionItems":["オーブンを180℃に予熱する。","天板にのせ、180℃で1時間50分〜2時間焼く。","途中で出た脂を表面にかけながら焼く。"],"instruction":"オーブンを180℃に予熱する。天板にのせ、180℃で1時間50分〜2時間焼く。途中で出た脂を表面にかけながら焼く。内部温度72℃が目標。","changeReason":"皮なしは高温で皮を膨らませる必要がなく、一定温度で中心まで火を入れる方が安定するため","completionCriteria":["内部温度72℃になり、外側の脂の面が香ばしく色づけば次へ。"]},{"title":"休ませて切り分ける","action":"replace","stepNumber":5,"actionItems":["10分休ませる。","タコ糸を外して切り分ける。","焼き色のついた脂の面を上にして盛り付ける。"],"instruction":"10分休ませてからタコ糸を外して切り分ける。焼き色のついた脂の面を上にして盛り付ける。","changeReason":"皮なしではパリパリ面ではなく焼き色のついた脂の面を見せるため"}]}]},{"id":"f4d3244a-2b90-45f2-88cc-33020eae8974","nameOriginal":"Finocchietto selvatico (o semi di finocchio)","nameJa":"野生フィノッキオの葉（またはフェンネルシード）","nameEn":"Wild fennel fronds or fennel seeds","quantity":20,"unit":"g（または大さじ1）","role":"essential","scalingBehavior":null,"notes":"フェンネルシードはスパイス売り場で購入可","substitutionOptions":[]},{"id":"316a2c98-9269-4b6f-91a3-603a2db9f361","nameOriginal":"Rosmarino","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":4,"unit":"枝","role":"essential","scalingBehavior":null,"notes":"葉を外してみじん切り","substitutionOptions":[]},{"id":"788ef4c9-6a07-4ef9-b2c4-68944d52a415","nameOriginal":"Salvia","nameJa":"セージ（生）","nameEn":"Fresh sage leaves","quantity":10,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"3e286779-2c96-4f3d-9049-0e216b262211","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":6,"unit":"片","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"e49a726c-a343-40ff-b55f-6b32dbefe264","nameOriginal":"Peperoncino rosso","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":2,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"種ごと細かく刻む","substitutionOptions":[]},{"id":"265e140a-f0dc-46c7-a175-6b144889a540","nameOriginal":"Sale marino grosso","nameJa":"粗塩","nameEn":"Coarse sea salt","quantity":20,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮側にもしっかり振る","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・ローズマリーの葉をみじん切りにする\n・セージをみじん切りにする\n・にんにくをみじん切りにする\n・唐辛子を種ごと細かく刻む\n豚バラ肉を皮を下にして広げる。内側全体に塩・こしょうを振る。ハーブミックス（ローズマリー・セージ・にんにく・フェンネルシード・唐辛子）を作り、内側全体に均等に広げる。","title":"ハーブを刻んでフィリングを作る","actionItems":["ローズマリーの葉をみじん切りにする。","セージ10枚をみじん切りにする。","にんにく6片をみじん切りにする。","唐辛子2本を種ごと細かく刻む。","豚バラ肉1500gを皮を下にして広げ、内側全体に塩・こしょうを振る。","ハーブミックス（ローズマリー・セージ・にんにく・フェンネルシード・唐辛子）を内側全体に均等に広げる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"きつく丸めてロール状にし、タコ糸を2〜3cm間隔で縛る。外側の皮にも粗塩を振る。皮に数か所フォークで穴を開けると蒸気が逃げてパリパリになる。","title":"ロールに巻いて縛る","actionItems":["きつく丸めてロール状にし、タコ糸を2〜3cm間隔で縛る。","外側の皮に粗塩20gを振る。","皮に数か所フォークで穴を開ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"冷蔵庫で最低1時間（できれば一晩）置いて表面を乾燥させる（これでパリパリ皮になる）。","title":"冷蔵庫で乾燥させる","actionItems":["冷蔵庫で最低1時間（できれば一晩）置いて表面を乾燥させる。"],"parallelItems":[],"completionCriteria":["表面が乾燥したら次へ。"],"cautionItems":["この工程を省くと皮がパリパリになりにくい。"],"tipItems":[],"durationMinutes":60,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"オーブンを230℃に予熱。天板にのせて30分焼いて表面をパリッとさせる。その後160℃に下げて1時間30分焼く。内部温度72℃が目標。","title":"焼き上げる","actionItems":["オーブンを230℃に予熱する。","天板にのせて230℃で30分焼いて表面をパリッとさせる。","160℃に下げてさらに1時間30分焼く。"],"parallelItems":[],"completionCriteria":["内部温度72℃になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"10分休ませてからタコ糸を外して切り分ける。皮のパリパリ面を上にして盛り付ける。","title":"休ませて切り分ける","actionItems":["10分休ませる。","タコ糸を外して切り分ける。","皮のパリパリ面を上にして盛り付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

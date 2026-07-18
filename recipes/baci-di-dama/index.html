@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・トルトーナ（ピエモンテ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ヘーゼルナッツパウダー</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">市販品または焙煎ヘーゼルナッツをフードプロセッサーで細かく挽いたもの</span></li>
-          <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">粉砂糖</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">バター（無塩・冷たい）</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">1cm角に切り使用直前まで冷蔵庫で冷やす</span></li>
-          <li><span class="ingredient-name">ダークチョコレート（65〜70%）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">接着用</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
+              <li data-ingredient-row="026eaded-db32-4c36-85b9-59563265ef35"><span class="ingredient-name" data-ingredient-name>ヘーゼルナッツパウダー</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">市販品または焙煎ヘーゼルナッツをフードプロセッサーで細かく挽いたもの</span><button type="button" class="substitution-trigger" data-substitution-trigger="026eaded-db32-4c36-85b9-59563265ef35"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="ea360e27-7e7a-4b14-9e14-6fe0433e2dd7"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="e6d60dfd-e28f-4c29-b5d4-abdf6bc77475"><span class="ingredient-name" data-ingredient-name>粉砂糖</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="101eced2-f929-4c0f-a134-b423887cbeec"><span class="ingredient-name" data-ingredient-name>バター（無塩・冷たい）</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">1cm角に切り使用直前まで冷蔵庫で冷やす</span></li>
+          <li data-ingredient-row="374c9c3e-c2db-4df2-a61e-3738ac2f9163"><span class="ingredient-name" data-ingredient-name>ダークチョコレート（65〜70%）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">接着用</span><button type="button" class="substitution-trigger" data-substitution-trigger="374c9c3e-c2db-4df2-a61e-3738ac2f9163"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="dd15fd72-2ea9-404b-bd4c-bed56e47b0f5"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
               </ul>
             </section>
           </div>
@@ -289,6 +309,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0df403cf-e12e-40bc-b719-802a637cee28","nameJa":"バーチ・ディ・ダーマ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"026eaded-db32-4c36-85b9-59563265ef35","nameOriginal":"Farina di nocciole","nameJa":"ヘーゼルナッツパウダー","nameEn":"Hazelnut flour","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"市販品または焙煎ヘーゼルナッツをフードプロセッサーで細かく挽いたもの","substitutionOptions":[{"id":"43d3b9a5-60e0-4584-97cb-7722ceb4e040","standardIngredientId":"026eaded-db32-4c36-85b9-59563265ef35","nameJa":"アーモンドパウダー","nameEn":"Almond powder","authenticityImpact":-20,"flavorImpact":"ヘーゼルナッツ特有の香ばしいコクが失われ風味が大きく変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"ea360e27-7e7a-4b14-9e14-6fe0433e2dd7","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e6d60dfd-e28f-4c29-b5d4-abdf6bc77475","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖","nameEn":"Powdered sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"101eced2-f929-4c0f-a134-b423887cbeec","nameOriginal":"Burro freddo","nameJa":"バター（無塩・冷たい）","nameEn":"Cold unsalted butter","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm角に切り使用直前まで冷蔵庫で冷やす","substitutionOptions":[]},{"id":"374c9c3e-c2db-4df2-a61e-3738ac2f9163","nameOriginal":"Cioccolato fondente","nameJa":"ダークチョコレート（65〜70%）","nameEn":"Dark chocolate","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"接着用","substitutionOptions":[{"id":"7e3c1f87-afc9-47da-a422-30468815fd68","standardIngredientId":"374c9c3e-c2db-4df2-a61e-3738ac2f9163","nameJa":"ミルクチョコレート","nameEn":"Milk chocolate","authenticityImpact":-10,"flavorImpact":"甘みが増しナッツの香ばしさとのバランスが変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"dd15fd72-2ea9-404b-bd4c-bed56e47b0f5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ヘーゼルナッツパウダー150g・薄力粉150g・粉砂糖150g・塩1gをフードプロセッサーに入れる。冷たいバター150gを1cm角に切って加え、全体がサラサラした砂状になるまで短時間ずつパルスする（バターが溶けないよう手早く）。生地をラップで包んで平たくまとめ、冷蔵庫で最低45分休ませる。","title":"生地を作り休ませる","actionItems":["ヘーゼルナッツパウダー・薄力粉・粉砂糖・塩をフードプロセッサーに入れる。","冷たいバター150gを1cm角に切って加え、サラサラの砂状になるまで短時間ずつパルスする。","生地をラップで包んで平たくまとめる。"],"parallelItems":[],"completionCriteria":["全体がサラサラした砂状になれば次へ。"],"cautionItems":["バターが溶けないよう手早くパルスする。長時間かけると生地が油っぽくなる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"冷蔵庫で45分生地を休ませる。","title":"冷蔵庫で休ませる","actionItems":["生地を冷蔵庫で45分休ませる。"],"parallelItems":[],"completionCriteria":["45分。生地が固まり扱いやすくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"オーブンを170℃に予熱する。生地を冷蔵庫から出し、約6gずつちぎって両手で丸め、直径1.5〜2cmのボールを作る（1バッチ60個以上）。天板に2cm間隔で並べ、冷蔵庫でさらに15分冷やす。","title":"ボール状に成形する","actionItems":["オーブンを170℃に予熱する。","生地を約6gずつちぎって丸め、直径1.5〜2cmのボールを作る。","天板に2cm間隔で並べ、冷蔵庫でさらに15分冷やす。"],"parallelItems":[],"completionCriteria":["均一なサイズのボールが成形できたら次へ。"],"cautionItems":["手の熱でバターが溶けないよう素早く丸める。"],"tipItems":[],"durationMinutes":25,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"170℃で14〜16分焼く。底面が薄くきつね色になったら焼き上がり。焼きすぎると硬くなるので注意。網の上で完全に冷ます（熱いうちは崩れやすい）。","title":"バーチを焼いて冷ます","actionItems":["170℃で14〜16分焼く。","網の上で完全に冷ます。"],"parallelItems":[],"completionCriteria":["底面が薄くきつね色になれば焼き上がり。"],"cautionItems":["焼きすぎると硬くなる。熱いうちは崩れやすいので冷めるまで触らない。"],"tipItems":[],"durationMinutes":16,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"ダークチョコレート80gを細かく刻み、55〜60℃の湯煎でゆっくり溶かす。冷めたクッキーの平らな面に爪楊枝または小さなスプーンで直径5mm程度のチョコをのせ、同じサイズのクッキーを重ねて軽く押さえる。チョコが完全に固まるまで常温で30分置く。密閉容器で常温保存（3〜4日）。","title":"チョコで接着する","actionItems":["ダークチョコレート80gを細かく刻み、55〜60℃の湯煎でゆっくり溶かす。","クッキーの平らな面に直径5mmのチョコをのせ、もう1枚を重ねて軽く押さえる。","常温で30分置いてチョコを固める。"],"parallelItems":[],"completionCriteria":["チョコが完全に固まれば完成。"],"cautionItems":["湯煎の温度が高すぎるとチョコが焦げる。55〜60℃に保つ。"],"tipItems":[],"durationMinutes":25,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">トスカーナパン（1日以上経ったもの）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">2cm角にちぎる。新鮮なパンは不可</span></li>
-          <li><span class="ingredient-name">完熟トマト（大）</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">くし形に切り、種ごと使う</span></li>
-          <li><span class="ingredient-name">赤玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">薄切りにして水に10分さらす</span></li>
-          <li><span class="ingredient-name">きゅうり</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">10枚</span></li>
-          <li><span class="ingredient-name">赤ワインビネガー</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="e6c4b7f8-187d-4be1-a6ad-7c47c3c4609e"><span class="ingredient-name" data-ingredient-name>トスカーナパン（1日以上経ったもの）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">2cm角にちぎる。新鮮なパンは不可</span><button type="button" class="substitution-trigger" data-substitution-trigger="e6c4b7f8-187d-4be1-a6ad-7c47c3c4609e"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="13e4be64-2d7c-45cf-85ee-40fc084aec16"><span class="ingredient-name" data-ingredient-name>完熟トマト（大）</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">くし形に切り、種ごと使う</span></li>
+          <li data-ingredient-row="a0fd0c7c-1ee8-4d4a-b4a8-f4fb7c303caf"><span class="ingredient-name" data-ingredient-name>赤玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">薄切りにして水に10分さらす</span></li>
+          <li data-ingredient-row="f692526f-bc96-4307-86bf-7477c62e62fa"><span class="ingredient-name" data-ingredient-name>きゅうり</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="8230ea53-9f07-4ac8-ab57-2b9ff178b5dd"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>10枚</span></li>
+          <li data-ingredient-row="2bf38be2-1e96-4ebd-be6d-fca5b7ce26d8"><span class="ingredient-name" data-ingredient-name>赤ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="599135d7-99cf-4ef8-9880-52cb9dccf265"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="b6477dac-fd02-4b08-b950-3c3c5c538049"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
+          <li data-ingredient-row="205be9b2-1317-4d47-b9b3-d94cdf39aabb"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -278,6 +298,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"8dcd0447-30b3-4289-b85a-bca612083171","nameJa":"トスカーナ風パンとトマトのサラダ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"e6c4b7f8-187d-4be1-a6ad-7c47c3c4609e","nameOriginal":"Pane toscano raffermo","nameJa":"トスカーナパン（1日以上経ったもの）","nameEn":"Stale Tuscan bread","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"2cm角にちぎる。新鮮なパンは不可","substitutionOptions":[{"id":"7af3b4b4-96f1-4db4-9921-ebadde9e62d6","standardIngredientId":"e6c4b7f8-187d-4be1-a6ad-7c47c3c4609e","nameJa":"バゲット（1日経ったもの）","nameEn":"Stale baguette","authenticityImpact":-5,"flavorImpact":"食感は近いが塩入りのため塩加減を調整する","textureImpact":null,"procedureChanges":["塩の使用量を半量に減らす"],"affectedStepNumbers":[5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"2cm角にちぎる。塩入りのため仕上げの塩は半量にする","action":"update","nameEn":"Stale baguette","nameJa":"バゲット（1日経ったもの）","quantity":200,"targetNameJa":"トスカーナパン（1日以上経ったもの）"}],"stepPatches":[{"title":"和える","action":"replace","stepNumber":5,"actionItems":["赤ワインビネガー30mlを加える。","オリーブオイル40mlを加える。","黒胡椒を加える。","塩は通常の半量だけ加えてやさしく全体を和える。"],"instruction":"赤ワインビネガー・オリーブオイル・黒胡椒を加え、塩は通常の半量だけ加えて全体をやさしく和える。味を見て足りない場合だけごく少量を追加する。","cautionItems":["バゲットには塩分があるため、仕上げの塩は半量から始める。"],"changeReason":"バゲットは塩入りのため、仕上げの塩を半量にする","completionCriteria":["全体が均一に和えられ、塩味が強く出すぎていなければ次へ。"]}]}]},{"id":"13e4be64-2d7c-45cf-85ee-40fc084aec16","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト（大）","nameEn":"Ripe tomatoes","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"くし形に切り、種ごと使う","substitutionOptions":[]},{"id":"a0fd0c7c-1ee8-4d4a-b4a8-f4fb7c303caf","nameOriginal":"Cipolla rossa","nameJa":"赤玉ねぎ","nameEn":"Red onion","quantity":0.5,"unit":"個","role":"essential","scalingBehavior":null,"notes":"薄切りにして水に10分さらす","substitutionOptions":[]},{"id":"f692526f-bc96-4307-86bf-7477c62e62fa","nameOriginal":"Cetriolo","nameJa":"きゅうり","nameEn":"Cucumber","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"8230ea53-9f07-4ac8-ab57-2b9ff178b5dd","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":10,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2bf38be2-1e96-4ebd-be6d-fca5b7ce26d8","nameOriginal":"Aceto di vino rosso","nameJa":"赤ワインビネガー","nameEn":"Red wine vinegar","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"599135d7-99cf-4ef8-9880-52cb9dccf265","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b6477dac-fd02-4b08-b950-3c3c5c538049","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"205be9b2-1317-4d47-b9b3-d94cdf39aabb","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"パンを2cm角にちぎり、大きなボウルに入れる。","title":"パンをちぎる","actionItems":["パン200gを2cm角にちぎる。","大きなボウルに入れる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"・赤玉ねぎを薄切りにして冷水に10分さらし、水気を切る\n・きゅうりを薄切りにする","title":"野菜を下処理する","actionItems":["赤玉ねぎ1/2個を薄切りにして冷水に10分さらし、水気を切る。","きゅうり1本を薄切りにする。"],"parallelItems":[],"completionCriteria":["赤玉ねぎの辛みが抜けたら次へ（10分目安）。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"トマトをくし形に切り、出てきた汁ごとパンの上に乗せる。パンがトマトの汁を吸うまで10分置く。","title":"トマトでパンを湿らせる","actionItems":["完熟トマト3個をくし形に切る。","種ごと汁ごとパンの上に乗せる。"],"parallelItems":[],"completionCriteria":["パンがトマトの汁を十分に吸ったら次へ（10分目安）。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"赤玉ねぎ・きゅうり・バジルをボウルに加える。","title":"野菜を加える","actionItems":["水気を切った赤玉ねぎをボウルに加える。","きゅうりをボウルに加える。","バジル10枚を手でちぎりながら加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"赤ワインビネガー・オリーブオイル・塩・黒胡椒を加えて全体をやさしく和える。","title":"和える","actionItems":["赤ワインビネガー30mlを加える。","オリーブオイル40mlを加える。","塩・黒胡椒を加えてやさしく全体を和える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"常温で15〜30分置いてパンに味を馴染ませてから盛り付ける。","title":"馴染ませる","actionItems":["常温で15〜30分置く。"],"parallelItems":[],"completionCriteria":["パンに味が染み込んで全体が一体感を持ったら盛り付ける。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

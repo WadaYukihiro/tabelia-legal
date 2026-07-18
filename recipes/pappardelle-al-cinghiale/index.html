@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間6分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>12時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,19 +94,26 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">猪肉</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">2cm角に切り、前日から赤ワインでマリネする（マリネ時間8時間以上）</span></li>
-          <li><span class="ingredient-name">00粉（または強力粉）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">生パッパルデッレ用（手打ち）</span></li>
-          <li><span class="ingredient-name">卵（常温）</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">生パッパルデッレ用</span></li>
-          <li><span class="ingredient-name">赤ワイン</span><span class="ingredient-qty">300ml</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">1茎</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラヴァージンオリーブオイル</span><span class="ingredient-qty">45ml</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">2枝</span></li>
-          <li><span class="ingredient-name">ジュニパーベリー</span><span class="ingredient-qty">5粒</span></li>
+              <li data-ingredient-row="8344a8f7-8c07-42d4-9325-83e842bb3a59"><span class="ingredient-name" data-ingredient-name>猪肉</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">2cm角に切り、前日から赤ワインでマリネする（マリネ時間8時間以上）</span><button type="button" class="substitution-trigger" data-substitution-trigger="8344a8f7-8c07-42d4-9325-83e842bb3a59"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="68093b8b-0f13-4f93-9cc4-93af9a5c71ba"><span class="ingredient-name" data-ingredient-name>00粉（または強力粉）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">生パッパルデッレ用（手打ち）</span><button type="button" class="substitution-trigger" data-substitution-trigger="68093b8b-0f13-4f93-9cc4-93af9a5c71ba"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9f75a8ac-cd3e-4bc8-87bc-0ceebf198179"><span class="ingredient-name" data-ingredient-name>卵（常温）</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">生パッパルデッレ用</span></li>
+          <li data-ingredient-row="779f9a49-527e-4b1c-adae-76608a817750"><span class="ingredient-name" data-ingredient-name>赤ワイン</span><span class="ingredient-qty" data-ingredient-qty>300ml</span></li>
+          <li data-ingredient-row="0bea44ec-5bc2-44d1-93d2-c9a7f737bf0b"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="6a8e4d9f-7c56-4f19-ba74-f397ac78e859"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="8f00d4f5-279b-4567-a103-b6ad2ddff2ef"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="27f1c30f-c369-4fff-9dd2-bc42ff73d07b"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>1茎</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="706db58d-a89c-4d1d-8bd2-6d312be8c0fb"><span class="ingredient-name" data-ingredient-name>エクストラヴァージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span></li>
+          <li data-ingredient-row="d657c1bb-94a4-4973-8d39-dd90e0e28f1f"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>2枝</span></li>
+          <li data-ingredient-row="15244355-4f5b-4d67-8b5a-6df1f35a1c02"><span class="ingredient-name" data-ingredient-name>ジュニパーベリー</span><span class="ingredient-qty" data-ingredient-qty>5粒</span></li>
               </ul>
             </section>
           </div>
@@ -286,6 +306,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0c279800-d6ee-47a8-8393-7d62019a43c5","nameJa":"猪のラグーのパッパルデッレ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"8344a8f7-8c07-42d4-9325-83e842bb3a59","nameOriginal":"Cinghiale","nameJa":"猪肉","nameEn":"Wild boar","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"2cm角に切り、前日から赤ワインでマリネする（マリネ時間8時間以上）","substitutionOptions":[{"id":"02078ef8-c6c0-493d-aaef-bb92690869bb","standardIngredientId":"8344a8f7-8c07-42d4-9325-83e842bb3a59","nameJa":"豚肩肉","nameEn":"Pork shoulder","authenticityImpact":-20,"flavorImpact":"野性的な風味が大幅に弱まるが、ラグーとしては成立する","textureImpact":null,"procedureChanges":["マリネ時間を4時間に短縮可"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"68093b8b-0f13-4f93-9cc4-93af9a5c71ba","nameOriginal":"Farina 00","nameJa":"00粉（または強力粉）","nameEn":"Tipo 00 flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生パッパルデッレ用（手打ち）","substitutionOptions":[{"id":"3250dc90-0897-43b6-905c-91404f2a0d00","standardIngredientId":"68093b8b-0f13-4f93-9cc4-93af9a5c71ba","nameJa":"強力粉","nameEn":"Bread flour","authenticityImpact":-5,"flavorImpact":"00粉より若干コシが強くなるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9f75a8ac-cd3e-4bc8-87bc-0ceebf198179","nameOriginal":"Uova","nameJa":"卵（常温）","nameEn":"Eggs (room temperature)","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"生パッパルデッレ用","substitutionOptions":[]},{"id":"779f9a49-527e-4b1c-adae-76608a817750","nameOriginal":"Vino rosso","nameJa":"赤ワイン","nameEn":"Red wine","quantity":300,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0bea44ec-5bc2-44d1-93d2-c9a7f737bf0b","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6a8e4d9f-7c56-4f19-ba74-f397ac78e859","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":0.5,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"8f00d4f5-279b-4567-a103-b6ad2ddff2ef","nameOriginal":"Carota","nameJa":"にんじん","nameEn":"Carrot","quantity":0.5,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"27f1c30f-c369-4fff-9dd2-bc42ff73d07b","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":0.5,"unit":"茎","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"706db58d-a89c-4d1d-8bd2-6d312be8c0fb","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラヴァージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d657c1bb-94a4-4973-8d39-dd90e0e28f1f","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"15244355-4f5b-4d67-8b5a-6df1f35a1c02","nameOriginal":"Ginepro","nameJa":"ジュニパーベリー","nameEn":"Juniper berries","quantity":5,"unit":"粒","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"猪肉を2cm角に切り、赤ワイン・ローズマリー・ジュニパーベリーと合わせて一晩（8時間以上）マリネする。前日の夜に仕込む。","title":"材料を準備する","actionItems":["猪肉を2cm角に切り、赤ワイン・ローズマリー・ジュニパーベリーと合わせて一晩（8時間以上）マリネする。","前日の夜に仕込む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":480,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"肉を取り出してマリネ液は取り置く。\n・玉ねぎ1/2個・にんじん1/2本・セロリ1/2茎をそれぞれみじん切りにする\n・フライパンにオリーブオイル30mlを強火で熱し、肉の表面を全面こんがりと焼き固める（約8分）\n・表面が褐色になったら次へ","title":"味をなじませる","actionItems":["肉を取り出してマリネ液は取り置く。","玉ねぎ1/2個・にんじん1/2本・セロリ1/2茎をそれぞれみじん切りにする","フライパンにオリーブオイル30mlを強火で熱し、肉の表面を全面こんがりと焼き固める（約8分）"],"parallelItems":[],"completionCriteria":["表面が褐色になったら次へ"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"玉ねぎ・にんじん・セロリ（みじん切り）を加え、残りのオリーブオイル15mlを足して中火で炒める。野菜がしんなりして甘い香りが立ったら（約8分）次へ。","title":"材料を準備する","actionItems":["玉ねぎ・にんじん・セロリ（みじん切り）を加え、残りのオリーブオイル15mlを足して中火で炒める。"],"parallelItems":[],"completionCriteria":["野菜がしんなりして甘い香りが立ったら（約8分）次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"マリネ液を加えてアルコールを飛ばし（約2分）、ホールトマトを手でつぶしながら加える。\n・蓋をして弱火で90分煮込む\n・途中で水分が少なければ水を足す\n・肉がフォークで崩れるくらい柔らかくなったら完成","title":"味をなじませる","actionItems":["マリネ液を加えてアルコールを飛ばし（約2分）、ホールトマトを手でつぶしながら加える。","蓋をして弱火で90分煮込む"],"parallelItems":[],"completionCriteria":["途中で水分が少なければ水を足す","肉がフォークで崩れるくらい柔らかくなったら完成"],"cautionItems":[],"tipItems":[],"durationMinutes":92,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"（ラグーを煮込む間に）00粉300gに卵3個を加えて生地をまとめ、ラップに包んで30分休ませる。\n・（生地を休ませる間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）\n・薄く伸ばして幅2〜3cmに切り、パッパルデッレを作る","title":"休ませて落ち着かせる","actionItems":["薄く伸ばして幅2〜3cmに切り、パッパルデッレを作る"],"parallelItems":["（ラグーを煮込む間に）00粉300gに卵3個を加えて生地をまとめ、ラップに包んで30分休ませる。","（生地を休ませる間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"肉をフォークでほぐしてラグーにする。\n・パッパルデッレを沸かしておいた塩湯でアルデンテに茹でる\n・ソースと和え、茹で汁で濃度を調整する","title":"材料を準備する","actionItems":["肉をフォークでほぐしてラグーにする。","パッパルデッレを沸かしておいた塩湯でアルデンテに茹でる","ソースと和え、茹で汁で濃度を調整する"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

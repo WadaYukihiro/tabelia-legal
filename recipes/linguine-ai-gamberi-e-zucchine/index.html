@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">リングイネ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">海老（殻なし・背わた除去済み）</span><span class="ingredient-qty">300g</span></li>
-          <li><span class="ingredient-name">ズッキーニ</span><span class="ingredient-qty">3本（約400g）</span><span class="ingredient-notes">3mm厚さの半月切り</span></li>
-          <li><span class="ingredient-name">ニンニク</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">70ml</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">粗く刻む</span></li>
-          <li><span class="ingredient-name">赤唐辛子</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">海老の下処理用・パスタ茹で水用（各適量）</span></li>
-          <li><span class="ingredient-name">黒胡椒（粗挽き）</span><span class="ingredient-qty">3〜4回挽き</span></li>
+              <li data-ingredient-row="7fd6894a-f640-4a80-8373-780d39a94b47"><span class="ingredient-name" data-ingredient-name>リングイネ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="31f05cdf-789d-4072-ad0e-40bf14d2d594"><span class="ingredient-name" data-ingredient-name>海老（殻なし・背わた除去済み）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><button type="button" class="substitution-trigger" data-substitution-trigger="31f05cdf-789d-4072-ad0e-40bf14d2d594"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d3f1e7ad-9385-4398-a66a-2c1b9ae731b0"><span class="ingredient-name" data-ingredient-name>ズッキーニ</span><span class="ingredient-qty" data-ingredient-qty>3本（約400g）</span><span class="ingredient-notes">3mm厚さの半月切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="d3f1e7ad-9385-4398-a66a-2c1b9ae731b0"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="ce02072c-2dbc-400c-a210-5dfbc2b1a2f8"><span class="ingredient-name" data-ingredient-name>ニンニク</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="989b5e6f-41b2-4527-b86c-131ffa41f56c"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>70ml</span></li>
+          <li data-ingredient-row="9c35c71e-8cf6-42bc-a527-f5538f3048ca"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="ae0714ab-1584-40e4-95b8-998b63de20c2"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">粗く刻む</span></li>
+          <li data-ingredient-row="22af8cbb-5771-4d81-943b-a84a059d91a1"><span class="ingredient-name" data-ingredient-name>赤唐辛子</span><span class="ingredient-qty" data-ingredient-qty>1本</span><button type="button" class="substitution-trigger" data-substitution-trigger="22af8cbb-5771-4d81-943b-a84a059d91a1"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d49381f9-7422-4465-8056-661224081694"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">海老の下処理用・パスタ茹で水用（各適量）</span></li>
+          <li data-ingredient-row="f189ea60-8095-4b13-acb9-1e788b21bdb7"><span class="ingredient-name" data-ingredient-name>黒胡椒（粗挽き）</span><span class="ingredient-qty" data-ingredient-qty>3〜4回挽き</span></li>
               </ul>
             </section>
           </div>
@@ -345,6 +365,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"9a588535-7242-41d1-bc24-43c76a63fbc4","nameJa":"エビとズッキーニのリングイネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"7fd6894a-f640-4a80-8373-780d39a94b47","nameOriginal":"Linguine","nameJa":"リングイネ","nameEn":"Linguine","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"31f05cdf-789d-4072-ad0e-40bf14d2d594","nameOriginal":"Gamberi medi","nameJa":"海老（殻なし・背わた除去済み）","nameEn":"Medium shrimp, peeled and deveined","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"9e74fea5-7be1-491d-b3d6-095d5bf02e59","standardIngredientId":"31f05cdf-789d-4072-ad0e-40bf14d2d594","nameJa":"ブラックタイガー（冷凍）","nameEn":"Frozen black tiger shrimp","authenticityImpact":0,"flavorImpact":"下処理をしっかりすれば同等","textureImpact":null,"procedureChanges":["流水解凍後、塩と片栗粉でもみ洗いして臭みを取る"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d3f1e7ad-9385-4398-a66a-2c1b9ae731b0","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":3,"unit":"本（約400g）","role":"essential","scalingBehavior":null,"notes":"3mm厚さの半月切り","substitutionOptions":[{"id":"52db5d32-8933-425d-957e-d3979ca4b07f","standardIngredientId":"d3f1e7ad-9385-4398-a66a-2c1b9ae731b0","nameJa":"黄ズッキーニ","nameEn":"Yellow zucchini","authenticityImpact":0,"flavorImpact":"見た目の色が変わるだけで風味・食感は同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"ce02072c-2dbc-400c-a210-5dfbc2b1a2f8","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"989b5e6f-41b2-4527-b86c-131ffa41f56c","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":70,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9c35c71e-8cf6-42bc-a527-f5538f3048ca","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ae0714ab-1584-40e4-95b8-998b63de20c2","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Fresh parsley","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":"粗く刻む","substitutionOptions":[]},{"id":"22af8cbb-5771-4d81-943b-a84a059d91a1","nameOriginal":"Peperoncino","nameJa":"赤唐辛子","nameEn":"Dried red chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"89277f9e-7ca9-48cc-9802-f7709de627aa","standardIngredientId":"22af8cbb-5771-4d81-943b-a84a059d91a1","nameJa":"唐辛子フレーク小さじ1/2","nameEn":"Red chili flakes","authenticityImpact":0,"flavorImpact":"辛みの調整がしやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d49381f9-7422-4465-8056-661224081694","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"海老の下処理用・パスタ茹で水用（各適量）","substitutionOptions":[]},{"id":"f189ea60-8095-4b13-acb9-1e788b21bdb7","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒（粗挽き）","nameEn":"Black pepper","quantity":3,"unit":"〜4回挽き","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ズッキーニを3mm厚さの半月切りにする。","title":"ズッキーニを切る","actionItems":["ズッキーニを3mm厚さの半月切りにする。"],"parallelItems":[],"completionCriteria":["全て切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"海老に塩小さじ1/4と片栗粉小さじ1をまぶしてもみ洗いし、流水でよくすすいでキッチンペーパーで水気をしっかり拭き取る。","title":"海老を下処理","actionItems":["海老に塩小さじ1/4と片栗粉小さじ1をまぶしてもみ洗いする。","流水でよくすすぐ。","キッチンペーパーで水気をしっかり拭き取る。"],"parallelItems":[],"completionCriteria":["水気が十分に取れたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ニンニクを薄切りにする。フライパンにEVOO大さじ4、ニンニク（薄切り）、ペペロンチーノを弱火にかける。ニンニクが薄く色づいたら（約2〜3分）取り出す。","title":"ニンニクを炒める","actionItems":["ニンニクを薄切りにする。","フライパンにEVOO大さじ4、ニンニク（薄切り）、ペペロンチーノを弱火にかける。"],"parallelItems":[],"completionCriteria":["約2〜3分。薄く色づいたらニンニクを取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"（炒める間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。ズッキーニをフライパンに加えて中火で7〜8分炒める。半透明になり端が薄く色づいたら旨みが引き出されたサイン。","title":"ズッキーニを炒める","actionItems":["ズッキーニをフライパンに加えて中火で7〜8分炒める。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["半透明になり端が薄く色づいたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ズッキーニの半量をフォークの背で粗くつぶしてソース状にする。残り半量は食感として残す。","title":"ズッキーニをつぶす","actionItems":["ズッキーニの半量をフォークの背で粗くつぶしてソース状にする。"],"parallelItems":[],"completionCriteria":["半量がソース状になったら完了。残り半量は食感として残す。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"海老をフライパンに加えて強火で1〜2分炒め、表面が白く変わったら白ワイン100mlを加えてアルコールを飛ばす（約1分）。海老をいったん取り出しておく。","title":"海老を炒める","actionItems":["海老をフライパンに加えて強火で1〜2分炒める。","表面が白く変わったら白ワイン100mlを加えてアルコールを飛ばす（約1分）。","海老をいったん取り出しておく。"],"parallelItems":[],"completionCriteria":["アルコールが飛んだら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"リングイネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["リングイネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"リングイネをアルデンテの1分前に引き上げてフライパンに移す。茹で汁大さじ2〜3を加えて強火で1〜2分炒め合わせ、ソースをパスタに吸わせる。","title":"パスタを絡める","actionItems":["リングイネをアルデンテの1分前に引き上げてフライパンに移す。","茹で汁大さじ2〜3を加えて強火で1〜2分炒め合わせる。"],"parallelItems":[],"completionCriteria":["ソースがパスタに吸われたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"海老を戻し入れ、パセリをたっぷり散らしてパスタ全体にEVOO大さじ1を回しかけて仕上げる。チーズは使わない。","title":"海老とパセリを合わせる","actionItems":["海老を戻し入れる。","パセリをたっぷり散らす。","パスタ全体にEVOO大さじ1を回しかける。"],"parallelItems":[],"completionCriteria":["全体が絡まったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

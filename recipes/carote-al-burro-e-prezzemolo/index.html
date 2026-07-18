@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">斜め薄切り</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">5枝</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">甘みを引き出すため少量加える</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="259ce593-5ff6-4d40-b42b-d376374d39fe"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">斜め薄切り</span></li>
+          <li data-ingredient-row="6626bb68-d28c-4436-850d-07357f591990"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="fa798316-4047-4d01-9339-480356970656"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>5枝</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="e0825de4-630b-49fe-8f5a-58e46f261531"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">甘みを引き出すため少量加える</span></li>
+          <li data-ingredient-row="bc090b4b-2716-4cff-a945-08874ce6619d"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -228,6 +248,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c65be277-686a-46c0-a3c8-35cdfb557aed","nameJa":"にんじんのバターソテー パセリ風味","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"259ce593-5ff6-4d40-b42b-d376374d39fe","nameOriginal":"Carote","nameJa":"にんじん","nameEn":"Carrots","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"斜め薄切り","substitutionOptions":[]},{"id":"6626bb68-d28c-4436-850d-07357f591990","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fa798316-4047-4d01-9339-480356970656","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":5,"unit":"枝","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"e0825de4-630b-49fe-8f5a-58e46f261531","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"甘みを引き出すため少量加える","substitutionOptions":[]},{"id":"bc090b4b-2716-4cff-a945-08874ce6619d","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"にんじんを5mm厚の斜め薄切りにする。","title":"材料を準備する","actionItems":["にんじんを5mm厚の斜め薄切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにバターを溶かし、にんじんを加えて中火で3分炒める。","title":"香味を炒める","actionItems":["フライパンにバターを溶かし、にんじんを加えて中火で3分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"水80ml・砂糖・塩を加えて蓋をし、弱火で10〜12分蒸し炒めにする。水分がなくなったら少量追加する。","title":"香味を炒める","actionItems":["水80ml・砂糖・塩を加えて蓋をし、弱火で10〜12分蒸し炒めにする。"],"parallelItems":[],"completionCriteria":["水分がなくなったら少量追加する。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"蓋を取って残った水分を飛ばし、にんじんが艶々になるまで炒める（2〜3分）。","title":"香味を炒める","actionItems":["蓋を取って残った水分を飛ばし、にんじんが艶々になるまで炒める（2〜3分）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"イタリアンパセリをみじん切りにして散らして供する。","title":"材料を準備する","actionItems":["イタリアンパセリをみじん切りにして散らして供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

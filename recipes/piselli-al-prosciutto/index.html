@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">グリーンピース（冷凍可）</span><span class="ingredient-qty">300g</span></li>
-          <li><span class="ingredient-name">プロシュート・クルード（生ハム）</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">細切り</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">20g</span></li>
-          <li><span class="ingredient-name">野菜ブロード（または水）</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="9312888d-1118-42ba-98b4-301a9544a13c"><span class="ingredient-name" data-ingredient-name>グリーンピース（冷凍可）</span><span class="ingredient-qty" data-ingredient-qty>300g</span></li>
+          <li data-ingredient-row="715bf692-8651-4b8c-8cbd-2de35481f84b"><span class="ingredient-name" data-ingredient-name>プロシュート・クルード（生ハム）</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">細切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="715bf692-8651-4b8c-8cbd-2de35481f84b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="dee5ddd1-a985-4206-9bbc-e961530dce44"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="1f3b4cfa-fd4b-4943-840c-fc66497796a5"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
+          <li data-ingredient-row="3d0a924c-552a-4ccf-94c6-d054c0501a04"><span class="ingredient-name" data-ingredient-name>野菜ブロード（または水）</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="6ec813d0-f2ae-4e0a-89e4-aea399eb9d63"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
+          <li data-ingredient-row="1b95c8d8-5289-4e41-b858-ae6f6ab89bcf"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -220,6 +240,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"2333c608-171c-470b-b822-478a376dd467","nameJa":"グリーンピースと生ハムのソテー","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"9312888d-1118-42ba-98b4-301a9544a13c","nameOriginal":"Piselli freschi o surgelati","nameJa":"グリーンピース（冷凍可）","nameEn":"Fresh or frozen peas","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"715bf692-8651-4b8c-8cbd-2de35481f84b","nameOriginal":"Prosciutto crudo","nameJa":"プロシュート・クルード（生ハム）","nameEn":"Prosciutto crudo","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細切り","substitutionOptions":[{"id":"4ef403df-7fa3-486a-b076-e41ef5f663cb","standardIngredientId":"715bf692-8651-4b8c-8cbd-2de35481f84b","nameJa":"パンチェッタ","nameEn":"Pancetta","authenticityImpact":-5,"flavorImpact":"プロシュート特有の繊細な風味が変わるが料理として成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"dee5ddd1-a985-4206-9bbc-e961530dce44","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":0.5,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"1f3b4cfa-fd4b-4943-840c-fc66497796a5","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3d0a924c-552a-4ccf-94c6-d054c0501a04","nameOriginal":"Brodo vegetale","nameJa":"野菜ブロード（または水）","nameEn":"Vegetable broth or water","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6ec813d0-f2ae-4e0a-89e4-aea399eb9d63","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1b95c8d8-5289-4e41-b858-ae6f6ab89bcf","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"バターをフライパンで溶かし、みじん切りの玉ねぎを透明になるまで中火で炒める（3〜4分）。","title":"材料を準備する","actionItems":["バターをフライパンで溶かし、みじん切りの玉ねぎを透明になるまで中火で炒める（3〜4分）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"プロシュートを細切りにして加え、1分炒める。","title":"材料を準備する","actionItems":["プロシュートを細切りにして加え、1分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"グリーンピース・野菜ブロードを加えて蓋をし、弱火で8〜10分煮る。豆が柔らかくなったら完成。","title":"煮る","actionItems":["グリーンピース・野菜ブロードを加えて蓋をし、弱火で8〜10分煮る。"],"parallelItems":[],"completionCriteria":["豆が柔らかくなったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"蓋を取って水分を軽く飛ばし、塩・黒胡椒で調味して供する。","title":"仕上げにまとめる","actionItems":["蓋を取って水分を軽く飛ばし、塩・黒胡椒で調味して供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

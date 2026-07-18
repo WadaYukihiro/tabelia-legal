@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・マザーラ・デル・ヴァッロ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,20 +93,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">リングイネ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">生マグロ（刺身用・ブロック）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">1.5cm角のさいの目切り</span></li>
-          <li><span class="ingredient-name">ミニトマト</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">半分に切る</span></li>
-          <li><span class="ingredient-name">塩漬けケッパー</span><span class="ingredient-qty">大さじ2</span><span class="ingredient-notes">水で洗って塩を落とす</span></li>
-          <li><span class="ingredient-name">ブラックオリーブ（種抜き）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">粗く刻む</span></li>
-          <li><span class="ingredient-name">ニンニク</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">1束</span></li>
-          <li><span class="ingredient-name">赤唐辛子</span><span class="ingredient-qty">1本</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">マグロの下味用・ソース調味用（各少量）</span></li>
-          <li><span class="ingredient-name">黒胡椒（挽きたて）</span><span class="ingredient-qty">1少量</span></li>
+              <li data-ingredient-row="e31c6b5a-c3a2-4888-8ab0-716d27d697a1"><span class="ingredient-name" data-ingredient-name>リングイネ</span><span class="ingredient-qty" data-ingredient-qty>320g</span></li>
+          <li data-ingredient-row="bc1d78f1-c0e4-40c5-865e-2333fa620165"><span class="ingredient-name" data-ingredient-name>生マグロ（刺身用・ブロック）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">1.5cm角のさいの目切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="bc1d78f1-c0e4-40c5-865e-2333fa620165"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="eaf26b98-968d-4489-ac27-16bc71ef2234"><span class="ingredient-name" data-ingredient-name>ミニトマト</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">半分に切る</span></li>
+          <li data-ingredient-row="b4a15836-2fee-4d58-b5ba-f1229751d48d"><span class="ingredient-name" data-ingredient-name>塩漬けケッパー</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span><span class="ingredient-notes">水で洗って塩を落とす</span><button type="button" class="substitution-trigger" data-substitution-trigger="b4a15836-2fee-4d58-b5ba-f1229751d48d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d800028f-d3f6-4ed9-b90f-504a05d30f27"><span class="ingredient-name" data-ingredient-name>ブラックオリーブ（種抜き）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">粗く刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="d800028f-d3f6-4ed9-b90f-504a05d30f27"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8b9c6c8b-7395-42ed-9731-cce27e092165"><span class="ingredient-name" data-ingredient-name>ニンニク</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="9bbd7d5f-a781-4b5b-99a9-1dffc91f7a18"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="f18498b6-3cb4-4279-a0de-7cd474927fef"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="d96e243e-700e-418f-8389-60c480767f63"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>1束</span></li>
+          <li data-ingredient-row="84e2b917-bb94-4c1d-beb2-3ca118c94467"><span class="ingredient-name" data-ingredient-name>赤唐辛子</span><span class="ingredient-qty" data-ingredient-qty>1本</span><button type="button" class="substitution-trigger" data-substitution-trigger="84e2b917-bb94-4c1d-beb2-3ca118c94467"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f301bd3a-9ee5-4ae9-a315-509896ecb13b"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">マグロの下味用・ソース調味用（各少量）</span></li>
+          <li data-ingredient-row="a2faf16e-556f-4cb8-b875-3804ab706674"><span class="ingredient-name" data-ingredient-name>黒胡椒（挽きたて）</span><span class="ingredient-qty" data-ingredient-qty>1少量</span></li>
               </ul>
             </section>
           </div>
@@ -361,6 +381,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"92ad6e0a-e12d-4dba-a8d4-0ee3fd230846","nameJa":"生マグロとケッパーのリングイネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"e31c6b5a-c3a2-4888-8ab0-716d27d697a1","nameOriginal":"Linguine","nameJa":"リングイネ","nameEn":"Linguine","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bc1d78f1-c0e4-40c5-865e-2333fa620165","nameOriginal":"Tonno fresco","nameJa":"生マグロ（刺身用・ブロック）","nameEn":"Fresh sashimi-grade tuna","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1.5cm角のさいの目切り","substitutionOptions":[{"id":"96df560e-a5d6-4155-8e04-0318ba27f7c0","standardIngredientId":"bc1d78f1-c0e4-40c5-865e-2333fa620165","nameJa":"カツオ（生）","nameEn":"Fresh bonito","authenticityImpact":-5,"flavorImpact":"風味は異なるが南イタリア的な使い方として自然","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"eaf26b98-968d-4489-ac27-16bc71ef2234","nameOriginal":"Pomodorini ciliegino","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"半分に切る","substitutionOptions":[]},{"id":"b4a15836-2fee-4d58-b5ba-f1229751d48d","nameOriginal":"Capperi sotto sale","nameJa":"塩漬けケッパー","nameEn":"Salt-packed capers","quantity":2,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":"水で洗って塩を落とす","substitutionOptions":[{"id":"76c94af5-b0c2-43b1-876b-8354a1426084","standardIngredientId":"b4a15836-2fee-4d58-b5ba-f1229751d48d","nameJa":"酢漬けケッパー","nameEn":"Vinegar-packed capers","authenticityImpact":-5,"flavorImpact":"酸味が少し強くなる。使う前に水洗いを","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d800028f-d3f6-4ed9-b90f-504a05d30f27","nameOriginal":"Olive nere di Gaeta","nameJa":"ブラックオリーブ（種抜き）","nameEn":"Black olives, pitted","quantity":80,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"粗く刻む","substitutionOptions":[{"id":"c57b52b6-fbfb-4a06-9467-7488e09f0bdc","standardIngredientId":"d800028f-d3f6-4ed9-b90f-504a05d30f27","nameJa":"グリーンオリーブ（種抜き）","nameEn":"Green olives, pitted","authenticityImpact":-5,"flavorImpact":"苦みが減り風味がやや軽くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"8b9c6c8b-7395-42ed-9731-cce27e092165","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"9bbd7d5f-a781-4b5b-99a9-1dffc91f7a18","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f18498b6-3cb4-4279-a0de-7cd474927fef","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d96e243e-700e-418f-8389-60c480767f63","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"84e2b917-bb94-4c1d-beb2-3ca118c94467","nameOriginal":"Peperoncino","nameJa":"赤唐辛子","nameEn":"Dried red chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"3e4aad82-ff6c-4ea3-9514-a43f50767b32","standardIngredientId":"84e2b917-bb94-4c1d-beb2-3ca118c94467","nameJa":"唐辛子フレーク小さじ1/2","nameEn":"Red chili flakes","authenticityImpact":0,"flavorImpact":"辛みの調整がしやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f301bd3a-9ee5-4ae9-a315-509896ecb13b","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"マグロの下味用・ソース調味用（各少量）","substitutionOptions":[]},{"id":"a2faf16e-556f-4cb8-b875-3804ab706674","nameOriginal":"Pepe nero","nameJa":"黒胡椒（挽きたて）","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"マグロを1.5cm角のさいの目切りにし、塩小さじ1/4・黒胡椒3〜4回挽きをまぶして軽く味をつける。","title":"マグロに下味","actionItems":["マグロを1.5cm角のさいの目切りにする。","塩小さじ1/4・黒胡椒3〜4回挽きをまぶして軽く味をつける。"],"parallelItems":[],"completionCriteria":["下味がついたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"塩漬けケッパーを流水で30秒洗い、塩を落とす。","title":"ケッパーの塩を落とす","actionItems":["塩漬けケッパーを流水で30秒洗い、塩を落とす。"],"parallelItems":[],"completionCriteria":["塩気が抜けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"・ブラックオリーブを粗く刻む\n・ミニトマトを半分に切る","title":"食材を切る","actionItems":["ブラックオリーブを粗く刻む。","ミニトマトを半分に切る。"],"parallelItems":[],"completionCriteria":["全て切り分けたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ニンニクを薄切りにする。フライパンにEVOO大さじ3、ニンニク（薄切り）、ペペロンチーノを入れ弱火にかける。ニンニクが薄く色づいたら（約3分）ニンニクを取り出す。","title":"ニンニクを炒める","actionItems":["ニンニクを薄切りにする。","フライパンにEVOO大さじ3、ニンニク（薄切り）、ペペロンチーノを入れ弱火にかける。"],"parallelItems":[],"completionCriteria":["約3分。薄く色づいたらニンニクを取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ミニトマトを加えて強めの中火で5分、木べらでつぶしながら炒める。水分が飛んでソースが軽くとろみを帯びたら次のステップへ。","title":"トマトを炒める","actionItems":["ミニトマトを加えて強めの中火で5分、木べらでつぶしながら炒める。"],"parallelItems":[],"completionCriteria":["水分が飛んでソースが軽くとろみを帯びたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"（この間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。白ワイン100mlを加えてアルコールを飛ばす（約1分）。ケッパーとブラックオリーブを加えてさらに2〜3分煮詰める。塩小さじ1/4で調味する（ケッパーとオリーブの塩分があるので控えめに）。","title":"ソースを仕上げる","actionItems":["白ワイン100mlを加えてアルコールを飛ばす（約1分）。","ケッパーとブラックオリーブを加えてさらに2〜3分煮詰める。","塩小さじ1/4で調味する（ケッパーとオリーブの塩分があるので控えめに）。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["2〜3分煮詰めたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"リングイネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["リングイネを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"リングイネをアルデンテの1分前に引き上げてフライパンに移す。茹で汁大さじ2〜3を加えて強火で1〜2分炒め合わせる。","title":"パスタを絡める","actionItems":["リングイネをアルデンテの1分前に引き上げてフライパンに移す。","茹で汁大さじ2〜3を加えて強火で1〜2分炒め合わせる。"],"parallelItems":[],"completionCriteria":["ソースが全体に絡んだら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"火を止め、マグロを加えて余熱で10〜15秒だけさっくりと混ぜる。中がピンクのレアが正解——絶対に火を通しすぎない。","title":"マグロを加える","actionItems":["火を止め、マグロを加えて余熱で10〜15秒だけさっくりと混ぜる。"],"parallelItems":[],"completionCriteria":["10〜15秒で混ぜたら完了。中がピンクのレアが正解。"],"cautionItems":["絶対に火を通しすぎない。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":10,"instruction":"バジルをちぎって散らし、EVOO大さじ1を回しかけて仕上げる。","title":"バジルとEVOOをかける","actionItems":["バジルをちぎって散らす。","EVOO大さじ1を回しかける。"],"parallelItems":[],"completionCriteria":["バジルとEVOOをかけたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

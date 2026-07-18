@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ソンドリオ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">そば粉</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">パスタ生地用</span></li>
-          <li><span class="ingredient-name">薄力粉（00番）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">そば粉と2:1で混合</span></li>
-          <li><span class="ingredient-name">サボイキャベツ</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">粗めにざく切り</span></li>
-          <li><span class="ingredient-name">じゃがいも</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">2cm角</span></li>
-          <li><span class="ingredient-name">カゼーラチーズ</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">薄切りまたは小さく割る</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">軽くつぶす（皮をむいて）</span></li>
-          <li><span class="ingredient-name">セージ（生）</span><span class="ingredient-qty">5枚</span></li>
-          <li><span class="ingredient-name">グラーナ・パダーノ（仕上げ用）</span><span class="ingredient-qty">40g</span></li>
+              <li data-ingredient-row="66d8974c-4300-4708-a823-d9fb67bbd026"><span class="ingredient-name" data-ingredient-name>そば粉</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">パスタ生地用</span></li>
+          <li data-ingredient-row="2024748b-40a5-4b6e-8fb5-2eaa9bb037d7"><span class="ingredient-name" data-ingredient-name>薄力粉（00番）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">そば粉と2:1で混合</span></li>
+          <li data-ingredient-row="efff04e2-8c5a-4754-a9d9-c18cf55898c6"><span class="ingredient-name" data-ingredient-name>サボイキャベツ</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">粗めにざく切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="efff04e2-8c5a-4754-a9d9-c18cf55898c6"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="feefece1-7146-477e-b522-fb80e4ff8bec"><span class="ingredient-name" data-ingredient-name>じゃがいも</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">2cm角</span></li>
+          <li data-ingredient-row="b0b632d8-0525-436c-acf7-e490b3c651f0"><span class="ingredient-name" data-ingredient-name>カゼーラチーズ</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">薄切りまたは小さく割る</span><button type="button" class="substitution-trigger" data-substitution-trigger="b0b632d8-0525-436c-acf7-e490b3c651f0"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="96383694-f64f-4ef8-ac71-e1ce3eaba9d7"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="dcbbcb9c-027a-48e9-a32c-0e97147b1f79"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">軽くつぶす（皮をむいて）</span></li>
+          <li data-ingredient-row="cba6dff9-616e-4918-af7b-1a6883cbc68b"><span class="ingredient-name" data-ingredient-name>セージ（生）</span><span class="ingredient-qty" data-ingredient-qty>5枚</span></li>
+          <li data-ingredient-row="327fafb7-058f-4fd2-857e-b6b764c0f826"><span class="ingredient-name" data-ingredient-name>グラーナ・パダーノ（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
               </ul>
             </section>
           </div>
@@ -324,6 +344,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e892bb66-6822-42e6-b962-53d260bf3af9","nameJa":"ヴァルテッリーナ風ピッツォッケリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"66d8974c-4300-4708-a823-d9fb67bbd026","nameOriginal":"Farina di grano saraceno","nameJa":"そば粉","nameEn":"Buckwheat flour","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"パスタ生地用","substitutionOptions":[]},{"id":"2024748b-40a5-4b6e-8fb5-2eaa9bb037d7","nameOriginal":"Farina 00","nameJa":"薄力粉（00番）","nameEn":"Type 00 flour","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"そば粉と2:1で混合","substitutionOptions":[]},{"id":"efff04e2-8c5a-4754-a9d9-c18cf55898c6","nameOriginal":"Verza","nameJa":"サボイキャベツ","nameEn":"Savoy cabbage","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"粗めにざく切り","substitutionOptions":[{"id":"2ef4980d-a592-4769-b25e-f84aabd50728","standardIngredientId":"efff04e2-8c5a-4754-a9d9-c18cf55898c6","nameJa":"普通のキャベツ","nameEn":"Regular cabbage","authenticityImpact":-5,"flavorImpact":"柔らかさと甘みが若干変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"feefece1-7146-477e-b522-fb80e4ff8bec","nameOriginal":"Patate","nameJa":"じゃがいも","nameEn":"Potatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"2cm角","substitutionOptions":[]},{"id":"b0b632d8-0525-436c-acf7-e490b3c651f0","nameOriginal":"Formaggio casera","nameJa":"カゼーラチーズ","nameEn":"Casera cheese","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄切りまたは小さく割る","substitutionOptions":[{"id":"266b5cea-5d2e-490e-a37e-559cd4115322","standardIngredientId":"b0b632d8-0525-436c-acf7-e490b3c651f0","nameJa":"フォンティーナ","nameEn":"Fontina","authenticityImpact":-10,"flavorImpact":"よく溶けるが風味が異なる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"96383694-f64f-4ef8-ac71-e1ce3eaba9d7","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"dcbbcb9c-027a-48e9-a32c-0e97147b1f79","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"軽くつぶす（皮をむいて）","substitutionOptions":[]},{"id":"cba6dff9-616e-4918-af7b-1a6883cbc68b","nameOriginal":"Salvia","nameJa":"セージ（生）","nameEn":"Fresh sage","quantity":5,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"327fafb7-058f-4fd2-857e-b6b764c0f826","nameOriginal":"Grana Padano","nameJa":"グラーナ・パダーノ（仕上げ用）","nameEn":"Grana Padano","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"カゼーラチーズ200gを薄切りまたは小さく割っておく。じゃがいも2個の皮をむいて2cm角に切り、サボイキャベツ200gを粗めにざく切りにしておく。","title":"食材を下処理する","actionItems":["カゼーラチーズ200gを薄切りまたは小さく割る。","じゃがいも2個の皮をむき2cm角に切る。","サボイキャベツ200gを粗めにざく切りにする。"],"parallelItems":[],"completionCriteria":["チーズ・じゃがいも・キャベツの下処理が完了した。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"（生地を作る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。そば粉200g・薄力粉100g・塩小さじ1・水120ml程度をこねてパスタ生地を作る。7×1cm程度の平打ち麺に切る。","title":"パスタ生地を作る","actionItems":["そば粉200g・薄力粉100g・塩小さじ1・水120ml程度をこねてパスタ生地を作る。","7×1cm程度の平打ち麺に切る。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["パスタが7×1cmの平打ち麺に切れた。"],"cautionItems":["そば粉はグルテンが少ないため、こねすぎず均一にまとめること。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"沸かしておいた塩湯にじゃがいも（2cm角）を入れて5分茹でる。","title":"じゃがいもを茹でる","actionItems":["沸かしておいた塩湯にじゃがいも2cm角を入れて5分茹でる。"],"parallelItems":[],"completionCriteria":["5分経過してじゃがいもにある程度火が通った。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"・キャベツ200gを加えてさらに5分茹でる\n・ピッツォッケリを加えてさらに10分茹でる","title":"キャベツとパスタを茹でる","actionItems":["キャベツ200gを加えてさらに5分茹でる。","ピッツォッケリを加えてさらに10分茹でる。"],"parallelItems":[],"completionCriteria":["ピッツォッケリが茹で上がった。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"・全てをザルにあける\n・耐熱皿にパスタ・野菜・カゼーラチーズを層状に重ねる","title":"耐熱皿に層状に重ねる","actionItems":["パスタと野菜をザルにあける。","耐熱皿にパスタ・野菜・カゼーラチーズを層状に重ねる。"],"parallelItems":[],"completionCriteria":["耐熱皿にパスタ・野菜・チーズが層状に重なった。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"フライパンでバター80gを弱中火で溶かし、にんにく2片（つぶしたもの）とセージ5枚を加えてバターが茶色くなるまで（ブールノワゼット）加熱する。全体にかける。","title":"ブールノワゼットを作ってかける","actionItems":["フライパンでバター80gを弱中火で溶かす。","にんにく2片（つぶしたもの）とセージ5枚を加える。","バターが茶色くなるまで（ブールノワゼット）加熱して全体にかける。"],"parallelItems":[],"completionCriteria":["バターが茶色くナッツの香りがした状態になった。"],"cautionItems":["焦がしすぎると苦くなる。茶色くなった時点で素早く火を止めること。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"グラーナ・パダーノ40gを削りかけ、すぐに提供する（チーズが糸を引くうちに食べる）。","title":"チーズをかけて提供する","actionItems":["グラーナ・パダーノ40gを削りかける。","すぐに提供する。"],"parallelItems":[],"completionCriteria":["チーズが削りかけられ、糸を引く状態で提供できた。"],"cautionItems":["チーズが固まる前に素早く提供すること。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

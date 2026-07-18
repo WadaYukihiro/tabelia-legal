@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ボルロッティ豆（茹でたもの）</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">ショートパスタ（ディタリーニ等）</span><span class="ingredient-qty">160g</span></li>
-          <li><span class="ingredient-name">ラルド（またはパンチェッタ）</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">45ml</span></li>
-          <li><span class="ingredient-name">ミニトマト</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">1枝</span></li>
+              <li data-ingredient-row="f7571bea-8e61-40d8-8753-f6c2116aacac"><span class="ingredient-name" data-ingredient-name>ボルロッティ豆（茹でたもの）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><button type="button" class="substitution-trigger" data-substitution-trigger="f7571bea-8e61-40d8-8753-f6c2116aacac"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="7a86cce7-e960-429a-b921-e9070538f056"><span class="ingredient-name" data-ingredient-name>ショートパスタ（ディタリーニ等）</span><span class="ingredient-qty" data-ingredient-qty>160g</span></li>
+          <li data-ingredient-row="86943521-19cb-47ee-85a1-e062450983b0"><span class="ingredient-name" data-ingredient-name>ラルド（またはパンチェッタ）</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="37b4a7f2-9b68-4fbe-af3e-d4b59ecd8330"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="7b577c3f-4dc2-4dbb-95f9-4109151cc666"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span></li>
+          <li data-ingredient-row="99ac6d22-2366-44e4-8d1b-8efd13df3f9a"><span class="ingredient-name" data-ingredient-name>ミニトマト</span><span class="ingredient-qty" data-ingredient-qty>150g</span><button type="button" class="substitution-trigger" data-substitution-trigger="99ac6d22-2366-44e4-8d1b-8efd13df3f9a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="61598a4d-4a92-48fd-ac11-1883e2a7719f"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>1枝</span></li>
               </ul>
             </section>
           </div>
@@ -232,6 +252,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7aa3a297-ec93-4c8e-8400-0c4b192c1561","nameJa":"白いんげん豆のパスタスープ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"f7571bea-8e61-40d8-8753-f6c2116aacac","nameOriginal":"Fagioli borlotti","nameJa":"ボルロッティ豆（茹でたもの）","nameEn":"Borlotti beans","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"6446e481-b260-44f3-8f5a-d470086adcfd","standardIngredientId":"f7571bea-8e61-40d8-8753-f6c2116aacac","nameJa":"金時豆（缶詰）","nameEn":"Kidney beans (canned)","authenticityImpact":-5,"flavorImpact":"色と食感が若干異なるが成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7a86cce7-e960-429a-b921-e9070538f056","nameOriginal":"Pasta mista","nameJa":"ショートパスタ（ディタリーニ等）","nameEn":"Short pasta (ditalini)","quantity":160,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"86943521-19cb-47ee-85a1-e062450983b0","nameOriginal":"Lardo / Pancetta","nameJa":"ラルド（またはパンチェッタ）","nameEn":"Lardo or pancetta","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"37b4a7f2-9b68-4fbe-af3e-d4b59ecd8330","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"7b577c3f-4dc2-4dbb-95f9-4109151cc666","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"99ac6d22-2366-44e4-8d1b-8efd13df3f9a","nameOriginal":"Pomodorini","nameJa":"ミニトマト","nameEn":"Cherry tomatoes","quantity":150,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"24d1ccab-6d4f-4fa7-a0de-30ecd2b14d76","standardIngredientId":"99ac6d22-2366-44e4-8d1b-8efd13df3f9a","nameJa":"トマトペースト","nameEn":"Tomato paste","authenticityImpact":-5,"flavorImpact":"少量（大さじ1）で代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"61598a4d-4a92-48fd-ac11-1883e2a7719f","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":1,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ラルド（またはパンチェッタ）をみじん切りにし、にんにく（みじん切り）とともに鍋にオリーブオイル30mlで中火で炒める。脂が出てラルドが透明になったら（約5分）次へ。","title":"材料を準備する","actionItems":["ラルド（またはパンチェッタ）をみじん切りにし、にんにく（みじん切り）とともに鍋にオリーブオイル30mlで中火で炒める。"],"parallelItems":[],"completionCriteria":["脂が出てラルドが透明になったら（約5分）次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ミニトマトとローズマリーを加え、木べらでトマトをつぶしながら5分炒める。トマトが崩れてソース状になったら次へ。","title":"香味を炒める","actionItems":["ミニトマトとローズマリーを加え、木べらでトマトをつぶしながら5分炒める。"],"parallelItems":[],"completionCriteria":["トマトが崩れてソース状になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"豆の半量を加えてつぶし、スープ状にする。残りの豆と水500mlを加えて蓋をして弱火で30分煮込む。","title":"材料を合わせる","actionItems":["豆の半量を加えてつぶし、スープ状にする。","残りの豆と水500mlを加えて蓋をして弱火で30分煮込む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"パスタを加えてアルデンテに茹でる（約8〜12分、パスタの種類による）。塩で調味し、鍋全体に仕上げのオリーブオイル15mlをまわしかける。","title":"茹でる","actionItems":["パスタを加えてアルデンテに茹でる（約8〜12分、パスタの種類による）。","塩で調味し、鍋全体に仕上げのオリーブオイル15mlをまわしかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

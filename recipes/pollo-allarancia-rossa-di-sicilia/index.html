@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・カターニャ（エトナ山麓）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">鶏もも肉（骨付き）</span><span class="ingredient-qty">1200g（4〜6ピース）</span><span class="ingredient-notes">皮付きを使う</span></li>
-          <li><span class="ingredient-name">ブラッドオレンジ（旬: 1〜3月）</span><span class="ingredient-qty">4個</span><span class="ingredient-notes">果汁を絞る（3個）＋薄切りを飾りに使う（1個）</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">ソースの仕上げに使う</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">2枝</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">オレンジはちみつ（またははちみつ）</span><span class="ingredient-qty">15g（小さじ2）</span><span class="ingredient-notes">酸味を和らげてバランスを取る</span></li>
+              <li data-ingredient-row="2158fc30-ed08-4884-81d2-805728d535f5"><span class="ingredient-name" data-ingredient-name>鶏もも肉（骨付き）</span><span class="ingredient-qty" data-ingredient-qty>1200g（4〜6ピース）</span><span class="ingredient-notes">皮付きを使う</span></li>
+          <li data-ingredient-row="a379cc82-8856-46a6-a699-f19159469abc"><span class="ingredient-name" data-ingredient-name>ブラッドオレンジ（旬: 1〜3月）</span><span class="ingredient-qty" data-ingredient-qty>4個</span><span class="ingredient-notes">果汁を絞る（3個）＋薄切りを飾りに使う（1個）</span><button type="button" class="substitution-trigger" data-substitution-trigger="a379cc82-8856-46a6-a699-f19159469abc"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2b5f12c7-95b0-4b47-85bb-7412a5d89db2"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="ef3bfc9a-0160-40a5-b351-ace52e7aa392"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">ソースの仕上げに使う</span></li>
+          <li data-ingredient-row="cc7a4500-4795-42c0-bf7e-a58579ca5382"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="3e8d6bda-5d76-48a5-ac73-797bbd600bed"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>2枝</span></li>
+          <li data-ingredient-row="e0e85986-b6f9-4b42-84ec-6bd594d734d5"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="907e73ac-6545-4ce2-bf88-1e91b7b4dcfe"><span class="ingredient-name" data-ingredient-name>オレンジはちみつ（またははちみつ）</span><span class="ingredient-qty" data-ingredient-qty>15g（小さじ2）</span><span class="ingredient-notes">酸味を和らげてバランスを取る</span></li>
               </ul>
             </section>
           </div>
@@ -277,6 +297,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"db99ae52-b4ad-41fc-9f90-872fca9b143e","nameJa":"鶏肉のブラッドオレンジソース","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"2158fc30-ed08-4884-81d2-805728d535f5","nameOriginal":"Pollo (cosce e sovracosce)","nameJa":"鶏もも肉（骨付き）","nameEn":"Bone-in chicken thighs and drumsticks","quantity":1200,"unit":"g（4〜6ピース）","role":"essential","scalingBehavior":null,"notes":"皮付きを使う","substitutionOptions":[]},{"id":"a379cc82-8856-46a6-a699-f19159469abc","nameOriginal":"Arance rosse di Sicilia","nameJa":"ブラッドオレンジ（旬: 1〜3月）","nameEn":"Sicilian blood oranges","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"果汁を絞る（3個）＋薄切りを飾りに使う（1個）","substitutionOptions":[{"id":"e3eb58ae-3dc8-4041-8748-42f62e43b2dd","standardIngredientId":"a379cc82-8856-46a6-a699-f19159469abc","nameJa":"通常のオレンジ（国産・バレンシア種など）","nameEn":"Regular orange (Valencia or navel)","authenticityImpact":-10,"flavorImpact":"赤い色と独特の渋みが失われる。味は近く美味しい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2b5f12c7-95b0-4b47-85bb-7412a5d89db2","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ef3bfc9a-0160-40a5-b351-ace52e7aa392","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ソースの仕上げに使う","substitutionOptions":[]},{"id":"cc7a4500-4795-42c0-bf7e-a58579ca5382","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"3e8d6bda-5d76-48a5-ac73-797bbd600bed","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e0e85986-b6f9-4b42-84ec-6bd594d734d5","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"907e73ac-6545-4ce2-bf88-1e91b7b4dcfe","nameOriginal":"Miele d'arancia","nameJa":"オレンジはちみつ（またははちみつ）","nameEn":"Orange blossom honey or regular honey","quantity":15,"unit":"g（小さじ2）","role":"flavor","scalingBehavior":null,"notes":"酸味を和らげてバランスを取る","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"玉ねぎをみじん切りにする。","title":"玉ねぎを切る","actionItems":["玉ねぎ1個をみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鶏もも肉に塩・こしょうをする。フライパンにオリーブオイルを中強火で熱し、皮側から入れて7〜8分、濃い焼き色をつける。裏返して3分。取り出す。","title":"鶏肉に焼き色をつける","actionItems":["鶏もも肉1200gに塩・こしょうをする。","フライパンにオリーブオイル30mlを中強火で熱し、皮側から入れて7〜8分焼く。","裏返して3分焼き、取り出す。"],"parallelItems":[],"completionCriteria":["皮面に濃い焼き色がついたら裏返し、計10〜11分焼いたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":13,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンで玉ねぎを中火で5分炒める。白ワインを注いで半量に煮詰める。","title":"玉ねぎを炒めてワインを煮詰める","actionItems":["同じフライパンで玉ねぎを中火で5分炒める。","白ワイン100mlを注いで半量に煮詰める。"],"parallelItems":[],"completionCriteria":["ワインが半量になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ブラッドオレンジの果汁（3個分）・はちみつ・ローズマリーを加えて混ぜる。","title":"オレンジ果汁を加える","actionItems":["ブラッドオレンジ3個分の果汁・はちみつ15g・ローズマリー2枝を加えて混ぜる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"鶏肉を皮側を上にして戻し、蓋をして弱火で20分煮込む。鶏肉に完全に火が通り、ソースが少しとろりとしたら完成。","title":"鶏肉をオレンジソースで煮込む","actionItems":["鶏肉を皮側を上にして戻す。","蓋をして弱火で20分煮込む。"],"parallelItems":[],"completionCriteria":["鶏肉に完全に火が通り、ソースが少しとろりとしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":22,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"鶏肉を取り出し、バターを加えてソースをかき混ぜて乳化させる。オレンジ薄切りを添えて盛り付け、ソースをかける。","title":"バターでソースを仕上げる","actionItems":["鶏肉を取り出す。","バター30gを加えてソースをかき混ぜて乳化させる。","オレンジ薄切りを添えて盛り付け、ソースをかける。"],"parallelItems":[],"completionCriteria":["ソースが乳化してつやが出れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

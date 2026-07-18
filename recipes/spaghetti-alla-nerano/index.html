@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スパゲッティ（乾燥）</span><span class="ingredient-qty">320g</span><span class="ingredient-notes">1.8mm前後。袋表示より1分短く茹でる</span></li>
-          <li><span class="ingredient-name">ズッキーニ</span><span class="ingredient-qty">700g</span><span class="ingredient-notes">3mm厚の薄い輪切り。太すぎるものは縦半分にしてから切る</span></li>
-          <li><span class="ingredient-name">プロヴォローネ・デル・モナコ</span><span class="ingredient-qty">160g</span><span class="ingredient-notes">細かくすりおろす。冷たいまま加えると固まりやすいので室温に戻す</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">12枚</span><span class="ingredient-notes">半量はズッキーニに混ぜ、半量は仕上げにちぎる</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">250ml</span><span class="ingredient-notes">ズッキーニを揚げるため多めに使う。揚げ油の一部を仕上げに戻す</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">軽くつぶして香りを移し、色づいたら取り出す</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">35g</span><span class="ingredient-notes">パスタ茹で水用30g、ズッキーニ調味用5g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">2g</span></li>
+              <li data-ingredient-row="e0d15aeb-1a92-48b6-93df-f5a457afeace"><span class="ingredient-name" data-ingredient-name>スパゲッティ（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>320g</span><span class="ingredient-notes">1.8mm前後。袋表示より1分短く茹でる</span><button type="button" class="substitution-trigger" data-substitution-trigger="e0d15aeb-1a92-48b6-93df-f5a457afeace"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="db228f43-7204-4255-958f-816a6951a909"><span class="ingredient-name" data-ingredient-name>ズッキーニ</span><span class="ingredient-qty" data-ingredient-qty>700g</span><span class="ingredient-notes">3mm厚の薄い輪切り。太すぎるものは縦半分にしてから切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="db228f43-7204-4255-958f-816a6951a909"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="dfa11ea7-c77c-4dca-a17d-618965a7f312"><span class="ingredient-name" data-ingredient-name>プロヴォローネ・デル・モナコ</span><span class="ingredient-qty" data-ingredient-qty>160g</span><span class="ingredient-notes">細かくすりおろす。冷たいまま加えると固まりやすいので室温に戻す</span><button type="button" class="substitution-trigger" data-substitution-trigger="dfa11ea7-c77c-4dca-a17d-618965a7f312"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="398fc72a-165b-4214-960d-19afba7602d3"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>12枚</span><span class="ingredient-notes">半量はズッキーニに混ぜ、半量は仕上げにちぎる</span></li>
+          <li data-ingredient-row="aa9aeb71-689d-43df-b70a-b60797597c15"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>250ml</span><span class="ingredient-notes">ズッキーニを揚げるため多めに使う。揚げ油の一部を仕上げに戻す</span></li>
+          <li data-ingredient-row="7603b8a3-24cd-467d-8321-25db3daf8cac"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">軽くつぶして香りを移し、色づいたら取り出す</span></li>
+          <li data-ingredient-row="e2a6021d-6983-4f28-9eee-ad7275ac7a58"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>35g</span><span class="ingredient-notes">パスタ茹で水用30g、ズッキーニ調味用5g</span></li>
+          <li data-ingredient-row="1492c1b3-c24d-46b7-a047-cb99c1784f41"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>2g</span></li>
               </ul>
             </section>
           </div>
@@ -319,6 +339,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"68525cde-71ee-471e-ab1f-eb7ed08228a0","nameJa":"ズッキーニとチーズのネラーノ風スパゲッティ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"e0d15aeb-1a92-48b6-93df-f5a457afeace","nameOriginal":"Spaghetti","nameJa":"スパゲッティ（乾燥）","nameEn":"Dry spaghetti","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1.8mm前後。袋表示より1分短く茹でる","substitutionOptions":[{"id":"e4363aed-b4c7-414f-9762-55083ad74512","standardIngredientId":"e0d15aeb-1a92-48b6-93df-f5a457afeace","nameJa":"スパゲットーニ","nameEn":"Spaghettoni","authenticityImpact":0,"flavorImpact":"太めの麺が濃いズッキーニソースをしっかり受け止める","textureImpact":null,"procedureChanges":["袋表示より1分短く茹で、仕上げの加熱時間を1分長くする"],"affectedStepNumbers":[6,7,8],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":6,"instruction":"（ズッキーニを休ませる間に）沸かしておいた湯に塩30gを加え、スパゲットーニ320gを袋表示より1分短く茹でる。\n・茹で汁200mlを取り置く","changeReason":"置換後のパスタ名と茹で時間基準に合わせるため"},{"action":"replace","stepNumber":7,"instruction":"フライパンに揚げたズッキーニの2/3量と取り置いた揚げ油大さじ2を入れ、中火で温める。茹で汁100mlを加え、ズッキーニの半量が崩れてソース状になるまで1〜2分混ぜる。スパゲットーニに絡めるため、少しゆるめに保つ。","changeReason":"太めのスパゲットーニに絡むよう、ズッキーニソースをややゆるめに整える"},{"action":"replace","stepNumber":8,"instruction":"スパゲットーニをフライパンに移し、強めの中火で2分炒め合わせる。火を止めてプロヴォローネ・デル・モナコを3回に分けて加え、茹で汁を少しずつ足しながらトングで混ぜる。チーズが糸を引かず、麺全体を薄く包む艶のあるソースになったら皿に盛る。","changeReason":"スパゲットーニは太くソースを吸うまで時間がかかるため、仕上げの加熱を1分長くする"}]}]},{"id":"db228f43-7204-4255-958f-816a6951a909","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3mm厚の薄い輪切り。太すぎるものは縦半分にしてから切る","substitutionOptions":[{"id":"4aac706b-a99d-4467-8335-076c1081c5e4","standardIngredientId":"db228f43-7204-4255-958f-816a6951a909","nameJa":"黄ズッキーニ","nameEn":"Yellow zucchini","authenticityImpact":-5,"flavorImpact":"甘みは近いが、仕上がりの色が淡くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"dfa11ea7-c77c-4dca-a17d-618965a7f312","nameOriginal":"Provolone del Monaco","nameJa":"プロヴォローネ・デル・モナコ","nameEn":"Provolone del Monaco","quantity":160,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かくすりおろす。冷たいまま加えると固まりやすいので室温に戻す","substitutionOptions":[{"id":"0ab93139-56de-4e56-a5f9-8fd204a54447","standardIngredientId":"dfa11ea7-c77c-4dca-a17d-618965a7f312","nameJa":"カチョカヴァッロ","nameEn":"Caciocavallo","authenticityImpact":-10,"flavorImpact":"熟成香は弱まるが、伸びと塩気で近い質感を作れる","textureImpact":null,"procedureChanges":["細かくすりおろして室温に戻し、火口から外した余熱で少量ずつ溶かす"],"affectedStepNumbers":[2,8],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"カチョカヴァッロ160gをチーズおろしの細目で細かくすりおろし、室温に置く。\n・バジル12枚は半量を粗くちぎり、半量は仕上げ用に残す\n・にんにく1片は包丁の腹で軽くつぶす\nチーズが手で触れて冷たくなければ準備完了。","changeReason":"カチョカヴァッロは冷たいままだと固まりやすいため、細かくすりおろして室温に戻す"},{"action":"replace","stepNumber":8,"instruction":"スパゲッティをフライパンに移し、強めの中火で1分炒め合わせる。\n・火を完全に止め、フライパンを火口から外して30秒置く\n・カチョカヴァッロを4回に分けて加え、茹で汁を大さじ1〜2ずつ足しながらトングで混ぜる\nチーズの粒が残らず、糸を強く引く前に麺全体へ薄くまとわり、艶のあるソースになったら皿に盛る。","changeReason":"カチョカヴァッロはプロヴォローネより固まりやすいため、余熱で少量ずつ溶かす"}]},{"id":"6357faa2-5d3a-4482-9dd1-1a677b9a43cd","standardIngredientId":"dfa11ea7-c77c-4dca-a17d-618965a7f312","nameJa":"ペコリーノ・ロマーノ 80g + パルミジャーノ 80g","nameEn":"Pecorino Romano and Parmigiano Reggiano blend","authenticityImpact":-20,"flavorImpact":"塩気と旨みは補えるが、プロヴォローネ特有の伸びと乳の香りは失われる","textureImpact":null,"procedureChanges":["チーズが固まりやすいため火を完全に止めてから加える"],"affectedStepNumbers":[2,8],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"プロヴォローネ・デル・モナコ"},{"role":"essential","unit":"g","notes":"細かくすりおろし、室温に戻す","action":"add","nameEn":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ","quantity":80},{"role":"essential","unit":"g","notes":"細かくすりおろし、室温に戻す","action":"add","nameEn":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","quantity":80}],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"ペコリーノ・ロマーノ80gとパルミジャーノ80gを細かくすりおろし、室温に置く。バジル12枚は半量を粗くちぎり、半量は仕上げ用に残す。にんにく1片は包丁の腹で軽くつぶす。","changeReason":"プロヴォローネを2種の粉チーズに置き換えるため"},{"action":"replace","stepNumber":8,"instruction":"スパゲッティをフライパンに移し、強めの中火で1分炒め合わせる。火を完全に止め、ペコリーノ・ロマーノとパルミジャーノを3回に分けて加え、茹で汁を少しずつ足しながらトングで混ぜる。チーズの粒が固まらず、麺全体を薄く包む艶のあるソースになったら皿に盛る。","changeReason":"ペコリーノとパルミジャーノは直火で固まりやすいため、火を止めてから少しずつ加える"}]}]},{"id":"398fc72a-165b-4214-960d-19afba7602d3","nameOriginal":"Basilico fresco","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":12,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"半量はズッキーニに混ぜ、半量は仕上げにちぎる","substitutionOptions":[]},{"id":"aa9aeb71-689d-43df-b70a-b60797597c15","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":250,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"ズッキーニを揚げるため多めに使う。揚げ油の一部を仕上げに戻す","substitutionOptions":[]},{"id":"7603b8a3-24cd-467d-8321-25db3daf8cac","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"軽くつぶして香りを移し、色づいたら取り出す","substitutionOptions":[]},{"id":"e2a6021d-6983-4f28-9eee-ad7275ac7a58","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":35,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"パスタ茹で水用30g、ズッキーニ調味用5g","substitutionOptions":[]},{"id":"1492c1b3-c24d-46b7-a047-cb99c1784f41","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":2,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ズッキーニ700gを3mm厚の薄い輪切りにする。太いものは縦半分にしてから薄切りにし、切った断面が均一になるよう揃える。","title":"材料を準備する","actionItems":["ズッキーニ700gを3mm厚の薄い輪切りにする。","太いものは縦半分にしてから薄切りにし、切った断面が均一になるよう揃える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"プロヴォローネ・デル・モナコ160gを細かくすりおろし、室温に置く。バジル12枚は半量を粗くちぎり、半量は仕上げ用に残す。にんにく1片は包丁の腹で軽くつぶす。","title":"食材を戻す","actionItems":["プロヴォローネ・デル・モナコ160gを細かくすりおろし、室温に置く。","バジル12枚は半量を粗くちぎり、半量は仕上げ用に残す。","にんにく1片は包丁の腹で軽くつぶす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"深めのフライパンにエクストラバージンオリーブオイル250mlとつぶしたにんにく1片を入れ、中火で2分ほど温める。にんにくが薄く色づき香りが立ったら取り出す。","title":"材料を合わせる","actionItems":["深めのフライパンにエクストラバージンオリーブオイル250mlとつぶしたにんにく1片を入れ、中火で2分ほど温める。","にんにくが薄く色づき香りが立ったら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"（ズッキーニを揚げ焼きにする間に）大鍋に湯3Lを沸かし始める。ズッキーニを3〜4回に分けて入れ、170℃前後の油で揚げ焼きにする。1回につき3〜4分、縁が薄い金色になり中心がしんなりしたら網に上げる。揚げ油は大さじ3を取り置く。","title":"湯を沸かす","actionItems":["ズッキーニを3〜4回に分けて入れ、170℃前後の油で揚げ焼きにする。","揚げ油は大さじ3を取り置く。"],"parallelItems":["（ズッキーニを揚げ焼きにする間に）大鍋に湯3Lを沸かし始める。"],"completionCriteria":["1回につき3〜4分、縁が薄い金色になり中心がしんなりしたら網に上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"揚げたズッキーニに塩小さじ1/2と粗くちぎったバジル6枚を混ぜ、5分置く。ズッキーニから香りのある油と水分がにじみ、全体がしっとりしたら次へ。","title":"休ませて落ち着かせる","actionItems":["揚げたズッキーニに塩小さじ1/2と粗くちぎったバジル6枚を混ぜ、5分置く。"],"parallelItems":[],"completionCriteria":["ズッキーニから香りのある油と水分がにじみ、全体がしっとりしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"（ズッキーニを休ませる間に）沸かしておいた湯に塩30gを加え、スパゲッティ320gを袋表示より1分短く茹でる。\n・茹で汁200mlを取り置く","title":"休ませて落ち着かせる","actionItems":["茹で汁200mlを取り置く"],"parallelItems":["（ズッキーニを休ませる間に）沸かしておいた湯に塩30gを加え、スパゲッティ320gを袋表示より1分短く茹でる。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":11,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"フライパンに揚げたズッキーニの2/3量と取り置いた揚げ油大さじ2を入れ、中火で温める。茹で汁100mlを加え、ズッキーニの半量が崩れてソース状になるまで1〜2分混ぜる。","title":"揚げる","actionItems":["フライパンに揚げたズッキーニの2/3量と取り置いた揚げ油大さじ2を入れ、中火で温める。","茹で汁100mlを加え、ズッキーニの半量が崩れてソース状になるまで1〜2分混ぜる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"スパゲッティをフライパンに移し、強めの中火で1分炒め合わせる。火を止めてプロヴォローネ・デル・モナコを3回に分けて加え、茹で汁を少しずつ足しながらトングで混ぜる。チーズが糸を引かず、麺全体を薄く包む艶のあるソースになったら皿に盛る。","title":"香味を炒める","actionItems":["スパゲッティをフライパンに移し、強めの中火で1分炒め合わせる。"],"parallelItems":[],"completionCriteria":["チーズが糸を引かず、麺全体を薄く包む艶のあるソースになったら皿に盛る。"],"cautionItems":["火を止めてプロヴォローネ・デル・モナコを3回に分けて加え、茹で汁を少しずつ足しながらトングで混ぜる。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"残りの揚げズッキーニとバジル6枚を上に散らし、黒胡椒を4〜5回挽く。皿の底に水分がたまらず、ソースが麺に密着していれば完成。","title":"揚げる","actionItems":["残りの揚げズッキーニとバジル6枚を上に散らし、黒胡椒を4〜5回挽く。"],"parallelItems":[],"completionCriteria":["皿の底に水分がたまらず、ソースが麺に密着していれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

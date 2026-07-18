@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ベルガモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-06-04">2026.06.04</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,22 +93,29 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ウズラ（丸ごと）</span><span class="ingredient-qty">8羽</span><span class="ingredient-notes">下処理済みのもの。各120〜150g程度</span></li>
-          <li><span class="ingredient-name">パンチェッタ（薄切り）</span><span class="ingredient-qty">8枚</span><span class="ingredient-notes">ウズラ1羽につき1枚巻く</span></li>
-          <li><span class="ingredient-name">セージ</span><span class="ingredient-qty">8枚</span><span class="ingredient-notes">ウズラ1羽につき1枚、パンチェッタの下に挟む</span></li>
-          <li><span class="ingredient-name">ローズマリー</span><span class="ingredient-qty">2枝</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">潰す</span></li>
-          <li><span class="ingredient-name">無塩バター</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">ソース形成。焼き時にバスティングに使う</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">100ml</span><span class="ingredient-notes">蒸らし用。辛口</span></li>
-          <li><span class="ingredient-name">鶏ブロード（チキンブロス）</span><span class="ingredient-qty">200ml</span><span class="ingredient-notes">ソース用。市販の無塩タイプ可</span></li>
-          <li><span class="ingredient-name">オリーブオイル（EVO）</span><span class="ingredient-qty">20ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">4g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">1少々</span></li>
-          <li><span class="ingredient-name">ポレンタ用とうもろこし粉</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">中挽き</span></li>
-          <li><span class="ingredient-name">水（ポレンタ用）</span><span class="ingredient-qty">1200ml</span></li>
-          <li><span class="ingredient-name">塩（ポレンタ用）</span><span class="ingredient-qty">12g</span></li>
+              <li data-ingredient-row="0e124061-6426-4b46-82d7-5d0396e548b1"><span class="ingredient-name" data-ingredient-name>ウズラ（丸ごと）</span><span class="ingredient-qty" data-ingredient-qty>8羽</span><span class="ingredient-notes">下処理済みのもの。各120〜150g程度</span><button type="button" class="substitution-trigger" data-substitution-trigger="0e124061-6426-4b46-82d7-5d0396e548b1"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="fe69db43-2e62-4a1c-9af4-41f86bb6b564"><span class="ingredient-name" data-ingredient-name>パンチェッタ（薄切り）</span><span class="ingredient-qty" data-ingredient-qty>8枚</span><span class="ingredient-notes">ウズラ1羽につき1枚巻く</span><button type="button" class="substitution-trigger" data-substitution-trigger="fe69db43-2e62-4a1c-9af4-41f86bb6b564"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c0cff838-fd3a-442b-af6d-341bf6766965"><span class="ingredient-name" data-ingredient-name>セージ</span><span class="ingredient-qty" data-ingredient-qty>8枚</span><span class="ingredient-notes">ウズラ1羽につき1枚、パンチェッタの下に挟む</span></li>
+          <li data-ingredient-row="e2b433f7-7d0b-4d04-9be1-1a1cd2183a18"><span class="ingredient-name" data-ingredient-name>ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>2枝</span></li>
+          <li data-ingredient-row="ec1918d3-5cd5-43d3-ad67-db360bda3b5d"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">潰す</span></li>
+          <li data-ingredient-row="57c7e28f-a344-4669-a9ec-53db3ede6fa4"><span class="ingredient-name" data-ingredient-name>無塩バター</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">ソース形成。焼き時にバスティングに使う</span></li>
+          <li data-ingredient-row="cb393286-de73-4551-9811-a0fc32ebbba2"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span><span class="ingredient-notes">蒸らし用。辛口</span></li>
+          <li data-ingredient-row="7b0146c3-ba0e-445c-b1b2-f785836b3b17"><span class="ingredient-name" data-ingredient-name>鶏ブロード（チキンブロス）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span><span class="ingredient-notes">ソース用。市販の無塩タイプ可</span></li>
+          <li data-ingredient-row="b8ab96b0-3e6a-42d9-8c4c-f2a62bf44326"><span class="ingredient-name" data-ingredient-name>オリーブオイル（EVO）</span><span class="ingredient-qty" data-ingredient-qty>20ml</span></li>
+          <li data-ingredient-row="d5e3afae-ce40-41ef-82ff-4078de9009e5"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>4g</span></li>
+          <li data-ingredient-row="6d3f8631-eb1d-4e06-8bf7-3547c1ef173b"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
+          <li data-ingredient-row="97f4f2eb-645a-4125-8bb8-4cf93bf8a71a"><span class="ingredient-name" data-ingredient-name>ポレンタ用とうもろこし粉</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">中挽き</span></li>
+          <li data-ingredient-row="a969f89d-e12e-45ee-b5f6-5271b4087ea2"><span class="ingredient-name" data-ingredient-name>水（ポレンタ用）</span><span class="ingredient-qty" data-ingredient-qty>1200ml</span></li>
+          <li data-ingredient-row="fcd12a99-67b9-49ac-8ba4-5a77729f482a"><span class="ingredient-name" data-ingredient-name>塩（ポレンタ用）</span><span class="ingredient-qty" data-ingredient-qty>12g</span></li>
               </ul>
             </section>
           </div>
@@ -302,6 +322,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7418cb30-1c63-4ce1-911a-41c70d9cdfbf","nameJa":"ポレンタと小鳥のベルガモ風","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"0e124061-6426-4b46-82d7-5d0396e548b1","nameOriginal":"Quaglie","nameJa":"ウズラ（丸ごと）","nameEn":"Whole quail","quantity":8,"unit":"羽","role":"essential","scalingBehavior":null,"notes":"下処理済みのもの。各120〜150g程度","substitutionOptions":[{"id":"e3425f2e-1375-4536-9489-dc125f87efa5","standardIngredientId":"0e124061-6426-4b46-82d7-5d0396e548b1","nameJa":"ホロホロ鳥（ポルピオン）","nameEn":"Guinea fowl portions","authenticityImpact":-10,"flavorImpact":"野性味が増し、肉量も増えるが伝統の小鳥感は失われる。火入れ時間を長く調整する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[1,3,4,5],"notes":null,"variantType":"substitute","ingredientPatches":[{"role":"essential","unit":"g","notes":"4〜8切れ。水気を拭き、焼く前に室温へ戻す","action":"update","nameEn":"Guinea fowl, bone-in portions","nameJa":"ホロホロ鳥（骨付きももまたはぶつ切り）","quantity":800,"targetNameJa":"ウズラ（丸ごと）"}],"stepPatches":[{"title":"ホロホロ鳥にセージとパンチェッタを巻く","action":"replace","stepNumber":1,"actionItems":["ホロホロ鳥800gの水気を拭き、塩（合計4g分）・黒胡椒を全体にまぶす。","各切れにセージ1枚をあて、パンチェッタを巻ける大きさなら1枚ずつ巻いてタコ糸で固定する。","大きい切れはパンチェッタを上からかぶせるように密着させる。"],"instruction":"ホロホロ鳥800g（骨付きももまたはぶつ切り4〜8切れ）の水気を拭き、塩・黒胡椒を全体にまぶす。各切れにセージ1枚をあて、パンチェッタを巻ける大きさなら1枚ずつ巻いてタコ糸で固定する。大きい切れはパンチェッタを上からかぶせるように密着させる。","changeReason":"ウズラ8羽ではなく骨付きホロホロ鳥800gを使うため、下処理と巻き方を更新する","completionCriteria":["ホロホロ鳥の表面に塩・黒胡椒が行き渡り、パンチェッタとセージが肉に密着していれば次へ。"]},{"title":"ホロホロ鳥をバターとセージで焼く","action":"replace","stepNumber":3,"actionItems":["フライパンにオリーブオイル20ml・バター30g・ローズマリー2枝・にんにく2片（潰す）を入れ中火で熱する。","ホロホロ鳥を皮目から並べ、片面6〜8分ずつ焼く。","裏返し、残りのバター30gを加えてスプーンでバターをすくいながら肉全体にかけ続ける。"],"instruction":"大きなフライパンにオリーブオイル20ml・無塩バター30g・ローズマリー2枝・にんにく2片（潰す）を入れて中火で熱する。ホロホロ鳥を皮目から並べ、片面6〜8分ずつ焼く。焼き色がついたら裏返し、残りのバター30gを加えてスプーンでバターをすくいながら肉全体にかけ続ける（バスティング）。全面がきつね色になれば次へ。","cautionItems":["ホロホロ鳥はウズラより大きい。表面だけ色づいて中が生にならないよう、弱めの中火でじっくり焼く。"],"changeReason":"ホロホロ鳥に合わせて焼き時間と火入れ目安を更新する","completionCriteria":["全面に濃いきつね色の焼き色がつき、パンチェッタがカリッとしていれば次へ。"]},{"title":"白ワインで蒸らしてソースを作る","action":"replace","stepNumber":4,"actionItems":["白ワイン100mlを注ぎ、中火で約1分煮立てアルコール臭を飛ばす。","鶏ブロード200mlを加えて蓋をし、弱火で15分蒸らす。","蓋を外してソースを中火でとろっとするまで煮詰める。","タコ糸を外す。"],"instruction":"白ワイン100mlをフライパンに注いで中火で約1分煮立て、アルコール臭を飛ばす。鶏ブロード200mlを加えて蓋をし、弱火で15分蒸らす。ホロホロ鳥の厚い部分に竹串を刺し、透明な肉汁が出れば火が通っている。タコ糸を外してソースを煮詰め、とろっとしたら完成。","cautionItems":["蒸らし中は弱火を保つ。強火にするとホロホロ鳥が硬くなる。"],"changeReason":"ホロホロ鳥に合わせて蒸らし時間と火通り確認を更新する","completionCriteria":["15分の蒸らし後。ホロホロ鳥の厚い部分に竹串を刺し、透明な肉汁が出れば火が通っている。","ソースがとろっとしてスプーンで持ち上げると糸を引くくらいになれば完成。"]},{"title":"盛り付ける","action":"replace","stepNumber":5,"actionItems":["温かいポレンタを皿に広げる。","ホロホロ鳥を1人分ずつ乗せ、ソースをかける。"],"instruction":"温かいポレンタを皿に広げ、ホロホロ鳥を1人分ずつ乗せてフライパンのソースをかける。すぐに供する。","changeReason":"ウズラ2羽ずつではなくホロホロ鳥を人数分に分けて盛る","completionCriteria":["ポレンタとホロホロ鳥が温かく、ソースが全体にかかった状態で完成。"]}]}]},{"id":"fe69db43-2e62-4a1c-9af4-41f86bb6b564","nameOriginal":"Pancetta a fette","nameJa":"パンチェッタ（薄切り）","nameEn":"Pancetta, thinly sliced","quantity":8,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"ウズラ1羽につき1枚巻く","substitutionOptions":[{"id":"aa9b4b98-48ee-4b73-815e-505e50dd84d6","standardIngredientId":"fe69db43-2e62-4a1c-9af4-41f86bb6b564","nameJa":"ラルド（薄切り）","nameEn":"Lardo, thinly sliced","authenticityImpact":0,"flavorImpact":"塩漬け脂肪の風味が増し、よりリッチな仕上がりになる。ベルガモでは伝統的にラルドが使われる場合もある","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"authentic_variant","ingredientPatches":[],"stepPatches":[]}]},{"id":"c0cff838-fd3a-442b-af6d-341bf6766965","nameOriginal":"Salvia","nameJa":"セージ","nameEn":"Sage","quantity":8,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"ウズラ1羽につき1枚、パンチェッタの下に挟む","substitutionOptions":[]},{"id":"e2b433f7-7d0b-4d04-9be1-1a1cd2183a18","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ec1918d3-5cd5-43d3-ad67-db360bda3b5d","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"潰す","substitutionOptions":[]},{"id":"57c7e28f-a344-4669-a9ec-53db3ede6fa4","nameOriginal":"Burro","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":60,"unit":"g","role":"technique","scalingBehavior":null,"notes":"ソース形成。焼き時にバスティングに使う","substitutionOptions":[]},{"id":"cb393286-de73-4551-9811-a0fc32ebbba2","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"蒸らし用。辛口","substitutionOptions":[]},{"id":"7b0146c3-ba0e-445c-b1b2-f785836b3b17","nameOriginal":"Brodo di pollo","nameJa":"鶏ブロード（チキンブロス）","nameEn":"Chicken stock","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"ソース用。市販の無塩タイプ可","substitutionOptions":[]},{"id":"b8ab96b0-3e6a-42d9-8c4c-f2a62bf44326","nameOriginal":"Olio extravergine di oliva","nameJa":"オリーブオイル（EVO）","nameEn":"Extra virgin olive oil","quantity":20,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d5e3afae-ce40-41ef-82ff-4078de9009e5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":4,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6d3f8631-eb1d-4e06-8bf7-3547c1ef173b","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"97f4f2eb-645a-4125-8bb8-4cf93bf8a71a","nameOriginal":"Farina di mais per polenta","nameJa":"ポレンタ用とうもろこし粉","nameEn":"Polenta cornmeal","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"中挽き","substitutionOptions":[]},{"id":"a969f89d-e12e-45ee-b5f6-5271b4087ea2","nameOriginal":"Acqua","nameJa":"水（ポレンタ用）","nameEn":"Water (for polenta)","quantity":1200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fcd12a99-67b9-49ac-8ba4-5a77729f482a","nameOriginal":"Sale fino","nameJa":"塩（ポレンタ用）","nameEn":"Salt (for polenta)","quantity":12,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ウズラ8羽に塩・黒胡椒を全体にまぶす。セージ1枚をウズラの胸にあてがい、パンチェッタ1枚でしっかり巻いてタコ糸で縛る。これを8羽分繰り返す。","title":"ウズラにセージとパンチェッタを巻く","actionItems":["ウズラ8羽に塩（合計4g分）・黒胡椒を全体にまぶす。","各ウズラの胸にセージ1枚をあてがい、パンチェッタ1枚で巻いてタコ糸で縛る。"],"parallelItems":[],"completionCriteria":["8羽全てにパンチェッタが巻かれ、タコ糸で固定された状態になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ウズラを巻いている間に、別の厚手の鍋に水1200mlと塩12gを入れて強火にかける。沸騰直前になったら弱火にし、ポレンタ粉300gを少しずつ加えながら泡立て器で混ぜる。粉が均一になったら木べらに持ち替えて弱火で35〜40分炊く。ポレンタが炊けたら蓋をして保温しておく。","title":"ポレンタを炊き始める","actionItems":["別の厚手の鍋に水1200mlと塩12gを入れて強火にかける。","沸騰直前に弱火にし、ポレンタ粉300gを少しずつ加えながら泡立て器で混ぜる。","木べらに持ち替えて弱火で35〜40分炊く。"],"parallelItems":["ウズラを準備している間に開始する。"],"completionCriteria":["35〜40分。木べらの跡がゆっくり閉じる濃度になれば完成。蓋をして保温する。"],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"大きなフライパンにオリーブオイル20ml・無塩バター30g・ローズマリー2枝・にんにく2片（潰す）を入れて中火で熱する。ウズラを胸側を下にして並べ、4〜5分焼く。焼き色がついたら裏返し、残りのバター30gを加えてスプーンでバターをすくいながらウズラ全体にかけ続ける（バスティング）。さらに3〜4分焼く。全面がきつね色になれば次へ。","title":"ウズラをバターとセージで焼く","actionItems":["フライパンにオリーブオイル20ml・バター30g・ローズマリー2枝・にんにく2片（潰す）を入れ中火で熱する。","ウズラ8羽を胸側を下にして並べ、4〜5分焼く。","裏返し、残りのバター30gを加えてスプーンでバターをすくいながらウズラ全体にかけ続ける（3〜4分）。"],"parallelItems":[],"completionCriteria":["全面にきつね色の焼き色がつけば次へ。パンチェッタがカリッとしていれば理想的。"],"cautionItems":["ウズラは小さく火が入りやすい。焼きすぎると胸肉がパサつくため、焼き色を見て次に進む。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"白ワイン100mlをフライパンに注いで中火で約1分煮立て、アルコール臭を飛ばす。鶏ブロード200mlを加えて蓋をし、弱火で8〜10分蒸らす。ウズラの断面を確認し、透明な肉汁が出れば火が通っている。タコ糸を外してソースを煮詰め、とろっとしたら完成。","title":"白ワインで蒸らしてソースを作る","actionItems":["白ワイン100mlを注ぎ、中火で約1分煮立てアルコール臭を飛ばす。","鶏ブロード200mlを加えて蓋をし、弱火で8〜10分蒸らす。","蓋を外してソースを中火でとろっとするまで煮詰める。","タコ糸を外す。"],"parallelItems":[],"completionCriteria":["8〜10分の蒸らし後。ウズラの脚を引っ張ると関節がすっと外れ、透明な肉汁が出れば火が通っている。","ソースがとろっとしてスプーンで持ち上げると糸を引くくらいになれば完成。"],"cautionItems":["蒸らし中は弱火を保つ。強火にするとウズラが硬くなる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"温かいポレンタを皿に広げ、ウズラを2羽ずつ乗せてフライパンのソースをかける。すぐに供する。","title":"盛り付ける","actionItems":["温かいポレンタを皿に広げる。","ウズラを2羽ずつ乗せ、ソースをかける。"],"parallelItems":[],"completionCriteria":["ポレンタとウズラが温かく、ソースが全体にかかった状態で完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

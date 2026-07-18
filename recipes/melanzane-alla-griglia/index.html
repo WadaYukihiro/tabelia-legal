@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>12分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>1時間10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・カターニア</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-30">2026.05.30</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,14 +94,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ナス</span><span class="ingredient-qty">4本</span><span class="ingredient-notes">縦に厚切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">ミント</span><span class="ingredient-qty">12枚</span><span class="ingredient-notes">ちぎる</span></li>
-          <li><span class="ingredient-name">白ワインビネガー</span><span class="ingredient-qty">15ml</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">70ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">6g</span></li>
+              <li data-ingredient-row="e7d86294-4f39-47c9-b207-aa37515bc267"><span class="ingredient-name" data-ingredient-name>ナス</span><span class="ingredient-qty" data-ingredient-qty>4本</span><span class="ingredient-notes">縦に厚切り</span></li>
+          <li data-ingredient-row="9f718db1-04d8-427f-a24e-d681c09142bd"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="b5ecc28a-d7b4-491a-8d26-642d1945fe36"><span class="ingredient-name" data-ingredient-name>ミント</span><span class="ingredient-qty" data-ingredient-qty>12枚</span><span class="ingredient-notes">ちぎる</span></li>
+          <li data-ingredient-row="10bb063c-1be1-4564-a5a1-90b8448bc91b"><span class="ingredient-name" data-ingredient-name>白ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>15ml</span></li>
+          <li data-ingredient-row="c80b0670-55dd-4357-9724-31929dce2226"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>70ml</span></li>
+          <li data-ingredient-row="f3dcaed5-8ca3-4d7b-a0ed-927658a8386b"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>6g</span></li>
               </ul>
             </section>
           </div>
@@ -226,6 +246,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7c6b7aaf-41c2-4ca8-85a8-e54fabb31ead","nameJa":"ナスの炭火焼きマリネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"e7d86294-4f39-47c9-b207-aa37515bc267","nameOriginal":"Melanzane","nameJa":"ナス","nameEn":"Eggplants","quantity":4,"unit":"本","role":"essential","scalingBehavior":null,"notes":"縦に厚切り","substitutionOptions":[]},{"id":"9f718db1-04d8-427f-a24e-d681c09142bd","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"b5ecc28a-d7b4-491a-8d26-642d1945fe36","nameOriginal":"Menta","nameJa":"ミント","nameEn":"Mint","quantity":12,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"ちぎる","substitutionOptions":[]},{"id":"10bb063c-1be1-4564-a5a1-90b8448bc91b","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":15,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c80b0670-55dd-4357-9724-31929dce2226","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":70,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f3dcaed5-8ca3-4d7b-a0ed-927658a8386b","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":6,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ナス4本を縦に厚切りにし、塩3gを振って20分置く。にんにく1片はみじん切りにする。ミント12枚はちぎる。ナスから水分が出たら拭き取る。","title":"ナスを準備する","actionItems":["ナス4本を縦に厚切りにし、塩3gを振って20分置く。","にんにく1片はみじん切りにする。","ミント12枚はちぎる。"],"parallelItems":[],"completionCriteria":["ナスから水分が出たら拭き取る。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"グリルを強く熱し、ナスを両面焼く。焼き目がつき、中心が柔らかく沈む状態になったら取り出す。","title":"焼く","actionItems":["グリルを強く熱し、ナスを両面焼く。","焼き目がつき、中心が柔らかく沈む状態になったら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"保存容器にナス、にんにく、ミント、白ワインビネガー15ml、エクストラバージンオリーブオイル70ml、塩3gを入れて重ねる。45分置き、ナスに油とミントの香りがなじんだら完成。","title":"マリネする","actionItems":["保存容器にナス、にんにく、ミント、白ワインビネガー15ml、エクストラバージンオリーブオイル70ml、塩3gを入れて重ねる。"],"parallelItems":[],"completionCriteria":["45分置き、ナスに油とミントの香りがなじんだら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

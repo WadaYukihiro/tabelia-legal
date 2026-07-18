@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>40分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>10人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">10人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ（カンパーニャ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,20 +93,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（10人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">10</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">10</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">300g</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">3個</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">溶かす</span></li>
-          <li><span class="ingredient-name">砂糖（生地用）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">レモンとオレンジの皮</span><span class="ingredient-qty">1個分ずつ</span><span class="ingredient-notes">国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">グラッパまたはラム</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">揚げ油</span><span class="ingredient-qty">1000ml</span><span class="ingredient-notes">175〜180℃に保つ</span></li>
-          <li><span class="ingredient-name">はちみつ（ミレフィオーリまたは百花蜜）</span><span class="ingredient-qty">250g</span></li>
-          <li><span class="ingredient-name">砂糖（コーティング用）</span><span class="ingredient-qty">50g</span><span class="ingredient-notes">はちみつと一緒に煮詰める</span></li>
-          <li><span class="ingredient-name">カラフルスプリンクル・砂糖衣アーモンド</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">キャンディドオレンジピール（飾り用）</span><span class="ingredient-qty">30g</span></li>
+              <li data-ingredient-row="b774249c-e6cc-45f1-bbed-ecd722b6bf2b"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>300g</span></li>
+          <li data-ingredient-row="f99c0bac-ce80-43ba-86a2-39303026b8e4"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>3個</span></li>
+          <li data-ingredient-row="a2fe21bd-efec-4c10-8493-a5072d067f49"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">溶かす</span></li>
+          <li data-ingredient-row="4a9631bb-1002-45fd-b309-1a4db869f912"><span class="ingredient-name" data-ingredient-name>砂糖（生地用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="d3ef46f6-07ea-437e-87b8-d0b08463d207"><span class="ingredient-name" data-ingredient-name>レモンとオレンジの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分ずつ</span><span class="ingredient-notes">国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="861f6cf7-3e46-42c0-95d3-e33caf4e5d2f"><span class="ingredient-name" data-ingredient-name>グラッパまたはラム</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="e88a9d4b-86d5-489a-8432-2b886d772963"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="3e5e3d4a-4ad7-4c5d-af03-702588a32836"><span class="ingredient-name" data-ingredient-name>揚げ油</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span><span class="ingredient-notes">175〜180℃に保つ</span></li>
+          <li data-ingredient-row="c23bae84-76a2-4101-a656-dcd2fbd7126e"><span class="ingredient-name" data-ingredient-name>はちみつ（ミレフィオーリまたは百花蜜）</span><span class="ingredient-qty" data-ingredient-qty>250g</span></li>
+          <li data-ingredient-row="bee52221-bdf7-4a5c-815a-90ff143ede5f"><span class="ingredient-name" data-ingredient-name>砂糖（コーティング用）</span><span class="ingredient-qty" data-ingredient-qty>50g</span><span class="ingredient-notes">はちみつと一緒に煮詰める</span></li>
+          <li data-ingredient-row="7c962928-38b3-4122-b4c8-b39c7cb29c3f"><span class="ingredient-name" data-ingredient-name>カラフルスプリンクル・砂糖衣アーモンド</span><span class="ingredient-qty" data-ingredient-qty>50g</span></li>
+          <li data-ingredient-row="bccaa9ea-aa02-462e-b7a1-3d6b02110a22"><span class="ingredient-name" data-ingredient-name>キャンディドオレンジピール（飾り用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
               </ul>
             </section>
           </div>
@@ -309,6 +329,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"184e584b-5bf3-4a53-8604-ed9b678c91b7","nameJa":"ナポリ風はちみつの揚げ菓子 ストゥルッフォリ","baseServings":10,"minServings":1,"maxServings":20},"ingredients":[{"id":"b774249c-e6cc-45f1-bbed-ecd722b6bf2b","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f99c0bac-ce80-43ba-86a2-39303026b8e4","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a2fe21bd-efec-4c10-8493-a5072d067f49","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"溶かす","substitutionOptions":[]},{"id":"4a9631bb-1002-45fd-b309-1a4db869f912","nameOriginal":"Zucchero","nameJa":"砂糖（生地用）","nameEn":"Sugar","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d3ef46f6-07ea-437e-87b8-d0b08463d207","nameOriginal":"Scorza di limone e arancia","nameJa":"レモンとオレンジの皮","nameEn":"Grated lemon and orange peel","quantity":1,"unit":"個分ずつ","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのものを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"861f6cf7-3e46-42c0-95d3-e33caf4e5d2f","nameOriginal":"Grappa o Rum","nameJa":"グラッパまたはラム","nameEn":"Grappa or Rum","quantity":30,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e88a9d4b-86d5-489a-8432-2b886d772963","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3e5e3d4a-4ad7-4c5d-af03-702588a32836","nameOriginal":"Olio per friggere","nameJa":"揚げ油","nameEn":"Frying oil","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"175〜180℃に保つ","substitutionOptions":[]},{"id":"c23bae84-76a2-4101-a656-dcd2fbd7126e","nameOriginal":"Miele millefiori","nameJa":"はちみつ（ミレフィオーリまたは百花蜜）","nameEn":"Wildflower honey","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bee52221-bdf7-4a5c-815a-90ff143ede5f","nameOriginal":"Zucchero","nameJa":"砂糖（コーティング用）","nameEn":"Sugar","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":"はちみつと一緒に煮詰める","substitutionOptions":[]},{"id":"7c962928-38b3-4122-b4c8-b39c7cb29c3f","nameOriginal":"Diavolilli e confettini colorati","nameJa":"カラフルスプリンクル・砂糖衣アーモンド","nameEn":"Sprinkles and sugar-coated almonds","quantity":50,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bccaa9ea-aa02-462e-b7a1-3d6b02110a22","nameOriginal":"Scorze candite d'arancia","nameJa":"キャンディドオレンジピール（飾り用）","nameEn":"Candied orange peel","quantity":30,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"レモンとオレンジは白いワタを避け、表皮だけをすりおろす。薄力粉300g・砂糖30g・塩1g・すりおろした柑橘の皮をボウルで混ぜ、卵3個・溶かしバター30g・グラッパ30mlを加えて滑らかな生地にまとめる。ラップして30分休ませる。","title":"生地を作り休ませる","actionItems":["レモンとオレンジの表皮だけをすりおろす。","薄力粉300g・砂糖30g・塩1g・すりおろした柑橘の皮をボウルで混ぜる。","卵3個・溶かしバター30g・グラッパ30mlを加えて滑らかな生地にまとめる。","ラップして30分休ませる。"],"parallelItems":[],"completionCriteria":["滑らかな生地がまとまれば次へ（30分後）。"],"cautionItems":[],"tipItems":[],"durationMinutes":35,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"生地を鉛筆くらいの太さ（直径1cm）に伸ばし、1cm幅に切る。手のひらで軽く丸めてボール状にする。","title":"小さなボールに成形する","actionItems":["生地を直径1cmの棒状に伸ばす。","1cm幅に切る。","手のひらで軽く丸めてボール状にする。"],"parallelItems":[],"completionCriteria":["均一な小さなボールが成形できれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"揚げ油を175〜180℃に熱する。生地を少量ずつ（一度に入れすぎない）揚げてきつね色になったら取り出す（各バッチ2〜3分）。ペーパータオルで油を切る。","title":"揚げる","actionItems":["揚げ油を175〜180℃に熱する。","生地を少量ずつ揚げ、きつね色になったら取り出す（各バッチ2〜3分）。","ペーパータオルで油を切る。"],"parallelItems":[],"completionCriteria":["きつね色になれば揚げ上がり。"],"cautionItems":["一度に入れすぎると油温が下がる。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"大鍋にはちみつ250g・砂糖50g・オレンジピール少量を入れて中火で泡立つまで熱する。揚げたストルッフォリを全量加えて全体が均一にコーティングされ、表面に艶が出るまで手早く混ぜる。","title":"はちみつでコーティングする","actionItems":["大鍋にはちみつ250g・砂糖50gを入れて中火で泡立つまで熱する。","揚げたストルッフォリを全量加え、全体が均一にコーティングされるまで手早く混ぜる。"],"parallelItems":[],"completionCriteria":["全体が均一にコーティングされ表面に艶が出れば次へ。"],"cautionItems":["はちみつが固まる前に手早く混ぜる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"皿やリング型（またはドーナツ状）に盛り付け、スプリンクル・砂糖衣アーモンド・キャンディドオレンジで華やかに飾る。","title":"リング状に飾る","actionItems":["皿またはリング型に盛り付ける。","スプリンクル・砂糖衣アーモンド・キャンディドオレンジで飾る。"],"parallelItems":[],"completionCriteria":["華やかに飾れれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"常温で30分置いて蜂蜜が固まれば完成。","title":"常温で固める","actionItems":["常温で30分置く。"],"parallelItems":[],"completionCriteria":["30分。蜂蜜が固まれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

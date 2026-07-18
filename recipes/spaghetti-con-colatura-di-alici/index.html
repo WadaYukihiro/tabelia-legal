@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>10分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・チェターラ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">スパゲッティ（1.9mm）</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">コラトゥーラ・ディ・アリーチ（熟成アンチョビ魚醤）</span><span class="ingredient-qty">40ml</span><span class="ingredient-notes">塩分が非常に強いため分量を守る</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span></li>
+              <li data-ingredient-row="d6eb9b39-b759-435b-89e2-49a76ac9a7d7"><span class="ingredient-name" data-ingredient-name>スパゲッティ（1.9mm）</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="d9d1b1ff-fef4-47a9-b661-61c2a9fe53b5"><span class="ingredient-name" data-ingredient-name>コラトゥーラ・ディ・アリーチ（熟成アンチョビ魚醤）</span><span class="ingredient-qty" data-ingredient-qty>40ml</span><span class="ingredient-notes">塩分が非常に強いため分量を守る</span><button type="button" class="substitution-trigger" data-substitution-trigger="d9d1b1ff-fef4-47a9-b661-61c2a9fe53b5"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="b84e8ad3-3c16-46da-9602-8c1fb553ccba"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="a4dad334-b3a7-447e-81fe-125558d77d1c"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="2f7bc311-479c-4e3d-8049-09ae3c9175a1"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="06d16532-c429-421e-b044-f1575e40be07"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
               </ul>
             </section>
           </div>
@@ -268,6 +288,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"b6164cfe-22f3-4847-8752-0ed062fc2c8c","nameJa":"コラトゥーラのスパゲッティ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"d6eb9b39-b759-435b-89e2-49a76ac9a7d7","nameOriginal":"Spaghetti","nameJa":"スパゲッティ（1.9mm）","nameEn":"Spaghetti","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d9d1b1ff-fef4-47a9-b661-61c2a9fe53b5","nameOriginal":"Colatura di alici di Cetara","nameJa":"コラトゥーラ・ディ・アリーチ（熟成アンチョビ魚醤）","nameEn":"Colatura di alici from Cetara","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"塩分が非常に強いため分量を守る","substitutionOptions":[{"id":"66b72071-8bae-4757-9d58-fa94aaf46a58","standardIngredientId":"d9d1b1ff-fef4-47a9-b661-61c2a9fe53b5","nameJa":"ナンプラー + アンチョビペースト","nameEn":"Fish sauce + anchovy paste","authenticityImpact":-20,"flavorImpact":"風味が全く異なる。コラトゥーラは独自の熟成香をもつ","textureImpact":null,"procedureChanges":["ナンプラー大さじ2＋アンチョビペースト小さじ1で代用し、ペーストを先に茹で汁でゆるめてから和える"],"affectedStepNumbers":[1,4],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"コラトゥーラ・ディ・アリーチ（熟成アンチョビ魚醤）"},{"role":"essential","unit":"ml","action":"add","nameEn":"Fish sauce","nameJa":"ナンプラー","quantity":30},{"role":"essential","unit":"小さじ","action":"add","nameEn":"Anchovy paste","nameJa":"アンチョビペースト","quantity":1}],"stepPatches":[{"title":"ソースを準備する","action":"replace","stepNumber":1,"actionItems":["大ボウルでアンチョビペースト小さじ1をナンプラー30mlで溶く。","みじん切りのにんにく2片・オリーブオイル80ml・みじん切りパセリ・唐辛子1本（種を抜く）を合わせる。"],"instruction":"大鍋に湯を沸かし始める（ナンプラーが塩辛いため塩は通常の半量）。（沸かす間に）大ボウルでアンチョビペースト小さじ1をナンプラー30mlで溶き、みじん切りのにんにく2片・オリーブオイル80ml・みじん切りパセリ・唐辛子1本（種を抜く）を合わせてソースを作る（加熱しない）。","cautionItems":["ナンプラーは塩分が強い。茹で湯の塩は通常の半量にすること。","ソースは加熱しない。"],"changeReason":"コラトゥーラをナンプラーとアンチョビペーストに分けて近似するため","parallelItems":["大鍋に湯を沸かし始める（塩は通常の半量）。"],"completionCriteria":["アンチョビペーストがなじみ、ソースの材料がボウルに合わさった。"]},{"title":"仕上げて盛り付ける","action":"replace","stepNumber":4,"actionItems":["皿に盛る。","味を見てナンプラーを数滴垂らす。"],"instruction":"皿に盛り、味を見てナンプラーを数滴垂らして完成（パルミジャーノは不使用。魚醤との衝突を避ける）。","cautionItems":["パルミジャーノは使わない。魚醤と競合する。ナンプラーは塩分が強いため数滴ずつ加える。"],"changeReason":"仕上げの追いコラトゥーラをナンプラーに置き換えるため","completionCriteria":["ナンプラーで塩気を整えたら完成。"]}]}]},{"id":"b84e8ad3-3c16-46da-9602-8c1fb553ccba","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a4dad334-b3a7-447e-81fe-125558d77d1c","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"2f7bc311-479c-4e3d-8049-09ae3c9175a1","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"06d16532-c429-421e-b044-f1575e40be07","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"大鍋に湯を沸かし始める（コラトゥーラが塩辛いため塩は通常の半量）。（沸かす間に）大ボウルにコラトゥーラ40ml・みじん切りのにんにく2片・オリーブオイル80ml・みじん切りパセリ・唐辛子1本（種を抜く）を合わせてソースを作る（加熱しない）。","title":"ソースを準備する","actionItems":["大ボウルにコラトゥーラ40ml・みじん切りのにんにく2片・オリーブオイル80ml・みじん切りパセリ・唐辛子1本（種を抜く）を合わせる。"],"parallelItems":["大鍋に湯を沸かし始める（塩は通常の半量）。"],"completionCriteria":["ソースの材料がボウルに合わさった。"],"cautionItems":["コラトゥーラは塩分が強い。茹で湯の塩は通常の半量にすること。","ソースは加熱しない。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"沸かしておいた湯にスパゲッティ400gを入れ、表示通りに茹でる。\n・茹で汁100mlを取り置く","title":"スパゲッティを茹でる","actionItems":["スパゲッティ400gを入れ表示通りに茹でる。","茹で汁100mlを取り置く。"],"parallelItems":[],"completionCriteria":["スパゲッティが茹で上がり茹で汁が確保された。"],"cautionItems":["茹で汁は必ず確保すること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"ボウルのソースに茹で汁50mlを加えてよく混ぜ乳化させる。\n・茹でたスパゲッティをボウルに加え、素早くトングで和える（加熱不要）\n・濃度が足りなければ残りの茹で汁を加える","title":"ソースと和える","actionItems":["ボウルのソースに茹で汁50mlを加えてよく混ぜ乳化させる。","茹でたスパゲッティをボウルに加え素早くトングで和える。","濃度が足りなければ残りの茹で汁を加える。"],"parallelItems":[],"completionCriteria":["ソースが乳化してスパゲッティ全体に絡んだ。"],"cautionItems":["加熱不要。コラトゥーラの香りが飛ぶ。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"皿に盛り、追加のコラトゥーラを数滴垂らして完成（パルミジャーノは不使用。魚醤との衝突を避ける）。","title":"仕上げて盛り付ける","actionItems":["皿に盛る。","追加のコラトゥーラを数滴垂らす。"],"parallelItems":[],"completionCriteria":["コラトゥーラを垂らして完成。"],"cautionItems":["パルミジャーノは使わない。魚醤と競合する。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

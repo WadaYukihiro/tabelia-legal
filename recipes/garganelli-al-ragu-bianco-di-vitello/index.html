@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>40分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ボローニャ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ガルガネッリ（手作り卵入りショートパスタ）</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">仔牛ひき肉</span><span class="ingredient-qty">350g</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">2茎</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">白ワイン（辛口）</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">牛乳（全脂）</span><span class="ingredient-qty">100ml</span><span class="ingredient-notes">仕上げにまろやかさを出す。煮込み中に吸収される調理媒体</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">タイム・ローズマリー</span><span class="ingredient-qty">1束</span></li>
+              <li data-ingredient-row="ff10c872-c070-4d0e-be0a-fc564b83b1ab"><span class="ingredient-name" data-ingredient-name>ガルガネッリ（手作り卵入りショートパスタ）</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="ff10c872-c070-4d0e-be0a-fc564b83b1ab"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="b518b8f4-0032-470a-976a-feb6a21eebb1"><span class="ingredient-name" data-ingredient-name>仔牛ひき肉</span><span class="ingredient-qty" data-ingredient-qty>350g</span><button type="button" class="substitution-trigger" data-substitution-trigger="b518b8f4-0032-470a-976a-feb6a21eebb1"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a016c0c7-ada1-40bc-89be-087791f20c7c"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="f5c18567-da3a-41d0-9af7-7dcb5dadba39"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="82f0b4af-0e21-4554-9f7e-2dd94c9001dc"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>2茎</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="cdfb6166-7dc0-48d2-96b5-7311407c7461"><span class="ingredient-name" data-ingredient-name>白ワイン（辛口）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="c90ce51f-2b76-497c-a6cd-5d8a5ab61022"><span class="ingredient-name" data-ingredient-name>牛乳（全脂）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span><span class="ingredient-notes">仕上げにまろやかさを出す。煮込み中に吸収される調理媒体</span></li>
+          <li data-ingredient-row="7a8c8aef-9684-450e-9bc8-d04d03838b50"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="adb24caa-a45e-440a-8530-3feda2727862"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>50g</span></li>
+          <li data-ingredient-row="2e79d4c0-eb17-4cb1-ad04-66991e1c86a9"><span class="ingredient-name" data-ingredient-name>タイム・ローズマリー</span><span class="ingredient-qty" data-ingredient-qty>1束</span></li>
               </ul>
             </section>
           </div>
@@ -311,6 +331,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e39b1566-a6a1-46b5-9108-110da93a4814","nameJa":"仔牛の白いラグーのガルガネッリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"ff10c872-c070-4d0e-be0a-fc564b83b1ab","nameOriginal":"Garganelli freschi","nameJa":"ガルガネッリ（手作り卵入りショートパスタ）","nameEn":"Fresh garganelli","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"1b05ab21-857b-477e-8b39-a9f9823ae331","standardIngredientId":"ff10c872-c070-4d0e-be0a-fc564b83b1ab","nameJa":"ペンネ・リガーテ","nameEn":"Penne rigate","authenticityImpact":-10,"flavorImpact":"卵の風味と溝のソース絡みが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"b518b8f4-0032-470a-976a-feb6a21eebb1","nameOriginal":"Vitello macinato","nameJa":"仔牛ひき肉","nameEn":"Ground veal","quantity":350,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"b66d4f7c-60db-41e9-ae0a-6ede654acbce","standardIngredientId":"b518b8f4-0032-470a-976a-feb6a21eebb1","nameJa":"鶏もも肉ひき肉","nameEn":"Ground chicken thigh","authenticityImpact":-10,"flavorImpact":"仔牛の繊細な風味は失われるが白いラグーとして成立","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a016c0c7-ada1-40bc-89be-087791f20c7c","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"f5c18567-da3a-41d0-9af7-7dcb5dadba39","nameOriginal":"Carota","nameJa":"にんじん","nameEn":"Carrot","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"82f0b4af-0e21-4554-9f7e-2dd94c9001dc","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":2,"unit":"茎","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"cdfb6166-7dc0-48d2-96b5-7311407c7461","nameOriginal":"Vino bianco secco","nameJa":"白ワイン（辛口）","nameEn":"Dry white wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c90ce51f-2b76-497c-a6cd-5d8a5ab61022","nameOriginal":"Latte intero","nameJa":"牛乳（全脂）","nameEn":"Whole milk","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"仕上げにまろやかさを出す。煮込み中に吸収される調理媒体","substitutionOptions":[]},{"id":"7a8c8aef-9684-450e-9bc8-d04d03838b50","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"adb24caa-a45e-440a-8530-3feda2727862","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2e79d4c0-eb17-4cb1-ad04-66991e1c86a9","nameOriginal":"Timo e Rosmarino","nameJa":"タイム・ローズマリー","nameEn":"Thyme and rosemary","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"玉ねぎ1個・にんじん1本・セロリ2茎をみじん切りにする（ソフリット）。","title":"ソフリットを切る","actionItems":["玉ねぎ1個をみじん切りにする。","にんじん1本をみじん切りにする。","セロリ2茎をみじん切りにする。"],"parallelItems":[],"completionCriteria":["全ての野菜がみじん切りになった。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鍋でバター40gを溶かし、ソフリットを弱火で10分、野菜がしんなりするまで炒める。焦がさないよう火加減に注意する。","title":"ソフリットを炒める","actionItems":["鍋でバター40gを溶かす。","ソフリットを弱火で10分、野菜がしんなりするまで炒める。"],"parallelItems":[],"completionCriteria":["野菜がしんなりして透明感が出た。"],"cautionItems":["焦がすと苦みが出る。弱火でじっくり炒めること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"仔牛ひき肉350gを加えて強火でほぐしながら炒め、全体の色が変わったら白ワイン150mlを加えてアルコールを飛ばす（3〜4分）。\n・タイムとローズマリーを加える","title":"ひき肉を炒めてワインを加える","actionItems":["仔牛ひき肉350gを加えて強火でほぐしながら炒める。","全体の色が変わったら白ワイン150mlを加えてアルコールを飛ばす（3〜4分）。","タイムとローズマリーを加える。"],"parallelItems":[],"completionCriteria":["アルコールの香りが飛び、ハーブが加わった。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"（煮込む間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。蓋をして弱火で45〜50分煮込む。水分が少なくなったら水かブロードを大さじ2〜3加える。","title":"仔牛ラグーを煮込む","actionItems":["蓋をして弱火で45〜50分煮込む。","水分が少なくなったら水かブロードを大さじ2〜3加える。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["45〜50分経過して肉に火が通り旨みが凝縮した。"],"cautionItems":["水分が飛びすぎたら都度水を補うこと。"],"tipItems":[],"durationMinutes":50,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"仕上げに牛乳100mlを加えて中火で5分煮てまろやかにする。\n・ハーブを取り出す","title":"牛乳を加えて仕上げる","actionItems":["牛乳100mlを加えて中火で5分煮てまろやかにする。","ハーブを取り出す。"],"parallelItems":[],"completionCriteria":["ラグーがまろやかになり、ハーブが除けた。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"ガルガネッリを沸かしておいた塩湯でアルデンテに茹でる。\n・湯切りしてラグーと和え、パルミジャーノ50gをかけて提供する","title":"パスタを茹でてソースと合わせる","actionItems":["ガルガネッリを沸かしておいた塩湯でアルデンテに茹でる。","湯切りしてラグーと和える。","パルミジャーノ50gをかけて提供する。"],"parallelItems":[],"completionCriteria":["ラグーがパスタ全体に絡み、チーズをかけて完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

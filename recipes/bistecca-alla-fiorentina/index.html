@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-06-20">2026.06.20</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">牛Tボーンステーキ</span><span class="ingredient-qty">1200g</span><span class="ingredient-notes">厚さ4〜5cm。焼く45分前に冷蔵庫から出す</span></li>
-          <li><span class="ingredient-name">粗塩</span><span class="ingredient-qty">8g</span></li>
-          <li><span class="ingredient-name">黒胡椒</span><span class="ingredient-qty">2g</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">20ml</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">くし形に切る。好みで添える</span></li>
+              <li data-ingredient-row="d8a4c07c-cb36-4fdc-a483-38fc0ebcd881"><span class="ingredient-name" data-ingredient-name>牛Tボーンステーキ</span><span class="ingredient-qty" data-ingredient-qty>1200g</span><span class="ingredient-notes">厚さ4〜5cm。焼く45分前に冷蔵庫から出す</span><button type="button" class="substitution-trigger" data-substitution-trigger="d8a4c07c-cb36-4fdc-a483-38fc0ebcd881"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c143a96c-a0e2-49be-92fa-de5a3af16dfe"><span class="ingredient-name" data-ingredient-name>粗塩</span><span class="ingredient-qty" data-ingredient-qty>8g</span></li>
+          <li data-ingredient-row="d7ae3e8d-0ba3-43a1-ac40-65210d441298"><span class="ingredient-name" data-ingredient-name>黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>2g</span></li>
+          <li data-ingredient-row="dc652bdc-f6ec-4447-850b-2e013f0e6f1a"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>20ml</span></li>
+          <li data-ingredient-row="acd4d28a-0be6-4abe-9a22-55cedd6e40bc"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">くし形に切る。好みで添える</span></li>
               </ul>
             </section>
           </div>
@@ -280,6 +300,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"25970fbd-c4ab-48bb-882e-dd08d97c5b0e","nameJa":"フィレンツェ風Tボーンステーキ（ビステッカ）","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"d8a4c07c-cb36-4fdc-a483-38fc0ebcd881","nameOriginal":"Bistecca di manzo con osso","nameJa":"牛Tボーンステーキ","nameEn":"Thick-cut beef T-bone steak","quantity":1200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"厚さ4〜5cm。焼く45分前に冷蔵庫から出す","substitutionOptions":[{"id":"a4fd41e3-d16f-4f7d-959f-0b28fdd74802","standardIngredientId":"d8a4c07c-cb36-4fdc-a483-38fc0ebcd881","nameJa":"Lボーンまたは骨付きサーロイン","nameEn":"L-bone or bone-in sirloin steak","authenticityImpact":-5,"flavorImpact":"ヒレ側は失われるが、厚切り骨付き肉の焼き方は再現できる","textureImpact":null,"procedureChanges":["中心温度を同じ目安で確認する"],"affectedStepNumbers":[1,4,5,6,7],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"厚さ4〜5cm。焼く45分前に冷蔵庫から出す","action":"update","nameEn":"L-bone or bone-in sirloin steak","nameJa":"Lボーンまたは骨付きサーロイン","quantity":1200,"targetNameJa":"牛Tボーンステーキ"}],"stepPatches":[{"title":"肉を焼く温度に戻す","action":"replace","stepNumber":1,"instruction":"Lボーンまたは骨付きサーロイン1200gは焼く45分前に冷蔵庫から出し、表面の水分をしっかり拭く。厚さが4〜5cmあり、中心の冷たさが少し和らいだ状態にする。","changeReason":"置換後の肉名に合わせ、厚切り骨付き肉として同じ温度戻しを行う"},{"title":"表面を強く焼き固める","action":"replace","stepNumber":4,"instruction":"Lボーンまたは骨付きサーロインを立て、脂の側面を2分焼く。続いて片面を5分、裏面を5分焼く。表面が濃い焼き色になり、肉を動かすと自然にはがれる状態にする。","changeReason":"Tボーンと同じ厚切り骨付き肉として、表面の焼き固め時間は維持する"},{"title":"骨側から中心に火を入れる","action":"replace","stepNumber":5,"instruction":"骨を下にして肉を立て、2〜3分焼く。中心温度が48〜50℃、押すと柔らかい弾力が残る状態になったら火から下ろす。","changeReason":"Lボーンまたは骨付きサーロインでも中心温度の目安は同じにする"},{"title":"肉を休ませる","action":"replace","stepNumber":6,"instruction":"Lボーンまたは骨付きサーロインをまな板に移し、粗塩を半量だけ振って10分休ませる。切ったときに肉汁が流れ出すのを防ぎ、表面の焼き色が落ち着いたら次へ。","changeReason":"休ませる対象を置換後の骨付き肉に合わせる"},{"title":"切り分けて仕上げる","action":"replace","stepNumber":7,"instruction":"骨から肉を外し、繊維を断つように厚さ1.5cmに切る。切った肉の表面に残りの粗塩と黒胡椒を振り、エクストラバージンオリーブオイル20mlを細く回しかける。レモンを添えて完成。","changeReason":"Lボーンまたは骨付きサーロインも骨から外して切り分けるため"}]},{"id":"dbf0a2ea-3906-4a4d-90bf-67423d9b3d87","standardIngredientId":"d8a4c07c-cb36-4fdc-a483-38fc0ebcd881","nameJa":"厚切りサーロイン","nameEn":"Thick-cut boneless sirloin steak","authenticityImpact":-20,"flavorImpact":"骨まわりの香りとフィオレンティーナらしい構造が弱まる","textureImpact":null,"procedureChanges":["骨側を立てて焼く工程を省き、脂の側面だけ短く焼く"],"affectedStepNumbers":[1,4,5,6,7],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"厚さ4cm程度。焼く45分前に冷蔵庫から出す","action":"update","nameEn":"Thick-cut boneless sirloin steak","nameJa":"厚切りサーロイン","quantity":900,"targetNameJa":"牛Tボーンステーキ"}],"stepPatches":[{"title":"肉を焼く温度に戻す","action":"replace","stepNumber":1,"instruction":"厚切りサーロイン900gは焼く45分前に冷蔵庫から出し、表面の水分をしっかり拭く。厚さが4cm程度あり、中心の冷たさが少し和らいだ状態にする。","changeReason":"骨なしサーロインの分量と厚みに合わせるため"},{"title":"表面を強く焼き固める","action":"replace","stepNumber":4,"instruction":"厚切りサーロインに脂の側面があれば立てて1分焼く。続いて片面を4分、裏面を4分焼く。表面が濃い焼き色になり、肉を動かすと自然にはがれる状態にする。","changeReason":"骨なしサーロインは骨側を長く焼かず、脂の側面だけ短く焼くため"},{"title":"中心に火を入れる","action":"replace","stepNumber":5,"instruction":"弱めの中火に落とし、必要に応じて片面1〜2分ずつ追加で焼く。中心温度が48〜50℃、押すと柔らかい弾力が残る状態になったら火から下ろす。","changeReason":"骨なし肉は骨側から火を入れないため、中心温度で判断する"},{"title":"肉を休ませる","action":"replace","stepNumber":6,"instruction":"厚切りサーロインをまな板に移し、粗塩を半量だけ振って10分休ませる。切ったときに肉汁が流れ出すのを防ぎ、表面の焼き色が落ち着いたら次へ。","changeReason":"休ませる対象を厚切りサーロインに合わせる"},{"title":"切り分けて仕上げる","action":"replace","stepNumber":7,"instruction":"繊維を断つように厚さ1.5cmに切る。切った肉の表面に残りの粗塩と黒胡椒を振り、エクストラバージンオリーブオイル20mlを細く回しかける。レモンを添えて完成。","changeReason":"骨なしサーロインは骨から外す工程が不要なため"}]}]},{"id":"c143a96c-a0e2-49be-92fa-de5a3af16dfe","nameOriginal":"Sale grosso","nameJa":"粗塩","nameEn":"Coarse sea salt","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d7ae3e8d-0ba3-43a1-ac40-65210d441298","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":2,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"dc652bdc-f6ec-4447-850b-2e013f0e6f1a","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":20,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"acd4d28a-0be6-4abe-9a22-55cedd6e40bc","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":0.5,"unit":"個","role":"garnish","scalingBehavior":null,"notes":"くし形に切る。好みで添える","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"牛Tボーンステーキ1200gは焼く45分前に冷蔵庫から出し、表面の水分をしっかり拭く。厚さが4〜5cmあり、中心の冷たさが少し和らいだ状態にする。","title":"肉を焼く温度に戻す","actionItems":["牛Tボーンステーキ1200gは焼く45分前に冷蔵庫から出し、表面の水分をしっかり拭く。"],"parallelItems":[],"completionCriteria":["厚さが4〜5cmあり、中心の冷たさが少し和らいだ状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"レモン0.5個はくし形に切る。粗塩8gと黒胡椒2gを仕上げ用に用意する。","title":"仕上げを準備する","actionItems":["レモン0.5個はくし形に切る。","粗塩8gと黒胡椒2gを仕上げ用に用意する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鋳鉄フライパンまたはグリルパンを強火で5分以上熱する。水滴を落とすとすぐ弾け、薄く煙が上がるほど熱くなったら次へ。","title":"焼き場を高温に整える","actionItems":["鋳鉄フライパンまたはグリルパンを強火で5分以上熱する。"],"parallelItems":[],"completionCriteria":["水滴を落とすとすぐ弾け、薄く煙が上がるほど熱くなったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"牛Tボーンステーキを立て、脂の側面を2分焼く。続いて片面を5分、裏面を5分焼く。表面が濃い焼き色になり、肉を動かすと自然にはがれる状態にする。","title":"表面を強く焼き固める","actionItems":["牛Tボーンステーキを立て、脂の側面を2分焼く。","続いて片面を5分、裏面を5分焼く。","表面が濃い焼き色になり、肉を動かすと自然にはがれる状態にする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"骨を下にして肉を立て、2〜3分焼く。中心温度が48〜50℃、押すと柔らかい弾力が残る状態になったら火から下ろす。","title":"骨側から中心に火を入れる","actionItems":["骨を下にして肉を立て、2〜3分焼く。"],"parallelItems":[],"completionCriteria":["中心温度が48〜50℃、押すと柔らかい弾力が残る状態になったら火から下ろす。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"牛Tボーンステーキをまな板に移し、粗塩を半量だけ振って10分休ませる。切ったときに肉汁が流れ出すのを防ぎ、表面の焼き色が落ち着いたら次へ。","title":"肉を休ませる","actionItems":["牛Tボーンステーキをまな板に移し、粗塩を半量だけ振って10分休ませる。","切ったときに肉汁が流れ出すのを防ぎ、表面の焼き色が落ち着いたら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":7,"instruction":"骨から肉を外し、繊維を断つように厚さ1.5cmに切る。切った肉の表面に残りの粗塩と黒胡椒を振り、エクストラバージンオリーブオイル20mlを細く回しかける。レモンを添えて完成。","title":"切り分けて仕上げる","actionItems":["骨から肉を外し、繊維を断つように厚さ1.5cmに切る。","切った肉の表面に残りの粗塩と黒胡椒を振り、エクストラバージンオリーブオイル20mlを細く回しかける。"],"parallelItems":[],"completionCriteria":["レモンを添えて完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

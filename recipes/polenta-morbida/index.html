@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>5分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>45分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-25">2026.05.25</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,12 +93,19 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ポレンタ用とうもろこし粉</span><span class="ingredient-qty">250g</span><span class="ingredient-notes">中挽き。ダマを防ぐため少しずつ加える</span></li>
-          <li><span class="ingredient-name">水</span><span class="ingredient-qty">1000ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">10g</span></li>
-          <li><span class="ingredient-name">無塩バター</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">仕上げに混ぜて艶を出す</span></li>
+              <li data-ingredient-row="817bf051-153f-472b-bbcc-0a16f996def3"><span class="ingredient-name" data-ingredient-name>ポレンタ用とうもろこし粉</span><span class="ingredient-qty" data-ingredient-qty>250g</span><span class="ingredient-notes">中挽き。ダマを防ぐため少しずつ加える</span><button type="button" class="substitution-trigger" data-substitution-trigger="817bf051-153f-472b-bbcc-0a16f996def3"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="406c89aa-0110-47b0-bff9-31e2a862f7da"><span class="ingredient-name" data-ingredient-name>水</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span></li>
+          <li data-ingredient-row="223f8afc-04c5-4e33-ae5b-08cec8fd9851"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>10g</span></li>
+          <li data-ingredient-row="1f8f4bee-6bda-4aeb-9d0d-274dd2ef307d"><span class="ingredient-name" data-ingredient-name>無塩バター</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">仕上げに混ぜて艶を出す</span><button type="button" class="substitution-trigger" data-substitution-trigger="1f8f4bee-6bda-4aeb-9d0d-274dd2ef307d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -233,6 +253,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"48f19b8f-93f0-4676-8726-3aacdf8bb2a5","nameJa":"やわらかいポレンタ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"817bf051-153f-472b-bbcc-0a16f996def3","nameOriginal":"Farina di mais per polenta","nameJa":"ポレンタ用とうもろこし粉","nameEn":"Polenta cornmeal","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"中挽き。ダマを防ぐため少しずつ加える","substitutionOptions":[{"id":"9005bebe-be21-4db4-822e-2cc801f49b21","standardIngredientId":"817bf051-153f-472b-bbcc-0a16f996def3","nameJa":"インスタントポレンタ","nameEn":"Instant polenta","authenticityImpact":-10,"flavorImpact":"炊き込みの香りと粒感は弱まるが、ソースを受ける役割は保てる","textureImpact":null,"procedureChanges":["袋の表示時間に合わせて加熱し、仕上げの濃度を優先する"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":3,"instruction":"弱火で袋の表示時間を目安に炊く。30秒ごとに鍋底から大きく混ぜ、表示時間に達する前でも木べらの跡がゆっくり閉じる濃度になったら次へ。","changeReason":"インスタントポレンタは通常のポレンタ粉より短時間で火が入るため、袋表示時間と濃度を優先する"}]}]},{"id":"406c89aa-0110-47b0-bff9-31e2a862f7da","nameOriginal":"Acqua","nameJa":"水","nameEn":"Water","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"223f8afc-04c5-4e33-ae5b-08cec8fd9851","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":10,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1f8f4bee-6bda-4aeb-9d0d-274dd2ef307d","nameOriginal":"Burro","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"仕上げに混ぜて艶を出す","substitutionOptions":[{"id":"b5eb1a59-f46e-4386-b918-baaca544c205","standardIngredientId":"1f8f4bee-6bda-4aeb-9d0d-274dd2ef307d","nameJa":"エクストラバージンオリーブオイル 20ml","nameEn":"Extra virgin olive oil","authenticityImpact":0,"flavorImpact":"乳製品の丸みは弱まるが、地域や合わせる料理によって自然な仕上げになる","textureImpact":null,"procedureChanges":["火を止めてから加えて混ぜる"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"ml","notes":"仕上げに火を止めてから混ぜる","action":"update","nameEn":"Extra virgin olive oil","nameJa":"エクストラバージンオリーブオイル","quantity":20,"targetNameJa":"無塩バター"}],"stepPatches":[{"action":"replace","stepNumber":4,"instruction":"火を止め、エクストラバージンオリーブオイル20mlを細く回しかけて混ぜる。表面に艶が出て、皿に流すとゆっくり広がる柔らかさになれば完成。煮込み料理のソースを受けるよう温かいうちに盛る。","changeReason":"オリーブオイルはバターのように溶かし込むのではなく、火を止めてから香りを残す"}]}]}],"steps":[{"stepNumber":1,"instruction":"厚手の鍋に水1000mlと塩10gを入れて強火にかける。細かい泡が立ち、沸騰直前になったら弱火に落とす。","title":"材料を合わせる","actionItems":["厚手の鍋に水1000mlと塩10gを入れて強火にかける。"],"parallelItems":[],"completionCriteria":["細かい泡が立ち、沸騰直前になったら弱火に落とす。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ポレンタ用とうもろこし粉250gを雨のように少しずつ加えながら、泡立て器で絶えず混ぜる。粉の白い塊が見えなくなり、全体が均一な黄色になったら木べらに持ち替える。","title":"仕上げにまとめる","actionItems":["ポレンタ用とうもろこし粉250gを雨のように少しずつ加えながら、泡立て器で絶えず混ぜる。"],"parallelItems":[],"completionCriteria":["粉の白い塊が見えなくなり、全体が均一な黄色になったら木べらに持ち替える。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"弱火で35〜40分炊く。2〜3分ごとに鍋底から大きく混ぜ、表面がぼこっと静かに泡立ち、粒のざらつきが消えて木べらの跡がゆっくり閉じる濃度になったら次へ。","title":"炊き上げる","actionItems":["弱火で35〜40分炊く。","2〜3分ごとに鍋底から大きく混ぜ、表面がぼこっと静かに泡立ち、粒のざらつきが消えて木べらの跡がゆっくり閉じる濃度になったら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"火を止め、無塩バター30gを加えて混ぜる。表面に艶が出て、皿に流すとゆっくり広がる柔らかさになれば完成。煮込み料理のソースを受けるよう温かいうちに盛る。","title":"仕上げにまとめる","actionItems":["煮込み料理のソースを受けるよう温かいうちに盛る。"],"parallelItems":[],"completionCriteria":["表面に艶が出て、皿に流すとゆっくり広がる柔らかさになれば完成。"],"cautionItems":["火を止め、無塩バター30gを加えて混ぜる。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

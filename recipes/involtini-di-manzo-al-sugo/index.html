@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>41分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,17 +93,24 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">牛薄切り肉（しゃぶしゃぶ用またはすき焼き用）</span><span class="ingredient-qty">8枚（各80〜100g）</span><span class="ingredient-notes">スーパーのしゃぶしゃぶ用・すき焼き用牛肉でOK。なるべく大きめの薄切りを選ぶ</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">50g</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束（大）</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">パンチェッタ（またはベーコン）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">みじん切り。フィリング用</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">500g</span><span class="ingredient-notes">San Marzano系が理想。手で潰す</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">みじん切り（フィリング用）</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
+              <li data-ingredient-row="1226372f-2f0f-4c3a-aa71-7a8525f7c3f0"><span class="ingredient-name" data-ingredient-name>牛薄切り肉（しゃぶしゃぶ用またはすき焼き用）</span><span class="ingredient-qty" data-ingredient-qty>8枚（各80〜100g）</span><span class="ingredient-notes">スーパーのしゃぶしゃぶ用・すき焼き用牛肉でOK。なるべく大きめの薄切りを選ぶ</span></li>
+          <li data-ingredient-row="f216072b-29e3-4c2c-ac68-5fba5e7aadaf"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>50g</span></li>
+          <li data-ingredient-row="40c14aeb-bec7-4bce-ae59-13147110430b"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束（大）</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="edb4551b-b87d-488f-ba27-bcd6a6b29aae"><span class="ingredient-name" data-ingredient-name>パンチェッタ（またはベーコン）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">みじん切り。フィリング用</span></li>
+          <li data-ingredient-row="0b8b0cb8-2f66-4c3d-a332-767b7d5843e0"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>500g</span><span class="ingredient-notes">San Marzano系が理想。手で潰す</span></li>
+          <li data-ingredient-row="86aeecfd-af7f-47bd-ab85-10cc88312f87"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="672ecb53-f6a9-4c04-8d6e-e3e524e9700e"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">みじん切り（フィリング用）</span></li>
+          <li data-ingredient-row="f72e952c-8373-492d-90c5-6ac8ef2f9b26"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="4e9f035a-5eb8-40e8-bdf4-99c9ccd37e10"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
               </ul>
             </section>
           </div>
@@ -284,6 +304,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7c44420c-cbbb-4390-80ba-6c06dae2557d","nameJa":"牛肉のインヴォルティーニ トマトソース","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"1226372f-2f0f-4c3a-aa71-7a8525f7c3f0","nameOriginal":"Fettine di manzo (girello o noce)","nameJa":"牛薄切り肉（しゃぶしゃぶ用またはすき焼き用）","nameEn":"Thin-sliced beef (round or topside)","quantity":8,"unit":"枚（各80〜100g）","role":"essential","scalingBehavior":null,"notes":"スーパーのしゃぶしゃぶ用・すき焼き用牛肉でOK。なるべく大きめの薄切りを選ぶ","substitutionOptions":[]},{"id":"f216072b-29e3-4c2c-ac68-5fba5e7aadaf","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Grated Parmigiano Reggiano","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"40c14aeb-bec7-4bce-ae59-13147110430b","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束（大）","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"edb4551b-b87d-488f-ba27-bcd6a6b29aae","nameOriginal":"Pancetta","nameJa":"パンチェッタ（またはベーコン）","nameEn":"Pancetta or bacon","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"みじん切り。フィリング用","substitutionOptions":[]},{"id":"0b8b0cb8-2f66-4c3d-a332-767b7d5843e0","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"San Marzano系が理想。手で潰す","substitutionOptions":[]},{"id":"86aeecfd-af7f-47bd-ab85-10cc88312f87","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"672ecb53-f6a9-4c04-8d6e-e3e524e9700e","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り（フィリング用）","substitutionOptions":[]},{"id":"f72e952c-8373-492d-90c5-6ac8ef2f9b26","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4e9f035a-5eb8-40e8-bdf4-99c9ccd37e10","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"フィリング：パセリ・パンチェッタ・にんにくをそれぞれみじん切りにする。パルミジャーノ50gを細かくすりおろし、刻んだ材料と合わせて混ぜる。塩・こしょうで調整する。","title":"フィリングを作る","actionItems":["イタリアンパセリ1束をみじん切りにする。","パンチェッタ80gをみじん切りにする。","にんにく1片をみじん切りにする。","パルミジャーノ50gを細かくすりおろす。","すりおろしたパルミジャーノと刻んだ材料を合わせて混ぜ、塩・こしょうで調整する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"薄切りの牛肉を広げ、フィリングを端から2cm残して全体に薄く広げる。手前からきつく巻き、爪楊枝2本で留める。全て同様に。","title":"牛肉を巻く","actionItems":["薄切り牛肉8枚を広げ、フィリングを端から2cm残して薄く広げる。","手前からきつく巻き、爪楊枝2本で留める。","残り7枚も同様に巻く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["爪楊枝でしっかり留めないと煮込み中に解ける。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"オリーブオイルで鍋を強火に熱し、インヴォルティーニを転がしながら全面に焼き色をつけて取り出す。","title":"全面に焼き色をつける","actionItems":["オリーブオイル50mlで鍋を強火に熱する。","インヴォルティーニを転がしながら全面に焼き色をつけて取り出す。"],"parallelItems":[],"completionCriteria":["全面にきつね色がついたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"玉ねぎをみじん切りにする。同じ鍋で玉ねぎを中火で5〜6分、透明になるまで炒める。白ワインを注いで鍋底をこそげながら半量に煮詰める。ホールトマトを手で潰しながら加え、インヴォルティーニを戻す。","title":"ソースのベースを作る","actionItems":["玉ねぎ1個をみじん切りにする。","同じ鍋で玉ねぎを中火で5〜6分、透明になるまで炒める。","白ワイン100mlを注いで鍋底をこそげながら半量に煮詰める。","ホールトマト500gを手で潰しながら加え、インヴォルティーニを戻す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"蓋をして弱火で45分煮込む。楊枝を外して盛り付ける。残ったソースをパスタと和えてプリモにするのがイタリア家庭の習慣。","title":"煮込んで仕上げる","actionItems":["蓋をして弱火で45分煮込む。","爪楊枝を外して盛り付ける。"],"parallelItems":[],"completionCriteria":["肉が柔らかくなりソースにとろみが出れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":47,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

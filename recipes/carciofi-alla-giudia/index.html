@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ロマネスコ種アーティチョーク</span><span class="ingredient-qty">4個</span></li>
-          <li><span class="ingredient-name">揚げ油（ひまわり油）</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">レモン</span><span class="ingredient-qty">2個</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1つまみ</span></li>
-          <li><span class="ingredient-name">黒コショウ</span><span class="ingredient-qty">1つまみ</span></li>
+              <li data-ingredient-row="b5ef43f9-4651-46ce-8dfe-cae5f2646f54"><span class="ingredient-name" data-ingredient-name>ロマネスコ種アーティチョーク</span><span class="ingredient-qty" data-ingredient-qty>4個</span></li>
+          <li data-ingredient-row="32fa0c20-8d8e-4133-9af5-29add5ffdad5"><span class="ingredient-name" data-ingredient-name>揚げ油（ひまわり油）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="36bce371-7d37-4845-bf3a-e11f13ed4f31"><span class="ingredient-name" data-ingredient-name>レモン</span><span class="ingredient-qty" data-ingredient-qty>2個</span></li>
+          <li data-ingredient-row="b971333b-6021-45d6-8915-81bfee77d04b"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
+          <li data-ingredient-row="c50488de-1a86-481c-8453-4be9482540c7"><span class="ingredient-name" data-ingredient-name>黒コショウ</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
               </ul>
             </section>
           </div>
@@ -202,6 +222,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"2e1281d8-de78-4204-8686-fe90696348b1","nameJa":"カルチョーフィ・アッラ・ジュディア","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"b5ef43f9-4651-46ce-8dfe-cae5f2646f54","nameOriginal":"Carciofi romaneschi","nameJa":"ロマネスコ種アーティチョーク","nameEn":"Romanesco artichokes","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"32fa0c20-8d8e-4133-9af5-29add5ffdad5","nameOriginal":"Olio di semi","nameJa":"揚げ油（ひまわり油）","nameEn":"Sunflower oil for frying","quantity":500,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"36bce371-7d37-4845-bf3a-e11f13ed4f31","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b971333b-6021-45d6-8915-81bfee77d04b","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c50488de-1a86-481c-8453-4be9482540c7","nameOriginal":"Pepe nero","nameJa":"黒コショウ","nameEn":"Black pepper","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"レモン1個を絞り、冷水を張ったボウルに入れる。アーティチョークの外側の硬い葉を10〜12枚むき取り、葉先2cmをナイフで切り落とす。茎は5cm残してぼきりと折り、ピーラーで皮をむく。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"下準備"},{"stepNumber":2,"instruction":"アーティチョークを縦に4等分に切り、中心の産毛（チョーク）をスプーンでくり抜く。すぐにレモン水に入れて変色を防ぐ。10分以上さらす。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"揚げ鍋に油を入れて140℃に熱する（低温）。水気をよく拭いたアーティチョークを入れて8〜10分揚げる。菜箸がすっと通るくらい柔らかくなったら取り出して油を切る。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"一度目の揚げ（低温）"},{"stepNumber":4,"instruction":"取り出したアーティチョークを掌で軽く押し、花びらが開くように形を整える。油の温度を180℃に上げる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"180℃の油で再び2〜3分揚げる。外側の葉がパリパリのきつね色になったら取り出し、ペーパータオルで油を切る。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"二度目の揚げ（高温）"},{"stepNumber":6,"instruction":"熱いうちに塩・黒コショウをふり、レモンのくし切りを添えてすぐに供する。時間が経つと葉がしなってしまうので提供タイミングが命。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"仕上げ"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

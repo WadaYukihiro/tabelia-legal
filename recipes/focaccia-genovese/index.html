@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>36分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>22分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ジェノヴァ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,15 +94,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">強力粉</span><span class="ingredient-qty">500g</span></li>
-          <li><span class="ingredient-name">水</span><span class="ingredient-qty">330ml</span></li>
-          <li><span class="ingredient-name">インスタントドライイースト</span><span class="ingredient-qty">5g</span></li>
-          <li><span class="ingredient-name">エクストラバージンオリーブオイル</span><span class="ingredient-qty">70ml</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">12g</span></li>
-          <li><span class="ingredient-name">粗塩</span><span class="ingredient-qty">4g</span></li>
-          <li><span class="ingredient-name">塩水用の水</span><span class="ingredient-qty">40ml</span></li>
+              <li data-ingredient-row="6513c000-6a39-495a-ac53-5334d4a19fea"><span class="ingredient-name" data-ingredient-name>強力粉</span><span class="ingredient-qty" data-ingredient-qty>500g</span></li>
+          <li data-ingredient-row="090f00bd-5f6c-4de8-9080-571e537b13f5"><span class="ingredient-name" data-ingredient-name>水</span><span class="ingredient-qty" data-ingredient-qty>330ml</span></li>
+          <li data-ingredient-row="b78aed55-c557-4be8-a1cb-5a3f5d6e02ed"><span class="ingredient-name" data-ingredient-name>インスタントドライイースト</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
+          <li data-ingredient-row="7f211e7f-c6a7-4347-baf1-972f3c8d549c"><span class="ingredient-name" data-ingredient-name>エクストラバージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>70ml</span></li>
+          <li data-ingredient-row="bdff06b9-7885-44d7-a2f4-3e0d9b09da10"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>12g</span></li>
+          <li data-ingredient-row="62ddc01b-5a2f-4bc6-9a1b-0356e38b765c"><span class="ingredient-name" data-ingredient-name>粗塩</span><span class="ingredient-qty" data-ingredient-qty>4g</span></li>
+          <li data-ingredient-row="af20d701-9327-4aaf-9ef3-35fefdcdfc8c"><span class="ingredient-name" data-ingredient-name>塩水用の水</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
               </ul>
             </section>
           </div>
@@ -293,6 +313,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"05f37ebc-d69c-4fbe-b9ce-14b03a5ab3be","nameJa":"ジェノヴァ風フォカッチャ","baseServings":6,"minServings":4,"maxServings":20},"ingredients":[{"id":"6513c000-6a39-495a-ac53-5334d4a19fea","nameOriginal":"Farina 0","nameJa":"強力粉","nameEn":"Bread flour","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"090f00bd-5f6c-4de8-9080-571e537b13f5","nameOriginal":"Acqua","nameJa":"水","nameEn":"Water","quantity":330,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b78aed55-c557-4be8-a1cb-5a3f5d6e02ed","nameOriginal":"Lievito di birra secco","nameJa":"インスタントドライイースト","nameEn":"Instant dry yeast","quantity":5,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7f211e7f-c6a7-4347-baf1-972f3c8d549c","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":70,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bdff06b9-7885-44d7-a2f4-3e0d9b09da10","nameOriginal":"Sale fino","nameJa":"塩","nameEn":"Fine salt","quantity":12,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"62ddc01b-5a2f-4bc6-9a1b-0356e38b765c","nameOriginal":"Sale grosso","nameJa":"粗塩","nameEn":"Coarse sea salt","quantity":4,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"af20d701-9327-4aaf-9ef3-35fefdcdfc8c","nameOriginal":"Acqua per salamoia","nameJa":"塩水用の水","nameEn":"Water for brine","quantity":40,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ボウルに水330ml、インスタントドライイースト5g、強力粉500g、塩12g、エクストラバージンオリーブオイル30mlを入れる。粉気がなくなるまで混ぜ、べたつく柔らかい生地にする。","title":"生地を仕込む","actionItems":["ボウルに水330ml、インスタントドライイースト5g、強力粉500g、塩12g、エクストラバージンオリーブオイル30mlを入れる。","粉気がなくなるまで混ぜ、べたつく柔らかい生地にする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"生地を台に出し、手に水をつけながら8〜10分こねる。生地がなめらかになり、引っ張ると薄く伸びるが少し裂ける程度になったら次へ。","title":"生地をこねて土台を作る","actionItems":["生地を台に出し、手に水をつけながら8〜10分こねる。"],"parallelItems":[],"completionCriteria":["生地がなめらかになり、引っ張ると薄く伸びるが少し裂ける程度になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ボウルに戻して覆い、室温で90分発酵させる。生地が約2倍に膨らみ、指で押すと跡がゆっくり戻る状態にする。","title":"一次発酵させる","actionItems":["ボウルに戻して覆い、室温で90分発酵させる。"],"parallelItems":[],"completionCriteria":["生地が約2倍に膨らみ、指で押すと跡がゆっくり戻る状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":90,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"天板にエクストラバージンオリーブオイル20mlを広げ、生地をのせる。手でやさしく押し広げ、天板の7割ほどまで広がったら20分休ませる。","title":"生地を天板になじませる","actionItems":["天板にエクストラバージンオリーブオイル20mlを広げ、生地をのせる。"],"parallelItems":[],"completionCriteria":["手でやさしく押し広げ、天板の7割ほどまで広がったら20分休ませる。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"小さなボウルに塩水用の水40mlとエクストラバージンオリーブオイル20mlを入れて混ぜる。生地を天板いっぱいに広げ、指で深いくぼみを全体につける。混ぜた塩水と粗塩4gを生地の表面に散らす。","title":"くぼみと塩水で表面を仕上げる","actionItems":["小さなボウルに塩水用の水40mlとエクストラバージンオリーブオイル20mlを入れて混ぜる。","生地を天板いっぱいに広げ、指で深いくぼみを全体につける。","混ぜた塩水と粗塩4gを生地の表面に散らす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"生地をさらに30分発酵させる。表面がふっくらし、くぼみに塩水と油がたまっている状態にする。","title":"二次発酵させる","actionItems":["生地をさらに30分発酵させる。"],"parallelItems":[],"completionCriteria":["表面がふっくらし、くぼみに塩水と油がたまっている状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":7,"instruction":"（二次発酵の間に）オーブンを230℃に予熱する。天板ごと入れられる温度になり、庫内が十分に熱くなったら次へ。","title":"オーブンを高温に整える","actionItems":["天板ごと入れられる温度になり、庫内が十分に熱くなったら次へ。"],"parallelItems":["（二次発酵の間に）オーブンを230℃に予熱する。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"230℃のオーブンで18〜22分焼く。表面が黄金色になり、底面が香ばしく焼け、持ち上げると軽く感じるようになったら完成。","title":"香ばしく焼き上げる","actionItems":["230℃のオーブンで18〜22分焼く。","表面が黄金色になり、底面が香ばしく焼け、持ち上げると軽く感じるようになったら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":22,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

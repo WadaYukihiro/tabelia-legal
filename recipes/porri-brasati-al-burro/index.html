@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・トリノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">リーキ（西洋ねぎ）</span><span class="ingredient-qty">3本</span><span class="ingredient-notes">青い部分を切り落とし、4cm長に切る</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">100ml</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">すりおろす。仕上げに散らす</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="b8313365-e197-4af0-a77a-473f4a1387b4"><span class="ingredient-name" data-ingredient-name>リーキ（西洋ねぎ）</span><span class="ingredient-qty" data-ingredient-qty>3本</span><span class="ingredient-notes">青い部分を切り落とし、4cm長に切る</span><button type="button" class="substitution-trigger" data-substitution-trigger="b8313365-e197-4af0-a77a-473f4a1387b4"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="556d7c9c-076e-4563-ad41-8358f9e7fbb7"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="d0f0e5d7-05d7-4abb-844e-40e51b7ea9e4"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>100ml</span></li>
+          <li data-ingredient-row="e6ea5fbe-0b22-46c6-9125-5d76ed3549cf"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">すりおろす。仕上げに散らす</span></li>
+          <li data-ingredient-row="da5615d5-ef95-4e26-bc1d-761f05faa4e4"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -218,6 +238,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"83dc1f8f-d383-4fa8-ab4f-11bab977f357","nameJa":"リーキのバター蒸し煮","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"b8313365-e197-4af0-a77a-473f4a1387b4","nameOriginal":"Porri","nameJa":"リーキ（西洋ねぎ）","nameEn":"Leeks","quantity":3,"unit":"本","role":"essential","scalingBehavior":null,"notes":"青い部分を切り落とし、4cm長に切る","substitutionOptions":[{"id":"bc610549-949c-43a2-83b6-2475fd5afa63","standardIngredientId":"b8313365-e197-4af0-a77a-473f4a1387b4","nameJa":"長ねぎ","nameEn":"Japanese leek","authenticityImpact":-10,"flavorImpact":"リーキより辛みが強く、食感も異なる","textureImpact":null,"procedureChanges":["加熱時間を3〜4分短縮する"],"affectedStepNumbers":[1,2,3],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"本","notes":"青い部分を切り落とし、4cm長に切る。リーキより火が入りやすい","action":"update","nameEn":"Japanese leek","nameJa":"長ねぎ","quantity":3,"targetNameJa":"リーキ（西洋ねぎ）"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"・パルミジャーノをすりおろしておく\n・長ねぎの青い部分を切り落とし、4cm長に切る。縦半分に切って断面を水洗いする","changeReason":"置換後の食材名と下処理に合わせるため"},{"action":"replace","stepNumber":2,"instruction":"フライパンにバターを溶かし、長ねぎを断面を下にして並べ、中火で2〜3分焼き色をつける。リーキより火が入りやすいため、断面が薄く色づいたら止める。","changeReason":"長ねぎはリーキより細く火が入りやすいため、焼き時間を短くする"},{"action":"replace","stepNumber":3,"instruction":"長ねぎをひっくり返し、白ワイン・塩を加えて蓋をし、弱火で12〜14分蒸し煮にする。中心まで柔らかく、辛みが丸くなったら次へ。","changeReason":"長ねぎはリーキより早く柔らかくなるため、蒸し煮も短めにする"}]}]},{"id":"556d7c9c-076e-4563-ad41-8358f9e7fbb7","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d0f0e5d7-05d7-4abb-844e-40e51b7ea9e4","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e6ea5fbe-0b22-46c6-9125-5d76ed3549cf","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":20,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす。仕上げに散らす","substitutionOptions":[]},{"id":"da5615d5-ef95-4e26-bc1d-761f05faa4e4","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・パルミジャーノをすりおろしておく\n・リーキの青い部分を切り落とし、4cm長に切る。縦半分に切って断面を水洗いする","title":"材料を準備する","actionItems":["パルミジャーノをすりおろしておく","リーキの青い部分を切り落とし、4cm長に切る。縦半分に切って断面を水洗いする"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにバターを溶かし、リーキを断面を下にして並べ、中火で3〜4分焼き色をつける。","title":"焼き色をつける","actionItems":["フライパンにバターを溶かし、リーキを断面を下にして並べ、中火で3〜4分焼き色をつける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"リーキをひっくり返し、白ワイン・塩を加えて蓋をし、弱火で15〜18分蒸し煮にする。","title":"蒸す","actionItems":["リーキをひっくり返し、白ワイン・塩を加えて蓋をし、弱火で15〜18分蒸し煮にする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"蓋を取って残った液体を中火で少し煮詰め、パルミジャーノを散らして供する。","title":"煮詰める","actionItems":["蓋を取って残った液体を中火で少し煮詰め、パルミジャーノを散らして供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

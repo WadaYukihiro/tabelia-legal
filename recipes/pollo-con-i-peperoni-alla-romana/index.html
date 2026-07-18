@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>47分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">鶏もも肉（骨付きまたは骨なし）</span><span class="ingredient-qty">1200g（約4〜6ピース）</span><span class="ingredient-notes">皮付きを使う。骨付きが旨みが増す</span></li>
-          <li><span class="ingredient-name">赤・黄パプリカ</span><span class="ingredient-qty">4個（各1個）</span><span class="ingredient-notes">種を取り2cm幅に切る。赤・黄を使うと色が美しい</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">手で潰す</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1大</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">120ml</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
+              <li data-ingredient-row="0f680b19-41a0-46bd-ac7b-57e9d608f3f9"><span class="ingredient-name" data-ingredient-name>鶏もも肉（骨付きまたは骨なし）</span><span class="ingredient-qty" data-ingredient-qty>1200g（約4〜6ピース）</span><span class="ingredient-notes">皮付きを使う。骨付きが旨みが増す</span></li>
+          <li data-ingredient-row="c98067d1-034b-4178-8331-198ab8e01803"><span class="ingredient-name" data-ingredient-name>赤・黄パプリカ</span><span class="ingredient-qty" data-ingredient-qty>4個（各1個）</span><span class="ingredient-notes">種を取り2cm幅に切る。赤・黄を使うと色が美しい</span><button type="button" class="substitution-trigger" data-substitution-trigger="c98067d1-034b-4178-8331-198ab8e01803"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="5559c808-833a-4cac-ab5f-8a3d8a5b7804"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">手で潰す</span></li>
+          <li data-ingredient-row="1a2b5a84-ba3f-49b5-bbb5-87d80929650d"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1大</span><span class="ingredient-notes">薄切り</span></li>
+          <li data-ingredient-row="1f760b18-fa20-4706-bd9a-917ed5d99676"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="1cc8416d-7bff-4f82-91a4-7827d8dc55f9"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>120ml</span></li>
+          <li data-ingredient-row="27239462-9377-4def-9697-38d75d9f7c16"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
               </ul>
             </section>
           </div>
@@ -284,6 +304,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"893e6378-cc9b-41c1-9db2-b9dcfcdb5ad4","nameJa":"鶏肉とパプリカのローマ風煮込み","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0f680b19-41a0-46bd-ac7b-57e9d608f3f9","nameOriginal":"Pollo (cosce e sovracosce)","nameJa":"鶏もも肉（骨付きまたは骨なし）","nameEn":"Chicken thighs and drumsticks","quantity":1200,"unit":"g（約4〜6ピース）","role":"essential","scalingBehavior":null,"notes":"皮付きを使う。骨付きが旨みが増す","substitutionOptions":[]},{"id":"c98067d1-034b-4178-8331-198ab8e01803","nameOriginal":"Peperoni rossi e gialli","nameJa":"赤・黄パプリカ","nameEn":"Red and yellow bell peppers","quantity":4,"unit":"個（各1個）","role":"essential","scalingBehavior":null,"notes":"種を取り2cm幅に切る。赤・黄を使うと色が美しい","substitutionOptions":[{"id":"85bd66ac-2210-40a4-aa93-cc9e146a663e","standardIngredientId":"c98067d1-034b-4178-8331-198ab8e01803","nameJa":"赤・黄どちらか1色のパプリカ","nameEn":"Single-color bell peppers","authenticityImpact":-5,"flavorImpact":"色の印象が変わるが味は同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"5559c808-833a-4cac-ab5f-8a3d8a5b7804","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手で潰す","substitutionOptions":[]},{"id":"1a2b5a84-ba3f-49b5-bbb5-87d80929650d","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"大","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"1f760b18-fa20-4706-bd9a-917ed5d99676","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"1cc8416d-7bff-4f82-91a4-7827d8dc55f9","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":120,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"27239462-9377-4def-9697-38d75d9f7c16","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・パプリカの種を取り2cm幅に切る\n・玉ねぎを薄切りにする\n・にんにくをみじん切りにする","title":"野菜を切る","actionItems":["パプリカ4個の種を取り2cm幅に切る。","玉ねぎ1個を薄切りにする。","にんにく2片をみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鶏肉に塩・こしょうをする。厚手の鍋でオリーブオイルを強火に熱し、鶏肉を皮側から入れて濃い焼き色をつけて取り出す（皮面5分・裏3分）。","title":"鶏肉に焼き色をつける","actionItems":["鶏肉1200gに塩・こしょうをする。","厚手の鍋でオリーブオイル40mlを強火に熱し、鶏肉を皮側から入れて焼き、皮面5分・裏3分で取り出す。"],"parallelItems":[],"completionCriteria":["皮面に濃い焼き色がついたら裏返し、計8分焼いたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じ鍋で玉ねぎを中火で6分炒め、にんにくを加えて2分炒める。白ワインを注いで鍋底をこそげながら半量になるまで煮詰める。","title":"ソフリットを炒めてデグラッセする","actionItems":["同じ鍋で玉ねぎを中火で6分炒める。","にんにくを加えてさらに2分炒める。","白ワイン120mlを注いで鍋底をこそげながら半量になるまで煮詰める。"],"parallelItems":[],"completionCriteria":["ワインが半量になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ホールトマト缶を手で潰しながら加え、混ぜる。鶏肉を皮側を上にして鍋に戻し、蓋をして弱火で25分煮込む。","title":"トマトで煮込む","actionItems":["ホールトマト300gを手で潰しながら加えて混ぜる。","鶏肉を皮側を上にして戻し、蓋をして弱火で25分煮込む。"],"parallelItems":[],"completionCriteria":["鶏肉に火が通れば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":27,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"パプリカを加え、蓋をして15分さらに煮込む。パプリカは完全に崩れさせず、少し食感を残す。","title":"パプリカを加えて煮込む","actionItems":["パプリカを加え、蓋をして15分さらに煮込む。"],"parallelItems":[],"completionCriteria":["パプリカが柔らかくなりながら少し食感が残れば次へ。"],"cautionItems":["パプリカは完全に崩れさせず、少し食感を残すこと。"],"tipItems":[],"durationMinutes":17,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"塩で調整。皿に盛り付けて仕上げのオリーブオイルを少量かける。","title":"塩とオイルで調える","actionItems":["塩で味を調整する。","皿に盛り付けて仕上げのオリーブオイルを少量かける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

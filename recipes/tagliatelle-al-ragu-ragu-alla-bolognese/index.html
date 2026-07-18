@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間3分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>1時間40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ボローニャ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-06-14">2026.06.14</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,21 +94,28 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">00粉（または強力粉）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">生タリアテッレ用（手打ち）</span></li>
-          <li><span class="ingredient-name">卵（常温）</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">生タリアテッレ用</span></li>
-          <li><span class="ingredient-name">牛豚合挽肉（牛60%・豚40%混合）</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">生豚バラ肉</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">細かく刻む。2023年版は生豚バラ肉が基本（硬化パンチェッタも可）</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">エクストラヴァージンオリーブオイル</span><span class="ingredient-qty">45ml</span><span class="ingredient-notes">2023年版はEVOのみ使用。バターは使わない</span></li>
-          <li><span class="ingredient-name">ワイン（赤または白）</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">パッサータ（裏ごしトマト）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">「トマトソース＋肉」ではなく「肉のソース＋トマト」。量は肉に対して脇役</span></li>
-          <li><span class="ingredient-name">濃縮トマトペースト</span><span class="ingredient-qty">15g</span><span class="ingredient-notes">大さじ1。パッサータに合わせて深みを出す</span></li>
-          <li><span class="ingredient-name">ブロード・ディ・マンヅォ（牛骨スープ）</span><span class="ingredient-qty">200ml</span><span class="ingredient-notes">適量。煮込み中に水分が少なくなったら加える。野菜スープ・ブイヨンでも可</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">50g</span></li>
+              <li data-ingredient-row="6c31c880-3728-47be-bb9f-c1bdd7db1f73"><span class="ingredient-name" data-ingredient-name>00粉（または強力粉）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">生タリアテッレ用（手打ち）</span><button type="button" class="substitution-trigger" data-substitution-trigger="6c31c880-3728-47be-bb9f-c1bdd7db1f73"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="834021c6-87e6-4a5e-9cae-412e09b295d5"><span class="ingredient-name" data-ingredient-name>卵（常温）</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">生タリアテッレ用</span></li>
+          <li data-ingredient-row="823ef83a-e898-41ce-8d31-28abaa1d5a17"><span class="ingredient-name" data-ingredient-name>牛豚合挽肉（牛60%・豚40%混合）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><button type="button" class="substitution-trigger" data-substitution-trigger="823ef83a-e898-41ce-8d31-28abaa1d5a17"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="58e927df-2386-462f-b258-54eb3bd292fb"><span class="ingredient-name" data-ingredient-name>生豚バラ肉</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">細かく刻む。2023年版は生豚バラ肉が基本（硬化パンチェッタも可）</span><button type="button" class="substitution-trigger" data-substitution-trigger="58e927df-2386-462f-b258-54eb3bd292fb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2dbf6821-f430-4e29-bd28-16e25f458f6a"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="054cfcfd-4cff-46d8-a7f4-12cf5812d04f"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="0fc39558-e6df-4924-99cf-b525e85c6fb2"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="7ec0afdb-eedf-4bb6-a4af-9ae1cb0eb516"><span class="ingredient-name" data-ingredient-name>エクストラヴァージンオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span><span class="ingredient-notes">2023年版はEVOのみ使用。バターは使わない</span></li>
+          <li data-ingredient-row="ebb93cab-d8a3-4950-ac3e-f8b6f6e1d114"><span class="ingredient-name" data-ingredient-name>ワイン（赤または白）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="333797d7-3ea6-42da-9676-c20f74d14fc0"><span class="ingredient-name" data-ingredient-name>パッサータ（裏ごしトマト）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">「トマトソース＋肉」ではなく「肉のソース＋トマト」。量は肉に対して脇役</span></li>
+          <li data-ingredient-row="b7b046d1-1164-4958-8a59-80fb2b268ffd"><span class="ingredient-name" data-ingredient-name>濃縮トマトペースト</span><span class="ingredient-qty" data-ingredient-qty>15g</span><span class="ingredient-notes">大さじ1。パッサータに合わせて深みを出す</span></li>
+          <li data-ingredient-row="ab490546-e50f-4a4e-847b-c6499a61cfbd"><span class="ingredient-name" data-ingredient-name>ブロード・ディ・マンヅォ（牛骨スープ）</span><span class="ingredient-qty" data-ingredient-qty>200ml</span><span class="ingredient-notes">適量。煮込み中に水分が少なくなったら加える。野菜スープ・ブイヨンでも可</span></li>
+          <li data-ingredient-row="9ea952ac-3411-4cb8-978f-c71eb07d93f2"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>50g</span></li>
               </ul>
             </section>
           </div>
@@ -305,6 +325,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"5a68d4d1-c12e-408b-a064-377684c1abfb","nameJa":"ボローニャ風ラグーのタリアテッレ（ボロネーゼ）","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"6c31c880-3728-47be-bb9f-c1bdd7db1f73","nameOriginal":"Farina 00","nameJa":"00粉（または強力粉）","nameEn":"Tipo 00 flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生タリアテッレ用（手打ち）","substitutionOptions":[{"id":"35f72168-35f7-4da8-9e3f-8ab1a2c3be73","standardIngredientId":"6c31c880-3728-47be-bb9f-c1bdd7db1f73","nameJa":"強力粉","nameEn":"Bread flour","authenticityImpact":-5,"flavorImpact":"00粉より若干コシが強くなるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"834021c6-87e6-4a5e-9cae-412e09b295d5","nameOriginal":"Uova","nameJa":"卵（常温）","nameEn":"Eggs (room temperature)","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"生タリアテッレ用","substitutionOptions":[]},{"id":"823ef83a-e898-41ce-8d31-28abaa1d5a17","nameOriginal":"Manzo macinato","nameJa":"牛豚合挽肉（牛60%・豚40%混合）","nameEn":"60% beef + 40% pork mix","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"88c0fd9d-ecdd-4fab-8adb-8313a88db523","standardIngredientId":"823ef83a-e898-41ce-8d31-28abaa1d5a17","nameJa":"牛ひき肉のみ","nameEn":"Pure ground beef only","authenticityImpact":0,"flavorImpact":"2023年版では混合肉も可。牛のみでも成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"58e927df-2386-462f-b258-54eb3bd292fb","nameOriginal":"Pancetta fresca","nameJa":"生豚バラ肉","nameEn":"Fresh pork belly","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かく刻む。2023年版は生豚バラ肉が基本（硬化パンチェッタも可）","substitutionOptions":[{"id":"0b5fcf8a-42eb-47be-8c5e-05dcbff0d3b1","standardIngredientId":"58e927df-2386-462f-b258-54eb3bd292fb","nameJa":"パンチェッタ（硬化）","nameEn":"Cured pancetta","authenticityImpact":-5,"flavorImpact":"塩気と熟成の風味が加わるが本場でも許容範囲","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2dbf6821-f430-4e29-bd28-16e25f458f6a","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"054cfcfd-4cff-46d8-a7f4-12cf5812d04f","nameOriginal":"Carota","nameJa":"にんじん","nameEn":"Carrot","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"0fc39558-e6df-4924-99cf-b525e85c6fb2","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"7ec0afdb-eedf-4bb6-a4af-9ae1cb0eb516","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラヴァージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"2023年版はEVOのみ使用。バターは使わない","substitutionOptions":[]},{"id":"ebb93cab-d8a3-4950-ac3e-f8b6f6e1d114","nameOriginal":"Vino","nameJa":"ワイン（赤または白）","nameEn":"Wine (red or white)","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"333797d7-3ea6-42da-9676-c20f74d14fc0","nameOriginal":"Passata di pomodoro","nameJa":"パッサータ（裏ごしトマト）","nameEn":"Passata (sieved tomatoes)","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"「トマトソース＋肉」ではなく「肉のソース＋トマト」。量は肉に対して脇役","substitutionOptions":[]},{"id":"b7b046d1-1164-4958-8a59-80fb2b268ffd","nameOriginal":"Concentrato di pomodoro","nameJa":"濃縮トマトペースト","nameEn":"Double-concentrated tomato paste","quantity":15,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"大さじ1。パッサータに合わせて深みを出す","substitutionOptions":[]},{"id":"ab490546-e50f-4a4e-847b-c6499a61cfbd","nameOriginal":"Brodo di manzo","nameJa":"ブロード・ディ・マンヅォ（牛骨スープ）","nameEn":"Beef stock or water","quantity":200,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"適量。煮込み中に水分が少なくなったら加える。野菜スープ・ブイヨンでも可","substitutionOptions":[]},{"id":"9ea952ac-3411-4cb8-978f-c71eb07d93f2","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":50,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"","title":"材料を準備する","actionItems":["玉ねぎ・にんじん・セロリ（各約60g）をそれぞれみじん切りにする。","生豚バラ肉（またはパンチェッタ）を細かく刻む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"","title":"ソフリット（香味野菜）を炒める","actionItems":["エクストラヴァージンオリーブオイル45mlで豚バラ肉を中火で炒める。","玉ねぎ・にんじん・セロリを加え、少し塩を振る。","野菜がしんなりして甘みが出るまで中火で10分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ひき肉（牛のみ、または牛60%・豚40%混合）を加えて強火でほぐしながら炒める。赤みが消えて褐色になったらワイン150mlを加えてアルコールを飛ばす（約2分）。","title":"肉を炒める","actionItems":["ひき肉（牛のみ、または牛60%・豚40%混合）を加えて強火でほぐしながら炒める。","赤みが消えて褐色になったらワイン150mlを加えてアルコールを飛ばす（約2分）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"","title":"ソースを作る","actionItems":["パッサータ200gと濃縮トマトペースト15gを加えて混ぜ、蓋をして弱火で90〜120分煮込む。","途中で水分が少なければブロード・ディ・マンヅォ（牛骨スープ）を適宜加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["トマトが強過ぎると本場の味からは遠ざかってしまうので注意。トマトは主役ではなく、肉の風味を支えるために控えめに使うのがポイント。"],"tipItems":[],"durationMinutes":100,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"","title":"タリアテッレの生地を作る","actionItems":["（ラグーを煮込む間に）00粉300gに卵3個を加えてなめらかな生地にまとめ、ラップに包んで30分休ませる。"],"parallelItems":["大鍋に湯を沸かし始める。"],"completionCriteria":[],"cautionItems":[],"tipItems":["参考：「手打ちパスタ基礎シリーズ」"],"durationMinutes":40,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"","title":"タリアテッレを切る","actionItems":["休ませた生地を薄く伸ばして、幅6~8mmに切り、タリアテッレを作る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"","title":"パスタを茹でる","actionItems":["タリアテッレを沸かしておいた塩湯に入れ、アルデンテに茹でる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"","title":"ラグーと和える","actionItems":["パスタが茹で上がったらラグーと和える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"","title":"仕上げ","actionItems":["皿に盛り付け、パルミジャーノを上から振りかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

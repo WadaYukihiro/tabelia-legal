@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">生マグロ（ステーキ用）</span><span class="ingredient-qty">400g（2枚）</span><span class="ingredient-notes">2cm厚。常温に戻してから焼く</span></li>
-          <li><span class="ingredient-name">白玉ねぎ（大）</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">薄い半月切り</span></li>
-          <li><span class="ingredient-name">バルサミコ酢</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">フレッシュミント</span><span class="ingredient-qty">10枚</span><span class="ingredient-notes">シチリア流のアクセント</span></li>
-          <li><span class="ingredient-name">きび砂糖</span><span class="ingredient-qty">10g</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">50ml</span></li>
-          <li><span class="ingredient-name">塩・黒胡椒</span><span class="ingredient-qty">適量</span></li>
+              <li data-ingredient-row="acee69c4-1d24-4976-85bd-7a2167002f4a"><span class="ingredient-name" data-ingredient-name>生マグロ（ステーキ用）</span><span class="ingredient-qty" data-ingredient-qty>400g（2枚）</span><span class="ingredient-notes">2cm厚。常温に戻してから焼く</span><button type="button" class="substitution-trigger" data-substitution-trigger="acee69c4-1d24-4976-85bd-7a2167002f4a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="b32d2ad4-e394-4947-a6cf-a2a5b2ecad9d"><span class="ingredient-name" data-ingredient-name>白玉ねぎ（大）</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">薄い半月切り</span></li>
+          <li data-ingredient-row="4396c9b4-1a8f-47d7-9b1b-f4e375f5ba06"><span class="ingredient-name" data-ingredient-name>バルサミコ酢</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="124ba5d1-9e4d-426c-baab-386d8b62cf9d"><span class="ingredient-name" data-ingredient-name>フレッシュミント</span><span class="ingredient-qty" data-ingredient-qty>10枚</span><span class="ingredient-notes">シチリア流のアクセント</span></li>
+          <li data-ingredient-row="026cc31d-e938-4c20-be54-ebe06291deb9"><span class="ingredient-name" data-ingredient-name>きび砂糖</span><span class="ingredient-qty" data-ingredient-qty>10g</span></li>
+          <li data-ingredient-row="c3f95219-46f6-40a4-970b-9b10a3cc0bea"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>50ml</span></li>
+          <li data-ingredient-row="6a3a455f-82e6-4884-943d-a0cd2c99b085"><span class="ingredient-name" data-ingredient-name>塩・黒胡椒</span><span class="ingredient-qty" data-ingredient-qty>適量</span></li>
               </ul>
             </section>
           </div>
@@ -240,6 +260,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"20f0ae1a-201e-4135-b4d4-da213db07dc8","nameJa":"マグロと玉ねぎのシチリア風ソテー","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"acee69c4-1d24-4976-85bd-7a2167002f4a","nameOriginal":"Tonno fresco","nameJa":"生マグロ（ステーキ用）","nameEn":"Fresh tuna steaks","quantity":400,"unit":"g（2枚）","role":"essential","scalingBehavior":null,"notes":"2cm厚。常温に戻してから焼く","substitutionOptions":[{"id":"babd837f-5cd5-4954-b509-b379fdb0d0ad","standardIngredientId":"acee69c4-1d24-4976-85bd-7a2167002f4a","nameJa":"メカジキ（ステーキ）","nameEn":"Swordfish steaks","authenticityImpact":-5,"flavorImpact":"風味は違うが料理の構造は同じ","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"b32d2ad4-e394-4947-a6cf-a2a5b2ecad9d","nameOriginal":"Cipolle bianche","nameJa":"白玉ねぎ（大）","nameEn":"Large white onions","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"薄い半月切り","substitutionOptions":[]},{"id":"4396c9b4-1a8f-47d7-9b1b-f4e375f5ba06","nameOriginal":"Aceto balsamico","nameJa":"バルサミコ酢","nameEn":"Balsamic vinegar","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"124ba5d1-9e4d-426c-baab-386d8b62cf9d","nameOriginal":"Menta fresca","nameJa":"フレッシュミント","nameEn":"Fresh mint","quantity":10,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"シチリア流のアクセント","substitutionOptions":[]},{"id":"026cc31d-e938-4c20-be54-ebe06291deb9","nameOriginal":"Zucchero di canna","nameJa":"きび砂糖","nameEn":"Brown sugar","quantity":10,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c3f95219-46f6-40a4-970b-9b10a3cc0bea","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6a3a455f-82e6-4884-943d-a0cd2c99b085","nameOriginal":"Sale e pepe","nameJa":"塩・黒胡椒","nameEn":"Salt and black pepper","quantity":1,"unit":"適量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"白玉ねぎを薄い半月切りにする。","title":"玉ねぎを切る","actionItems":["白玉ねぎ2個を薄い半月切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"玉ねぎをオリーブオイル大さじ2で弱中火で15分、あめ色になるまでゆっくり炒める。きび砂糖とバルサミコ酢30mlを加えて2分炒め、甘酸っぱいソースにする。取り出す。","title":"玉ねぎを炒める","actionItems":["玉ねぎをオリーブオイル大さじ2で弱中火で15分、あめ色になるまでゆっくり炒める。","きび砂糖10gとバルサミコ酢30mlを加えて2分炒め、甘酸っぱいソースにする。","ソースを取り出す。"],"parallelItems":[],"completionCriteria":["玉ねぎがあめ色になったら次へ（約15分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンに残りのオリーブオイルを足して強火にし、マグロに塩・黒胡椒して片面2分ずつ焼く。中心はロゼ色を残す（本場スタイル）。よく焼きたい場合は各面1分追加。","title":"マグロを焼く","actionItems":["同じフライパンに残りのオリーブオイルを足して強火にする。","マグロに塩・黒胡椒して片面2分ずつ焼く。"],"parallelItems":[],"completionCriteria":["片面2分ずつ焼き、中心はロゼ色を残したら完成（本場スタイル）。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"皿に玉ねぎのソースを広げ、マグロをのせ、ミントを飾る。","title":"玉ねぎソースにマグロをのせる","actionItems":["皿に玉ねぎのソースを広げる。","マグロをのせ、ミントを飾る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

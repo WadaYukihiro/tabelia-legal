@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・クーネオ（ランゲ）</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,16 +93,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ヘーゼルナッツ（焙煎済み）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">高品質の焙煎ヘーゼルナッツを使う</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">150g</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">4個</span><span class="ingredient-notes">卵黄と卵白に分ける</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">常温で柔らかくする</span></li>
-          <li><span class="ingredient-name">ラムまたはグラッパ</span><span class="ingredient-qty">30ml</span><span class="ingredient-notes">お好みで</span></li>
-          <li><span class="ingredient-name">ベーキングパウダー</span><span class="ingredient-qty">5g</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">粉砂糖（仕上げ用）</span><span class="ingredient-qty">10g</span></li>
+              <li data-ingredient-row="bfde7969-e39f-4634-acfe-29685363c3ea"><span class="ingredient-name" data-ingredient-name>ヘーゼルナッツ（焙煎済み）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">高品質の焙煎ヘーゼルナッツを使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="bfde7969-e39f-4634-acfe-29685363c3ea"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4c2ff823-5609-4146-974f-3865da084772"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>150g</span></li>
+          <li data-ingredient-row="51391c4f-593d-4bb2-a4d1-7a767e908f7b"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>4個</span><span class="ingredient-notes">卵黄と卵白に分ける</span></li>
+          <li data-ingredient-row="871ab73e-73ce-40b8-a639-9bcd7c579dfe"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">常温で柔らかくする</span></li>
+          <li data-ingredient-row="f0e21523-ec56-453b-8f68-301e458f2772"><span class="ingredient-name" data-ingredient-name>ラムまたはグラッパ</span><span class="ingredient-qty" data-ingredient-qty>30ml</span><span class="ingredient-notes">お好みで</span></li>
+          <li data-ingredient-row="375997de-a063-4691-9431-9c9f6af3d407"><span class="ingredient-name" data-ingredient-name>ベーキングパウダー</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
+          <li data-ingredient-row="cbaeb95f-5fc2-416f-8d0a-028fcb1b6dfb"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="5eec9649-d231-454d-8ae1-d4a7592a035f"><span class="ingredient-name" data-ingredient-name>粉砂糖（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>10g</span></li>
               </ul>
             </section>
           </div>
@@ -315,6 +335,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6adc699a-a25e-41e8-be0a-ca51aad6f1d6","nameJa":"ピエモンテ風ヘーゼルナッツケーキ","baseServings":8,"minServings":4,"maxServings":20},"ingredients":[{"id":"bfde7969-e39f-4634-acfe-29685363c3ea","nameOriginal":"Nocciole tostate","nameJa":"ヘーゼルナッツ（焙煎済み）","nameEn":"Toasted hazelnuts","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"高品質の焙煎ヘーゼルナッツを使う","substitutionOptions":[{"id":"4c02de78-a4b2-4afa-8029-27f28302bff1","standardIngredientId":"bfde7969-e39f-4634-acfe-29685363c3ea","nameJa":"アーモンドパウダー","nameEn":"Almond powder","authenticityImpact":-20,"flavorImpact":"ヘーゼルナッツ特有の香ばしいコクが失われる","textureImpact":null,"procedureChanges":["挽く工程をスキップし、ダマをほぐしてから生地に加える"],"affectedStepNumbers":[1,4,6],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"ダマがあればほぐして使う","action":"update","nameEn":"Almond powder","nameJa":"アーモンドパウダー","quantity":300,"targetNameJa":"ヘーゼルナッツ（焙煎済み）"}],"stepPatches":[{"title":"仕込みと準備","action":"replace","stepNumber":1,"actionItems":["オーブンを180℃に予熱する。","アーモンドパウダー300gのダマを指でほぐす。"],"instruction":"オーブンを180℃に予熱する。アーモンドパウダー300gはダマがあれば指でほぐし、粗いかたまりをなくしておく。","changeReason":"アーモンドパウダーはすでに粉状のためフードプロセッサーで挽かない","completionCriteria":["アーモンドパウダーの粗いかたまりがなくなれば次へ。"]},{"title":"アーモンドパウダーを加える","action":"replace","stepNumber":4,"actionItems":["アーモンドパウダー300gとベーキングパウダー5gを加えてゴムベラで混ぜる。"],"instruction":"アーモンドパウダー・ベーキングパウダーを加えて混ぜる。","changeReason":"生地に加えるナッツをアーモンドパウダーに置き換えるため","completionCriteria":["均一に混ざれば次へ。"]},{"title":"アーモンド生地を焼く","action":"replace","stepNumber":6,"actionItems":["型に生地を流し込む。","180℃で35〜40分焼く。"],"instruction":"型に生地を流し込み、180℃で35〜40分焼く（竹串を刺して何もついてこなければ焼き上がり）。焼きすぎると乾燥するので注意。","cautionItems":["焼きすぎると乾燥する。竹串チェックで早めに確認する。"],"changeReason":"焼成ステップの表示名を代替後の生地に合わせる","completionCriteria":["竹串を刺して何もついてこなければ焼き上がり。"]}]}]},{"id":"4c2ff823-5609-4146-974f-3865da084772","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"51391c4f-593d-4bb2-a4d1-7a767e908f7b","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"卵黄と卵白に分ける","substitutionOptions":[]},{"id":"871ab73e-73ce-40b8-a639-9bcd7c579dfe","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"常温で柔らかくする","substitutionOptions":[]},{"id":"f0e21523-ec56-453b-8f68-301e458f2772","nameOriginal":"Rum o Grappa","nameJa":"ラムまたはグラッパ","nameEn":"Rum or Grappa","quantity":30,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"お好みで","substitutionOptions":[]},{"id":"375997de-a063-4691-9431-9c9f6af3d407","nameOriginal":"Lievito per dolci","nameJa":"ベーキングパウダー","nameEn":"Baking powder","quantity":5,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cbaeb95f-5fc2-416f-8d0a-028fcb1b6dfb","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5eec9649-d231-454d-8ae1-d4a7592a035f","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":10,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180℃に予熱する。ヘーゼルナッツをフードプロセッサーで粗く挽く（完全な粉末状ではなく、粗めのザラザラ感を残す）。","title":"仕込みと準備","actionItems":["オーブンを180℃に予熱する。","ヘーゼルナッツ300gをフードプロセッサーで粗く挽く。"],"parallelItems":[],"completionCriteria":["粗めのザラザラ感が残る粉末状になれば次へ。"],"cautionItems":["完全な粉末にしすぎない。粗さがケーキの食感を作る。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"直径22cmの丸型にバターを塗り、薄力粉を振って余分を落とす。","title":"型を準備する","actionItems":["直径22cmの丸型にバターを薄く塗り、薄力粉を振って余分を落とす。"],"parallelItems":[],"completionCriteria":["型全体にバターと薄力粉が均一についていれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"常温に戻したバター100gと砂糖150gをボウルでクリーム状になるまで混ぜる。卵黄を1個ずつ加えてその都度混ぜる。ラム30mlを加える。","title":"バター生地を作る","actionItems":["常温に戻したバター100gと砂糖150gをボウルでクリーム状になるまで混ぜる。","卵黄を1個ずつ加えてその都度よく混ぜる。","ラム30mlを加えて混ぜる。"],"parallelItems":[],"completionCriteria":["白っぽくふんわりしたクリーム状になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"挽いたヘーゼルナッツ・ベーキングパウダーを加えて混ぜる。","title":"ヘーゼルナッツを加える","actionItems":["挽いたヘーゼルナッツとベーキングパウダー5gを加えてゴムベラで混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"卵白を塩と一緒に角が立つまで泡立てる。卵白の1/3を生地に加えて馴染ませ、残りを2回に分けてさっくりと折り込む。","title":"卵白を折り込む","actionItems":["卵白4個と塩1gを角が立つまで泡立てる。","卵白の1/3を生地に加えてよく混ぜてほぐす。","残りの卵白を2回に分けてゴムベラでさっくりと折り込む。"],"parallelItems":[],"completionCriteria":["白い筋がなくなり均一に混ざれば次へ。"],"cautionItems":["泡をなるべく消さないよう、すくいあげるように混ぜる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"型に生地を流し込み、180℃で35〜40分焼く（竹串を刺して何もついてこなければ焼き上がり）。焼きすぎると乾燥するので注意。","title":"ヘーゼルナッツ生地を焼く","actionItems":["型に生地を流し込む。","180℃で35〜40分焼く。"],"parallelItems":[],"completionCriteria":["竹串を刺して何もついてこなければ焼き上がり。"],"cautionItems":["焼きすぎると乾燥する。竹串チェックで早めに確認する。"],"tipItems":[],"durationMinutes":40,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"型のまま10分冷ましてから取り出し、完全に冷めたら粉砂糖を振る。","title":"冷まして粉砂糖を振る","actionItems":["型のまま10分冷ます。","型から取り出し、完全に冷めたら粉砂糖10gを振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["熱いうちに型から外すと崩れる。10分待つ。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

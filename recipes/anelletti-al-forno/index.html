@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">アネッレッティ（リング状パスタ）</span><span class="ingredient-qty">500g</span></li>
-          <li><span class="ingredient-name">ミートラグー（牛豚合いびき肉）</span><span class="ingredient-qty">600g</span></li>
-          <li><span class="ingredient-name">グリーンピース</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">固ゆで卵</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">4等分に切る</span></li>
-          <li><span class="ingredient-name">カチョカヴァッロ</span><span class="ingredient-qty">150g</span><span class="ingredient-notes">細切り</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">パン粉</span><span class="ingredient-qty">50g</span><span class="ingredient-notes">型に塗る用</span></li>
+              <li data-ingredient-row="f50b91ba-97e0-4dd4-8c60-0b6fd182f7ae"><span class="ingredient-name" data-ingredient-name>アネッレッティ（リング状パスタ）</span><span class="ingredient-qty" data-ingredient-qty>500g</span><button type="button" class="substitution-trigger" data-substitution-trigger="f50b91ba-97e0-4dd4-8c60-0b6fd182f7ae"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="6c4f13fc-1ab0-4e34-96f0-068dd7bc2ccd"><span class="ingredient-name" data-ingredient-name>ミートラグー（牛豚合いびき肉）</span><span class="ingredient-qty" data-ingredient-qty>600g</span></li>
+          <li data-ingredient-row="64c7b9fe-f715-424c-ad0d-4e97bb164686"><span class="ingredient-name" data-ingredient-name>グリーンピース</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="87a02f90-f71b-4d0b-9629-d3f0350eb53e"><span class="ingredient-name" data-ingredient-name>固ゆで卵</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">4等分に切る</span></li>
+          <li data-ingredient-row="10015856-c435-4f0e-bdbd-f24910630225"><span class="ingredient-name" data-ingredient-name>カチョカヴァッロ</span><span class="ingredient-qty" data-ingredient-qty>150g</span><span class="ingredient-notes">細切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="10015856-c435-4f0e-bdbd-f24910630225"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="ebdb9f6d-55eb-4f36-beed-783bcac4e09a"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="033aefc1-39b0-451a-9ef4-091306792c9a"><span class="ingredient-name" data-ingredient-name>パン粉</span><span class="ingredient-qty" data-ingredient-qty>50g</span><span class="ingredient-notes">型に塗る用</span></li>
               </ul>
             </section>
           </div>
@@ -280,6 +300,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"76c2d201-5da0-4ab3-8236-99ed5f99f947","nameJa":"アネッレッティのオーブン焼き","baseServings":6,"minServings":4,"maxServings":10},"ingredients":[{"id":"f50b91ba-97e0-4dd4-8c60-0b6fd182f7ae","nameOriginal":"Anelletti","nameJa":"アネッレッティ（リング状パスタ）","nameEn":"Anelletti pasta","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"690bc034-4ed4-4f4c-9757-8c3969d57dc0","standardIngredientId":"f50b91ba-97e0-4dd4-8c60-0b6fd182f7ae","nameJa":"アニェッロッティ（代替品）","nameEn":"Small ring pasta (substitute)","authenticityImpact":-10,"flavorImpact":"形状が近ければ成立するが専用品が最適","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"6c4f13fc-1ab0-4e34-96f0-068dd7bc2ccd","nameOriginal":"Ragù di carne (manzo e maiale)","nameJa":"ミートラグー（牛豚合いびき肉）","nameEn":"Meat ragù (beef and pork)","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"64c7b9fe-f715-424c-ad0d-4e97bb164686","nameOriginal":"Piselli","nameJa":"グリーンピース","nameEn":"Green peas","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"87a02f90-f71b-4d0b-9629-d3f0350eb53e","nameOriginal":"Uova sode","nameJa":"固ゆで卵","nameEn":"Hard-boiled eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"4等分に切る","substitutionOptions":[]},{"id":"10015856-c435-4f0e-bdbd-f24910630225","nameOriginal":"Caciocavallo siciliano","nameJa":"カチョカヴァッロ","nameEn":"Caciocavallo Siciliano","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細切り","substitutionOptions":[{"id":"c07fee65-89f0-4d05-bd32-d4cc55b0f8f7","standardIngredientId":"10015856-c435-4f0e-bdbd-f24910630225","nameJa":"プロヴォローネ","nameEn":"Provolone","authenticityImpact":-10,"flavorImpact":"風味が変わるが溶け方は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"ebdb9f6d-55eb-4f36-beed-783bcac4e09a","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"033aefc1-39b0-451a-9ef4-091306792c9a","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":50,"unit":"g","role":"technique","scalingBehavior":null,"notes":"型に塗る用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"アネッレッティ500gを表示より3分短めに茹でる（al dente より固め）。湯切りしてミートラグー600gとグリーンピース200gと和えてなじませる。","title":"パスタをラグーと和える","actionItems":["アネッレッティ500gを表示より3分短めに茹でる。","湯切りしてミートラグー600gとグリーンピース200gと和えてなじませる。"],"parallelItems":[],"completionCriteria":["パスタ・ラグー・グリーンピースがよく混ざった。"],"cautionItems":["表示より3分短く茹でること。オーブンでさらに火が通る。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ケーキ型またはリング型（直径22〜24cm）にバターを塗り、パン粉50gをまぶして余分を落とす。オーブンを180℃に予熱する。\n・固ゆで卵3個を4等分に切る\n・カチョカヴァッロ150gを細切りにする","title":"型を準備する","actionItems":["ケーキ型にバターを塗りパン粉50gをまぶして余分を落とす。","オーブンを180℃に予熱する。","固ゆで卵3個を4等分に切る。","カチョカヴァッロ150gを細切りにする。"],"parallelItems":[],"completionCriteria":["型の準備ができ、具材が切れた。"],"cautionItems":["型全体にパン粉をしっかりまぶすこと。剥がれやすくなる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パスタ混合の半量を型に入れ、固ゆで卵3個（4等分）・カチョカヴァッロ150gを中央に均一に並べる。残りのパスタを上から詰めてしっかり押し込む。","title":"型に詰める","actionItems":["パスタ混合の半量を型に入れる。","固ゆで卵（4等分）とカチョカヴァッロを中央に均一に並べる。","残りのパスタを上から詰めてしっかり押し込む。"],"parallelItems":[],"completionCriteria":["型がパスタでしっかり詰まった。"],"cautionItems":["しっかり押し込むこと。型崩れを防ぐ。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"パルミジャーノ60gを振り、バター小さじ2を点在させる。180℃のオーブンで40〜45分焼く。型から外して切り分けて提供する（ケーキのように）。","title":"焼き上げる","actionItems":["パルミジャーノ60gを振りバター小さじ2を点在させる。","180℃のオーブンで40〜45分焼く。","型から外して切り分けて提供する。"],"parallelItems":[],"completionCriteria":["表面が黄金色に焼け、型から外せた。"],"cautionItems":["型から外す前にしっかり焼けていることを確認すること。"],"tipItems":[],"durationMinutes":45,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>50分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">大きめ完熟トマト</span><span class="ingredient-qty">4個</span></li>
-          <li><span class="ingredient-name">短粒米（ボナリコまたはアルボリオ）</span><span class="ingredient-qty">120g</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">2片</span></li>
-          <li><span class="ingredient-name">フレッシュバジル</span><span class="ingredient-qty">10枚</span></li>
-          <li><span class="ingredient-name">EVオリーブオイル</span><span class="ingredient-qty">大さじ4</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">小さじ1</span></li>
+              <li data-ingredient-row="06938b94-60c6-4d09-9787-72af63baba99"><span class="ingredient-name" data-ingredient-name>大きめ完熟トマト</span><span class="ingredient-qty" data-ingredient-qty>4個</span></li>
+          <li data-ingredient-row="502b51f9-9d05-464f-acb3-01ba370ab6c4"><span class="ingredient-name" data-ingredient-name>短粒米（ボナリコまたはアルボリオ）</span><span class="ingredient-qty" data-ingredient-qty>120g</span></li>
+          <li data-ingredient-row="b98065e2-ff30-4d5a-ac59-846958d4b16b"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>2片</span></li>
+          <li data-ingredient-row="cc5defc4-118c-4977-b299-0b6ea5ceae36"><span class="ingredient-name" data-ingredient-name>フレッシュバジル</span><span class="ingredient-qty" data-ingredient-qty>10枚</span></li>
+          <li data-ingredient-row="1c301344-45f6-4542-96db-43e514923d7a"><span class="ingredient-name" data-ingredient-name>EVオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ4</span></li>
+          <li data-ingredient-row="cd3b81e3-43e5-4718-9a74-a7005a1c9267"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>小さじ1</span></li>
               </ul>
             </section>
           </div>
@@ -200,6 +220,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"935c8328-cbbd-4309-b94a-2bf5036e514e","nameJa":"ポモドーリ・リピエーニ・ディ・リーゾ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"06938b94-60c6-4d09-9787-72af63baba99","nameOriginal":"Pomodori da ripieno","nameJa":"大きめ完熟トマト","nameEn":"Large ripe tomatoes","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"502b51f9-9d05-464f-acb3-01ba370ab6c4","nameOriginal":"Riso originario","nameJa":"短粒米（ボナリコまたはアルボリオ）","nameEn":"Short-grain rice","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b98065e2-ff30-4d5a-ac59-846958d4b16b","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cc5defc4-118c-4977-b299-0b6ea5ceae36","nameOriginal":"Basilico fresco","nameJa":"フレッシュバジル","nameEn":"Fresh basil","quantity":10,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1c301344-45f6-4542-96db-43e514923d7a","nameOriginal":"Olio extravergine","nameJa":"EVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":4,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cd3b81e3-43e5-4718-9a74-a7005a1c9267","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"トマトの上1cmをふたとして切り取り、中の果肉をスプーンでくり抜く。果肉は種ごとボウルに取り出す。トマトの内側に塩をひとつまみふってひっくり返し、10分置いて水分を出す。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"トマトをくり抜く"},{"stepNumber":2,"instruction":"ボウルの果肉を手で潰し、種を取り除く。にんにくをみじん切りにし、バジルを手でちぎる。生米（洗わない）と果肉、にんにく、バジル、EVオリーブオイル大さじ2、塩を合わせてよく混ぜる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"詰め物を作る"},{"stepNumber":3,"instruction":"水気を取ったトマトを耐熱皿に並べる。米の詰め物を8割ほど入れる（米が膨らむため詰めすぎない）。ふたのトマトをのせる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"詰める"},{"stepNumber":4,"instruction":"耐熱皿の底にEVオリーブオイル大さじ2を敷き、200℃に予熱したオーブンで45〜50分焼く。途中で皿の底に水気が少なくなったら水を少量加える。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"焼く"},{"stepNumber":5,"instruction":"表面にほんのり焦げ色がついて、米が完全に火が通ったことを確認する（楊枝で刺して硬さを確認）。15分以上休ませてから常温で供する。冷製でも美味しい。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"仕上げ"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・カリャリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">マッロレダス（ニョッケッティ・サルディ）</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">フレッシュソーセージ（サルシッチャ・サルダ）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">腸から出して肉をほぐす</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">400g</span></li>
-          <li><span class="ingredient-name">サフラン</span><span class="ingredient-qty">0.5g</span><span class="ingredient-notes">温かい湯大さじ2で溶かす</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">30ml</span></li>
-          <li><span class="ingredient-name">ペコリーノ・サルド</span><span class="ingredient-qty">60g</span></li>
+              <li data-ingredient-row="296f722c-1dcb-4605-a9cc-0a24f50452fd"><span class="ingredient-name" data-ingredient-name>マッロレダス（ニョッケッティ・サルディ）</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="296f722c-1dcb-4605-a9cc-0a24f50452fd"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="721f6472-d51c-485d-9f09-fe52c2079695"><span class="ingredient-name" data-ingredient-name>フレッシュソーセージ（サルシッチャ・サルダ）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">腸から出して肉をほぐす</span><button type="button" class="substitution-trigger" data-substitution-trigger="721f6472-d51c-485d-9f09-fe52c2079695"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e44ccfbb-ea60-428f-a2aa-f3ea8de3c7b1"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>400g</span></li>
+          <li data-ingredient-row="5a30bfeb-f0bc-43fe-979a-23e0682bc22c"><span class="ingredient-name" data-ingredient-name>サフラン</span><span class="ingredient-qty" data-ingredient-qty>0.5g</span><span class="ingredient-notes">温かい湯大さじ2で溶かす</span></li>
+          <li data-ingredient-row="5a327895-3fe5-4978-bc63-2ca7e1bb07f6"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>30ml</span></li>
+          <li data-ingredient-row="7b5f5567-b0c6-4a31-94b6-e68b54692bf3"><span class="ingredient-name" data-ingredient-name>ペコリーノ・サルド</span><span class="ingredient-qty" data-ingredient-qty>60g</span><button type="button" class="substitution-trigger" data-substitution-trigger="7b5f5567-b0c6-4a31-94b6-e68b54692bf3"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
               </ul>
             </section>
           </div>
@@ -221,6 +241,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"24c7c7cb-c479-4dd3-8056-44444ce608f3","nameJa":"サルシッチャのラグーのマッロレッドゥス","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"296f722c-1dcb-4605-a9cc-0a24f50452fd","nameOriginal":"Malloreddus (gnocchetti sardi)","nameJa":"マッロレダス（ニョッケッティ・サルディ）","nameEn":"Malloreddus (Sardinian gnocchetti)","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"d3db41b4-3576-4c62-ba18-af5b1bbee0d6","standardIngredientId":"296f722c-1dcb-4605-a9cc-0a24f50452fd","nameJa":"ニョッキ（小さめ）","nameEn":"Small gnocchi","authenticityImpact":-20,"flavorImpact":"食感が大きく異なる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"721f6472-d51c-485d-9f09-fe52c2079695","nameOriginal":"Salsiccia sarda fresca","nameJa":"フレッシュソーセージ（サルシッチャ・サルダ）","nameEn":"Fresh Sardinian sausage","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"腸から出して肉をほぐす","substitutionOptions":[{"id":"28977716-5425-4902-b607-73fa1ee23cde","standardIngredientId":"721f6472-d51c-485d-9f09-fe52c2079695","nameJa":"ルカニカ（フレッシュソーセージ）","nameEn":"Lucanica sausage","authenticityImpact":-5,"flavorImpact":"風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e44ccfbb-ea60-428f-a2aa-f3ea8de3c7b1","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5a30bfeb-f0bc-43fe-979a-23e0682bc22c","nameOriginal":"Zafferano","nameJa":"サフラン","nameEn":"Saffron","quantity":0.3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"温かい湯大さじ2で溶かす","substitutionOptions":[]},{"id":"5a327895-3fe5-4978-bc63-2ca7e1bb07f6","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7b5f5567-b0c6-4a31-94b6-e68b54692bf3","nameOriginal":"Pecorino sardo","nameJa":"ペコリーノ・サルド","nameEn":"Pecorino sardo","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"4a9484f1-304a-4a9a-a72b-3315450e80b5","standardIngredientId":"7b5f5567-b0c6-4a31-94b6-e68b54692bf3","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-5,"flavorImpact":"塩気が若干強くなるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]}],"steps":[{"stepNumber":1,"instruction":"ソーセージの皮に切り込みを入れて肉を取り出し、粗くほぐす。\n・フライパンにオリーブオイル30mlを熱し、ソーセージを中火で炒める\n・肉がほぐれて褐色になったらホールトマト400gを手でつぶして加え、サフランを溶かした湯を加える\n・弱火で20分煮込む。ソースにとろみがついたら次へ","title":"材料を準備する","actionItems":["ソーセージの皮に切り込みを入れて肉を取り出し、粗くほぐす。","フライパンにオリーブオイル30mlを熱し、ソーセージを中火で炒める","肉がほぐれて褐色になったらホールトマト400gを手でつぶして加え、サフランを溶かした湯を加える","弱火で20分煮込む。ソースにとろみがついたら次へ"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":2,"instruction":"（ソースを煮込む間に）大鍋で塩湯を沸かし、マッロレダスをアルデンテに茹でる（約10〜12分）。\n・茹で汁50mlを取り置き、ソースと和える。","title":"湯を沸かす","actionItems":["茹で汁50mlを取り置き、ソースと和える。"],"parallelItems":["（ソースを煮込む間に）大鍋で塩湯を沸かし、マッロレダスをアルデンテに茹でる（約10〜12分）。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ペコリーノ・サルドをたっぷりすりおろしてかけ、皿に盛る。","title":"材料を準備する","actionItems":["ペコリーノ・サルドをたっぷりすりおろしてかけ、皿に盛る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

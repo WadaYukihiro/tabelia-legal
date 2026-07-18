@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>40分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・トリノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">薄切りにして牛乳で下茹ですると臭みが抜ける</span></li>
-          <li><span class="ingredient-name">アンチョビ（塩漬け）</span><span class="ingredient-qty">100g</span><span class="ingredient-notes">塩を落として骨を除く</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">バター</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">仕上げに加えてまろやかにする（任意）</span></li>
-          <li><span class="ingredient-name">牛乳</span><span class="ingredient-qty">200ml</span><span class="ingredient-notes">にんにくの下茹で用</span></li>
-          <li><span class="ingredient-name">季節の野菜（カルドン・カブ・パプリカ・にんじん等）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">スティック状に切る</span></li>
+              <li data-ingredient-row="88e9906b-3ec4-4e97-8416-6d7aa39d453a"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">薄切りにして牛乳で下茹ですると臭みが抜ける</span></li>
+          <li data-ingredient-row="4d9a13d1-b53a-4edb-b33e-f03a717b4dab"><span class="ingredient-name" data-ingredient-name>アンチョビ（塩漬け）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><span class="ingredient-notes">塩を落として骨を除く</span><button type="button" class="substitution-trigger" data-substitution-trigger="4d9a13d1-b53a-4edb-b33e-f03a717b4dab"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3cb52bb4-8910-41df-b38c-423637381838"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="73a0c801-1963-4685-adfe-1429a2f1b7a4"><span class="ingredient-name" data-ingredient-name>バター</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">仕上げに加えてまろやかにする（任意）</span></li>
+          <li data-ingredient-row="047fc8ad-a317-4f7b-a277-5dc4b1442133"><span class="ingredient-name" data-ingredient-name>牛乳</span><span class="ingredient-qty" data-ingredient-qty>200ml</span><span class="ingredient-notes">にんにくの下茹で用</span></li>
+          <li data-ingredient-row="01b1c1c7-dacc-4709-a5b5-5cf9f3eca5d9"><span class="ingredient-name" data-ingredient-name>季節の野菜（カルドン・カブ・パプリカ・にんじん等）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">スティック状に切る</span></li>
               </ul>
             </section>
           </div>
@@ -273,6 +293,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"2e037e76-dfb7-495f-a98a-039cf134e317","nameJa":"バーニャカウダ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"88e9906b-3ec4-4e97-8416-6d7aa39d453a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄切りにして牛乳で下茹ですると臭みが抜ける","substitutionOptions":[]},{"id":"4d9a13d1-b53a-4edb-b33e-f03a717b4dab","nameOriginal":"Acciughe sotto sale","nameJa":"アンチョビ（塩漬け）","nameEn":"Salt-cured anchovies","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":"塩を落として骨を除く","substitutionOptions":[{"id":"6a4bd939-ef49-4329-aca1-c28ecfed6c5d","standardIngredientId":"4d9a13d1-b53a-4edb-b33e-f03a717b4dab","nameJa":"アンチョビ缶（オイル漬け）","nameEn":"Canned anchovies in oil","authenticityImpact":-5,"flavorImpact":"塩気と風味が若干弱まるが代用可","textureImpact":null,"procedureChanges":["油を切ってから使う"],"affectedStepNumbers":[2],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3cb52bb4-8910-41df-b38c-423637381838","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"73a0c801-1963-4685-adfe-1429a2f1b7a4","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"仕上げに加えてまろやかにする（任意）","substitutionOptions":[]},{"id":"047fc8ad-a317-4f7b-a277-5dc4b1442133","nameOriginal":"Latte intero","nameJa":"牛乳","nameEn":"Whole milk","quantity":200,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"にんにくの下茹で用","substitutionOptions":[]},{"id":"01b1c1c7-dacc-4709-a5b5-5cf9f3eca5d9","nameOriginal":"Verdure miste","nameJa":"季節の野菜（カルドン・カブ・パプリカ・にんじん等）","nameEn":"Seasonal vegetables for dipping","quantity":600,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"スティック状に切る","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"にんにくを薄切りにして牛乳に入れ、弱火で15分茹でて（下茹で）臭みと刺激臭を抜く。牛乳を捨ててにんにくをすり潰してペースト状にする。","title":"にんにくを下茹でする","actionItems":["にんにく100gを薄切りにする。","牛乳200mlに入れて弱火で15分茹でる。","牛乳を捨ててにんにくをすり潰してペースト状にする。"],"parallelItems":[],"completionCriteria":["にんにくが柔らかくなり、牛乳が白濁してきたら次へ。"],"cautionItems":["焦がさないよう弱火を保つこと。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"小鍋またはフジョットにオリーブオイル・にんにくペースト・アンチョビを入れる。","title":"ソースを温める","actionItems":["小鍋にオリーブオイル150mlを入れる。","にんにくペーストを加える。","アンチョビ100g（塩を落とし骨を除いたもの）を加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"極弱火にかけ、木べらでアンチョビを溶かしながら20〜25分じっくり混ぜる。アンチョビが完全に溶けてなめらかなソースになれば完成（焦がさないこと）。","title":"アンチョビを溶かす","actionItems":["極弱火にかける。","木べらでアンチョビを溶かしながら20〜25分じっくり混ぜる。"],"parallelItems":[],"completionCriteria":["アンチョビが完全に溶けてなめらかなソースになれば次へ。"],"cautionItems":["絶対に焦がさないこと。焦げると苦みが出て台無しになる。"],"tipItems":[],"durationMinutes":25,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"なめらかに乳化したらバターを加えて混ぜ、火から下ろす。","title":"バターで仕上げる","actionItems":["バター30gを加えて混ぜる。","火から下ろす。"],"parallelItems":[],"completionCriteria":["バターが溶けてソースが均一にまろやかになれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"専用の保温器具（またはキャンドル皿）に移して温かいまま供する。野菜をつけながら食べる。","title":"供する","actionItems":["保温器具に移して温かいまま供する。","野菜をつけながら食べる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

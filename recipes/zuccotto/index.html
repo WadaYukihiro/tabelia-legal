@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>4時間30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,22 +94,29 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">卵</span><span class="ingredient-qty">4個</span><span class="ingredient-notes">スポンジ用。常温に戻す</span></li>
-          <li><span class="ingredient-name">砂糖（スポンジ用）</span><span class="ingredient-qty">120g</span></li>
-          <li><span class="ingredient-name">薄力粉</span><span class="ingredient-qty">120g</span><span class="ingredient-notes">スポンジ用。ふるっておく</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1g</span></li>
-          <li><span class="ingredient-name">コニャックまたはラム</span><span class="ingredient-qty">60ml</span><span class="ingredient-notes">シロップ用</span></li>
-          <li><span class="ingredient-name">水（シロップ用）</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">砂糖（シロップ用）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">500ml</span><span class="ingredient-notes">使用直前まで冷蔵庫で冷やす</span></li>
-          <li><span class="ingredient-name">粉砂糖（クリーム用）</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">ダークチョコレート（65〜70%）</span><span class="ingredient-qty">120g</span><span class="ingredient-notes">細かく刻む</span></li>
-          <li><span class="ingredient-name">アーモンド（焙煎済み）</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">粗く刻む</span></li>
-          <li><span class="ingredient-name">オレンジピール（砂糖漬け）</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">細かく刻む。柑橘の香りと食感のアクセント</span></li>
-          <li><span class="ingredient-name">純cocoa（無糖）</span><span class="ingredient-qty">15g</span><span class="ingredient-notes">仕上げの半面に振る</span></li>
-          <li><span class="ingredient-name">粉砂糖（仕上げ用）</span><span class="ingredient-qty">10g</span><span class="ingredient-notes">仕上げの残り半面に振る</span></li>
+              <li data-ingredient-row="e75923e6-50fa-4003-8632-558b446a2da3"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>4個</span><span class="ingredient-notes">スポンジ用。常温に戻す</span></li>
+          <li data-ingredient-row="95808b63-f406-4cd8-8738-7161db892d5e"><span class="ingredient-name" data-ingredient-name>砂糖（スポンジ用）</span><span class="ingredient-qty" data-ingredient-qty>120g</span></li>
+          <li data-ingredient-row="2959c839-a5a8-470a-9964-9079196d5344"><span class="ingredient-name" data-ingredient-name>薄力粉</span><span class="ingredient-qty" data-ingredient-qty>120g</span><span class="ingredient-notes">スポンジ用。ふるっておく</span></li>
+          <li data-ingredient-row="b5342621-a7d7-4827-8593-9c6cb93a54b7"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1g</span></li>
+          <li data-ingredient-row="c47c645a-410c-4bdf-99d9-f259fa335923"><span class="ingredient-name" data-ingredient-name>コニャックまたはラム</span><span class="ingredient-qty" data-ingredient-qty>60ml</span><span class="ingredient-notes">シロップ用</span><button type="button" class="substitution-trigger" data-substitution-trigger="c47c645a-410c-4bdf-99d9-f259fa335923"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="a0730a3c-6db9-488b-89f7-2c04e6431145"><span class="ingredient-name" data-ingredient-name>水（シロップ用）</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="2b22d07b-c8a8-420e-a13b-77523c298f0e"><span class="ingredient-name" data-ingredient-name>砂糖（シロップ用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="ce4a6ffb-20d4-4077-b70b-cc2f0d2d50c3"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span><span class="ingredient-notes">使用直前まで冷蔵庫で冷やす</span></li>
+          <li data-ingredient-row="705cd265-44f7-4815-b4b7-f6e950633507"><span class="ingredient-name" data-ingredient-name>粉砂糖（クリーム用）</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="62eb9a04-3417-4df8-a109-e95c10f7e7fe"><span class="ingredient-name" data-ingredient-name>ダークチョコレート（65〜70%）</span><span class="ingredient-qty" data-ingredient-qty>120g</span><span class="ingredient-notes">細かく刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="62eb9a04-3417-4df8-a109-e95c10f7e7fe"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="ce6d28bf-9a71-41ca-b287-5c8f6093eef3"><span class="ingredient-name" data-ingredient-name>アーモンド（焙煎済み）</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">粗く刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="ce6d28bf-9a71-41ca-b287-5c8f6093eef3"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="623305ed-9280-4d4b-8185-986d852e052a"><span class="ingredient-name" data-ingredient-name>オレンジピール（砂糖漬け）</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">細かく刻む。柑橘の香りと食感のアクセント</span><button type="button" class="substitution-trigger" data-substitution-trigger="623305ed-9280-4d4b-8185-986d852e052a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="21dd3f01-c435-42bb-81da-af9b70ffcfc5"><span class="ingredient-name" data-ingredient-name>純cocoa（無糖）</span><span class="ingredient-qty" data-ingredient-qty>15g</span><span class="ingredient-notes">仕上げの半面に振る</span></li>
+          <li data-ingredient-row="57f658a3-bad2-41f0-a66f-29d0b21c6c39"><span class="ingredient-name" data-ingredient-name>粉砂糖（仕上げ用）</span><span class="ingredient-qty" data-ingredient-qty>10g</span><span class="ingredient-notes">仕上げの残り半面に振る</span></li>
               </ul>
             </section>
           </div>
@@ -360,6 +380,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"2a74e83a-7e63-44e7-b94a-d2d10d566239","nameJa":"ズッコット","baseServings":8,"minServings":6,"maxServings":20},"ingredients":[{"id":"e75923e6-50fa-4003-8632-558b446a2da3","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"スポンジ用。常温に戻す","substitutionOptions":[]},{"id":"95808b63-f406-4cd8-8738-7161db892d5e","nameOriginal":"Zucchero (per pan di Spagna)","nameJa":"砂糖（スポンジ用）","nameEn":"Sugar (for sponge)","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2959c839-a5a8-470a-9964-9079196d5344","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":"スポンジ用。ふるっておく","substitutionOptions":[]},{"id":"b5342621-a7d7-4827-8593-9c6cb93a54b7","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c47c645a-410c-4bdf-99d9-f259fa335923","nameOriginal":"Cognac o Rum","nameJa":"コニャックまたはラム","nameEn":"Cognac or rum","quantity":60,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"シロップ用","substitutionOptions":[{"id":"550fc47b-6543-4094-bb1f-d2da4eb26547","standardIngredientId":"c47c645a-410c-4bdf-99d9-f259fa335923","nameJa":"オレンジリキュール","nameEn":"Orange liqueur","authenticityImpact":-5,"flavorImpact":"フルーティな香りになる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"91ecbd0f-c4e3-4256-aa01-824d4729e90b","standardIngredientId":"c47c645a-410c-4bdf-99d9-f259fa335923","nameJa":"アルケルメス","nameEn":"Alchermes","authenticityImpact":0,"flavorImpact":"伝統的な赤いリキュールを使うと切り口が鮮やか。風味も変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a0730a3c-6db9-488b-89f7-2c04e6431145","nameOriginal":"Acqua (per sciroppo)","nameJa":"水（シロップ用）","nameEn":"Water (for syrup)","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2b22d07b-c8a8-420e-a13b-77523c298f0e","nameOriginal":"Zucchero (per sciroppo)","nameJa":"砂糖（シロップ用）","nameEn":"Sugar (for syrup)","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ce4a6ffb-20d4-4077-b70b-cc2f0d2d50c3","nameOriginal":"Panna fresca da montare","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy whipping cream","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"使用直前まで冷蔵庫で冷やす","substitutionOptions":[]},{"id":"705cd265-44f7-4815-b4b7-f6e950633507","nameOriginal":"Zucchero a velo (per panna)","nameJa":"粉砂糖（クリーム用）","nameEn":"Powdered sugar (for cream)","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"62eb9a04-3417-4df8-a109-e95c10f7e7fe","nameOriginal":"Cioccolato fondente","nameJa":"ダークチョコレート（65〜70%）","nameEn":"Dark chocolate","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かく刻む","substitutionOptions":[{"id":"e5c2896a-d1ab-42b4-9919-47c1d656ebfc","standardIngredientId":"62eb9a04-3417-4df8-a109-e95c10f7e7fe","nameJa":"ダークチョコチップ","nameEn":"Dark chocolate chips","authenticityImpact":0,"flavorImpact":"刻む手間が省ける。品質が同等なら風味も同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"ce6d28bf-9a71-41ca-b287-5c8f6093eef3","nameOriginal":"Mandorle tostate","nameJa":"アーモンド（焙煎済み）","nameEn":"Toasted almonds","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"粗く刻む","substitutionOptions":[{"id":"2e9fbf75-a6f7-4b14-a88d-cb86a5d8e47c","standardIngredientId":"ce6d28bf-9a71-41ca-b287-5c8f6093eef3","nameJa":"ヘーゼルナッツ（焙煎済み）","nameEn":"Toasted hazelnuts","authenticityImpact":-5,"flavorImpact":"風味が変わるがクリームとの相性は良い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"623305ed-9280-4d4b-8185-986d852e052a","nameOriginal":"Arancia candita","nameJa":"オレンジピール（砂糖漬け）","nameEn":"Candied orange peel","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"細かく刻む。柑橘の香りと食感のアクセント","substitutionOptions":[{"id":"18fb3501-466f-41bf-82a8-117c3afd0c36","standardIngredientId":"623305ed-9280-4d4b-8185-986d852e052a","nameJa":"省略","nameEn":"Omit","authenticityImpact":-5,"flavorImpact":"風味が単調になるが作れる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"21dd3f01-c435-42bb-81da-af9b70ffcfc5","nameOriginal":"Cacao amaro in polvere","nameJa":"純cocoa（無糖）","nameEn":"Unsweetened cocoa powder","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"仕上げの半面に振る","substitutionOptions":[]},{"id":"57f658a3-bad2-41f0-a66f-29d0b21c6c39","nameOriginal":"Zucchero a velo (per finitura)","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar (for dusting)","quantity":10,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"仕上げの残り半面に振る","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"Pan di Spagna（スポンジケーキ）を作る：オーブンを170℃に予熱。卵4個と砂糖120gを大きなボウルに入れ、湯煎（60℃）にかけてハンドミキサーで5〜6分泡立てる（白っぽく3倍量になり、落とすとリボン状に重なる状態）。湯煎から外し、ふるった薄力粉120gと塩1gを3回に分けてゴムベラで切るように折り込む。","title":"スポンジを焼く","actionItems":["オーブンを170℃に予熱する。","卵4個と砂糖120gを湯煎（60℃）にかけてハンドミキサーで5〜6分泡立てる。","湯煎から外し、ふるった薄力粉120gと塩1gを3回に分けてゴムベラで折り込む。"],"parallelItems":[],"completionCriteria":["白っぽく3倍量になりリボン状に落ちる状態になれば次へ。"],"cautionItems":["薄力粉を折り込む際、泡を消さないよう切るように混ぜる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"直径24cmの丸型にオーブンシートを敷き、生地を流し込む。170℃で22〜25分焼く。竹串を刺して何もついてこなければ焼き上がり。型から出して網の上で完全に冷ます。","title":"スポンジを焼き冷ます","actionItems":["直径24cmの丸型にオーブンシートを敷き、生地を流し込む。","170℃で22〜25分焼く。","型から出して網の上で完全に冷ます。"],"parallelItems":[],"completionCriteria":["竹串を刺して何もついてこなければ焼き上がり。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"スポンジを冷ます（最低30分）。（この間にシロップを作る：小鍋に水60ml・砂糖30gを入れて中火で砂糖を溶かし、火を止めてコニャック60mlを加える。）","title":"スポンジを冷ましシロップを作る","actionItems":["スポンジを最低30分冷ます。","（この間に）小鍋に水60mlと砂糖30gを入れて中火で溶かし、火を止めてコニャック60mlを加える。"],"parallelItems":["スポンジを冷ます間に、小鍋に水と砂糖を入れて中火でシロップを作り、コニャックを加える。"],"completionCriteria":["最低30分。スポンジが完全に冷めれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"1.5Lのボウル（または丸型のゼリー型）にラップを隙間なく敷く。スポンジを横に半分に薄く切ってから、ボウルの形に合わせて三角・扇形に切り分けボウルの内壁に貼り付ける（底まで隙間なく）。シロップをハケまたはスプーンでスポンジ全体にたっぷり染み込ませる。","title":"型に土台を敷く","actionItems":["1.5Lのボウルにラップを隙間なく敷く。","スポンジを横に半分に切り、三角・扇形に切り分けてボウルの内壁に貼り付ける。","シロップをスポンジ全体にたっぷり染み込ませる。"],"parallelItems":[],"completionCriteria":["ボウルの内壁が隙間なくスポンジで覆われ、シロップが染み込んだら次へ。"],"cautionItems":["隙間があるとフィリングが漏れる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"冷えた生クリーム500mlを粉砂糖80gと一緒にハンドミキサーでしっかりしたピークが立つまで泡立てる。2/3量をボウルに取り分け「白クリーム」とする。残り1/3には刻んだダークチョコレート120g・刻んだアーモンド60g・オレンジピール40gを加えて混ぜ「チョコクリーム」とする。","title":"クリームを作る","actionItems":["冷えた生クリーム500mlを粉砂糖80gと一緒にしっかりしたピークまで泡立てる。","2/3量を別ボウルに取り分けて「白クリーム」とする。","残り1/3に刻んだチョコ・アーモンド・オレンジピールを加えて混ぜ「チョコクリーム」とする。"],"parallelItems":[],"completionCriteria":["2色のクリームが完成すれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"白クリームをスポンジの内壁全体に2〜3cm厚で均等に塗り広げる（内壁全体を白で覆う）。中央の空洞にチョコクリームを全量詰め、表面を平らにならす。残りのスポンジを蓋になるように切って上に置き、シロップを染み込ませてぴったり閉じる。ラップで全体を包む。","title":"フィリングを詰める","actionItems":["白クリームをスポンジの内壁全体に2〜3cm厚で均等に塗り広げる。","中央にチョコクリームを全量詰め、表面を平らにならす。","残りのスポンジで蓋をしてシロップを染み込ませ閉じる。","ラップで全体を包む。"],"parallelItems":[],"completionCriteria":["フィリングが詰まり蓋が閉じられれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"ボウルごと冷凍庫に入れ、最低4時間（できれば一晩）凍らせる。","title":"冷凍庫で固める","actionItems":["ボウルごと冷凍庫に入れ、最低4時間凍らせる。"],"parallelItems":[],"completionCriteria":["最低4時間。完全に固まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":8,"instruction":"提供の15〜20分前に冷凍庫から出す。ラップを外してサービングプレートの上に逆さにして静かにアンモールドする。ドームの半面に純cocooaを、残り半面に粉砂糖を振り分けて2色仕上げにする。スライスして提供する。","title":"アンモールドして仕上げる","actionItems":["提供15〜20分前に冷凍庫から出す。","ラップを外してサービングプレートに逆さにしてアンモールドする。","ドームの半面に純cocooaを、残り半面に粉砂糖を振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

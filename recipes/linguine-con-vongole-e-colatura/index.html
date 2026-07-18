@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>4分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>33分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,16 +94,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">リングイネ</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">幅3〜4mmの平打ちパスタ。スパゲッティよりソースを拾いやすい</span></li>
-          <li><span class="ingredient-name">あさり</span><span class="ingredient-qty">800g</span><span class="ingredient-notes">3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする</span></li>
-          <li><span class="ingredient-name">コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty">15ml</span><span class="ingredient-notes">加熱不要。火を止めた後に加える。塩辛いのでパスタの茹で汁の塩加減を控えめにする</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">4片</span><span class="ingredient-notes">軽く潰す</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">150ml</span><span class="ingredient-notes">フラスカティやファランギーナなど辛口の品種が理想</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">輪切り。辛みを抑えたい場合は省く</span></li>
+              <li data-ingredient-row="3054e1f3-c5a5-4d4c-ba6a-924808277058"><span class="ingredient-name" data-ingredient-name>リングイネ</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">幅3〜4mmの平打ちパスタ。スパゲッティよりソースを拾いやすい</span><button type="button" class="substitution-trigger" data-substitution-trigger="3054e1f3-c5a5-4d4c-ba6a-924808277058"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="90ac0542-5e0b-4b5b-bfb5-5eea1be27197"><span class="ingredient-name" data-ingredient-name>あさり</span><span class="ingredient-qty" data-ingredient-qty>800g</span><span class="ingredient-notes">3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする</span><button type="button" class="substitution-trigger" data-substitution-trigger="90ac0542-5e0b-4b5b-bfb5-5eea1be27197"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="549e9ff3-5acd-4f21-80dd-d3178a3f3f6b"><span class="ingredient-name" data-ingredient-name>コラトゥーラ・ディ・アリーチ</span><span class="ingredient-qty" data-ingredient-qty>15ml</span><span class="ingredient-notes">加熱不要。火を止めた後に加える。塩辛いのでパスタの茹で汁の塩加減を控えめにする</span><button type="button" class="substitution-trigger" data-substitution-trigger="549e9ff3-5acd-4f21-80dd-d3178a3f3f6b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e5dcadbf-b9cf-4e79-a1cd-aeee6df5a019"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>4片</span><span class="ingredient-notes">軽く潰す</span></li>
+          <li data-ingredient-row="1f48e13d-1c8f-4768-8c32-94abae7766b4"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><span class="ingredient-notes">フラスカティやファランギーナなど辛口の品種が理想</span></li>
+          <li data-ingredient-row="74ca58e7-fe65-4cb7-8ce4-a499a493d1a0"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="d34f0019-e1ef-4634-8eb8-36a10fcb7ec4"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="d1c57546-26da-4740-bfb7-a3a0dc0b1689"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">輪切り。辛みを抑えたい場合は省く</span></li>
               </ul>
             </section>
           </div>
@@ -304,6 +324,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"9fa92848-b618-4554-935d-a73920148a47","nameJa":"あさりとコラトゥーラのリングイネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"3054e1f3-c5a5-4d4c-ba6a-924808277058","nameOriginal":"Linguine","nameJa":"リングイネ","nameEn":"Linguine","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"幅3〜4mmの平打ちパスタ。スパゲッティよりソースを拾いやすい","substitutionOptions":[{"id":"54a17262-c3cc-48d6-8895-e636cd7e92ed","standardIngredientId":"3054e1f3-c5a5-4d4c-ba6a-924808277058","nameJa":"スパゲッティ","nameEn":"Spaghetti","authenticityImpact":-5,"flavorImpact":"問題なく代用可。形状の差のみ","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"90ac0542-5e0b-4b5b-bfb5-5eea1be27197","nameOriginal":"Vongole veraci","nameJa":"あさり","nameEn":"Venus clams","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする","substitutionOptions":[{"id":"11b37576-671d-4ebf-85a7-4fb497be2a69","standardIngredientId":"90ac0542-5e0b-4b5b-bfb5-5eea1be27197","nameJa":"ハマグリ","nameEn":"Hard shell clams","authenticityImpact":-10,"flavorImpact":"旨みは十分だが貝の個性が変わる","textureImpact":null,"procedureChanges":["殻が大きいため蒸し時間を5〜6分に延長"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":4,"instruction":"大きなフライパンにオリーブオイルの半量・にんにく（軽く潰したもの）・唐辛子を入れて中火で熱し、香りが立ったらハマグリを加えて白ワインを注ぐ。ふたをして強火で5〜6分蒸す。ハマグリが全部開いたら取り出す。\n・蒸し汁を別に取り置く\n・殻付きのまま数個を飾り用に残し、残りは殻から外す","changeReason":"ハマグリは殻が大きく身も厚いため、あさりより蒸し時間を延ばす"}]},{"id":"d132c370-3a58-4fb8-9270-06bfb536871a","standardIngredientId":"90ac0542-5e0b-4b5b-bfb5-5eea1be27197","nameJa":"マニラクラム（ムール貝）","nameEn":"Manila clams","authenticityImpact":-5,"flavorImpact":"風味は近い。大きさが違うため加熱時間を微調整","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"549e9ff3-5acd-4f21-80dd-d3178a3f3f6b","nameOriginal":"Colatura di alici di Cetara","nameJa":"コラトゥーラ・ディ・アリーチ","nameEn":"Colatura di alici from Cetara","quantity":15,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"加熱不要。火を止めた後に加える。塩辛いのでパスタの茹で汁の塩加減を控えめにする","substitutionOptions":[{"id":"4d483be6-a538-4075-879b-ff77480a3fef","standardIngredientId":"549e9ff3-5acd-4f21-80dd-d3178a3f3f6b","nameJa":"ナンプラー＋アンチョビペースト","nameEn":"Fish sauce + anchovy paste","authenticityImpact":-20,"flavorImpact":"コラトゥーラ固有の熟成香と複雑さが失われる","textureImpact":null,"procedureChanges":["ナンプラー大さじ1＋アンチョビペースト小さじ1で代用し、火を止めてから加える"],"affectedStepNumbers":[3,7],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"remove","targetNameJa":"コラトゥーラ・ディ・アリーチ"},{"role":"essential","unit":"ml","action":"add","nameEn":"Fish sauce","nameJa":"ナンプラー","quantity":15},{"role":"essential","unit":"小さじ","action":"add","nameEn":"Anchovy paste","nameJa":"アンチョビペースト","quantity":1}],"stepPatches":[{"action":"replace","stepNumber":3,"instruction":"大鍋にたっぷりの湯を沸かし、塩を少量（通常の半量）加える。ナンプラーとアンチョビペーストを仕上げに使うため、麺を茹でる塩は控えめにする。","changeReason":"ナンプラーも塩分が強いため茹で湯の塩を控える"},{"action":"replace","stepNumber":7,"instruction":"パスタを加えてソースと和え、殻から外したあさりを戻す。火を止め、ナンプラー15mlでアンチョビペースト小さじ1を溶いてフライパン全体に回しかけ、残りのオリーブオイルとパセリを加えて素早く和える。殻付きのあさりで飾り付けて盛る。","changeReason":"仕上げのコラトゥーラをナンプラーとアンチョビペーストに置き換える"}]}]},{"id":"e5dcadbf-b9cf-4e79-a1cd-aeee6df5a019","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"軽く潰す","substitutionOptions":[]},{"id":"1f48e13d-1c8f-4768-8c32-94abae7766b4","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"フラスカティやファランギーナなど辛口の品種が理想","substitutionOptions":[]},{"id":"74ca58e7-fe65-4cb7-8ce4-a499a493d1a0","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d34f0019-e1ef-4634-8eb8-36a10fcb7ec4","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"d1c57546-26da-4740-bfb7-a3a0dc0b1689","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"輪切り。辛みを抑えたい場合は省く","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"あさり800gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。アルミホイルなどで覆い、暗所で2時間砂抜きする。","title":"材料を合わせる","actionItems":["アルミホイルなどで覆い、暗所で2時間砂抜きする。"],"parallelItems":[],"completionCriteria":["あさり800gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"・砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る\n・割れた貝や口が開いたまま閉じない貝を除く\n・にんにく4片を包丁の腹で軽く潰す\n・イタリアンパセリをみじん切りにする\n・唐辛子を輪切りにする","title":"砂抜きする","actionItems":["砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る","割れた貝や口が開いたまま閉じない貝を除く","にんにく4片を包丁の腹で軽く潰す","イタリアンパセリをみじん切りにする","唐辛子を輪切りにする"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"大鍋にたっぷりの湯を沸かし、塩を少量（通常の半量）加える。コラトゥーラが塩辛いため、麺を茹でる塩は控えめにする。","title":"湯を沸かす","actionItems":["大鍋にたっぷりの湯を沸かし、塩を少量（通常の半量）加える。","コラトゥーラが塩辛いため、麺を茹でる塩は控えめにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"大きなフライパンにオリーブオイルの半量・にんにく（軽く潰したもの）・唐辛子を入れて中火で熱し、香りが立ったらあさりを加えて白ワインを注ぐ。ふたをして強火で3〜4分蒸す。あさりが全部開いたら取り出す。\n・蒸し汁を別に取り置く\n・殻付きのまま数個を飾り用に残し、残りは殻から外す","title":"香味を炒める","actionItems":["大きなフライパンにオリーブオイルの半量・にんにく（軽く潰したもの）・唐辛子を入れて中火で熱し、香りが立ったらあさりを加えて白ワインを注ぐ。","ふたをして強火で3〜4分蒸す。","あさりが全部開いたら取り出す。","蒸し汁を別に取り置く","殻付きのまま数個を飾り用に残し、残りは殻から外す"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"リングイネを袋の表示より1分短く茹でる。\n・茹で汁80mlを取り置く","title":"茹でる","actionItems":["リングイネを袋の表示より1分短く茹でる。","茹で汁80mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":9,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"同じフライパンに取り置いた蒸し汁を戻して中火で軽く煮詰める（1〜2分）。茹で汁を加えて乳化させる。","title":"形を整える","actionItems":["同じフライパンに取り置いた蒸し汁を戻して中火で軽く煮詰める（1〜2分）。","茹で汁を加えて乳化させる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"パスタを加えてソースと和え、殻から外したあさりを戻す。火を止めてフライパン全体にコラトゥーラを回しかけ、残りのオリーブオイルとパセリを加えて素早く和える。殻付きのあさりで飾り付けて盛る。","title":"ソースを作る","actionItems":["パスタを加えてソースと和え、殻から外したあさりを戻す。","殻付きのあさりで飾り付けて盛る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止めてフライパン全体にコラトゥーラを回しかけ、残りのオリーブオイルとパセリを加えて素早く和える。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

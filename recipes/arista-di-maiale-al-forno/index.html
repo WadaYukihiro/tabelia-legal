@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">骨付き豚ロース（アリスタ）またはかたまりロース</span><span class="ingredient-qty">1200g</span><span class="ingredient-notes">骨付きが本格的だが、骨なしかたまりでも可。冷蔵庫から出して1時間室温に置く</span></li>
-          <li><span class="ingredient-name">ローズマリー（生）</span><span class="ingredient-qty">4枝</span><span class="ingredient-notes">葉を外してみじん切りにする（詰め込み用2枝分＋飾り用2枝）</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">5片</span><span class="ingredient-notes">3片はみじん切り（バットゥート用）、2片は薄切り（差し込み用）</span></li>
-          <li><span class="ingredient-name">セージ（生）</span><span class="ingredient-qty">10枚</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">40ml</span></li>
-          <li><span class="ingredient-name">辛口白ワイン</span><span class="ingredient-qty">200ml</span></li>
+              <li data-ingredient-row="7b096820-0657-415f-b17c-2e5ee38ee7f8"><span class="ingredient-name" data-ingredient-name>骨付き豚ロース（アリスタ）またはかたまりロース</span><span class="ingredient-qty" data-ingredient-qty>1200g</span><span class="ingredient-notes">骨付きが本格的だが、骨なしかたまりでも可。冷蔵庫から出して1時間室温に置く</span><button type="button" class="substitution-trigger" data-substitution-trigger="7b096820-0657-415f-b17c-2e5ee38ee7f8"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9482831c-4e46-4b85-977b-ceb09338375b"><span class="ingredient-name" data-ingredient-name>ローズマリー（生）</span><span class="ingredient-qty" data-ingredient-qty>4枝</span><span class="ingredient-notes">葉を外してみじん切りにする（詰め込み用2枝分＋飾り用2枝）</span></li>
+          <li data-ingredient-row="292b03ae-11b9-4853-8dbf-3261848ff0ee"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>5片</span><span class="ingredient-notes">3片はみじん切り（バットゥート用）、2片は薄切り（差し込み用）</span></li>
+          <li data-ingredient-row="a32b2f70-f047-43d0-8e2d-2bf453ffd78d"><span class="ingredient-name" data-ingredient-name>セージ（生）</span><span class="ingredient-qty" data-ingredient-qty>10枚</span></li>
+          <li data-ingredient-row="1fb5c5c4-bc8c-4f6c-9ae8-b8662a4521b9"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>40ml</span></li>
+          <li data-ingredient-row="a0376067-9594-4385-b2a5-58dca119ad8b"><span class="ingredient-name" data-ingredient-name>辛口白ワイン</span><span class="ingredient-qty" data-ingredient-qty>200ml</span></li>
               </ul>
             </section>
           </div>
@@ -289,6 +309,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1b680419-d682-4d59-906a-ff95962c4ce2","nameJa":"豚ロースのハーブロースト","baseServings":6,"minServings":4,"maxServings":20},"ingredients":[{"id":"7b096820-0657-415f-b17c-2e5ee38ee7f8","nameOriginal":"Arista di maiale (lonza con osso)","nameJa":"骨付き豚ロース（アリスタ）またはかたまりロース","nameEn":"Bone-in pork loin roast or boneless pork loin","quantity":1200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"骨付きが本格的だが、骨なしかたまりでも可。冷蔵庫から出して1時間室温に置く","substitutionOptions":[{"id":"7e11809b-5e34-4180-a7db-1e1fceb7602d","standardIngredientId":"7b096820-0657-415f-b17c-2e5ee38ee7f8","nameJa":"豚肩ロース（かたまり）","nameEn":"Boneless pork shoulder roast","authenticityImpact":-5,"flavorImpact":"脂が多く出てよりジューシー。繊維がやや粗い","textureImpact":null,"procedureChanges":["焼き時間を110分に調整"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"肩ロースをじっくり焼き上げる","action":"replace","stepNumber":4,"actionItems":["耐熱皿に移し、白ワイン200mlとセージを加える。","190℃に予熱したオーブンで1時間40分〜1時間50分焼く。","途中で肉汁をかけながら焼く（バスティング）。"],"instruction":"耐熱皿に移し、白ワインとセージを加える。190℃に予熱したオーブンで1時間40分〜1時間50分焼く。途中で肉汁をかけながら焼く（バスティング）。内部温度70〜72℃が目標。","changeReason":"豚肩ロースはロースより脂と結合組織が多いため、標準より長く焼いて火入れを安定させる","completionCriteria":["内部温度70〜72℃になり、竹串を刺したときに澄んだ肉汁が出れば次へ。"]}]}]},{"id":"9482831c-4e46-4b85-977b-ceb09338375b","nameOriginal":"Rosmarino","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":4,"unit":"枝","role":"essential","scalingBehavior":null,"notes":"葉を外してみじん切りにする（詰め込み用2枝分＋飾り用2枝）","substitutionOptions":[]},{"id":"292b03ae-11b9-4853-8dbf-3261848ff0ee","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":5,"unit":"片","role":"essential","scalingBehavior":null,"notes":"3片はみじん切り（バットゥート用）、2片は薄切り（差し込み用）","substitutionOptions":[]},{"id":"a32b2f70-f047-43d0-8e2d-2bf453ffd78d","nameOriginal":"Salvia","nameJa":"セージ（生）","nameEn":"Fresh sage leaves","quantity":10,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1fb5c5c4-bc8c-4f6c-9ae8-b8662a4521b9","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a0376067-9594-4385-b2a5-58dca119ad8b","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":200,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"バットゥートを作る：\n・ローズマリーの葉をみじん切りにし、にんにく3片もみじん切りにする\n・ローズマリー・にんにく（みじん切り）・塩・こしょうをまな板で一緒に刻んでペースト状にする\n・そのペーストにオリーブオイル小さじ2を加えて混ぜる\n・にんにく2片を薄切りにして別に取り置く（差し込み用）","title":"バットゥートを作る","actionItems":["ローズマリー2枝分の葉をみじん切りにし、にんにく3片もみじん切りにする。","ローズマリー・にんにく・塩・こしょうをまな板で一緒に刻んでペースト状にする。","ペーストにオリーブオイル小さじ2を加えて混ぜる。","にんにく2片を薄切りにして別に取り置く（差し込み用）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"豚肉に細い包丁を深く刺して6〜8か所の切り込みを作り、バットゥートをしっかり詰め込む。薄切りにんにくも切り込みに差し込む。肉の外側全体にもバットゥートを塗り込む。","title":"バットゥートを詰め込む","actionItems":["細い包丁で豚肉に6〜8か所の切り込みを深く刺す。","バットゥートを切り込みにしっかり詰め込む。","薄切りにんにく2片分も切り込みに差し込む。","肉の外側全体にもバットゥートを塗り込む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンにオリーブオイル大さじ2を強火に熱し、豚肉の全面を2〜3分ずつ焼き付ける。表面全体が濃いきつね色になったら取り出す。","title":"表面を焼き付ける","actionItems":["フライパンにオリーブオイル大さじ2を強火に熱する。","豚肉の全面を2〜3分ずつ焼き付ける。"],"parallelItems":[],"completionCriteria":["表面全体が濃いきつね色になったら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"耐熱皿に移し、白ワインとセージを加える。190℃に予熱したオーブンで1時間15分〜1時間30分焼く。途中で肉汁をかけながら焼く（バスティング）。内部温度63〜65℃が目標。","title":"焼き上げる","actionItems":["耐熱皿に移し、白ワイン200mlとセージを加える。","190℃に予熱したオーブンで1時間15分〜1時間30分焼く。","途中で肉汁をかけながら焼く（バスティング）。"],"parallelItems":[],"completionCriteria":["内部温度63〜65℃になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":90,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"アルミで包んで10分休ませてから切り分ける。フライパンに残った肉汁に少量の白ワインを加えて煮詰め、ソースにする。","title":"休ませてソースを作る","actionItems":["アルミで包んで10分休ませる。","耐熱皿に残った肉汁に少量の白ワインを加えて煮詰め、ソースにする。","休ませた豚肉を切り分ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

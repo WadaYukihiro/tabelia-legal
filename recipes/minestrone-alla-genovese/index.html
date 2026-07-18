@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>50分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ジェノヴァ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ボルロッティ豆（茹でたもの）</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">じゃがいも</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">2cm角</span></li>
-          <li><span class="ingredient-name">ズッキーニ</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">輪切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">輪切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">2茎</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">ショートパスタまたは米</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">45ml</span><span class="ingredient-notes">ソフリット炒め用（大さじ3）</span></li>
-          <li><span class="ingredient-name">ジェノヴェーゼペスト</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">仕上げに加える</span></li>
+              <li data-ingredient-row="3d9b17f7-cd03-49d5-884e-e327d30e9c56"><span class="ingredient-name" data-ingredient-name>ボルロッティ豆（茹でたもの）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><button type="button" class="substitution-trigger" data-substitution-trigger="3d9b17f7-cd03-49d5-884e-e327d30e9c56"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="1bbb8c00-7cc4-48e7-adae-219f7b39d704"><span class="ingredient-name" data-ingredient-name>じゃがいも</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">2cm角</span></li>
+          <li data-ingredient-row="e13ea7ac-fd41-4dc3-8ed7-64c75422783b"><span class="ingredient-name" data-ingredient-name>ズッキーニ</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">輪切り</span></li>
+          <li data-ingredient-row="628df2c5-0b65-4b01-9174-d3768a18b3b7"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">輪切り</span></li>
+          <li data-ingredient-row="1c62b2f3-1790-4133-bede-605635fe6fbb"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>2茎</span></li>
+          <li data-ingredient-row="d9456529-fe68-436b-96c9-018f35d08948"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span></li>
+          <li data-ingredient-row="8bee3805-b717-418e-b915-b84f498a180e"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="e2929fd8-956e-4fa8-ab89-0c17052124e7"><span class="ingredient-name" data-ingredient-name>ショートパスタまたは米</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="c5c40a62-85cf-4f3d-a626-d33fef8e9afa"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>45ml</span><span class="ingredient-notes">ソフリット炒め用（大さじ3）</span></li>
+          <li data-ingredient-row="170ecdb7-0cc4-4b62-bc96-4ae8d4ce22bd"><span class="ingredient-name" data-ingredient-name>ジェノヴェーゼペスト</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">仕上げに加える</span></li>
               </ul>
             </section>
           </div>
@@ -289,6 +309,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"a707ce6d-70b1-4af0-91b6-10d1590362fc","nameJa":"ジェノヴァ風ミネストローネ","baseServings":6,"minServings":1,"maxServings":20},"ingredients":[{"id":"3d9b17f7-cd03-49d5-884e-e327d30e9c56","nameOriginal":"Fagioli borlotti","nameJa":"ボルロッティ豆（茹でたもの）","nameEn":"Borlotti beans","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"3ec5fd3c-9099-4352-9e63-e631f63fea28","standardIngredientId":"3d9b17f7-cd03-49d5-884e-e327d30e9c56","nameJa":"白いんげん豆（缶詰）","nameEn":"Cannellini beans (canned)","authenticityImpact":-5,"flavorImpact":"食感と色が変わるが風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"1bbb8c00-7cc4-48e7-adae-219f7b39d704","nameOriginal":"Patate","nameJa":"じゃがいも","nameEn":"Potatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"2cm角","substitutionOptions":[]},{"id":"e13ea7ac-fd41-4dc3-8ed7-64c75422783b","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":"輪切り","substitutionOptions":[]},{"id":"628df2c5-0b65-4b01-9174-d3768a18b3b7","nameOriginal":"Carote","nameJa":"にんじん","nameEn":"Carrots","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":"輪切り","substitutionOptions":[]},{"id":"1c62b2f3-1790-4133-bede-605635fe6fbb","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":2,"unit":"茎","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d9456529-fe68-436b-96c9-018f35d08948","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8bee3805-b717-418e-b915-b84f498a180e","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":200,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e2929fd8-956e-4fa8-ab89-0c17052124e7","nameOriginal":"Pasta mista o riso","nameJa":"ショートパスタまたは米","nameEn":"Short pasta or rice","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c5c40a62-85cf-4f3d-a626-d33fef8e9afa","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"ソフリット炒め用（大さじ3）","substitutionOptions":[]},{"id":"170ecdb7-0cc4-4b62-bc96-4ae8d4ce22bd","nameOriginal":"Pesto genovese","nameJa":"ジェノヴェーゼペスト","nameEn":"Genoese pesto","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"仕上げに加える","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・玉ねぎ1個・にんじん2本・セロリ2茎をみじん切りにする\n・じゃがいも2個を2cm角、ズッキーニ2本を輪切りにする","title":"野菜を切る","actionItems":["玉ねぎ1個をみじん切りにする。","にんじん2本をみじん切りにする。","セロリ2茎をみじん切りにする。","じゃがいも2個を2cm角に切る。","ズッキーニ2本を輪切りにする。"],"parallelItems":[],"completionCriteria":["ソフリット野菜がみじん切り、じゃがいもとズッキーニが指定サイズに切れた。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"大鍋でオリーブオイル大さじ3を中火で熱し、玉ねぎ・にんじん・セロリを加えて弱火で8分炒める。野菜がしんなりするまで炒め続ける。","title":"ソフリットを炒める","actionItems":["大鍋でオリーブオイル大さじ3を中火で熱する。","玉ねぎ・にんじん・セロリを加えて弱火で8分炒める。"],"parallelItems":[],"completionCriteria":["野菜がしんなりして透明感が出た。"],"cautionItems":["焦がさないよう弱火で丁寧に炒めること。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"じゃがいも・ズッキーニ・ホールトマト200gを加え、水1.5Lを注いで中火で30分煮込む。","title":"残りの野菜を加えて煮込む","actionItems":["じゃがいも・ズッキーニ・ホールトマト200gを加える。","水1.5Lを注いで中火で30分煮込む。"],"parallelItems":[],"completionCriteria":["30分経過してじゃがいもが柔らかくなった。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"ボルロッティ豆200gを加えてさらに10分煮る。ショートパスタ80gを加えてパッケージの表示通りに茹でる。","title":"豆とパスタを加える","actionItems":["ボルロッティ豆200gを加えてさらに10分煮る。","ショートパスタ80gを加えてパッケージの表示通りに茹でる。"],"parallelItems":[],"completionCriteria":["パスタが茹で上がった。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"火を止め、ペスト60gを加えて溶かす（沸騰中は加えない。香りが飛ぶ）。塩で味を整えて完成。翌日がさらに美味しい。","title":"ペストを加えて仕上げる","actionItems":["火を止めてペスト60gを加えて溶かす。","塩で味を整える。"],"parallelItems":[],"completionCriteria":["ペストが溶け、スープ全体にバジルの香りが広がった。"],"cautionItems":["沸騰中にペストを加えると香りが飛ぶ。必ず火を止めてから加えること。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

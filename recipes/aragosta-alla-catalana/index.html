@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・アルゲーロ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">イセエビ（または活きオマールエビ）</span><span class="ingredient-qty">1匹（700〜900g）</span><span class="ingredient-notes">活きを使うこと。品質が全て</span></li>
-          <li><span class="ingredient-name">ロッソ・ディ・トロペア（赤玉ねぎ）</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">薄い輪切り。冷水にさらして辛みを抜く</span></li>
-          <li><span class="ingredient-name">完熟トマト</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">薄い半月切り</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">レモン汁</span><span class="ingredient-qty">1個分</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">適量</span></li>
+              <li data-ingredient-row="26bd1599-130f-4a4b-95a1-3bfc2ad9e416"><span class="ingredient-name" data-ingredient-name>イセエビ（または活きオマールエビ）</span><span class="ingredient-qty" data-ingredient-qty>1匹（700〜900g）</span><span class="ingredient-notes">活きを使うこと。品質が全て</span><button type="button" class="substitution-trigger" data-substitution-trigger="26bd1599-130f-4a4b-95a1-3bfc2ad9e416"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="33aeb4c5-f1bc-40b1-978b-736034652a55"><span class="ingredient-name" data-ingredient-name>ロッソ・ディ・トロペア（赤玉ねぎ）</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">薄い輪切り。冷水にさらして辛みを抜く</span><button type="button" class="substitution-trigger" data-substitution-trigger="33aeb4c5-f1bc-40b1-978b-736034652a55"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2b35677a-caa5-4e35-af24-7eac5808a79f"><span class="ingredient-name" data-ingredient-name>完熟トマト</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">薄い半月切り</span></li>
+          <li data-ingredient-row="c0e35c02-f118-48d0-bd02-c0fd904f07cb"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="c3766182-0b73-4ad3-9f7b-8cb9520b2f62"><span class="ingredient-name" data-ingredient-name>レモン汁</span><span class="ingredient-qty" data-ingredient-qty>1個分</span></li>
+          <li data-ingredient-row="380ed637-b698-4029-9d40-39c42c6a6bd0"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>適量</span></li>
               </ul>
             </section>
           </div>
@@ -257,6 +277,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"de1719f3-7fd0-40bc-a4e5-3069ed409bd9","nameJa":"オマール海老のカタルーニャ風サラダ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"26bd1599-130f-4a4b-95a1-3bfc2ad9e416","nameOriginal":"Aragosta viva","nameJa":"イセエビ（または活きオマールエビ）","nameEn":"Live spiny lobster or European lobster","quantity":1,"unit":"匹（700〜900g）","role":"essential","scalingBehavior":null,"notes":"活きを使うこと。品質が全て","substitutionOptions":[{"id":"118cb938-26aa-45e7-8796-569f09a2f8d0","standardIngredientId":"26bd1599-130f-4a4b-95a1-3bfc2ad9e416","nameJa":"手長エビ（活き）","nameEn":"Live scampi / Langoustine","authenticityImpact":-10,"flavorImpact":"甘みが強く風味は近いが小さいため扱いが難しい","textureImpact":null,"procedureChanges":["茹で時間を8分に短縮"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"手長エビを短く茹でる","action":"replace","stepNumber":3,"actionItems":["塩水（水1Lに塩30g）を沸騰させ、手長エビを入れて8分茹でる。","茹で上がったら常温で冷ます（冷水に入れない）。"],"instruction":"塩水（海水濃度：水1Lに塩30g）を沸騰させ、手長エビを入れて8分茹でる。茹で上がったら常温で冷ます（冷水に入れない）。","cautionItems":["冷水に入れると旨みが抜けるので常温で冷ます。"],"changeReason":"手長エビはオマールやイセエビより小さく、長く茹でると身が硬くなるため","completionCriteria":["8分後。殻が赤くなり、身が白く締まっていれば完成。"]}]}]},{"id":"33aeb4c5-f1bc-40b1-978b-736034652a55","nameOriginal":"Cipolla rossa di Tropea","nameJa":"ロッソ・ディ・トロペア（赤玉ねぎ）","nameEn":"Tropea red onion","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"薄い輪切り。冷水にさらして辛みを抜く","substitutionOptions":[{"id":"e05bf4bb-1b91-4bfc-8c3c-83226d41700d","standardIngredientId":"33aeb4c5-f1bc-40b1-978b-736034652a55","nameJa":"紫玉ねぎ","nameEn":"Red onion","authenticityImpact":-5,"flavorImpact":"甘みが少し弱いが近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2b35677a-caa5-4e35-af24-7eac5808a79f","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト","nameEn":"Ripe tomatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"薄い半月切り","substitutionOptions":[]},{"id":"c0e35c02-f118-48d0-bd02-c0fd904f07cb","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c3766182-0b73-4ad3-9f7b-8cb9520b2f62","nameOriginal":"Succo di limone","nameJa":"レモン汁","nameEn":"Fresh lemon juice","quantity":1,"unit":"個分","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"380ed637-b698-4029-9d40-39c42c6a6bd0","nameOriginal":"Sale marino","nameJa":"塩","nameEn":"Sea salt","quantity":1,"unit":"適量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"エビを活き〆にする（頭に包丁を素早く入れる）。","title":"エビを活き〆にする","actionItems":["エビを活き〆にする（頭に包丁を素早く入れる）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"赤玉ねぎを薄い輪切りにして冷水に10分さらし、水気を切る。完熟トマトを薄い半月切りにする。","title":"野菜を準備する","actionItems":["赤玉ねぎを薄い輪切りにして冷水に10分さらし、水気を切る。","完熟トマトを薄い半月切りにする。"],"parallelItems":[],"completionCriteria":["玉ねぎを10分冷水にさらしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":13,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"塩水（海水濃度：水1Lに塩30g）を沸騰させ、エビを入れて15〜18分茹でる。茹で上がったら常温で冷ます（冷水に入れない）。","title":"エビを茹でる","actionItems":["塩水（水1Lに塩30g）を沸騰させ、エビを入れて15〜18分茹でる。","茹で上がったら常温で冷ます（冷水に入れない）。"],"parallelItems":[],"completionCriteria":["15〜18分後。エビが完全に赤く色づいたら完成。"],"cautionItems":["冷水に入れると旨みが抜けるので常温で冷ます。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"エビを縦半分に割り、身を取り出す。頭の内子（みそ）も取り出してドレッシングに混ぜる。","title":"エビの身を取り出す","actionItems":["エビを縦半分に割り、身を取り出す。","頭の内子（みそ）も取り出してドレッシング用に取っておく。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"皿にトマトと玉ねぎを並べ、エビの身をのせる。ボウルにオリーブオイル・レモン汁・塩を合わせ、内子と混ぜてドレッシングを作り、エビと野菜にかけて完成。","title":"和えて盛り付ける","actionItems":["皿にトマトと玉ねぎを並べ、エビの身をのせる。","ボウルにオリーブオイル80ml・レモン汁・塩を合わせ、内子と混ぜてドレッシングを作る。","ドレッシングをエビと野菜にかけて完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

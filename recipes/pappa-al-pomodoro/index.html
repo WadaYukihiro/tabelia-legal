@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>7分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,14 +93,21 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">トスカーナパン（2日以上経ったもの）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">2〜3cm角にちぎる。新鮮なパンは不可</span></li>
-          <li><span class="ingredient-name">完熟トマト（または缶詰）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">生トマトは荒く刻む、缶詰はホールを使う</span></li>
-          <li><span class="ingredient-name">にんにく</span><span class="ingredient-qty">3片</span><span class="ingredient-notes">つぶして皮をむく</span></li>
-          <li><span class="ingredient-name">バジル（生）</span><span class="ingredient-qty">15枚</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル（上質なもの）</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">野菜ブロード（または水）</span><span class="ingredient-qty">500ml</span></li>
+              <li data-ingredient-row="462ae2eb-b39d-4ee9-80aa-4c2f79305bd2"><span class="ingredient-name" data-ingredient-name>トスカーナパン（2日以上経ったもの）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">2〜3cm角にちぎる。新鮮なパンは不可</span><button type="button" class="substitution-trigger" data-substitution-trigger="462ae2eb-b39d-4ee9-80aa-4c2f79305bd2"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="9d6de28f-37c7-414d-ac76-ef92a9f8711f"><span class="ingredient-name" data-ingredient-name>完熟トマト（または缶詰）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">生トマトは荒く刻む、缶詰はホールを使う</span></li>
+          <li data-ingredient-row="af8844b0-febe-4f4c-b0a3-fe03fc3ae0d0"><span class="ingredient-name" data-ingredient-name>にんにく</span><span class="ingredient-qty" data-ingredient-qty>3片</span><span class="ingredient-notes">つぶして皮をむく</span></li>
+          <li data-ingredient-row="6311e590-9174-4266-ae56-793b1621766b"><span class="ingredient-name" data-ingredient-name>バジル（生）</span><span class="ingredient-qty" data-ingredient-qty>15枚</span></li>
+          <li data-ingredient-row="b90b8f87-3c08-4359-b0d5-116c91c08786"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル（上質なもの）</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="0371a726-c466-4ef0-8d80-a5fe108cdd01"><span class="ingredient-name" data-ingredient-name>野菜ブロード（または水）</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
               </ul>
             </section>
           </div>
@@ -287,6 +307,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"b0f57aff-e383-4b93-b22b-c60a2fc1cfbf","nameJa":"トスカーナ風トマトとパンのスープ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"462ae2eb-b39d-4ee9-80aa-4c2f79305bd2","nameOriginal":"Pane toscano raffermo","nameJa":"トスカーナパン（2日以上経ったもの）","nameEn":"Stale Tuscan bread","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"2〜3cm角にちぎる。新鮮なパンは不可","substitutionOptions":[{"id":"ddf3ce17-9526-4538-a7dd-0a7fcaafd84e","standardIngredientId":"462ae2eb-b39d-4ee9-80aa-4c2f79305bd2","nameJa":"バゲット（古いもの）","nameEn":"Stale baguette","authenticityImpact":-5,"flavorImpact":"塩入りのため塩分量を後で調整する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9d6de28f-37c7-414d-ac76-ef92a9f8711f","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト（または缶詰）","nameEn":"Ripe tomatoes or canned","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生トマトは荒く刻む、缶詰はホールを使う","substitutionOptions":[]},{"id":"af8844b0-febe-4f4c-b0a3-fe03fc3ae0d0","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"essential","scalingBehavior":null,"notes":"つぶして皮をむく","substitutionOptions":[]},{"id":"6311e590-9174-4266-ae56-793b1621766b","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":15,"unit":"枚","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b90b8f87-3c08-4359-b0d5-116c91c08786","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル（上質なもの）","nameEn":"High-quality extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0371a726-c466-4ef0-8d80-a5fe108cdd01","nameOriginal":"Brodo vegetale","nameJa":"野菜ブロード（または水）","nameEn":"Vegetable broth or water","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"にんにく3片を包丁の腹でつぶして皮をむく。大きな鍋にオリーブオイル（半量）とにんにくを入れ、弱火で香りが出るまで2〜3分加熱する。焦がさない。","title":"にんにくを香らせる","actionItems":["にんにく3片を包丁の腹でつぶして皮をむく。","大きな鍋にオリーブオイル40mlとにんにくを入れる。","弱火で2〜3分加熱する。"],"parallelItems":[],"completionCriteria":["にんにくの香りが立ち、うっすら色づいたら次へ。"],"cautionItems":["焦がすと苦みが出るので弱火を保つこと。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"生トマトを使う場合は荒く刻んでから、缶詰の場合は手でつぶしながら加えて中火で10分煮崩す。","title":"トマトを煮崩す","actionItems":["生トマトの場合は荒く刻んでから加える。","缶詰の場合は手でつぶしながら加える。","中火で10分煮崩す。"],"parallelItems":[],"completionCriteria":["トマトが煮崩れてソース状になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"野菜ブロードを加え、ちぎったパンを全量入れる。","title":"パンとブロードを加える","actionItems":["野菜ブロード500mlを加える。","パン300gを2〜3cm角にちぎって全量入れる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"弱火で15〜20分煮る。木べらで時々押し潰しながらパンをスープに溶け込ませる。パンの形が見えなくなり、全体がドロッとした粥状になれば完成。","title":"パンを溶かし込む","actionItems":["弱火で15〜20分煮る。","木べらで時々パンを押し潰しながらスープに溶け込ませる。"],"parallelItems":[],"completionCriteria":["パンの形が見えなくなり、全体がドロッとした粥状になれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"火を止めてバジルを手でちぎりながら加える。鍋全体に残りのオリーブオイルを回しかける。","title":"バジルとオイルで仕上げる","actionItems":["火を止めてバジル15枚を手でちぎりながら加える。","残りのオリーブオイル40mlを全体に回しかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"5分蒸らして味を馴染ませ、熱いまま、または常温で盛り付ける。","title":"蒸らして盛り付ける","actionItems":["5分蒸らす。","熱いまま、または常温で盛り付ける。"],"parallelItems":[],"completionCriteria":["全体の味が馴染んだら盛り付ける（5分目安）。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・フィレンツェ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">フィノッキオ（フェンネル）</span><span class="ingredient-qty">1個</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">3茎</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">2本</span></li>
-          <li><span class="ingredient-name">ラディッシュ</span><span class="ingredient-qty">6個</span></li>
-          <li><span class="ingredient-name">上質なEVオリーブオイル</span><span class="ingredient-qty">大さじ6</span></li>
-          <li><span class="ingredient-name">細かい海塩</span><span class="ingredient-qty">1つまみ</span></li>
-          <li><span class="ingredient-name">白コショウ</span><span class="ingredient-qty">1つまみ</span></li>
+              <li data-ingredient-row="8c737ce1-e07c-4308-9eb8-321db055dd8b"><span class="ingredient-name" data-ingredient-name>フィノッキオ（フェンネル）</span><span class="ingredient-qty" data-ingredient-qty>1個</span></li>
+          <li data-ingredient-row="0b0aff60-afdf-403e-ad57-94523edb37f8"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>3茎</span></li>
+          <li data-ingredient-row="615a073e-d1aa-4ba8-8df3-cb07e5ad4d9c"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>2本</span></li>
+          <li data-ingredient-row="5d97262e-1b7c-4687-a6b7-bcd574a40994"><span class="ingredient-name" data-ingredient-name>ラディッシュ</span><span class="ingredient-qty" data-ingredient-qty>6個</span></li>
+          <li data-ingredient-row="de4ccb2d-99a7-41a7-947d-72493da49cd9"><span class="ingredient-name" data-ingredient-name>上質なEVオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ6</span></li>
+          <li data-ingredient-row="96b93486-f4c9-4c1f-80a5-97539d064e3a"><span class="ingredient-name" data-ingredient-name>細かい海塩</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
+          <li data-ingredient-row="d7a0c89b-7dab-43eb-ac1f-88d5bef4f376"><span class="ingredient-name" data-ingredient-name>白コショウ</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
               </ul>
             </section>
           </div>
@@ -195,6 +215,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"a1a505f1-c474-4ee1-8d0b-42daad86edd7","nameJa":"ピンツィモーニオ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"8c737ce1-e07c-4308-9eb8-321db055dd8b","nameOriginal":"Finocchio","nameJa":"フィノッキオ（フェンネル）","nameEn":"Fennel bulb","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0b0aff60-afdf-403e-ad57-94523edb37f8","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":3,"unit":"茎","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"615a073e-d1aa-4ba8-8df3-cb07e5ad4d9c","nameOriginal":"Carote","nameJa":"にんじん","nameEn":"Carrots","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5d97262e-1b7c-4687-a6b7-bcd574a40994","nameOriginal":"Ravanelli","nameJa":"ラディッシュ","nameEn":"Radishes","quantity":6,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"de4ccb2d-99a7-41a7-947d-72493da49cd9","nameOriginal":"Olio extravergine di qualità","nameJa":"上質なEVオリーブオイル","nameEn":"High-quality extra virgin olive oil","quantity":6,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"96b93486-f4c9-4c1f-80a5-97539d064e3a","nameOriginal":"Sale marino fino","nameJa":"細かい海塩","nameEn":"Fine sea salt","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d7a0c89b-7dab-43eb-ac1f-88d5bef4f376","nameOriginal":"Pepe bianco","nameJa":"白コショウ","nameEn":"White pepper","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"フィノッキオは外側の硬い葉を取り除き、縦に6〜8等分のくし形に切る。水に5分さらして軽くシャキッとさせる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"野菜の準備"},{"stepNumber":2,"instruction":"セロリは葉を取り除き（葉は飾りに残す）、茎を細長いスティック状に切る。にんじんは皮をむいてスティック状に切る。ラディッシュは洗って葉を少し残したまま半分に切る。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"小皿に人数分のソースを用意する。EVオリーブオイル、塩、白コショウを合わせて軽く混ぜる（乳化させない——層になっているのが本来の姿）。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"ソースを作る"},{"stepNumber":4,"instruction":"大皿または背の高いグラスに野菜を見栄えよく立てて盛り付ける。各人にソースの小皿を添えて、野菜をつけながら食べる。野菜が乾かないよう食卓に出す直前まで冷蔵庫で保存。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"盛り付け"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

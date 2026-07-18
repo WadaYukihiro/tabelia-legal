@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>40分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>5分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>2人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">2人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・アルバ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（2人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">2</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">タリオリーニ（卵入り極細生パスタ）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">手打ち。幅2mm以下が理想</span></li>
-          <li><span class="ingredient-name">白トリュフ（生）</span><span class="ingredient-qty">15g</span><span class="ingredient-notes">テーブルで削りかける</span></li>
-          <li><span class="ingredient-name">高品質発酵バター</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">冷蔵庫から出したばかりの冷たいもの</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ（熟成30ヶ月以上）</span><span class="ingredient-qty">40g</span></li>
-          <li><span class="ingredient-name">肉のブロード（少量）</span><span class="ingredient-qty">50ml</span><span class="ingredient-notes">乳化用。熱く保つ</span></li>
+              <li data-ingredient-row="41e8d3cb-ee04-452a-bd3e-3a24a6ceddcb"><span class="ingredient-name" data-ingredient-name>タリオリーニ（卵入り極細生パスタ）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">手打ち。幅2mm以下が理想</span><button type="button" class="substitution-trigger" data-substitution-trigger="41e8d3cb-ee04-452a-bd3e-3a24a6ceddcb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="f92f52c1-d227-4566-9df8-586d0a0ad788"><span class="ingredient-name" data-ingredient-name>白トリュフ（生）</span><span class="ingredient-qty" data-ingredient-qty>15g</span><span class="ingredient-notes">テーブルで削りかける</span><button type="button" class="substitution-trigger" data-substitution-trigger="f92f52c1-d227-4566-9df8-586d0a0ad788"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c21a3a6a-deaf-48bb-9dc4-25d27adcbb1c"><span class="ingredient-name" data-ingredient-name>高品質発酵バター</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">冷蔵庫から出したばかりの冷たいもの</span><button type="button" class="substitution-trigger" data-substitution-trigger="c21a3a6a-deaf-48bb-9dc4-25d27adcbb1c"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="d4208661-c6c0-4478-b0ae-c95535cd8fc5"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ（熟成30ヶ月以上）</span><span class="ingredient-qty" data-ingredient-qty>40g</span></li>
+          <li data-ingredient-row="195561c6-9e77-44aa-8525-475add79d30c"><span class="ingredient-name" data-ingredient-name>肉のブロード（少量）</span><span class="ingredient-qty" data-ingredient-qty>50ml</span><span class="ingredient-notes">乳化用。熱く保つ</span></li>
               </ul>
             </section>
           </div>
@@ -278,6 +298,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"34997b7a-1ebf-46f3-b2ca-485b7c586c60","nameJa":"アルバ産白トリュフのタリオリーニ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"41e8d3cb-ee04-452a-bd3e-3a24a6ceddcb","nameOriginal":"Tagliolini freschi all'uovo","nameJa":"タリオリーニ（卵入り極細生パスタ）","nameEn":"Fresh egg tagliolini","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手打ち。幅2mm以下が理想","substitutionOptions":[{"id":"1f88e934-24cf-4958-a088-c4ce80535036","standardIngredientId":"41e8d3cb-ee04-452a-bd3e-3a24a6ceddcb","nameJa":"タリオリーニ（乾燥）","nameEn":"Dried tagliolini","authenticityImpact":-10,"flavorImpact":"卵の風味と食感が大幅に変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f92f52c1-d227-4566-9df8-586d0a0ad788","nameOriginal":"Tartufo bianco d'Alba","nameJa":"白トリュフ（生）","nameEn":"Fresh white truffle from Alba","quantity":15,"unit":"g","role":"essential","scalingBehavior":null,"notes":"テーブルで削りかける","substitutionOptions":[{"id":"2fba25dc-63bb-4985-a1a0-8d24af9f8074","standardIngredientId":"f92f52c1-d227-4566-9df8-586d0a0ad788","nameJa":"黒トリュフ（生）","nameEn":"Fresh black truffle","authenticityImpact":-35,"flavorImpact":"香りの質が根本的に異なる。白と黒は別の食材と考えるべき","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c21a3a6a-deaf-48bb-9dc4-25d27adcbb1c","nameOriginal":"Burro di malga","nameJa":"高品質発酵バター","nameEn":"High-quality cultured butter","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"冷蔵庫から出したばかりの冷たいもの","substitutionOptions":[{"id":"c0f5ccd2-0d4e-404f-aba5-4dc5fefb1695","standardIngredientId":"c21a3a6a-deaf-48bb-9dc4-25d27adcbb1c","nameJa":"一般的な無塩バター","nameEn":"Unsalted butter","authenticityImpact":-5,"flavorImpact":"風味がやや薄くなるが成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d4208661-c6c0-4478-b0ae-c95535cd8fc5","nameOriginal":"Parmigiano Reggiano stagionato 30 mesi","nameJa":"パルミジャーノ・レッジャーノ（熟成30ヶ月以上）","nameEn":"Aged Parmigiano Reggiano (30 months)","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"195561c6-9e77-44aa-8525-475add79d30c","nameOriginal":"Brodo di carne","nameJa":"肉のブロード（少量）","nameEn":"Meat broth","quantity":50,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"乳化用。熱く保つ","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"大量の塩水を沸かし、タリオリーニ200gを1〜2分で茹でる（生パスタは短時間）。\n・茹で汁を10ml取り置く","title":"パスタを茹でる","actionItems":["大量の塩水を沸かす。","タリオリーニ200gを1〜2分で茹でる。","茹で汁を10ml取り置く。"],"parallelItems":[],"completionCriteria":["タリオリーニがアルデンテに茹で上がり、茹で汁が確保された。"],"cautionItems":["生パスタは茹ですぎると崩れる。1〜2分で素早く引き上げること。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにブロード50mlを入れて沸かし、火を止めて冷たいバター60gを加える。フライパンを揺すりながらバターを乳化させる。","title":"バターを乳化させる","actionItems":["フライパンにブロード50mlを入れて沸かす。","火を止めて冷たいバター60gを加える。","フライパンを揺すりながらバターを乳化させる。"],"parallelItems":[],"completionCriteria":["バターとブロードが乳化してクリーミーなソースになった。"],"cautionItems":["バターは冷たいものを使うこと。温まったバターは乳化しにくい。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"タリオリーニをフライパンに加え、パルミジャーノ40gを少量ずつ加えながら低温（フライパンは弱火以下）で和える。必要なら茹で汁を少量加えて濃度を調整する。","title":"パスタをソースと和える","actionItems":["タリオリーニをフライパンに加える。","パルミジャーノ40gを少量ずつ加えながら弱火以下で和える。","必要なら茹で汁を少量加えて濃度を調整する。"],"parallelItems":[],"completionCriteria":["ソースが全体に絡み、なめらかな乳化状態になった。"],"cautionItems":["強火にすると乳化が壊れる。低温で丁寧に和えること。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"皿に素早く盛り、トリュフスライサーで白トリュフ15gをたっぷり削りかけて即座に提供する（香りは揮発するため待たない）。","title":"トリュフを削りかける","actionItems":["パスタを皿に素早く盛る。","トリュフスライサーで白トリュフ15gをたっぷり削りかける。","即座に提供する。"],"parallelItems":[],"completionCriteria":["白トリュフが削りかけられ、香りが立っている状態で提供。"],"cautionItems":["白トリュフは加熱すると香りが飛ぶ。必ず生のまま削りかけること。削った直後に提供すること。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>1時間</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>2時間15分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>8人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">8人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-23">2026.05.23</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,21 +94,28 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（8人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">8</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">8</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">強力粉（マニトバ）</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">強力粉（タンパク質12%以上）推奨。ふんわり弾力のある生地に仕上がる</span></li>
-          <li><span class="ingredient-name">ぬるい牛乳（全乳）</span><span class="ingredient-qty">100ml</span><span class="ingredient-notes">35〜38℃。熱すぎるとイーストが死ぬ</span></li>
-          <li><span class="ingredient-name">卵</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">常温に戻す</span></li>
-          <li><span class="ingredient-name">バター（無塩）</span><span class="ingredient-qty">70g</span><span class="ingredient-notes">常温でクリーム状に戻す</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">70g</span></li>
-          <li><span class="ingredient-name">生イースト</span><span class="ingredient-qty">15g</span><span class="ingredient-notes">ドライイーストの場合は7g</span></li>
-          <li><span class="ingredient-name">蜂蜜</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">生地に甘みと艶を加える</span></li>
-          <li><span class="ingredient-name">オレンジの皮</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのオレンジを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">5g</span></li>
-          <li><span class="ingredient-name">水</span><span class="ingredient-qty">30ml</span><span class="ingredient-notes">グレーズシロップ用</span></li>
-          <li><span class="ingredient-name">砂糖（グレーズ用）</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">焼き上がりに塗るシロップ用</span></li>
-          <li><span class="ingredient-name">生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty">300ml</span><span class="ingredient-notes">使用直前まで冷蔵庫で冷やす</span></li>
-          <li><span class="ingredient-name">粉砂糖（クリーム用）</span><span class="ingredient-qty">20g</span></li>
+              <li data-ingredient-row="cb7427aa-1c62-49cb-a0ac-71a26a7eebfc"><span class="ingredient-name" data-ingredient-name>強力粉（マニトバ）</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">強力粉（タンパク質12%以上）推奨。ふんわり弾力のある生地に仕上がる</span><button type="button" class="substitution-trigger" data-substitution-trigger="cb7427aa-1c62-49cb-a0ac-71a26a7eebfc"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3e86bc4d-c015-423f-b1a8-3b8b825149b8"><span class="ingredient-name" data-ingredient-name>ぬるい牛乳（全乳）</span><span class="ingredient-qty" data-ingredient-qty>100ml</span><span class="ingredient-notes">35〜38℃。熱すぎるとイーストが死ぬ</span></li>
+          <li data-ingredient-row="81aa0f15-affe-4a5a-be41-ab34e99a5f5d"><span class="ingredient-name" data-ingredient-name>卵</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">常温に戻す</span></li>
+          <li data-ingredient-row="bc9cd49a-ddc7-4787-b64c-51e9f4f5ca5f"><span class="ingredient-name" data-ingredient-name>バター（無塩）</span><span class="ingredient-qty" data-ingredient-qty>70g</span><span class="ingredient-notes">常温でクリーム状に戻す</span></li>
+          <li data-ingredient-row="2da9d6a4-9502-4dc5-b2e7-5ec65ebb5273"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>70g</span></li>
+          <li data-ingredient-row="2ee49caf-71a2-4214-821b-2d7cc48008a2"><span class="ingredient-name" data-ingredient-name>生イースト</span><span class="ingredient-qty" data-ingredient-qty>15g</span><span class="ingredient-notes">ドライイーストの場合は7g</span><button type="button" class="substitution-trigger" data-substitution-trigger="2ee49caf-71a2-4214-821b-2d7cc48008a2"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="5fcc7afc-78f5-45f2-87ef-31a750e986fd"><span class="ingredient-name" data-ingredient-name>蜂蜜</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">生地に甘みと艶を加える</span></li>
+          <li data-ingredient-row="df1a4e6a-3295-43ca-afb2-3f0725faedfb"><span class="ingredient-name" data-ingredient-name>オレンジの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのオレンジを使用。白いワタを避けて表皮だけをすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="df1a4e6a-3295-43ca-afb2-3f0725faedfb"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="72ca2d9d-6261-46fe-9cb8-81131a3be05c"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span></li>
+          <li data-ingredient-row="e0531ee9-63bf-496d-8080-ac3fbd8a8fbb"><span class="ingredient-name" data-ingredient-name>水</span><span class="ingredient-qty" data-ingredient-qty>30ml</span><span class="ingredient-notes">グレーズシロップ用</span></li>
+          <li data-ingredient-row="ae630340-c2e3-4674-a6e2-3c5a7898834f"><span class="ingredient-name" data-ingredient-name>砂糖（グレーズ用）</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">焼き上がりに塗るシロップ用</span></li>
+          <li data-ingredient-row="6b953952-fc4b-498f-8593-ae9cb8b21e9f"><span class="ingredient-name" data-ingredient-name>生クリーム（乳脂肪35%以上）</span><span class="ingredient-qty" data-ingredient-qty>300ml</span><span class="ingredient-notes">使用直前まで冷蔵庫で冷やす</span></li>
+          <li data-ingredient-row="b3f9a563-ad78-4cbe-a432-047d79cfc2e2"><span class="ingredient-name" data-ingredient-name>粉砂糖（クリーム用）</span><span class="ingredient-qty" data-ingredient-qty>20g</span></li>
               </ul>
             </section>
           </div>
@@ -379,6 +399,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"73ce5a16-6bce-4a5b-8d7b-164d69428b46","nameJa":"生クリームを挟んだマリトッツォ","baseServings":8,"minServings":6,"maxServings":20},"ingredients":[{"id":"cb7427aa-1c62-49cb-a0ac-71a26a7eebfc","nameOriginal":"Farina Manitoba","nameJa":"強力粉（マニトバ）","nameEn":"Strong bread flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"強力粉（タンパク質12%以上）推奨。ふんわり弾力のある生地に仕上がる","substitutionOptions":[{"id":"63fd110a-b90e-49c0-9cd0-252247771c7b","standardIngredientId":"cb7427aa-1c62-49cb-a0ac-71a26a7eebfc","nameJa":"薄力粉＋強力粉（半々）","nameEn":"All-purpose + bread flour (50/50)","authenticityImpact":-5,"flavorImpact":"生地がやや柔らかくなるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3e86bc4d-c015-423f-b1a8-3b8b825149b8","nameOriginal":"Latte intero tiepido","nameJa":"ぬるい牛乳（全乳）","nameEn":"Warm whole milk","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"35〜38℃。熱すぎるとイーストが死ぬ","substitutionOptions":[]},{"id":"81aa0f15-affe-4a5a-be41-ab34e99a5f5d","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"常温に戻す","substitutionOptions":[]},{"id":"bc9cd49a-ddc7-4787-b64c-51e9f4f5ca5f","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":70,"unit":"g","role":"essential","scalingBehavior":null,"notes":"常温でクリーム状に戻す","substitutionOptions":[]},{"id":"2da9d6a4-9502-4dc5-b2e7-5ec65ebb5273","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":70,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2ee49caf-71a2-4214-821b-2d7cc48008a2","nameOriginal":"Lievito di birra fresco","nameJa":"生イースト","nameEn":"Fresh yeast","quantity":15,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ドライイーストの場合は7g","substitutionOptions":[{"id":"30a99209-7678-4f4f-a34d-fa9dcd1300da","standardIngredientId":"2ee49caf-71a2-4214-821b-2d7cc48008a2","nameJa":"ドライイースト","nameEn":"Dry active yeast","authenticityImpact":-5,"flavorImpact":"発酵香がやや弱まる","textureImpact":null,"procedureChanges":["ドライイーストは7g使用。同様にぬるい牛乳で5分溶かしてから使う"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"action":"update","nameJa":"ドライイースト","quantity":7,"targetNameJa":"生イースト"}],"stepPatches":[{"action":"replace","stepNumber":1,"actionItems":["ドライイースト7gをぬるい牛乳100mlに溶かし、砂糖小さじ1を加えて5分置く。","オレンジの表皮だけをすりおろす。","強力粉300gと砂糖70gをボウルに合わせる。","イースト液・卵2個・蜂蜜20g・すりおろしたオレンジの皮を加えてこね始める。"],"instruction":"ドライイースト7gをぬるい牛乳100ml（35〜38℃）に溶かし、砂糖小さじ1（分量内）を加えて5分置く（表面に泡立ちが出ればOK）。オレンジは白いワタを避け、表皮だけをすりおろす。強力粉300gと砂糖70gをボウルに合わせ、イースト液・卵2個・蜂蜜20g・すりおろしたオレンジの皮を加えてこね始める。","changeReason":"ドライイーストに合わせて分量を調整（7g）"}]}]},{"id":"5fcc7afc-78f5-45f2-87ef-31a750e986fd","nameOriginal":"Miele","nameJa":"蜂蜜","nameEn":"Honey","quantity":20,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"生地に甘みと艶を加える","substitutionOptions":[]},{"id":"df1a4e6a-3295-43ca-afb2-3f0725faedfb","nameOriginal":"Scorza d'arancia","nameJa":"オレンジの皮","nameEn":"Grated orange peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのオレンジを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[{"id":"cf424c2e-21a4-4a48-af21-78512a6cfc46","standardIngredientId":"df1a4e6a-3295-43ca-afb2-3f0725faedfb","nameJa":"レモンの皮","nameEn":"Grated lemon peel","authenticityImpact":-5,"flavorImpact":"さっぱりした香りになるがローマ伝統の香りから変わる","textureImpact":null,"procedureChanges":["国産・ノーワックスのレモンを使い、白いワタを避けて表皮だけをすりおろす"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"イーストを活性化し生地を始める","action":"replace","stepNumber":1,"actionItems":["生イースト15gをぬるい牛乳100mlに溶かし、砂糖小さじ1を加えて5分置く。","レモンの表皮だけをすりおろす。","強力粉300gと砂糖70gをボウルに合わせる。","イースト液・卵2個・蜂蜜20g・すりおろしたレモンの皮を加えてこね始める。"],"instruction":"生イースト15gをぬるい牛乳100ml（35〜38℃）に溶かし、砂糖小さじ1（分量内）を加えて5分置く（表面に泡立ちが出ればOK）。レモンは国産・ノーワックスのものを使い、白いワタを避けて表皮だけをすりおろす。強力粉300gと砂糖70gをボウルに合わせ、イースト液・卵2個・蜂蜜20g・すりおろしたレモンの皮を加えてこね始める。","cautionItems":["牛乳が熱すぎるとイーストが死ぬ。35〜38℃に保つ。レモンは白いワタを入れない。"],"changeReason":"置換後の柑橘に合わせ、下処理と生地に加える皮をレモンに変更する","completionCriteria":["イースト液の表面に泡立ちが出れば活性化完了。生地がひとまとまりになれば次へ。"]}]}]},{"id":"72ca2d9d-6261-46fe-9cb8-81131a3be05c","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e0531ee9-63bf-496d-8080-ac3fbd8a8fbb","nameOriginal":"Acqua","nameJa":"水","nameEn":"Water","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"グレーズシロップ用","substitutionOptions":[]},{"id":"ae630340-c2e3-4674-a6e2-3c5a7898834f","nameOriginal":"Zucchero (per glassa)","nameJa":"砂糖（グレーズ用）","nameEn":"Sugar (for glaze)","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":"焼き上がりに塗るシロップ用","substitutionOptions":[]},{"id":"6b953952-fc4b-498f-8593-ae9cb8b21e9f","nameOriginal":"Panna fresca da montare","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy whipping cream","quantity":300,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"使用直前まで冷蔵庫で冷やす","substitutionOptions":[]},{"id":"b3f9a563-ad78-4cbe-a432-047d79cfc2e2","nameOriginal":"Zucchero a velo (per panna)","nameJa":"粉砂糖（クリーム用）","nameEn":"Powdered sugar (for cream)","quantity":20,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"生イースト15gをぬるい牛乳100ml（35〜38℃）に溶かし、砂糖小さじ1（分量内）を加えて5分置く（表面に泡立ちが出ればOK）。オレンジは白いワタを避け、表皮だけをすりおろす。強力粉300gと砂糖70gをボウルに合わせ、イースト液・卵2個・蜂蜜20g・すりおろしたオレンジの皮を加えてこね始める。","title":"イーストを活性化し生地を始める","actionItems":["生イースト15gをぬるい牛乳100mlに溶かし、砂糖小さじ1を加えて5分置く。","オレンジの表皮だけをすりおろす。","強力粉300gと砂糖70gをボウルに合わせる。","イースト液・卵2個・蜂蜜20g・すりおろしたオレンジの皮を加えてこね始める。"],"parallelItems":[],"completionCriteria":["イースト液の表面に泡立ちが出れば活性化完了。生地がひとまとまりになれば次へ。"],"cautionItems":["牛乳が熱すぎるとイーストが死ぬ。35〜38℃に保つ。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"生地がひとまとまりになったら、常温のバター70gを3〜4回に分けて加え、その都度よくこねる。塩5gを加えてさらに8〜10分こね、生地を引き伸ばすと薄い膜が張る状態（グルテン形成の目安）になるまで仕上げる。","title":"バターを加えてこねる","actionItems":["常温のバター70gを3〜4回に分けて加え、その都度よくこねる。","塩5gを加えてさらに8〜10分こねる。"],"parallelItems":[],"completionCriteria":["生地を引き伸ばすと薄い膜が張る状態になれば次へ。"],"cautionItems":["バターを一度に全量加えない。少しずつ加えてグルテンを育てる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地をボウルに入れてラップをかけ、28〜30℃の暖かい場所で2倍になるまで発酵させる（約90分）。","title":"一次発酵させる","actionItems":["生地をボウルに入れてラップをかける。","28〜30℃の暖かい場所で約90分発酵させる。"],"parallelItems":[],"completionCriteria":["約90分。2倍に膨らんだら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":90,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"・生地を打ち粉をした台に出してやさしくガスを抜く\n・8等分（1個約80g）にして丸め、表面を張らせるように手の下で転がす\n・丸みを残した小ぶりなパン形に整え、必要なら軽く転がして少しだけ楕円にする\n・オーブンシートを敷いた天板に間隔をあけて並べ、ラップをかけて温かい場所に置く","title":"分割・成形する","actionItems":["打ち粉をした台に出してやさしくガスを抜く。","8等分（1個約80g）にして丸め、表面を張らせる。","丸みを残した小ぶりなパン形に整え、必要なら少しだけ楕円にする。","オーブンシートを敷いた天板に間隔をあけて並べ、ラップをかける。"],"parallelItems":[],"completionCriteria":["表面がなめらかに張り、丸みのある均一な形に整えば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"2次発酵：生地が1.5倍程度に膨らむまで45分発酵させる（この間にオーブンを190℃に予熱する）。","title":"二次発酵させる","actionItems":["45分間二次発酵させる。","（この間に）オーブンを190℃に予熱する。"],"parallelItems":["二次発酵中にオーブンを190℃に予熱する。"],"completionCriteria":["約45分。生地が1.5倍程度に膨らんだら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"小鍋に水30mlと砂糖20gを入れて中火で砂糖を溶かしグレーズを作る。190℃で12〜14分焼く。表面がきつね色になったら取り出し、熱いうちにグレーズを刷毛で全体に塗る。網の上で完全に冷ます。","title":"焼いてグレーズを塗る","actionItems":["小鍋に水30mlと砂糖20gを入れて中火でグレーズを作る。","190℃で12〜14分焼く。","熱いうちにグレーズを刷毛で全体に塗る。","網の上で完全に冷ます。"],"parallelItems":[],"completionCriteria":["表面がきつね色になれば焼き上がり。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"冷えたボウルに生クリーム300mlと粉砂糖20gを入れ、ハンドミキサーでミディアムピークまで泡立てる。すくうと形を保ち、角の先だけが軽くおじぎする状態で止める。","title":"生クリームを泡立てる","actionItems":["冷えたボウルに生クリーム300mlと粉砂糖20gを入れる。","ハンドミキサーでミディアムピークまで泡立てる。"],"parallelItems":[],"completionCriteria":["すくったクリームが流れずに形を保ち、角の先だけが軽く折れ曲がれば次へ。"],"cautionItems":["泡立てすぎると分離しやすい。ぼそつく前で止める。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"・完全に冷めたマリトッツォの上面中央から深く切り込みを入れる（底まで切らず、左右が開く程度に残す）\n・ホイップクリームを切り口いっぱいにたっぷり詰める\n・パレットナイフでパンの上面に沿ってクリームを平らにならし、白いクリーム面を大きく見せる\n・提供直前に仕上げ、作ったらすぐ食べる","title":"切り込みを入れてクリームを詰める","actionItems":["完全に冷めたマリトッツォの上面中央から深く切り込みを入れる。","ホイップクリームを切り口いっぱいにたっぷり詰める。","パレットナイフでパンの上面に沿ってクリームを平らにならす。","提供直前に仕上げる。"],"parallelItems":[],"completionCriteria":["切り口いっぱいにクリームが入り、表面に白いクリーム面が大きく見えれば完成。"],"cautionItems":["時間が経つと生地がクリームの水分を吸う。詰めたらすぐ提供する。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

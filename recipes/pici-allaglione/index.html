@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>32分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>25分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・シエーナ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">デュラム小麦粉（セモリナ粉）</span><span class="ingredient-qty">400g</span><span class="ingredient-notes">ピーチの生地用。水と塩のみで打つ（卵なし）</span></li>
-          <li><span class="ingredient-name">アリオーネ（大粒にんにく）</span><span class="ingredient-qty">6片</span><span class="ingredient-notes">薄切り。通常のにんにくより辛みが弱く甘い</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">600g</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">唐辛子（乾燥）</span><span class="ingredient-qty">1本</span></li>
+              <li data-ingredient-row="5f583fe8-5223-462f-9a47-5791204dbd63"><span class="ingredient-name" data-ingredient-name>デュラム小麦粉（セモリナ粉）</span><span class="ingredient-qty" data-ingredient-qty>400g</span><span class="ingredient-notes">ピーチの生地用。水と塩のみで打つ（卵なし）</span></li>
+          <li data-ingredient-row="460f6f15-5c44-4f25-a1cd-8a12dc0938ca"><span class="ingredient-name" data-ingredient-name>アリオーネ（大粒にんにく）</span><span class="ingredient-qty" data-ingredient-qty>6片</span><span class="ingredient-notes">薄切り。通常のにんにくより辛みが弱く甘い</span><button type="button" class="substitution-trigger" data-substitution-trigger="460f6f15-5c44-4f25-a1cd-8a12dc0938ca"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="06ce7574-6fb4-490b-a949-3a7afee0dc16"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>600g</span></li>
+          <li data-ingredient-row="fb1d097c-79a1-46b2-a039-8b20ed7c2d79"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="ca6d6e53-7251-492f-8287-a5d79fb1dbda"><span class="ingredient-name" data-ingredient-name>唐辛子（乾燥）</span><span class="ingredient-qty" data-ingredient-qty>1本</span></li>
               </ul>
             </section>
           </div>
@@ -284,6 +304,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"86a6e85f-ba91-468c-b5fa-aa4a6dbb159a","nameJa":"にんにくトマトソースのピチ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"5f583fe8-5223-462f-9a47-5791204dbd63","nameOriginal":"Farina di grano duro","nameJa":"デュラム小麦粉（セモリナ粉）","nameEn":"Durum wheat semolina","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"ピーチの生地用。水と塩のみで打つ（卵なし）","substitutionOptions":[]},{"id":"460f6f15-5c44-4f25-a1cd-8a12dc0938ca","nameOriginal":"Aglione della Val di Chiana","nameJa":"アリオーネ（大粒にんにく）","nameEn":"Aglione garlic (large-clove Tuscan garlic)","quantity":6,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り。通常のにんにくより辛みが弱く甘い","substitutionOptions":[{"id":"31c3a5b1-57a7-492a-b557-b4ce64937cb8","standardIngredientId":"460f6f15-5c44-4f25-a1cd-8a12dc0938ca","nameJa":"通常のにんにく（少なめ）","nameEn":"Regular garlic (reduced amount)","authenticityImpact":-10,"flavorImpact":"辛みが強くなりすぎるため3片に減らす","textureImpact":null,"procedureChanges":["量を半分に減らす"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"片","notes":"薄切り。辛みが強いため3片に減らす","action":"update","nameEn":"Regular garlic","nameJa":"通常のにんにく","quantity":3,"targetNameJa":"アリオーネ（大粒にんにく）"}],"stepPatches":[{"title":"にんにくを炒める","action":"replace","stepNumber":3,"actionItems":["通常のにんにく3片を薄切りにする。","フライパンにオリーブオイル80mlを入れ、にんにくを弱火で6〜7分炒める。"],"instruction":"（ソースを作る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。通常のにんにく3片を薄切りにする。フライパンにオリーブオイル80mlを入れ、にんにく3片（薄切り）を弱火でじっくり炒める（焦がさない）。香りが立ち、薄く透明感が出るまで6〜7分かける。","cautionItems":["通常のにんにくはアリオーネより辛みが強く焦げやすい。量を3片に減らし、色づけすぎない。"],"changeReason":"通常のにんにくはアリオーネより辛みが強いため、量を半分に減らす","parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["にんにくの香りが立ち、薄く透明感が出たら次へ。"]}]}]},{"id":"06ce7574-6fb4-490b-a949-3a7afee0dc16","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Peeled canned tomatoes","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fb1d097c-79a1-46b2-a039-8b20ed7c2d79","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ca6d6e53-7251-492f-8287-a5d79fb1dbda","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ピーチの生地を作る：セモリナ粉400g・塩小さじ1・水200ml程度をこねて均一な生地を作る。ラップに包んで常温で30分休ませる。","title":"ピーチの生地を休ませる","actionItems":["セモリナ粉400g・塩小さじ1・水200ml程度をこねて均一な生地を作る。","ラップに包んで常温で30分休ませる。"],"parallelItems":[],"completionCriteria":["生地が均一でなめらかになり、30分休んだ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"生地から直径5〜8mmの太い麺を、両手のひらで転がして成形する。全量を麺状にする。","title":"ピーチを成形する","actionItems":["生地から小さな塊を取り両手のひらで転がして直径5〜8mmの太い麺状にする。","全量を麺状にする。"],"parallelItems":[],"completionCriteria":["全ての生地が直径5〜8mmの太い麺状になった。"],"cautionItems":["均一な太さにすると茹でが均等になる。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"（ソースを作る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。アリオーネ6片を薄切りにする。フライパンにオリーブオイル80mlを入れ、アリオーネ6片（薄切り）を弱火でじっくり炒める（焦がさない）。透明になり甘みが出るまで10分かける。","title":"アリオーネを炒める","actionItems":["アリオーネ6片を薄切りにする。","フライパンにオリーブオイル80mlを入れアリオーネを弱火でじっくり10分炒める。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["アリオーネが透明になり甘みが出た。"],"cautionItems":["焦がすと苦くなる。弱火で10分かけてゆっくり炒めること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"唐辛子1本を加えてからトマト600gを手でつぶしながら加え、中火で15分煮詰める。アリオーネをへらでさらに押しつぶしてソースに溶かす。","title":"トマトソースを煮詰める","actionItems":["唐辛子1本を加える。","トマト600gを手でつぶしながら加えて中火で15分煮詰める。","アリオーネをへらでさらに押しつぶしてソースに溶かす。"],"parallelItems":[],"completionCriteria":["ソースが煮詰まりアリオーネが溶け込んだ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ピーチを沸かしておいた塩湯に入れ、10〜12分茹でる。ソースと和えて完成（パルミジャーノは本場では不使用）。","title":"ピーチを茹でてソースと合わせる","actionItems":["ピーチを沸かしておいた塩湯に入れ10〜12分茹でる。","ソースと和えて完成。"],"parallelItems":[],"completionCriteria":["ピーチが茹で上がりソースと和えられた。"],"cautionItems":["パルミジャーノは使わないのが伝統。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

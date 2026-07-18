@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>10分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ヴェネツィア</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,12 +93,19 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">ビゴリ（太い全粒粉パスタ）</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">アンチョビ（塩漬け）</span><span class="ingredient-qty">8枚</span><span class="ingredient-notes">水洗いして塩を落とし、骨を取る</span></li>
-          <li><span class="ingredient-name">白玉ねぎ</span><span class="ingredient-qty">3個</span><span class="ingredient-notes">薄切り</span></li>
-          <li><span class="ingredient-name">オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
+              <li data-ingredient-row="1c44f871-e89b-4154-8b67-ddbf69801409"><span class="ingredient-name" data-ingredient-name>ビゴリ（太い全粒粉パスタ）</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="1c44f871-e89b-4154-8b67-ddbf69801409"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="aabbb710-f2f9-40f8-8a37-cc61cc5d56b0"><span class="ingredient-name" data-ingredient-name>アンチョビ（塩漬け）</span><span class="ingredient-qty" data-ingredient-qty>8枚</span><span class="ingredient-notes">水洗いして塩を落とし、骨を取る</span><button type="button" class="substitution-trigger" data-substitution-trigger="aabbb710-f2f9-40f8-8a37-cc61cc5d56b0"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="0b2f8c6e-8543-4ba6-b4fd-b11285ba8f89"><span class="ingredient-name" data-ingredient-name>白玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>3個</span><span class="ingredient-notes">薄切り</span><button type="button" class="substitution-trigger" data-substitution-trigger="0b2f8c6e-8543-4ba6-b4fd-b11285ba8f89"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="599f5e8b-eb0a-4fbd-ac0f-31c5bb7aa6be"><span class="ingredient-name" data-ingredient-name>オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
               </ul>
             </section>
           </div>
@@ -237,6 +257,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"b9ed7bb4-ead1-40df-b92a-a722d65e985c","nameJa":"アンチョビソースのビゴリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"1c44f871-e89b-4154-8b67-ddbf69801409","nameOriginal":"Bigoli","nameJa":"ビゴリ（太い全粒粉パスタ）","nameEn":"Bigoli","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"65930c50-18c4-4e3d-bc96-dd2b602f90ff","standardIngredientId":"1c44f871-e89b-4154-8b67-ddbf69801409","nameJa":"スパゲッティ・グロッソ","nameEn":"Thick spaghetti (spaghettoni)","authenticityImpact":-10,"flavorImpact":"食感は近いが全粒粉の風味が失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"aabbb710-f2f9-40f8-8a37-cc61cc5d56b0","nameOriginal":"Acciughe sotto sale","nameJa":"アンチョビ（塩漬け）","nameEn":"Salt-cured anchovies","quantity":8,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"水洗いして塩を落とし、骨を取る","substitutionOptions":[{"id":"3eb141fe-3765-4b6f-9a08-411bbec81426","standardIngredientId":"aabbb710-f2f9-40f8-8a37-cc61cc5d56b0","nameJa":"アンチョビ缶（オイル漬け）","nameEn":"Canned anchovies in oil","authenticityImpact":-5,"flavorImpact":"塩気が弱まるが使いやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"0b2f8c6e-8543-4ba6-b4fd-b11285ba8f89","nameOriginal":"Cipolla bianca","nameJa":"白玉ねぎ","nameEn":"White onion","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[{"id":"3838e60b-c349-419e-bfd9-14b04ce38f72","standardIngredientId":"0b2f8c6e-8543-4ba6-b4fd-b11285ba8f89","nameJa":"玉ねぎ","nameEn":"Yellow onion","authenticityImpact":-5,"flavorImpact":"辛みがやや強いが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"599f5e8b-eb0a-4fbd-ac0f-31c5bb7aa6be","nameOriginal":"Olio d'oliva","nameJa":"オリーブオイル","nameEn":"Olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・白玉ねぎを薄切りにする\n・アンチョビ（塩漬け）は水洗いして塩を落とし、骨を取り除いておく","title":"材料を準備する","actionItems":["白玉ねぎを薄切りにする","アンチョビ（塩漬け）は水洗いして塩を落とし、骨を取り除いておく"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"オリーブオイルで白玉ねぎを弱火でゆっくり炒める。焦がさずにとろとろになるまで20〜25分かける。\n・（炒め始めて10分経ったら）大鍋に湯を沸かし始める（湯1Lに対して塩10g）","title":"香味を炒める","actionItems":["オリーブオイルで白玉ねぎを弱火でゆっくり炒める。","（炒め始めて10分経ったら）大鍋に湯を沸かし始める（湯1Lに対して塩10g）"],"parallelItems":[],"completionCriteria":[],"cautionItems":["焦がさずにとろとろになるまで20〜25分かける。"],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"玉ねぎがとろとろになったらアンチョビを加え、木べらで溶かしながら混ぜる。アンチョビが完全に溶けてソースがなめらかになったら次へ。","title":"仕上げにまとめる","actionItems":["玉ねぎがとろとろになったらアンチョビを加え、木べらで溶かしながら混ぜる。"],"parallelItems":[],"completionCriteria":["アンチョビが完全に溶けてソースがなめらかになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ビゴリを沸かしておいた塩湯で硬めに茹でる。\n・ソースと和える\n・茹で汁で濃度を調整する","title":"茹でる","actionItems":["ビゴリを沸かしておいた塩湯で硬めに茹でる。","ソースと和える","茹で汁で濃度を調整する"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>25分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>1時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ミラノ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,20 +93,27 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">カルナローリ米</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">仕上げに加えて10分煮る</span></li>
-          <li><span class="ingredient-name">ラード（豚脂）</span><span class="ingredient-qty">50g</span><span class="ingredient-notes">みじん切り。ソフリットに使う</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1個</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">2茎</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">にんじん</span><span class="ingredient-qty">2本</span><span class="ingredient-notes">1cm角に切る</span></li>
-          <li><span class="ingredient-name">じゃがいも</span><span class="ingredient-qty">2個</span><span class="ingredient-notes">1.5cm角に切る</span></li>
-          <li><span class="ingredient-name">ズッキーニ</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">1.5cm角に切る</span></li>
-          <li><span class="ingredient-name">ボルロッティ豆（茹でたもの）</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">パルミジャーノの皮</span><span class="ingredient-qty">1片</span><span class="ingredient-notes">スープに一緒に煮込んで旨みを出す</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">30ml</span><span class="ingredient-notes">仕上げに回しかける</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1少々</span></li>
+              <li data-ingredient-row="b10a4a21-edbe-41fa-b3ea-513552f57dba"><span class="ingredient-name" data-ingredient-name>カルナローリ米</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">仕上げに加えて10分煮る</span><button type="button" class="substitution-trigger" data-substitution-trigger="b10a4a21-edbe-41fa-b3ea-513552f57dba"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="2241d2f2-0729-4c29-abbe-efad5a536ced"><span class="ingredient-name" data-ingredient-name>ラード（豚脂）</span><span class="ingredient-qty" data-ingredient-qty>50g</span><span class="ingredient-notes">みじん切り。ソフリットに使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="2241d2f2-0729-4c29-abbe-efad5a536ced"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="8619a7cf-2ea1-42aa-ba99-ecc838896dd9"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1個</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="9258c71e-42a1-45ab-b704-288ebf5b5d36"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>2茎</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="5f1560bd-43b6-44ef-8d6b-7eb53883043a"><span class="ingredient-name" data-ingredient-name>にんじん</span><span class="ingredient-qty" data-ingredient-qty>2本</span><span class="ingredient-notes">1cm角に切る</span></li>
+          <li data-ingredient-row="f7d45d96-860d-498d-a48c-d84744a1fd43"><span class="ingredient-name" data-ingredient-name>じゃがいも</span><span class="ingredient-qty" data-ingredient-qty>2個</span><span class="ingredient-notes">1.5cm角に切る</span></li>
+          <li data-ingredient-row="bbed179b-61ad-4985-aa4d-8f5e56b803a6"><span class="ingredient-name" data-ingredient-name>ズッキーニ</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">1.5cm角に切る</span></li>
+          <li data-ingredient-row="5bb92364-4b86-495d-999b-ed216f4124ca"><span class="ingredient-name" data-ingredient-name>ボルロッティ豆（茹でたもの）</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="32cc2e0d-7f76-47cf-a0ec-66b62394151b"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="d2fceca7-b5e5-4cfe-a49e-c7a2a2d76550"><span class="ingredient-name" data-ingredient-name>パルミジャーノの皮</span><span class="ingredient-qty" data-ingredient-qty>1片</span><span class="ingredient-notes">スープに一緒に煮込んで旨みを出す</span></li>
+          <li data-ingredient-row="18677282-d1c7-472d-9a3e-eebf7ec42394"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>30ml</span><span class="ingredient-notes">仕上げに回しかける</span></li>
+          <li data-ingredient-row="b0b7bc50-91b1-499d-9083-d33c4dcc740c"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1少々</span></li>
               </ul>
             </section>
           </div>
@@ -311,6 +331,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6fc062b1-ace3-48f8-b2a4-c3ae1d3df1c4","nameJa":"ミラノ風ミネストローネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"b10a4a21-edbe-41fa-b3ea-513552f57dba","nameOriginal":"Riso Carnaroli","nameJa":"カルナローリ米","nameEn":"Carnaroli rice","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"仕上げに加えて10分煮る","substitutionOptions":[{"id":"b1219a41-8e52-4e37-b60a-84ad84511d15","standardIngredientId":"b10a4a21-edbe-41fa-b3ea-513552f57dba","nameJa":"ショートパスタ（ディタリーニ）","nameEn":"Short pasta (ditalini)","authenticityImpact":-5,"flavorImpact":"南イタリアスタイルに近づくが同様に美味","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2241d2f2-0729-4c29-abbe-efad5a536ced","nameOriginal":"Lardo","nameJa":"ラード（豚脂）","nameEn":"Lardo (cured pork fat)","quantity":50,"unit":"g","role":"essential","scalingBehavior":null,"notes":"みじん切り。ソフリットに使う","substitutionOptions":[{"id":"62ee332a-1a03-4ae3-b987-2b3235cbdee1","standardIngredientId":"2241d2f2-0729-4c29-abbe-efad5a536ced","nameJa":"オリーブオイル","nameEn":"Olive oil","authenticityImpact":-10,"flavorImpact":"豚脂の深みが失われ、よりさっぱりする","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"8619a7cf-2ea1-42aa-ba99-ecc838896dd9","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"9258c71e-42a1-45ab-b704-288ebf5b5d36","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":2,"unit":"茎","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"5f1560bd-43b6-44ef-8d6b-7eb53883043a","nameOriginal":"Carote","nameJa":"にんじん","nameEn":"Carrots","quantity":2,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"1cm角に切る","substitutionOptions":[]},{"id":"f7d45d96-860d-498d-a48c-d84744a1fd43","nameOriginal":"Patate","nameJa":"じゃがいも","nameEn":"Potatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"1.5cm角に切る","substitutionOptions":[]},{"id":"bbed179b-61ad-4985-aa4d-8f5e56b803a6","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":1,"unit":"本","role":"essential","scalingBehavior":null,"notes":"1.5cm角に切る","substitutionOptions":[]},{"id":"5bb92364-4b86-495d-999b-ed216f4124ca","nameOriginal":"Fagioli borlotti","nameJa":"ボルロッティ豆（茹でたもの）","nameEn":"Borlotti beans","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"32cc2e0d-7f76-47cf-a0ec-66b62394151b","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":200,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d2fceca7-b5e5-4cfe-a49e-c7a2a2d76550","nameOriginal":"Parmigiano Reggiano (crosta)","nameJa":"パルミジャーノの皮","nameEn":"Parmigiano rind","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"スープに一緒に煮込んで旨みを出す","substitutionOptions":[]},{"id":"18677282-d1c7-472d-9a3e-eebf7ec42394","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"仕上げに回しかける","substitutionOptions":[]},{"id":"b0b7bc50-91b1-499d-9083-d33c4dcc740c","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ラードを大きな鍋で溶かし、玉ねぎ・セロリをみじん切りにして中火で8分炒める。","title":"ソフリットを炒める","actionItems":["ラード50gを大きな鍋で溶かす。","玉ねぎ1個・セロリ2茎をみじん切りにする。","中火で8分炒める。"],"parallelItems":[],"completionCriteria":["玉ねぎが透明になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"にんじんを1cm角、じゃがいもを1.5cm角、ズッキーニを1.5cm角に切ってから鍋に加え、3分炒める。","title":"根菜を加えて炒める","actionItems":["にんじん2本を1cm角に切る。","じゃがいも2個を1.5cm角に切る。","ズッキーニ1本を1.5cm角に切る。","鍋に加えて3分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ホールトマトを手でつぶしながら加え、パルミジャーノの皮と水1.5Lを加える。","title":"トマトと水を加える","actionItems":["ホールトマト200gを手でつぶしながら加える。","パルミジャーノの皮1片を加える。","水1.5Lを加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"沸騰したら弱火にして蓋をし、30分煮込む。","title":"野菜スープを煮込む","actionItems":["沸騰したら弱火にして蓋をする。","30分煮込む。"],"parallelItems":[],"completionCriteria":["野菜が柔らかくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"ボルロッティ豆を加えてさらに10分煮る。","title":"豆を加える","actionItems":["ボルロッティ豆200gを加える。","さらに10分煮る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"米を加えて10〜12分、米がやや硬めに仕上がるまで煮る。パルミジャーノの皮を取り出す。","title":"米を加えて仕上げる","actionItems":["カルナローリ米80gを加える。","10〜12分煮る。","パルミジャーノの皮を取り出す。"],"parallelItems":[],"completionCriteria":["米がやや硬め（アルデンテ）に仕上がれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"塩で味を調え、鍋全体にオリーブオイルを回しかけて仕上げる。","title":"味を調えて供する","actionItems":["塩で味を調える。","オリーブオイル30mlを全体に回しかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

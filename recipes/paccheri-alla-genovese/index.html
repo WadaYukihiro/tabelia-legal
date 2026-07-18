@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★★★☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>3時間20分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>南イタリア・ナポリ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">パッケリ</span><span class="ingredient-qty">320g</span></li>
-          <li><span class="ingredient-name">玉ねぎ</span><span class="ingredient-qty">1000g</span><span class="ingredient-notes">薄切り（約2mm厚）</span></li>
-          <li><span class="ingredient-name">牛バラ肉（または肩肉）</span><span class="ingredient-qty">600g</span><span class="ingredient-notes">大きなブロックのまま使う。小さく切らない</span></li>
-          <li><span class="ingredient-name">ラルド（豚の背脂）</span><span class="ingredient-qty">80g</span><span class="ingredient-notes">細かく刻んでから鍋で溶かす</span></li>
-          <li><span class="ingredient-name">白ワイン</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">60g</span><span class="ingredient-notes">仕上げにすりおろす</span></li>
-          <li><span class="ingredient-name">粗塩</span><span class="ingredient-qty">5g</span><span class="ingredient-notes">パスタの茹で湯に10g/L</span></li>
+              <li data-ingredient-row="e7b1381c-d981-4f62-9e2c-088ab0074789"><span class="ingredient-name" data-ingredient-name>パッケリ</span><span class="ingredient-qty" data-ingredient-qty>320g</span><button type="button" class="substitution-trigger" data-substitution-trigger="e7b1381c-d981-4f62-9e2c-088ab0074789"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4569b40f-2ae5-4a50-be5a-a199b6492c19"><span class="ingredient-name" data-ingredient-name>玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>1000g</span><span class="ingredient-notes">薄切り（約2mm厚）</span></li>
+          <li data-ingredient-row="46e98f77-f02f-4f88-be99-5194626fcd73"><span class="ingredient-name" data-ingredient-name>牛バラ肉（または肩肉）</span><span class="ingredient-qty" data-ingredient-qty>600g</span><span class="ingredient-notes">大きなブロックのまま使う。小さく切らない</span><button type="button" class="substitution-trigger" data-substitution-trigger="46e98f77-f02f-4f88-be99-5194626fcd73"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="68d764ba-e6d8-4ead-b91f-dc590ae374fa"><span class="ingredient-name" data-ingredient-name>ラルド（豚の背脂）</span><span class="ingredient-qty" data-ingredient-qty>80g</span><span class="ingredient-notes">細かく刻んでから鍋で溶かす</span><button type="button" class="substitution-trigger" data-substitution-trigger="68d764ba-e6d8-4ead-b91f-dc590ae374fa"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="116600c1-a35c-4af1-973a-08189154b7c2"><span class="ingredient-name" data-ingredient-name>白ワイン</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="d92c01ea-0fa1-4169-9e9d-1710abc40e25"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>60g</span><span class="ingredient-notes">仕上げにすりおろす</span><button type="button" class="substitution-trigger" data-substitution-trigger="d92c01ea-0fa1-4169-9e9d-1710abc40e25"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="e1f235db-ef3b-4fb0-a564-61511a904a21"><span class="ingredient-name" data-ingredient-name>粗塩</span><span class="ingredient-qty" data-ingredient-qty>5g</span><span class="ingredient-notes">パスタの茹で湯に10g/L</span></li>
               </ul>
             </section>
           </div>
@@ -310,6 +330,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6b059eb3-44c7-4b4a-96df-4d9282f15629","nameJa":"ナポリ風ジェノヴェーゼのパッケリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"e7b1381c-d981-4f62-9e2c-088ab0074789","nameOriginal":"Paccheri","nameJa":"パッケリ","nameEn":"Paccheri","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"82e423a1-af31-471d-887e-2255be4e5ca5","standardIngredientId":"e7b1381c-d981-4f62-9e2c-088ab0074789","nameJa":"リガトーニ","nameEn":"Rigatoni","authenticityImpact":-5,"flavorImpact":"管状パスタでソースの絡みは近い。チューブ径が小さい分、ソースが管内に入りにくい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"4569b40f-2ae5-4a50-be5a-a199b6492c19","nameOriginal":"Cipolle","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1000,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄切り（約2mm厚）","substitutionOptions":[]},{"id":"46e98f77-f02f-4f88-be99-5194626fcd73","nameOriginal":"Manzo (collo o biancostato)","nameJa":"牛バラ肉（または肩肉）","nameEn":"Beef chuck or short rib","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"大きなブロックのまま使う。小さく切らない","substitutionOptions":[{"id":"a881949f-58ac-4a20-8e87-768b74882ebf","standardIngredientId":"46e98f77-f02f-4f88-be99-5194626fcd73","nameJa":"豚肩肉","nameEn":"Pork shoulder","authenticityImpact":-10,"flavorImpact":"牛肉特有のコクは薄れるが、玉ねぎとの相性は保たれる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"68d764ba-e6d8-4ead-b91f-dc590ae374fa","nameOriginal":"Lardo","nameJa":"ラルド（豚の背脂）","nameEn":"Lardo (cured pork fatback)","quantity":80,"unit":"g","role":"technique","scalingBehavior":null,"notes":"細かく刻んでから鍋で溶かす","substitutionOptions":[{"id":"bb8529e2-818e-4057-a096-61ff54272a34","standardIngredientId":"68d764ba-e6d8-4ead-b91f-dc590ae374fa","nameJa":"オリーブオイル","nameEn":"Extra virgin olive oil","authenticityImpact":-10,"flavorImpact":"豚脂特有の甘みとコクが失われる。ソースの口当たりが軽くなる","textureImpact":null,"procedureChanges":["大さじ3に置き換える"],"affectedStepNumbers":[1,2],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"ml","notes":"大さじ3。鍋に入れて温め、玉ねぎを炒める","action":"update","nameEn":"Extra virgin olive oil","nameJa":"オリーブオイル","quantity":45,"targetNameJa":"ラルド（豚の背脂）"}],"stepPatches":[{"action":"replace","stepNumber":1,"instruction":"厚手の鍋（直径24cm以上）にオリーブオイル45ml（大さじ3）を入れ、弱めの中火で1分温める。","changeReason":"ラルドを溶かす工程を、オリーブオイルを温める工程に置き換える"},{"action":"replace","stepNumber":2,"instruction":"（オリーブオイルを温めている間に）玉ねぎ1000gを約2mm厚の薄切りにする。オイルが温まったら玉ねぎを全量加える。塩小さじ1/2を振り、木べらで軽く混ぜる。","changeReason":"玉ねぎを加える基準を、ラルドの溶解ではなくオイルが温まった状態に変える"}]}]},{"id":"116600c1-a35c-4af1-973a-08189154b7c2","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d92c01ea-0fa1-4169-9e9d-1710abc40e25","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"仕上げにすりおろす","substitutionOptions":[{"id":"6aa85709-6aa2-40e3-802c-25a0752961bf","standardIngredientId":"d92c01ea-0fa1-4169-9e9d-1710abc40e25","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-5,"flavorImpact":"塩気が強めになるが、南イタリア的な風味として成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e1f235db-ef3b-4fb0-a564-61511a904a21","nameOriginal":"Sale grosso","nameJa":"粗塩","nameEn":"Coarse salt","quantity":5,"unit":"g","role":"technique","scalingBehavior":null,"notes":"パスタの茹で湯に10g/L","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"厚手の鍋（直径24cm以上）にラルド80gを細かく刻んで入れ、弱火で5〜6分かけて完全に溶かす。","title":"材料を準備する","actionItems":["厚手の鍋（直径24cm以上）にラルド80gを細かく刻んで入れ、弱火で5〜6分かけて完全に溶かす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"（ラルドを溶かしている間に）玉ねぎ1000gを約2mm厚の薄切りにする。ラルドが完全に溶けたら玉ねぎを全量加える。塩小さじ1/2を振り、木べらで軽く混ぜる。","title":"材料を準備する","actionItems":["ラルドが完全に溶けたら玉ねぎを全量加える。","塩小さじ1/2を振り、木べらで軽く混ぜる。"],"parallelItems":["（ラルドを溶かしている間に）玉ねぎ1000gを約2mm厚の薄切りにする。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"蓋をして弱火のまま30分蒸らす。玉ねぎが透明になり、かさが大幅に減るまで待つ。水分が少なすぎる場合は水50mlを足す。","title":"火入れを進める","actionItems":["蓋をして弱火のまま30分蒸らす。","水分が少なすぎる場合は水50mlを足す。"],"parallelItems":[],"completionCriteria":["玉ねぎが透明になり、かさが大幅に減るまで待つ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"（ラルドと玉ねぎを蒸らしている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。牛バラ肉600g（ブロックのまま）を玉ねぎの中央に埋め込む。白ワイン150mlを加えて蓋をし、弱火で90分煮込む。30分ごとに様子を確認し、水分が少ない場合は水50mlを補う。","title":"湯を沸かす","actionItems":["牛バラ肉600g（ブロックのまま）を玉ねぎの中央に埋め込む。","白ワイン150mlを加えて蓋をし、弱火で90分煮込む。","30分ごとに様子を確認し、水分が少ない場合は水50mlを補う。"],"parallelItems":["（ラルドと玉ねぎを蒸らしている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":90,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"牛肉を鍋から取り出し、フォーク2本を使って繊維に沿ってほぐす。","title":"材料を準備する","actionItems":["牛肉を鍋から取り出し、フォーク2本を使って繊維に沿ってほぐす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"鍋の玉ねぎが飴色〜茶褐色のペースト状になっているか確認する。水分が多い場合は蓋を開けて中火で5〜10分加熱して飛ばす。ほぐした牛肉を鍋に戻し、塩で味を調えて火を止める。","title":"ソースを作る","actionItems":["鍋の玉ねぎが飴色〜茶褐色のペースト状になっているか確認する。","水分が多い場合は蓋を開けて中火で5〜10分加熱して飛ばす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["ほぐした牛肉を鍋に戻し、塩で味を調えて火を止める。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"パッケリ320gを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁200mlを取り置く","title":"茹でる","actionItems":["パッケリ320gを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁200mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"ソースを中火で温め直し、アルデンテのパッケリを加える。茹で汁を大さじ1ずつ加えながら2分間ソースと絡め、パッケリ全体に均一に纏わせる。","title":"ソースを作る","actionItems":["ソースを中火で温め直し、アルデンテのパッケリを加える。","茹で汁を大さじ1ずつ加えながら2分間ソースと絡め、パッケリ全体に均一に纏わせる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"皿に盛り、すりおろしたパルミジャーノ・レッジャーノ約15g（人数分）をかけて提供する。","title":"材料を準備する","actionItems":["皿に盛り、すりおろしたパルミジャーノ・レッジャーノ約15g（人数分）をかけて提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

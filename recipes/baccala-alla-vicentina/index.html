@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>30分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>4時間</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>72時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>北イタリア・ヴィチェンツァ</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,15 +94,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">バッカラ（塩干し鱈／3日間水戻し済み）</span><span class="ingredient-qty">800g</span><span class="ingredient-notes">3日間冷水に浸け、1日2回水を替える。皮付きのまま使う</span></li>
-          <li><span class="ingredient-name">白玉ねぎ</span><span class="ingredient-qty">300g</span><span class="ingredient-notes">薄い輪切り</span></li>
-          <li><span class="ingredient-name">アンチョビ（オイル漬け）</span><span class="ingredient-qty">6枚</span><span class="ingredient-notes">細かく刻む</span></li>
-          <li><span class="ingredient-name">全乳</span><span class="ingredient-qty">500ml</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">150ml</span></li>
-          <li><span class="ingredient-name">イタリアンパセリ</span><span class="ingredient-qty">1束</span><span class="ingredient-notes">みじん切り</span></li>
-          <li><span class="ingredient-name">パルミジャーノ・レッジャーノ</span><span class="ingredient-qty">40g</span><span class="ingredient-notes">すりおろす</span></li>
+              <li data-ingredient-row="e7958004-4ffa-40a7-98a1-5b5400c94a5d"><span class="ingredient-name" data-ingredient-name>バッカラ（塩干し鱈／3日間水戻し済み）</span><span class="ingredient-qty" data-ingredient-qty>800g</span><span class="ingredient-notes">3日間冷水に浸け、1日2回水を替える。皮付きのまま使う</span><button type="button" class="substitution-trigger" data-substitution-trigger="e7958004-4ffa-40a7-98a1-5b5400c94a5d"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="78ccf220-11e4-467e-9257-9e853addd8a0"><span class="ingredient-name" data-ingredient-name>白玉ねぎ</span><span class="ingredient-qty" data-ingredient-qty>300g</span><span class="ingredient-notes">薄い輪切り</span></li>
+          <li data-ingredient-row="f19dc1f2-8342-4745-9a00-414e250fbaec"><span class="ingredient-name" data-ingredient-name>アンチョビ（オイル漬け）</span><span class="ingredient-qty" data-ingredient-qty>6枚</span><span class="ingredient-notes">細かく刻む</span><button type="button" class="substitution-trigger" data-substitution-trigger="f19dc1f2-8342-4745-9a00-414e250fbaec"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="4a0d509d-bb6e-4bd6-bf9f-daab56a4911b"><span class="ingredient-name" data-ingredient-name>全乳</span><span class="ingredient-qty" data-ingredient-qty>500ml</span></li>
+          <li data-ingredient-row="f84deb15-7a85-47f8-8818-f0a15ff55600"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>150ml</span></li>
+          <li data-ingredient-row="3f898025-1e7b-4d0e-90fa-3a3079f9338a"><span class="ingredient-name" data-ingredient-name>イタリアンパセリ</span><span class="ingredient-qty" data-ingredient-qty>1束</span><span class="ingredient-notes">みじん切り</span></li>
+          <li data-ingredient-row="45e1d263-1259-4604-a4a3-11560bf0b172"><span class="ingredient-name" data-ingredient-name>パルミジャーノ・レッジャーノ</span><span class="ingredient-qty" data-ingredient-qty>40g</span><span class="ingredient-notes">すりおろす</span></li>
               </ul>
             </section>
           </div>
@@ -293,6 +313,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e4713f13-f3b2-485a-8388-11ac52105949","nameJa":"干し鱈のヴィチェンツァ風煮込み","baseServings":4,"minServings":2,"maxServings":8},"ingredients":[{"id":"e7958004-4ffa-40a7-98a1-5b5400c94a5d","nameOriginal":"Baccalà ammollato","nameJa":"バッカラ（塩干し鱈／3日間水戻し済み）","nameEn":"Soaked salted cod","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3日間冷水に浸け、1日2回水を替える。皮付きのまま使う","substitutionOptions":[{"id":"88c1bef5-2cee-4685-91b7-98183c3d37c8","standardIngredientId":"e7958004-4ffa-40a7-98a1-5b5400c94a5d","nameJa":"スケトウダラの塩漬け","nameEn":"Salted pollock","authenticityImpact":-10,"flavorImpact":"風味は近いが繊維の密度が異なる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"78ccf220-11e4-467e-9257-9e853addd8a0","nameOriginal":"Cipolla bianca","nameJa":"白玉ねぎ","nameEn":"White onion","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄い輪切り","substitutionOptions":[]},{"id":"f19dc1f2-8342-4745-9a00-414e250fbaec","nameOriginal":"Acciughe sott'olio","nameJa":"アンチョビ（オイル漬け）","nameEn":"Anchovy fillets in oil","quantity":6,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"細かく刻む","substitutionOptions":[{"id":"73ce7a47-4873-42f1-99a8-7264da72cf39","standardIngredientId":"f19dc1f2-8342-4745-9a00-414e250fbaec","nameJa":"アンチョビペースト","nameEn":"Anchovy paste","authenticityImpact":-5,"flavorImpact":"塩気と風味は近い","textureImpact":null,"procedureChanges":["小さじ1.5を使用"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"小さじ","notes":"玉ねぎが透明になってから油に溶かす","action":"update","nameEn":"Anchovy paste","nameJa":"アンチョビペースト","quantity":1.5,"targetNameJa":"アンチョビ（オイル漬け）"}],"stepPatches":[{"title":"玉ねぎを炒める","action":"replace","stepNumber":3,"actionItems":["フライパンに玉ねぎ（薄い輪切り）とオリーブオイル半量（75ml）を入れ弱火で15分炒める。","アンチョビペースト小さじ1.5を加え、油に溶かすように混ぜる。"],"instruction":"フライパンに玉ねぎ（薄い輪切り）とオリーブオイル半量（75ml）を入れ弱火で15分炒める。アンチョビペースト小さじ1.5を加え、油に溶かすように混ぜる。","changeReason":"アンチョビフィレではなくペーストを使うため、分量と溶かし方を明確にする","completionCriteria":["玉ねぎが透明になり、アンチョビペーストが油に溶けたら次へ。"]}]}]},{"id":"4a0d509d-bb6e-4bd6-bf9f-daab56a4911b","nameOriginal":"Latte intero","nameJa":"全乳","nameEn":"Whole milk","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f84deb15-7a85-47f8-8818-f0a15ff55600","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3f898025-1e7b-4d0e-90fa-3a3079f9338a","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"45e1d263-1259-4604-a4a3-11560bf0b172","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・イタリアンパセリをみじん切りにする\n・パルミジャーノ40gを細かくすりおろす","title":"材料を刻む","actionItems":["イタリアンパセリをみじん切りにする。","パルミジャーノ40gを細かくすりおろす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"バッカラの小骨を丁寧に抜き、5cm幅に切る。皮は残す。","title":"バッカラを下処理する","actionItems":["バッカラの小骨を丁寧に抜く。","バッカラを5cm幅に切る。皮は残す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"フライパンに玉ねぎ（薄い輪切り）とオリーブオイル半量（75ml）を入れ弱火で15分炒める。アンチョビを加えて崩しながら混ぜる。","title":"玉ねぎを炒める","actionItems":["フライパンに玉ねぎ（薄い輪切り）とオリーブオイル半量（75ml）を入れ弱火で15分炒める。","アンチョビを加えて崩しながら混ぜる。"],"parallelItems":[],"completionCriteria":["玉ねぎが透明になりしんなりしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"厚手の鍋底に炒めた玉ねぎの半量を敷き、バッカラを皮側を下にして隙間なく並べる。魚が重ならず一段に収まったら、パセリとパルミジャーノを振り、残りの玉ねぎをのせる。","title":"煮込みの層を作る","actionItems":["厚手の鍋底に炒めた玉ねぎの半量を敷く。","バッカラを皮側を下にして隙間なく並べる。","パセリとパルミジャーノを振り、残りの玉ねぎをのせる。"],"parallelItems":[],"completionCriteria":["魚が重ならず一段に収まったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"残りのオリーブオイルと全乳を注ぎ、魚がほぼ浸かるようにする。ふたをして非常に弱火（90℃前後）で4時間煮込む。絶対に混ぜない。","title":"とろ火で煮込む","actionItems":["残りのオリーブオイル（75ml）と全乳500mlを注ぐ。","ふたをして非常に弱火（90℃前後）で4時間煮込む。"],"parallelItems":[],"completionCriteria":["4時間後。魚が白く仕上がり、崩れずに形が保たれていれば完成。"],"cautionItems":["絶対に混ぜない。鍋を揺するのも禁止。"],"tipItems":[],"durationMinutes":240,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"魚が崩れず白く仕上がっていれば完成。ポレンタと一緒に盛り付ける。","title":"ポレンタと盛る","actionItems":["魚が崩れず白く仕上がっているか確認する。","ポレンタと一緒に盛り付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

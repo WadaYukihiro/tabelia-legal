@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>24分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>6時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         </div>
 
         <p class="recipe-description">マスカルポーネと卵黄で作るクリームをサヴォイアルディに重ねたイタリアを代表するドルチェ。コアントローとエスプレッソの香りが本場の証。</p>
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,15 +93,22 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">マスカルポーネ</span><span class="ingredient-qty">250g</span><span class="ingredient-notes">室温に戻しておく</span></li>
-          <li><span class="ingredient-name">卵（卵黄）</span><span class="ingredient-qty">3個</span></li>
-          <li><span class="ingredient-name">グラニュー糖</span><span class="ingredient-qty">60g</span></li>
-          <li><span class="ingredient-name">エスプレッソ（または濃いコーヒー）</span><span class="ingredient-qty">150ml</span><span class="ingredient-notes">強めに抽出して冷ます</span></li>
-          <li><span class="ingredient-name">サヴォイアルディ</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">コアントロー</span><span class="ingredient-qty">大さじ2</span><span class="ingredient-notes">マルサラワインでも可</span></li>
-          <li><span class="ingredient-name">ココアパウダー（無糖）</span><span class="ingredient-qty">大さじ2</span></li>
+              <li data-ingredient-row="b8a9e3d9-dd13-4a0c-bff5-bb1a021f6ab4"><span class="ingredient-name" data-ingredient-name>マスカルポーネ</span><span class="ingredient-qty" data-ingredient-qty>250g</span><span class="ingredient-notes">室温に戻しておく</span><button type="button" class="substitution-trigger" data-substitution-trigger="b8a9e3d9-dd13-4a0c-bff5-bb1a021f6ab4"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="12f0e3dc-e1ba-413d-bb06-524c201dab85"><span class="ingredient-name" data-ingredient-name>卵（卵黄）</span><span class="ingredient-qty" data-ingredient-qty>3個</span></li>
+          <li data-ingredient-row="9f12796f-88d1-423e-ab43-79a627fc6059"><span class="ingredient-name" data-ingredient-name>グラニュー糖</span><span class="ingredient-qty" data-ingredient-qty>60g</span></li>
+          <li data-ingredient-row="bb424d38-dd90-430f-8b28-85121bf2ad40"><span class="ingredient-name" data-ingredient-name>エスプレッソ（または濃いコーヒー）</span><span class="ingredient-qty" data-ingredient-qty>150ml</span><span class="ingredient-notes">強めに抽出して冷ます</span><button type="button" class="substitution-trigger" data-substitution-trigger="bb424d38-dd90-430f-8b28-85121bf2ad40"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="3a17fd16-7cac-430d-9a05-87462ba741b2"><span class="ingredient-name" data-ingredient-name>サヴォイアルディ</span><span class="ingredient-qty" data-ingredient-qty>100g</span><button type="button" class="substitution-trigger" data-substitution-trigger="3a17fd16-7cac-430d-9a05-87462ba741b2"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c63580fc-5ef8-45ec-91e6-766622daa74a"><span class="ingredient-name" data-ingredient-name>コアントロー</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span><span class="ingredient-notes">マルサラワインでも可</span><button type="button" class="substitution-trigger" data-substitution-trigger="c63580fc-5ef8-45ec-91e6-766622daa74a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="438f9fbb-c6e8-407c-bd1d-a1828f48f629"><span class="ingredient-name" data-ingredient-name>ココアパウダー（無糖）</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span></li>
               </ul>
             </section>
           </div>
@@ -320,6 +340,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"ffe5dd47-4ebe-4603-b2c2-1f2681b00526","nameJa":"ティラミス","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"b8a9e3d9-dd13-4a0c-bff5-bb1a021f6ab4","nameOriginal":"Mascarpone","nameJa":"マスカルポーネ","nameEn":"Mascarpone","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"室温に戻しておく","substitutionOptions":[{"id":"f24d86a3-bb18-445d-af7a-63b32295468e","standardIngredientId":"b8a9e3d9-dd13-4a0c-bff5-bb1a021f6ab4","nameJa":"クリームチーズ","nameEn":"Cream cheese","authenticityImpact":-20,"flavorImpact":"本場の濃厚さとまろやかさが失われ、酸味が強くなる","textureImpact":null,"procedureChanges":["クリームチーズ200gにバター大さじ1を混ぜて代用する"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"12f0e3dc-e1ba-413d-bb06-524c201dab85","nameOriginal":"Tuorli","nameJa":"卵（卵黄）","nameEn":"Egg yolks","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9f12796f-88d1-423e-ab43-79a627fc6059","nameOriginal":"Zucchero semolato","nameJa":"グラニュー糖","nameEn":"Granulated sugar","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bb424d38-dd90-430f-8b28-85121bf2ad40","nameOriginal":"Caffè espresso","nameJa":"エスプレッソ（または濃いコーヒー）","nameEn":"Espresso","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"強めに抽出して冷ます","substitutionOptions":[{"id":"54fdf4f0-8636-4fcc-9abc-2835d6988ce1","standardIngredientId":"bb424d38-dd90-430f-8b28-85121bf2ad40","nameJa":"濃いめのインスタントコーヒー","nameEn":"Strong instant coffee","authenticityImpact":-5,"flavorImpact":"風味が少し弱くなるがほぼ近い味になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3a17fd16-7cac-430d-9a05-87462ba741b2","nameOriginal":"Savoiardi","nameJa":"サヴォイアルディ","nameEn":"Ladyfingers / Savoiardi","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"6cef40c6-5e08-4e1a-a8ff-3769a025e534","standardIngredientId":"3a17fd16-7cac-430d-9a05-87462ba741b2","nameJa":"スポンジケーキ（薄切り）","nameEn":"Sponge cake (sliced)","authenticityImpact":-10,"flavorImpact":"食感が柔らかくなりすぎる傾向がある","textureImpact":null,"procedureChanges":["エスプレッソへのくぐらせ時間を短くする"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c63580fc-5ef8-45ec-91e6-766622daa74a","nameOriginal":"Cointreau","nameJa":"コアントロー","nameEn":"Cointreau (or Marsala wine)","quantity":2,"unit":"大さじ","role":"flavor","scalingBehavior":null,"notes":"マルサラワインでも可","substitutionOptions":[{"id":"6614b12c-caa4-496e-86fa-17d337e9aca4","standardIngredientId":"c63580fc-5ef8-45ec-91e6-766622daa74a","nameJa":"ラム酒","nameEn":"Rum","authenticityImpact":-5,"flavorImpact":"風味が変わるが代用として十分","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"438f9fbb-c6e8-407c-bd1d-a1828f48f629","nameOriginal":"Cacao in polvere","nameJa":"ココアパウダー（無糖）","nameEn":"Unsweetened cocoa powder","quantity":2,"unit":"大さじ","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"エスプレッソ150mlを濃く抽出し、コアントロー大さじ2を加えて混ぜ、完全に冷ます。","title":"エスプレッソを冷ます","actionItems":["エスプレッソ150mlを濃く抽出する。","コアントロー大さじ2を加えて混ぜる。","完全に冷ます。"],"parallelItems":[],"completionCriteria":["約15分。完全に冷めたら次へ。"],"cautionItems":["温かいままサヴォイアルディに使うと崩れやすくなる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"","title":"マスカルポーネを室温に戻す","actionItems":["マスカルポーネを冷蔵庫から出し、10分ほど室温で置いておく。"],"parallelItems":[],"completionCriteria":["少し抵抗があるがすくえる状態が完了目安。"],"cautionItems":["夏場や室温が高い場合は注意。"],"tipItems":[],"durationMinutes":null,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"","title":"卵黄クリームを作る","actionItems":["卵を黄身と白身に分ける。","卵黄3個とグラニュー糖60gをボウルに入れる。","湯煎（60〜70℃の湯）にかけながらハンドミキサーで白っぽくもったりするまで泡立てる。"],"parallelItems":[],"completionCriteria":["約5分。白っぽくもったりしてリボン状に流れるようになったら次へ。"],"cautionItems":["湯煎の温度が高すぎると卵が固まる。60〜70℃を維持する。"],"tipItems":["余った卵白はメレンゲ菓子やアーモンド系の焼き菓子に使うと無駄がない。すぐに使わない場合は、冷凍保存も可能。"],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"","title":"マスカルポーネを混ぜる","actionItems":["マスカルポーネ250gを卵黄クリームに大さじ1ずつ加えながらゴムベラでなめらかに混ぜる。"],"parallelItems":[],"completionCriteria":["全量加えてなめらかなクリーム状になったら次へ。"],"cautionItems":["一度に全量加えるとダマになりやすい。大さじ1ずつ少量ずつ加える。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"","title":"サヴォイアルディを敷く","actionItems":["サヴォイアルディを冷ましたエスプレッソ液に表面が軽く染み込む程度にさっとくぐらせる。","容器の底が隠れる分だけ隙間なく敷き詰める。","余った分は2層にできる場合の重ね用に残す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["サヴォイアルディは崩れやすいので、浸しすぎない。表面が湿る程度を心がける。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"・1層で仕上げる場合は、サヴォイアルディの上にマスカルポーネクリーム全量を均一に広げる\n・2層にできる深さと材料の余りがある場合は、クリームの約半量を広げ、サヴォイアルディ→残りのクリームの順に重ねる","title":"クリームを重ねる","actionItems":["1層で仕上げる場合は、サヴォイアルディの上にマスカルポーネクリーム全量を均一に広げる。","2層にできる深さと材料の余りがある場合は、クリームの約半量を広げる。","2層にする場合は、サヴォイアルディをもう1層並べ、残りのクリームを均一に広げる。"],"parallelItems":[],"completionCriteria":["1層または2層に組み上がり、上面が平らになったら次へ。"],"cautionItems":["2層に無理にするとクリームが薄くなる。材料や容器の広さに合わない場合は1層で仕上げる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"ラップをして冷蔵庫で最低4時間（できれば一晩）冷やす。","title":"冷蔵庫で冷やす","actionItems":["ラップをして冷蔵庫で最低4時間冷やす。"],"parallelItems":[],"completionCriteria":["最低4時間（できれば一晩）。クリームが固まりしっかり冷えたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":8,"instruction":"食べる直前にコアントロー少量をかけ、ココアパウダー大さじ2を茶こしでまんべんなくふりかける。","title":"ココアパウダーをかけて仕上げる","actionItems":["食べる直前にコアントロー少量をかける。","ココアパウダー大さじ2を茶こしでまんべんなくふりかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

@@ -60,7 +60,7 @@
         <span class="meta-chip"><span class="meta-chip-label">準備</span>28分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>15分</span>
         <span class="meta-chip"><span class="meta-chip-label">待ち時間</span>4時間</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>6人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">6人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ（シチリア）</span>
         </div>
 
@@ -70,6 +70,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-22">2026.05.22</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -81,16 +94,23 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（6人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">6</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">アーモンド（皮なし）</span><span class="ingredient-qty">200g</span><span class="ingredient-notes">自家製アーモンドミルク用。市販の無糖アーモンドミルクを使う場合は高品質なものを選ぶ</span></li>
-          <li><span class="ingredient-name">水（アーモンドミルク用）</span><span class="ingredient-qty">1000ml</span></li>
-          <li><span class="ingredient-name">コーンスターチ（または米粉）</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">レモンの皮</span><span class="ingredient-qty">1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
-          <li><span class="ingredient-name">シナモンスティック</span><span class="ingredient-qty">1本</span><span class="ingredient-notes">加熱中に香りを移す</span></li>
-          <li><span class="ingredient-name">ピスタチオ（飾り用）</span><span class="ingredient-qty">30g</span><span class="ingredient-notes">刻む</span></li>
-          <li><span class="ingredient-name">シナモン粉（飾り用）</span><span class="ingredient-qty">3g</span></li>
+              <li data-ingredient-row="99a58a86-9417-41fc-be09-fd234becf17a"><span class="ingredient-name" data-ingredient-name>アーモンド（皮なし）</span><span class="ingredient-qty" data-ingredient-qty>200g</span><span class="ingredient-notes">自家製アーモンドミルク用。市販の無糖アーモンドミルクを使う場合は高品質なものを選ぶ</span><button type="button" class="substitution-trigger" data-substitution-trigger="99a58a86-9417-41fc-be09-fd234becf17a"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="6b1c51a8-5ec1-46ba-9254-58ceb021b6cc"><span class="ingredient-name" data-ingredient-name>水（アーモンドミルク用）</span><span class="ingredient-qty" data-ingredient-qty>1000ml</span></li>
+          <li data-ingredient-row="54b929ba-0057-425a-b1ce-b9893e4b7bc2"><span class="ingredient-name" data-ingredient-name>コーンスターチ（または米粉）</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="6fe35c18-3dc5-4b8f-b7c2-b48a640a726c"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>100g</span></li>
+          <li data-ingredient-row="9be95e5b-f2be-4f83-a499-bd4ff3ff7b02"><span class="ingredient-name" data-ingredient-name>レモンの皮</span><span class="ingredient-qty" data-ingredient-qty>1個分</span><span class="ingredient-notes">国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす</span></li>
+          <li data-ingredient-row="b11b60e0-fbd0-48f2-83e1-b2fccf9e00f1"><span class="ingredient-name" data-ingredient-name>シナモンスティック</span><span class="ingredient-qty" data-ingredient-qty>1本</span><span class="ingredient-notes">加熱中に香りを移す</span></li>
+          <li data-ingredient-row="a49503a9-f3dc-45f8-a5cc-c6bb676d2af0"><span class="ingredient-name" data-ingredient-name>ピスタチオ（飾り用）</span><span class="ingredient-qty" data-ingredient-qty>30g</span><span class="ingredient-notes">刻む</span></li>
+          <li data-ingredient-row="6a24ce9b-06e6-49db-b22d-3c7b89542994"><span class="ingredient-name" data-ingredient-name>シナモン粉（飾り用）</span><span class="ingredient-qty" data-ingredient-qty>3g</span></li>
               </ul>
             </section>
           </div>
@@ -306,6 +326,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6e9e5d67-9f58-454e-ae7d-05c252abfd9b","nameJa":"シチリア風アーモンドミルクのブランマンジェ","baseServings":6,"minServings":1,"maxServings":20},"ingredients":[{"id":"99a58a86-9417-41fc-be09-fd234becf17a","nameOriginal":"Mandorle pelate","nameJa":"アーモンド（皮なし）","nameEn":"Blanched almonds","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"自家製アーモンドミルク用。市販の無糖アーモンドミルクを使う場合は高品質なものを選ぶ","substitutionOptions":[{"id":"690f4ad5-68f5-42b8-94c1-f82bba4e7898","standardIngredientId":"99a58a86-9417-41fc-be09-fd234becf17a","nameJa":"市販の無糖アーモンドミルク（高品質）","nameEn":"Commercial unsweetened almond milk (quality)","authenticityImpact":-10,"flavorImpact":"手絞りのアーモンドミルクより風味が薄れる","textureImpact":null,"procedureChanges":["ミルク作りを省き、市販の無糖アーモンドミルクをよく振ってから使う"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"ml","notes":"無糖・香料控えめのもの。使う直前によく振る","action":"update","nameJa":"市販の無糖アーモンドミルク（高品質）","quantity":1000,"targetNameJa":"アーモンド（皮なし）"},{"action":"remove","targetNameJa":"水（アーモンドミルク用）"}],"stepPatches":[{"title":"アーモンドミルクを計量する","action":"replace","stepNumber":1,"actionItems":["市販の無糖アーモンドミルク1000mlを使う直前によく振る。","200mlをコーンスターチ用に取り分ける。","残り800mlを鍋用に分けておく。"],"instruction":"市販の無糖アーモンドミルク1000mlを使う直前によく振る。200mlをコーンスターチ用に取り分け、残り800mlを鍋用に分けておく。","cautionItems":["沈殿していることがあるため、開封前と計量前によく振る。"],"changeReason":"市販アーモンドミルク使用時は、アーモンドを浸けて撹拌し絞る工程が不要なため","completionCriteria":["アーモンドミルクが均一に混ざり、200mlと残りに分けられたら次へ。"]}]}]},{"id":"6b1c51a8-5ec1-46ba-9254-58ceb021b6cc","nameOriginal":"Acqua","nameJa":"水（アーモンドミルク用）","nameEn":"Water","quantity":1000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"54b929ba-0057-425a-b1ce-b9893e4b7bc2","nameOriginal":"Amido di mais o Fecola di riso","nameJa":"コーンスターチ（または米粉）","nameEn":"Cornstarch or rice flour","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6fe35c18-3dc5-4b8f-b7c2-b48a640a726c","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9be95e5b-f2be-4f83-a499-bd4ff3ff7b02","nameOriginal":"Scorza di limone","nameJa":"レモンの皮","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"b11b60e0-fbd0-48f2-83e1-b2fccf9e00f1","nameOriginal":"Stecca di cannella","nameJa":"シナモンスティック","nameEn":"Cinnamon stick","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"加熱中に香りを移す","substitutionOptions":[]},{"id":"a49503a9-f3dc-45f8-a5cc-c6bb676d2af0","nameOriginal":"Pistacchi sgusciati","nameJa":"ピスタチオ（飾り用）","nameEn":"Shelled pistachio nuts","quantity":30,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"刻む","substitutionOptions":[]},{"id":"6a24ce9b-06e6-49db-b22d-3c7b89542994","nameOriginal":"Cannella in polvere","nameJa":"シナモン粉（飾り用）","nameEn":"Ground cinnamon","quantity":3,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"アーモンドを熱湯に2〜3分浸け、皮が簡単に剥けるようになったら剥く。水1リットルと一緒にミキサーで滑らかになるまで撹拌する。清潔な布巾（またはチーズクロス）でしっかり絞り、アーモンドミルクを作る。","title":"アーモンドミルクを作る","actionItems":["アーモンド200gを熱湯に2〜3分浸けて皮を剥く。","水1リットルと一緒にミキサーで滑らかになるまで撹拌する。","清潔な布巾でしっかり絞ってアーモンドミルクを作る。"],"parallelItems":[],"completionCriteria":["清潔なアーモンドミルクが絞り出せれば次へ。"],"cautionItems":["しっかり絞る。絞りが甘いと濃度が薄くなる。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"コーンスターチをアーモンドミルク約200mlで溶いてスラリーを作る。","title":"コーンスターチを溶く","actionItems":["コーンスターチ80gをアーモンドミルク約200mlで溶いてスラリーを作る。"],"parallelItems":[],"completionCriteria":["ダマなく均一に溶ければ次へ。"],"cautionItems":["ダマが残らないようよく混ぜる。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。残りのアーモンドミルク・砂糖・すりおろしたレモンの皮・シナモンスティックを鍋に入れて中火で温める（沸騰させない）。","title":"アーモンドミルクを温める","actionItems":["レモンの表皮だけをすりおろす。","残りのアーモンドミルク・砂糖100g・すりおろしたレモンの皮・シナモンスティックを鍋に入れて中火で温める。"],"parallelItems":[],"completionCriteria":["温まれば次へ（沸騰させない）。"],"cautionItems":["沸騰させない。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"スラリーを加え、絶えず混ぜながら中火〜弱火でとろみがつくまで加熱する（8〜10分）。底が焦げないよう注意。シナモンスティックとすりおろしたレモンの皮を取り除く。","title":"とろみをつける","actionItems":["スラリーを加え、絶えず混ぜながら中火〜弱火で加熱する。","シナモンスティックとすりおろしたレモンの皮を取り除く。"],"parallelItems":[],"completionCriteria":["8〜10分。とろみがつけば次へ。"],"cautionItems":["底が焦げないよう絶えず混ぜる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ラムカン（小さな型）または浅いボウルに均等に流し込む。粗熱が取れたらラップをかけず冷蔵庫で3〜4時間冷やし固める。","title":"型に流し込み冷やす","actionItems":["ラムカンまたは浅いボウルに均等に流し込む。","粗熱が取れたらラップをかけず冷蔵庫で3〜4時間冷やし固める。"],"parallelItems":[],"completionCriteria":["3〜4時間。固まれば次へ。"],"cautionItems":["ラップをかけると表面に水滴がつく。かけずに冷やす。"],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"型を少し温めて（底を湯に1〜2秒付ける）から皿に取り出す。刻んだピスタチオとシナモン粉を散らして提供。","title":"取り出して仕上げる","actionItems":["型の底を湯に1〜2秒付けて温める。","皿に取り出す。","刻んだピスタチオとシナモン粉を散らす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

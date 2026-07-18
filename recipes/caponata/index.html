@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★★☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>30分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>イタリア島嶼部・パレルモ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,18 +93,25 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">なす</span><span class="ingredient-qty">3本</span><span class="ingredient-notes">2cm角に切る</span></li>
-          <li><span class="ingredient-name">セロリ</span><span class="ingredient-qty">3茎</span><span class="ingredient-notes">2cm幅に切る</span></li>
-          <li><span class="ingredient-name">グリーンオリーブ（種なし）</span><span class="ingredient-qty">80g</span></li>
-          <li><span class="ingredient-name">ケッパー（塩漬け）</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">ホールトマト缶</span><span class="ingredient-qty">200g</span></li>
-          <li><span class="ingredient-name">ワインビネガー</span><span class="ingredient-qty">60ml</span></li>
-          <li><span class="ingredient-name">砂糖</span><span class="ingredient-qty">20g</span><span class="ingredient-notes">アグロドルチェ（甘酸）の調整</span></li>
-          <li><span class="ingredient-name">エクストラバージン・オリーブオイル</span><span class="ingredient-qty">80ml</span></li>
-          <li><span class="ingredient-name">松の実</span><span class="ingredient-qty">30g</span></li>
-          <li><span class="ingredient-name">レーズン</span><span class="ingredient-qty">30g</span></li>
+              <li data-ingredient-row="45f8ad15-da9e-473c-8faf-8872c9837f45"><span class="ingredient-name" data-ingredient-name>なす</span><span class="ingredient-qty" data-ingredient-qty>3本</span><span class="ingredient-notes">2cm角に切る</span></li>
+          <li data-ingredient-row="4caff25f-172d-4425-a6b5-b8f6ecde9d5a"><span class="ingredient-name" data-ingredient-name>セロリ</span><span class="ingredient-qty" data-ingredient-qty>3茎</span><span class="ingredient-notes">2cm幅に切る</span></li>
+          <li data-ingredient-row="0de177a2-e719-4354-bc5d-1dab6826020d"><span class="ingredient-name" data-ingredient-name>グリーンオリーブ（種なし）</span><span class="ingredient-qty" data-ingredient-qty>80g</span></li>
+          <li data-ingredient-row="4eb7f471-43fa-4c48-bd46-0f1a4582015c"><span class="ingredient-name" data-ingredient-name>ケッパー（塩漬け）</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="7c432b2f-20c7-419d-bdc8-512901e23ac0"><span class="ingredient-name" data-ingredient-name>ホールトマト缶</span><span class="ingredient-qty" data-ingredient-qty>200g</span></li>
+          <li data-ingredient-row="b5730148-e730-44b2-a48b-4a4fa0548ebb"><span class="ingredient-name" data-ingredient-name>ワインビネガー</span><span class="ingredient-qty" data-ingredient-qty>60ml</span></li>
+          <li data-ingredient-row="bd9803cb-24be-456e-8495-acb9d38e057e"><span class="ingredient-name" data-ingredient-name>砂糖</span><span class="ingredient-qty" data-ingredient-qty>20g</span><span class="ingredient-notes">アグロドルチェ（甘酸）の調整</span></li>
+          <li data-ingredient-row="0fdba8c7-c20a-4db8-b4f5-24aef8af7ba0"><span class="ingredient-name" data-ingredient-name>エクストラバージン・オリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>80ml</span></li>
+          <li data-ingredient-row="cb0bc593-d726-477e-bbab-cdacc313a5df"><span class="ingredient-name" data-ingredient-name>松の実</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
+          <li data-ingredient-row="0044868c-083e-4505-9bb0-9f7bf2b86e60"><span class="ingredient-name" data-ingredient-name>レーズン</span><span class="ingredient-qty" data-ingredient-qty>30g</span></li>
               </ul>
             </section>
           </div>
@@ -253,6 +273,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"23416c1e-ce2a-49c1-8ce5-b244119c9aa9","nameJa":"シチリア風野菜のカポナータ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"45f8ad15-da9e-473c-8faf-8872c9837f45","nameOriginal":"Melanzane","nameJa":"なす","nameEn":"Eggplant","quantity":3,"unit":"本","role":"essential","scalingBehavior":null,"notes":"2cm角に切る","substitutionOptions":[]},{"id":"4caff25f-172d-4425-a6b5-b8f6ecde9d5a","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":3,"unit":"茎","role":"essential","scalingBehavior":null,"notes":"2cm幅に切る","substitutionOptions":[]},{"id":"0de177a2-e719-4354-bc5d-1dab6826020d","nameOriginal":"Olive verdi","nameJa":"グリーンオリーブ（種なし）","nameEn":"Green olives","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4eb7f471-43fa-4c48-bd46-0f1a4582015c","nameOriginal":"Capperi","nameJa":"ケッパー（塩漬け）","nameEn":"Capers","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7c432b2f-20c7-419d-bdc8-512901e23ac0","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned tomatoes","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b5730148-e730-44b2-a48b-4a4fa0548ebb","nameOriginal":"Aceto di vino","nameJa":"ワインビネガー","nameEn":"Wine vinegar","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bd9803cb-24be-456e-8495-acb9d38e057e","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":20,"unit":"g","role":"essential","scalingBehavior":null,"notes":"アグロドルチェ（甘酸）の調整","substitutionOptions":[]},{"id":"0fdba8c7-c20a-4db8-b4f5-24aef8af7ba0","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cb0bc593-d726-477e-bbab-cdacc313a5df","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0044868c-083e-4505-9bb0-9f7bf2b86e60","nameOriginal":"Uvetta","nameJa":"レーズン","nameEn":"Raisins","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・なすを2cm角に切る\n・セロリを2cm幅に切る","title":"材料を準備する","actionItems":["なすを2cm角に切る","セロリを2cm幅に切る"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイル60mlを熱し、なすを中火で揚げ焼きにする。全面きつね色になったら（約10分）取り出してペーパータオルで油を切る。","title":"揚げる","actionItems":["フライパンにオリーブオイル60mlを熱し、なすを中火で揚げ焼きにする。","全面きつね色になったら（約10分）取り出してペーパータオルで油を切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンにオリーブオイル20mlを足し、セロリを中火で炒める。しんなりしたらオリーブ・ケッパー・ホールトマト（手でつぶして）を加えて10分煮込む。","title":"香味を炒める","actionItems":["同じフライパンにオリーブオイル20mlを足し、セロリを中火で炒める。","しんなりしたらオリーブ・ケッパー・ホールトマト（手でつぶして）を加えて10分煮込む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"ワインビネガー60mlと砂糖20gを加えて混ぜ、2〜3分煮て甘酸っぱく味を調える（アグロドルチェ）。酸味と甘みのバランスが取れたら次へ。","title":"仕上げにまとめる","actionItems":["ワインビネガー60mlと砂糖20gを加えて混ぜ、2〜3分煮て甘酸っぱく味を調える（アグロドルチェ）。"],"parallelItems":[],"completionCriteria":["酸味と甘みのバランスが取れたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"なす・松の実・レーズンを加えて優しく混ぜる。常温で冷ます。翌日が一番おいしい。","title":"仕上げにまとめる","actionItems":["なす・松の実・レーズンを加えて優しく混ぜる。","常温で冷ます。","翌日が一番おいしい。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>

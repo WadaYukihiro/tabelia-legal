@@ -59,7 +59,7 @@
         <span class="meta-chip"><span class="meta-chip-label">難易度</span>★☆☆☆☆</span>
         <span class="meta-chip"><span class="meta-chip-label">準備</span>20分</span>
         <span class="meta-chip"><span class="meta-chip-label">調理</span>0分</span>
-        <span class="meta-chip"><span class="meta-chip-label">分量</span>4人分</span>
+        <span class="meta-chip"><span class="meta-chip-label">分量</span><span id="recipe-meta-servings">4人分</span></span>
         <span class="meta-chip"><span class="meta-chip-label">地方</span>中部イタリア・ローマ</span>
         </div>
 
@@ -69,6 +69,19 @@
           <span>レシピ制作・監修 <strong>Tabelia編集部</strong></span>
           <span>更新 <time datetime="2026-05-28">2026.05.28</time></span>
         </div>
+
+        <section class="recipe-customizer" aria-labelledby="customizer-title">
+          <div class="authenticity-meter" aria-live="polite">
+            <span class="authenticity-meter-value" id="authenticity-score">100</span>
+            <span class="authenticity-meter-unit">/ 100</span>
+          </div>
+          <div class="recipe-customizer-copy">
+            <p class="eyebrow">AUTHENTICITY SCORE</p>
+            <h2 id="customizer-title">本格度スコア</h2>
+            <p id="authenticity-description">標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。</p>
+            <div id="selected-substitutions" class="selected-substitutions" hidden></div>
+          </div>
+        </section>
 
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
@@ -80,13 +93,20 @@
         <div class="recipe-body">
           <div class="recipe-rail">
             <section class="recipe-ingredients" id="ingredients">
-              <h2>材料（4人分）</h2>
+              <div class="ingredients-heading">
+                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <div class="servings-stepper" aria-label="人数を変更">
+                  <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
+                  <output id="servings-output" aria-live="polite">4</output>
+                  <button type="button" id="servings-plus" aria-label="人数を1人増やす">＋</button>
+                </div>
+              </div>
               <ul class="ingredient-list">
-              <li><span class="ingredient-name">新鮮なそら豆（さや付き）</span><span class="ingredient-qty">1000g</span></li>
-          <li><span class="ingredient-name">ペコリーノ・ロマーノ（若いもの）</span><span class="ingredient-qty">100g</span></li>
-          <li><span class="ingredient-name">EVオリーブオイル</span><span class="ingredient-qty">大さじ2</span></li>
-          <li><span class="ingredient-name">塩</span><span class="ingredient-qty">1つまみ</span></li>
-          <li><span class="ingredient-name">黒コショウ</span><span class="ingredient-qty">1つまみ</span></li>
+              <li data-ingredient-row="7571f8a3-4d6f-4d95-841b-a1f368a8bcb4"><span class="ingredient-name" data-ingredient-name>新鮮なそら豆（さや付き）</span><span class="ingredient-qty" data-ingredient-qty>1000g</span></li>
+          <li data-ingredient-row="faf5873f-91b8-4d5b-bf37-b40cfb5f734b"><span class="ingredient-name" data-ingredient-name>ペコリーノ・ロマーノ（若いもの）</span><span class="ingredient-qty" data-ingredient-qty>100g</span><button type="button" class="substitution-trigger" data-substitution-trigger="faf5873f-91b8-4d5b-bf37-b40cfb5f734b"><span>代替食材を選ぶ</span><span aria-hidden="true">›</span></button></li>
+          <li data-ingredient-row="c98e643c-a07b-4e33-9053-afe1effeb4f7"><span class="ingredient-name" data-ingredient-name>EVオリーブオイル</span><span class="ingredient-qty" data-ingredient-qty>大さじ2</span></li>
+          <li data-ingredient-row="9ccaebbb-8a03-4f09-9acc-5b041901555c"><span class="ingredient-name" data-ingredient-name>塩</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
+          <li data-ingredient-row="2b4242ce-7e87-47bd-82e4-961a14a4b51d"><span class="ingredient-name" data-ingredient-name>黒コショウ</span><span class="ingredient-qty" data-ingredient-qty>1つまみ</span></li>
               </ul>
             </section>
           </div>
@@ -189,6 +209,18 @@
       <p class="footer-copy">&copy; 2026 Tabelia（タベリア）</p>
     </footer>
   </div>
+  <dialog class="substitution-dialog" id="substitution-dialog" aria-labelledby="substitution-dialog-title">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><p class="eyebrow">CHOOSE AN INGREDIENT</p><h2 id="substitution-dialog-title">代替食材を選ぶ</h2><p id="substitution-dialog-subtitle"></p></div>
+        <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      </div>
+      <div id="substitution-options" class="substitution-options"></div>
+      <button class="dialog-confirm" value="confirm">決定</button>
+    </form>
+  </dialog>
+  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"27fd9400-fec5-40ea-bdfc-b70bcaf5fc9b","nameJa":"そら豆とペコリーノ・ロマーノ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"7571f8a3-4d6f-4d95-841b-a1f368a8bcb4","nameOriginal":"Fave fresche","nameJa":"新鮮なそら豆（さや付き）","nameEn":"Fresh fava beans in pods","quantity":1000,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"faf5873f-91b8-4d5b-bf37-b40cfb5f734b","nameOriginal":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ（若いもの）","nameEn":"Young Pecorino Romano","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"d04966ec-ad07-470d-ae5a-8c7aec591a4e","standardIngredientId":"faf5873f-91b8-4d5b-bf37-b40cfb5f734b","nameJa":"パルミジャーノ・レッジャーノ（すりおろし）","nameEn":"Parmigiano Reggiano, grated","authenticityImpact":-10,"flavorImpact":"羊乳由来の塩気と鋭さが薄れ、まろやかになる。塩分が減るので塩加減を少し強めに。","textureImpact":null,"procedureChanges":["塩加減を少し強くして補う"],"affectedStepNumbers":[],"notes":"スーパーのチーズコーナーや乳製品コーナーで入手可。粉チーズ缶でも代用できる（–15）。","variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c98e643c-a07b-4e33-9053-afe1effeb4f7","nameOriginal":"Olio extravergine","nameJa":"EVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":2,"unit":"大さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9ccaebbb-8a03-4f09-9acc-5b041901555c","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2b4242ce-7e87-47bd-82e4-961a14a4b51d","nameOriginal":"Pepe nero","nameJa":"黒コショウ","nameEn":"Black pepper","quantity":1,"unit":"つまみ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"そら豆をさやから取り出す。若くてやわらかい豆はそのまま使えるが、大きなものは薄皮を爪でむくとより甘く食べやすい（茹でて冷水に取ると皮がむきやすくなる）。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"豆の準備"},{"stepNumber":2,"instruction":"ペコリーノ・ロマーノを薄くスライスするか、大きめに手で割る（おろさない——食感を楽しむ）。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"チーズの準備"},{"stepNumber":3,"instruction":"そら豆とペコリーノを皿に交互に盛り付ける。EVオリーブオイルをひとまわしかけ、塩と黒コショウをひとつまみふって供する。料理と呼ぶには単純すぎるが、これがローマの春の答え。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"盛り付け"}]}</script>
   <script src="/recipes/search.js" defer></script>
+  <script src="/recipes/interactions.js" defer></script>
 </body>
 </html>
