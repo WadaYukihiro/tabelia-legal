@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://tabelia.app/</loc><lastmod>2026-07-20</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-07-20</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-07-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
+  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-07-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
+  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-07-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
   <url><loc>https://tabelia.app/privacy/</loc></url>
   <url><loc>https://tabelia.app/terms/</loc></url>
   <url><loc>https://tabelia.app/commercial/</loc></url>
@@ -1261,6 +1275,10 @@
   <url>
     <loc>https://tabelia.app/recipes/spaghetti-alla-carbonara/</loc>
     <lastmod>2026-06-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/spaghetti-alla-carbonara/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/81cf6fc3-bac4-4ddc-b21f-35665e95dab4_1780064933073.png</image:loc>
       <image:title>スパゲッティ カルボナーラ（Spaghetti alla Carbonara）</image:title>
@@ -1954,6 +1972,10 @@
   <url>
     <loc>https://tabelia.app/recipes/cacio-e-pepe/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/cacio-e-pepe/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/ca5cc5af-85a4-49af-b655-77d1ccbb6a09_1780541743899.png</image:loc>
       <image:title>カチョ・エ・ペペ（Cacio e Pepe）</image:title>
@@ -2359,6 +2381,10 @@
   <url>
     <loc>https://tabelia.app/recipes/triglie-alla-livornese/</loc>
     <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/f5f7f6a4-4fc3-4548-b5a5-dd5dc8b5505a_1780064864720.png</image:loc>
       <image:title>ヒメジのリヴォルノ風トマト煮（Triglie alla Livornese）</image:title>
@@ -2431,10 +2457,118 @@
   <url>
     <loc>https://tabelia.app/recipes/tiramisu/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tiramisu/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/ffe5dd47-4ebe-4603-b2c2-1f2681b00526_1780064972220.png</image:loc>
       <image:title>ティラミス（Tiramisù）</image:title>
       <image:caption>マスカルポーネと卵黄で作るクリームをサヴォイアルディに重ねたイタリアを代表するドルチェ。コアントローとエスプレッソの香りが本場の証。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/spaghetti-alla-carbonara/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/spaghetti-alla-carbonara/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/81cf6fc3-bac4-4ddc-b21f-35665e95dab4_1780064933073.png</image:loc>
+      <image:title>Authentic Spaghetti Carbonara</image:title>
+      <image:caption>The traditional Roman pasta made with eggs, guanciale, Pecorino Romano and black pepper—without cream. Its character depends on a smooth emulsion of egg, cheese and rendered pork fat.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/spaghetti-alla-carbonara/</loc>
+    <lastmod>2026-06-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/spaghetti-alla-carbonara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/spaghetti-alla-carbonara/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/81cf6fc3-bac4-4ddc-b21f-35665e95dab4_1780064933073.png</image:loc>
+      <image:title>Spaghetti alla Carbonara: ricetta romana autentica</image:title>
+      <image:caption>La pasta romana tradizionale preparata con uova, guanciale, Pecorino Romano e pepe nero, senza panna. Il risultato dipende dall’emulsione cremosa tra uovo, formaggio e grasso del guanciale.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/cacio-e-pepe/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/cacio-e-pepe/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/ca5cc5af-85a4-49af-b655-77d1ccbb6a09_1780541743899.png</image:loc>
+      <image:title>Authentic Cacio e Pepe</image:title>
+      <image:caption>One of Rome’s oldest pasta dishes, made with Pecorino Romano and black pepper. The ingredient list is short, but a stable, creamy emulsion requires precise heat control.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/cacio-e-pepe/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/cacio-e-pepe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/cacio-e-pepe/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/ca5cc5af-85a4-49af-b655-77d1ccbb6a09_1780541743899.png</image:loc>
+      <image:title>Cacio e Pepe: ricetta romana autentica</image:title>
+      <image:caption>Uno dei piatti di pasta più antichi di Roma, preparato con Pecorino Romano e pepe nero. Gli ingredienti sono pochi, ma l’emulsione cremosa richiede un controllo preciso del calore.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/triglie-alla-livornese/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/f5f7f6a4-4fc3-4548-b5a5-dd5dc8b5505a_1780064864720.png</image:loc>
+      <image:title>Red Mullet Livornese</image:title>
+      <image:caption>Fresh red mullet gently cooked in a simple tomato and white-wine sauce, a seafood classic from Livorno on the Tuscan coast.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/triglie-alla-livornese/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/triglie-alla-livornese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/f5f7f6a4-4fc3-4548-b5a5-dd5dc8b5505a_1780064864720.png</image:loc>
+      <image:title>Triglie alla Livornese</image:title>
+      <image:caption>Triglie fresche cotte delicatamente in un semplice sugo di pomodoro e vino bianco: un classico di mare della costa livornese.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/tiramisu/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tiramisu/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/ffe5dd47-4ebe-4603-b2c2-1f2681b00526_1780064972220.png</image:loc>
+      <image:title>Authentic Italian Tiramisù</image:title>
+      <image:caption>A classic Italian dessert of espresso-soaked savoiardi layered with mascarpone and egg-yolk cream. Cointreau and espresso give this version a deep, aromatic finish.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/tiramisu/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tiramisu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tiramisu/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/ffe5dd47-4ebe-4603-b2c2-1f2681b00526_1780064972220.png</image:loc>
+      <image:title>Tiramisù classico al mascarpone</image:title>
+      <image:caption>Il celebre dolce italiano con savoiardi al caffè e crema di mascarpone e tuorli. Il Cointreau e l’espresso donano a questa versione un profumo intenso.</image:caption>
     </image:image>
   </url>
 </urlset>
