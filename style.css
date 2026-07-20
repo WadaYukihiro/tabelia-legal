@@ -845,7 +845,8 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-heading { margin: 2.5rem 0 1.5rem; }
 .recipe-heading .eyebrow { margin-bottom: 0.5rem; }
 .recipe-heading .recipe-title { font-size: clamp(2.7rem, 6vw, 4.5rem); line-height: 1; margin-bottom: 0.45rem; }
-.recipe-heading .recipe-subtitle { color: #756d63; font-size: 1.08rem; margin-bottom: 0; }
+.recipe-heading .recipe-title-original { display: block; }
+.recipe-heading .recipe-subtitle { display: block; margin: 0.65rem 0 0; color: #756d63; font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif; font-size: 1.08rem; font-weight: 500; line-height: 1.5; }
 .recipe-article .recipe-hero { width: 100%; max-height: 610px; aspect-ratio: 16 / 9; margin-bottom: 1.25rem; }
 .recipe-article .recipe-meta { margin-bottom: 1.2rem; }
 .recipe-article .recipe-description { max-width: 760px; font-size: 1rem; line-height: 1.9; margin-bottom: 1rem; }
@@ -859,6 +860,16 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-ingredients h2 { margin-top: 0; border: 0; padding-bottom: 0; }
 .recipe-ingredients .ingredient-list { border-top-color: #ddd3c6; }
 .recipe-ingredients .ingredient-list li { border-bottom-color: #ddd3c6; }
+.recipe-alternatives { scroll-margin-top: 5rem; margin-top: 4rem; padding: 2rem; border: 1px solid #e4d8c8; border-radius: 14px 14px 44px 14px; background: #fbf7f0; }
+.recipe-alternatives > .eyebrow { margin-bottom: 0.25rem; color: #a85c28; }
+.recipe-alternatives > h2 { margin: 0; border: 0; padding: 0; font-size: 1.45rem; }
+.recipe-alternatives-lead { max-width: 720px; margin: 0.6rem 0 0; color: #675d52; font-size: 0.86rem; }
+.recipe-alternatives-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.8rem; margin-top: 1.25rem; }
+.recipe-alternative-card { padding: 1rem; border: 1px solid #e5dbcf; border-radius: 11px; background: #fff; }
+.recipe-alternative-card h3 { margin: 0.18rem 0 0; color: #332c25; font-size: 1rem; }
+.recipe-alternative-card p { margin: 0.45rem 0 0; color: #625950; font-size: 0.76rem; line-height: 1.65; }
+.recipe-alternative-card .recipe-alternative-from { margin: 0; color: #8d8175; font-size: 0.68rem; }
+.recipe-alternative-card .recipe-alternative-kind { color: #9e2f23; font-size: 0.68rem; font-weight: 700; }
 .recipe-steps { scroll-margin-top: 5rem; }
 .recipe-steps > h2 { margin-top: 0; font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 2rem; }
 .step-card { scroll-margin-top: 5rem; padding: 1.35rem 1.5rem; }
@@ -1008,6 +1019,9 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .recipe-jump-nav { overflow-x: auto; }
   .recipe-jump-nav a { flex: 0 0 auto; min-width: 76px; }
   .recipe-ingredients { padding: 1rem 1rem 0.3rem; }
+  .recipe-alternatives { margin-top: 3rem; padding: 1.25rem; border-radius: 12px 12px 34px 12px; }
+  .recipe-alternatives > h2 { font-size: 1.2rem; }
+  .recipe-alternatives-grid { grid-template-columns: 1fr; }
   .recipe-story { margin-top: 4rem; padding: 1.5rem; border-radius: 10px 10px 38px 10px; }
   .recipe-customizer { grid-template-columns: 76px 1fr; gap: 1rem; padding: 1rem; }
   .authenticity-meter { width: 72px; height: 72px; border-width: 5px; padding-top: 17px; }
