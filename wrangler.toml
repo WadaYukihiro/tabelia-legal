@@ -8,3 +8,5 @@ enabled = true
 
 [assets]
 directory = "."
+# 存在しないURLでは /404.html を404ステータスで返す（レシピslug変更時の旧URL等）
+not_found_handling = "404-page"
