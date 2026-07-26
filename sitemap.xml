@@ -58,6 +58,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/carpaccio-di-zucchine/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/03a149ce-93ef-469c-baae-bd8352ee06d4_1785048356038.png</image:loc>
+      <image:title>生ズッキーニのカルパッチョ（Carpaccio di Zucchine）</image:title>
+      <image:caption>ピーラーで薄く引いた生のズッキーニをレモンとオリーブオイルでマリネし、パルミジャーノと松の実で仕上げる現代イタリアの前菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/polenta-con-ragu-di-cinghiale/</loc>
     <lastmod>2026-06-04</lastmod>
     <image:image>
@@ -418,6 +427,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/zucca-in-agrodolce/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/24fc858b-8ba3-4af5-8050-c4f36d7cb702_1785048377766.png</image:loc>
+      <image:title>かぼちゃのシチリア風アグロドルチェ（Zucca in Agrodolce）</image:title>
+      <image:caption>焼いたかぼちゃを白ワインビネガー・砂糖・にんにく・ミントの甘酢でマリネする、パレルモの伝統的なアグロドルチェ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/bistecca-alla-fiorentina/</loc>
     <lastmod>2026-06-20</lastmod>
     <image:image>
@@ -451,6 +469,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/28e6ef10-5561-4890-987a-7642e86cad40_1780068693166.png</image:loc>
       <image:title>レモンのグラニータ（Granita al Limone）</image:title>
       <image:caption>シチリアの夏の朝食にも出てくる本場のシャリシャリレモングラニータ。機械なしでフォークでかき混ぜながら結晶を作る手法が伝統的。ブリオッシュと一緒に食べるのがシチリアの流儀。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/broccoli-affogati-alla-siciliana/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/2a0c78b9-f5a3-4cad-a2c4-eda398490b3d_1785048384915.png</image:loc>
+      <image:title>ブロッコリーのシチリア風蒸し煮（Broccoli Affogati alla Siciliana）</image:title>
+      <image:caption>ブロッコリーを玉ねぎ・カチョカヴァッロ・オリーブと層に重ね、赤ワインで「溺れさせる」ように蒸し煮にするカターニアの冬の定番。</image:caption>
     </image:image>
   </url>
   <url>
@@ -571,6 +598,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pipi-e-patati/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/37d51261-afbe-45eb-acaa-61ff4050b990_1785048395428.png</image:loc>
+      <image:title>カラブリア風ピーマンとじゃがいもの炒め煮（Pipi e Patati）</image:title>
+      <image:caption>緑のピーマンとじゃがいもをオリーブオイルでゆっくり炒め煮にする、カラブリアの夏の定番コントルノ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/lenticchie-di-castelluccio/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -586,6 +622,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/39d7ed76-9ee0-4ac1-8421-8f25ca222c8c_1780064767013.png</image:loc>
       <image:title>ラザニア ボロネーゼ（Lasagne alla Bolognese）</image:title>
       <image:caption>ラグー・ベシャメル・緑色の生パスタを重ねたボローニャ本家のラザニア。世界中に広まったラザニアの原型。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/carote-al-marsala/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/39ebeb6b-b5b4-462a-b5d0-e7f8688cf9f1_1785048375120.png</image:loc>
+      <image:title>にんじんのマルサラ蒸し煮（Carote al Marsala）</image:title>
+      <image:caption>にんじんをバターで炒め、マルサラ酒を煮立ててアルコールを飛ばしてから艶やかに蒸し煮にするシチリア西部のコントルノ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -751,6 +796,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/frittata-di-spinaci/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/48dac87c-fb62-4bea-a6d7-128957d2f475_1785048367243.png</image:loc>
+      <image:title>ほうれん草のフリッタータ（Frittata di Spinaci）</image:title>
+      <image:caption>炒めて水気を絞ったほうれん草と玉ねぎを卵に合わせ、両面をじっくり焼き上げるイタリア家庭の定番セコンド。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/polenta-morbida/</loc>
     <lastmod>2026-05-25</lastmod>
     <image:image>
@@ -841,6 +895,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/fagiolini-allagro/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/548de157-a5a9-452f-9494-16118a5328c0_1785048344406.png</image:loc>
+      <image:title>いんげんのレモンオイル和え（Fagiolini all'Agro）</image:title>
+      <image:caption>やわらかく茹でたさやいんげんをレモン果汁とオリーブオイルだけで和える、トスカーナから中部一帯の家庭の定番コントルノ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/frittata-di-zucchine/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -883,6 +946,24 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/56de9a33-a7d6-4180-a682-22447614e483_1780064987454.png</image:loc>
       <image:title>黒胡椒を効かせたトスカーナ風牛肉煮込み（Peposo alla Fornacina）</image:title>
       <image:caption>15世紀フィレンツェのレンガ職人（フォルナチーニ）が生んだ伝説の料理。牛すね肉を大量の黒胡椒・にんにく・キアンティで、かつてはレンガ窯の余熱で数時間煮込んだ。材料は最低限、胡椒だけが主役。肉が崩れるまで待つことが全て。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/acquasale-pugliese/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/575e8102-26a9-4007-ac1d-cfda9a2561a6_1785048352018.png</image:loc>
+      <image:title>プーリア風パンと夏野菜のアクアサーレ（Acquasale Pugliese）</image:title>
+      <image:caption>硬くなったパンを水で湿らせ、完熟トマト、きゅうり、赤玉ねぎ、オレガノと合わせるプーリアの伝統的な農民料理。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/patate-mpacchiuse/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/577b92a0-025d-445c-ac55-43ba465fc58a_1785048392025.png</image:loc>
+      <image:title>カラブリア風じゃがいもの蒸し焼き（Patate 'Mpacchiuse）</image:title>
+      <image:caption>じゃがいもと玉ねぎをオリーブオイルで蒸し焼きにし、鍋底に張り付いた香ばしい部分ごと味わうカラブリアの伝統コントルノ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1057,6 +1138,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/zucchine-gratinate-al-forno/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/6a1c53af-6ee8-4be7-9b74-af09867a0a43_1785048359916.png</image:loc>
+      <image:title>ズッキーニの香草パン粉焼き（Zucchine Gratinate al Forno）</image:title>
+      <image:caption>塩で水気を出したズッキーニに、パルミジャーノとオレガノの香草パン粉をのせてオーブンで焼き上げる南イタリア家庭のコントルノ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pastiera-napoletana/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -1210,12 +1300,30 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/frittata-di-peperoni/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/78c6494f-adc5-4ebd-8917-09881d1635cb_1785048399080.png</image:loc>
+      <image:title>ピーマンのフリッタータ（Frittata di Peperoni）</image:title>
+      <image:caption>甘く炒めたパプリカとピーマンを卵に混ぜ、皿返しで両面を焼き上げる南イタリアの家庭のフリッタータ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pasta-e-fagioli/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/7aa3a297-ec93-4c8e-8400-0c4b192c1561_1780064836354.png</image:loc>
       <image:title>白いんげん豆のパスタスープ（Pasta e Fagioli）</image:title>
       <image:caption>パスタと豆のスープ。ナポリの庶民料理で、貧しい食材から生まれた豊かな旨みが詰まった一皿。「cucina povera（貧しい料理）」の代表格。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/spinaci-al-burro-e-parmigiano/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/7baa779b-0d17-4bcd-82ef-a68baf4829de_1785048336167.png</image:loc>
+      <image:title>ほうれん草のバター・パルミジャーノソテー（Spinaci al Burro e Parmigiano）</image:title>
+      <image:caption>さっと茹でたほうれん草をバターでソテーし、パルミジャーノとナツメグで仕上げる北イタリアの定番コントルノ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1286,12 +1394,30 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/funghi-ripieni-al-forno/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/825bf1fc-3194-4e81-a209-7e9618fe1e21_1785048407021.png</image:loc>
+      <image:title>マッシュルームの香草パン粉詰め焼き（Funghi Ripieni al Forno）</image:title>
+      <image:caption>マッシュルームの軸を刻んでパン粉とパルミジャーノの詰め物にし、オーブンで香ばしく焼き上げるリグーリア風前菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/zucchine-ripiene-al-forno/</loc>
     <lastmod>2026-05-30</lastmod>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/826ffac9-dbc7-4e1c-8610-f69cd3849c26_1780154169124.png</image:loc>
       <image:title>ズッキーニの詰め物焼き（Zucchine Ripiene al Forno）</image:title>
       <image:caption>ズッキーニをくり抜き、肉、リコッタ、パルミジャーノを詰めて焼く家庭的なオーブン料理。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/insalata-di-cavolo-cappuccio-alla-piemontese/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/8380f5bc-315b-45a4-8547-083796053e22_1785048388674.png</image:loc>
+      <image:title>キャベツのピエモンテ風アンチョビサラダ（Insalata di Cavolo Cappuccio alla Piemontese）</image:title>
+      <image:caption>千切りキャベツを温かいアンチョビとにんにくのドレッシングで和える、バーニャ・カウダの流れをくむピエモンテのサラダ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1610,6 +1736,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/frittata-di-melanzane/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/a2225606-f528-4e4f-a345-bc32db27103f_1785048403205.png</image:loc>
+      <image:title>なすのフリッタータ（Frittata di Melanzane）</image:title>
+      <image:caption>揚げ焼きにしたなすを卵とパルミジャーノに合わせて焼く、南イタリア家庭式のフリッタータ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/broccoletti-di-rapa-ripassati/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -1898,6 +2033,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/cavolfiore-alla-siciliana/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/c506cbb8-ff15-43f5-83df-3f7ead1c2e5e_1785048381468.png</image:loc>
+      <image:title>カリフラワーのシチリア風蒸し煮（Cavolfiore alla Siciliana）</image:title>
+      <image:caption>アンチョビ・黒オリーブ・干しブドウ・松の実とともにカリフラワーを蒸し煮にする、甘と塩が重なるシチリアのコントルノ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/spaghetti-allo-scorfano/</loc>
     <lastmod>2026-05-30</lastmod>
     <image:image>
@@ -1931,6 +2075,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/c72af803-ddb6-43ce-84e9-88c5a69a8f79_1780064936169.png</image:loc>
       <image:title>仔羊のラグーのキタッラ（Spaghetti alla Chitarra con Ragù d'Agnello）</image:title>
       <image:caption>アブルッツォを代表する「ギター麺」と仔羊のラグーの組み合わせ。仔羊肩肉を赤ワイン・ローズマリー・パプリカとともに2時間煮込んだソースは、甘みと野趣が溶け合う。断面が四角いキタッラ麺がラグーをしっかりと絡め取る——細身のスパゲッティでは出せない力強さがある。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/carote-in-agrodolce-alla-siciliana/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/c7596f82-5333-430b-bc14-32d8ccc67846_1785048371418.png</image:loc>
+      <image:title>にんじんのシチリア風甘酢煮（Carote in Agrodolce alla Siciliana）</image:title>
+      <image:caption>蒸し煮にしたにんじんに砂糖とワインビネガーの甘酢を絡め、ミントを加えて常温でなじませるシチリアのコントルノ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2190,6 +2343,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/insalata-di-pomodori-alla-siciliana/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/dd4a41b2-abb0-4e26-bfa7-18429798b75a_1785048348207.png</image:loc>
+      <image:title>シチリア風トマトサラダ（Insalata di Pomodori alla Siciliana）</image:title>
+      <image:caption>完熟トマトに水にさらした赤玉ねぎとドライオレガノを重ね、オリーブオイルでなじませるシチリアの夏の定番サラダ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/tonno-e-fagioli/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -2244,6 +2406,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/piselli-alla-fiorentina/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/e2955bd2-3dc1-4066-9d2b-8129160c50a5_1785048340604.png</image:loc>
+      <image:title>フィレンツェ風グリーンピース煮（Piselli alla Fiorentina）</image:title>
+      <image:caption>グリーンピースをパンチェッタとにんにくの香りでやわらかく煮含める、フィレンツェの春の定番コントルノ。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/garganelli-al-ragu-bianco-di-vitello/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -2295,6 +2466,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/e892bb66-6822-42e6-b962-53d260bf3af9_1780064854575.png</image:loc>
       <image:title>ヴァルテッリーナ風ピッツォッケリ（Pizzoccheri della Valtellina）</image:title>
       <image:caption>そば粉入りの太い平打ちパスタに、バター・チーズ・キャベツ・じゃがいもを合わせたロンバルディア山岳地方の冬の郷土料理。アルプスの農家料理として受け継がれてきた、滋養豊かな一皿。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/lattuga-stufata-alla-romana/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/e8d86699-b95c-4af3-80f8-dcea397a70ba_1785048363761.png</image:loc>
+      <image:title>ローマ風レタスの蒸し煮（Lattuga Stufata alla Romana）</image:title>
+      <image:caption>ロメインレタスをにんにくの香りを移したオリーブオイルで蒸し煮にする、ローマの葉野菜料理の伝統に連なるコントルノ。</image:caption>
     </image:image>
   </url>
   <url>
