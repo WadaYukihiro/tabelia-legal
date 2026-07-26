@@ -114,26 +114,36 @@ body {
 
 .site-nav a:hover { color: #9e2f23; }
 
+/* 言語切替: 個別ピルではなく1つのセグメントコントロールとして描画する */
 .language-switcher {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 2px;
   margin-left: auto;
-  padding-left: 0.5rem;
-}
-.language-switcher a {
-  color: #777066;
   border: 1px solid #ddd4c8;
   border-radius: 999px;
-  padding: 0.25rem 0.55rem;
-  font-size: 0.7rem;
-  font-weight: 700;
+  padding: 2px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.language-switcher a {
+  color: #8a8276;
+  border-radius: 999px;
+  padding: 0.28rem 0.62rem;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   line-height: 1;
   text-decoration: none;
+  transition: color 0.15s ease, background-color 0.15s ease;
 }
-.language-switcher a:hover,
-.language-switcher a[aria-current="page"] { color: #9e2f23; border-color: #c78d82; background: #fff8f5; }
-.language-switcher-standalone { justify-content: flex-end; margin: -1rem 0 1.5rem; padding: 0; }
+.language-switcher a:hover { color: #9e2f23; background: #f6ece5; }
+.language-switcher a[aria-current="page"] {
+  color: #fff;
+  background: #9e2f23;
+  font-weight: 700;
+}
+.language-switcher a[aria-current="page"]:hover { color: #fff; background: #9e2f23; }
+.language-switcher-standalone { display: flex; width: fit-content; margin: -0.75rem 0 1.5rem auto; }
 
 /* Page heading */
 .page-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.4rem; }
@@ -977,14 +987,18 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 html.dialog-open, body.dialog-open { overflow: hidden; overscroll-behavior: none; }
 body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 
+/* 多言語ハブ: 日本語版フルコレクション案内 */
+.hub-collection-note { max-width: 62ch; color: #5d574d; font-size: 0.92rem; line-height: 1.7; }
+.hub-collection-note p { margin-bottom: 0.5rem; }
+
 /* Responsive */
 @media (max-width: 600px) {
   .container { padding-left: 1rem; padding-right: 1rem; }
   .site-header { align-items: flex-start; }
   .site-nav { width: 100%; order: 2; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 0.15rem; }
   .site-nav a { white-space: nowrap; padding-left: 0; padding-right: 1rem; }
-  .language-switcher { margin-left: 0; padding-left: 0; }
-  .language-switcher-standalone { margin: -0.35rem 0 1.25rem; justify-content: flex-start; }
+  .language-switcher { margin-left: 0; }
+  .language-switcher-standalone { margin: -0.35rem auto 1.25rem 0; }
   .site-footer { grid-template-columns: 1fr; }
   .footer-nav { justify-content: flex-start; }
   .footer-copy { grid-column: auto; }
