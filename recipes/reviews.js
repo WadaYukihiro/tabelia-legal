@@ -86,6 +86,34 @@
   renderSummary();
   renderList();
 
+  // ── 承認済みレビューのライブ取得 ──────────────────────────────────
+  // legal-site は静的生成のため、埋め込みデータ（data.aggregate / data.reviews）は
+  // ページが最後に生成された時点のスナップショットでしかない。管理画面での承認を
+  // 再生成・デプロイなしで即座に反映するため、読み込みのたびに最新値を取得して
+  // 埋め込みデータを上書きする（取得失敗時は埋め込みデータのまま表示を維持する）。
+  if (data.recipe.getRatingUrl) {
+    var ratingUrl = data.recipe.getRatingUrl + '?recipeId=' + encodeURIComponent(data.recipe.id);
+    fetch(ratingUrl, {
+      headers: {
+        apikey: data.recipe.supabaseAnonKey,
+        Authorization: 'Bearer ' + data.recipe.supabaseAnonKey,
+      },
+    })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (fresh) {
+        if (!fresh || !fresh.ratings || !fresh.ratings[0]) return;
+        data.aggregate = {
+          averageRating: fresh.ratings[0].average_rating,
+          reviewCount: fresh.ratings[0].review_count,
+          ratingDistribution: fresh.ratings[0].rating_distribution,
+        };
+        data.reviews = fresh.reviews || [];
+        renderSummary();
+        renderList();
+      })
+      .catch(function () { /* 埋め込みデータのまま表示を維持 */ });
+  }
+
   // ── 投稿フォーム ────────────────────────────────────────────────
   var form = document.getElementById('review-form');
   if (!form) return;
