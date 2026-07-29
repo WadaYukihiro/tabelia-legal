@@ -921,7 +921,6 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
    ============================================================ */
 .reviews-section { margin-top: 4rem; }
 .reviews-section > .eyebrow { color: #a85c28; }
-.reviews-lead { max-width: 640px; color: #675d52; font-size: 0.86rem; margin: 0 0 1.5rem; }
 
 /* 評価バー（★の代わり）。読み取り専用。平均値表示・個別レビューの両方で使う */
 .rating-bar { display: inline-flex; gap: 0.2rem; vertical-align: middle; }
