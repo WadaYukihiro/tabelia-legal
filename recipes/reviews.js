@@ -48,9 +48,10 @@
       '</article>';
   }
 
-  // 件数に応じた出し分け（generate-web-recipes.ts の reviewsHtml と同じ規則。少数データでの分布可視化はしない）:
+  // 件数に応じた出し分け（generate-web-recipes.ts の reviewsHtml と同じ規則。少数データでの
+  // 分布可視化はしないが、平均値・件数は1件目から表示する）:
   //   0件    … 空状態メッセージのみ
-  //   1〜9件 … 何も描画しない（一覧のみで十分。平均値・分布は出さない）
+  //   1〜9件 … 平均値・件数のみ（分布バーは出さない）
   //   10件以上 … 平均値・件数・分布バー
   function renderSummary() {
     var mount = document.getElementById('reviews-summary-mount');
@@ -60,8 +61,9 @@
       mount.innerHTML = '<div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div>';
       return;
     }
-    if (count < 10) { mount.innerHTML = ''; return; }
     var average = Number(data.aggregate.averageRating) || 0;
+    var distributionHtml = count < 10 ? '' :
+      '<div class="reviews-distribution">' + distributionRowsHtml(data.aggregate.ratingDistribution, count) + '</div>';
     mount.innerHTML =
       '<div class="reviews-summary">' +
         '<div class="reviews-summary-score">' +
@@ -72,7 +74,7 @@
           ratingBarHtml(average) +
           '<span class="reviews-summary-count">' + count + '件の評価</span>' +
         '</div>' +
-        '<div class="reviews-distribution">' + distributionRowsHtml(data.aggregate.ratingDistribution, count) + '</div>' +
+        distributionHtml +
       '</div>';
   }
 
