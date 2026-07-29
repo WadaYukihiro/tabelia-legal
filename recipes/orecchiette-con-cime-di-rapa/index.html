@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -267,6 +268,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"7c386567-fa44-4950-81c9-72720b4870a6","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -323,5 +377,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7c386567-fa44-4950-81c9-72720b4870a6","nameJa":"菜の花のオレキエッテ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0cf10137-3823-41c0-bd85-84d6da441beb","nameOriginal":"Semola rimacinata","nameJa":"セモリナ粉（細びき）","nameEn":"Fine semolina flour","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手打ちオレキエッテ用。普通の小麦粉では代用不可","substitutionOptions":[]},{"id":"2d51a5ff-8889-4d7e-9537-609c630d39fb","nameOriginal":"Acqua tiepida","nameJa":"ぬるま湯（35〜40℃）","nameEn":"Lukewarm water","quantity":125,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"塩5gを溶かして使う","substitutionOptions":[]},{"id":"dcb203ac-c210-4b24-aa0d-6f5fea82cc07","nameOriginal":"Cime di rapa","nameJa":"チーメ・ディ・ラーパ（菜の花の茎葉）","nameEn":"Turnip tops (cime di rapa)","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"硬い茎を除く","substitutionOptions":[{"id":"34bb1cea-d14f-45f6-8ac8-dbbe9deda5ee","standardIngredientId":"dcb203ac-c210-4b24-aa0d-6f5fea82cc07","nameJa":"菜の花","nameEn":"Japanese nanohana (rape blossoms)","authenticityImpact":-5,"flavorImpact":"苦みが若干弱いが食感・風味ともに近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"cb20a780-cbf9-4f66-a489-94279b9eeadb","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"cbb9e991-b52a-498b-8374-de975061829c","nameOriginal":"Acciughe sott'olio","nameJa":"アンチョビ（オイル漬け）","nameEn":"Anchovies in oil","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"旨みのかさ増し","substitutionOptions":[]},{"id":"9e686edb-5382-4d35-8ab3-81732f5db0a0","nameOriginal":"Peperoncino","nameJa":"唐辛子","nameEn":"Chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"fbdffe0c-e366-4eb1-a31f-d1f0092a3001","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"セモリナ粉250gに塩5gを溶かしたぬるま湯125mlを少しずつ加えながら10〜15分こねて弾力のある生地を作る。ラップに包んで30分休ませる。","title":"材料を合わせる","actionItems":["セモリナ粉250gに塩5gを溶かしたぬるま湯125mlを少しずつ加えながら10〜15分こねて弾力のある生地を作る。","ラップに包んで30分休ませる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"（生地を休ませる間に）\n・チーメ・ディ・ラーパの硬い茎を除き、食べやすい大きさに分ける\n・にんにく4片を薄切りにする","title":"休ませて落ち着かせる","actionItems":["チーメ・ディ・ラーパの硬い茎を除き、食べやすい大きさに分ける","にんにく4片を薄切りにする"],"parallelItems":["（生地を休ませる間に）"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"生地を細長く伸ばして小さく切り、親指の腹で台の上を手前に引くようにして耳型（直径2〜3cm）に成形する。（成形する間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。","title":"材料を準備する","actionItems":["生地を細長く伸ばして小さく切り、親指の腹で台の上を手前に引くようにして耳型（直径2〜3cm）に成形する。"],"parallelItems":["（成形する間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"沸かしておいた塩湯にチーメ・ディ・ラーパとオレキエッテを一緒に入れて茹でる（アルデンテの1分前）。\n・茹で汁100mlを取り置く","title":"茹でる","actionItems":["沸かしておいた塩湯にチーメ・ディ・ラーパとオレキエッテを一緒に入れて茹でる（アルデンテの1分前）。","茹で汁100mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"フライパンにオリーブオイル80ml・にんにく（薄切り）・唐辛子・アンチョビを入れて弱火で加熱する。アンチョビが溶けてにんにくが薄く色づいたら（約3分）火を強める。","title":"材料を準備する","actionItems":["フライパンにオリーブオイル80ml・にんにく（薄切り）・唐辛子・アンチョビを入れて弱火で加熱する。"],"parallelItems":[],"completionCriteria":["アンチョビが溶けてにんにくが薄く色づいたら（約3分）火を強める。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"オレキエッテとチーメ・ディ・ラーパを加えて強火で1〜2分炒め合わせる。茹で汁で濃度を調整し、オリーブオイルが全体に絡んだら完成。","title":"香味を炒める","actionItems":["オレキエッテとチーメ・ディ・ラーパを加えて強火で1〜2分炒め合わせる。","茹で汁で濃度を調整し、オリーブオイルが全体に絡んだら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

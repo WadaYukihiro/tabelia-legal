@@ -92,6 +92,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -387,6 +388,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"6a4cc63b-0ece-41ec-945e-482dce3087e8","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -443,5 +497,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"6a4cc63b-0ece-41ec-945e-482dce3087e8","nameJa":"ナポリ風リコッタと小麦のタルト","baseServings":10,"minServings":6,"maxServings":20},"ingredients":[{"id":"046c4441-1e38-4fbe-a9ca-75cbce8f7f24","nameOriginal":"Farina 00","nameJa":"薄力粉（生地用）","nameEn":"All-purpose flour","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"71113d32-975e-4b2a-b835-9a93ed159073","nameOriginal":"Strutto o Burro","nameJa":"ラード（または無塩バター）","nameEn":"Lard or unsalted butter","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"伝統的にはラードを使う","substitutionOptions":[{"id":"af74e512-31ea-4d01-a789-fc4499302bb8","standardIngredientId":"71113d32-975e-4b2a-b835-9a93ed159073","nameJa":"無塩バター","nameEn":"Unsalted butter","authenticityImpact":-5,"flavorImpact":"風味が若干変わるが完全に代替可能","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"84cba39b-20f6-4e7a-a3d3-ab0a0af3f6db","nameOriginal":"Zucchero","nameJa":"砂糖（生地用）","nameEn":"Sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0ad9a515-4b0f-495e-ac34-440f558b18e7","nameOriginal":"Uova","nameJa":"全卵＋卵黄（生地用）","nameEn":"Eggs","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"全卵1個＋卵黄2個","substitutionOptions":[]},{"id":"641d5f57-8974-4679-b588-d81af148d74a","nameOriginal":"Grano cotto (in lattina)","nameJa":"グラーノ・コット（缶詰の煮た小麦）","nameEn":"Cooked wheat berries (canned)","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"イタリア食材店または輸入食材店で入手。前処理済みで便利","substitutionOptions":[{"id":"d458c2c2-8b25-4ab2-a0aa-bb4b89c0eb62","standardIngredientId":"641d5f57-8974-4679-b588-d81af148d74a","nameJa":"スペルト小麦（乾燥・前日から水に浸して茹でる）","nameEn":"Dried spelt wheat (soaked and cooked)","authenticityImpact":-5,"flavorImpact":"風味が若干変わるが代替として最適","textureImpact":null,"procedureChanges":["乾燥状態から：前日に水に浸し、翌日30〜40分茹でる"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"93cdf2e6-1a56-4eb1-bb73-cda677720fb0","nameOriginal":"Latte intero","nameJa":"全乳（小麦煮込み用）","nameEn":"Whole milk","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0bd90752-680e-402c-84fa-cc9595e5950d","nameOriginal":"Burro","nameJa":"バター（小麦煮込み用）","nameEn":"Butter","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4ae60943-dfa7-4e0f-baa5-627a02baf521","nameOriginal":"Ricotta di pecora","nameJa":"羊乳リコッタ","nameEn":"Sheep's milk ricotta","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"容器の水分を捨て、ペーパーで軽く押さえて水切りする","substitutionOptions":[{"id":"f829d3c2-98bc-4f8c-a8e3-e9aa060ed51d","standardIngredientId":"4ae60943-dfa7-4e0f-baa5-627a02baf521","nameJa":"牛乳リコッタ","nameEn":"Cow's milk ricotta","authenticityImpact":-5,"flavorImpact":"風味のコクが若干落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9ce8d1b4-cb98-4e57-bb12-1f87283a04bc","nameOriginal":"Zucchero","nameJa":"砂糖（フィリング用）","nameEn":"Sugar","quantity":250,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1c01b07c-9d1f-4cb4-bea8-aa7757e8c2ee","nameOriginal":"Uova","nameJa":"全卵（フィリング用）","nameEn":"Eggs","quantity":5,"unit":"個","role":"essential","scalingBehavior":null,"notes":"卵黄と卵白に分ける","substitutionOptions":[]},{"id":"75c0f1d7-b2f7-4503-8459-bce997ac7404","nameOriginal":"Acqua di fiori d'arancio","nameJa":"オレンジフラワーウォーター","nameEn":"Orange blossom water","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"パスティエーラの特徴的な香り。量を惜しまないこと","substitutionOptions":[]},{"id":"f993bccf-1722-4d86-86a2-6dc0cc010460","nameOriginal":"Scorza di arancia e cedro canditi","nameJa":"キャンディドオレンジ・シトロンピール","nameEn":"Candied orange and citron peel","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"25256d0b-43c3-4993-8227-8fa5bf055efc","nameOriginal":"Cannella","nameJa":"シナモン（粉）","nameEn":"Ground cinnamon","quantity":3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e5839d18-29ce-4e08-aeb5-97ca33b99975","nameOriginal":"Vaniglia","nameJa":"バニラ（ペーストまたはエッセンス）","nameEn":"Vanilla","quantity":5,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"羊乳リコッタ400gを水切りする。容器内の水分をそのまま捨て、キッチンペーパーで表面を軽く押さえる。時間があればザルに30分ほど置くとより扱いやすくなる。","title":"リコッタを水切りする","actionItems":["羊乳リコッタ400gの容器内の水分を捨てる。","キッチンペーパーで表面を軽く押さえる。"],"parallelItems":[],"completionCriteria":["30分。水分が十分に切れれば次へ。"],"cautionItems":["水分が多いとフィリングが水っぽくなる。しっかり水切りする。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。グラーノ・コット400g（缶詰の煮た小麦）を鍋に入れ、牛乳200ml・バター30g・すりおろしたレモンの皮（分量外）を加えて中火で15〜20分煮る（牛乳を吸ってクリーム状になるまで混ぜ続ける）。冷ます。","title":"グラーノ・コットを煮る","actionItems":["レモンの表皮だけをすりおろす。","グラーノ・コット400gを鍋に入れ、牛乳200ml・バター30g・すりおろしたレモンの皮を加える。","中火で15〜20分、牛乳を吸ってクリーム状になるまで混ぜ続ける。","冷ます。"],"parallelItems":[],"completionCriteria":["15〜20分。牛乳を吸ってクリーム状になれば次へ（冷めるまで待つ）。"],"cautionItems":["底が焦げないよう混ぜ続ける。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パスタ・フロッラを作る：ラード（または無塩バター）200gを薄力粉400gに擦り込み、砂糖150g・卵3個を加えて素早くまとめる。ラップして冷蔵庫で1時間休ませる。","title":"パスタ・フロッラを作り休ませる","actionItems":["ラード200gを薄力粉400gに擦り込む。","砂糖150g・卵3個を加えて素早くまとめる。","ラップして冷蔵庫で1時間休ませる。"],"parallelItems":[],"completionCriteria":["まとまりのある生地になれば次へ（冷蔵庫で1時間後）。"],"cautionItems":["こねすぎない。"],"tipItems":[],"durationMinutes":70,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"水切りしたリコッタ400gと砂糖250gを滑らかになるまで混ぜ、卵黄（フィリング用の卵5個から分けた卵黄）・オレンジフラワーウォーター30ml・バニラ・シナモン・刻んだキャンディドシトラス100gを加える。冷ました小麦クリームを加えてよく混ぜる。","title":"フィリングを作る","actionItems":["水切りしたリコッタ400gと砂糖250gを滑らかになるまで混ぜる。","卵黄・オレンジフラワーウォーター30ml・バニラ・シナモン・刻んだキャンディドシトラスを加える。","冷ました小麦クリームを加えてよく混ぜる。"],"parallelItems":[],"completionCriteria":["均一に混ざれば次へ。"],"cautionItems":["オレンジフラワーウォーターを惜しまない。パスティエーラの香りの核心。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"卵白を固めに泡立て、リコッタ混合物に2回に分けてさっくり折り込む。","title":"卵白を折り込む","actionItems":["卵白5個を固めに泡立てる。","リコッタ混合物に2回に分けてさっくり折り込む。"],"parallelItems":[],"completionCriteria":["白い筋がなくなれば次へ。"],"cautionItems":["泡をなるべく消さないよう折り込む。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"オーブンを180℃に予熱。直径30cmのタルト型に生地の2/3を薄く敷き込む（側面も）。フィリングを流し込む（型の9割まで）。残りの生地で細い帯（幅1cm）を作り、格子状に飾る。","title":"型に詰め格子を飾る","actionItems":["オーブンを180℃に予熱する。","直径30cmのタルト型に生地の2/3を薄く敷き込む（側面も）。","フィリングを型の9割まで流し込む。","残りの生地で幅1cmの帯を作り格子状に飾る。"],"parallelItems":[],"completionCriteria":["格子模様が完成すれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"180℃で65〜70分焼く（表面がきつね色に、フィリングが固まるまでが目安。表面が割れるのは正常）。","title":"パスティエラを焼く","actionItems":["180℃で65〜70分焼く。"],"parallelItems":[],"completionCriteria":["表面がきつね色に、フィリングが固まれば焼き上がり。"],"cautionItems":["表面が割れるのは正常。"],"tipItems":[],"durationMinutes":70,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":8,"instruction":"完全に冷めてから冷蔵庫へ。最低1日（できれば2日）置いてから食べる（置くほど各素材が馴染んで風味が一体化する）。","title":"冷まして寝かせる","actionItems":["完全に冷めてから冷蔵庫へ入れる。","最低1日置いてから提供する。"],"parallelItems":[],"completionCriteria":["最低1日（できれば2日）。置くほど風味が一体化する。"],"cautionItems":[],"tipItems":[],"durationMinutes":1440,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

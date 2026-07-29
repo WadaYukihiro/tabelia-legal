@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
           <a href="#pairings">合わせる料理</a>
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -289,6 +290,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"cc269c19-d29b-4333-89ef-3c260705db12","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -345,5 +399,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"cc269c19-d29b-4333-89ef-3c260705db12","nameJa":"鶏肉のディアボラ風グリル","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"809abcf1-c8ba-4b07-b6b4-fa5aca1ccfb0","nameOriginal":"Pollo intero","nameJa":"丸鶏（1羽）","nameEn":"Whole chicken","quantity":1400,"unit":"g（1羽）","role":"essential","scalingBehavior":null,"notes":"背骨に沿って切り開いてスパッチコックにする。または骨付きもも肉4本で代用可","substitutionOptions":[{"id":"65fc5c41-2da7-40c0-b308-65af58bb2833","standardIngredientId":"809abcf1-c8ba-4b07-b6b4-fa5aca1ccfb0","nameJa":"骨付き鶏もも肉","nameEn":"Bone-in chicken thighs","authenticityImpact":-10,"flavorImpact":"均一に仕上げやすく扱いやすい。ただし丸鶏の迫力は失われる","textureImpact":null,"procedureChanges":["スパッチコック工程不要。骨付きもも肉は余分な水気を拭き、皮面を押さえて焼く"],"affectedStepNumbers":[1,3,4,5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"本","notes":"余分な水気を拭き、皮を広げて使う","action":"update","nameEn":"Bone-in chicken thighs","nameJa":"骨付き鶏もも肉","quantity":4,"targetNameJa":"丸鶏（1羽）"}],"stepPatches":[{"title":"骨付きもも肉を整える","action":"replace","stepNumber":1,"actionItems":["骨付き鶏もも肉4本の余分な水気をキッチンペーパーで拭く。","皮が縮まないよう広げる。","余分な脂や大きな筋があれば取り除く。"],"instruction":"骨付き鶏もも肉4本は余分な水気をキッチンペーパーで拭き、皮が縮まないよう広げる。余分な脂や大きな筋があれば取り除く。","changeReason":"骨付きもも肉ではスパッチコック工程が不要なため","completionCriteria":["皮が広がり、表面の水気が取れたら次へ。"]},{"title":"皮面から押さえて焼く","action":"replace","stepNumber":3,"actionItems":["グリルパンを強火で煙が出るまで熱する。","骨付き鶏もも肉を皮側下にしてのせ、重い鍋で上から軽く押さえる。","強火で6〜7分焼く。"],"instruction":"グリルパン（または鉄のフライパン）を強火で煙が出るまで熱する。骨付き鶏もも肉を皮側下にしてのせ、重い鍋で上から軽く押さえる。強火で6〜7分焼く。","cautionItems":["煙が出るレベルまで十分に予熱すること。押さえすぎて肉汁を出しすぎない。"],"changeReason":"骨付きもも肉は丸鶏より薄いため皮面の焼き時間を短くする","completionCriteria":["皮面に濃い焼き色がつき、皮がパリッとしたら裏返す。"]},{"title":"裏返して焼く","action":"replace","stepNumber":4,"actionItems":["裏返して骨側を下にする。","弱めの中火で10〜12分焼く。"],"instruction":"裏返して骨側を下にし、弱めの中火で10〜12分焼く。皮がパリパリでこんがりし、骨の近くの内部温度が75℃になれば完成。","changeReason":"骨付きもも肉は骨の近くまで火が通ったかを確認する必要があるため","completionCriteria":["皮がパリパリでこんがりし、骨の近くの内部温度が75℃になれば完成。"]},{"title":"休ませて盛る","action":"replace","stepNumber":5,"actionItems":["5分休ませる。","レモンを添えて盛り付ける。"],"instruction":"5分休ませてから、レモンを添えて盛り付ける。","changeReason":"骨付きもも肉は切り分けずに提供できるため","completionCriteria":["肉汁が落ち着いたら完成。"]}]}]},{"id":"3b83527c-2a72-415a-b634-11f8ece657e7","nameOriginal":"Peperoncino","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":3,"unit":"本","role":"essential","scalingBehavior":null,"notes":"みじん切りまたはフレーク。悪魔風なのでたっぷり使う","substitutionOptions":[]},{"id":"a539eff3-ce5c-4564-b099-11e2fc77dc42","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"マリネ用に絞る＋仕上げ用","substitutionOptions":[]},{"id":"2dd76325-2f36-4156-9afc-1b6ba9f8054c","nameOriginal":"Rosmarino","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":3,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9a9c5603-e0d8-4727-989c-0399f659aff8","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"すりおろすかみじん切り","substitutionOptions":[]},{"id":"05f0c8fd-e1d2-4924-8f61-e5d62749c1b8","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"33de51a5-ee93-4fd5-b5cb-7f7e0fe20695","nameOriginal":"Pepe nero","nameJa":"黒胡椒（粗挽き）","nameEn":"Coarsely ground black pepper","quantity":5,"unit":"g","role":"essential","scalingBehavior":null,"notes":"たっぷり使う","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"丸鶏を背骨に沿ってキッチンバサミで切り開く（背骨を取り除く）。胸骨を手で押して平らにする（スパッチコック）。扱いにくければ骨付きもも肉を代用する。","title":"スパッチコックにする","actionItems":["丸鶏1羽を背骨に沿ってキッチンバサミで切り開く（背骨を取り除く）。","胸骨を手で押して平らにする（スパッチコック）。"],"parallelItems":[],"completionCriteria":["鶏全体が平らになれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"にんにくをすりおろし（またはみじん切り）、唐辛子をみじん切り（またはフレーク）にする。マリネ液（オリーブオイル・レモン汁・にんにく・唐辛子・ローズマリー・黒胡椒・塩）を混ぜ、鶏全体に塗り込む。30分以上（できれば一晩）冷蔵庫でマリネ。","title":"マリネする","actionItems":["にんにく3片をすりおろし（またはみじん切り）、唐辛子3本をみじん切りにする。","マリネ液（オリーブオイル50ml・レモン汁1個分・にんにく・唐辛子・ローズマリー・黒胡椒5g・塩）を混ぜ、鶏全体に塗り込む。","30分以上（できれば一晩）冷蔵庫でマリネする。"],"parallelItems":[],"completionCriteria":["マリネ時間が終わったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"グリルパン（または鉄のフライパン）を強火で煙が出るまで熱する。鶏を皮側下にしてのせ、重い鍋やアルミホイルで包んだレンガ等で上から押さえる。強火で8分。","title":"皮面から押さえて焼く","actionItems":["グリルパンを強火で煙が出るまで熱する。","鶏を皮側下にしてのせ、重い鍋等で上から押さえる。","強火で8分焼く。"],"parallelItems":[],"completionCriteria":["皮面に濃いグリル跡がついたら裏返す。"],"cautionItems":["煙が出るレベルまで十分に予熱すること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"裏返して肉面を下にし、再び重さで押さえる。弱めの中火にして15分焼く。皮がパリパリでこんがりした焦げ色になれば完成。内部温度75℃。","title":"裏返して焼く","actionItems":["裏返して肉面を下にし、再び重さで押さえる。","弱めの中火にして15分焼く。"],"parallelItems":[],"completionCriteria":["皮がパリパリでこんがりした焦げ色になり、内部温度75℃になれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":18,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"5分休ませてから切り分ける。レモンを添えて食べる。","title":"休ませて切り分ける","actionItems":["5分休ませる。","切り分けてレモンを添えて盛り付ける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

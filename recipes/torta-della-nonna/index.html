@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -347,6 +348,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"1a8e3344-8414-43d5-96f0-b4c3c86e9be6","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -403,5 +457,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1a8e3344-8414-43d5-96f0-b4c3c86e9be6","nameJa":"松の実とカスタードのタルト","baseServings":8,"minServings":4,"maxServings":20},"ingredients":[{"id":"3573342d-f5ed-42d8-a11b-924b5517a80e","nameOriginal":"Farina 00","nameJa":"薄力粉（生地用）","nameEn":"All-purpose flour","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8c27ebfc-efe2-4613-8309-e1d0695b108e","nameOriginal":"Burro freddo","nameJa":"バター（冷たい・無塩）","nameEn":"Cold unsalted butter","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm角に切って冷蔵庫で冷やす","substitutionOptions":[]},{"id":"5da45dbd-8e94-4077-952c-90f2af0e2015","nameOriginal":"Zucchero","nameJa":"砂糖（生地用）","nameEn":"Sugar","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f210cbba-2258-4362-b8bd-bb354459ff23","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄（生地用）","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"11066457-b24b-41a0-851d-a10479c435c5","nameOriginal":"Scorza di limone","nameJa":"レモンの皮（生地用）","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"2b5ddf27-ef6c-48c5-9b5b-87149f3c4eda","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0fdf3224-664c-490a-9a4b-debc2f2bc922","nameOriginal":"Latte intero","nameJa":"全乳（クリーム用）","nameEn":"Whole milk","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"43943d2f-4338-4cbd-833e-625be98ed8ce","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄（クリーム用）","nameEn":"Egg yolks","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cf64222e-bb46-4214-9004-fd832ac8b71c","nameOriginal":"Zucchero","nameJa":"砂糖（クリーム用）","nameEn":"Sugar","quantity":100,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"806f609b-fa55-4625-be0b-3385d82f3dd0","nameOriginal":"Amido di mais","nameJa":"コーンスターチ（クリーム用）","nameEn":"Cornstarch","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0cec4e2c-c2b4-405d-bd0a-0b7891e27901","nameOriginal":"Scorza di limone","nameJa":"レモンの皮（クリーム用）","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"201f726c-55ba-4a4d-9043-c448b4a64971","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"トップに散らす","substitutionOptions":[{"id":"e63fa2fa-6ae9-4b08-ad57-0e51f68b7929","standardIngredientId":"201f726c-55ba-4a4d-9043-c448b4a64971","nameJa":"スライスアーモンド","nameEn":"Sliced almonds","authenticityImpact":-10,"flavorImpact":"食感と味が変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c2cb96b9-cf04-4083-9072-e92eb261e46a","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"パスタ・フロッラを作る：生地用のレモンは白いワタを避け、表皮だけをすりおろす。冷たいバター150gを指で薄力粉300gに擦り込み、砂糖100g・塩・すりおろしたレモンの皮を加えてパン粉状にする。卵黄2個を加えて素早くまとめ、べたつかない生地にする（こねすぎない）。ラップで包む。","title":"パスタ・フロッラを作る","actionItems":["生地用のレモンの表皮だけをすりおろす。","冷たいバター150gを指で薄力粉300gに擦り込み、砂糖・塩・すりおろしたレモンの皮を加えてパン粉状にする。","卵黄2個を加えて素早くまとめる。","ラップで包む。"],"parallelItems":[],"completionCriteria":["べたつかないまとまりのある生地になれば次へ。"],"cautionItems":["こねすぎない。グルテンが出るとサクサク感が失われる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"冷蔵庫で30分休ませる（バターを冷やし直してサクサクの生地に仕上げる）。","title":"生地を休ませる","actionItems":["生地を冷蔵庫で30分休ませる。"],"parallelItems":[],"completionCriteria":["30分。生地が冷えて扱いやすくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"クレーマ・パスティッチェーラを作る：クリーム用のレモンは白いワタを避け、表皮だけをすりおろす。牛乳500ml・すりおろしたレモンの皮を鍋で温める。卵黄4個・砂糖100g・コーンスターチ40gを別のボウルで白くなるまで混ぜ、温めた牛乳を少しずつ加える。鍋に戻し、中火で絶えずかき混ぜながらとろみをつける（底が焦げないよう注意）。バット（またはボウル）に移してラップを密着させ、冷ます。","title":"クレーマを作る","actionItems":["クリーム用のレモンの表皮だけをすりおろす。","牛乳500mlとすりおろしたレモンの皮を鍋で沸騰直前まで温める。","卵黄4個・砂糖100g・コーンスターチ40gを別ボウルで白くなるまで混ぜ、温めた牛乳を少しずつ加える。","鍋に戻して中火で絶えずかき混ぜながらとろみをつける。","バットに移してラップを密着させ冷ます。"],"parallelItems":[],"completionCriteria":["とろみがつきクリーム状になれば完成。冷めたら次へ。"],"cautionItems":["底が焦げないよう絶えず混ぜる。"],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"オーブンを180℃に予熱。直径26cmのタルト型（底が外れるタイプ）にバターを薄く塗る。生地を2:1に分け、大きい方を3〜4mm厚に麺棒で伸ばして型に敷き込む。底をフォークで刺す（ピケ）。","title":"型に生地を敷く","actionItems":["オーブンを180℃に予熱する。","直径26cmのタルト型にバターを薄く塗る。","生地を2:1に分け、大きい方を3〜4mm厚に伸ばして型に敷き込む。","底をフォークで刺す（ピケ）。"],"parallelItems":[],"completionCriteria":["生地が型全体に均一に敷ければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"冷えたクレーマを型に流し込み、平らにならす。残りの生地を薄く伸ばして蓋にする（または格子状に切って並べる）。端をしっかり押さえて閉じる。","title":"クレーマを詰め蓋をする","actionItems":["冷えたクレーマを型に流し込み平らにならす。","残りの生地を薄く伸ばして蓋にする（または格子状に切って並べる）。","端をしっかり押さえて閉じる。"],"parallelItems":[],"completionCriteria":["生地が閉じられれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"松の実80gを表面全体に散らし、180℃で40〜45分焼く（表面がきつね色になるまでが目安）。焼き上がったら型のまま30分以上冷ます。","title":"松の実タルトを焼く","actionItems":["松の実80gを表面全体に散らす。","180℃で40〜45分焼く。","型のまま30分以上冷ます。"],"parallelItems":[],"completionCriteria":["表面がきつね色になれば焼き上がり。"],"cautionItems":[],"tipItems":[],"durationMinutes":45,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"型から外して皿に乗せ、粉砂糖をたっぷり振る。常温でも冷蔵でも美味しい。翌日も味が落ち着いて美味。","title":"粉砂糖を振る","actionItems":["型から外して皿に乗せる。","粉砂糖をたっぷり振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

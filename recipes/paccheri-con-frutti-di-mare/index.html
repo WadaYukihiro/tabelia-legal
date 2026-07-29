@@ -92,6 +92,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -355,6 +356,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"4c1bcf32-e731-422c-aab8-bbaf1697bd0b","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -411,5 +465,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4c1bcf32-e731-422c-aab8-bbaf1697bd0b","nameJa":"魚介のパッケリ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"4af677d8-5b04-437d-825f-4e8a123597c6","nameOriginal":"Paccheri","nameJa":"パッケリ","nameEn":"Paccheri","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"26399d31-9861-4f65-ab4d-519bf40c81ef","standardIngredientId":"4af677d8-5b04-437d-825f-4e8a123597c6","nameJa":"スパゲッティ","nameEn":"Spaghetti","authenticityImpact":-10,"flavorImpact":"ソースを内包するパッケリの特性が失われる。細麺では海鮮との絡みのバランスが変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"14bf7587-1b11-4987-90b6-4dcddb5641d7","nameOriginal":"Vongole","nameJa":"あさり","nameEn":"Clams","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3%塩水（水1Lに塩30g）で2時間砂抜きし、調理直前にこすり洗いする","substitutionOptions":[]},{"id":"9bf3fd53-8c23-4d34-aa8f-d88e68fa564a","nameOriginal":"Cozze","nameJa":"ムール貝","nameEn":"Mussels","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"足糸（ひげ）を引き抜き、殻をたわしでこすり洗い","substitutionOptions":[]},{"id":"4c69c89c-b949-4799-9565-7c6376130d47","nameOriginal":"Gamberi","nameJa":"エビ（殻付き中エビ）","nameEn":"Shrimp","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"殻をむき、背ワタを取る","substitutionOptions":[]},{"id":"591e76cb-0baf-48d8-8a53-43767a5d7d7f","nameOriginal":"Calamari","nameJa":"ヤリイカ","nameEn":"Squid","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"内臓と骨板を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る","substitutionOptions":[]},{"id":"431087f5-a901-4fc3-b012-5ae5bd51da85","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"cc6709b5-af2d-4785-b39e-740ba229367b","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0dc5bd4f-790e-4cc9-9e09-48df23aa1d18","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"c5f1ce06-e414-4e2e-900b-41a6bee971f3","nameOriginal":"Peperoncino","nameJa":"唐辛子（乾燥）","nameEn":"Dried chili pepper","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4bf54192-a55b-4b34-b969-f88369a11497","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":10,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"粗みじん切り","substitutionOptions":[]},{"id":"3bc492ec-396b-4c5a-a6a8-a97944308e28","nameOriginal":"Olio extra vergine","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":45,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"6c9157b3-fe86-4a8a-b915-2b369b15940d","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":"トマトソース用・パスタ茹で湯用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"あさり400gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。アルミホイルなどで覆い、暗所で2時間砂抜きする。","title":"材料を合わせる","actionItems":["アルミホイルなどで覆い、暗所で2時間砂抜きする。"],"parallelItems":[],"completionCriteria":["あさり400gをバットに重ならないよう広げ、3%塩水（水1Lに塩30g）を貝がひたひたになるまで注ぐ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"instruction":"・砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る\n・割れた貝や口が開いたまま閉じない貝を除く\n・ムール貝の足糸（ひげ）をペンチまたは指でしっかり引き抜き、殻をたわしでこすり洗いする","title":"砂抜きする","actionItems":["砂抜きしたあさりをざるに上げ、殻同士をこすり合わせて流水で洗い、水気を切る","割れた貝や口が開いたまま閉じない貝を除く","ムール貝の足糸（ひげ）をペンチまたは指でしっかり引き抜き、殻をたわしでこすり洗いする"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"ヤリイカの内臓と骨板（透明なプラスチック状の軟骨）を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る。","title":"食材を下処理する","actionItems":["ヤリイカの内臓と骨板（透明なプラスチック状の軟骨）を取り除き、胴体を1cm幅の輪切りに、触腕は半分の長さに切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"エビは殻をむき、背に浅く切り込みを入れて背ワタを除去する。","title":"材料を準備する","actionItems":["エビは殻をむき、背に浅く切り込みを入れて背ワタを除去する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"にんにく3片を薄切りにする。大きめのフライパン（直径28cm以上）にEVOO大さじ2を中火で熱し、にんにくと唐辛子1本を入れる。にんにくがほんのり色づくまで1〜2分炒めて香りを出す。","title":"材料を準備する","actionItems":["にんにく3片を薄切りにする。","大きめのフライパン（直径28cm以上）にEVOO大さじ2を中火で熱し、にんにくと唐辛子1本を入れる。","にんにくがほんのり色づくまで1〜2分炒めて香りを出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"あさりとムール貝を加え、白ワイン100mlを注ぐ。蓋をして強火で2〜3分蒸らす。貝が開いたらバットに取り出す。\n・蒸し汁はそのままフライパンに残す\n・2分後も開かない貝は除く","title":"材料を合わせる","actionItems":["あさりとムール貝を加え、白ワイン100mlを注ぐ。","蓋をして強火で2〜3分蒸らす。","貝が開いたらバットに取り出す。","蒸し汁はそのままフライパンに残す","2分後も開かない貝は除く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"エビとヤリイカを同じフライパンで中火で炒める。エビがピンク色に変わり、イカが白く不透明になったら（約2分）取り出す。炒めすぎると硬くなるため、色が変わった瞬間に火から離す。","title":"香味を炒める","actionItems":["エビとヤリイカを同じフライパンで中火で炒める。","エビがピンク色に変わり、イカが白く不透明になったら（約2分）取り出す。","炒めすぎると硬くなるため、色が変わった瞬間に火から離す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"（エビ・イカを炒めている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。ホールトマト200gを手でつぶしながらフライパンに加え、中火で8分煮詰めてソースにする。","title":"湯を沸かす","actionItems":["ホールトマト200gを手でつぶしながらフライパンに加え、中火で8分煮詰めてソースにする。"],"parallelItems":["（エビ・イカを炒めている間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":9,"instruction":"パッケリ200gを沸かしておいた塩湯に入れ、袋表示より2分短めに茹でる。\n・茹で汁150mlを取り置く","title":"茹でる","actionItems":["パッケリ200gを沸かしておいた塩湯に入れ、袋表示より2分短めに茹でる。","茹で汁150mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":10,"instruction":"貝・エビ・イカをフライパンのソースに戻し、アルデンテのパッケリを加えて中火で2分炒め合わせる。茹で汁を大さじ1ずつ加えながらソースの濃度を調整し、パッケリに絡まる状態にする。","title":"ソースを作る","actionItems":["貝・エビ・イカをフライパンのソースに戻し、アルデンテのパッケリを加えて中火で2分炒め合わせる。","茹で汁を大さじ1ずつ加えながらソースの濃度を調整し、パッケリに絡まる状態にする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":11,"instruction":"パスタ全体に残りのEVOO大さじ1を回しかけ、粗みじん切りにしたイタリアンパセリを散らして仕上げる。すぐに提供する。","title":"材料を準備する","actionItems":["パスタ全体に残りのEVOO大さじ1を回しかけ、粗みじん切りにしたイタリアンパセリを散らして仕上げる。","すぐに提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

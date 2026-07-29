@@ -91,6 +91,7 @@
 
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -273,6 +274,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"48dac87c-fb62-4bea-a6d7-128957d2f475","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -329,5 +383,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"48dac87c-fb62-4bea-a6d7-128957d2f475","nameJa":"ほうれん草のフリッタータ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"d1cc85b5-bd12-4a30-8ad0-f1f53c7173b8","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":6,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"5ab2b816-6439-4280-bad5-cfe56b149150","nameOriginal":"Spinaci","nameJa":"ほうれん草","nameEn":"Spinach","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"根元を切り落として洗う。炒めてから水気を絞り、粗く刻む","substitutionOptions":[]},{"id":"fa5ce0f3-7d77-48b8-9131-53161c6a976d","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":0.5,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"23262dcb-8119-4396-b2ca-b6a188992d52","nameOriginal":"Parmigiano Reggiano grattugiato","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Grated Parmigiano Reggiano","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす","substitutionOptions":[]},{"id":"eb790b65-ab78-421d-b3af-83c30848909f","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"311c85d3-f605-427c-9b83-d942dadece13","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":35,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0cbea577-cb82-4f6b-b505-9000546aaab1","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2c993d44-f4a3-4c08-9d86-60f3486e7b33","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・ほうれん草300gは根元を切り落とし、流水で泥を落として洗う\n・玉ねぎ1/2個は薄切りにする\n・パルミジャーノ40gをすりおろす\n葉の付け根に泥が残っていなければ次へ。","title":"野菜を準備する","actionItems":["ほうれん草300gは根元を切り落とし、流水で泥を落として洗う","玉ねぎ1/2個は薄切りにする","パルミジャーノ40gをすりおろす"],"parallelItems":[],"completionCriteria":["葉の付け根に泥が残っていなければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"直径22cmほどのフライパンにエクストラバージンオリーブオイル10mlを中火で熱し、ほうれん草を入れて2〜3分炒める。葉が完全にしんなりしたらざるに取り、粗熱が取れたら両手でしっかり水気を絞り、粗く刻む。絞ってもほとんど水分が出なくなっていれば次へ。","title":"ほうれん草を炒めて刻む","actionItems":["直径22cmほどのフライパンにエクストラバージンオリーブオイル10mlを中火で熱し、ほうれん草を入れて2〜3分炒める。","葉が完全にしんなりしたらざるに取り、粗熱が取れたら両手でしっかり水気を絞り、粗く刻む。"],"parallelItems":[],"completionCriteria":["絞ってもほとんど水分が出なくなっていれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンにエクストラバージンオリーブオイル10mlを中火で熱し、玉ねぎを3〜4分炒める。透き通って甘い香りが立ったら火を止める。","title":"玉ねぎを炒める","actionItems":["同じフライパンにエクストラバージンオリーブオイル10mlを中火で熱し、玉ねぎを3〜4分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["透き通って甘い香りが立ったら火を止める。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ボウルに卵6個を割り入れ、塩5g、黒胡椒1g、ナツメグ少々、パルミジャーノを加えて混ぜる。白身の筋が切れて均一な黄色になったら、刻んだほうれん草と炒めた玉ねぎをボウルに加えて混ぜる。泡立てすぎない。","title":"卵液を作る","actionItems":["ボウルに卵6個を割り入れ、塩5g、黒胡椒1g、ナツメグ少々、パルミジャーノを加えて混ぜる。","白身の筋が切れて均一な黄色になったら、刻んだほうれん草と炒めた玉ねぎをボウルに加えて混ぜる。","泡立てすぎない。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"フライパンを拭き、エクストラバージンオリーブオイル15mlを弱めの中火で熱して卵液を流し入れる。縁が固まり始めたらゴムべらで外側から内側へ2〜3回寄せ、蓋をして弱火で8〜10分焼く。表面がほぼ固まり、中心を軽く押すとゆっくり戻る状態になったら次へ。","title":"片面を焼く","actionItems":["フライパンを拭き、エクストラバージンオリーブオイル15mlを弱めの中火で熱して卵液を流し入れる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["縁が固まり始めたらゴムべらで外側から内側へ2〜3回寄せ、蓋をして弱火で8〜10分焼く。","表面がほぼ固まり、中心を軽く押すとゆっくり戻る状態になったら次へ。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"フライパンに皿をかぶせて裏返し、フリッタータを滑らせてフライパンに戻し、反対面を2分焼く。両面が淡いきつね色になり、竹串を中心に刺して生の卵液が付かなければ火から下ろす。5分休ませてから切り分けて完成。","title":"裏返して仕上げる","actionItems":["フライパンに皿をかぶせて裏返し、フリッタータを滑らせてフライパンに戻し、反対面を2分焼く。","5分休ませてから切り分けて完成。"],"parallelItems":[],"completionCriteria":["両面が淡いきつね色になり、竹串を中心に刺して生の卵液が付かなければ火から下ろす。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

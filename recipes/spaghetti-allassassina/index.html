@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -310,6 +311,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"19401688-4b5a-46b9-a967-a88d458b1e74","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -366,5 +420,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"19401688-4b5a-46b9-a967-a88d458b1e74","nameJa":"焦がしトマトの暗殺者風スパゲッティ","baseServings":2,"minServings":1,"maxServings":2},"ingredients":[{"id":"bdf3bbf8-536c-41b7-a53b-758754a82f68","nameOriginal":"Spaghetti","nameJa":"スパゲッティ（乾燥）","nameEn":"Dry spaghetti","quantity":160,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1.8〜2.0mm太さ。細すぎると焦げが進みすぎる。茹でない","substitutionOptions":[{"id":"b5b93699-1696-4d4d-a6b8-09538d410076","standardIngredientId":"bdf3bbf8-536c-41b7-a53b-758754a82f68","nameJa":"スパゲッティーニ（1.6mm）","nameEn":"Spaghettini (1.6mm)","authenticityImpact":-5,"flavorImpact":"細いため焦げが進みやすい。火加減の調整が難しくなる","textureImpact":null,"procedureChanges":["熱湯を加えるタイミングを早める"],"affectedStepNumbers":[4,5],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"action":"replace","stepNumber":4,"instruction":"スパゲッティーニ（1.6mm・乾燥のまま）をフライパンに投入し、強火のまま箸かトングで広げながら20〜30秒だけ炒める。表面が油でコーティングされ、一部が薄く色づき始めたらすぐ次へ。","changeReason":"スパゲッティーニは細く焦げやすいため、乾麺を炒める時間を短くする"},{"action":"replace","stepNumber":5,"instruction":"トマトソースの1/3量（約80ml）をスパゲッティーニに回しかける。強火を維持したまま、絶えず動かしながらソースを吸わせる。水分が半分ほど飛んだ時点で熱湯を80〜100mlお玉で早めに加える。再び吸収されるまで炒め、この「ソース→早めの熱湯→吸収」のサイクルをアルデンテになるまで続ける（3〜4サイクル、計9〜11分）。","changeReason":"スパゲッティーニは焦げと吸水が早いため、熱湯を加えるタイミングを早める"}]}]},{"id":"a86151af-f5b6-4da9-80a4-cf09d8f39181","nameOriginal":"Concentrato di pomodoro","nameJa":"トマトペースト（ダブル）","nameEn":"Double-concentrated tomato paste","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"070032b0-fedf-4b25-a188-2d077b5fcd15","nameOriginal":"Passata di pomodoro","nameJa":"パッサータ（トマトピューレ）","nameEn":"Tomato passata","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"3b6de7ae-5942-41ac-b4a8-74ac5b21f990","standardIngredientId":"070032b0-fedf-4b25-a188-2d077b5fcd15","nameJa":"ホールトマト缶（手でつぶして裏ごし）","nameEn":"Whole peeled tomatoes, strained","authenticityImpact":0,"flavorImpact":"同等。種を除くと滑らかになる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"fa53125d-3147-4423-bb44-f7c7e13c6b54","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り。香りを出したら取り出さずそのまま残す","substitutionOptions":[]},{"id":"12d0be4f-dc16-48f6-8bc2-602f9b79c3a8","nameOriginal":"Peperoncino secco","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":2,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"手で細かくほぐす。アッサシーナは辛みが必要——省略しない","substitutionOptions":[{"id":"75cda1a0-059c-43aa-a971-6d1e749d33f1","standardIngredientId":"12d0be4f-dc16-48f6-8bc2-602f9b79c3a8","nameJa":"唐辛子フレーク 小さじ1","nameEn":"Chili flakes, 1 tsp","authenticityImpact":0,"flavorImpact":"辛みの調整がしやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"932db67b-114a-42d4-83f2-863d52b0128b","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"df16478f-d1ee-4aa6-bb7a-fbc6d8047e45","nameOriginal":"Acqua bollente","nameJa":"熱湯","nameEn":"Boiling water","quantity":400,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"常に沸騰した状態でポットに用意しておく。常温水は使わない","substitutionOptions":[]},{"id":"af8576c8-396e-4e73-bf67-21068c3b53a9","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"トマトソースの調味用","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"トマトソースを作る。小鍋にパッサータ200mlとトマトペースト60gを合わせてよく混ぜ、塩小さじ1/2を加えて中火で5分煮詰める。やや濃いめのソースになったら火を止めて取り置く。同時に熱湯400mlをポットに用意して沸騰状態を保つ。","title":"ソースを作る","actionItems":["トマトソースを作る。","小鍋にパッサータ200mlとトマトペースト60gを合わせてよく混ぜ、塩小さじ1/2を加えて中火で5分煮詰める。"],"parallelItems":["同時に熱湯400mlをポットに用意して沸騰状態を保つ。"],"completionCriteria":[],"cautionItems":["やや濃いめのソースになったら火を止めて取り置く。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"にんにく3片を薄切りにする。赤唐辛子2本を手でほぐす。","title":"材料を準備する","actionItems":["にんにく3片を薄切りにする。","赤唐辛子2本を手でほぐす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鉄製フライパン（または厚手のステンレス、28cm）にエクストラバージンオリーブオイル60mlを入れ、強火で煙が出るほど熱する（約2〜3分）。にんにく（薄切り）と赤唐辛子（ほぐしたもの）を加えてにんにくが薄く色づき香りが立つまで30〜40秒炒める。","title":"材料を合わせる","actionItems":["鉄製フライパン（または厚手のステンレス、28cm）にエクストラバージンオリーブオイル60mlを入れ、強火で煙が出るほど熱する（約2〜3分）。","にんにく（薄切り）と赤唐辛子（ほぐしたもの）を加えてにんにくが薄く色づき香りが立つまで30〜40秒炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"スパゲッティ（乾燥のまま）をフライパンに投入し、強火のまま箸かトングで広げながら30秒〜1分炒める。スパゲッティの表面が油でコーティングされ、一部が薄く色づいてきたら次へ——この焦げは正常であり目的。","title":"香味を炒める","actionItems":["スパゲッティ（乾燥のまま）をフライパンに投入し、強火のまま箸かトングで広げながら30秒〜1分炒める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["スパゲッティの表面が油でコーティングされ、一部が薄く色づいてきたら次へ——この焦げは正常であり目的。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"トマトソースの1/3量（約80ml）をスパゲッティに回しかける。強火を維持したまま、スパゲッティをトングで絶えず動かしながらソースを吸わせる。水分が吸収されてほぼなくなったら（約2〜3分）、熱湯を80〜100mlお玉で加える。再び吸収されるまで炒める。この「ソース→吸収→熱湯→吸収」のサイクルをスパゲッティがアルデンテになるまで続ける（4〜5サイクル、計12〜15分）。","title":"ソースを作る","actionItems":["トマトソースの1/3量（約80ml）をスパゲッティに回しかける。","強火を維持したまま、スパゲッティをトングで絶えず動かしながらソースを吸わせる。","水分が吸収されてほぼなくなったら（約2〜3分）、熱湯を80〜100mlお玉で加える。","再び吸収されるまで炒める。"],"parallelItems":[],"completionCriteria":["この「ソース→吸収→熱湯→吸収」のサイクルをスパゲッティがアルデンテになるまで続ける（4〜5サイクル、計12〜15分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"スパゲッティの中心にわずかに芯が残り、表面に茶褐色の焦げ斑点がついた状態がゴール。残りのトマトソースを加え、最後に1分強火で炒め合わせてパスタ全体にソースを絡める。","title":"仕上げにまとめる","actionItems":["残りのトマトソースを加え、最後に1分強火で炒め合わせてパスタ全体にソースを絡める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["スパゲッティの中心にわずかに芯が残り、表面に茶褐色の焦げ斑点がついた状態がゴール。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"皿に盛る。仕上げの追加油は使わない——シンプルに仕上げる。","title":"盛り付ける","actionItems":["皿に盛る。","仕上げの追加油は使わない——シンプルに仕上げる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

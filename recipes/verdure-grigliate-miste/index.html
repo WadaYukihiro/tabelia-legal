@@ -90,6 +90,7 @@
 
 
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -154,6 +155,59 @@
 
 
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"dac38ed5-ec21-4b4f-974a-a58a3203993e","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -210,5 +264,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"dac38ed5-ec21-4b4f-974a-a58a3203993e","nameJa":"季節の野菜のグリル焼き","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"16386204-e134-43d4-a583-d0b9a91d510d","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"f81aad6c-3c4b-4879-92e5-dd72b030cddb","nameOriginal":"Melanzane","nameJa":"なす","nameEn":"Eggplant","quantity":1,"unit":"本","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ac47018f-4082-4193-9c4b-c71f5c584a96","nameOriginal":"Peperoni","nameJa":"パプリカ（赤・黄各1個）","nameEn":"Bell peppers (red and yellow)","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2d95fb0b-d394-4c19-b6d3-f72714aebefc","nameOriginal":"Asparagi","nameJa":"アスパラガス","nameEn":"Asparagus","quantity":6,"unit":"本","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"37721634-5d2d-4427-aeba-b0e83e7a041e","nameOriginal":"Olio extravergine","nameJa":"EVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":5,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a0881d95-8fe3-4f57-874b-b134101e6545","nameOriginal":"Aceto balsamico","nameJa":"バルサミコ酢","nameEn":"Balsamic vinegar","quantity":1,"unit":"大さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0089bf7c-dc58-4957-80df-b07e9dce8c9e","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a243ebcc-2be6-4cb5-b114-0d92f5f6d78e","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ズッキーニは縦に5mm厚にスライス。なすは1cm厚の輪切りに切り、塩を少々ふって10分置き水分を拭き取る。パプリカは縦に4等分して種を取る。アスパラは根元の硬い部分を折り取る。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"野菜の下準備"},{"stepNumber":2,"instruction":"グリルパンを強火で5分空焼きし、十分に熱する。野菜にEVオリーブオイル大さじ1を刷毛で塗り、塩少々をふる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"グリルパンを準備する"},{"stepNumber":3,"instruction":"野菜を種類ごとにグリルパンで焼く。ズッキーニ2〜3分、なす3〜4分、パプリカ4〜5分、アスパラ3〜4分。各面に美しいグリル跡がつくまで動かさない。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"焼く"},{"stepNumber":4,"instruction":"焼き上がった野菜を大皿に並べる。みじん切りにんにく、残りのEVオリーブオイル、バルサミコ酢を混ぜたマリネをかける。塩で味を調えて30分以上なじませる。","title":null,"actionItems":[],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":null,"attentionLevel":"active","sectionTitle":"仕上げ・マリネ"}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

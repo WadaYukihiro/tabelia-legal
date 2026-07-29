@@ -92,6 +92,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -279,6 +280,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"ab98b12f-5ffd-405c-a51b-26074da714b8","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -335,5 +389,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"ab98b12f-5ffd-405c-a51b-26074da714b8","nameJa":"豚スペアリブのサルデーニャ風オーブン焼き","baseServings":4,"minServings":4,"maxServings":20},"ingredients":[{"id":"0d53364e-eb49-4e1b-9258-c5ce43a69d3f","nameOriginal":"Costine di maiale (spare ribs)","nameJa":"豚スペアリブ","nameEn":"Pork spare ribs","quantity":1500,"unit":"g（2ラック）","role":"essential","scalingBehavior":null,"notes":"骨に沿って切り分けるか、ラックのままオーブンで焼く","substitutionOptions":[{"id":"def237e1-2e08-41b4-8e36-3167f99b66ec","standardIngredientId":"0d53364e-eb49-4e1b-9258-c5ce43a69d3f","nameJa":"豚バックリブ（ベビーバック）","nameEn":"Pork baby back ribs","authenticityImpact":-5,"flavorImpact":"肉が柔らかく上品。スペアリブより焼き時間が短い","textureImpact":null,"procedureChanges":["焼き時間を70分に短縮"],"affectedStepNumbers":[4],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"バックリブを短めに焼き上げる","action":"replace","stepNumber":4,"actionItems":["220℃で15分焼いて表面を焼き固める。","160℃に下げてアルミホイルをかぶせ、さらに45分焼く。","最後の10分はアルミを外して表面をパリッとさせる。"],"instruction":"220℃で15分焼いて表面を焼き固める。160℃に下げてアルミホイルをかぶせ、さらに45分焼く。最後の10分はアルミを外して表面をパリッとさせる。","changeReason":"ベビーバックリブはスペアリブより小さく柔らかいため、標準より短い焼き時間にする","completionCriteria":["表面がパリッとし、骨の端から肉が少し縮んで内部に火が通れば完成。"]}]}]},{"id":"7a046d37-9acc-4df0-901d-d924d35171df","nameOriginal":"Rosmarino","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":4,"unit":"枝","role":"essential","scalingBehavior":null,"notes":"葉を外してみじん切り","substitutionOptions":[]},{"id":"59d72227-144d-4ce7-8389-f0d9e3a6ccb0","nameOriginal":"Semi di finocchio","nameJa":"フェンネルシード","nameEn":"Fennel seeds","quantity":10,"unit":"g（大さじ1）","role":"essential","scalingBehavior":null,"notes":"指で軽く潰して香りを出す","substitutionOptions":[{"id":"44d6e268-8d2b-49b0-bebc-ad5438d532a1","standardIngredientId":"59d72227-144d-4ce7-8389-f0d9e3a6ccb0","nameJa":"ウイキョウの葉（生）","nameEn":"Fresh fennel fronds","authenticityImpact":-5,"flavorImpact":"香りは近い。大さじ2〜3使う","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"837ee567-7bc1-4fd0-8acd-910a4df3e0a7","nameOriginal":"Mirto (bacche) o ginepro","nameJa":"ミルトの実（または杜松の実）","nameEn":"Myrtle berries or juniper berries","quantity":10,"unit":"粒","role":"essential","scalingBehavior":null,"notes":"軽くつぶす。サルデーニャの象徴的スパイス","substitutionOptions":[{"id":"c3866e4e-fbf4-4f46-8c78-80807243ce28","standardIngredientId":"837ee567-7bc1-4fd0-8acd-910a4df3e0a7","nameJa":"杜松の実（ジュニパーベリー）","nameEn":"Juniper berries","authenticityImpact":0,"flavorImpact":"ミルトと杜松はどちらもサルデーニャ料理で使われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"966918ac-2535-4309-ba4c-8950f2c58ef8","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"すりおろすかみじん切り","substitutionOptions":[]},{"id":"861cec25-77c6-4f58-b03a-f23544bbc101","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ecb41dbe-870d-444a-a6d7-67bbe0868224","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"仕上げに絞る","substitutionOptions":[]},{"id":"25071868-d4a2-4f23-a168-a4181ba0b9dd","nameOriginal":"Sale marino","nameJa":"塩（粗塩）","nameEn":"Coarse sea salt","quantity":15,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"マリネ液を作る：\n・ローズマリーの葉をみじん切りにする\n・にんにくをすりおろすかみじん切りにする\n・ボウルにローズマリー（みじん切り）・フェンネルシード（指で潰す）・ミルト（またはジュニパー、潰す）・にんにく（すりおろすかみじん切り）・粗塩・こしょう・オリーブオイルを入れて混ぜる","title":"マリネ液を作る","actionItems":["ローズマリー4枝の葉をみじん切りにする。","にんにく4片をすりおろすかみじん切りにする。","ボウルにローズマリー・フェンネルシード10g（指で潰す）・ミルト10粒（潰す）・にんにく・粗塩15g・こしょう・オリーブオイル50mlを入れて混ぜる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"スペアリブ全体にマリネ液を塗り込む。ラップをして冷蔵庫で最低2時間（できれば一晩）マリネする。表面に香草と塩がなじみ、肉の色が少し濃くなったら次へ。","title":"マリネする","actionItems":["スペアリブ1500g全体にマリネ液を塗り込む。","ラップをして冷蔵庫で最低2時間（できれば一晩）マリネする。"],"parallelItems":[],"completionCriteria":["表面に香草と塩がなじみ、肉の色が少し濃くなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"オーブンを220℃に予熱。スペアリブを天板の上に並べる（骨側を下にする）。","title":"オーブンを予熱して並べる","actionItems":["オーブンを220℃に予熱する。","スペアリブを天板の上に並べる（骨側を下にする）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"220℃で20分焼いて表面を焼き固める。160℃に下げてアルミホイルをかぶせ、さらに60分焼く。最後の10分はアルミを外して表面をパリッとさせる。","title":"焼き上げる","actionItems":["220℃で20分焼いて表面を焼き固める。","160℃に下げてアルミホイルをかぶせ、さらに60分焼く。","最後の10分はアルミを外して表面をパリッとさせる。"],"parallelItems":[],"completionCriteria":["表面がパリッとして内部に火が通れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":92,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"骨に沿って切り分け、仕上げにレモンを絞る。サルデーニャのパン（カラサウ）またはフォカッチャと合わせて食べる。","title":"切り分けて仕上げる","actionItems":["骨に沿って切り分ける。","仕上げにレモン1個を絞る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

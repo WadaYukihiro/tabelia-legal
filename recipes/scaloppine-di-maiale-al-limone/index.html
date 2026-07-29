@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
           <a href="#pairings">合わせる料理</a>
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -305,6 +306,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"0d5cf639-d37c-48c2-8009-01e3cedbda66","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -361,5 +415,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0d5cf639-d37c-48c2-8009-01e3cedbda66","nameJa":"豚肉のレモンスカロッピーネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"780ac662-620d-4e0b-945f-80d03750e325","nameOriginal":"Lonza di maiale a fettine","nameJa":"豚ロース薄切り","nameEn":"Thin-sliced pork loin","quantity":480,"unit":"g","role":"essential","scalingBehavior":null,"notes":"脂身を少し残し、肉叩きで厚さ4mmに整える","substitutionOptions":[{"id":"4718a711-39bc-4a51-8c87-4311bbec0474","standardIngredientId":"780ac662-620d-4e0b-945f-80d03750e325","nameJa":"豚ヒレ肉","nameEn":"Pork tenderloin","authenticityImpact":-5,"flavorImpact":"脂の香りは弱まるが、柔らかく上品に仕上がる","textureImpact":null,"procedureChanges":["1cm厚に切り、厚さ5mmまで叩く"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"957463ee-ca3e-42ed-8c9f-bf6f6d878019","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Cake flour","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"肉に薄くまぶす","substitutionOptions":[]},{"id":"19b6923c-4851-44f8-9255-4119919520b5","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"a83324f8-b3d9-4ca9-a7d0-c10a4227b464","standardIngredientId":"19b6923c-4851-44f8-9255-4119919520b5","nameJa":"水60ml + レモン汁小さじ1","nameEn":"Water with lemon juice","authenticityImpact":-10,"flavorImpact":"ワインの香りは消えるが、酸味の輪郭は保てる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"38750fb4-b437-4786-a62d-7b69a4632f37","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"果汁を搾り、皮の黄色い部分を少量削る","substitutionOptions":[]},{"id":"210023fe-d6eb-4ab0-b177-34cb15b11cec","nameOriginal":"Burro","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":35,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"873b79e1-819f-4180-b5ef-5dbb8519b474","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":20,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"214c18c4-547b-47ea-a00e-15d757990253","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Fresh flat-leaf parsley","quantity":8,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"24894ce4-182f-49bb-a993-42ffea8699d9","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0342be2a-d9cd-4b89-833a-40c692d88df2","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"豚ロース薄切り480gは筋を数か所切り、ラップで挟んで肉叩きか麺棒で厚さ4mmに整える。表面が均一に薄くなり、破れていない状態にする。","title":"材料を準備する","actionItems":["豚ロース薄切り480gは筋を数か所切り、ラップで挟んで肉叩きか麺棒で厚さ4mmに整える。"],"parallelItems":[],"completionCriteria":["表面が均一に薄くなり、破れていない状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"レモン1個は果汁を搾り、皮の黄色い部分を少量削る。イタリアンパセリ8gをみじん切りにする。豚肉の両面に塩と黒胡椒を軽く振る。","title":"材料を準備する","actionItems":["レモン1個は果汁を搾り、皮の黄色い部分を少量削る。","イタリアンパセリ8gをみじん切りにする。","豚肉の両面に塩と黒胡椒を軽く振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"薄力粉30gをバットに広げ、豚肉の両面に薄くまぶす。余分な粉をはたき、肉の表面に粉が白く厚く残らない状態にする。","title":"衣をつける","actionItems":["薄力粉30gをバットに広げ、豚肉の両面に薄くまぶす。"],"parallelItems":[],"completionCriteria":["余分な粉をはたき、肉の表面に粉が白く厚く残らない状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"フライパンにエクストラバージンオリーブオイル20mlと無塩バター20gを入れて中火で熱し、泡が細かくなったら豚肉を並べる。片面1分ずつ焼き、縁が白く変わり薄い焼き色がついたら取り出す。","title":"材料を合わせる","actionItems":["フライパンにエクストラバージンオリーブオイル20mlと無塩バター20gを入れて中火で熱し、泡が細かくなったら豚肉を並べる。","片面1分ずつ焼き、縁が白く変わり薄い焼き色がついたら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"同じフライパンに辛口白ワイン80mlを注ぎ、木べらで焼き跡をこそげながら中火で2分煮詰める。アルコール臭が消え、液体が半量ほどになったら次へ。","title":"形を整える","actionItems":["同じフライパンに辛口白ワイン80mlを注ぎ、木べらで焼き跡をこそげながら中火で2分煮詰める。"],"parallelItems":[],"completionCriteria":["アルコール臭が消え、液体が半量ほどになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"レモン果汁大さじ2と無塩バター15gを加え、フライパンを揺すって乳化させる。ソースが薄くとろみ、木べらの跡がすぐ消える程度になったら豚肉を戻す。","title":"仕上げにまとめる","actionItems":["レモン果汁大さじ2と無塩バター15gを加え、フライパンを揺すって乳化させる。"],"parallelItems":[],"completionCriteria":["ソースが薄くとろみ、木べらの跡がすぐ消える程度になったら豚肉を戻す。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"豚肉をソースに30秒絡める。表面に艶が出て、中心まで火が入りすぎず柔らかさが残っていれば完成。レモンの皮とイタリアンパセリを散らす。","title":"ソースを作る","actionItems":["豚肉をソースに30秒絡める。","レモンの皮とイタリアンパセリを散らす。"],"parallelItems":[],"completionCriteria":["表面に艶が出て、中心まで火が入りすぎず柔らかさが残っていれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

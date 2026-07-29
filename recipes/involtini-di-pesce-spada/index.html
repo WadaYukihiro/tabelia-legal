@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -244,6 +245,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"955a2f4b-0575-4863-8037-439ea0d36bba","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -300,5 +354,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"955a2f4b-0575-4863-8037-439ea0d36bba","nameJa":"メカジキのインヴォルティーニ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"09d72910-5a2f-4195-aa6b-e9205d13e91a","nameOriginal":"Pesce spada a fette sottili","nameJa":"メカジキ（薄切り）","nameEn":"Swordfish, thinly sliced","quantity":400,"unit":"g（薄切り8枚）","role":"essential","scalingBehavior":null,"notes":"3mm厚に薄切りに。購入時にお願いするとよい","substitutionOptions":[{"id":"592608e3-94e8-4386-9bb1-550faa9d7008","standardIngredientId":"09d72910-5a2f-4195-aa6b-e9205d13e91a","nameJa":"マグロ（薄切り）","nameEn":"Tuna, thinly sliced","authenticityImpact":-10,"flavorImpact":"ロールにしやすいが食感が異なる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3aaad658-3561-4428-a483-47d30c0904a8","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"3069354e-ceb0-441a-8b91-45897824f930","nameOriginal":"Pinoli","nameJa":"松の実","nameEn":"Pine nuts","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"軽くローストする","substitutionOptions":[]},{"id":"7fa0565d-7d92-4389-bafc-e0ca84e7d055","nameOriginal":"Uvetta","nameJa":"レーズン（水で戻す）","nameEn":"Raisins, soaked","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"bd24fecb-2a4b-4da3-b3b6-fbf5aacb90ba","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":2,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"67ae356b-57d2-4451-b17c-d0edda7e2519","nameOriginal":"Caciocavallo grattugiato","nameJa":"カチョカヴァッロ","nameEn":"Grated caciocavallo cheese","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"7e582dcd-8389-4a63-ba7b-4f808b3da7b6","standardIngredientId":"67ae356b-57d2-4451-b17c-d0edda7e2519","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-5,"flavorImpact":"塩気が強くなるが近い風味","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7ea3b084-933f-437a-8f52-83f3fba69a34","nameOriginal":"Foglie di alloro","nameJa":"ローリエ","nameEn":"Bay leaves","quantity":8,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"串に交互に刺す","substitutionOptions":[]},{"id":"92c3cefc-429e-43b9-b016-51f121952ab2","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"イタリアンパセリをみじん切りにする。","title":"パセリを刻む","actionItems":["イタリアンパセリをみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"パン粉・松の実・レーズン・パセリ・チーズをオリーブオイルで混ぜてフィリングを作る。","title":"フィリングを作る","actionItems":["パン粉60g・松の実30g・レーズン30g・パセリ・チーズ30gをオリーブオイルで混ぜてフィリングを作る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"メカジキの薄切りにフィリングをのせ、くるくると巻いて楊枝で固定する。","title":"ロールに巻く","actionItems":["メカジキの薄切りにフィリングをのせる。","くるくると巻いて楊枝で固定する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"金串に「メカジキのロール → ローリエ → メカジキのロール → ローリエ」の順で交互に刺す。","title":"串に刺す","actionItems":["金串に「メカジキのロール → ローリエ → メカジキのロール → ローリエ」の順で交互に刺す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"グリルまたは魚焼きグリルで、オリーブオイルを塗りながら全面を各2〜3分ずつ焼く（合計10〜12分）。焼き色がついたら完成。","title":"グリルで焼く","actionItems":["グリルまたは魚焼きグリルで、オリーブオイルを塗りながら全面を各2〜3分ずつ焼く（合計10〜12分）。"],"parallelItems":[],"completionCriteria":["全面に焼き色がついたら完成（合計10〜12分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

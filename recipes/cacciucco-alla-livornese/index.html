@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -281,6 +282,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"d90f4139-3448-41f6-aa87-2c5f889a266f","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -337,5 +391,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d90f4139-3448-41f6-aa87-2c5f889a266f","nameJa":"リヴォルノ風魚介の煮込みスープ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"5abe54ff-f78e-4fd3-a31e-082ec05ed67f","nameOriginal":"Polpo","nameJa":"タコ","nameEn":"Octopus","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生タコの場合は粗塩でよく揉んでぬめりを取ること。足を切り離し、たたいてやわらかくしておく","substitutionOptions":[]},{"id":"7f0f2b72-7e7e-4c20-9398-3c040dec34e5","nameOriginal":"Seppie","nameJa":"コウイカ","nameEn":"Cuttlefish","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"輪切り。墨袋は捨てる","substitutionOptions":[]},{"id":"6567abd2-ae51-459f-b044-1f785ab632e3","nameOriginal":"Scorfano o gallinella","nameJa":"カサゴまたはホウボウ","nameEn":"Scorpionfish or gurnard","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3cm幅のぶつ切り","substitutionOptions":[{"id":"ae566f19-4b0c-4951-8760-d37b6f84b603","standardIngredientId":"6567abd2-ae51-459f-b044-1f785ab632e3","nameJa":"メバル","nameEn":"Rockfish","authenticityImpact":-5,"flavorImpact":"風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"bdc71f13-455c-4b66-9c3a-73e70186a127","nameOriginal":"Gamberi","nameJa":"エビ","nameEn":"Prawns","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"殻付き","substitutionOptions":[]},{"id":"80e9ddcd-d296-43e7-8f39-ad4c9a14fec4","nameOriginal":"Cozze","nameJa":"ムール貝","nameEn":"Mussels","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"殻付き、よく洗う","substitutionOptions":[]},{"id":"a4a5a79c-49ae-420a-8501-e5a3744cb41e","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"747adb1b-1da9-42f3-871f-58b4d702f590","nameOriginal":"Vino rosso","nameJa":"赤ワイン","nameEn":"Red wine","quantity":200,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"a4e748eb-cd8e-47aa-a351-29438276ba41","nameOriginal":"Peperoncino rosso","nameJa":"唐辛子（赤・乾燥）","nameEn":"Dried red chili","quantity":2,"unit":"本","role":"essential","scalingBehavior":null,"notes":"カッチュッコの個性。ケチらない","substitutionOptions":[]},{"id":"3a9c1833-fd79-48bf-bdfd-6801d7e9c352","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":4,"unit":"片","role":"essential","scalingBehavior":null,"notes":"つぶす","substitutionOptions":[]},{"id":"0efdd5d4-54c8-4c3d-8740-877bac9c8336","nameOriginal":"Pane toscano abbrustolito","nameJa":"トスカーナパン（トースト）","nameEn":"Toasted Tuscan bread","quantity":8,"unit":"枚","role":"garnish","scalingBehavior":null,"notes":"にんにくを擦りつけてから器に敷く","substitutionOptions":[]},{"id":"c1a4bf39-ffd3-4681-8e0d-034f43d17309","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":80,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・タコに粗塩（大さじ2）をまぶしてよく揉み、ぬめりを取る。流水でよく洗い流す\n・タコの足を切り離し、たたいて柔らかくする\n・コウイカを輪切りにし、墨袋を取り除く\n・カサゴを3cm幅のぶつ切りにする\n・にんにく4片をつぶす","title":"魚介を下処理する","actionItems":["タコに粗塩（大さじ2）をまぶしてよく揉み、ぬめりを取る。流水でよく洗い流す。","タコの足を切り離し、たたいて柔らかくする。","コウイカを輪切りにし、墨袋を取り除く。","カサゴを3cm幅のぶつ切りにする。","にんにく4片をつぶす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"厚手の鍋にオリーブオイル大さじ4とつぶしたにんにく・唐辛子を入れて中火にかけ、香りが出たらタコとコウイカを加えて強火で5分炒める。","title":"タコとイカを炒める","actionItems":["厚手の鍋にオリーブオイル大さじ4・つぶしたにんにく・唐辛子を入れて中火にかける。","香りが出たらタコとコウイカを加えて強火で5分炒める。"],"parallelItems":[],"completionCriteria":["表面が軽く色づいたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"赤ワインを注いでアルコールを飛ばし、ホールトマトを手でつぶして加え、蓋をして弱火で30分煮込む。","title":"ワインとトマトで煮込む","actionItems":["赤ワイン200mlを注いでアルコールを飛ばす。","ホールトマトを手でつぶして加え、蓋をして弱火で30分煮込む。"],"parallelItems":[],"completionCriteria":["30分後。タコとイカが柔らかくなったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":32,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"カサゴとエビを加えてさらに10分煮込む。ムール貝を加えてすべて口が開くまで5分蓋をして煮る。","title":"残りの魚介を加える","actionItems":["カサゴとエビを加えてさらに10分煮込む。","ムール貝を加えて蓋をして5分煮る。"],"parallelItems":[],"completionCriteria":["ムール貝がすべて口を開いたら完成。"],"cautionItems":["口が開かないムール貝は捨てる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"にんにくを擦りつけたトースト数枚を深皿に敷き、魚介を汁ごと注いで提供する。","title":"トーストに魚介を注ぐ","actionItems":["にんにくを擦りつけたトーストを深皿に敷く。","魚介を汁ごと注いで提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

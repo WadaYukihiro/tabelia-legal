@@ -92,6 +92,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -387,6 +388,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"2a74e83a-7e63-44e7-b94a-d2d10d566239","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -443,5 +497,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"2a74e83a-7e63-44e7-b94a-d2d10d566239","nameJa":"ズッコット","baseServings":8,"minServings":6,"maxServings":20},"ingredients":[{"id":"e75923e6-50fa-4003-8632-558b446a2da3","nameOriginal":"Uova","nameJa":"卵","nameEn":"Eggs","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"スポンジ用。常温に戻す","substitutionOptions":[]},{"id":"95808b63-f406-4cd8-8738-7161db892d5e","nameOriginal":"Zucchero (per pan di Spagna)","nameJa":"砂糖（スポンジ用）","nameEn":"Sugar (for sponge)","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2959c839-a5a8-470a-9964-9079196d5344","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":"スポンジ用。ふるっておく","substitutionOptions":[]},{"id":"b5342621-a7d7-4827-8593-9c6cb93a54b7","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c47c645a-410c-4bdf-99d9-f259fa335923","nameOriginal":"Cognac o Rum","nameJa":"コニャックまたはラム","nameEn":"Cognac or rum","quantity":60,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"シロップ用","substitutionOptions":[{"id":"550fc47b-6543-4094-bb1f-d2da4eb26547","standardIngredientId":"c47c645a-410c-4bdf-99d9-f259fa335923","nameJa":"オレンジリキュール","nameEn":"Orange liqueur","authenticityImpact":-5,"flavorImpact":"フルーティな香りになる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"91ecbd0f-c4e3-4256-aa01-824d4729e90b","standardIngredientId":"c47c645a-410c-4bdf-99d9-f259fa335923","nameJa":"アルケルメス","nameEn":"Alchermes","authenticityImpact":0,"flavorImpact":"伝統的な赤いリキュールを使うと切り口が鮮やか。風味も変わる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"a0730a3c-6db9-488b-89f7-2c04e6431145","nameOriginal":"Acqua (per sciroppo)","nameJa":"水（シロップ用）","nameEn":"Water (for syrup)","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2b22d07b-c8a8-420e-a13b-77523c298f0e","nameOriginal":"Zucchero (per sciroppo)","nameJa":"砂糖（シロップ用）","nameEn":"Sugar (for syrup)","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"ce4a6ffb-20d4-4077-b70b-cc2f0d2d50c3","nameOriginal":"Panna fresca da montare","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy whipping cream","quantity":500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"使用直前まで冷蔵庫で冷やす","substitutionOptions":[]},{"id":"705cd265-44f7-4815-b4b7-f6e950633507","nameOriginal":"Zucchero a velo (per panna)","nameJa":"粉砂糖（クリーム用）","nameEn":"Powdered sugar (for cream)","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"62eb9a04-3417-4df8-a109-e95c10f7e7fe","nameOriginal":"Cioccolato fondente","nameJa":"ダークチョコレート（65〜70%）","nameEn":"Dark chocolate","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かく刻む","substitutionOptions":[{"id":"e5c2896a-d1ab-42b4-9919-47c1d656ebfc","standardIngredientId":"62eb9a04-3417-4df8-a109-e95c10f7e7fe","nameJa":"ダークチョコチップ","nameEn":"Dark chocolate chips","authenticityImpact":0,"flavorImpact":"刻む手間が省ける。品質が同等なら風味も同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"ce6d28bf-9a71-41ca-b287-5c8f6093eef3","nameOriginal":"Mandorle tostate","nameJa":"アーモンド（焙煎済み）","nameEn":"Toasted almonds","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"粗く刻む","substitutionOptions":[{"id":"2e9fbf75-a6f7-4b14-a88d-cb86a5d8e47c","standardIngredientId":"ce6d28bf-9a71-41ca-b287-5c8f6093eef3","nameJa":"ヘーゼルナッツ（焙煎済み）","nameEn":"Toasted hazelnuts","authenticityImpact":-5,"flavorImpact":"風味が変わるがクリームとの相性は良い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"623305ed-9280-4d4b-8185-986d852e052a","nameOriginal":"Arancia candita","nameJa":"オレンジピール（砂糖漬け）","nameEn":"Candied orange peel","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"細かく刻む。柑橘の香りと食感のアクセント","substitutionOptions":[{"id":"18fb3501-466f-41bf-82a8-117c3afd0c36","standardIngredientId":"623305ed-9280-4d4b-8185-986d852e052a","nameJa":"省略","nameEn":"Omit","authenticityImpact":-5,"flavorImpact":"風味が単調になるが作れる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"21dd3f01-c435-42bb-81da-af9b70ffcfc5","nameOriginal":"Cacao amaro in polvere","nameJa":"純cocoa（無糖）","nameEn":"Unsweetened cocoa powder","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"仕上げの半面に振る","substitutionOptions":[]},{"id":"57f658a3-bad2-41f0-a66f-29d0b21c6c39","nameOriginal":"Zucchero a velo (per finitura)","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar (for dusting)","quantity":10,"unit":"g","role":"garnish","scalingBehavior":null,"notes":"仕上げの残り半面に振る","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"Pan di Spagna（スポンジケーキ）を作る：オーブンを170℃に予熱。卵4個と砂糖120gを大きなボウルに入れ、湯煎（60℃）にかけてハンドミキサーで5〜6分泡立てる（白っぽく3倍量になり、落とすとリボン状に重なる状態）。湯煎から外し、ふるった薄力粉120gと塩1gを3回に分けてゴムベラで切るように折り込む。","title":"スポンジを焼く","actionItems":["オーブンを170℃に予熱する。","卵4個と砂糖120gを湯煎（60℃）にかけてハンドミキサーで5〜6分泡立てる。","湯煎から外し、ふるった薄力粉120gと塩1gを3回に分けてゴムベラで折り込む。"],"parallelItems":[],"completionCriteria":["白っぽく3倍量になりリボン状に落ちる状態になれば次へ。"],"cautionItems":["薄力粉を折り込む際、泡を消さないよう切るように混ぜる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"直径24cmの丸型にオーブンシートを敷き、生地を流し込む。170℃で22〜25分焼く。竹串を刺して何もついてこなければ焼き上がり。型から出して網の上で完全に冷ます。","title":"スポンジを焼き冷ます","actionItems":["直径24cmの丸型にオーブンシートを敷き、生地を流し込む。","170℃で22〜25分焼く。","型から出して網の上で完全に冷ます。"],"parallelItems":[],"completionCriteria":["竹串を刺して何もついてこなければ焼き上がり。"],"cautionItems":[],"tipItems":[],"durationMinutes":25,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"instruction":"スポンジを冷ます（最低30分）。（この間にシロップを作る：小鍋に水60ml・砂糖30gを入れて中火で砂糖を溶かし、火を止めてコニャック60mlを加える。）","title":"スポンジを冷ましシロップを作る","actionItems":["スポンジを最低30分冷ます。","（この間に）小鍋に水60mlと砂糖30gを入れて中火で溶かし、火を止めてコニャック60mlを加える。"],"parallelItems":["スポンジを冷ます間に、小鍋に水と砂糖を入れて中火でシロップを作り、コニャックを加える。"],"completionCriteria":["最低30分。スポンジが完全に冷めれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"1.5Lのボウル（または丸型のゼリー型）にラップを隙間なく敷く。スポンジを横に半分に薄く切ってから、ボウルの形に合わせて三角・扇形に切り分けボウルの内壁に貼り付ける（底まで隙間なく）。シロップをハケまたはスプーンでスポンジ全体にたっぷり染み込ませる。","title":"型に土台を敷く","actionItems":["1.5Lのボウルにラップを隙間なく敷く。","スポンジを横に半分に切り、三角・扇形に切り分けてボウルの内壁に貼り付ける。","シロップをスポンジ全体にたっぷり染み込ませる。"],"parallelItems":[],"completionCriteria":["ボウルの内壁が隙間なくスポンジで覆われ、シロップが染み込んだら次へ。"],"cautionItems":["隙間があるとフィリングが漏れる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"冷えた生クリーム500mlを粉砂糖80gと一緒にハンドミキサーでしっかりしたピークが立つまで泡立てる。2/3量をボウルに取り分け「白クリーム」とする。残り1/3には刻んだダークチョコレート120g・刻んだアーモンド60g・オレンジピール40gを加えて混ぜ「チョコクリーム」とする。","title":"クリームを作る","actionItems":["冷えた生クリーム500mlを粉砂糖80gと一緒にしっかりしたピークまで泡立てる。","2/3量を別ボウルに取り分けて「白クリーム」とする。","残り1/3に刻んだチョコ・アーモンド・オレンジピールを加えて混ぜ「チョコクリーム」とする。"],"parallelItems":[],"completionCriteria":["2色のクリームが完成すれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"白クリームをスポンジの内壁全体に2〜3cm厚で均等に塗り広げる（内壁全体を白で覆う）。中央の空洞にチョコクリームを全量詰め、表面を平らにならす。残りのスポンジを蓋になるように切って上に置き、シロップを染み込ませてぴったり閉じる。ラップで全体を包む。","title":"フィリングを詰める","actionItems":["白クリームをスポンジの内壁全体に2〜3cm厚で均等に塗り広げる。","中央にチョコクリームを全量詰め、表面を平らにならす。","残りのスポンジで蓋をしてシロップを染み込ませ閉じる。","ラップで全体を包む。"],"parallelItems":[],"completionCriteria":["フィリングが詰まり蓋が閉じられれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"ボウルごと冷凍庫に入れ、最低4時間（できれば一晩）凍らせる。","title":"冷凍庫で固める","actionItems":["ボウルごと冷凍庫に入れ、最低4時間凍らせる。"],"parallelItems":[],"completionCriteria":["最低4時間。完全に固まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":8,"instruction":"提供の15〜20分前に冷凍庫から出す。ラップを外してサービングプレートの上に逆さにして静かにアンモールドする。ドームの半面に純cocooaを、残り半面に粉砂糖を振り分けて2色仕上げにする。スライスして提供する。","title":"アンモールドして仕上げる","actionItems":["提供15〜20分前に冷凍庫から出す。","ラップを外してサービングプレートに逆さにしてアンモールドする。","ドームの半面に純cocooaを、残り半面に粉砂糖を振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

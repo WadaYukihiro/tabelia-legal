@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -388,6 +389,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"c72af803-ddb6-43ce-84e9-88c5a69a8f79","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -444,5 +498,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c72af803-ddb6-43ce-84e9-88c5a69a8f79","nameJa":"仔羊のラグーのキタッラ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"2daf137c-04da-42c6-b697-9c9de6fd393d","nameOriginal":"Spaghetti alla chitarra","nameJa":"スパゲッティ・アッラ・キタッラ（乾燥）","nameEn":"Dried spaghetti alla chitarra","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"11f1b19e-0492-402f-ace2-41761ef38b38","standardIngredientId":"2daf137c-04da-42c6-b697-9c9de6fd393d","nameJa":"スパゲッティ（1.9〜2mm）","nameEn":"Spaghetti (1.9–2mm)","authenticityImpact":-5,"flavorImpact":"断面が丸いためラグーの絡みが弱くなる。太め（2mm）を選ぶとやや近くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"18c9983b-7ea9-4ccb-9aac-b08d9474b310","standardIngredientId":"2daf137c-04da-42c6-b697-9c9de6fd393d","nameJa":"トンナレッリ（ローマ版キタッラ）","nameEn":"Tonnarelli","authenticityImpact":0,"flavorImpact":"キタッラとほぼ同じ断面形状。ローマで広く使われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"86dd09e0-389e-44c3-85a0-7a16deb1993c","nameOriginal":"Agnello (spalla o coscia disossata)","nameJa":"仔羊肩肉（または腿肉・骨なし）","nameEn":"Boneless lamb shoulder or leg","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"2cm角のさいの目切り。キッチンペーパーで水気をよく拭く","substitutionOptions":[{"id":"edf3b240-8d0e-4a3e-a2de-caadd376f3b8","standardIngredientId":"86dd09e0-389e-44c3-85a0-7a16deb1993c","nameJa":"山羊肉（骨なし）","nameEn":"Boneless goat meat","authenticityImpact":0,"flavorImpact":"風味はやや強くなるがアブルッツォでは同様に使われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"fa8d24ad-d73f-412a-a5fc-8091ada0e9c4","nameOriginal":"Peperoni rossi dolci","nameJa":"パプリカ（赤）","nameEn":"Red bell pepper","quantity":2,"unit":"個（約300g）","role":"essential","scalingBehavior":null,"notes":"縦に細切り（幅1cm程度）。アブルッツォ料理の特徴的な食材","substitutionOptions":[{"id":"440e17d1-74db-4191-a02b-8c512cc8dc20","standardIngredientId":"fa8d24ad-d73f-412a-a5fc-8091ada0e9c4","nameJa":"黄パプリカ","nameEn":"Yellow bell pepper","authenticityImpact":0,"flavorImpact":"甘みは同等。色の違いのみ","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"0e0016cb-d4ec-4e43-a1c4-55d6f28fe065","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個（中）","role":"essential","scalingBehavior":null,"notes":"粗くみじん切り","substitutionOptions":[]},{"id":"7e86dc9c-94a2-4409-bdc6-e775779d7b96","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":3,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"295ca5df-46d3-45d8-9636-72f13895cee3","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0de8a723-10a7-41ca-9173-19cb47f39c60","nameOriginal":"Vino rosso","nameJa":"赤ワイン","nameEn":"Red wine","quantity":150,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d5667a25-3fb1-4203-902a-9322f16f8bfc","nameOriginal":"Rosmarino fresco","nameJa":"ローズマリー（生）","nameEn":"Fresh rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"0e3285c1-b1fe-4436-b31b-4770d36b5b31","standardIngredientId":"d5667a25-3fb1-4203-902a-9322f16f8bfc","nameJa":"乾燥ローズマリー 小さじ1","nameEn":"Dried rosemary, 1 tsp","authenticityImpact":-5,"flavorImpact":"香りが単調になる。煮込み開始時に加え最後は取り除く","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e947df4f-1d13-4ace-8204-54bacf134a33","nameOriginal":"Peperoncino secco","nameJa":"赤唐辛子（乾燥）","nameEn":"Dried red chili","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d2db1288-c073-4cd8-b949-dd7699f90588","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":60,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"339d5309-cdf7-41c2-9913-e3128326047f","nameOriginal":"Pecorino d'Abruzzo grattugiato","nameJa":"ペコリーノ","nameEn":"Grated Pecorino cheese","quantity":60,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ペコリーノ・ロマーノまたはペコリーノ・ダブルッツォ。仕上げにかける","substitutionOptions":[{"id":"4a445f55-d5cd-4813-82bb-0fa7117d98ca","standardIngredientId":"339d5309-cdf7-41c2-9913-e3128326047f","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","authenticityImpact":-5,"flavorImpact":"羊乳の塩気が弱まるがバランスは保たれる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"914989ae-f1b4-46f6-be22-0db4f99d16d6","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":10,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ラグーの調味用・パスタ茹で水用（各適量）","substitutionOptions":[]},{"id":"8bf8ac42-f290-4c87-9173-24f09eca8986","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒（粗挽き）","nameEn":"Coarsely ground black pepper","quantity":2,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"034e5e6e-4a7e-49a1-b674-7000d3ce241b","nameOriginal":"Farina 00 o Semola","nameJa":"小麦粉（薄力粉）","nameEn":"All-purpose flour","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"仔羊肉にまぶす。焼き色を促進し旨みを閉じ込める","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"仔羊肩肉を2cm角のさいの目切りにし、キッチンペーパーで水気を丁寧に拭き取る。小麦粉30gを全体にまぶし、余分な粉を軽くはたく。","title":"材料を準備する","actionItems":["仔羊肩肉を2cm角のさいの目切りにし、キッチンペーパーで水気を丁寧に拭き取る。","小麦粉30gを全体にまぶし、余分な粉を軽くはたく。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"玉ねぎを粗くみじん切りにする。にんにくをみじん切りにする。パプリカを縦に1cm幅の細切りにする。","title":"材料を準備する","actionItems":["玉ねぎを粗くみじん切りにする。","にんにくをみじん切りにする。","パプリカを縦に1cm幅の細切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"厚手の鍋（またはダッチオーブン）にエクストラバージンオリーブオイル大さじ3を強火で熱し、仔羊肉を重ならないよう入れて全面に焼き色をつける（各面1〜2分、計6〜8分）。肉が鍋底にくっついても焦げ色がついてから動かすこと——先に動かすと美しい焼き色がつかない。焼き色がついたら取り出す。","title":"焼き色をつける","actionItems":["厚手の鍋（またはダッチオーブン）にエクストラバージンオリーブオイル大さじ3を強火で熱し、仔羊肉を重ならないよう入れて全面に焼き色をつける（各面1〜2分、計6〜8分）。","焼き色がついたら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["肉が鍋底にくっついても焦げ色がついてから動かすこと——先に動かすと美しい焼き色がつかない。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"同じ鍋に残りのオリーブオイルを加えて中火にし、玉ねぎを5〜6分炒める。透明になってしんなりしたら次へ。","title":"香味を炒める","actionItems":["同じ鍋に残りのオリーブオイルを加えて中火にし、玉ねぎを5〜6分炒める。"],"parallelItems":[],"completionCriteria":["透明になってしんなりしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"にんにくと赤唐辛子を加えて1分炒める。香りが立ったら赤ワイン150mlを加え、強火でアルコールを飛ばす（2〜3分）。鍋底の焦げを木べらでこそげながら溶かし込む。","title":"香味を炒める","actionItems":["にんにくと赤唐辛子を加えて1分炒める。","香りが立ったら赤ワイン150mlを加え、強火でアルコールを飛ばす（2〜3分）。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["鍋底の焦げを木べらでこそげながら溶かし込む。"],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"仔羊肉を鍋に戻す。ホールトマト缶400gを手でつぶしながら加える。ローズマリー2枝を丸ごと入れ、塩小さじ1と黒胡椒を加えて混ぜる。沸騰させたら弱火に落とし、蓋を少しずらした状態で90〜100分煮込む。","title":"火入れを進める","actionItems":["仔羊肉を鍋に戻す。","ホールトマト缶400gを手でつぶしながら加える。","ローズマリー2枝を丸ごと入れ、塩小さじ1と黒胡椒を加えて混ぜる。","沸騰させたら弱火に落とし、蓋を少しずらした状態で90〜100分煮込む。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":100,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":7,"instruction":"（ラグーを煮込んでいる間に、残り20分を目安に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。パプリカをラグーの鍋に加えて最後の20分一緒に煮込む。パプリカは溶けすぎず食感が残る程度が正解。","title":"湯を沸かす","actionItems":["パプリカをラグーの鍋に加えて最後の20分一緒に煮込む。"],"parallelItems":["（ラグーを煮込んでいる間に、残り20分を目安に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["パプリカは溶けすぎず食感が残る程度が正解。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"ローズマリーの枝を取り出す。仔羊肉をフォーク2本でほぐしてラグーに混ぜる——完全にほぐさず2〜3cm程度の大きさを残す。塩と黒胡椒で味を調える。","title":"仕上げにまとめる","actionItems":["ローズマリーの枝を取り出す。","仔羊肉をフォーク2本でほぐしてラグーに混ぜる——完全にほぐさず2〜3cm程度の大きさを残す。","塩と黒胡椒で味を調える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"スパゲッティ・アッラ・キタッラを沸いた塩湯に入れ、袋表示より1分短めに茹でる。\n・茹で汁150mlを取り置く","title":"茹でる","actionItems":["スパゲッティ・アッラ・キタッラを沸いた塩湯に入れ、袋表示より1分短めに茹でる。","茹で汁150mlを取り置く"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":10,"instruction":"スパゲッティ・アッラ・キタッラをアルデンテで引き上げてラグーの鍋に移す。強めの中火で1〜2分炒め合わせ、必要に応じて茹で汁を加えてソースの濃度を調整する。ソースが麺全体にしっかり絡んだら皿に盛り、ペコリーノをたっぷりすりおろしてかけて仕上げる。","title":"ソースを作る","actionItems":["スパゲッティ・アッラ・キタッラをアルデンテで引き上げてラグーの鍋に移す。","強めの中火で1〜2分炒め合わせ、必要に応じて茹で汁を加えてソースの濃度を調整する。","ソースが麺全体にしっかり絡んだら皿に盛り、ペコリーノをたっぷりすりおろしてかけて仕上げる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

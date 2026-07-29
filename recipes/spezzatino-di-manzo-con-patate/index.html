@@ -92,6 +92,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
           <a href="#pairings">合わせる料理</a>
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -308,6 +309,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"9ca79a0c-5bd3-4d36-bdb8-e309d15a2695","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -364,5 +418,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"9ca79a0c-5bd3-4d36-bdb8-e309d15a2695","nameJa":"牛肉とじゃがいものスペッツァティーノ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"c24f1720-bed3-4c1e-8513-cc0efb06d405","nameOriginal":"Manzo (spalla o collo)","nameJa":"牛肩肉またはスネ肉（一口大）","nameEn":"Beef chuck or shin, cubed","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"3〜4cm角に切る","substitutionOptions":[{"id":"7d6235eb-57a2-4d76-acec-b11ebe514667","standardIngredientId":"c24f1720-bed3-4c1e-8513-cc0efb06d405","nameJa":"牛カレー用角切り肉","nameEn":"Pre-cut beef stew meat","authenticityImpact":0,"flavorImpact":"同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"663d1443-0e9d-4911-97f5-75c5ac227515","nameOriginal":"Patate","nameJa":"じゃがいも（メークインまたは北あかり）","nameEn":"Waxy potatoes","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"大きめの一口大に切る。煮崩れにくい種類を選ぶ","substitutionOptions":[]},{"id":"7e9af1a8-1d7b-4a4e-ae8d-074692eabe0b","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手で潰す","substitutionOptions":[]},{"id":"9c65518b-d841-4a6e-9995-3206560119ea","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"個","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"1f984dbf-9468-4236-b5cf-0999c60ff7ea","nameOriginal":"Carote","nameJa":"にんじん","nameEn":"Carrot","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"1cm幅の輪切り","substitutionOptions":[]},{"id":"62efe2ed-6a9a-40a3-84d7-32aa2f00dcc8","nameOriginal":"Sedano","nameJa":"セロリ","nameEn":"Celery","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"46c83264-8997-4834-a82d-6a5f0fced77b","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":150,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7e9ba5b4-5f8f-498f-9f5c-1419e3c838e0","nameOriginal":"Brodo di carne","nameJa":"牛または鶏のブロード（スープ）","nameEn":"Beef or chicken broth","quantity":300,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"市販のコンソメスープで代用可","substitutionOptions":[]},{"id":"4f13a9ea-4789-4f50-ad9d-b4bfa2419dd9","nameOriginal":"Rosmarino","nameJa":"ローズマリー","nameEn":"Rosemary","quantity":2,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"0f8512a5-0746-4369-bb73-43a479c10f71","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Flour","quantity":30,"unit":"g","role":"technique","scalingBehavior":null,"notes":"肉にまぶして旨みと絡みを出す","substitutionOptions":[]},{"id":"274ac6ad-1b66-4ff3-a000-9ef9d84b2e7c","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・牛肩肉を3〜4cm角に切る\n・じゃがいもを大きめの一口大に切る\n・玉ねぎをみじん切りに、にんじんを1cm幅の輪切りに、セロリを薄切りにする","title":"食材を切る","actionItems":["牛肩肉700gを3〜4cm角に切る。","じゃがいも500gを大きめの一口大に切る。","玉ねぎをみじん切りに、にんじんを1cm幅の輪切りに、セロリを薄切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"牛肉に塩・こしょうをして薄力粉を全体にまぶし、余分な粉を払う。","title":"肉に粉をまぶす","actionItems":["牛肉に塩・こしょうをする。","薄力粉30gを全体にまぶし、余分な粉を払う。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"厚手の鍋でオリーブオイルを強火に熱し、牛肉を数回に分けて全面に濃い焼き色をつけて取り出す。一度に入れると温度が下がるので注意。","title":"肉を焼き付ける","actionItems":["厚手の鍋でオリーブオイル40mlを強火に熱する。","牛肉を数回に分けて全面に濃い焼き色をつけて取り出す。"],"parallelItems":[],"completionCriteria":["全面に濃いきつね色がついたら取り出す。"],"cautionItems":["一度に入れると温度が下がるので、数回に分けて焼くこと。"],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"同じ鍋でソフリット（玉ねぎ・にんじん・セロリ）を中火で10分炒める。白ワインを注いで鍋底の焦げを溶かしながら3分煮詰める。","title":"ソフリットを炒める","actionItems":["同じ鍋でソフリット（玉ねぎ・にんじん・セロリ）を中火で10分炒める。","白ワイン150mlを注いで鍋底の焦げを溶かしながら3分煮詰める。"],"parallelItems":[],"completionCriteria":["ワインが半量になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":14,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"牛肉を戻し、ホールトマト（手で潰す）・ブロード・ローズマリーを加える。蓋をして弱火で2時間煮込む。","title":"牛肉とじゃがいもを煮込む","actionItems":["牛肉を戻す。","ホールトマト400g（手で潰す）・ブロード300ml・ローズマリーを加える。","蓋をして弱火で2時間煮込む。"],"parallelItems":[],"completionCriteria":["肉がフォークで崩れるくらい柔らかくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"じゃがいもを加えてさらに30分煮込む。じゃがいもに火が通り、ソースがとろりとしたら完成。塩で調整する。","title":"じゃがいもを加えて仕上げる","actionItems":["じゃがいも500gを加えてさらに30分煮込む。","塩で味を調整する。"],"parallelItems":[],"completionCriteria":["じゃがいもに火が通り、ソースがとろりとしたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":32,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

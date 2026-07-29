@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -309,6 +310,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"1d0c01a4-6930-4288-aa0a-8d0a2a567730","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -365,5 +419,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1d0c01a4-6930-4288-aa0a-8d0a2a567730","nameJa":"ガッルーラ風パンとチーズのオーブン焼きスープ","baseServings":6,"minServings":1,"maxServings":20},"ingredients":[{"id":"8fcc3733-e575-4059-bf12-c29f09d2a436","nameOriginal":"Pane carasau o pane di tipo locale","nameJa":"カラザウ（サルデーニャの薄焼きパン）または田舎パン","nameEn":"Pane carasau or country bread","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm厚にスライス（カラザウは割って使う）","substitutionOptions":[{"id":"52c97ec1-6a78-4b16-8d5c-57a840049cbb","standardIngredientId":"8fcc3733-e575-4059-bf12-c29f09d2a436","nameJa":"前日のバゲット（薄切り）","nameEn":"Stale baguette slices","authenticityImpact":-10,"flavorImpact":"カラザウの独特の薄さと風味が失われるが成立する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9f0eac7a-bb8d-415d-89ea-13f359be5dc7","nameOriginal":"Brodo di pecora o manzo","nameJa":"羊または牛のブロード","nameEn":"Mutton or beef broth","quantity":1500,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"8506422d-2612-4a7a-afa5-2bb59a4b434c","standardIngredientId":"9f0eac7a-bb8d-415d-89ea-13f359be5dc7","nameJa":"市販チキンブロード","nameEn":"Store-bought chicken broth","authenticityImpact":-20,"flavorImpact":"ガッルーラ特有の牧畜文化の旨みが失われる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"f88ac0ac-0044-4545-a662-d5c6c6a39977","nameOriginal":"Pecorino sardo semistagionato","nameJa":"ペコリーノ・サルド（半熟成）","nameEn":"Semi-aged Sardinian pecorino","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"薄くスライスまたは粗くすりおろす","substitutionOptions":[{"id":"a02092f9-a791-4f7c-a563-14d306348af4","standardIngredientId":"f88ac0ac-0044-4545-a662-d5c6c6a39977","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","authenticityImpact":-10,"flavorImpact":"塩気が強くなるため量を減らす","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"5d14591f-45cc-4dca-bacd-fd2ee9de6782","nameOriginal":"Prezzemolo e menta","nameJa":"パセリとミント","nameEn":"Parsley and mint","quantity":1,"unit":"束","role":"flavor","scalingBehavior":null,"notes":"層の間に散らす","substitutionOptions":[]},{"id":"d8522f39-4bab-4b81-b586-665394376ca4","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"最上層に点在させる","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"ペコリーノ・サルド300gを薄くスライスするか、粗くすりおろす。","title":"チーズを準備する","actionItems":["ペコリーノ・サルド300gを薄くスライスするか粗くすりおろす。"],"parallelItems":[],"completionCriteria":["チーズが薄くスライスまたはすりおろせた。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"オーブンを180℃に予熱する。ブロード1500mlを鍋で温める。耐熱深皿の底にブロードを薄く敷く（底が見えなくなる程度）。","title":"オーブンとブロードを準備する","actionItems":["オーブンを180℃に予熱する。","ブロード1500mlを鍋で温める。","耐熱深皿の底にブロードを薄く敷く。"],"parallelItems":[],"completionCriteria":["オーブンが予熱でき、ブロードが温まった。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"パン → ペコリーノ（薄切り）→ パセリ・ミント → ブロードをひたひたに注ぐ、の順で4〜5層重ねる。各層でパンをブロードに押しつけてよく吸わせる。","title":"層を重ねる","actionItems":["パン → ペコリーノ → パセリ・ミント → ブロードの順で4〜5層重ねる。","各層でパンをブロードに押しつけてよく吸わせる。"],"parallelItems":[],"completionCriteria":["4〜5層に重なりパンがブロードを吸い込んだ。"],"cautionItems":["各層でパンをしっかりブロードに押しつけること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"最上層にペコリーノをたっぷりのせ、バター30gを点在させる。残りのブロードをパンがひたひたになるまで注ぐ（浸るくらいが正しい）。","title":"最上層を仕上げてブロードを注ぐ","actionItems":["最上層にペコリーノをたっぷりのせる。","バター30gを点在させる。","残りのブロードをパンがひたひたになるまで注ぐ。"],"parallelItems":[],"completionCriteria":["最上層が仕上がりブロードがひたひたになった。"],"cautionItems":["ブロードはたっぷり注ぐこと。焼いてもパンが乾かないように。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"180℃のオーブンで30〜35分焼く。表面のチーズが黄金色に焼けたら完成。","title":"焼き上げる","actionItems":["180℃のオーブンで30〜35分焼く。"],"parallelItems":[],"completionCriteria":["表面のチーズが黄金色に焼けた。"],"cautionItems":[],"tipItems":[],"durationMinutes":35,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":6,"instruction":"オーブンから取り出して10分休ませる。深い皿によそって提供する。","title":"休ませて提供する","actionItems":["オーブンから取り出して10分休ませる。","深い皿によそって提供する。"],"parallelItems":[],"completionCriteria":["10分休ませてから盛り付けた。"],"cautionItems":["すぐに切ると崩れる。10分休ませること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

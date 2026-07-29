@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -338,6 +339,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"2e413026-66cb-41cf-8afd-bcfb37fc5d1e","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -394,5 +448,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"2e413026-66cb-41cf-8afd-bcfb37fc5d1e","nameJa":"タラのリヴォルノ風トマト煮","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"fa7a7fe4-3b6e-4110-9850-1f64c5b6798b","nameOriginal":"Filetti di merluzzo","nameJa":"生タラ切り身","nameEn":"Fresh cod fillets","quantity":600,"unit":"g（4切れ）","role":"essential","scalingBehavior":null,"notes":"骨を確認し、水気を拭く。厚さ2〜3cmの切り身が扱いやすい","substitutionOptions":[{"id":"51ebf18a-8d0b-4711-8b6c-e68c570ac45d","standardIngredientId":"fa7a7fe4-3b6e-4110-9850-1f64c5b6798b","nameJa":"スズキ切り身","nameEn":"Sea bass fillets","authenticityImpact":-5,"flavorImpact":"淡白で近い仕上がり。皮付きなら香りが増す","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"f7765d73-76ac-4bcb-8252-6cc487ac1fa9","standardIngredientId":"fa7a7fe4-3b6e-4110-9850-1f64c5b6798b","nameJa":"真鯛切り身","nameEn":"Sea bream fillets","authenticityImpact":-5,"flavorImpact":"身が締まり、上品な甘みが出る。煮崩れしにくい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"4b655aab-94e6-4fe3-a6ea-69644b784b05","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":400,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手で粗くつぶす","substitutionOptions":[{"id":"90360077-d0fe-44e2-908f-233882c66b2a","standardIngredientId":"4b655aab-94e6-4fe3-a6ea-69644b784b05","nameJa":"パッサータ（トマトピューレ）","nameEn":"Tomato passata","authenticityImpact":-5,"flavorImpact":"滑らかなソースになり、港町風の粗さは少し弱まる","textureImpact":null,"procedureChanges":["煮詰め時間を2分短くする"],"affectedStepNumbers":[3,5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"ml","notes":"滑らかなソースになるため煮詰め時間を短くする","action":"update","nameEn":"Tomato passata","nameJa":"パッサータ（トマトピューレ）","quantity":400,"targetNameJa":"ホールトマト缶"}],"stepPatches":[{"action":"replace","stepNumber":3,"instruction":"にんにく2片を薄切りにする。イタリアンパセリ15gをみじん切りにする。パッサータ（トマトピューレ）400mlを計量する。","changeReason":"パッサータは手でつぶす下処理が不要なため"},{"action":"replace","stepNumber":5,"instruction":"パッサータ（トマトピューレ）、黒オリーブ、ケッパーを加え、中火で6分煮る。ソースが軽く煮詰まり、オリーブとケッパーの塩気がソースに馴染んだら次へ。","changeReason":"パッサータはホールトマトより水分が均一で早く煮詰まるため、煮詰め時間を2分短くする"}]}]},{"id":"d4641ac2-f10c-40cf-991d-9e35efcede89","nameOriginal":"Olive nere","nameJa":"黒オリーブ","nameEn":"Black olives","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"種を除く。大きいものは半分に切る","substitutionOptions":[{"id":"a876cdfd-26d3-4840-9efb-4cc269b8a1f0","standardIngredientId":"d4641ac2-f10c-40cf-991d-9e35efcede89","nameJa":"グリーンオリーブ","nameEn":"Green olives","authenticityImpact":-5,"flavorImpact":"酸味と青い香りが強くなり、印象が明るくなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"42afe206-d211-4bca-b582-7c972f4080b7","nameOriginal":"Capperi sotto sale","nameJa":"ケッパー（塩漬け）","nameEn":"Salt-packed capers","quantity":25,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"水で洗い、10分水に浸けて塩抜きする","substitutionOptions":[{"id":"5a342c9a-39de-4343-ac6b-ed3aba207835","standardIngredientId":"42afe206-d211-4bca-b582-7c972f4080b7","nameJa":"ケッパー（酢漬け・水切り）","nameEn":"Capers in vinegar, drained","authenticityImpact":-5,"flavorImpact":"酸味がやや前に出る。水で軽く洗うと使いやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"2ac4fa51-c424-4591-a477-d50cbf59d395","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[{"id":"cb6d551e-b98d-4477-ab05-62fb87c8fe9a","standardIngredientId":"2ac4fa51-c424-4591-a477-d50cbf59d395","nameJa":"にんにくペースト 小さじ1","nameEn":"Garlic paste","authenticityImpact":-10,"flavorImpact":"香りが均一になり、油に移る香ばしさは弱い","textureImpact":null,"procedureChanges":["トマトを加える直前に入れて焦げを防ぐ"],"affectedStepNumbers":[3,4,5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"小さじ","notes":"トマトを加える直前に入れて焦げを防ぐ","action":"update","nameEn":"Garlic paste","nameJa":"にんにくペースト","quantity":1,"targetNameJa":"にんにく"}],"stepPatches":[{"action":"replace","stepNumber":3,"instruction":"にんにくペースト小さじ1を計量する。イタリアンパセリ15gをみじん切りにする。ホールトマト缶400gを手で粗くつぶす。","changeReason":"にんにくペーストは薄切りの下処理が不要なため"},{"action":"replace","stepNumber":4,"instruction":"広いフライパンにエクストラバージンオリーブオイル50mlを入れ、弱火で2分温める。辛口白ワイン80mlを加え、中火で1分煮立てる。","changeReason":"にんにくペーストは焦げやすいため、油で先に温めない"},{"action":"replace","stepNumber":5,"instruction":"にんにくペースト小さじ1を加えて10秒混ぜ、すぐにつぶしたホールトマト、黒オリーブ、ケッパーを加え、中火で8分煮る。ソースが軽く煮詰まり、オリーブとケッパーの塩気がソースに馴染んだら次へ。","changeReason":"にんにくペーストはトマトを加える直前に短時間だけ入れて焦げを防ぐ"}]}]},{"id":"305f1359-60a2-4867-9ce2-a0bc5691212f","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Fresh flat-leaf parsley","quantity":15,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[{"id":"5cb81f40-87ec-42c5-874f-861936bdd465","standardIngredientId":"305f1359-60a2-4867-9ce2-a0bc5691212f","nameJa":"パセリ","nameEn":"Curly parsley","authenticityImpact":-5,"flavorImpact":"香りは穏やかだが、仕上げの青みとして機能する","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e779f75d-b72d-45b9-9480-cbc65c476616","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":80,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"67a68c32-0303-47f8-8969-2a3b7c43536d","standardIngredientId":"e779f75d-b72d-45b9-9480-cbc65c476616","nameJa":"水80ml + レモン汁小さじ1","nameEn":"Water with lemon juice","authenticityImpact":-10,"flavorImpact":"ワインの香りは失われるが、酸味で魚の輪郭は保てる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"1394d9cc-47e5-439b-bc5f-913db2f8cc54","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"28c0fa53-3eab-40af-b986-c3841b8574f2","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":6,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"4687672d-1be3-4423-a9e4-57e07e01cac7","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"生タラ切り身600gは骨を指で確認して抜き、キッチンペーパーで水気を拭く。両面に塩小さじ1/2を振って10分置き、表面に出た水分をもう一度拭く。","title":"食材を下処理する","actionItems":["生タラ切り身600gは骨を指で確認して抜き、キッチンペーパーで水気を拭く。","両面に塩小さじ1/2を振って10分置き、表面に出た水分をもう一度拭く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"ケッパー25gを水で洗い、10分水に浸けて塩抜きする。水気を切る。黒オリーブ80gは種を除き、大きいものは半分に切る。","title":"食材を下処理する","actionItems":["ケッパー25gを水で洗い、10分水に浸けて塩抜きする。","水気を切る。","黒オリーブ80gは種を除き、大きいものは半分に切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"にんにく2片を薄切りにする。イタリアンパセリ15gをみじん切りにする。ホールトマト缶400gを手で粗くつぶす。","title":"材料を準備する","actionItems":["にんにく2片を薄切りにする。","イタリアンパセリ15gをみじん切りにする。","ホールトマト缶400gを手で粗くつぶす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"広いフライパンにエクストラバージンオリーブオイル50mlとにんにくを入れ、弱火で2分温める。にんにくが薄く色づき香りが立ったら辛口白ワイン80mlを加え、中火で1分煮立てる。","title":"材料を合わせる","actionItems":["広いフライパンにエクストラバージンオリーブオイル50mlとにんにくを入れ、弱火で2分温める。","にんにくが薄く色づき香りが立ったら辛口白ワイン80mlを加え、中火で1分煮立てる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"つぶしたホールトマト、黒オリーブ、ケッパーを加え、中火で8分煮る。ソースが軽く煮詰まり、オリーブとケッパーの塩気がソースに馴染んだら次へ。","title":"煮る","actionItems":["つぶしたホールトマト、黒オリーブ、ケッパーを加え、中火で8分煮る。","ソースが軽く煮詰まり、オリーブとケッパーの塩気がソースに馴染んだら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"タラを皮目がある場合は皮目を下にしてソースへ入れる。弱火に落とし、蓋をして6〜8分蒸し煮にする。身の中心が白くなり、箸で押すと大きな層でほぐれる状態になったら火を止める。","title":"ソースを作る","actionItems":["タラを皮目がある場合は皮目を下にしてソースへ入れる。","弱火に落とし、蓋をして6〜8分蒸し煮にする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["身の中心が白くなり、箸で押すと大きな層でほぐれる状態になったら火を止める。"],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"フライパンを傾けてソースを魚にかけ、木べらで魚を動かさずに1分馴染ませる。黒胡椒を挽き、イタリアンパセリを散らす。身が崩れないようソースごと皿に滑らせて盛る。","title":"ソースを作る","actionItems":["フライパンを傾けてソースを魚にかけ、木べらで魚を動かさずに1分馴染ませる。","黒胡椒を挽き、イタリアンパセリを散らす。","身が崩れないようソースごと皿に滑らせて盛る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

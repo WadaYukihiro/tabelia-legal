@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -281,6 +282,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"8dcd0447-30b3-4289-b85a-bca612083171","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -337,5 +391,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"8dcd0447-30b3-4289-b85a-bca612083171","nameJa":"トスカーナ風パンとトマトのサラダ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"e6c4b7f8-187d-4be1-a6ad-7c47c3c4609e","nameOriginal":"Pane toscano raffermo","nameJa":"トスカーナパン（1日以上経ったもの）","nameEn":"Stale Tuscan bread","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"2cm角にちぎる。新鮮なパンは不可","substitutionOptions":[{"id":"7af3b4b4-96f1-4db4-9921-ebadde9e62d6","standardIngredientId":"e6c4b7f8-187d-4be1-a6ad-7c47c3c4609e","nameJa":"バゲット（1日経ったもの）","nameEn":"Stale baguette","authenticityImpact":-5,"flavorImpact":"食感は近いが塩入りのため塩加減を調整する","textureImpact":null,"procedureChanges":["塩の使用量を半量に減らす"],"affectedStepNumbers":[5],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"2cm角にちぎる。塩入りのため仕上げの塩は半量にする","action":"update","nameEn":"Stale baguette","nameJa":"バゲット（1日経ったもの）","quantity":200,"targetNameJa":"トスカーナパン（1日以上経ったもの）"}],"stepPatches":[{"title":"和える","action":"replace","stepNumber":5,"actionItems":["赤ワインビネガー30mlを加える。","オリーブオイル40mlを加える。","黒胡椒を加える。","塩は通常の半量だけ加えてやさしく全体を和える。"],"instruction":"赤ワインビネガー・オリーブオイル・黒胡椒を加え、塩は通常の半量だけ加えて全体をやさしく和える。味を見て足りない場合だけごく少量を追加する。","cautionItems":["バゲットには塩分があるため、仕上げの塩は半量から始める。"],"changeReason":"バゲットは塩入りのため、仕上げの塩を半量にする","completionCriteria":["全体が均一に和えられ、塩味が強く出すぎていなければ次へ。"]}]}]},{"id":"13e4be64-2d7c-45cf-85ee-40fc084aec16","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト（大）","nameEn":"Ripe tomatoes","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"くし形に切り、種ごと使う","substitutionOptions":[]},{"id":"a0fd0c7c-1ee8-4d4a-b4a8-f4fb7c303caf","nameOriginal":"Cipolla rossa","nameJa":"赤玉ねぎ","nameEn":"Red onion","quantity":0.5,"unit":"個","role":"essential","scalingBehavior":null,"notes":"薄切りにして水に10分さらす","substitutionOptions":[]},{"id":"f692526f-bc96-4307-86bf-7477c62e62fa","nameOriginal":"Cetriolo","nameJa":"きゅうり","nameEn":"Cucumber","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"8230ea53-9f07-4ac8-ab57-2b9ff178b5dd","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":10,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2bf38be2-1e96-4ebd-be6d-fca5b7ce26d8","nameOriginal":"Aceto di vino rosso","nameJa":"赤ワインビネガー","nameEn":"Red wine vinegar","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"599135d7-99cf-4ef8-9880-52cb9dccf265","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"b6477dac-fd02-4b08-b950-3c3c5c538049","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"205be9b2-1317-4d47-b9b3-d94cdf39aabb","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"パンを2cm角にちぎり、大きなボウルに入れる。","title":"パンをちぎる","actionItems":["パン200gを2cm角にちぎる。","大きなボウルに入れる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"・赤玉ねぎを薄切りにして冷水に10分さらし、水気を切る\n・きゅうりを薄切りにする","title":"野菜を下処理する","actionItems":["赤玉ねぎ1/2個を薄切りにして冷水に10分さらし、水気を切る。","きゅうり1本を薄切りにする。"],"parallelItems":[],"completionCriteria":["赤玉ねぎの辛みが抜けたら次へ（10分目安）。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"トマトをくし形に切り、出てきた汁ごとパンの上に乗せる。パンがトマトの汁を吸うまで10分置く。","title":"トマトでパンを湿らせる","actionItems":["完熟トマト3個をくし形に切る。","種ごと汁ごとパンの上に乗せる。"],"parallelItems":[],"completionCriteria":["パンがトマトの汁を十分に吸ったら次へ（10分目安）。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"instruction":"赤玉ねぎ・きゅうり・バジルをボウルに加える。","title":"野菜を加える","actionItems":["水気を切った赤玉ねぎをボウルに加える。","きゅうりをボウルに加える。","バジル10枚を手でちぎりながら加える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"赤ワインビネガー・オリーブオイル・塩・黒胡椒を加えて全体をやさしく和える。","title":"和える","actionItems":["赤ワインビネガー30mlを加える。","オリーブオイル40mlを加える。","塩・黒胡椒を加えてやさしく全体を和える。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"常温で15〜30分置いてパンに味を馴染ませてから盛り付ける。","title":"馴染ませる","actionItems":["常温で15〜30分置く。"],"parallelItems":[],"completionCriteria":["パンに味が染み込んで全体が一体感を持ったら盛り付ける。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

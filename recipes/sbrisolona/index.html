@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -315,6 +316,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"3c9fbecd-caaa-43b8-bfe5-2eaebad7af85","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -371,5 +425,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"3c9fbecd-caaa-43b8-bfe5-2eaebad7af85","nameJa":"スブリゾローナ","baseServings":8,"minServings":6,"maxServings":20},"ingredients":[{"id":"5a436f3e-fee9-4c50-ad6e-8dfe3a121866","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"All-purpose flour","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"9c3a720f-cf8f-4e4d-8c95-06214beddb4b","nameOriginal":"Farina di mais fioretto","nameJa":"コーンフラワー（細挽き）","nameEn":"Fine cornmeal","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細挽き（フィオレット）が理想。粗挽きポレンタ用は粒感が粗くなりすぎる","substitutionOptions":[{"id":"e309beac-4f9b-4fb8-bef6-fb23a56c3dc8","standardIngredientId":"9c3a720f-cf8f-4e4d-8c95-06214beddb4b","nameJa":"コーングリッツ（細目）","nameEn":"Fine corn grits","authenticityImpact":-5,"flavorImpact":"粒感が若干粗くなるが代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"e5432df9-cea6-4647-b942-f18e392a228b","nameOriginal":"Farina di mandorle","nameJa":"アーモンドパウダー","nameEn":"Almond flour","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"e1bdc642-4be0-4092-8d66-f0a664607ebe","nameOriginal":"Mandorle intere","nameJa":"アーモンド（ホール）","nameEn":"Whole almonds","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"粗く刻む（4〜6mm程度の不均一な粒）。皮あり・皮なしどちらも可","substitutionOptions":[{"id":"45078517-669d-4f80-b6c5-0be932bceda6","standardIngredientId":"e1bdc642-4be0-4092-8d66-f0a664607ebe","nameJa":"アーモンドスライス","nameEn":"Sliced almonds","authenticityImpact":-5,"flavorImpact":"粗さが変わるが風味はほぼ同等","textureImpact":null,"procedureChanges":["刻む工程をスキップし、割れすぎないよう最後に軽く混ぜる"],"affectedStepNumbers":[1,2],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"刻まずに使う。割れすぎないよう最後に軽く混ぜる","action":"update","nameEn":"Sliced almonds","nameJa":"アーモンドスライス","quantity":150,"targetNameJa":"アーモンド（ホール）"}],"stepPatches":[{"title":"仕込みと準備","action":"replace","stepNumber":1,"actionItems":["オーブンを180℃に予熱する。","バター130gを1cm角に切って冷蔵庫に戻す。","アーモンドスライス150gの割れた細片を軽く取り除く。","直径26〜28cmの丸型にバターを薄く塗る。"],"instruction":"オーブンを180℃に予熱する。バター130gを1cm角に切って冷蔵庫に戻しておく。アーモンドスライス150gは刻まず、割れた細片を軽く取り除く。直径26〜28cmの丸型（底外れ型）にバターを薄く塗る。","cautionItems":["バターは使用直前まで冷やしておく。アーモンドスライスは細かく刻まない。"],"changeReason":"アーモンドスライスは刻むと細かくなりすぎるため","completionCriteria":["準備が整えば次へ。"]},{"title":"そぼろ生地を作る","action":"replace","stepNumber":2,"actionItems":["レモンの表皮だけをすりおろす。","薄力粉・コーンフラワー・アーモンドパウダー・砂糖・すりおろしたレモンの皮・塩をボウルで混ぜる。","冷たいバターを加え、指先で素早くすり混ぜてサラサラの砂状にする。","卵黄2個とバニラ3mlを加えてさらに混ぜ、湿った粗いそぼろ状にする。","アーモンドスライスを加えて割れすぎないよう軽く混ぜる。"],"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。大きなボウルに薄力粉150g・コーンフラワー150g・アーモンドパウダー80g・砂糖150g・すりおろしたレモンの皮・塩2gを入れて混ぜる。冷たいバター130gを1cm角に切って加え、指先で素早くすり混ぜてサラサラの砂状にする。卵黄2個・バニラ3mlを加えてさらに混ぜ、全体が湿った粗いそぼろ状になるまで仕上げる。アーモンドスライスを加えて割れすぎないよう軽く混ぜる。決してまとめて練らないこと——崩れやすい食感はこのそぼろ状から生まれる。","cautionItems":["決してまとめて練らない。アーモンドスライスは割れやすいため最後に軽く混ぜる。"],"changeReason":"刻んだホールアーモンドではなくアーモンドスライスをそのまま使うため","completionCriteria":["全体が湿った粗いそぼろ状になれば次へ。"]}]}]},{"id":"3b0f0881-e65c-4a18-967b-f9189de00dfa","nameOriginal":"Zucchero semolato","nameJa":"砂糖","nameEn":"Granulated sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"d4af9cef-a808-464e-ae8c-d4ca3bc9d9aa","nameOriginal":"Burro freddo","nameJa":"バター（無塩・冷たい）","nameEn":"Cold unsalted butter","quantity":130,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1cm角に切り使用直前まで冷蔵庫で冷やす","substitutionOptions":[]},{"id":"80be54b6-9ec1-44a2-9b06-7996833ab805","nameOriginal":"Tuorli d'uovo","nameJa":"卵黄","nameEn":"Egg yolks","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"49ded070-5ff1-4d0d-8f29-bc3d088714ac","nameOriginal":"Scorza di limone","nameJa":"レモンの皮","nameEn":"Grated lemon peel","quantity":1,"unit":"個分","role":"flavor","scalingBehavior":null,"notes":"国産・ノーワックスのレモンを使用。白いワタを避けて表皮だけをすりおろす","substitutionOptions":[]},{"id":"0ed9f570-aa8d-4d47-bcd3-11363dcb3304","nameOriginal":"Vaniglia","nameJa":"バニラエッセンス","nameEn":"Vanilla extract","quantity":3,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7d8eb0bc-2418-4902-ae15-b03d4f4b0777","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":2,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"25ca5d79-159f-44f8-aeb9-a32108b77797","nameOriginal":"Zucchero a velo","nameJa":"粉砂糖（仕上げ用）","nameEn":"Powdered sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"オーブンを180℃に予熱する。バター130gを1cm角に切って冷蔵庫に戻しておく。アーモンド150gをまな板の上で粗く刻む（4〜6mm程度の不均一な粒でよい）。直径26〜28cmの丸型（底外れ型）にバターを薄く塗る。","title":"仕込みと準備","actionItems":["オーブンを180℃に予熱する。","バター130gを1cm角に切って冷蔵庫に戻す。","アーモンド150gをまな板で粗く刻む（4〜6mm程度）。","直径26〜28cmの丸型にバターを薄く塗る。"],"parallelItems":[],"completionCriteria":["準備が整えば次へ。"],"cautionItems":["バターは使用直前まで冷やしておく。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"レモンは白いワタを避け、表皮だけをすりおろす。大きなボウルに薄力粉150g・コーンフラワー150g・アーモンドパウダー80g・砂糖150g・すりおろしたレモンの皮・塩2gを入れて混ぜる。冷たいバター130gを1cm角に切って加え、指先で素早くすり混ぜてサラサラの砂状にする。卵黄2個・バニラ3mlを加えてさらに混ぜ、全体が湿った粗いそぼろ状になるまで仕上げる。刻んだアーモンドを加えて軽く混ぜる。決してまとめて練らないこと——崩れやすい食感はこのそぼろ状から生まれる。","title":"そぼろ生地を作る","actionItems":["レモンの表皮だけをすりおろす。","薄力粉・コーンフラワー・アーモンドパウダー・砂糖・すりおろしたレモンの皮・塩をボウルで混ぜる。","冷たいバターを加え、指先で素早くすり混ぜてサラサラの砂状にする。","卵黄2個とバニラ3mlを加えてさらに混ぜ、湿った粗いそぼろ状にする。","刻んだアーモンドを加えて軽く混ぜる。"],"parallelItems":[],"completionCriteria":["全体が湿った粗いそぼろ状になれば次へ。"],"cautionItems":["決してまとめて練らない。練ると崩れやすい食感が失われる。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"そぼろ状の生地を全量型に入れ、押し固めずに手で軽くならす（表面が不均一で隙間がある状態でよい）。","title":"型に入れる","actionItems":["そぼろ状の生地を全量型に入れる。","押し固めずに手で軽くならす。"],"parallelItems":[],"completionCriteria":["型全体に均等に広がれば次へ。"],"cautionItems":["押し固めない。表面が不均一で隙間がある状態が正しい。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"180℃で40〜45分焼く。表面がきつね色〜薄茶色になり縁がやや濃くなったら焼き上がり。焼き不足だと崩れすぎるので、しっかり焼くこと。型のまま完全に冷ます。","title":"スブリゾローナを焼く","actionItems":["180℃で40〜45分焼く。","型のまま完全に冷ます。"],"parallelItems":[],"completionCriteria":["表面がきつね色〜薄茶色になり縁がやや濃くなれば焼き上がり。"],"cautionItems":["焼き不足だと崩れすぎる。しっかり焼くこと。"],"tipItems":[],"durationMinutes":45,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":5,"instruction":"型から外したら、ナイフで切らずに手またはスプーンの柄で叩いて割って提供する。粉砂糖15gを振る。スプマンテやヴィン・サントと合わせても。密閉容器で常温3〜4日保存可能。","title":"割って提供する","actionItems":["型から外す。","ナイフは使わず手またはスプーンの柄で叩いて割る。","粉砂糖15gを振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

@@ -91,6 +91,7 @@
 
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -235,6 +236,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"c7596f82-5333-430b-bc14-32d8ccc67846","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -291,5 +345,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"c7596f82-5333-430b-bc14-32d8ccc67846","nameJa":"にんじんのシチリア風甘酢煮","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"39c4a85d-e8b1-4f7a-b73e-9b451977ca83","nameOriginal":"Carote","nameJa":"にんじん","nameEn":"Carrots","quantity":500,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮をむき、5mm厚の輪切り","substitutionOptions":[]},{"id":"847d5026-7323-42ce-856f-75ec8ea1b3dd","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":20,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"823e89f3-f63a-498a-8b94-36260e5caf28","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"c97223ed-96a1-4c24-98de-cb1d2fe415ed","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"94e9b225-f3ed-4463-89c8-27c4174c0f66","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"皮をむいて軽くつぶす","substitutionOptions":[]},{"id":"c36b48cb-7590-4a6b-a563-e0f4c6170606","nameOriginal":"Menta","nameJa":"ミント","nameEn":"Fresh mint","quantity":10,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":"手でちぎる。火を止めてから加える","substitutionOptions":[]},{"id":"d3e8d8d2-9284-4301-a7bd-ae6ad7092be2","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":4,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・にんじん500gは皮をむき、5mm厚の輪切りにする\n・にんにく1片は皮をむいて軽くつぶす\n・ミント10枚は手でちぎる\nにんじんの厚みがそろっていれば次へ。","title":"材料を準備する","actionItems":["にんじん500gは皮をむき、5mm厚の輪切りにする","にんにく1片は皮をむいて軽くつぶす","ミント10枚は手でちぎる"],"parallelItems":[],"completionCriteria":["にんじんの厚みがそろっていれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにエクストラバージンオリーブオイル30mlとにんにくを入れて弱火で熱し、香りが立ったらにんじんと塩4gを加えて中火で2分炒める。水100mlをフライパンに注いで蓋をし、8〜10分蒸し煮にする。竹串がすっと入る柔らかさになったら次へ。","title":"にんじんを蒸し煮にする","actionItems":["フライパンにエクストラバージンオリーブオイル30mlとにんにくを入れて弱火で熱し、香りが立ったらにんじんと塩4gを加えて中火で2分炒める。","水100mlをフライパンに注いで蓋をし、8〜10分蒸し煮にする。"],"parallelItems":[],"completionCriteria":["竹串がすっと入る柔らかさになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"蓋を外し、砂糖20gと白ワインビネガー50mlをフライパンに加えて中火で煮立てる。フライパンを揺すりながら3〜4分煮詰め、酢の刺激臭が丸くなり、にんじんに艶のある甘酢の膜が絡んだら火を止める。","title":"甘酢を絡める","actionItems":["蓋を外し、砂糖20gと白ワインビネガー50mlをフライパンに加えて中火で煮立てる。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["フライパンを揺すりながら3〜4分煮詰め、酢の刺激臭が丸くなり、にんじんに艶のある甘酢の膜が絡んだら火を止める。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"火を止めたフライパンにミントを加えてひと混ぜし、平皿に移して常温で30分なじませる。甘酢がにんじんに染みて味が落ち着いたら完成。","title":"なじませる","actionItems":["甘酢がにんじんに染みて味が落ち着いたら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火を止めたフライパンにミントを加えてひと混ぜし、平皿に移して常温で30分なじませる。"],"tipItems":[],"durationMinutes":30,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

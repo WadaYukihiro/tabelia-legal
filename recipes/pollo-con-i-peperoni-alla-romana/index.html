@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -287,6 +288,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"893e6378-cc9b-41c1-9db2-b9dcfcdb5ad4","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -343,5 +397,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"893e6378-cc9b-41c1-9db2-b9dcfcdb5ad4","nameJa":"鶏肉とパプリカのローマ風煮込み","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0f680b19-41a0-46bd-ac7b-57e9d608f3f9","nameOriginal":"Pollo (cosce e sovracosce)","nameJa":"鶏もも肉（骨付きまたは骨なし）","nameEn":"Chicken thighs and drumsticks","quantity":1200,"unit":"g（約4〜6ピース）","role":"essential","scalingBehavior":null,"notes":"皮付きを使う。骨付きが旨みが増す","substitutionOptions":[]},{"id":"c98067d1-034b-4178-8331-198ab8e01803","nameOriginal":"Peperoni rossi e gialli","nameJa":"赤・黄パプリカ","nameEn":"Red and yellow bell peppers","quantity":4,"unit":"個（各1個）","role":"essential","scalingBehavior":null,"notes":"種を取り2cm幅に切る。赤・黄を使うと色が美しい","substitutionOptions":[{"id":"85bd66ac-2210-40a4-aa93-cc9e146a663e","standardIngredientId":"c98067d1-034b-4178-8331-198ab8e01803","nameJa":"赤・黄どちらか1色のパプリカ","nameEn":"Single-color bell peppers","authenticityImpact":-5,"flavorImpact":"色の印象が変わるが味は同等","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"5559c808-833a-4cac-ab5f-8a3d8a5b7804","nameOriginal":"Pomodori pelati","nameJa":"ホールトマト缶","nameEn":"Canned whole peeled tomatoes","quantity":300,"unit":"g","role":"essential","scalingBehavior":null,"notes":"手で潰す","substitutionOptions":[]},{"id":"1a2b5a84-ba3f-49b5-bbb5-87d80929650d","nameOriginal":"Cipolla","nameJa":"玉ねぎ","nameEn":"Onion","quantity":1,"unit":"大","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"1f760b18-fa20-4706-bd9a-917ed5d99676","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","substitutionOptions":[]},{"id":"1cc8416d-7bff-4f82-91a4-7827d8dc55f9","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":120,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"27239462-9377-4def-9697-38d75d9f7c16","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"・パプリカの種を取り2cm幅に切る\n・玉ねぎを薄切りにする\n・にんにくをみじん切りにする","title":"野菜を切る","actionItems":["パプリカ4個の種を取り2cm幅に切る。","玉ねぎ1個を薄切りにする。","にんにく2片をみじん切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"鶏肉に塩・こしょうをする。厚手の鍋でオリーブオイルを強火に熱し、鶏肉を皮側から入れて濃い焼き色をつけて取り出す（皮面5分・裏3分）。","title":"鶏肉に焼き色をつける","actionItems":["鶏肉1200gに塩・こしょうをする。","厚手の鍋でオリーブオイル40mlを強火に熱し、鶏肉を皮側から入れて焼き、皮面5分・裏3分で取り出す。"],"parallelItems":[],"completionCriteria":["皮面に濃い焼き色がついたら裏返し、計8分焼いたら取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じ鍋で玉ねぎを中火で6分炒め、にんにくを加えて2分炒める。白ワインを注いで鍋底をこそげながら半量になるまで煮詰める。","title":"ソフリットを炒めてデグラッセする","actionItems":["同じ鍋で玉ねぎを中火で6分炒める。","にんにくを加えてさらに2分炒める。","白ワイン120mlを注いで鍋底をこそげながら半量になるまで煮詰める。"],"parallelItems":[],"completionCriteria":["ワインが半量になれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ホールトマト缶を手で潰しながら加え、混ぜる。鶏肉を皮側を上にして鍋に戻し、蓋をして弱火で25分煮込む。","title":"トマトで煮込む","actionItems":["ホールトマト300gを手で潰しながら加えて混ぜる。","鶏肉を皮側を上にして戻し、蓋をして弱火で25分煮込む。"],"parallelItems":[],"completionCriteria":["鶏肉に火が通れば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":27,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"instruction":"パプリカを加え、蓋をして15分さらに煮込む。パプリカは完全に崩れさせず、少し食感を残す。","title":"パプリカを加えて煮込む","actionItems":["パプリカを加え、蓋をして15分さらに煮込む。"],"parallelItems":[],"completionCriteria":["パプリカが柔らかくなりながら少し食感が残れば次へ。"],"cautionItems":["パプリカは完全に崩れさせず、少し食感を残すこと。"],"tipItems":[],"durationMinutes":17,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"塩で調整。皿に盛り付けて仕上げのオリーブオイルを少量かける。","title":"塩とオイルで調える","actionItems":["塩で味を調整する。","皿に盛り付けて仕上げのオリーブオイルを少量かける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

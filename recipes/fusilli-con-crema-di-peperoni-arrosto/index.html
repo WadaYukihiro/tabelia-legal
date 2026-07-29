@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -358,6 +359,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"1ff19e14-e7d1-4b30-b6bc-59e941175235","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -414,5 +468,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"1ff19e14-e7d1-4b30-b6bc-59e941175235","nameJa":"焼きパプリカクリームのフジッリ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"12cb00d9-9326-4349-a339-ba0ffab8d386","nameOriginal":"Fusilli","nameJa":"フジッリ","nameEn":"Fusilli","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8c28fac9-63c0-4ea0-8671-fecb100398bb","nameOriginal":"Peperoni rossi","nameJa":"赤パプリカ（大）","nameEn":"Large red bell peppers","quantity":3,"unit":"個（約600g）","role":"essential","scalingBehavior":null,"notes":"直火またはオーブンで焦がして皮をむく","substitutionOptions":[{"id":"d276ea17-14b0-4f03-94cf-a8351683a0bd","standardIngredientId":"8c28fac9-63c0-4ea0-8671-fecb100398bb","nameJa":"黄パプリカ（大）3個","nameEn":"Large yellow bell peppers","authenticityImpact":0,"flavorImpact":"甘みは同等。仕上がりの色が黄色になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"0a911a91-0eb3-424e-8965-bc8f0f371d72","nameOriginal":"Prosciutto crudo","nameJa":"プロシュート・クルード（生ハム）","nameEn":"Prosciutto crudo","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細切り。仕上げに使う","substitutionOptions":[{"id":"665e7863-2bb7-40ad-ab2b-ddee68faa383","standardIngredientId":"0a911a91-0eb3-424e-8965-bc8f0f371d72","nameJa":"スペック","nameEn":"Speck","authenticityImpact":-5,"flavorImpact":"燻製の香りが加わりより複雑に","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"3d8a92fa-b184-4966-8c0c-5cee4a3b0832","nameOriginal":"Aglio","nameJa":"ニンニク","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"薄切り","substitutionOptions":[]},{"id":"54461247-29fe-45de-976a-8f47e41662bf","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":50,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"37285c4f-6f9d-4481-9dad-61b36594fc65","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"ソース調味用・パスタ茹で水用","substitutionOptions":[]},{"id":"71ce1db3-abe1-4f5b-9858-884079c1fcbe","nameOriginal":"Pepe nero","nameJa":"黒胡椒（挽きたて）","nameEn":"Black pepper","quantity":1,"unit":"少量","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"afa64f4f-8156-4dbc-b900-0901b4875058","nameOriginal":"Panna fresca","nameJa":"生クリーム（乳脂肪35%以上）","nameEn":"Heavy cream","quantity":100,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"0a1b7950-60e9-4b67-9eba-196c08e67b7b","standardIngredientId":"afa64f4f-8156-4dbc-b900-0901b4875058","nameJa":"植物性生クリーム","nameEn":"Plant-based cream","authenticityImpact":-10,"flavorImpact":"乳化感が落ちる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"c58c28c9-2f2d-4ed5-9fe0-6b56112e0d2d","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano, grated","quantity":50,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"7e66f027-0867-4039-abf0-b74e8751f514","standardIngredientId":"c58c28c9-2f2d-4ed5-9fe0-6b56112e0d2d","nameJa":"グラナ・パダーノ","nameEn":"Grana Padano","authenticityImpact":-5,"flavorImpact":"やや軽めの風味だが代用として十分","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"20df57a7-4080-4944-8292-c87094bf3c4a","nameOriginal":"Basilico","nameJa":"バジル（生）","nameEn":"Fresh basil","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"赤パプリカをガスコンロの直火で網にのせ、全面が真っ黒に焦げるまで10〜15分焼く。ガスがない場合は200℃のオーブンで30〜40分焼く。","title":"パプリカを焼く","actionItems":["赤パプリカをガスコンロの直火で網にのせ、全面が真っ黒に焦げるまで10〜15分焼く。"],"parallelItems":[],"completionCriteria":["全面が真っ黒に焦げたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"焼きたてのパプリカを熱いうちにビニール袋に入れて口を閉じ、10分蒸らす。","title":"パプリカを蒸らす","actionItems":["焼きたてのパプリカを熱いうちにビニール袋に入れて口を閉じ、10分蒸らす。"],"parallelItems":[],"completionCriteria":["10分蒸らしたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":3,"instruction":"・蒸らし終えたパプリカの焦げた皮を水を使わずに手でむく（水で洗うと旨みが流れる）。薄皮が抵抗なくはがれれば次へ\n・種とヘタを除き、ざく切りにする","title":"皮をむく","actionItems":["焦げた皮を水を使わずに手でむく（水で洗うと旨みが流れる）。","種とヘタを除き、ざく切りにする。"],"parallelItems":[],"completionCriteria":["皮がむけてざく切りにしたら完了。"],"cautionItems":["水で洗うと旨みが流れる。"],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"ニンニクを薄切りにする。フライパンにEVOO大さじ3とニンニク（薄切り）を弱火で熱する。ニンニクが薄く色づいて香りが立ったら（約2分）、焼きパプリカを加えて2〜3分炒める。","title":"ニンニクとパプリカを炒める","actionItems":["ニンニクを薄切りにする。","フライパンにEVOO大さじ3とニンニク（薄切り）を弱火で熱し、薄く色づくまで約2分炒める。","焼きパプリカを加えて2〜3分炒める。"],"parallelItems":[],"completionCriteria":["2〜3分炒めたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"ブレンダーにかけて滑らかなクリームにする。","title":"クリームにする","actionItems":["ブレンダーにかけて滑らかなクリームにする。"],"parallelItems":[],"completionCriteria":["滑らかなクリームになったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"（煮る間に）大鍋に湯を沸かし始める（湯1Lに対して塩10g）。鍋に戻して生クリーム100mlを加え、弱火で3〜4分煮る。塩小さじ1/4・黒胡椒3〜4回挽きで調味する。","title":"ソースを煮詰める","actionItems":["クリームを鍋に戻して生クリーム100mlを加え、弱火で3〜4分煮る。","塩小さじ1/4・黒胡椒3〜4回挽きで調味する。"],"parallelItems":["大鍋に湯を沸かし始める（湯1Lに対して塩10g）。"],"completionCriteria":["3〜4分煮て調味が整ったら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"別のフライパンにEVOO大さじ1を熱し、プロシュートを中火で1〜2分、軽くカリッとするまで炒める。","title":"生ハムを炒める","actionItems":["別のフライパンにEVOO大さじ1を熱し、プロシュートを中火で1〜2分炒める。"],"parallelItems":[],"completionCriteria":["軽くカリッとしたら完了。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"フジッリを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。\n・茹で汁を100ml取り置く","title":"パスタを茹でる","actionItems":["フジッリを沸かしておいた塩湯に入れ、アルデンテに茹でる（袋表示より1分短め）。","茹で汁を100ml取り置く。"],"parallelItems":[],"completionCriteria":["アルデンテになったら引き上げる。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":9,"instruction":"フジッリをアルデンテで引き上げてペッパークリームに移して絡める。皿に盛り、プロシュート・バジル・パルミジャーノを散らして仕上げる。","title":"クリームに絡めて具材を散らす","actionItems":["フジッリをアルデンテで引き上げてペッパークリームに移して絡める。","皿に盛り、プロシュート・バジル・パルミジャーノを散らして仕上げる。"],"parallelItems":[],"completionCriteria":["トッピングをのせたら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

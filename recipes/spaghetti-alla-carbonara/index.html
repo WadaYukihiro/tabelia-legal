@@ -95,6 +95,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
           <a href="#pairings">合わせる料理</a>
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -415,6 +416,59 @@
 
 
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"81cf6fc3-bac4-4ddc-b21f-35665e95dab4","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -471,5 +525,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"81cf6fc3-bac4-4ddc-b21f-35665e95dab4","nameJa":"スパゲッティ カルボナーラ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"a5f2566e-27e6-4bbc-86fa-59e56aa25a3e","nameOriginal":"Guanciale","nameJa":"グアンチャーレ","nameEn":"Guanciale","quantity":140,"unit":"g","role":"essential","scalingBehavior":null,"notes":"7mm角に切る","substitutionOptions":[{"id":"7011f014-7195-4030-b8e1-008a99ad6bcd","standardIngredientId":"a5f2566e-27e6-4bbc-86fa-59e56aa25a3e","nameJa":"ベーコン","nameEn":"Bacon","authenticityImpact":-20,"flavorImpact":"燻製の香りが加わり、本場のカルボナーラとは明確に異なる風味になる","textureImpact":null,"procedureChanges":["油が多く出やすいので炒め時間を短くする"],"affectedStepNumbers":[5,6],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[{"title":"ベーコンを炒め始める","action":"replace","stepNumber":5,"actionItems":["冷たいフライパン（直径26cm程度）にベーコン150gを油を引かずに入れ、中火で1分加熱する。"],"instruction":"冷たいフライパン（直径26cm程度）に7mm角に切ったベーコン150gを油を引かずに入れ、中火で1分加熱する。","cautionItems":["油は引かない。ベーコン自身の脂で炒める。"],"changeReason":"ベーコンはグアンチャーレより脂と燻製香が出やすいため、炒め始めを短くする","completionCriteria":["1分。表面がじわじわ温まり始め、脂が溶け出してきたら次へ。"]},{"title":"ベーコンをカリッとさせる","action":"replace","stepNumber":6,"actionItems":["脂が出始めたら弱火に落とし、さらに4〜5分炒める。"],"instruction":"脂が出始めたら弱火に落とし、さらに4〜5分炒める。ベーコンの表面がきつね色でカリッとし、透明な脂が大さじ3ほど溶け出した状態が目安。","cautionItems":["焦がすと燻製香が苦みに変わるので弱火を維持する。脂が多すぎる場合は大さじ1ほど残して軽く除く。"],"changeReason":"ベーコンはグアンチャーレより短時間で色づき、脂も多く出やすいため","completionCriteria":["約4〜5分。表面がきつね色でカリッとし、透明な脂が大さじ3ほど溶け出したら次へ。"]}]},{"id":"ac2776a1-7697-4a63-bec3-f2781930d042","standardIngredientId":"a5f2566e-27e6-4bbc-86fa-59e56aa25a3e","nameJa":"パンチェッタ","nameEn":"Pancetta","authenticityImpact":-5,"flavorImpact":"豚の旨みは近いが、グアンチャーレの脂の甘みとコクが少し弱くなる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"64cf7347-e722-43c8-a706-4c80486fc121","nameOriginal":"Spaghetti","nameJa":"スパゲッティ","nameEn":"Spaghetti","quantity":200,"unit":"g","role":"essential","scalingBehavior":null,"notes":"1.7-1.9mm推奨","substitutionOptions":[{"id":"180c555d-d50f-4737-acf8-100bf4ce024f","standardIngredientId":"64cf7347-e722-43c8-a706-4c80486fc121","nameJa":"ブカティーニ","nameEn":"Bucatini","authenticityImpact":-5,"flavorImpact":"中空の穴がソースを含みボリューム感が増す。一部のローマのトラットリアで使われるが、スパゲッティが主流","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"9a3f7a83-9216-426d-a129-9ca8716d61ae","standardIngredientId":"64cf7347-e722-43c8-a706-4c80486fc121","nameJa":"メッツェ・マニケ","nameEn":"Mezze Maniche","authenticityImpact":0,"flavorImpact":"短い筒形でソースをよく抱え込む。ローマ家庭料理のカルボナーラで好まれる伝統的な形状","textureImpact":null,"procedureChanges":["乾燥重量はスパゲッティと同量。袋記載の茹で時間で。"],"affectedStepNumbers":[10],"notes":null,"variantType":"authentic_variant","ingredientPatches":[],"stepPatches":[{"title":"メッツェ・マニケを茹でる","action":"replace","stepNumber":10,"actionItems":["沸騰した塩湯にメッツェ・マニケ200gを入れ、袋記載の茹で時間を目安に茹でる。","筒の内側に湯が入るよう投入直後に一度混ぜる。"],"instruction":"沸騰した塩湯にメッツェ・マニケ200gを入れ、袋記載の茹で時間を目安に茹でる。\n・筒の内側に湯が入るよう投入直後に一度混ぜる","changeReason":"メッツェ・マニケは形状と茹で時間がスパゲッティと異なるため、袋記載の時間に合わせる","completionCriteria":["袋記載の茹で時間。中心に粉っぽい芯が残らず、まだ噛み応えがある状態になったら次へ。"]}]},{"id":"b9b6da7a-b4b9-4037-b6da-5b2141d70e05","standardIngredientId":"64cf7347-e722-43c8-a706-4c80486fc121","nameJa":"リガトーニ","nameEn":"Rigatoni","authenticityImpact":0,"flavorImpact":"ソースが筒の内側まで入り込み、卵とペコリーノの濃厚さをしっかり受け止める。ローマのトラットリアでも定番の形状","textureImpact":null,"procedureChanges":["乾燥重量はスパゲッティと同量。袋記載の茹で時間で。"],"affectedStepNumbers":[10],"notes":null,"variantType":"authentic_variant","ingredientPatches":[],"stepPatches":[{"title":"リガトーニを茹でる","action":"replace","stepNumber":10,"actionItems":["沸騰した塩湯にリガトーニ200gを入れ、袋記載の茹で時間を目安に茹でる。","筒の内側に湯が入るよう投入直後に一度混ぜる。"],"instruction":"沸騰した塩湯にリガトーニ200gを入れ、袋記載の茹で時間を目安に茹でる。\n・筒の内側に湯が入るよう投入直後に一度混ぜる","changeReason":"リガトーニは形状と茹で時間がスパゲッティと異なるため、袋記載の時間に合わせる","completionCriteria":["袋記載の茹で時間。中心に粉っぽい芯が残らず、まだ噛み応えがある状態になったら次へ。"]}]},{"id":"c728928b-9c09-400b-aeb3-d668562f0976","standardIngredientId":"64cf7347-e722-43c8-a706-4c80486fc121","nameJa":"リングイネ","nameEn":"Linguine","authenticityImpact":-5,"flavorImpact":"形が違うが味への影響は最小限","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"6da2ec62-8a17-45dd-8f31-0ceb9afa32ae","nameOriginal":"Uova (tuorli)","nameJa":"卵黄","nameEn":"Egg yolks","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"新鮮な卵の卵黄のみを使う。白身は使わない","substitutionOptions":[]},{"id":"ae831431-ef8c-445a-9f71-1438bc7b5133","nameOriginal":"Pecorino Romano","nameJa":"ペコリーノ・ロマーノ","nameEn":"Pecorino Romano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"すりおろして使う","substitutionOptions":[{"id":"19be5914-c246-4916-a9d4-f66316df27b2","standardIngredientId":"ae831431-ef8c-445a-9f71-1438bc7b5133","nameJa":"粉チーズ（市販）","nameEn":"Powdered parmesan","authenticityImpact":-20,"flavorImpact":"香りと風味が大幅に落ち、ソースのなめらかさも出にくい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"7569cfff-263b-46de-a784-9e0b90ea31e7","standardIngredientId":"ae831431-ef8c-445a-9f71-1438bc7b5133","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","authenticityImpact":-10,"flavorImpact":"塩気と羊の風味が薄れ、まろやかになる。本場はペコリーノの鋭い塩気が重要","textureImpact":null,"procedureChanges":["塩味が弱くなるため、パスタの塩を少し増やす"],"affectedStepNumbers":[1],"notes":null,"variantType":"substitute","ingredientPatches":[{"notes":"パスタの茹で水用。パルミジャーノ使用時は湯1Lあたり約12gに少し増やす","action":"update","quantity":35,"targetNameJa":"塩"}],"stepPatches":[{"title":"湯を沸かす","action":"replace","stepNumber":1,"actionItems":["大きな鍋に湯3Lを入れ、強火にかけて沸騰させる。","沸騰したら塩35g（湯1Lあたり約12g）を加えて溶かす。"],"instruction":"大きな鍋に湯3Lを入れ、強火にかけて沸騰させる（約8〜10分）。沸騰したら塩35g（湯1Lあたり約12g）を加えて溶かす。","changeReason":"パルミジャーノはペコリーノより塩味が弱いため、茹で塩を少し増やす","completionCriteria":["約8〜10分。ぐつぐつと全体が沸騰し、塩が溶けたら次へ。"]}]}]},{"id":"c3f006eb-c470-42bf-a878-561c660334c5","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":2,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":"粗挽きを使う。カルボナーラの「炭」感はここから","substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"","title":"湯を沸かす","actionItems":["大きな鍋に湯を入れ、強火にかけて沸騰させる。","沸騰したら塩（湯1Lあたり10g）を加えて溶かす。"],"parallelItems":[],"completionCriteria":["ぐつぐつと全体が沸騰し、塩が溶けたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":2,"instruction":"","title":"具材を準備する","actionItems":["グアンチャーレを7mm角の拍子木状に切り分ける。","ペコリーノ・ロマーノを目の細かいおろし金ですりおろす。","黒胡椒をペッパーミルで粗めに挽くか、包丁の腹で叩いて粗挽きにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"","title":"パスタを茹でる","actionItems":["沸騰した塩湯にスパゲッティを入れ、袋表示時間より1分短くゆで始める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"instruction":"","title":"グアンチャーレを炒める","actionItems":["冷たいフライパンにグアンチャーレを油を引かずに入れ、中火で2分加熱する。","脂が出始めたら弱火に落とし、さらに7〜8分炒める。","グアンチャーレの表面がきつね色でカリッとし、透明な脂が溶け出した状態が目安。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["グアンチャーレから多くの脂が溶け出すので、油は引かなくてもOK。"],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"","title":"フライパンを冷ます","actionItems":["火を止めて余熱で1〜2分置き、そのままフライパン内で70℃以下まで冷ます。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["グアンチャーレの脂が高温のため、そのまま卵液を加えるとスクランブルエッグになる。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":6,"instruction":"","title":"卵液を作る","actionItems":["ボウルに卵黄4個を割り入れ、すりおろしたペコリーノ・ロマーノと粗挽き黒胡椒を加える。（チーズと胡椒は最後の仕上げとしても一部残しておく）","かき混ぜてペースト状にする。"],"parallelItems":[],"completionCriteria":["粉っぽさが消えてリボン状に流れる濃度になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"","title":"グアンチャーレの脂を絡める","actionItems":["スパゲッティをアルデンテ（中心に芯が残る状態）にゆで上げ、軽く湯切りしてグアンチャーレのフライパンに直接移す。","フライパンを弱火にかけ、30秒ほど和えてグアンチャーレの脂をパスタ全体にしっかり絡める。"],"parallelItems":[],"completionCriteria":["脂がパスタ全体に行き渡ったら次へ。"],"cautionItems":["茹で汁は濃度調整に使うので取っておく。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":8,"instruction":"","title":"ゆで汁で乳化させる","actionItems":["ゆで汁を少しずつ加え、弱火のまま軽く乳化させる。","必ず火を止める。"],"parallelItems":[],"completionCriteria":["全体が軽く乳化したら火を止めて次へ。"],"cautionItems":["ここで火を止めないと卵液を加えたときにスクランブルになる。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":9,"instruction":"","title":"卵液を絡める","actionItems":["火を止めた状態のフライパンに卵液を一気に流し入れ、素早く和えて全体に絡める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["火をつけたまま卵液を加えない。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":10,"instruction":"","title":"ソースの濃度を調整する","actionItems":["ゆで汁を少しずつ加えながら濃度を調整する。"],"parallelItems":[],"completionCriteria":["フライパンを傾けてソースがゆっくり流れ落ちる濃度になればOK。"],"cautionItems":["ゆで汁を加え過ぎるとシャバシャバになってしまうので、慎重に少しずつ加える。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":11,"instruction":"","title":"仕上げ","actionItems":["トングでパスタをねじりながら山高く半量ずつ盛り付ける。","残しておいたペコリーノと粗挽き黒胡椒を上から振りかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

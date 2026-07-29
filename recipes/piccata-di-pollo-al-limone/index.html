@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -278,6 +279,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"de570fd6-94b3-4f7d-8282-b9e195b06d38","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -334,5 +388,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"de570fd6-94b3-4f7d-8282-b9e195b06d38","nameJa":"鶏肉のレモンピッカータ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"7fc0191c-c03f-4703-bfc2-f4028f42b66a","nameOriginal":"Petto di pollo","nameJa":"鶏胸肉","nameEn":"Chicken breast","quantity":600,"unit":"g（4枚）","role":"essential","scalingBehavior":null,"notes":"1枚を横に開いて2枚にし（8枚分）、ラップを挟んで5mm厚に叩く","substitutionOptions":[]},{"id":"654e0d5b-5257-47a2-b7f2-dc6a93043ec0","nameOriginal":"Limone di Amalfi","nameJa":"レモン（無農薬）","nameEn":"Lemon (preferably unwaxed)","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"果汁＋輪切りを飾りに使う","substitutionOptions":[]},{"id":"81095639-d01b-498b-885f-6fe92cbe254d","nameOriginal":"Capperi sotto sale","nameJa":"ケッパー（塩漬け）","nameEn":"Capers in salt","quantity":30,"unit":"g","role":"essential","scalingBehavior":null,"notes":"水で塩を洗い流す","substitutionOptions":[{"id":"59ecdc58-a921-43fe-a274-2744e670bcc4","standardIngredientId":"81095639-d01b-498b-885f-6fe92cbe254d","nameJa":"ケッパー（酢漬け・水切り）","nameEn":"Capers in vinegar, drained","authenticityImpact":-5,"flavorImpact":"酸味が少し強くなる。よく水切りすれば代用可","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"9bfe69c5-878d-4fef-9f24-606d67cef866","nameOriginal":"Burro","nameJa":"バター（無塩）","nameEn":"Unsalted butter","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"冷たいまま使う。ソースの乳化用","substitutionOptions":[]},{"id":"6c0e87f4-743f-4930-98f9-2d240c36b39c","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Plain flour","quantity":60,"unit":"g","role":"technique","scalingBehavior":null,"notes":"肉にまぶして焼き色を出す","substitutionOptions":[]},{"id":"67e13eb0-c80d-48f6-9f27-4f5e800a69a5","nameOriginal":"Brodo di pollo","nameJa":"チキンブロード","nameEn":"Chicken broth","quantity":80,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":"ソース用。市販コンソメ可","substitutionOptions":[]},{"id":"4e528123-2899-4d51-a309-744ed8c4646f","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ（みじん切り）","nameEn":"Flat-leaf parsley, chopped","quantity":1,"unit":"束","role":"garnish","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"2e096eb3-3edb-436d-9f53-d657399c4f9b","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"鶏胸肉を横に開いて半分の厚さにし、ラップで挟んで肉叩きまたはびんの底で5mm厚に均一に叩く。塩・こしょうをして薄力粉を両面にまぶし、余分な粉を払う。","title":"鶏肉を叩いて粉をまぶす","actionItems":["鶏胸肉4枚を横に開いて半分の厚さにする。","ラップで挟んで肉叩きまたはびんの底で5mm厚に均一に叩く。","塩・こしょうをして薄力粉60gを両面にまぶし、余分な粉を払う。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["厚みが均一でないと焼きムラができる。均一に叩くこと。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フライパンにオリーブオイルを強火に熱し、鶏肉を小分けにして入れ、各面2〜3分ずつ黄金色に焼いて取り出す（全体的に白くなるまで）。","title":"鶏肉を焼く","actionItems":["フライパンにオリーブオイル30mlを強火に熱する。","鶏肉を小分けにして入れ、各面2〜3分ずつ黄金色に焼いて取り出す。"],"parallelItems":[],"completionCriteria":["両面が黄金色になり全体が白くなれば取り出す。"],"cautionItems":["一度に入れず小分けにして焼くこと。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"同じフライパンにチキンブロードとレモン果汁（1個分）を加えて強火で1〜2分煮詰める。ケッパーを加える。","title":"ソースのベースを作る","actionItems":["同じフライパンにチキンブロード80mlとレモン果汁1個分を加えて強火で1〜2分煮詰める。","ケッパー30gを加える。"],"parallelItems":[],"completionCriteria":["ソースが少し煮詰まれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"鶏肉を戻し、冷たいバターを小さく切って加えながら鍋を振ってソースを乳化させる。ソースがとろりとクリーム状になれば完成。","title":"バターでソースを乳化させる","actionItems":["鶏肉を戻す。","冷たいバター60gを小さく切って加えながら鍋を振ってソースを乳化させる。"],"parallelItems":[],"completionCriteria":["ソースがとろりとクリーム状になれば完成。"],"cautionItems":["バターは冷たいまま使うこと。温かいと乳化せず分離する。"],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"パセリを散らし、レモンを輪切りにして飾る。すぐに食べること。ソースが時間とともに分離する。","title":"パセリとレモンを飾る","actionItems":["パセリを散らし、レモンを輪切りにして飾る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":["ソースが時間とともに分離するため、すぐに食べること。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>

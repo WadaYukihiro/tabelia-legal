@@ -91,6 +91,7 @@
           <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
+          <a href="#reviews">評価</a>
         </nav>
 
         <div class="recipe-body">
@@ -300,6 +301,59 @@
         </div>
       </section>
 
+        <section class="reviews-section" id="reviews">
+        <p class="eyebrow">READER REVIEWS</p>
+        <h2>作った方の評価</h2>
+        <p class="reviews-lead">本格度スコアはTabelia編集部が食材・手順から算出する客観指標です。以下は実際に作った方の評価です。</p>
+
+        <div id="reviews-summary-mount"><div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div></div>
+
+        <div class="reviews-list" id="reviews-list-mount">
+
+        </div>
+
+        <div class="review-form-wrap" id="review-form-wrap">
+          <h3>この料理を作った感想を教えてください</h3>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="review-form-field">
+              <label id="review-rating-label">評価</label>
+              <div class="review-rating-input" role="radiogroup" aria-labelledby="review-rating-label">
+                <input type="radio" id="review-rating-5" name="rating" value="5" required><label for="review-rating-5" aria-label="5">5</label>
+                <input type="radio" id="review-rating-4" name="rating" value="4"><label for="review-rating-4" aria-label="4">4</label>
+                <input type="radio" id="review-rating-3" name="rating" value="3"><label for="review-rating-3" aria-label="3">3</label>
+                <input type="radio" id="review-rating-2" name="rating" value="2"><label for="review-rating-2" aria-label="2">2</label>
+                <input type="radio" id="review-rating-1" name="rating" value="1"><label for="review-rating-1" aria-label="1">1</label>
+              </div>
+            </div>
+            <div class="review-form-field">
+              <label for="review-comment">コメント（任意）</label>
+              <textarea id="review-comment" name="comment" maxlength="1000" placeholder="作ってみた感想やアレンジなどをお聞かせください"></textarea>
+            </div>
+            <div class="review-form-field">
+              <label for="review-name">お名前（表示用・任意）</label>
+              <input type="text" id="review-name" name="displayName" maxlength="40" placeholder="例：匿名">
+            </div>
+            <div class="review-form-field">
+              <label for="review-email">メールアドレス（確認用・非公開）</label>
+              <input type="email" id="review-email" name="email" required placeholder="you@example.com">
+              <p class="review-form-hint">評価の公開には軽量なメール確認とモデレーション承認が必要です。メールアドレスは公開されません。</p>
+            </div>
+            <div class="review-honeypot" aria-hidden="true">
+              <label for="review-website">Website</label>
+              <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <button type="submit" class="review-submit-button">評価を投稿する</button>
+            <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
+          </form>
+          <div class="review-form-thanks" id="review-form-thanks" aria-live="polite" hidden>
+            <p>評価ありがとうございます。確認後に公開されます。</p>
+          </div>
+        </div>
+
+        <script type="application/json" id="recipe-review-data">{"recipe":{"id":"48d25a25-a6d9-4b4e-82a8-84162985ed65","submitReviewUrl":"https://zyvkuzjemabnvbxwzxll.supabase.co/functions/v1/submit-recipe-review","supabaseAnonKey":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5dmt1emplbWFibnZieHd6eGxsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NjkyOTgsImV4cCI6MjA5NTU0NTI5OH0.Iy5MCku0rd04By8wZa-cW1C8DZNBedDfWj_hq34nfd4"},"aggregate":{"averageRating":0,"reviewCount":0,"ratingDistribution":{"1":0,"2":0,"3":0,"4":0,"5":0}},"reviews":[]}</script>
+      </section>
+
         <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">
         <div class="app-cta-body">
@@ -356,5 +410,7 @@
   <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"48d25a25-a6d9-4b4e-82a8-84162985ed65","nameJa":"鶏肉のセージ風味インヴォルティーニ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"c14760e3-8d89-40b1-8f2f-ca81fdc874ce","nameOriginal":"Petto di pollo","nameJa":"鶏むね肉","nameEn":"Chicken breast","quantity":600,"unit":"g","role":"essential","scalingBehavior":null,"notes":"観音開きにし、厚さ5mmに叩く","substitutionOptions":[]},{"id":"64932576-5863-499c-845e-fd0da5682d1b","nameOriginal":"Prosciutto crudo","nameJa":"生ハム","nameEn":"Prosciutto crudo","quantity":80,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"d09840bb-b5bf-4829-a18d-83e95c75aaa2","standardIngredientId":"64932576-5863-499c-845e-fd0da5682d1b","nameJa":"パンチェッタ薄切り","nameEn":"Thin-sliced pancetta","authenticityImpact":-5,"flavorImpact":"脂の香りが強くなり、より濃厚になる","textureImpact":null,"procedureChanges":["塩を控えめにする"],"affectedStepNumbers":[2,3],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"g","notes":"塩気が強いため鶏肉に振る塩を控える","action":"update","nameEn":"Thin-sliced pancetta","nameJa":"パンチェッタ薄切り","quantity":80,"targetNameJa":"生ハム"}],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"フォンティーナ80gを8本の棒状に切る。パンチェッタ薄切り80gは鶏肉の幅に合わせて分ける。セージ12枚は汚れを拭く。鶏肉に塩を通常より控えめに、ごく薄く振り、黒胡椒を軽く振る。","changeReason":"パンチェッタは生ハムより塩気と脂が強いため、鶏肉に振る塩を控える"},{"action":"replace","stepNumber":3,"instruction":"鶏肉を8枚に分け、パンチェッタ薄切り、セージ、フォンティーナをのせて端からきつく巻く。巻き終わりを楊枝で留め、具が大きくはみ出していない状態に整える。","changeReason":"置換後の食材名に合わせるため"}]}]},{"id":"c4f969ed-7d2f-4480-a294-30c7371ba314","nameOriginal":"Salvia fresca","nameJa":"セージ（生）","nameEn":"Fresh sage","quantity":12,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[{"id":"bbefdbb7-84e8-4d86-bfed-c10133fadf71","standardIngredientId":"c4f969ed-7d2f-4480-a294-30c7371ba314","nameJa":"乾燥セージ 小さじ1/2","nameEn":"Dried sage","authenticityImpact":-5,"flavorImpact":"香りが粉っぽく出やすいので少量にする","textureImpact":null,"procedureChanges":["チーズの上にごく薄く振る"],"affectedStepNumbers":[2,3],"notes":null,"variantType":"substitute","ingredientPatches":[{"unit":"小さじ","notes":"香りが強いためチーズの上にごく薄く振る","action":"update","nameEn":"Dried sage","nameJa":"乾燥セージ","quantity":0.5,"targetNameJa":"セージ（生）"}],"stepPatches":[{"action":"replace","stepNumber":2,"instruction":"フォンティーナ80gを8本の棒状に切る。生ハム80gは鶏肉の幅に合わせて分ける。乾燥セージ小さじ1/2を計量する。鶏肉に塩と黒胡椒を軽く振る。","changeReason":"乾燥セージは拭く下処理が不要なため"},{"action":"replace","stepNumber":3,"instruction":"鶏肉を8枚に分け、生ハム、フォンティーナをのせ、乾燥セージをチーズの上にごく薄く振る。端からきつく巻き、巻き終わりを楊枝で留め、具が大きくはみ出していない状態に整える。","changeReason":"乾燥セージは香りが強く粉っぽく出やすいため、チーズの上に薄く振る"}]}]},{"id":"e6f22390-bbd0-42ae-a51a-b1f4d5098b78","nameOriginal":"Fontina","nameJa":"フォンティーナ","nameEn":"Fontina cheese","quantity":80,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"棒状に切る","substitutionOptions":[{"id":"e6cb9a1c-77da-4b87-a58e-ae960ea9fdde","standardIngredientId":"e6f22390-bbd0-42ae-a51a-b1f4d5098b78","nameJa":"モッツァレラ","nameEn":"Mozzarella","authenticityImpact":-10,"flavorImpact":"香りは弱いが、とろける食感は作れる。水気をよく拭く","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"7e5fed84-295d-4476-9c07-49d50163d11a","nameOriginal":"Vino bianco secco","nameJa":"辛口白ワイン","nameEn":"Dry white wine","quantity":100,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"7e804e10-7e73-41b0-b829-f48b57be289e","nameOriginal":"Burro","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":25,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"399d208e-6462-40d0-b155-24fad32469b2","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":20,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"8821e38a-0ad1-45c7-8112-b81bfa937c54","nameOriginal":"Farina 00","nameJa":"薄力粉","nameEn":"Cake flour","quantity":20,"unit":"g","role":"technique","scalingBehavior":null,"notes":"表面に薄くまぶす","substitutionOptions":[]},{"id":"e5626e91-6b6f-488b-8864-2128a8b1ed4b","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":4,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]},{"id":"1fc58d38-0c31-4563-b956-97432941292c","nameOriginal":"Pepe nero macinato","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"substitutionOptions":[]}],"steps":[{"stepNumber":1,"instruction":"鶏むね肉600gは厚い部分から包丁を入れて観音開きにし、ラップで挟んで厚さ5mmに叩く。穴が開かず、全体の厚みが揃った状態にする。","title":"材料を準備する","actionItems":["鶏むね肉600gは厚い部分から包丁を入れて観音開きにし、ラップで挟んで厚さ5mmに叩く。"],"parallelItems":[],"completionCriteria":["穴が開かず、全体の厚みが揃った状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"instruction":"フォンティーナ80gを8本の棒状に切る。生ハム80gは鶏肉の幅に合わせて分ける。セージ12枚は汚れを拭く。鶏肉に塩と黒胡椒を軽く振る。","title":"材料を準備する","actionItems":["フォンティーナ80gを8本の棒状に切る。","生ハム80gは鶏肉の幅に合わせて分ける。","セージ12枚は汚れを拭く。","鶏肉に塩と黒胡椒を軽く振る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"instruction":"鶏肉を8枚に分け、生ハム、セージ、フォンティーナをのせて端からきつく巻く。巻き終わりを楊枝で留め、具が大きくはみ出していない状態に整える。","title":"形を整える","actionItems":["鶏肉を8枚に分け、生ハム、セージ、フォンティーナをのせて端からきつく巻く。"],"parallelItems":[],"completionCriteria":["巻き終わりを楊枝で留め、具が大きくはみ出していない状態に整える。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"instruction":"インヴォルティーニの表面に薄力粉20gを薄くまぶし、余分な粉をはたく。表面に粉が白く厚く残らない状態にする。","title":"食材を下処理する","actionItems":["インヴォルティーニの表面に薄力粉20gを薄くまぶし、余分な粉をはたく。"],"parallelItems":[],"completionCriteria":["表面に粉が白く厚く残らない状態にする。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"instruction":"フライパンにエクストラバージンオリーブオイル20mlと無塩バター15gを中火で熱し、インヴォルティーニを巻き終わりを下にして入れる。転がしながら5分焼き、全面に薄い焼き色をつける。","title":"材料を合わせる","actionItems":["フライパンにエクストラバージンオリーブオイル20mlと無塩バター15gを中火で熱し、インヴォルティーニを巻き終わりを下にして入れる。","転がしながら5分焼き、全面に薄い焼き色をつける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"active","sectionTitle":null},{"stepNumber":6,"instruction":"辛口白ワイン100mlを注ぎ、蓋をして弱火で8分蒸し焼きにする。中心まで火が入り、押すと弾力があり、流れる肉汁が透明になったら取り出す。","title":"蒸す","actionItems":["辛口白ワイン100mlを注ぎ、蓋をして弱火で8分蒸し焼きにする。","中心まで火が入り、押すと弾力があり、流れる肉汁が透明になったら取り出す。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":9,"attentionLevel":"active","sectionTitle":null},{"stepNumber":7,"instruction":"フライパンに残った煮汁へ無塩バター10gを加え、中火で1〜2分煮詰める。ソースに軽いとろみがつき、艶が出たらインヴォルティーニにかけて完成。","title":"形を整える","actionItems":["フライパンに残った煮汁へ無塩バター10gを加え、中火で1〜2分煮詰める。"],"parallelItems":[],"completionCriteria":["ソースに軽いとろみがつき、艶が出たらインヴォルティーニにかけて完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="/recipes/reviews.js" defer></script>
 </body>
 </html>
