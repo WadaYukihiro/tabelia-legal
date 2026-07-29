@@ -182,12 +182,15 @@
       body: JSON.stringify(payload),
     })
       .then(function (res) {
-        if (!res.ok) throw new Error('submit-failed');
-        showThanks();
+        if (res.ok) { showThanks(); return; }
+        return res.json().catch(function () { return null; }).then(function (body) {
+          if (submitButton) submitButton.disabled = false;
+          showError((body && body.message) || '送信に失敗しました。しばらくしてからもう一度お試しください。');
+        });
       })
       .catch(function () {
         if (submitButton) submitButton.disabled = false;
-        showError('送信に失敗しました。しばらくしてからもう一度お試しください。');
+        showError('送信に失敗しました。通信環境をご確認のうえ、もう一度お試しください。');
       });
   });
 })();
