@@ -540,6 +540,19 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   margin-bottom: 0.5rem;
   background: #f2f2f2;
 }
+/* 「他のレシピ」内部リンクの写真は装飾扱いの背景画像にする（実 <img> ではない）。
+   これらは本文の主題ではないため、Google検索のスニペット画像候補として
+   ページのヒーロー画像と競合させないための措置。一覧・ハブページの .recipe-card img はそのまま。 */
+.recipe-card-photo {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 0.5rem;
+  background-color: #f2f2f2;
+}
 .recipe-card:hover .recipe-card-title { text-decoration: underline; }
 .recipe-card-title { display: block; font-weight: 600; font-size: 0.9rem; line-height: 1.4; }
 .recipe-card-subtitle { display: block; color: #888; font-size: 0.78rem; margin-top: 0.1rem; }
@@ -642,6 +655,17 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   display: block;
   margin-bottom: 0.5rem;
   background: #f2f2f2;
+}
+/* .recipe-card-photo と同じ理由で背景画像化（.recipe-card 内コメント参照） */
+.pairing-card-photo {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 0.5rem;
+  background-color: #f2f2f2;
 }
 .pairing-card-context {
   display: inline-block;
@@ -798,8 +822,8 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .container-recipe h2 { border-bottom-color: #ded6cb; }
 .recipe-meta .meta-chip { background: #efe9e0; }
 .step-card { border-color: #e5ddd2; box-shadow: 0 6px 22px rgba(58, 41, 27, 0.055); }
-.recipe-card img, .course-card img, .region-card img, .pairing-card img { transition: transform 0.2s, box-shadow 0.2s; }
-.recipe-card:hover img, .course-card:hover img, .region-card:hover img, .pairing-card:hover img { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(55,38,25,0.12); }
+.recipe-card img, .recipe-card-photo, .course-card img, .region-card img, .pairing-card img, .pairing-card-photo { transition: transform 0.2s, box-shadow 0.2s; }
+.recipe-card:hover img, .recipe-card:hover .recipe-card-photo, .course-card:hover img, .region-card:hover img, .pairing-card:hover img, .pairing-card:hover .pairing-card-photo { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(55,38,25,0.12); }
 
 /* Recipe collection hub */
 .recipe-hub-page { max-width: 1240px; }
