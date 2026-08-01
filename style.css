@@ -612,6 +612,16 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   display: block;
   background: #f2f2f2;
 }
+/* .recipe-card-photo と同じ理由で背景画像化（legal-site/style.css 内 .recipe-card-photo のコメント参照） */
+.course-card-photo, .region-card-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: block;
+  background-color: #f2f2f2;
+}
 .course-card-body, .region-card-body {
   display: flex;
   flex-direction: column;
@@ -822,8 +832,8 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .container-recipe h2 { border-bottom-color: #ded6cb; }
 .recipe-meta .meta-chip { background: #efe9e0; }
 .step-card { border-color: #e5ddd2; box-shadow: 0 6px 22px rgba(58, 41, 27, 0.055); }
-.recipe-card img, .recipe-card-photo, .course-card img, .region-card img, .pairing-card img, .pairing-card-photo { transition: transform 0.2s, box-shadow 0.2s; }
-.recipe-card:hover img, .recipe-card:hover .recipe-card-photo, .course-card:hover img, .region-card:hover img, .pairing-card:hover img, .pairing-card:hover .pairing-card-photo { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(55,38,25,0.12); }
+.recipe-card img, .recipe-card-photo, .course-card img, .course-card-photo, .region-card img, .region-card-photo, .pairing-card img, .pairing-card-photo { transition: transform 0.2s, box-shadow 0.2s; }
+.recipe-card:hover img, .recipe-card:hover .recipe-card-photo, .course-card:hover img, .course-card:hover .course-card-photo, .region-card:hover img, .region-card:hover .region-card-photo, .pairing-card:hover img, .pairing-card:hover .pairing-card-photo { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(55,38,25,0.12); }
 
 /* Recipe collection hub */
 .recipe-hub-page { max-width: 1240px; }
