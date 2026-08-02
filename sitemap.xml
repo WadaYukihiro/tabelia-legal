@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://tabelia.app/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://tabelia.app/about/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-08-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
+  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-08-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
+  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-08-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
+  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-08-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
   <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-08-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
@@ -30,6 +50,16 @@
   <url><loc>https://tabelia.app/recipes/region/centro/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://tabelia.app/recipes/region/sud/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://tabelia.app/recipes/region/isole/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-08-02</lastmod></url>
   <url>
     <loc>https://tabelia.app/recipes/spaghetti-alla-puttanesca/</loc>
     <lastmod>2026-05-28</lastmod>
@@ -309,6 +339,10 @@
   <url>
     <loc>https://tabelia.app/recipes/melanzane-alla-parmigiana/</loc>
     <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/melanzane-alla-parmigiana/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/18b2ed3c-118d-4d6f-ac21-b8580041b2f8_1780064718860.png</image:loc>
       <image:title>なすのパルミジャーナ（Melanzane alla Parmigiana）</image:title>
@@ -396,6 +430,10 @@
   <url>
     <loc>https://tabelia.app/recipes/vitello-tonnato/</loc>
     <lastmod>2026-05-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/vitello-tonnato/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/1bc74c22-a4eb-44b7-9e35-ec5b6851f241_1780154133880.png</image:loc>
       <image:title>ヴィテッロ・トンナート（Vitello Tonnato）</image:title>
@@ -546,6 +584,10 @@
   <url>
     <loc>https://tabelia.app/recipes/bistecca-alla-fiorentina/</loc>
     <lastmod>2026-06-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1780064737661.png</image:loc>
       <image:title>フィレンツェ風Tボーンステーキ（ビステッカ）（Bistecca alla Fiorentina）</image:title>
@@ -777,6 +819,10 @@
   <url>
     <loc>https://tabelia.app/recipes/risotto-alla-milanese/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/risotto-alla-milanese/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/3aee2039-9e34-483f-a9c8-3056d9a12775_1780064874474.png</image:loc>
       <image:title>ミラノ風サフランリゾット（Risotto alla Milanese）</image:title>
@@ -867,6 +913,10 @@
   <url>
     <loc>https://tabelia.app/recipes/cannoli-siciliani/</loc>
     <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/cannoli-siciliani/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/40d0972d-7532-4815-98e3-97cde88a44fe_1780064914801.png</image:loc>
       <image:title>シチリア風カンノーリ（Cannoli Siciliani）</image:title>
@@ -975,6 +1025,10 @@
   <url>
     <loc>https://tabelia.app/recipes/bruschetta-al-pomodoro/</loc>
     <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bruschetta-al-pomodoro/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/4ae26d71-d498-42f0-aae7-d0cd369cd838_1780064655043.png</image:loc>
       <image:title>トマトのブルスケッタ（Bruschetta al Pomodoro）</image:title>
@@ -1038,6 +1092,10 @@
   <url>
     <loc>https://tabelia.app/recipes/peperonata/</loc>
     <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/peperonata/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1780068288018.png</image:loc>
       <image:title>三色パプリカのトマト煮（Peperonata）</image:title>
@@ -1179,6 +1237,10 @@
   <url>
     <loc>https://tabelia.app/recipes/saltimbocca-alla-romana/</loc>
     <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/saltimbocca-alla-romana/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/58d89673-4c3a-4028-ae1e-b662e681f66b_1780064884152.png</image:loc>
       <image:title>ローマ風サルティンボッカ（Saltimbocca alla Romana）</image:title>
@@ -1602,6 +1664,10 @@
   <url>
     <loc>https://tabelia.app/recipes/ossobuco-alla-milanese/</loc>
     <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/ossobuco-alla-milanese/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/81b3612c-99c1-4ab1-bae7-9e9ef58636ee_1780064807113.png</image:loc>
       <image:title>仔牛すね肉のミラノ風煮込み（Ossobuco alla Milanese）</image:title>
@@ -1810,6 +1876,10 @@
   <url>
     <loc>https://tabelia.app/recipes/spaghetti-alle-vongole/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/spaghetti-alle-vongole/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/8d77a63d-a43a-4548-a495-585697cbe79a_1780064943845.png</image:loc>
       <image:title>スパゲッティ ボンゴレ（Spaghetti alle Vongole）</image:title>
@@ -1954,6 +2024,10 @@
   <url>
     <loc>https://tabelia.app/recipes/panna-cotta/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/panna-cotta/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1780541775039.png</image:loc>
       <image:title>パンナコッタ（Panna Cotta）</image:title>
@@ -3054,6 +3128,10 @@
   <url>
     <loc>https://tabelia.app/recipes/caprese/</loc>
     <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/caprese/"/>
     <image:image>
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/fe6694ce-1f67-4959-af1b-ab1d22cc17e6_1780064670621.png</image:loc>
       <image:title>カプレーゼサラダ（Caprese）</image:title>
@@ -3080,6 +3158,270 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/ffe5dd47-4ebe-4603-b2c2-1f2681b00526_1780064972220.png</image:loc>
       <image:title>ティラミス（Tiramisù）</image:title>
       <image:caption>マスカルポーネと卵黄で作るクリームをサヴォイアルディに重ねたイタリアを代表するドルチェ。コアントローとエスプレッソの香りが本場の証。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/melanzane-alla-parmigiana/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/melanzane-alla-parmigiana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/18b2ed3c-118d-4d6f-ac21-b8580041b2f8_1780064718860.png</image:loc>
+      <image:title>Authentic Melanzane alla Parmigiana</image:title>
+      <image:caption>Salted eggplant, fried until tender and layered with tomato sauce, mozzarella and Parmigiano-Reggiano — a rich baked dish from Southern Italy.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/melanzane-alla-parmigiana/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/melanzane-alla-parmigiana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/melanzane-alla-parmigiana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/18b2ed3c-118d-4d6f-ac21-b8580041b2f8_1780064718860.png</image:loc>
+      <image:title>Melanzane alla parmigiana: ricetta tradizionale</image:title>
+      <image:caption>Melanzane salate, fritte fino a diventare tenere e disposte a strati con sugo di pomodoro, mozzarella e Parmigiano-Reggiano: un piatto ricco al forno del Sud Italia.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/vitello-tonnato/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/vitello-tonnato/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/1bc74c22-a4eb-44b7-9e35-ec5b6851f241_1780154133880.png</image:loc>
+      <image:title>Authentic Vitello Tonnato</image:title>
+      <image:caption>A Piedmontese summer antipasto of poached veal sliced thin and coated in a cold tuna, anchovy and caper sauce. The veal is cooked and rested the day before serving.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/vitello-tonnato/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/vitello-tonnato/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/vitello-tonnato/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/1bc74c22-a4eb-44b7-9e35-ec5b6851f241_1780154133880.png</image:loc>
+      <image:title>Vitello tonnato: ricetta piemontese autentica</image:title>
+      <image:caption>L’antipasto estivo piemontese con vitello affogato affettato sottile e ricoperto da una salsa fredda di tonno, acciughe e capperi. Il vitello si cuoce e riposa il giorno prima.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/bistecca-alla-fiorentina/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1780064737661.png</image:loc>
+      <image:title>Authentic Bistecca alla Fiorentina</image:title>
+      <image:caption>A thick-cut T-bone seared hot, rested, then finished simply with salt and olive oil — Tuscany’s signature steak. The thickness of the cut, the sear and the resting time decide everything.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/bistecca-alla-fiorentina/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bistecca-alla-fiorentina/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1780064737661.png</image:loc>
+      <image:title>Bistecca alla fiorentina: ricetta tradizionale</image:title>
+      <image:caption>Una costata alta rosolata a fuoco vivo, fatta riposare e completata semplicemente con sale e olio: la bistecca simbolo della Toscana. Lo spessore del taglio, la rosolatura e il riposo decidono tutto.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/risotto-alla-milanese/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/risotto-alla-milanese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/3aee2039-9e34-483f-a9c8-3056d9a12775_1780064874474.png</image:loc>
+      <image:title>Authentic Risotto alla Milanese</image:title>
+      <image:caption>Milan’s most formal dish, a saffron risotto turned deep gold, traditionally served alongside ossobuco. The result depends on patient, gradual additions of broth.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/risotto-alla-milanese/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/risotto-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/risotto-alla-milanese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/3aee2039-9e34-483f-a9c8-3056d9a12775_1780064874474.png</image:loc>
+      <image:title>Risotto alla milanese: ricetta tradizionale</image:title>
+      <image:caption>Il piatto più formale di Milano, un risotto allo zafferano dal colore dorato, tradizionalmente servito con l’ossobuco. Il risultato dipende dall’aggiunta paziente e graduale del brodo.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/cannoli-siciliani/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/cannoli-siciliani/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/40d0972d-7532-4815-98e3-97cde88a44fe_1780064914801.png</image:loc>
+      <image:title>Authentic Sicilian Cannoli</image:title>
+      <image:caption>Sicily’s iconic fried pastry tubes, the Marsala-spiked shell rolled and fried, filled with sheep’s milk ricotta and chocolate chips just before serving. The filling must go in at the last moment.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/cannoli-siciliani/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/cannoli-siciliani/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/cannoli-siciliani/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/40d0972d-7532-4815-98e3-97cde88a44fe_1780064914801.png</image:loc>
+      <image:title>Cannoli siciliani: ricetta tradizionale</image:title>
+      <image:caption>I celebri cannoli fritti della Sicilia: la cialda al Marsala arrotolata e fritta, farcita con ricotta di pecora e gocce di cioccolato solo al momento di servire. Il ripieno va aggiunto sempre all’ultimo.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/bruschetta-al-pomodoro/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bruschetta-al-pomodoro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/4ae26d71-d498-42f0-aae7-d0cd369cd838_1780064655043.png</image:loc>
+      <image:title>Authentic Bruschetta al Pomodoro</image:title>
+      <image:caption>Rome’s classic antipasto of ripe tomatoes on grilled bread. With so few ingredients, the quality of the tomatoes and olive oil decides the result.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/bruschetta-al-pomodoro/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bruschetta-al-pomodoro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bruschetta-al-pomodoro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/4ae26d71-d498-42f0-aae7-d0cd369cd838_1780064655043.png</image:loc>
+      <image:title>Bruschetta al pomodoro: ricetta romana classica</image:title>
+      <image:caption>L’antipasto classico romano con pomodori maturi su pane abbrustolito. Con così pochi ingredienti, la qualità del pomodoro e dell’olio decide il risultato.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/peperonata/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/peperonata/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1780068288018.png</image:loc>
+      <image:title>Authentic Peperonata</image:title>
+      <image:caption>Bell peppers, tomato and onion slowly cooked in olive oil — a Southern Italian side dish that pairs equally well with meat or fish, and tastes just as good cold.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1785547376128.png</image:loc>
+      <image:title>Authentic Peperonata</image:title>
+      <image:caption>Bell peppers, tomato and onion slowly cooked in olive oil — a Southern Italian side dish that pairs equally well with meat or fish, and tastes just as good cold.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1785547405873.png</image:loc>
+      <image:title>Authentic Peperonata</image:title>
+      <image:caption>Bell peppers, tomato and onion slowly cooked in olive oil — a Southern Italian side dish that pairs equally well with meat or fish, and tastes just as good cold.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1785547434890.png</image:loc>
+      <image:title>Authentic Peperonata</image:title>
+      <image:caption>Bell peppers, tomato and onion slowly cooked in olive oil — a Southern Italian side dish that pairs equally well with meat or fish, and tastes just as good cold.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/peperonata/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/peperonata/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/peperonata/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1780068288018.png</image:loc>
+      <image:title>Peperonata: ricetta tradizionale del Sud</image:title>
+      <image:caption>Peperoni, pomodoro e cipolla cotti lentamente nell’olio: un contorno del Sud Italia che si abbina bene sia alla carne sia al pesce, buono anche freddo.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1785547376128.png</image:loc>
+      <image:title>Peperonata: ricetta tradizionale del Sud</image:title>
+      <image:caption>Peperoni, pomodoro e cipolla cotti lentamente nell’olio: un contorno del Sud Italia che si abbina bene sia alla carne sia al pesce, buono anche freddo.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1785547405873.png</image:loc>
+      <image:title>Peperonata: ricetta tradizionale del Sud</image:title>
+      <image:caption>Peperoni, pomodoro e cipolla cotti lentamente nell’olio: un contorno del Sud Italia che si abbina bene sia alla carne sia al pesce, buono anche freddo.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1785547434890.png</image:loc>
+      <image:title>Peperonata: ricetta tradizionale del Sud</image:title>
+      <image:caption>Peperoni, pomodoro e cipolla cotti lentamente nell’olio: un contorno del Sud Italia che si abbina bene sia alla carne sia al pesce, buono anche freddo.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/saltimbocca-alla-romana/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/saltimbocca-alla-romana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/58d89673-4c3a-4028-ae1e-b662e681f66b_1780064884152.png</image:loc>
+      <image:title>Authentic Saltimbocca alla Romana</image:title>
+      <image:caption>Veal, prosciutto and sage pan-fried in butter — a Roman dish whose name means “jumps in the mouth” for the burst of flavour in every bite.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/saltimbocca-alla-romana/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/saltimbocca-alla-romana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/saltimbocca-alla-romana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/58d89673-4c3a-4028-ae1e-b662e681f66b_1780064884152.png</image:loc>
+      <image:title>Saltimbocca alla romana: ricetta tradizionale</image:title>
+      <image:caption>Vitello, prosciutto e salvia rosolati nel burro: un piatto romano il cui nome dice tutto — “salta in bocca” per l’esplosione di sapore a ogni morso.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/ossobuco-alla-milanese/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/ossobuco-alla-milanese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/81b3612c-99c1-4ab1-bae7-9e9ef58636ee_1780064807113.png</image:loc>
+      <image:title>Authentic Ossobuco alla Milanese</image:title>
+      <image:caption>Bone-in veal shank braised slowly in white wine and broth until tender, finished with a bright lemon and parsley gremolata — Milan’s signature braise.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/ossobuco-alla-milanese/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/ossobuco-alla-milanese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/ossobuco-alla-milanese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/81b3612c-99c1-4ab1-bae7-9e9ef58636ee_1780064807113.png</image:loc>
+      <image:title>Ossobuco alla milanese: ricetta tradizionale</image:title>
+      <image:caption>Stinco di vitello con l’osso brasato lentamente in vino bianco e brodo fino a diventare tenero, completato con una vivace gremolata di limone e prezzemolo: il brasato simbolo di Milano.</image:caption>
     </image:image>
   </url>
   <url>
@@ -3139,6 +3481,58 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/spaghetti-alle-vongole/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/spaghetti-alle-vongole/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/8d77a63d-a43a-4548-a495-585697cbe79a_1780064943845.png</image:loc>
+      <image:title>Authentic Spaghetti alle Vongole</image:title>
+      <image:caption>A simple Neapolitan pasta built on the clams’ own briny broth and olive oil. The true Vongole Bianco never includes tomato.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/spaghetti-alle-vongole/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/spaghetti-alle-vongole/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/spaghetti-alle-vongole/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/8d77a63d-a43a-4548-a495-585697cbe79a_1780064943845.png</image:loc>
+      <image:title>Spaghetti alle vongole: ricetta napoletana autentica</image:title>
+      <image:caption>Una pasta napoletana semplice, costruita sul brodo salmastro delle vongole e sull’olio d’oliva. La vera Vongole Bianco non prevede mai il pomodoro.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/panna-cotta/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/panna-cotta/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1780541775039.png</image:loc>
+      <image:title>Authentic Panna Cotta</image:title>
+      <image:caption>Sweetened cream set with gelatin until it barely holds its shape — a Northern Italian dessert built on just a few ingredients.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/panna-cotta/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/panna-cotta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/panna-cotta/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1780541775039.png</image:loc>
+      <image:title>Panna cotta: ricetta tradizionale</image:title>
+      <image:caption>Panna zuccherata rappresa con la gelatina fino a reggersi appena in piedi: un dolce del Nord Italia costruito su pochissimi ingredienti.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/cacio-e-pepe/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cacio-e-pepe/"/>
@@ -3188,6 +3582,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/f5f7f6a4-4fc3-4548-b5a5-dd5dc8b5505a_1780064864720.png</image:loc>
       <image:title>Triglie alla Livornese</image:title>
       <image:caption>Triglie fresche cotte delicatamente in un semplice sugo di pomodoro e vino bianco: un classico di mare della costa livornese.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/caprese/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/caprese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/fe6694ce-1f67-4959-af1b-ab1d22cc17e6_1780064670621.png</image:loc>
+      <image:title>Authentic Caprese Salad</image:title>
+      <image:caption>The simple Capri antipasto of mozzarella, tomato and basil, its colours echoing the Italian flag. With only five ingredients, everything depends on how ripe and fresh they are.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/caprese/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/caprese/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/caprese/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/object/public/recipe-images/fe6694ce-1f67-4959-af1b-ab1d22cc17e6_1780064670621.png</image:loc>
+      <image:title>Caprese: insalata tradizionale di Capri</image:title>
+      <image:caption>L’antipasto semplice di Capri con mozzarella, pomodoro e basilico, nei colori della bandiera italiana. Con soli cinque ingredienti, tutto dipende dalla loro maturità e freschezza.</image:caption>
     </image:image>
   </url>
   <url>
