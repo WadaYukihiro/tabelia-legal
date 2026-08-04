@@ -849,13 +849,14 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 }
 .recipe-hub-copy h1 {
   font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
-  font-size: clamp(3rem, 5.2vw, 4.8rem);
+  font-size: clamp(2.8rem, 4.3vw, 4.1rem);
   font-weight: 500;
   line-height: 1.07;
   letter-spacing: -0.025em;
   margin-bottom: 1.4rem;
 }
-.recipe-hub-copy h1 span { color: #9e2f23; font-style: italic; }
+.recipe-hub-title-line { display: block; white-space: nowrap; }
+.recipe-hub-title-accent { color: #9e2f23; font-style: italic; }
 .recipe-hub-copy > p:not(.eyebrow):not(.recipe-hub-stat) { max-width: 520px; color: #625a50; line-height: 2; }
 .recipe-hub-stat { display: flex; align-items: baseline; gap: 0.7rem; margin-top: 1.8rem; }
 .recipe-hub-stat strong { color: #9e2f23; font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; line-height: 1; }
@@ -887,6 +888,31 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .hub-quick-links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.13); }
 .hub-quick-links a { color: #d9d3cb; border: 1px solid rgba(255,255,255,0.18); border-radius: 999px; padding: 0.3rem 0.75rem; font-size: 0.75rem; text-decoration: none; }
 .hub-quick-links a:hover { color: #fff; border-color: #dfaa78; }
+
+.hub-principles {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: clamp(3rem, 8vw, 7rem);
+  margin: 6rem -3rem 0;
+  padding: 5rem;
+  background: #e9dfd2;
+  border-radius: 70px 12px 70px 12px;
+}
+.hub-principles h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+.hub-principles-copy > p:not(.eyebrow) { max-width: 600px; margin: 1.2rem 0 0; color: #61594e; line-height: 2; }
+.hub-principle-list { list-style: none; padding: 0; margin: 0; }
+.hub-principle-list li { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(57,41,28,0.16); }
+.hub-principle-list li > span { color: #9e2f23; font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; }
+.hub-principle-list h3 { margin: 0; font-size: 1rem; }
+.hub-principle-list p { margin: 0.3rem 0 0; color: #6a6156; font-size: 0.86rem; line-height: 1.7; }
 
 .recipe-hub-page .hub-section { margin-top: 6rem; }
 .hub-section-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 1.6rem; }
@@ -1164,6 +1190,7 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .hub-discovery { grid-template-columns: 1fr; padding: 1.4rem; gap: 1rem; }
   .hub-quick-links { grid-column: auto; flex-wrap: nowrap; overflow-x: auto; max-height: none; padding-bottom: 0.2rem; }
   .hub-quick-links a { flex: 0 0 auto; }
+  .hub-principles { grid-template-columns: 1fr; gap: 2rem; margin: 4.5rem 0 0; padding: 3rem 1.4rem; border-radius: 40px 8px 40px 8px; }
   .recipe-hub-page .hub-section { margin-top: 4.5rem; }
   .hub-section-heading { display: block; }
   .hub-section-heading > p { margin-top: 0.55rem; text-align: left; }
@@ -1206,5 +1233,6 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .home-philosophy { margin-left: 0; margin-right: 0; padding: 4rem 3rem; }
   .recipe-hub-hero { grid-template-columns: 0.9fr 1.1fr; gap: 2.5rem; }
   .recipe-hub-visual img { height: 430px; }
+  .hub-principles { margin-left: 0; margin-right: 0; padding: 4rem 3rem; }
   .recipe-hub-page .region-grid { grid-template-columns: repeat(2, 1fr); }
 }
