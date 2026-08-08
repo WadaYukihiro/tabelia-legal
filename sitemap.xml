@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://tabelia.app/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-08-04</lastmod>
+  <url><loc>https://tabelia.app/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-08-04</lastmod>
+  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-08-04</lastmod>
+  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-08-04</lastmod>
+  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-08-04</lastmod>
+  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-08-04</lastmod>
+  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-08-04</lastmod>
+  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
@@ -41,25 +41,25 @@
   <url><loc>https://tabelia.app/terms/</loc></url>
   <url><loc>https://tabelia.app/commercial/</loc></url>
   <url><loc>https://tabelia.app/support/</loc></url>
-  <url><loc>https://tabelia.app/recipes/course/antipasto/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/course/primo/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/course/secondo/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/course/contorno/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/course/dolce/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/region/nord/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/region/centro/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/region/sud/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/region/isole/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-08-04</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-08-04</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/course/antipasto/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/course/primo/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/course/secondo/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/course/contorno/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/course/dolce/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/region/nord/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/region/centro/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/region/sud/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/region/isole/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-08-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-08-08</lastmod></url>
   <url>
     <loc>https://tabelia.app/recipes/spaghetti-alla-puttanesca/</loc>
     <lastmod>2026-05-28</lastmod>
