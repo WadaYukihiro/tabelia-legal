@@ -400,7 +400,9 @@
               <label for="review-website">Website</label>
               <input type="text" id="review-website" name="website" tabindex="-1" autocomplete="off">
             </div>
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div>
+            <!-- Turnstile のウィジェットは 300px 固定幅。320px 幅の端末ではフォーム内に収まらず
+                 ページ全体が横スクロールするため、ラッパーで幅を封じ込める（style.css の .turnstile-slot）。 -->
+            <div class="turnstile-slot"><div class="cf-turnstile" data-sitekey="0x4AAAAAAEAapSGiHW2O3lq_"></div></div>
             <button type="submit" class="review-submit-button">評価を投稿する</button>
             <p class="review-form-error" id="review-form-error" role="alert" hidden></p>
           </form>

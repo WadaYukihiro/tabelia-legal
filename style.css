@@ -1276,6 +1276,14 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .review-form-wrap { padding: 1.5rem 1.65rem; border: 1px solid #e5ddd2; border-radius: 14px; background: #f9f6f0; }
 .review-form-wrap h3 { margin: 0 0 1rem; font-size: 1rem; }
 .review-form { display: flex; flex-direction: column; gap: 1rem; }
+/* Turnstile のウィジェットは Cloudflare 側で 300px 固定。狭い端末（320px幅）では
+   フォームの内寸に収まらず、ページ全体を横に押し広げてしまう。ラッパーで幅を封じ込め、
+   はみ出す分だけ縮小して見た目も収める（レイアウト幅は overflow:hidden 側が抑える）。 */
+.turnstile-slot { max-width: 100%; overflow: hidden; }
+@media (max-width: 400px) {
+  .turnstile-slot .cf-turnstile { transform: scale(0.82); transform-origin: left top; }
+  .turnstile-slot { height: 56px; }
+}
 .review-form-field { display: flex; flex-direction: column; gap: 0.35rem; }
 .review-form-field > label { font-size: 0.8rem; font-weight: 600; color: #4a4238; }
 .review-form-field textarea,
