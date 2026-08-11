@@ -8,6 +8,12 @@ body {
   font-size: 15px;
 }
 
+/* .home-philosophy / .hub-principles は margin:-3rem で左右にはみ出す装飾。ウィンドウ幅が
+   コンテナ最大幅に近い帯（約1240〜1310px）ではビューポートを数〜24px超え、横スクロールバーが出る。
+   clip は hidden と違いスクロールコンテナを作らないため、position:sticky の .recipe-jump-nav を
+   壊さずに抑え込める。body に指定するとビューポートへ伝播して visible 扱いになるため html に置く。 */
+html { overflow-x: clip; }
+
 .container { max-width: 760px; margin: 0 auto; padding: 0 1.5rem 3rem; }
 
 /* Header */
@@ -554,7 +560,7 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   color: inherit;
   text-decoration: none;
 }
-.learn-series-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; margin-bottom: 0.6rem; background: #f2f2f2; }
+.learn-series-card img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; margin-bottom: 0.6rem; background: #f2f2f2; }
 .learn-series-card strong { font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 1.25rem; color: #3a2a1c; }
 .learn-series-card > span { font-size: 0.84rem; color: #6c6459; line-height: 1.75; }
 
@@ -616,19 +622,6 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 }
 .feature-card-count { font-size: 0.78rem; font-weight: 700; color: #c0392b; }
 .feature-card-lead { font-size: 0.8rem; color: #6c6459; line-height: 1.75; margin-top: 0.3rem; }
-
-.feature-criteria {
-  max-width: 800px;
-  margin: 0 0 2.5rem;
-  padding: 0.9rem 1.15rem;
-  border-left: 3px solid #c0392b;
-  background: #faf7f2;
-  border-radius: 0 8px 8px 0;
-  font-size: 0.85rem;
-  line-height: 1.85;
-  color: #51493f;
-}
-.feature-criteria strong { display: block; font-size: 0.72rem; letter-spacing: 0.08em; color: #c0392b; margin-bottom: 0.2rem; }
 
 .feature-course-section { margin-bottom: 3rem; }
 
@@ -792,6 +785,9 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-card { display: block; text-decoration: none; color: #1a1a1a; }
 .recipe-card img {
   width: 100%;
+  /* height:auto が無いと、<img> の height 属性（presentational hint）で高さが確定してしまい
+     aspect-ratio が無視される。カード画像が縦長に潰れる原因になる。 */
+  height: auto;
   aspect-ratio: 3 / 2;
   object-fit: cover;
   border-radius: 10px;
@@ -1182,7 +1178,7 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-hub-page .course-grid { grid-template-columns: repeat(3, 1fr); }
 .recipe-hub-page .region-grid { grid-template-columns: repeat(4, 1fr); }
 .recipe-hub-page .course-card, .recipe-hub-page .region-card { position: relative; overflow: hidden; border-radius: 12px 12px 42px 12px; background: #252018; }
-.recipe-hub-page .course-card img, .recipe-hub-page .region-card img { aspect-ratio: 4 / 3; border-radius: inherit; opacity: 0.82; }
+.recipe-hub-page .course-card img, .recipe-hub-page .region-card img { height: auto; aspect-ratio: 4 / 3; border-radius: inherit; opacity: 0.82; }
 .recipe-hub-page .course-card::after, .recipe-hub-page .region-card::after { content: ''; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(20,14,10,0.9)); pointer-events: none; }
 .recipe-hub-page .course-card-body, .recipe-hub-page .region-card-body { position: absolute; z-index: 1; left: 1rem; right: 1rem; bottom: 0.9rem; padding: 0; color: #fff; }
 .recipe-hub-page .course-card-title, .recipe-hub-page .region-card-title { font-size: 0.98rem; }
@@ -1199,7 +1195,7 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-heading .recipe-subtitle { display: block; margin: 0.65rem 0 0; color: #756d63; font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif; font-size: 1.08rem; font-weight: 500; line-height: 1.5; }
 .recipe-article .recipe-hero { width: 100%; max-height: 610px; aspect-ratio: 16 / 9; margin-bottom: 1.25rem; }
 .recipe-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-bottom: 1.25rem; }
-.recipe-gallery img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px; display: block; background: #f2f2f2; }
+.recipe-gallery img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px; display: block; background: #f2f2f2; }
 .recipe-article .recipe-meta { margin-bottom: 1.2rem; }
 .recipe-article .recipe-description { max-width: 760px; font-size: 1rem; line-height: 1.9; margin-bottom: 1rem; }
 .recipe-byline { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; color: #938b81; font-size: 0.75rem; margin-bottom: 1.5rem; }
