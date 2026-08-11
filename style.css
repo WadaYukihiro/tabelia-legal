@@ -450,6 +450,264 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   background: #f3e3c3;
 }
 
+/* FONDAMENTALI（基礎知識）/learn/ */
+.learn-article { max-width: 760px; margin: 0 auto; }
+.learn-article-head { margin-bottom: 2.25rem; }
+.learn-article-head h1 { font-size: 2.4rem; line-height: 1.25; margin: 0.35rem 0 0.6rem; }
+.learn-tagline { font-size: 0.95rem; color: #6c6459; line-height: 1.85; margin: 0 0 0.75rem; }
+.learn-meta { font-size: 0.78rem; color: #938b81; margin: 0; }
+.learn-meta a { color: #938b81; }
+
+.learn-heading {
+  border: 0;
+  padding: 0;
+  margin: 2.5rem 0 0.85rem;
+  font-family: 'Cormorant Garamond', 'Yu Mincho', serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #3a2a1c;
+  /* Cormorant Garamond の既定はオールドスタイル数字で、「00粉」が「oo粉」に見えてしまう。
+     見出しの数字は用語そのもの（00粉・Tipo 00）なので、ライニング数字を強制する。 */
+  font-variant-numeric: lining-nums;
+  font-feature-settings: 'lnum' 1;
+}
+.learn-body { font-size: 0.95rem; line-height: 2.05; color: #444; margin: 0 0 1.1rem; }
+
+.learn-figure { margin: 2rem 0; }
+.learn-figure img { width: 100%; height: auto; border-radius: 10px; display: block; background: #f2f2f2; }
+.learn-figure figcaption { margin-top: 0.55rem; font-size: 0.78rem; color: #938b81; line-height: 1.7; }
+
+.learn-callout {
+  background: #FFF8EE;
+  border-left: 3px solid #E8A44A;
+  border-radius: 0 8px 8px 0;
+  padding: 1.1rem 1.3rem;
+  margin: 2rem 0;
+}
+.learn-callout h3 { font-size: 0.9rem; margin: 0 0 0.45rem; color: #8a6d3b; }
+.learn-callout p { font-size: 0.88rem; line-height: 1.95; color: #555; margin: 0; }
+
+.learn-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+.learn-comparison > div { padding: 1.15rem 1.25rem; border: 1px solid #e7e0d6; border-radius: 10px; background: #fff; }
+.learn-comparison h3 { font-size: 0.88rem; margin: 0 0 0.5rem; color: #c0392b; }
+.learn-comparison p { font-size: 0.86rem; line-height: 1.9; color: #51493f; margin: 0; }
+
+.learn-steps { margin: 2rem 0; padding-left: 1.3rem; }
+.learn-steps li { font-size: 0.92rem; line-height: 2; color: #444; margin-bottom: 0.85rem; }
+
+.learn-pager { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 3.5rem 0 0; }
+.learn-pager-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+  background: #fff;
+  color: #3a2a1c;
+  text-decoration: none;
+}
+.learn-pager-link:hover { border-color: #d3c5ae; }
+.learn-pager-next { grid-column: 2; text-align: right; }
+.learn-pager-label { font-size: 0.7rem; letter-spacing: 0.08em; color: #c0392b; font-weight: 700; }
+.learn-pager-link strong { font-size: 0.9rem; line-height: 1.55; }
+
+.learn-related { margin: 3rem 0 0; }
+.learn-related h2 { font-size: 1.05rem; border: 0; padding: 0; margin: 0 0 0.9rem; }
+
+.learn-series-cover { margin: 1.5rem 0 2.5rem; }
+.learn-series-cover img { width: 100%; height: auto; border-radius: 12px 12px 52px 12px; display: block; background: #f2f2f2; }
+
+.learn-article-list { display: flex; flex-direction: column; gap: 0.65rem; }
+.learn-article-card {
+  display: flex;
+  gap: 1.1rem;
+  align-items: baseline;
+  padding: 1.15rem 1.35rem;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+.learn-article-card:hover { border-color: #d3c5ae; }
+.learn-article-number {
+  flex-shrink: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #c0392b;
+  /* 連番なのでライニング数字にする（オールドスタイルだと 01 が OI に見える） */
+  font-variant-numeric: lining-nums;
+  font-feature-settings: 'lnum' 1;
+}
+.learn-article-copy { display: flex; flex-direction: column; gap: 0.25rem; }
+.learn-article-copy strong { font-size: 1rem; color: #3a2a1c; }
+.learn-article-copy > span { font-size: 0.84rem; color: #6c6459; line-height: 1.75; }
+.learn-article-time { font-size: 0.72rem; color: #938b81; }
+
+.learn-series-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.learn-series-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-bottom: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+}
+.learn-series-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; margin-bottom: 0.6rem; background: #f2f2f2; }
+.learn-series-card strong { font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 1.25rem; color: #3a2a1c; }
+.learn-series-card > span { font-size: 0.84rem; color: #6c6459; line-height: 1.75; }
+
+@media (max-width: 720px) {
+  .learn-comparison { grid-template-columns: 1fr; }
+  .learn-pager { grid-template-columns: 1fr; }
+  .learn-pager-next { grid-column: 1; text-align: left; }
+  .learn-series-grid { grid-template-columns: 1fr; }
+  .learn-article-head h1 { font-size: 1.9rem; }
+}
+
+/* 作り終えた直後の評価導線（最終ステップの直下） */
+.cooked-prompt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1.75rem;
+  padding: 1.1rem 1.35rem;
+  border: 1px dashed #d8cdbb;
+  border-radius: 12px;
+  background: #faf7f2;
+}
+.cooked-prompt-lead { margin: 0; font-size: 0.86rem; color: #6c6459; line-height: 1.7; }
+.cooked-prompt-link {
+  flex-shrink: 0;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #c0392b;
+  text-decoration: none;
+}
+.cooked-prompt-link:hover { text-decoration: underline; }
+
+/* 特集（/recipes/feature/…）。ハブの「目的から選ぶ」カードと特集ページ本体で共有する。 */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.35rem 1.4rem 1.5rem;
+  border: 1px solid #e7e0d6;
+  border-radius: 12px 12px 40px 12px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.feature-card:hover { border-color: #d3c5ae; box-shadow: 0 12px 30px rgba(58,42,28,0.08); }
+.feature-card strong {
+  font-family: 'Cormorant Garamond', 'Yu Mincho', serif;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: #3a2a1c;
+}
+.feature-card-count { font-size: 0.78rem; font-weight: 700; color: #c0392b; }
+.feature-card-lead { font-size: 0.8rem; color: #6c6459; line-height: 1.75; margin-top: 0.3rem; }
+
+.feature-criteria {
+  max-width: 800px;
+  margin: 0 0 2.5rem;
+  padding: 0.9rem 1.15rem;
+  border-left: 3px solid #c0392b;
+  background: #faf7f2;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.85rem;
+  line-height: 1.85;
+  color: #51493f;
+}
+.feature-criteria strong { display: block; font-size: 0.72rem; letter-spacing: 0.08em; color: #c0392b; margin-bottom: 0.2rem; }
+
+.feature-course-section { margin-bottom: 3rem; }
+
+.feature-crosslinks { margin: 3.5rem 0 0; }
+.feature-crosslinks h2 { font-size: 1.05rem; border: 0; padding: 0; margin: 0 0 0.9rem; }
+.feature-crosslink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e7e0d6;
+  border-radius: 8px;
+  background: #fff;
+  color: #3a2a1c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.feature-crosslink:hover { border-color: #d3c5ae; }
+
+@media (max-width: 720px) {
+  .feature-grid { grid-template-columns: 1fr; }
+}
+
+/* よくある質問（レシピ詳細）。設問はDBの実データから生成される（scripts/generate-web-recipes.ts の recipeFaq）。
+   本文の一部として読ませたいので、開閉なしで最初から全文を表示する。 */
+.recipe-faq {
+  max-width: 800px;
+  margin: 3.5rem auto 0;
+  scroll-margin-top: 5rem;
+}
+.recipe-faq h2 {
+  border: 0;
+  margin-top: 0.2rem;
+  padding: 0;
+  font-family: 'Cormorant Garamond', 'Yu Mincho', serif;
+  font-size: 1.9rem;
+}
+.faq-item {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid #e7e0d6;
+}
+.faq-item:last-child { border-bottom: 0; }
+.faq-question {
+  display: flex;
+  gap: 0.55rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #3a2a1c;
+  line-height: 1.6;
+  margin: 0 0 0.5rem;
+}
+.faq-question::before {
+  content: 'Q';
+  flex-shrink: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: #c0392b;
+}
+.faq-answer {
+  display: flex;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+  color: #51493f;
+  line-height: 1.95;
+  margin: 0;
+}
+.faq-answer::before {
+  content: 'A';
+  flex-shrink: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: #b0a596;
+}
+
 /* Chef Authen 紹介（ハブページ） */
 .chef-intro {
   display: flex;
