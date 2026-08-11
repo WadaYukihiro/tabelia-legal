@@ -8,11 +8,6 @@ body {
   font-size: 15px;
 }
 
-/* .home-philosophy / .hub-principles は margin:-3rem で左右にはみ出す装飾。ウィンドウ幅が
-   コンテナ最大幅に近い帯（約1240〜1310px）ではビューポートを数〜24px超え、横スクロールバーが出る。
-   clip は hidden と違いスクロールコンテナを作らないため、position:sticky の .recipe-jump-nav を
-   壊さずに抑え込める。body に指定するとビューポートへ伝播して visible 扱いになるため html に置く。 */
-html { overflow-x: clip; }
 
 .container { max-width: 760px; margin: 0 auto; padding: 0 1.5rem 3rem; }
 
@@ -1399,6 +1394,13 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 /* 多言語ハブ: 日本語版フルコレクション案内 */
 .hub-collection-note { max-width: 62ch; color: #5d574d; font-size: 0.92rem; line-height: 1.7; }
 .hub-collection-note p { margin-bottom: 0.5rem; }
+
+/* .home-philosophy / .hub-principles は margin:-3rem（左右-48px）で container の外へはみ出す装飾。
+   ウィンドウ幅が container の最大幅に近いとはみ出す余地が無く、ビューポートを最大24px超えて
+   横スクロールバーが出る（1240px で +24、1280px で +4 を実測）。はみ出せる幅があるときだけ効かせる。 */
+@media (max-width: 1340px) {
+  .home-philosophy, .hub-principles { margin-left: 0; margin-right: 0; }
+}
 
 /* Responsive */
 @media (max-width: 600px) {
