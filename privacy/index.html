@@ -9,6 +9,18 @@
   <link rel="canonical" href="https://tabelia.app/privacy/">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
+  <!-- tabelia:analytics -->
+  <script>
+  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
+  try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"legal"};
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
+  <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"legal"});</script>
+  <script src="/analytics.js" defer></script>
+  <!-- /tabelia:analytics -->
   <meta property="og:site_name" content="Tabelia（タベリア）">
   <meta property="og:type" content="website">
   <meta property="og:title" content="プライバシーポリシー — Tabelia">
@@ -31,11 +43,11 @@
 
     <main>
       <h1 class="page-title">プライバシーポリシー</h1>
-      <p class="page-updated">最終更新日：2026年8月1日</p>
+      <p class="page-updated">最終更新日：2026年8月11日</p>
 
       <!-- 日本語版 -->
       <h2>1. はじめに</h2>
-      <p>Tabelia（以下「当サービス」）は、屋号「Tabelia」（以下「運営者」）が運営するiOSアプリケーションです。本プライバシーポリシーは、当サービスがどのような情報を収集し、どのように利用・保護するかを説明します。</p>
+      <p>Tabelia（以下「当サービス」）は、屋号「Tabelia」（以下「運営者」）が運営するiOSアプリケーションおよびウェブサイト（tabelia.app）です。本プライバシーポリシーは、当サービスがどのような情報を収集し、どのように利用・保護するかを説明します。</p>
       <p>当サービスをご利用になることで、本ポリシーに同意したものとみなします。</p>
 
       <h2>2. 収集する情報</h2>
@@ -66,6 +78,17 @@
         <li>レシピの組み合わせ提案に必要な候補レシピ情報</li>
       </ul>
       <p>AIサービスへの送信は、AI機能の提供に必要な範囲に限定します。メールアドレス、パスワード、決済情報を意図的にAIサービスへ送信することはありません。ただし、ユーザーがチャット入力などに個人情報を含めた場合、その内容がAI処理のために送信される可能性があります。</p>
+
+      <h3>2-4. ウェブサイト（tabelia.app）での情報収集</h3>
+      <p>当サービスのウェブサイトでは、Google LLCが提供するアクセス解析ツール「Googleアナリティクス」を使用しています。Googleアナリティクスは、Cookieを利用して以下の情報を収集します。</p>
+      <ul>
+        <li><strong>閲覧情報</strong>：閲覧したページのURL・タイトル、閲覧日時、滞在時間、参照元（検索エンジン・外部サイト・広告など）</li>
+        <li><strong>操作情報</strong>：サイト内検索で入力した語句、閲覧したレシピの識別子、App Storeへのリンクのクリック</li>
+        <li><strong>環境情報</strong>：ブラウザの種類・バージョン、OS、画面サイズ、言語設定、IPアドレスから推定された国・地域（IPアドレスそのものはGoogleにより短縮・匿名化されます）</li>
+      </ul>
+      <p>収集される情報は匿名であり、氏名・メールアドレスなど個人を直接特定する情報は含まれません。アプリのアカウント情報とも紐づけません。</p>
+      <p>欧州経済領域（EEA）および英国からアクセスした場合、同意をいただくまでGoogleアナリティクスのCookieは保存されません。サイト下部に表示される同意バナーでいつでも選択でき、ブラウザのCookieを削除すれば設定は取り消せます。それ以外の地域からのアクセスでは、ブラウザのCookieを削除するか、Googleが提供する<a href="https://tools.google.com/dlpage/gaoptout?hl=ja">Googleアナリティクス オプトアウト アドオン</a>を導入することで計測を停止できます。</p>
+      <p>Googleアナリティクスの利用規約およびプライバシーポリシーは<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクス利用規約</a>および<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>をご確認ください。</p>
 
       <h2>3. 情報の利用目的</h2>
       <p>収集した情報は以下の目的で利用します。</p>
@@ -135,6 +158,12 @@
             <td><a href="https://openai.com/policies/privacy-policy/">openai.com/policies/privacy-policy</a></td>
           </tr>
           <tr>
+            <td>Googleアナリティクス</td>
+            <td>Google LLC</td>
+            <td>ウェブサイトのアクセス解析（Cookieを使用）</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+          </tr>
+          <tr>
             <td>Google Gemini API</td>
             <td>Google LLC</td>
             <td>AI機能（調理段取り、ステップごとのコツ生成）</td>
@@ -194,10 +223,10 @@
 
       <!-- English Version -->
       <h1 class="page-title">Privacy Policy</h1>
-      <p class="page-updated">Last Updated: August 1, 2026</p>
+      <p class="page-updated">Last Updated: August 11, 2026</p>
 
       <h2>1. Introduction</h2>
-      <p>Tabelia (the "Service") is an iOS application operated by Tabelia (the "Operator"), a sole proprietorship. This Privacy Policy describes how the Service collects, uses, and protects your information.</p>
+      <p>Tabelia (the "Service") is an iOS application and website (tabelia.app) operated by Tabelia (the "Operator"), a sole proprietorship. This Privacy Policy describes how the Service collects, uses, and protects your information.</p>
       <p>By using the Service, you agree to this Privacy Policy.</p>
 
       <h2>2. Information We Collect</h2>
@@ -228,6 +257,17 @@
         <li>Candidate recipe information needed for pairing suggestions</li>
       </ul>
       <p>We limit data sent to AI services to what is necessary to provide AI features. We do not intentionally send your email address, password, or payment information to AI services. However, if you include personal information in chat messages or similar free-text inputs, that content may be sent for AI processing.</p>
+
+      <h3>2-4. Information Collected on the Website (tabelia.app)</h3>
+      <p>Our website uses Google Analytics, a web analytics service provided by Google LLC. Google Analytics uses cookies to collect the following information:</p>
+      <ul>
+        <li><strong>Browsing information</strong>: URLs and titles of pages viewed, timestamps, time on page, and referral source (search engines, external sites, advertisements)</li>
+        <li><strong>Interaction information</strong>: Terms entered in site search, identifiers of recipes viewed, and clicks on links to the App Store</li>
+        <li><strong>Environment information</strong>: Browser type and version, operating system, screen size, language settings, and the country or region inferred from your IP address (the IP address itself is truncated and anonymized by Google)</li>
+      </ul>
+      <p>This information is anonymous and contains no data that directly identifies you, such as your name or email address. It is not linked to your app account.</p>
+      <p>If you access the site from the European Economic Area (EEA) or the United Kingdom, no Google Analytics cookies are stored until you give consent. You can make your choice using the consent banner shown at the bottom of the site, and you can revoke it at any time by clearing your browser cookies. From other regions, you can stop measurement by clearing your browser cookies or by installing the <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-out Browser Add-on</a>.</p>
+      <p>For details, see the <a href="https://marketingplatform.google.com/about/analytics/terms/us/">Google Analytics Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
       <h2>3. How We Use Your Information</h2>
       <ol>
@@ -293,6 +333,12 @@
             <td>OpenAI, L.L.C.</td>
             <td>AI features (authenticity-score explanation and ingredient categorization)</td>
             <td><a href="https://openai.com/policies/privacy-policy/">openai.com/policies/privacy-policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Analytics</td>
+            <td>Google LLC</td>
+            <td>Website analytics (uses cookies)</td>
+            <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
           </tr>
           <tr>
             <td>Google Gemini API</td>
