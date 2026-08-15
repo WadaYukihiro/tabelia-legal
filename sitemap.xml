@@ -71,6 +71,15 @@
   <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-08-15</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-08-15</lastmod></url>
   <url>
+    <loc>https://tabelia.app/recipes/tortelli-di-zucca-alla-mantovana/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/00b9f3c2-ad8d-49be-9ca7-5e7621a82617_1786805508607.png?width=1200&amp;quality=78</image:loc>
+      <image:title>トルテッリ・ディ・ズッカ・アッラ・マントヴァーナ（マントヴァ風かぼちゃのトルテッリ）（Tortelli di Zucca alla Mantovana）</image:title>
+      <image:caption>マントヴァのクリスマス・イヴの伝統料理で、オーブンで水分を抜いたかぼちゃに、アマレッティ、りんごのモスタルダ、パルミジャーノを合わせた甘・辛・苦が同居する詰め物を、卵黄比率の高い薄い手打ち生地で包む。詰め物は前日に一晩休ませて味を馴染ませ、生地は向こうが透けるまで麺棒で延ばすため、火入れと生地延ばしの両方に技術が要る。仕上げは焦がしバターとセージだけで、余計な要素を足さないのが本流。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/spaghetti-alla-puttanesca/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -104,6 +113,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/03a149ce-93ef-469c-baae-bd8352ee06d4_1786183854941.png?width=1200&amp;quality=78</image:loc>
       <image:title>生ズッキーニのカルパッチョ（Carpaccio di Zucchine）</image:title>
       <image:caption>ピーラーで薄く引いた生のズッキーニをレモンとオリーブオイルでマリネし、パルミジャーノと松の実で仕上げる現代イタリアの前菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/spaghetti-con-alici-fresche-e-pangrattato/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/040f2d2b-5506-4f1e-b5b2-ef07341143bc_1786805497773.png?width=1200&amp;quality=78</image:loc>
+      <image:title>スパゲッティ・コン・アリーチ・フレスケ・エ・パングラッタート（生カタクチイワシとパン粉のスパゲッティ）（Spaghetti con Alici Fresche e Pangrattato）</image:title>
+      <image:caption>生のカタクチイワシを指だけで手開きにし、ニンニクと唐辛子を効かせたオリーブオイルで1分ほどしか火を通さずに身の甘みを残す、ナポリ湾岸の漁師料理。チーズを使わない魚のパスタの伝統に従い、固くなった田舎パンから挽いて香ばしく炒めたパン粉（パングラッタート＝「貧者のチーズ」）を仕上げに散らして食感とコクを補う。手開きの精度と、イワシを崩さずに和えるマンテカトゥーラの見極めが味を決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -460,6 +478,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pansotti-con-salsa-di-noci/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/22006c48-5bbc-411e-873f-cfb43de28c08_1786805484820.png?width=1200&amp;quality=78</image:loc>
+      <image:title>パンソッティ・コン・サルサ・ディ・ノーチ（くるみソースの詰めパスタ）（Pansotti con Salsa di Noci）</image:title>
+      <image:caption>卵を使わず白ワインと水だけで練るリグーリアの薄いパスタ生地に、野草を集めた「プレボッジョン」と乳清チーズ プレシンスエーアの詰め物を包んだ三角形の詰めパスタ。ソースは火を通さず、くるみと松の実、牛乳に浸したパンの中身を乳鉢（またはミキサー）で摺り潰して乳化させた生の白いソースで、くるみの渋皮由来のわずかな苦みと乳の甘みが釣り合う点に本質がある。生地を向こうが透ける薄さまで延ばす技術と、詰め物の水分管理、分離させないソースの乳化が難易度を決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/carciofi-alla-romana/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -526,6 +553,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/24fc858b-8ba3-4af5-8050-c4f36d7cb702_1785048377766.png?width=1200&amp;quality=78</image:loc>
       <image:title>かぼちゃのシチリア風アグロドルチェ（Zucca in Agrodolce）</image:title>
       <image:caption>焼いたかぼちゃを白ワインビネガー・砂糖・にんにく・ミントの甘酢でマリネする、パレルモの伝統的なアグロドルチェ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gnocchi-alla-bava/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2586d97b-691e-4fb3-a592-ee2d757ff302_1786805473227.png?width=1200&amp;quality=78</image:loc>
+      <image:title>ニョッキ・アッラ・バーヴァ（Gnocchi alla Bava）</image:title>
+      <image:caption>粉質じゃがいもを皮ごと茹でて熱いうちに裏漉しし、粉を最小限に留めて軽く仕上げた手打ちニョッキに、フォンティーナを牛乳とバターでゆっくり溶かし卵黄でつないだ濃厚なチーズソース（フォンドゥータ）を絡めた、ピエモンテ山間部の primo。料理名の「バーヴァ（よだれ）」は、フォークで持ち上げたときにチーズが長く糸を引く様子を指す。ビエッラ〜ヴァルセージアには熱いニョッキに薄切りフォンティーナと熱いバターを重ねて余熱で溶かす簡素な作り方も伝わるが、本レシピは同地の祝いの食卓で作られる、チーズを牛乳に長時間浸してから湯煎で乳化させる fonduta 方式を正統版の基準に採った。じゃがいもの水分管理と、チーズを分離させずに乳化させる湯煎の二段温度管理に価値が集約される。</image:caption>
     </image:image>
   </url>
   <url>
@@ -644,7 +680,7 @@
     <loc>https://tabelia.app/recipes/frittata-di-cipolle/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/330e51f8-fc29-4f8a-af8e-65300cf696c2_1780064802609.png?width=1200&amp;quality=78</image:loc>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/330e51f8-fc29-4f8a-af8e-65300cf696c2_1786796425238.png?width=1200&amp;quality=78</image:loc>
       <image:title>玉ねぎのフリッタータ（Frittata di Cipolle）</image:title>
       <image:caption>玉ねぎをゆっくり炒めて甘みを引き出し、卵と合わせてオーブンで焼くイタリア式卵料理。フランスのオムレツとは異なり、平らに焼いて切り分けて供する。</image:caption>
     </image:image>
@@ -898,6 +934,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/spaghetti-alla-carrettiera-alla-siciliana/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/47576ba8-e017-4ebc-a84d-431371e04e53_1786805495605.png?width=1200&amp;quality=78</image:loc>
+      <image:title>スパゲッティ・アッラ・カレッティエーラ・シチリアーナ（Spaghetti alla Carrettiera alla Siciliana）</image:title>
+      <image:caption>荷馬車引き（carrettieri）が街道沿いで作った、火を通さない生のトマトソースを熱々のスパゲッティで和える一皿。完熟トマトを手で潰し、大量のにんにく・オリーブオイル・バジリコと合わせて常温で30分マリネし、果肉から出た果汁と油を一体化させることが唯一にして最大の技術。仕上げにペコリーノと、アンチョビを溶かした油で炒った香ばしいパン粉（mollica atturrata）をかけて食感と旨みの対比をつける。加熱しないぶんトマトの選別、にんにくの当て方、和える温度管理がそのまま味に出る。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/fagiolini-al-pomodoro/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -919,7 +964,7 @@
     <loc>https://tabelia.app/recipes/frittata-di-spinaci/</loc>
     <lastmod>2026-07-26</lastmod>
     <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/48dac87c-fb62-4bea-a6d7-128957d2f475_1785048367243.png?width=1200&amp;quality=78</image:loc>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/48dac87c-fb62-4bea-a6d7-128957d2f475_1786795874385.png?width=1200&amp;quality=78</image:loc>
       <image:title>ほうれん草のフリッタータ（Frittata di Spinaci）</image:title>
       <image:caption>炒めて水気を絞ったほうれん草と玉ねぎを卵に合わせ、両面をじっくり焼き上げるイタリア家庭の定番セコンド。</image:caption>
     </image:image>
@@ -1050,7 +1095,7 @@
     <loc>https://tabelia.app/recipes/frittata-di-zucchine/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/54913545-8308-408b-acbe-bb986fafa528_1780065000026.png?width=1200&amp;quality=78</image:loc>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/54913545-8308-408b-acbe-bb986fafa528_1786795695182.png?width=1200&amp;quality=78</image:loc>
       <image:title>ズッキーニのフリッタータ（Frittata di Zucchine）</image:title>
       <image:caption>ズッキーニを先に炒めて水分を飛ばし、卵、パルミジャーノ、バジルで厚く焼く家庭料理のセコンド。材料は身近だが、焼き色と半熟ではない柔らかさの見極めが要点。</image:caption>
     </image:image>
@@ -1285,6 +1330,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gnudi-di-ricotta-e-spinaci-al-burro-e-salvia/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/69436db3-be6c-45dc-ba31-c0b2fc565018_1786805480226.png?width=1200&amp;quality=78</image:loc>
+      <image:title>リコッタとほうれん草のニューディ バターとセージ（Gnudi di Ricotta e Spinaci al Burro e Salvia）</image:title>
+      <image:caption>詰め物だけを裸（gnudo）のまま茹でる、トスカーナのラビオリの「中身」だけの一皿。小麦粉は生地に一切入れず、水切りしたリコッタと固く絞ったほうれん草を卵黄とパルミジャーノだけで繋ぐシエナ流の配合で、口に入れた瞬間に崩れるほど軽く仕上がる。茹で崩れを防ぐのは粉ではなく、たっぷりのセモリナに埋めて12時間乾かし表面に薄い皮を作る工程。リコッタの水切り12時間と成形後の乾燥12時間で正味2日（2晩）がかりの段取りになるため、初日の夜に水切り、2日目の朝に成形、3日目の朝以降に茹でる、あるいは初日朝に水切りを始めて夜に成形し翌夜に食べる計画で臨む。仕上げは焦がしすぎない泡立ちバターとセージだけで受け止める。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/zucchine-gratinate-al-forno/</loc>
     <lastmod>2026-07-26</lastmod>
     <image:image>
@@ -1450,7 +1504,7 @@
     <loc>https://tabelia.app/recipes/frittata-di-peperoni/</loc>
     <lastmod>2026-07-26</lastmod>
     <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/78c6494f-adc5-4ebd-8917-09881d1635cb_1785048399080.png?width=1200&amp;quality=78</image:loc>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/78c6494f-adc5-4ebd-8917-09881d1635cb_1786796388855.png?width=1200&amp;quality=78</image:loc>
       <image:title>ピーマンのフリッタータ（Frittata di Peperoni）</image:title>
       <image:caption>甘く炒めたパプリカとピーマンを卵に混ぜ、皿返しで両面を焼き上げる南イタリアの家庭のフリッタータ。</image:caption>
     </image:image>
@@ -1462,6 +1516,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7aa3a297-ec93-4c8e-8400-0c4b192c1561_1780064836354.png?width=1200&amp;quality=78</image:loc>
       <image:title>白いんげん豆のパスタスープ（Pasta e Fagioli）</image:title>
       <image:caption>パスタと豆のスープ。ナポリの庶民料理で、貧しい食材から生まれた豊かな旨みが詰まった一皿。「cucina povera（貧しい料理）」の代表格。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/risotto-al-nero-di-seppia-alla-veneziana/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7ac5c0cb-6b50-42e9-89cb-73c0b0ca8571_1786805491688.png?width=1200&amp;quality=78</image:loc>
+      <image:title>リゾット・アル・ネロ・ディ・セッピア（イカスミのリゾット ヴェネツィア風）（Risotto al Nero di Seppia alla Veneziana）</image:title>
+      <image:caption>甲イカを丸ごと下処理して墨袋を自分で取り出し、その墨と魚のアラから引いたフュメットだけで炊き上げるヴェネツィアの定番プリモ。墨は本場の seppie in nero と同じくまずイカと一緒に20分煮込んで角を抜き、イカ自身に吸わせてから、炊きの後半に残りを加えて色を締める二段構成。ヴィアローネ・ナノ米を白ワインでトスタトゥーラし、熱いフュメットを注ぎ足しながら16分、外側は溶けかけ芯はわずかに残る「オンダ（波打つ流動性）」に仕上げる。イカは煮込み分と仕上げ分に分け、仕上げ分は別鍋で強火で表面だけ焼き付けて最後に合わせる。マンテカトゥーラは冷たいバターのみでチーズは加えないのが海の幸のリゾットの鉄則。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1713,6 +1776,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gnocchi-di-patate-al-pomodoro-e-basilico/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8d34ef51-6a04-4623-9ce3-a5a0f116e340_1786805477805.png?width=1200&amp;quality=78</image:loc>
+      <image:title>ジャガイモのニョッキ トマトとバジルのソース（Gnocchi di Patate al Pomodoro e Basilico）</image:title>
+      <image:caption>粉質のジャガイモを皮ごと丸のまま茹で（または蒸し）、熱いうちに裏漉して水分を飛ばし、最小限の小麦粉だけでまとめる正統派のニョッキ。粉を増やせばまとまりやすくなるが、その分だけ団子のように重くなるため、ジャガイモの状態を見て粉量を決める判断が全ての要になる。ソースはホールトマトをにんにくとオリーブオイルで短時間煮た軽いポモドーロで、バジルは火を止める直前に入れて香りを立たせる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/funghi-trifolati/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -1738,7 +1810,7 @@
     <loc>https://tabelia.app/recipes/panzanella/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8dcd0447-30b3-4289-b85a-bca612083171_1780064826407.png?width=1200&amp;quality=78</image:loc>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8dcd0447-30b3-4289-b85a-bca612083171_1786796291055.png?width=1200&amp;quality=78</image:loc>
       <image:title>トスカーナ風パンとトマトのサラダ（Panzanella）</image:title>
       <image:caption>固くなったパンをトマト・玉ねぎ・バジルと合わせ、ワインビネガーで和えるトスカーナの夏の前菜。余ったパンを活かす農民料理が洗練された一皿。</image:caption>
     </image:image>
@@ -1777,6 +1849,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/92ad6e0a-e12d-4dba-a8d4-0ee3fd230846_1786183897403.png?width=1200&amp;quality=78</image:loc>
       <image:title>生マグロとケッパーのリングイネ（Linguine al Tonno Fresco e Capperi）</image:title>
       <image:caption>シチリアのマグロ漁港、マザーラ・デル・ヴァッロのスタイル。新鮮なマグロを表面だけサッと火入れしてレアに仕上げ、ケッパー・オリーブ・ミニトマトの塩気と酸味でシンプルに食べる夏の一皿。マグロは絶対に火を入れすぎない。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/cjarsons-della-carnia/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/92d36080-386d-4432-9090-5d2d8bf56d70_1786805470243.png?width=1200&amp;quality=78</image:loc>
+      <image:title>チャルソンス・デッラ・カルニア（Cjarsons della Carnia）</image:title>
+      <image:caption>カルニアの山村で復活祭前後や祝祭に作られてきた、甘さと塩気が同居する詰めもの生地。茹でたじゃがいもを練り込んだ扱いの難しい生地を極薄に伸ばし、じゃがいも・フレッシュリコッタ・レーズン・砂糖漬けシトロン・無糖ココア・シナモン・野生のハーブを合わせた餡を包む。仕上げは焦がしバターと削りかけた燻製リコッタ、砂糖とシナモンで、家ごとに餡の配合が異なる『レシピが百通りある料理』とされる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1901,6 +1982,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/tortelli-maremmani-al-ragu/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a00f45ed-e3f0-4a1c-8e3e-21e0329703c7_1786805503883.png?width=1200&amp;quality=78</image:loc>
+      <image:title>トルテッリ・マレンマーニ・アル・ラグー（Tortelli Maremmani al Ragù）</image:title>
+      <image:caption>トスカーナ南部マレンマの祝祭日の primo。羊乳リコッタとほうれん草、羊乳ペコリーノを合わせた詰め物を、卵だけで練った薄い手打ちのシフォリア（sfoglia）で包み、大ぶりの正方形に成形する。合わせるのは牛と豚の挽き肉を赤ワインとトマトで3時間近く煮込んだ濃厚な肉ラグー。麺棒で均一に薄く延ばす技術、詰め物の水分管理、破れずに茹で上げる扱いの三点が仕上がりを決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pinzimonio/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -1910,10 +2000,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/zuppa-di-farro-alla-garfagnana/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a1baea59-a66d-423b-a9cd-cdb1008897af_1786805510990.png?width=1200&amp;quality=78</image:loc>
+      <image:title>ズッパ・ディ・ファッロ・アッラ・ガルファニャーナ（ファッロと豆のスープ）（Zuppa di Farro alla Garfagnana）</image:title>
+      <image:caption>トスカーナ北部の山間部ガルファニャーナに伝わる、古代小麦ファッロ（スペルト小麦）とボルロッティ豆の濃厚なスープ。一晩戻した豆をじっくり煮て半量を裏漉ししたクリーム状の煮汁をベースにし、その豆の茹で汁でファッロを炊き上げることで、粒の芯まで豆の風味を吸わせる。パンチェッタ（現地のリガティーノ）と生ハムの皮が味の土台をつくり、ローズマリーとセージの山の香りをまとわせる、時間をかけるほど味が積み上がる農民料理。仕上がりは約2L、深皿4杯分のたっぷりした一皿になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/frittata-di-melanzane/</loc>
     <lastmod>2026-07-26</lastmod>
     <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a2225606-f528-4e4f-a345-bc32db27103f_1785048403205.png?width=1200&amp;quality=78</image:loc>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a2225606-f528-4e4f-a345-bc32db27103f_1786795765920.png?width=1200&amp;quality=78</image:loc>
       <image:title>なすのフリッタータ（Frittata di Melanzane）</image:title>
       <image:caption>揚げ焼きにしたなすを卵とパルミジャーノに合わせて焼く、南イタリア家庭式のフリッタータ。</image:caption>
     </image:image>
@@ -2021,6 +2120,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ab98b12f-5ffd-405c-a51b-26074da714b8_1780064891501.png?width=1200&amp;quality=78</image:loc>
       <image:title>豚スペアリブのサルデーニャ風オーブン焼き（Costine di Maiale al Forno alla Sarda）</image:title>
       <image:caption>サルデーニャ島の伝統的な豚の調理法。羊飼いが山で薪火で焼いたのが原型。フェンネル・ローズマリー・ミルトの実（または杜松の実）でマリネして、高温オーブンでパリッと焼き上げる。島の羊飼いが使うのと同じ素朴な技法で、骨の周りの肉が最も美味い。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/canederli-allo-speck-in-brodo/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ac919d97-70f1-4f92-8ff4-546a8989a274_1786805467374.png?width=1200&amp;quality=78</image:loc>
+      <image:title>カネーデルリ・アッロ・スペック・イン・ブロード（スペック入りパン団子の澄ましスープ仕立て）（Canederli allo Speck in Brodo）</image:title>
+      <image:caption>硬くなった白パンを牛乳で戻し、燻製生ハムのスペック、炒め玉ねぎ、卵、少量の小麦粉だけでまとめる南チロルの伝統的なパン団子を、澄んだ牛肉のブロードに浮かべたプリモ。生地は練りすぎれば団子が締まって重くなり、緩すぎれば煮崩れるため、パンの吸水量の見極めと、掌で優しく丸める加減が味の決め手になる。ブロードは牛のバラ肉と香味野菜から3時間かけて静かに引き、アクと脂を丁寧に除いて琥珀色の澄んだ液体に仕上げる。団子は澱粉でブロードを濁らせないよう、南チロルのガストホーフと同じく塩湯で別茹でしてから澄ましブロードに浮かべる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2147,6 +2255,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gnocchi-alla-sorrentina/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/bbd9dd16-bec8-4755-9068-f977d1597560_1786805475496.png?width=1200&amp;quality=78</image:loc>
+      <image:title>ニョッキ・アッラ・ソレンティーナ（Gnocchi alla Sorrentina）</image:title>
+      <image:caption>ゆでたじゃがいもを熱いうちに裏ごしし、卵を使わず最小限の小麦粉だけでまとめた軽いニョッキを、にんにくとバジルで炊いたシンプルなトマトソースで和え、フィオルディラッテとパルミジャーノを重ねて素焼きの器で焼き上げる、ソレント半島の名物プリモ。粉を吸わせすぎない生地作り、試しゆでによる粉量の見極め、短時間でゆで上げる判断、そして焼成でチーズを糸を引く状態に留める火加減が要で、粉っぽさも重さも出さずに「軽いのに濃厚」を成立させる点に手間をかける価値がある。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/impepata-di-cozze/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -2234,6 +2351,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/tortelli-derbetta-alla-parmigiana/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c35beb68-6618-4b21-85f0-2a0be1985921_1786805506462.png?width=1200&amp;quality=78</image:loc>
+      <image:title>トルテッリ・デルベッタ・アッラ・パルミジャーナ（パルマ風 菜っ葉のトルテッリ）（Tortelli d'Erbetta alla Parmigiana）</image:title>
+      <image:caption>パルマの聖ジョヴァンニの夜（6月23日）に欠かせない、エルベッタ（フダンソウの若葉）とリコッタ、パルミジャーノ・レッジャーノだけで組み立てる白い詰め物のトルテッリ。手打ちの卵生地を向こうが透けるほど薄く延ばし、詰め物の水分を極限まで抜いてから包むことで、茹で上がりに生地が破れず、菜っ葉の青い香りと乳の甘みが一体になる。仕上げは温めた器に茹でたトルテッリ・溶かしバター・パルミジャーノを層に重ねるだけ。生地の薄さと詰め物の水分管理という二点だけで味が決まる、ごまかしの効かない一皿。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/alici-marinate-alla-cetarese/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -2267,6 +2393,24 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c5080692-1930-40db-9c32-c1143b586e34_1780155146855.png?width=1200&amp;quality=78</image:loc>
       <image:title>カサゴのスパゲッティ（Spaghetti allo Scorfano）</image:title>
       <image:caption>カサゴ丸ごとで魚のスープを取り、ほぐし身とトマトを合わせる南イタリア式の魚パスタ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/risotto-alla-pilota/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c54c4d0c-ba5c-49cc-942c-c7288e07ecdd_1786805493820.png?width=1200&amp;quality=78</image:loc>
+      <image:title>リゾット・アッラ・ピロータ（Risotto alla Pilota）</image:title>
+      <image:caption>精米所の職人（piloti）が賄いとして作った、混ぜないリゾット。沸かした塩水の中央に米を円錐形に落として吸水加熱し、火を止めて布と蓋で15分蒸らすことで、一粒ずつが独立してほろりとほどける「sgranato（そぐらなーと）」の状態に仕上げる。撹拌して澱粉を引き出すミラノ式とは正反対の技法で、米の加熱と蒸らしの間に別のフライパンで崩し焼きにしたサラメッラ（マントヴァの生ソーセージ）の肉汁と脂を、蒸らし上がりの米にバターとグラーナで合わせるのが要。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pasta-chi-vroccoli-arriminati/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c606f9ce-1075-4ceb-a27a-40f4ea29973b_1786805487256.png?width=1200&amp;quality=78</image:loc>
+      <image:title>パスタ・キ・ヴロッコリ・アッリミナーティ（カリフラワーの練り込みパスタ）（Pasta chi Vroccoli Arriminati）</image:title>
+      <image:caption>パレルモの街場を代表する一皿で、シチリアで「ヴロッコロ」と呼ぶ緑のカリフラワーを丸ごと茹で、その茹で汁をパスタの茹で湯にまで転用して香りと色をすべて使い切る。アンチョビ・干しぶどう・松の実・サフラン・トマト濃縮という、アラブ支配期に由来する甘塩っぱい要素をソフリットに溶かし込み、名の由来である arriminare（練り混ぜる）の通り、茹で上げてから割ったカリフラワーを木べらで潰し混ぜてクリーム状の衣に変えていく。仕上げはチーズではなく黄金色に炒った muddica atturrata（炒りパン粉）で、そのざらついた食感と甘苦い香ばしさが料理を締める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2442,6 +2586,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cf21a8cb-0306-498e-a03b-4baa47aeb2fc_1780064877281.png?width=1200&amp;quality=78</image:loc>
       <image:title>バローロワインのリゾット（Risotto al Barolo）</image:title>
       <image:caption>「ワインの王」バローロを惜しみなく使って炊くピエモンテの贅沢なリゾット。深紅のリゾットは見た目も豪華で、バローロの渋みがバターとパルミジャーノの脂肪分と結合して複雑な旨みを生む。特別な日のための一皿。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/ravioli-alla-caprese/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d052af2a-c52d-4a24-874b-988eb5c58f81_1786805489522.png?width=1200&amp;quality=78</image:loc>
+      <image:title>ラヴィオリ・アッラ・カプレーゼ（カプリ島のラヴィオリ）（Ravioli alla Caprese）</image:title>
+      <image:caption>カプリ島発祥の、卵を使わずセモリナ主体の粉に熱湯とストゥルット（ラード）を合わせて捏ねる pasta matta の生地に、フレッシュなカチョッタと大量のマヨラナを詰めた島の primo。熱湯で小麦のデンプンとグルテンを部分的に変性させるため伸びは出にくいが、茹でても崩れずもっちりとした独特の歯応えになる。詰め物はチーズと卵だけで繋ぐので水分管理と冷却が命で、ソースは煮込まず短時間で仕上げ、完熟トマトとバジルの生き生きした酸味を合わせる。マヨラナの香りがこの皿の同一性そのもので、量を減らすと別料理になる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2727,6 +2880,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/testaroli-al-pesto/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ea019e89-6c1d-4e98-8ecf-036e13c49248_1786805501949.png?width=1200&amp;quality=78</image:loc>
+      <image:title>テスタローリ・アル・ペースト（ルニジャーナ風テスタローリのジェノヴェーゼ）（Testaroli al Pesto）</image:title>
+      <image:caption>小麦粉と水と塩だけのゆるい生地を、高温に熱した鋳鉄の「テスト」で片面ずつ焼き上げた古代由来の平焼き麺。焼き上げたテスタローロを菱形に切り、火を止めた塩湯に数回に分けて沈めて戻すという二段階の加熱が最大の要で、湯温が高すぎれば溶け崩れ、低すぎれば芯が残る。仕上げは大理石の乳鉢で摺り下ろしたジェノヴェーゼで、加熱せず余熱と茹で汁だけで和える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/carpaccio-di-manzo/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -2839,6 +3001,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/linguine-al-polpo-in-bianco/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fa7a74c1-3454-4f28-a02d-7873887ae269_1786805482495.png?width=1200&amp;quality=78</image:loc>
+      <image:title>リングイネ・アル・ポルポ・イン・ビアンコ（タコの白いリングイネ）（Linguine al polpo in bianco）</image:title>
+      <image:caption>タコをぎりぎり浸る量の香味野菜の煮汁でゆっくり火入れして繊維をほどけさせ、その煮汁を漉して強火で煮詰めて凝縮させ、濃くなった出汁でリングイネをリゾッタータ（鍋の中で吸わせ煮）に仕上げるプーリア州サレント地方の一皿。ソースの土台はオリーブオイル、にんにく、赤唐辛子のアーリオ・オーリオと白ワイン、そして煮詰めたタコの茹で汁だけで、トマトは一切使わない白い仕立て（in bianco）。とろみはタコのゼラチン質と煮汁の濃縮、そして麺から出るでんぷんだけで作る。タコは吸盤の付いた太い足を大きめに切って食感を残し、頭と細い足は細かく刻んでソースに溶かし込む二段構えで、噛み応えと濃度の両方を生む。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/polenta-pasticciata-al-forno/</loc>
     <lastmod>2026-06-04</lastmod>
     <image:image>
@@ -2872,6 +3043,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fe4a1d52-b45f-48dc-97b9-48b25c8f77b2_1786183921990.png?width=1200&amp;quality=78</image:loc>
       <image:title>かぼちゃのローズマリーオーブン焼き（Zucca al Forno con Rosmarino）</image:title>
       <image:caption>かぼちゃをローズマリーとにんにくで香り付けしてオーブンで焼くヴェネトの秋の付け合わせ。縁が焦げてカラメリゼした甘みが深い。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/spaghetti-con-le-cozze/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fe4e523a-24e5-423d-9719-79a3fa67232e_1786805499760.png?width=1200&amp;quality=78</image:loc>
+      <image:title>スパゲッティ・コン・レ・コッツェ（ムール貝のスパゲッティ）（Spaghetti con le Cozze）</image:title>
+      <image:caption>ナポリ湾岸の漁師料理を起源とする、ムール貝の貝汁だけで味を組み立てるプリモ。貝を蒸し開けて出た海水そのもののような汁を布で漉して取り置き、それをソースの塩気と旨みの主軸に据えるため、後から加える塩はパスタの茹で湯だけに限られる。白ワインは殻が開き始めた段階で鍋肌から加えて貝の香りと一体化させ、にんにくと唐辛子を移した油にその貝汁を合わせて、アルデンテ手前のスパゲッティを鍋で踊らせて乳化させる。火加減とタイミングの見極めが要となる一皿。</image:caption>
     </image:image>
   </url>
   <url>
