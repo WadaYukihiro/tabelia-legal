@@ -6,7 +6,7 @@
   var data = null;
   var fetchPromise = null;
 
-  function ensureData() {
+  function ensureDataRaw() {
     if (!fetchPromise) {
       fetchPromise = fetch('/recipes/search-index.json')
         .then(function (r) { return r.json(); })
@@ -22,6 +22,7 @@
       .replace(/>/g, '&gt;');
   }
 
+  var multiCuisine = false;
   function render(query) {
     if (!query) {
       results.innerHTML = '';
@@ -52,12 +53,24 @@
           (r.hero ? '<img src="' + escapeHtml(r.hero) + '" alt="" loading="lazy" width="48" height="48">' : '') +
           '<span class="search-result-body">' +
           '<span class="search-result-title">' + escapeHtml(r.nameOriginal) + '</span>' +
-          '<span class="search-result-subtitle">' + escapeHtml(r.nameJa) + '</span>' +
+          '<span class="search-result-subtitle">' + escapeHtml(r.nameJa) +
+          (multiCuisine && r.cuisine ? '<span class="search-result-cuisine">' + escapeHtml(r.cuisine) + '</span>' : '') +
+          '</span>' +
           '</span></a>'
         );
       })
       .join('');
     results.hidden = false;
+  }
+
+  function ensureData() {
+    return ensureDataRaw().then(function (json) {
+      var seen = {};
+      var n = 0;
+      for (var i = 0; i < json.length; i++) { if (json[i].cuisine && !seen[json[i].cuisine]) { seen[json[i].cuisine] = true; n++; } }
+      multiCuisine = n > 1;
+      return json;
+    });
   }
 
   input.addEventListener('focus', function () {

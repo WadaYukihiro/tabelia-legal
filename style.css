@@ -1567,3 +1567,44 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   .consent-banner { transition: none; }
 }
+
+/* 国カード（トップ・/recipes/ の「国から選ぶ」）。背景は cuisine のヒーロー画像→注目レシピ→国旗パレットの順 */
+.cuisine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+.cuisine-card { display: block; text-decoration: none; color: #1a1a1a; }
+.cuisine-card-visual {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 14px;
+  background-color: #f2f2f2;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 18px 40px rgba(60,40,24,0.12);
+  transition: transform 0.2s;
+}
+.cuisine-card:hover .cuisine-card-visual { transform: translateY(-3px); }
+.cuisine-card-body { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.9rem 0.15rem 0; }
+.cuisine-card-native { font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.7rem; line-height: 1.1; letter-spacing: 0.01em; }
+.cuisine-card-title { font-weight: 700; font-size: 0.95rem; color: #30291f; }
+.cuisine-card-tagline { color: #6c6459; font-size: 0.84rem; line-height: 1.8; margin-top: 0.25rem; }
+.cuisine-card-count { color: #9e2f23; font-size: 0.8rem; font-weight: 700; margin-top: 0.35rem; }
+
+/* トップの「食卓の流れから選ぶ」: cuisine ごとにグループ化 */
+.home-course-group + .home-course-group { margin-top: 2.5rem; }
+.home-course-cuisine { display: flex; align-items: baseline; gap: 0.75rem; margin: 0 0 0.6rem; font-weight: 500; }
+.home-course-cuisine > span:first-child { font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.5rem; }
+.home-course-cuisine > span:last-child { color: #8b8175; font-size: 0.82rem; }
+
+/* /recipes/ の全件索引: cuisine › コース */
+.compact-index-cuisine + .compact-index-cuisine { margin-top: 2.5rem; }
+.compact-index-cuisine-title { display: flex; align-items: baseline; gap: 0.6rem; margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #d9d0c5; font-size: 1.05rem; }
+.compact-index-cuisine-title a { color: #30291f; text-decoration: none; }
+.compact-index-cuisine-title a:hover { color: #9e2f23; }
+.compact-index-cuisine-title span { color: #8b8175; font-size: 0.8rem; font-weight: 500; }
+
+/* 検索結果の国名（cuisine が2つ以上のときだけ描画される） */
+.search-result-cuisine { margin-left: 0.5rem; color: #9e2f23; font-size: 0.72rem; }

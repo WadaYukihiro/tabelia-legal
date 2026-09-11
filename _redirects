@@ -6,3 +6,18 @@
 #
 # このファイルは手書き管理（generate-web-recipes.ts は上書きしない）。
 # 生成スクリプトが「転送先の実在」と「転送元が実在ページを隠していないか」を毎回検証する。
+
+# 2026-09-11 多国展開（docs/epics/WEB_MULTI_CUISINE.md）: イタリアの体系ページを /recipes/italian/ 配下へ移動。
+# レシピ詳細 /recipes/<slug>/ は全 cuisine 共通のフラットな体系のまま（移動なし）。
+/recipes/course/antipasto/ /recipes/italian/course/antipasto/ 301
+/recipes/course/primo/ /recipes/italian/course/primo/ 301
+/recipes/course/secondo/ /recipes/italian/course/secondo/ 301
+/recipes/course/contorno/ /recipes/italian/course/contorno/ 301
+/recipes/course/dolce/ /recipes/italian/course/dolce/ 301
+/recipes/region/nord/ /recipes/italian/region/nord/ 301
+/recipes/region/centro/ /recipes/italian/region/centro/ 301
+/recipes/region/sud/ /recipes/italian/region/sud/ 301
+/recipes/region/isole/ /recipes/italian/region/isole/ 301
+/recipes/feature/pasta/ /recipes/italian/feature/pasta/ 301
+/recipes/feature/weekend/ /recipes/italian/feature/weekend/ 301
+/recipes/feature/omotenashi/ /recipes/italian/feature/omotenashi/ 301
