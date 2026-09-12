@@ -1192,11 +1192,20 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-bottom: 1.25rem; }
 .recipe-gallery img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px; display: block; background: #f2f2f2; }
 .recipe-article .recipe-meta { margin-bottom: 1.2rem; }
-.recipe-article .recipe-origin { display: flex; align-items: flex-start; gap: 1rem 1.25rem; margin-bottom: 1.2rem; }
-.recipe-article .recipe-origin .recipe-meta { flex: 1 1 auto; margin-bottom: 0; }
-/* 産地マップ: 国土シルエットに該当地域だけを塗る（scripts/generate-web-recipes.ts regionMapSvg）。ラベル無し・装飾扱い */
-.region-map { flex: 0 0 auto; height: 72px; width: auto; display: block; }
-@media (max-width: 480px) { .region-map { height: 60px; } }
+/* 産地マップ: 国土シルエットに該当地域だけを塗る（scripts/generate-web-recipes.ts regionMapSvg）。
+   ラベル無し・装飾扱い。本文（メタチップ＋説明文）の右に、本文とほぼ同じ縦幅で並べる。 */
+.recipe-article .recipe-origin { display: flex; align-items: flex-start; gap: 1rem 2rem; margin-bottom: 1.2rem; }
+.recipe-article .recipe-origin-body { flex: 1 1 auto; min-width: 0; }
+.recipe-article .recipe-origin-body .recipe-description:last-child { margin-bottom: 0; }
+.region-map { flex: 0 0 auto; height: 200px; width: auto; display: block; }
+@media (max-width: 900px) { .region-map { height: 160px; } }
+@media (max-width: 720px) { .recipe-article .recipe-origin { gap: 1rem 1.25rem; } .region-map { height: 120px; } }
+/* 携帯幅では横並びだと本文が13文字/行まで狭まるので、地図を本文の下に右寄せで置く */
+@media (max-width: 560px) {
+  .recipe-article .recipe-origin { flex-wrap: wrap; }
+  .recipe-article .recipe-origin-body { flex: 1 1 100%; }
+  .region-map { height: 140px; margin-left: auto; }
+}
 .recipe-article .recipe-description { max-width: 760px; font-size: 1rem; line-height: 1.9; margin-bottom: 1rem; }
 .recipe-byline { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; color: #938b81; font-size: 0.75rem; margin-bottom: 1.5rem; }
 .recipe-byline strong { color: #625a50; }
