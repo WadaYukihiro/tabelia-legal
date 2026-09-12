@@ -1568,30 +1568,88 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .consent-banner { transition: none; }
 }
 
-/* 国カード（トップ・/recipes/ の「国から選ぶ」）。背景は cuisine のヒーロー画像→注目レシピ→国旗パレットの順 */
+/* 国カード（トップ・/recipes/ の「国から選ぶ」）
+   国旗の主色を深く落とした一枚パネルに、金の細線で囲んだ写真を内側に収める。
+   国旗の三色は細いリボンと影の色味で効かせる（配色は generate-web-recipes.ts の cuisineCardPalette が
+   --flag-deep / --flag-rgb / --flag-accent-rgb / --flag-ribbon としてカードに書き込む） */
 .cuisine-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
+  /* auto-fit: 掲載国が少ないうちは空トラックを作らず、カードを広く使う */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
 }
-.cuisine-card { display: block; text-decoration: none; color: #1a1a1a; }
+.cuisine-card {
+  --gold: 223, 170, 120;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0.65rem 0.65rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #f6efe4;
+  background:
+    radial-gradient(120% 90% at 100% 100%, rgba(var(--flag-accent-rgb), 0.12), transparent 62%),
+    radial-gradient(110% 80% at 0% 0%, rgba(var(--flag-rgb), 0.55), transparent 60%),
+    var(--flag-deep);
+  /* 影は中立色。国旗色はパネル地とリボンで効かせる（色付き影は紙面の語彙でない: brand-strategist 2026-09-12） */
+  box-shadow: 0 18px 40px rgba(20, 14, 10, 0.20), 0 4px 14px rgba(20, 14, 10, 0.12);
+  transition: transform 0.25s, box-shadow 0.25s;
+  overflow: hidden;
+}
+.cuisine-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(var(--gold), 0.32);
+  pointer-events: none;
+}
+.cuisine-card:hover { transform: translateY(-4px); box-shadow: 0 26px 52px rgba(20, 14, 10, 0.24), 0 6px 18px rgba(20, 14, 10, 0.14); }
 .cuisine-card-visual {
   display: block;
   width: 100%;
   aspect-ratio: 3 / 2;
   border-radius: 14px;
-  background-color: #f2f2f2;
+  border: 1px solid rgba(var(--gold), 0.5);
+  background-color: rgba(255, 255, 255, 0.08);
   background-size: cover;
   background-position: center;
-  box-shadow: 0 18px 40px rgba(60,40,24,0.12);
-  transition: transform 0.2s;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  transition: transform 0.35s;
 }
-.cuisine-card:hover .cuisine-card-visual { transform: translateY(-3px); }
-.cuisine-card-body { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.9rem 0.15rem 0; }
-.cuisine-card-native { font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.7rem; line-height: 1.1; letter-spacing: 0.01em; }
-.cuisine-card-title { font-weight: 700; font-size: 0.95rem; color: #30291f; }
-.cuisine-card-tagline { color: #6c6459; font-size: 0.84rem; line-height: 1.8; margin-top: 0.25rem; }
-.cuisine-card-count { color: #9e2f23; font-size: 0.8rem; font-weight: 700; margin-top: 0.35rem; }
+.cuisine-card:hover .cuisine-card-visual { transform: scale(1.015); }
+.cuisine-card-body { display: flex; flex-direction: column; align-items: flex-start; gap: 0.2rem; padding: 1.35rem 0.85rem 0; }
+.cuisine-card-ribbon {
+  display: block;
+  width: 48px;
+  height: 3px;
+  border-radius: 2px;
+  margin-bottom: 0.85rem;
+  background: var(--flag-ribbon);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+}
+.cuisine-card-native { font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.95rem; line-height: 1.1; letter-spacing: 0.01em; color: #fbf6ee; }
+.cuisine-card-title { font-weight: 700; font-size: 0.95rem; letter-spacing: 0.04em; color: rgba(var(--gold), 1); }
+.cuisine-card-tagline { color: rgba(246, 239, 228, 0.78); font-size: 0.84rem; line-height: 1.85; margin-top: 0.45rem; }
+.cuisine-card-count {
+  margin-top: 1.1rem;
+  padding: 0.42rem 0.95rem;
+  border: 1px solid rgba(var(--gold), 0.55);
+  border-radius: 999px;
+  color: #fbf6ee;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.cuisine-card-count > span { display: inline-block; margin-left: 0.2rem; transition: transform 0.2s; }
+.cuisine-card:hover .cuisine-card-count { background: rgba(var(--gold), 0.16); border-color: rgba(var(--gold), 0.9); }
+.cuisine-card:hover .cuisine-card-count > span { transform: translateX(3px); }
+@media (prefers-reduced-motion: reduce) {
+  .cuisine-card, .cuisine-card-visual, .cuisine-card-count, .cuisine-card-count > span { transition: none; }
+  .cuisine-card:hover { transform: none; }
+  .cuisine-card:hover .cuisine-card-visual { transform: none; }
+}
 
 /* トップの「食卓の流れから選ぶ」: cuisine ごとにグループ化 */
 .home-course-group + .home-course-group { margin-top: 2.5rem; }
