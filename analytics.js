@@ -190,11 +190,15 @@
     if (link.classList.contains('appstore-badge')) {
       placement = closestLink(link, '.app-cta') ? 'app_cta' : 'badge';
     }
+    // engaged: このページで人数変更か代替確定を済ませてから降りたか（interactions.js が立てる）。
+    // 「価値を体験した人がアプリへ行くか」を CTA 位置の判断に使う（docs/KPI.md 第3層）
+    var engaged = window.TABELIA_ENGAGED || {};
     track('app_store_click', {
       page_type: page.page_type || '',
       recipe_slug: page.recipe_slug || '',
       locale: lang,
       placement: placement,
+      engaged: engaged.substitution || engaged.servings ? 1 : 0,
     });
   });
 

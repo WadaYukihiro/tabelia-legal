@@ -9,6 +9,21 @@
   if (!data.recipe || !Array.isArray(data.ingredients) || !Array.isArray(data.steps)) return;
 
   var state = { servings: data.recipe.baseServings, selections: {} };
+  // GA4 への明示イベント（analytics.js の tabeliaTrack）。人数変更と代替確定は Tabelia 固有の
+  // 価値体験なので、拡張計測の form_submit に頼らず名前付きで送る（docs/ANALYTICS.md「Web」）
+  var pageInfo = window.TABELIA_PAGE || {};
+  window.TABELIA_ENGAGED = { servings: false, substitution: false };
+  function track(name, params) {
+    if (typeof window.tabeliaTrack === 'function') window.tabeliaTrack(name, params);
+  }
+  function changeServings(next) {
+    if (next === state.servings) return;
+    var from = state.servings;
+    state.servings = next;
+    window.TABELIA_ENGAGED.servings = true;
+    track('servings_changed', { recipe_slug: pageInfo.recipe_slug || '', from: from, to: next });
+    render();
+  }
   var dialog = document.getElementById('substitution-dialog');
   var activeIngredientId = null;
   var lockedScrollY = 0;
@@ -336,11 +351,28 @@
   }
 
   var minus = document.getElementById('servings-minus'), plus = document.getElementById('servings-plus');
-  if (minus) minus.addEventListener('click', function () { state.servings = Math.max(data.recipe.minServings, state.servings - 1); render(); });
-  if (plus) plus.addEventListener('click', function () { state.servings = Math.min(data.recipe.maxServings, state.servings + 1); render(); });
+  if (minus) minus.addEventListener('click', function () { changeServings(Math.max(data.recipe.minServings, state.servings - 1)); });
+  if (plus) plus.addEventListener('click', function () { changeServings(Math.min(data.recipe.maxServings, state.servings + 1)); });
   if (dialog) dialog.addEventListener('close', function () {
     if (dialog.returnValue === 'confirm' && activeIngredientId != null) {
-      var chosen = dialog.querySelector('input[name="substitution"]:checked'); state.selections[activeIngredientId] = chosen && chosen.value ? chosen.value : null; render();
+      var chosen = dialog.querySelector('input[name="substitution"]:checked');
+      var chosenId = chosen && chosen.value ? chosen.value : null;
+      var ingredient = data.ingredients.find(function (item) { return item.id === activeIngredientId; });
+      var option = ingredient && chosenId ? ingredient.substitutionOptions.find(function (o) { return o.id === chosenId; }) : null;
+      var previous = state.selections[activeIngredientId] || null;
+      state.selections[activeIngredientId] = chosenId;
+      // 標準食材以外を確定したときだけ送る（標準に戻す操作は価値体験ではなく取り消し）
+      if (option && chosenId !== previous) {
+        window.TABELIA_ENGAGED.substitution = true;
+        track('substitution_selected', {
+          recipe_slug: pageInfo.recipe_slug || '',
+          ingredient_name: ingredient.nameJa,
+          option_name: option.nameJa,
+          option_type: option.variantType === 'authentic_variant' ? 'authentic_variant' : 'substitute',
+          authenticity_impact: ingredient.role === 'garnish' ? 0 : option.authenticityImpact,
+        });
+      }
+      render();
     }
     unlockPageScroll();
   });
