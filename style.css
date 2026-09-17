@@ -1,3 +1,7 @@
+/* hidden 属性を常に効かせる。作者スタイルの display（flex 等）は UA の [hidden]{display:none} に勝つため、
+   これが無いと「hidden なのに見える」要素ができる（2026-09-17 に .ingredient-app-cta で発生）。 */
+[hidden] { display: none !important; }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -1363,6 +1367,13 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-customizer-copy h2 { border: 0; padding: 0; margin: 0 0 0.3rem; font-size: 1.15rem; }
 .recipe-customizer-copy > p:last-of-type { color: #68584a; font-size: 0.82rem; margin: 0; }
 .selected-substitutions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
+/* 入手困難食材の取り寄せリンク（Amazon / 楽天市場）。材料行の中の補助行として置き、
+   本文リンクと同じ色。バッジや囲みは付けない（買わせる場所に見せない）。 */
+.ingredient-buy { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-top: 0.25rem; font-size: 0.72rem; }
+.ingredient-buy a { color: #9e2f23; font-weight: 700; text-decoration: none; }
+.ingredient-buy a:hover { text-decoration: underline; }
+.ingredient-affiliate-note { margin: -0.9rem 0 1.2rem; color: #8a7d6d; font-size: 0.68rem; }
+
 /* 代替を確定した直後だけ材料欄に現れるアプリ導線（interactions.js が hidden を外す）。
    ガラスも影も使わず、材料欄の罫線（#ddd3c6）の延長として置く（広告面に見せないため）。
    色は本文リンクの既存語彙 #9e2f23（.text-link と同じ）。1ページに1回だけ出る色を作らない。 */
