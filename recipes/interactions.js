@@ -111,6 +111,14 @@
     return selected;
   }
 
+  // 取り寄せリンク。generate-web-recipes.ts の buyLinksHtml() と同じ markup（意図的な重複）。
+  // URL は生成時に埋めたもの（item.buy）をそのまま使い、JS では組み立てない。
+  function buyLinksHtml(nameJa, buy) {
+    if (!buy) return '';
+    var attrs = function (merchant) { return 'data-affiliate="' + merchant + '" data-ingredient="' + esc(nameJa) + '" rel="nofollow sponsored noopener" target="_blank"'; };
+    return '<span class="ingredient-buy"><a href="' + esc(buy.amazon) + '" ' + attrs('amazon') + '>Amazonで探す</a><a href="' + esc(buy.rakuten) + '" ' + attrs('rakuten') + '>楽天市場で探す</a></span>';
+  }
+
   function findIngredientIndex(items, patch) {
     if (patch.targetStandardIngredientId) {
       var byId = items.findIndex(function (item) { return item.standardIngredientId === patch.targetStandardIngredientId; });
@@ -128,7 +136,8 @@
         standardIngredientId: ingredient.id, standardNameJa: ingredient.nameJa,
         nameJa: option ? option.nameJa : ingredient.nameJa, baseQuantity: ingredient.quantity,
         unit: ingredient.unit, role: ingredient.role, scalingBehavior: ingredient.scalingBehavior,
-        notes: ingredient.notes, isSubstituted: Boolean(option), substitutionOptionId: selectedId
+        notes: ingredient.notes, isSubstituted: Boolean(option), substitutionOptionId: selectedId,
+        buy: option ? (option.buy || null) : (ingredient.buy || null)
       };
     });
     options.forEach(function (selected) {
@@ -279,8 +288,12 @@
       return '<li data-ingredient-row="' + esc(item.standardIngredientId) + '" class="' + (item.isSubstituted ? 'is-substituted' : '') + '">' +
         '<span class="ingredient-name" data-ingredient-name>' + esc(item.nameJa) + '</span><span class="ingredient-qty" data-ingredient-qty>' + esc(fmtQtyWithUnit(item.quantity, item.unit)) + '</span>' +
         (item.notes ? '<span class="ingredient-notes">' + esc(item.notes) + '</span>' : '') +
+        buyLinksHtml(item.nameJa, item.buy) +
         (hasOptions ? '<button type="button" class="substitution-trigger" data-substitution-trigger="' + esc(item.standardIngredientId) + '"><span>' + (item.isSubstituted ? '代替：' + esc(item.nameJa) : '代替食材を選ぶ') + '</span><span aria-hidden="true">›</span></button>' : '') + '</li>';
     }).join('');
+    // 開示注記はリンクがあるときだけ
+    var note = document.querySelector('.ingredient-affiliate-note');
+    if (note) note.hidden = !list.querySelector('a[data-affiliate]');
   }
   function renderSteps(steps) {
     var section = document.getElementById('steps'); if (!section) return;

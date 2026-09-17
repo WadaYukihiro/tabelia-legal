@@ -1368,10 +1368,13 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-customizer-copy > p:last-of-type { color: #68584a; font-size: 0.82rem; margin: 0; }
 .selected-substitutions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
 /* 入手困難食材の取り寄せリンク（Amazon / 楽天市場）。材料行の中の補助行として置き、
-   本文リンクと同じ色。バッジや囲みは付けない（買わせる場所に見せない）。 */
-.ingredient-buy { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-top: 0.25rem; font-size: 0.72rem; }
-.ingredient-buy a { color: #9e2f23; font-weight: 700; text-decoration: none; }
-.ingredient-buy a:hover { text-decoration: underline; }
+   バッジや囲みは付けない（買わせる場所に見せない）。 */
+.ingredient-buy { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-top: 0.3rem; font-size: 0.74rem; }
+/* 赤太字（#9e2f23・700）は Tabelia 自身の行動の語彙。他社への送客を同格に見せないため、
+   既存の落ち着いた茶（.recipe-customizer-copy p と同じ #68584a）＋下線に降ろし、赤はホバーだけ。
+   視覚順位は 食材名 > 代替食材を選ぶ > 入手リンク ≈ メモ（brand-strategist 2026-09-17）。 */
+.ingredient-buy a { color: #68584a; font-weight: 600; text-decoration: underline; text-decoration-color: #cdbfae; text-underline-offset: 3px; }
+.ingredient-buy a:hover { color: #9e2f23; text-decoration-color: currentColor; }
 .ingredient-affiliate-note { margin: -0.9rem 0 1.2rem; color: #8a7d6d; font-size: 0.68rem; }
 
 /* 代替を確定した直後だけ材料欄に現れるアプリ導線（interactions.js が hidden を外す）。

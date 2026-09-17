@@ -203,6 +203,19 @@
     });
   });
 
+  // 取り寄せリンク（Amazon / 楽天市場）。アプリの affiliate_link_opened と同じイベント名・パラメータで、
+  // source だけ Web の配置名にする（docs/ANALYTICS.md）
+  document.addEventListener('click', function (e) {
+    var link = closestLink(e.target, 'a[data-affiliate]');
+    if (!link) return;
+    track('affiliate_link_opened', {
+      merchant: link.getAttribute('data-affiliate') || '',
+      source: 'recipe_ingredients',
+      ingredient_name: link.getAttribute('data-ingredient') || '',
+      recipe_slug: page.recipe_slug || '',
+    });
+  });
+
   // -------------------------------------------------------------------------
   // 3. サイト内検索（全ロケールの search.js が共通の ID を使う）
   // -------------------------------------------------------------------------
