@@ -186,8 +186,9 @@
   document.addEventListener('click', function (e) {
     var link = closestLink(e.target, 'a[href*="apps.apple.com"]');
     if (!link) return;
-    var placement = 'link';
-    if (link.classList.contains('appstore-badge')) {
+    // data-cta-placement を持つ導線（材料欄の代替確定後など）はその値をそのまま使う
+    var placement = link.getAttribute('data-cta-placement') || 'link';
+    if (!link.hasAttribute('data-cta-placement') && link.classList.contains('appstore-badge')) {
       placement = closestLink(link, '.app-cta') ? 'app_cta' : 'badge';
     }
     // engaged: このページで人数変更か代替確定を済ませてから降りたか（interactions.js が立てる）。
