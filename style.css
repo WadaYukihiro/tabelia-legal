@@ -1367,13 +1367,14 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
    ガラスも影も使わず、材料欄の罫線（#ddd3c6）の延長として置く（広告面に見せないため）。
    色は本文リンクの既存語彙 #9e2f23（.text-link と同じ）。1ページに1回だけ出る色を作らない。 */
 .ingredient-app-cta {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem;
+  display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem 0.75rem;
+  flex-wrap: wrap; /* 狭い幅ではラベルを折り返さず、メタを次行へ送る */
   margin: 0 0 1.5rem; padding: 0.7rem 0 0; border-top: 1px solid #ddd3c6;
   color: #9e2f23; text-decoration: none;
 }
 .ingredient-app-cta:hover .ingredient-app-cta-label { text-decoration: underline; }
 .ingredient-app-cta-label { font-size: 0.85rem; font-weight: 700; }
-.ingredient-app-cta-meta { flex-shrink: 0; color: #8a7d6d; font-size: 0.72rem; letter-spacing: 0.04em; }
+.ingredient-app-cta-meta { flex-shrink: 0; margin-left: auto; color: #8a7d6d; font-size: 0.72rem; letter-spacing: 0.04em; }
 
 .selected-substitutions span { border-radius: 999px; padding: 0.25rem 0.65rem; color: #6e4c31; background: #f6e3c7; font-size: 0.72rem; }
 .selected-substitutions strong { color: #9e2f23; }

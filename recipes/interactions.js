@@ -364,9 +364,11 @@
       // 標準食材以外を確定したときだけ送る（標準に戻す操作は価値体験ではなく取り消し）
       if (option && chosenId !== previous) {
         window.TABELIA_ENGAGED.substitution = true;
-        // 代替が伝わった瞬間にだけアプリ導線を出す（標準に戻したときは出さない）
+        // 代替が伝わった瞬間にだけアプリ導線を出す（標準に戻したときは出さない）。
+        // Android はアプリが未リリースで App Store からインストールできないため出さない
+        // （オーガニック流入の約23%。Android 版を出したらこの判定を消す）。
         var inlineCta = document.querySelector('.ingredient-app-cta');
-        if (inlineCta) inlineCta.hidden = false;
+        if (inlineCta && !/Android/i.test(navigator.userAgent)) inlineCta.hidden = false;
         track('substitution_selected', {
           recipe_slug: pageInfo.recipe_slug || '',
           ingredient_name: ingredient.nameJa,
