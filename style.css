@@ -1707,3 +1707,38 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 
 /* 検索結果の国名（cuisine が2つ以上のときだけ描画される） */
 .search-result-cuisine { margin-left: 0.5rem; color: #9e2f23; font-size: 0.72rem; }
+
+/* Chef Authen の耳より情報（ハブ）: 文章先行のカード。detail のクリーム色コラム枠を3つ並べると重いので、
+   罫線と書体だけで立てる。アバター・吹き出しは付けない（ホスト化させない） */
+.note-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.note-card {
+  display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem;
+  padding: 1.6rem 1.5rem 1.4rem; border: 1px solid #ded6cb; border-radius: 10px 10px 38px 10px;
+  background: #fff; color: #1a1a1a; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+}
+.note-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(55,38,25,0.12); }
+.note-card-text { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.02rem; line-height: 1.9; color: #2a241d; }
+.note-card-dish { display: flex; align-items: center; gap: 0.8rem; padding-top: 1rem; border-top: 1px solid #ede6db; }
+.note-card-photo { width: 56px; height: 56px; flex-shrink: 0; border-radius: 8px; background-size: cover; background-position: center; background-color: #f2f2f2; }
+.note-card-names { display: flex; flex-direction: column; min-width: 0; }
+.note-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.12rem; font-weight: 600; line-height: 1.3; }
+.note-card-subtitle { color: #888; font-size: 0.78rem; margin-top: 0.1rem; }
+.note-card:hover .note-card-title { text-decoration: underline; }
+
+/* 主菜になる一皿: narrative の第一文をキャプションに添える */
+.recipe-card-caption { display: block; color: #555; font-size: 0.82rem; line-height: 1.6; margin-top: 0.4rem; }
+
+/* 他のレシピ: 「同じ地方」「他の地方の同じコース」の2群を罫線で区切る */
+.related-section .recipe-grid { grid-template-columns: repeat(3, 1fr); }
+.related-group + .related-group { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #ded6cb; }
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .note-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .note-grid { grid-template-columns: 1fr; }
+  .note-card { border-radius: 8px 8px 28px 8px; }
+  /* 2列に落ちるので各群3品目は出さない（1品だけの行を作らない） */
+  .related-section .recipe-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .related-section .recipe-card:nth-child(3) { display: none; }
+}
