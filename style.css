@@ -778,7 +778,9 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .app-cta-with-shot { display: grid; grid-template-columns: minmax(0, 1fr) 190px; align-items: start; }
 .app-cta-with-shot .app-cta-chef { margin-bottom: 0.6rem; }
 .app-cta-benefits-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.app-cta-applink { display: inline-block; margin-top: 0.9rem; font-size: 0.85rem; font-weight: 700; color: #9e2f23; text-decoration: none; }
+/* /app/ へのテキストリンク。App Store バッジと同じ行に並べると矢印がバッジを指して
+   見え「バッジ＝機能ページ」と誤読される（2026-09-27 利用者指摘）ため、必ず独立行にする */
+.app-cta-applink { display: block; width: fit-content; margin: 1rem 0 0.25rem; font-size: 0.85rem; font-weight: 700; color: #9e2f23; text-decoration: none; }
 .app-cta-applink:hover { text-decoration: underline; }
 .app-shot, .app-cta-shot { display: block; width: 100%; height: auto; border-radius: 22px; border: 1px solid #e5ddd3; box-shadow: 0 10px 30px rgba(40, 30, 20, 0.12); background: #fff; }
 .app-cta-shot-frame, .app-hero-shot, .app-feature-shot { margin: 0; }
