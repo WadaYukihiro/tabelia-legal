@@ -773,6 +773,53 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .app-cta .app-cta-trial { margin: 0.85rem 0 0; color: #6f5b46; font-size: 0.76rem; font-weight: 700; }
 .app-cta .appstore-badge { margin-top: 0.75rem; }
 
+/* App CTA — スクリーンショット付き（レシピページ・作り方直後）。
+   構成上限は generate-web-recipes.ts の appCta() コメント（brand-strategist 承認 2026-09-27）参照 */
+.app-cta-with-shot { display: grid; grid-template-columns: minmax(0, 1fr) 190px; align-items: start; }
+.app-cta-with-shot .app-cta-chef { margin-bottom: 0.6rem; }
+.app-cta-benefits-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.app-cta-applink { display: inline-block; margin-top: 0.9rem; font-size: 0.85rem; font-weight: 700; color: #9e2f23; text-decoration: none; }
+.app-cta-applink:hover { text-decoration: underline; }
+.app-shot, .app-cta-shot { display: block; width: 100%; height: auto; border-radius: 22px; border: 1px solid #e5ddd3; box-shadow: 0 10px 30px rgba(40, 30, 20, 0.12); background: #fff; }
+.app-cta-shot-frame, .app-hero-shot, .app-feature-shot { margin: 0; }
+.app-cta-shot-frame figcaption, .app-hero-shot figcaption, .app-feature-shot figcaption { margin-top: 0.5rem; color: #8a8177; font-size: 0.72rem; text-align: center; }
+@media (max-width: 600px) {
+  .app-cta-with-shot { grid-template-columns: 1fr; }
+  .app-cta-shot-frame { max-width: 240px; margin: 0 auto; }
+  .app-cta-benefits-2 { grid-template-columns: 1fr; }
+}
+
+/* /app/ — アプリ紹介ページ */
+.app-landing section { margin-top: 4rem; }
+.app-hero { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 2.5rem; align-items: center; margin-top: 2.5rem; }
+.app-hero-lead { color: #3f3932; line-height: 1.9; max-width: 560px; }
+.app-hero-note { margin-top: 0.6rem; color: #8a8177; font-size: 0.78rem; }
+.app-feature { display: grid; grid-template-columns: minmax(0, 1fr) 230px; gap: 2.5rem; align-items: center; }
+.app-feature-copy p { color: #3f3932; line-height: 1.85; max-width: 560px; }
+.app-feature-reverse { grid-template-columns: 230px minmax(0, 1fr); }
+.app-feature-reverse .app-feature-copy { order: 2; }
+.app-feature-reverse .app-feature-shot { order: 1; }
+.app-feature-main { grid-template-columns: minmax(0, 1fr) 290px; background: #f8f8f8; border-radius: 12px; padding: 2rem; }
+.app-bridge { border-left: 3px solid #9e2f23; padding-left: 1.5rem; }
+.app-bridge p { color: #3f3932; line-height: 1.85; max-width: 640px; }
+.app-pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+.app-pricing-card { border: 1px solid #e5ddd3; border-radius: 12px; padding: 1.25rem 1.4rem; background: #fff; }
+.app-pricing-card h3 { margin: 0 0 0.4rem; font-size: 1rem; }
+.app-pricing-price { margin: 0 0 0.75rem; font-size: 1.35rem; font-weight: 700; color: #2e2921; }
+.app-pricing-price span { font-size: 0.85rem; font-weight: 400; color: #8a8177; }
+.app-pricing-card ul { margin: 0; padding-left: 1.1rem; color: #605850; font-size: 0.85rem; line-height: 1.7; }
+.app-pricing-note { margin-top: 0.9rem; color: #8a8177; font-size: 0.76rem; }
+.app-closing { text-align: center; padding: 3rem 0 1rem; }
+.app-closing .appstore-badge { margin-top: 1rem; }
+.app-closing-link { margin-top: 1rem; font-size: 0.9rem; }
+@media (max-width: 600px) {
+  .app-hero, .app-feature, .app-feature-reverse, .app-feature-main { grid-template-columns: 1fr; gap: 1.5rem; }
+  .app-feature-reverse .app-feature-copy { order: 1; }
+  .app-feature-reverse .app-feature-shot { order: 2; }
+  .app-hero-shot, .app-feature-shot { max-width: 240px; margin: 0 auto; }
+  .app-pricing-grid { grid-template-columns: 1fr; }
+}
+
 /* Recipe index */
 .recipe-index-lead { color: #555; font-size: 0.92rem; margin-bottom: 1.5rem; }
 .recipe-grid {
