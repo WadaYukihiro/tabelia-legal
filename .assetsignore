@@ -1,0 +1,5 @@
+# Keep repository metadata and local tooling out of public static assets.
+/.git/
+/.wrangler/
+/node_modules/
+/wrangler.toml

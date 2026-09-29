@@ -1812,3 +1812,35 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 .step-image { margin: .75rem 0 1rem; }
 .step-image img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; background: #f4f0e9; border-radius: 8px; }
 .step-image-note { color: #715438; font-size: .78rem; }
+
+/* Licensed regional photography in recipe stories (all locales). */
+.recipe-story.recipe-story--place { padding: 0; overflow: hidden; }
+.recipe-story-place { margin: 0; }
+.recipe-story-place > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: 50% 66%;
+}
+.recipe-story-place figcaption { padding: 1.25rem 3rem 0; }
+.recipe-story-location { display: flex; align-items: baseline; gap: 0.85rem; flex-wrap: wrap; color: #51493f; }
+.recipe-story-location > [lang] { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-style: italic; }
+.recipe-story-location > span:last-child { font-size: 0.72rem; letter-spacing: 0.08em; }
+.recipe-story-credit { display: block; margin-top: 0.3rem; color: #665b4d; font-size: 0.65rem; line-height: 1.8; }
+.recipe-story-credit a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.recipe-story-credit a:hover { color: #8f2f24; }
+.recipe-story-credit a:focus-visible { outline: 2px solid #8f2f24; outline-offset: 3px; }
+.recipe-story-location, .recipe-story-credit { overflow-wrap: anywhere; }
+.recipe-story-copy { padding: 2rem 3rem 2.5rem; }
+.recipe-story-copy > p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) {
+  .recipe-story-place > img { aspect-ratio: 4 / 3; }
+  .recipe-story-place figcaption { padding: 1rem 1.5rem 0; }
+  .recipe-story-location { gap: 0.15rem; flex-direction: column; }
+  .recipe-story-location > [lang] { font-size: 1.35rem; }
+  .recipe-story-credit { margin-top: 0.6rem; }
+  .recipe-story-copy { padding: 1.5rem 1.5rem 2rem; }
+  .recipe-story-copy h2 { font-size: 1.5rem; }
+}
