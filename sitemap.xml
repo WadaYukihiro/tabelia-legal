@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://tabelia.app/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-09-27</lastmod>
+  <url><loc>https://tabelia.app/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-09-27</lastmod>
+  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-09-27</lastmod>
+  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-09-27</lastmod>
+  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-09-27</lastmod>
+  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/italian/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/italian/"/></url>
-  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-09-27</lastmod>
+  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/italian/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/italian/"/></url>
-  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-09-27</lastmod>
+  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/italian/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
@@ -43,46 +43,46 @@
   <url><loc>https://tabelia.app/terms/</loc></url>
   <url><loc>https://tabelia.app/commercial/</loc></url>
   <url><loc>https://tabelia.app/support/</loc></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/learn/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/01-flour-and-eggs/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/02-kneading-and-resting/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/03-pasta-machine/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/04-shapes-and-sauces/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/05-from-flour-to-noodle/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/learn/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/learn/pasta-basics/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/learn/pasta-basics/01-flour-and-eggs/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/learn/pasta-basics/02-kneading-and-resting/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/learn/pasta-basics/03-pasta-machine/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/learn/pasta-basics/04-shapes-and-sauces/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/learn/pasta-basics/05-from-flour-to-noodle/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-09-29</lastmod></url>
   <url>
     <loc>https://tabelia.app/recipes/tortelli-di-zucca-alla-mantovana/</loc>
     <lastmod>2026-08-15</lastmod>
@@ -2358,7 +2358,7 @@
     <loc>https://tabelia.app/recipes/sgombro-al-forno-con-patate/</loc>
     <lastmod>2026-05-23</lastmod>
     <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a52569c7-ca7e-4304-8520-6454ab330706_1780064630722.png?width=1200&amp;quality=78</image:loc>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a52569c7-ca7e-4304-8520-6454ab330706_1790644284905.png?width=1200&amp;quality=78</image:loc>
       <image:title>サバとじゃがいものオーブン焼き（Sgombro al Forno con Patate）</image:title>
       <image:caption>サバをじゃがいも、ミニトマト、白ワイン、ハーブと一緒に焼く魚のオーブン料理。脂のある青魚を香味野菜と酸味で支え、魚とじゃがいもの火入れ時間を揃えるのが要点。</image:caption>
     </image:image>
