@@ -295,12 +295,12 @@
     var note = document.querySelector('.ingredient-affiliate-note');
     if (note) note.hidden = !list.querySelector('a[data-affiliate]');
   }
-  function renderSteps(steps) {
+  function renderSteps(steps, isAdapted) {
     var section = document.getElementById('steps'); if (!section) return;
     var html = '<h2>作り方</h2>', lastSection = null;
     steps.forEach(function (step) {
       if (step.sectionTitle && step.sectionTitle !== lastSection) { html += '<h3 class="step-section"><span class="step-section-accent"></span>' + esc(step.sectionTitle) + '</h3>'; lastSection = step.sectionTitle; }
-      html += '<div class="step-card ' + (step.changeReason ? 'is-adapted' : '') + '" id="step-' + step.stepNumber + '"><div class="step-card-head"><span class="step-number">' + step.stepNumber + '</span>' + (step.durationMinutes ? '<span class="step-duration">約' + fmtMinutes(step.durationMinutes) + '</span>' : '') + (step.changeReason ? '<span class="adapted-step-label">代替に合わせて変更</span>' : '') + '</div>' + renderStepBody(step) + (step.changeReason ? '<p class="adapted-step-reason">' + esc(step.changeReason) + '</p>' : '') + '</div>';
+      html += '<div class="step-card ' + (step.changeReason ? 'is-adapted' : '') + '" id="step-' + step.stepNumber + '"><div class="step-card-head"><span class="step-number">' + step.stepNumber + '</span>' + (step.durationMinutes ? '<span class="step-duration">約' + fmtMinutes(step.durationMinutes) + '</span>' : '') + (step.changeReason ? '<span class="adapted-step-label">代替に合わせて変更</span>' : '') + '</div>' + (step.imageHtml || '') + (step.imageHtml && isAdapted ? '<p class="step-image-note">標準レシピでの見た目です' + (step.changeReason ? '。手順が一部異なります' : '') + '</p>' : '') + renderStepBody(step) + (step.changeReason ? '<p class="adapted-step-reason">' + esc(step.changeReason) + '</p>' : '') + '</div>';
     }); section.innerHTML = html;
   }
   function scoreFor(options) { return Math.max(0, Math.min(100, 100 + options.reduce(function (sum, selected) { var ingredient=data.ingredients.find(function(item){return item.id===selected.ingredientId;}); return ingredient && ingredient.role === 'garnish' ? sum : sum + selected.option.authenticityImpact; }, 0))); }
@@ -313,7 +313,7 @@
   }
   function render() {
     var options = selectedOptions();
-    renderIngredients(adaptedIngredients(options)); renderSteps(adaptedSteps(options)); renderScore(options);
+    renderIngredients(adaptedIngredients(options)); renderSteps(adaptedSteps(options), options.length > 0); renderScore(options);
     ['ingredient-servings-label','servings-output'].forEach(function (id) { var el=document.getElementById(id); if(el)el.textContent=String(state.servings); });
     var meta=document.getElementById('recipe-meta-servings'); if(meta)meta.textContent=state.servings+'人分';
     var minus=document.getElementById('servings-minus'), plus=document.getElementById('servings-plus'); if(minus)minus.disabled=state.servings<=data.recipe.minServings;if(plus)plus.disabled=state.servings>=data.recipe.maxServings;
