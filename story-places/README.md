@@ -1,6 +1,6 @@
 # Recipe story photographs
 
-全359料理の本文に照らして選定した実写111枚。対応・選定理由・根拠は `scripts/data/story-photo-assignments.json`、撮影地・作者・利用条件の唯一の正は `scripts/data/story-photos.json`。州ごとの自動割り当ては行わない。
+全399料理の本文に照らして選定した実写113枚。対応・選定理由・根拠は `scripts/data/story-photo-assignments.json`、撮影地・作者・利用条件の唯一の正は `scripts/data/story-photos.json`。州ごとの自動割り当ては行わない。
 
 ## Attribution and image licenses
 
@@ -125,3 +125,5 @@ Sources and visual correspondence verified: 2026-09-29.
 | `mazara-del-vallo.webp` — Mazara del Vallo | [Porto canale Mazara.jpg](https://commons.wikimedia.org/wiki/File:Porto_canale_Mazara.jpg) | Civa61 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | `bronte.webp` — Bronte, Etna | [Piazza Nicola Spedalieri (Bronte) 06 10 2024 01.jpg](https://commons.wikimedia.org/wiki/File:Piazza_Nicola_Spedalieri_(Bronte)_06_10_2024_01.jpg) | Effems | [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) |
 | `etna.webp` — Etna, vista da Randazzo | [L'Etna vista dalla campagna di Randazzo.JPG](https://commons.wikimedia.org/wiki/File:L%27Etna_vista_dalla_campagna_di_Randazzo.JPG) | Pequod76 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| `viterbo.webp` — Viterbo, Via San Pellegrino | [Viterbo, via di san pellegrino 01.jpg](https://commons.wikimedia.org/wiki/File:Viterbo%2C_via_di_san_pellegrino_01.jpg) | Sailko | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) |
+| `ardeche-antraigues.webp` — Antraigues-sur-Volane, Ardèche | [Jean Ferrat et le village d'Antraigues.jpg](https://commons.wikimedia.org/wiki/File:Jean_Ferrat_et_le_village_d%27Antraigues.jpg) | Eva Soncin | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |

@@ -3996,4 +3996,364 @@
 <url><loc>https://tabelia.app/learn/bread-basics/04-shaping-and-bubbles/</loc><lastmod>2026-09-29</lastmod></url>
 <url><loc>https://tabelia.app/learn/bread-basics/05-baking-and-resting/</loc><lastmod>2026-09-29</lastmod></url>
 <url><loc>https://tabelia.app/learn/bread-basics/06-from-flour-to-table/</loc><lastmod>2026-09-29</lastmod></url>
+  <url>
+    <loc>https://tabelia.app/recipes/prosciutto-e-fichi/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/06d28f06-7457-4071-abb9-6c9b4d4d45b9_1790690248197.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>プロシュット・エ・フィーキ（生ハムといちじく）（Prosciutto e Fichi）</image:title>
+      <image:caption>熟成生ハムと完熟いちじくを合わせる、晩夏から秋のアンティパストです。薄切りの生ハムをふんわり盛り、いちじくと田舎パンを添えて供します。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/lapin-chasseur/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/070ed9bc-9ac3-4093-a870-0494640ce6ff_1790690339818.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ラパン・シャスール（うさぎの狩人風煮込み）（Lapin Chasseur）</image:title>
+      <image:caption>うさぎを焼き付け、マッシュルームと白ワイン、トマトで煮込むシャスール仕立てです。肉の焼き色を鍋底からソースへ移し、きのこの水分を別に飛ばして香りを重ねます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/risotto-alla-zucca/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/1028c0d1-9d3f-4037-bb19-332108a4967b_1790690213135.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>リゾット・アッラ・ズッカ（かぼちゃのリゾット）（Risotto alla Zucca）</image:title>
+      <image:caption>マントヴァのかぼちゃ料理の系譜を引くポー平原のリゾット。粉質でよく締まった西洋かぼちゃを、一部は蒸し煮にしてペースト状に崩し、一部は角切りのまま焼き色をつけて食感を残す二段構えで使う。香味野菜から自家で引いた brodo vegetale（野菜の煮出し汁）を85℃に保って少量ずつ注ぎ、カルナローリ米をトスタトゥーラで締めてから澱粉を引き出し、最後に冷たいバターとパルミジャーノでマンテカトゥーラして、鍋を傾けると波打つ流動性＝アッローンダに整える。かぼちゃの甘みにアマレッティの杏仁様の苦味を重ねるのがマントヴァの古典で、焦がしたセージバターの香りが全体を引き締める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/castagnaccio/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/11ee9c6b-2be4-442d-a63f-97ab615e0bf3_1790690224744.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>カスタニャッチョ（Castagnaccio）</image:title>
+      <image:caption>栗粉・水・オリーブオイル・塩だけで生地を立て、水に浸した松の実、レーズン、ローズマリーを散らし、表面にオリーブオイルを回しかけて200℃で薄く焼き上げるトスカーナの秋の郷土菓子。砂糖も卵も膨張剤も一切使わないため、「粉を2回篩う」「水を少量ずつ加えてダマなく溶く」「表面の油膜でひび割れた乾いた薄皮を作る」の三点だけが味を決める。中はもっちり、表面はひび割れた乾いた薄皮という対比が正統な仕上がり。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/flan-di-zucca-con-fonduta/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/1d3b7bbb-bb5c-456a-92a8-e92fec6608ae_1790690251128.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フラン・ディ・ズッカ・コン・フォンドゥータ（かぼちゃのフランとフォンティーナのフォンドゥータ）（Flan di Zucca con Fonduta）</image:title>
+      <image:caption>甘みの濃い粉質かぼちゃを厚いくし形に切り、皮付きのまま高温のオーブンで焼いて水分を抜き、裏漉しして卵とパンナで固めた、ピエモンテ・ランゲ地方の秋の定番アンティパスト。上からかけるフォンドゥータは、牛乳に浸したフォンティーナをバターとともに湯煎で溶かし、卵黄で乳化させた濃厚なチーズソースで、分離させず滑らかに仕上げるかどうかが一皿の出来を決める。かぼちゃを茹でずに焼いて甘みを凝縮させること、フランを湯煎で静かに火入れして「す」を立てないこと、そして温かいまま供することが手間の核心。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/ostriche-alla-tarantina/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/230b80d6-073d-42c6-8dec-14d9e4f83979_1790690254539.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>オストリケ・アッラ・タランティーナ（タラント風牡蠣のグラタン）（Ostriche alla Tarantina）</image:title>
+      <image:caption>牡蠣を殻ごと開き、にんにく、パセリ、ペコリーノを合わせたパン粉をのせて焼くタラント風の前菜です。殻開けで汁を保ち、パン粉を軽くのせて香ばしい表面を作ります。このレシピでは中心まで加熱することを優先し、焼き色が先についた場合はアルミ箔で覆って加熱を続けます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/magret-de-canard-aux-figues/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/27538de5-6455-4885-a5f9-ed117886baf1_1790690239971.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マグレ・ド・カナール・オー・フィグ（鴨胸肉のロースト いちじくのソース）（Magret de Canard aux Figues）</image:title>
+      <image:caption>フォアグラ用に肥育した鴨の胸肉（マグレ）を、冷たいフライパンから皮目の脂をゆっくり溶かし出しながら焼き、中心をロゼに仕上げる南西部の代表的な一皿。鴨を休ませている間に、その焼き鍋に残った鴨脂と焼き付きを土台として玉ねぎを炒め、蜂蜜とシェリーヴィネガーのガストリック、アルマニャック、赤ワイン、鶏のブイヨンを一気に煮詰めて甘酸と旨みが拮抗するソースを立て、シナモンを効かせて焼いたいちじくを絡める。厚い脂を焦がさず均一に落としきる火の管理と、休ませ時間を含めた火入れの読みが技術の核になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/salsicce-alluva/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2fa044d2-0204-4709-838c-e7ff7adf83bd_1790690221206.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>サルシッチェ・アッルーヴァ（生ソーセージの葡萄煮）（Salsicce all'Uva）</image:title>
+      <image:caption>葡萄の収穫期（ヴェンデンミア）に作られる中部イタリアの農家料理。生ソーセージを皮が破れないよう転がしながら脂を引き出し、その脂と白ワインの中で葡萄を崩して果汁を煮詰め、甘酸っぱい濃厚なソースに変える。砂糖も酢も加えず、葡萄そのものの糖と酸だけでソースを作る点に手間をかける価値がある。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/salade-perigourdine/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/354f7187-bd78-427b-b260-c33f63dbea07_1790690324750.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>サラード・ペリグルディーヌ（Salade Périgourdine）</image:title>
+      <image:caption>ペリゴールの三宝——鴨のコンフィ（砂肝）、燻製マグレ、フォワグラ——をくるみ油のヴィネグレットでまとめる、南西フランスの正統な前菜サラダ。鴨脂で焼くポム・ド・テール・サルラデーズを温かいまま葉物に添え、冷たい葉と温かい芋・砂肝の温度差で構成する点が要で、卵はウフ・モレ（半熟のゆで卵）に仕上げて黄身をソースの一部として働かせる。くるみ油は加熱せず、シェリー酢とマスタードで乳化させてから最後に和えることで、ペリゴール特産のくるみの香りを立たせる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/faraona-ai-funghi-porcini/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/59ef9b1a-2909-42ea-aad9-d9f871bbc401_1790690295290.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ファラオーナ・アイ・フンギ・ポルチーニ（ホロホロ鳥のポルチーニ煮込み）（Faraona ai Funghi Porcini）</image:title>
+      <image:caption>骨付きのホロホロ鳥を焼き付け、乾燥ポルチーニの戻し汁と白ワインで煮る一皿です。もも肉と胸肉を鍋へ入れる時間をずらし、きのこの深い香りをまとわせます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/marrons-braises/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5aff127d-20d5-42e5-b1c3-5aa31e08f65f_1790690358231.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マロン・ブレゼ（栗の蒸し煮）（Marrons Braisés）</image:title>
+      <image:caption>栗をブイヨンとバターで静かに蒸し煮にし、ほくほくした形を保って仕上げます。甘い菓子ではなく、肉料理の煮汁を受け止める秋冬の付け合わせです。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/tarte-normande/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5b9be67c-2fe0-41ae-989a-85c76246e1cf_1790690243845.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タルト・ノルマンド（Tarte Normande）</image:title>
+      <image:caption>ノルマンディーの林檎とクレーム・フレッシュ、カルヴァドスを重ねた古典的な焼き込みタルト。砂糖を10gだけに抑えたパート・ブリゼを空焼きし、卵白を塗って焼く目止めをしてから、アーモンドパウダー入りの濃厚なアパレイユ（流し込む卵液）を注ぎ、放射状に並べた林檎をゆっくり焼き固める。冷たいバターの粒を残す生地作り、角まで密着させた敷き込みと空焼きでの浮き・縮み防止、林檎の水分とアパレイユの凝固を合わせる火加減の見極めが要で、手間をかけた分だけ底の歯切れと林檎の輪郭が残る。直径22cmの型で焼き、室温まで完全に冷ましてから、供する直前に粉糖を振って仕上げる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/strudel-di-mele/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5ccb671d-9ec4-4aad-b724-47a8577b7308_1790690303391.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ストゥルーデル・ディ・メーレ（りんごのストゥルーデル）（Strudel di Mele）</image:title>
+      <image:caption>アルト・アディジェに伝わる、手で透けるまで薄く伸ばした生地でりんごを巻き上げる焼き菓子。市販のパイ生地は使わず、小麦粉・水・油・卵で作った伸展性の高い生地を布の上で紙のように引き延ばす「パスタ・ティラータ」が核心で、ここに技術のすべてが集まる。バターで炒めたパン粉がりんごの果汁を吸って生地を守り、ラム酒に漬けたレーズンと松の実、シナモン、レモンの皮が南チロルらしい香りを与える。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/schiacciata-alluva/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5d3c4e3b-c67e-4b38-a6b1-6558ff4c9bed_1790690299220.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>スキアッチャータ・アッルーヴァ（ぶどうのスキアッチャータ）（Schiacciata all'Uva）</image:title>
+      <image:caption>ぶどうの収穫期（ヴェンデンミア）にトスカーナの農家とパン屋が焼いてきた、パン生地にワイン用黒ぶどうを大量に敷き込んで焼く素朴な菓子パン。オリーブオイルと砂糖をまとった生地を二枚に分け、ぶどうを上下二層に挟んで焼くことで、下層の果汁が生地に染み込んでワインのような香りの層をつくり、上層は半ば煮詰まってジャム状になる。種ごと焼き込み、皮と種の渋みと砂糖の甘さの対比を残すのが本来の姿で、難所は高加水のゆるい生地の扱いと、果汁を抱えたまま底を焼き切る火加減にある。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/poires-belle-helene/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5e3509a9-27f9-42f2-b106-9adf8f38671d_1790690361533.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ポワール・ベル・エレーヌ（Poires Belle-Hélène）</image:title>
+      <image:caption>洋梨のコンポートにバニラアイスクリームと温かいチョコレートソースを合わせる、フランスの古典的なデザートです。梨の芯まで均一に煮含め、冷温と食感の対比を仕上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/navets-glaces/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5fa9d067-f9ac-4b2e-95c8-77522dc7753d_1790690354803.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ナヴェ・グラッセ（かぶのグラッセ）（Navets Glacés）</image:title>
+      <image:caption>かぶをバター、砂糖、水とともに蒸し煮にし、煮汁を最後まで煮詰めて薄いつやをまとわせます。鍋の大きさと水分の減りを見ながら、柔らかさと照りをそろえる古典的な付け合わせです。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/cervo-in-salmi/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/66a236ef-2e05-4915-b27d-a67ef065ee9a_1790690290640.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>チェルヴォ・イン・サルミ（鹿肉の赤ワイン煮込み）（Cervo in Salmì）</image:title>
+      <image:caption>鹿の肩肉を香味野菜・ジュニパーベリー・スパイスとともに赤ワインで丸一日マリネし、その漬け汁ごと三時間かけて煮込むアルプス狩猟料理の代表格。マリナードを一度煮立てて澄ませ、肉は別に焼き色を付けてから戻すことで、野性味を残しつつ渋みの立たない濃密なソースに仕上げる。仕上げに鹿レバーのペーストとバターで繋ぐ古式のリエゾンが、サルミという名の由来である濃いソースを生む。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/minestra-di-ceci-e-castagne/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/686e6a54-bdbf-45d7-ac30-4664516d249d_1790690282944.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ミネストラ・ディ・チェチ・エ・カスターニェ（ひよこ豆と干し栗のスープ）（Minestra di Ceci e Castagne）</image:title>
+      <image:caption>乾燥ひよこ豆と干し栗をそれぞれ12時間水戻しし、同じ鍋でゆっくり煮崩して一体化させるトスカーナ山間部の冬のミネストラ。豆のでんぷんと栗の甘みが溶け合ってとろみが生まれるため、粉や生クリームは一切使わず、煮汁の量と火加減の管理だけで濃度を決めるのが要点。仕上げは焼いた硬いトスカーナパンの上に注ぎ、生のオリーブオイルと粗挽き黒胡椒で香りを立てる。浸水12時間は調理時間とは別に必要。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/veloute-de-potiron/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/71dfcb11-f8da-4c7d-85d7-046c7068208b_1790690231844.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ヴルーテ・ド・ポティロン（かぼちゃのヴルーテ）（Velouté de Potiron）</image:title>
+      <image:caption>ブロンドのルーで軽くとろみをつけた鶏のブイヨンでかぼちゃを煮含め、裏ごしして絹のようになめらかにした古典的なヴルーテ。仕上げは卵黄と生クリームのリエゾンで結び、冷たいバターでモンテして光沢と丸みを与える。ポタージュのように単に潰すのではなく、ルー・裏ごし・リエゾンという三つの工程を踏むことで、口当たりがビロード（velours）と形容される質感に到達する。古典の potage velouté の定型どおり、バターで炒めたクルトンを別添えにして供する。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/chou-rouge-aux-pommes/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/77e8a022-2001-4b45-9deb-1ab0b07340a8_1790690347227.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>シュー・ルージュ・オ・ポム（紫キャベツとりんごの煮込み）（Chou Rouge aux Pommes）</image:title>
+      <image:caption>紫キャベツとりんごを赤ワインと香辛料で蒸し煮にする、アルザスを思わせる付け合わせです。前夜のマリネからゆっくり仕込み、りんごの形を残して仕上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/noisettes-de-chevreuil-sauce-grand-veneur/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7d006bc6-2a28-4eef-b259-bc3727c3c226_1790690332723.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ノワゼット・ド・シュヴルイユ、ソース・グラン・ヴヌール（Noisettes de Chevreuil Sauce Grand Veneur）</image:title>
+      <image:caption>鹿のロースを厚めに切って焼き、赤ワイン、ヴィネガー、赤すぐりのジュレで調えたソースを添えます。ソースの酸味と果実味を煮詰めて整え、肉は中心まで十分に加熱する家庭向けの基準です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/cinghiale-in-agrodolce/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/81a50aec-f4c6-4568-bc09-7196ea80dc04_1790690286472.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>チンギアーレ・イン・アグロドルチェ（猪肉の甘酢煮込み）（Cinghiale in Agrodolce）</image:title>
+      <image:caption>猪肉を赤ワインと香味野菜・ジュニパーベリーで一昼夜マリネし、臭みを抜いてから長時間ブレゼにするマレンマ地方の狩猟料理。仕上げに砂糖を焦がしたカラメルへ赤ワインビネガーを打ち込むアグロドルチェ（甘酢）と、松の実・レーズン・カカオ分の高いチョコレート・オレンジピールを合わせ、野趣の強い肉を甘・酸・苦のバランスで包み込む。マリネ液を煮詰めて濾す下ごしらえ、カラメルの焦がし加減、最後にソースをチョコレートで艶やかに繋ぐ工程が味を決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pan-co-santi/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/82d7307d-c68f-4909-a946-90d0fb98b66a_1790690306841.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パン・コ・サンティ（Pan co' Santi）</image:title>
+      <image:caption>シエナで諸聖人の日（11月1日）前後に焼かれる、くるみとレーズンをたっぷり抱き込んだ甘いパン菓子。オリーブオイルで黒胡椒とともに温めたくるみを生地に練り込むのが核心で、油脂に移った胡椒の辛みと蜂蜜・ヴィン・サントの甘やかな香りが一体になる。ビガ（前種）による長時間発酵と、油分・具材の多い重い生地をだれさせずに成形する手さばきが味を決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/vincisgrassi/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/83ac4830-7903-4703-9e5a-1613c16f246e_1790690278813.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ヴィンチスグラッシ（Vincisgrassi）</image:title>
+      <image:caption>マルケ地方の重ね焼きパスタです。手打ちの卵の生地に、肉と鶏のモツ、仔牛のアニメッレを使うラグー、ベシャメルを重ねます。4人分の皿を前日に組み、翌日に焼いて切り分けます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/poulet-vallee-dauge/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8ddb9f8d-162a-4995-a65c-ba5a9156a430_1790690235774.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>プーレ・ヴァレ・ドージュ（オージュ渓谷風 鶏のシードル煮）（Poulet Vallée d'Auge）</image:title>
+      <image:caption>丸鶏1羽を8つに捌き、バターで淡いきつね色に焼き付けてからカルヴァドスとシードル・ブリュットで煮込み、最後に卵黄と生クリームのリエゾンで濃度をつけるノルマンディーの古典。リンゴとマッシュルーム、香味野菜が皿の骨格を作り、煮汁を煮詰める加減とリエゾンを沸かさずに仕上げる温度管理が味を決める。骨付きのまま煮ることで出る旨みと、シードルの酸味・リンゴの甘み・乳脂肪のまろやかさが一体になる、丸鶏1羽＝4人分の主菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/coquilles-saint-jacques-a-la-bretonne/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/94dddd82-1aa4-4355-8161-69a0b8e0e882_1790690320964.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>コキーユ・サン・ジャック・ア・ラ・ブルトンヌ（ホタテの殻焼き ブルターニュ風）（Coquilles Saint-Jacques à la Bretonne）</image:title>
+      <image:caption>殻付きホタテを自分で開き、貝柱と珊瑚（卵巣）を有塩バターで炒めたエシャロットと辛口白ワインの煮汁で軽く火入れし、深い殻に戻して自家製パン粉とパセリ・ニンニクを練り込んだブール・ド・ペルシヤードをのせて高温で一気にグラタンにする一皿。生クリームやモルネーソースで覆うパリ風とは異なり、ブルターニュ風は貝そのものの甘みと海の塩気を、焦がしバターとパン粉の香ばしさだけで立ち上げるのが身上です。火入れは合計でも数分、貝柱に芯を残すか残さないかの見極めが味を決めます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gratin-de-potiron/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/96e44382-db39-4265-a36f-cb8dc2395e7f_1790690351248.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>グラタン・ド・ポティロン（かぼちゃのグラタン）（Gratin de Potiron）</image:title>
+      <image:caption>かぼちゃの水分を蒸し煮で飛ばし、クリームとチーズを合わせて焼き上げるグラタンです。中はなめらかに、表面は香ばしく仕上げ、ローストした肉の付け合わせにします。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/mont-blanc/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9984d41b-93f0-4105-ac88-defedd827690_1790690242032.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>モンブラン（Mont-Blanc）</image:title>
+      <image:caption>焼き締めたメレンゲ・フランセーズの土台に、渋皮まで手で剥いた栗を下茹でしてからシロップで炊き、裏ごしして起こす自家製パート・ド・マロンを細い麺状に絞り、角が立つまで泡立てたクレーム・シャンティイを雪山に見立てて覆うパリの古典菓子。市販の栗ペーストを使わず、栗の下処理・下煮・シロップ煮・裏ごし・バターと洋酒での乳化までを自力で行うため、香りの密度と口溶けが決定的に変わる。低温で長時間乾かすメレンゲ、絞り出しやすい硬度に調整した栗生地、円錐が自立する硬さまで立てたシャンティイという、三つの異なる質感を同じ皿の上で成立させるのが要。仕上げは粉糖を雪のように振るだけで、余計な飾りは載せない。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/tarte-aux-noix-grenobloise/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a79450d0-4c73-4fe0-a50c-0a17ab00d664_1790690367927.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タルト・オ・ノワ・グルノブロワーズ（Tarte aux Noix Grenobloise）</image:title>
+      <image:caption>くるみをキャラメルとクリームで包み、香ばしく焼いたタルト台に詰めるグルノーブル風のタルトです。木の実の食感と、ほろ苦いキャラメルの濃さを楽しむ秋の菓子です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/cailles-aux-raisins/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a969eedd-7d5c-4245-86a4-eefa566d6c3c_1790690335937.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>カイユ・オ・レザン（うずらの葡萄煮）（Cailles aux Raisins）</image:title>
+      <image:caption>葡萄の収穫期（ヴァンダンジュ）に仕立てるブルゴーニュの古典的な小禽料理。背脂のバルド（脂身の薄板）で覆って糸で縛ったうずらを鍋で色よく焼き、マール・ド・ブルゴーニュと白ワインでデグラッセし、皮を剥いて種を抜いた白葡萄を最後に温める。焼き汁と鶏のフォンを煮詰め、生クリームと冷たいバターで繋いだソースを、バターで焼いたクルトンに載せたうずらにかける。小禽の火入れと葡萄の食感を壊さない温め加減が要となる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/necci-con-ricotta/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ba017439-0f08-4ae3-ac73-53ac834d726e_1790690310704.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ネッチ・コン・リコッタ（栗粉のクレープ　リコッタ包み）（Necci con Ricotta）</image:title>
+      <image:caption>栗粉と水と塩だけで溶いた素朴な生地を、極薄に焼き上げて羊乳リコッタを包むガルファニャーナ山間部の秋冬の菓子。伝統では火床で熱した「テスティ」と呼ばれる鋳鉄・石の円盤で挟み焼きにし、栗粉特有の甘みと香ばしさを引き出す。手間の要は、粉を篩って塊なく溶いた生地を休ませること、そして鉄の温度を一定に保ち、焦がさずに縁が乾くまで薄く焼き切ることにある。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/frittelle-di-mele/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c3553c90-614e-4937-ad67-a226a903dbb2_1790690313790.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フリッテッレ・ディ・メーレ（りんごのフリッター）（Frittelle di Mele）</image:title>
+      <image:caption>りんごを輪切りにして芯を抜き、グラッパとレモンでマリネしてから、卵白を泡立てて軽く仕上げたパステッラ（衣）をまとわせて高温の油で揚げる、アルプス山麓の謝肉祭菓子。衣は薄くまとわりつく濃度に調整し、内側のりんごは蒸し焼き状にジューシーに、外側はごく薄くパリッと仕上げるのが要。揚げたてにシナモンシュガーをまぶし、温かいうちに供する。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gigot-dagneau-aux-flageolets/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c46cd3cb-276a-4384-a2df-3f379efe0632_1790690343721.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ジゴ・ダニョー・オ・フラジョレ（Gigot d'Agneau aux Flageolets）</image:title>
+      <image:caption>にんにくとタイムを添えて仔羊の脚を丸ごとローストし、柔らかく炊いたフラジョレ豆と肉のジュを合わせます。大きな肉を休ませ、豆の煮汁と焼き汁を調えることが、食卓で切り分ける一皿を支えます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pasta-e-zucca/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c6c03857-284b-48fd-92e1-ebee2ba483c2_1790690217328.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パスタ・エ・ズッカ（かぼちゃのパスタ）（Pasta e Zucca）</image:title>
+      <image:caption>ナポリの家庭で秋から冬にかけて作られる「パスタ・エ・ズッカ」。かぼちゃをにんにくと唐辛子の香味油でゆっくり崩れるまで煮て、そこへパスタ・ミスタ（余りものの混合ショートパスタ）を直接投入し、熱湯を少しずつ足しながらリゾットのように炊き上げる（パスタ・リゾッタータ）。ブロードを引かず水だけで炊くのが家庭の一般的な形で、茹でこぼさずデンプンを鍋に留めることで、生クリームを使わずに濃厚でとろりとしたひと皿になる。火加減と水分追加のタイミングだけが技術のすべて。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/foie-gras-poele-aux-raisins/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d5318ed7-af4c-40de-a334-31c090e9a8f2_1790690329268.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フォワグラ・ポワレ・オー・レザン（フォワグラのポワレ 葡萄添え）（Foie Gras Poêlé aux Raisins）</image:title>
+      <image:caption>鴨のフォワグラに香ばしい焼き色をつけ、葡萄と甘口ワインのソースを合わせる温かい前菜です。ソースとトーストを先に用意し、フォワグラを焼いた脂で葡萄を温めて仕上げます。このレシピは国内向けに中心まで加熱する版で、半生の仕上がりを目標にはしません。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pere-al-vino-rosso/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d77e2a98-dd67-492f-9d71-7a44400f0215_1790690227733.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ペーレ・アル・ヴィーノ・ロッソ（洋梨の赤ワイン煮）（Pere al Vino Rosso）</image:title>
+      <image:caption>硬めの洋梨を丸ごと、フルボディの赤ワインと香辛料でごく弱火のポーシェにかけ、芯まで赤紫に染め上げるピエモンテの古典的なドルチェ。煮汁を沸騰させずに保ち、串がすっと通る一歩手前で火から下ろし、煮汁に浸けたまま室温と冷蔵庫で計5時間（前日仕込みなら一晩）休ませて染みを進めるのが要で、仕上げに煮汁だけをナップ状のシロップまで煮詰めて洋梨にかけ直す。果実の繊維を崩さずに色と香りだけを通す温度管理が、この単純な一皿の出来を決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/veloute-de-chataignes/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/db751da2-6a1c-4ab9-9454-e07d128cef87_1790690317221.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ヴルーテ・ド・シャテーニュ（栗のヴルーテ）（Velouté de Châtaignes）</image:title>
+      <image:caption>殻付きの生栗を炙り剥きし、鶏のブイヨンと牛乳でほろほろに煮崩して漉した、秋冬のアルデシュを代表するポタージュ。栗そのものの澱粉で濃度をつけ、最後に生クリームでリエゾンしてビロード（velours）のような舌ざわりに仕上げるため、ルーには頼らない。表面にカリッと焼いたラルドンとヘーゼルナッツオイルを落とし、甘い栗に燻香と油脂の香りを対比させる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pappardelle-sulla-nana/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e2f8c4c7-d48a-4f61-a440-97fe5fe00eca_1790690274564.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パッパルデッレ・スッラ・ナーナ（鴨のラグー）（Pappardelle sulla Nana）</image:title>
+      <image:caption>「ナーナ」はトスカーナ方言で家鴨を指し、骨付きの鴨をワインと香草でじっくり煮込み、骨から外した肉をほぐしてソースに戻す祝祭の一皿です。手打ちのパッパルデッレは卵黄を多めにした濃いスフォリアを手で薄く延ばし、幅2cmに切って粗い表面にラグーを絡ませます。鴨のレバーを最後に加えて濃度と香りを与えるのがヴァル・ディ・キアーナの古典的な作法で、時間をかけた脂の処理と煮込みが味を決めます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/tarte-aux-figues/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f88dabc7-e34f-44d3-9f23-ffa7a597dea3_1790690364657.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タルト・オ・フィグ（Tarte aux Figues）</image:title>
+      <image:caption>甘いタルト生地にアーモンドクリームを敷き、いちじくを焼き込む秋のタルトです。果実の汁をクリームに受け止めさせ、焼けた皮としっとりした中心を一緒に味わいます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gnocchi-di-zucca/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fda565f7-d896-43a2-812b-54242f691c94_1790690270873.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ニョッキ・ディ・ズッカ（かぼちゃのニョッキ）（Gnocchi di Zucca）</image:title>
+      <image:caption>かぼちゃを半割りにしてオーブンで焼いて水分を飛ばし、裏漉した果肉に最小限の小麦粉と卵黄だけを合わせて仕立てる、マントヴァ伝統の秋のプリモ。じゃがいものニョッキより生地が緩みやすく、粉を足しすぎれば団子に、少なすぎれば茹で崩れるという狭い許容幅の中で見極める点に技術がある。仕上げは焦がしバターとセージ、グラナ・パダーノ、そして砕いたアマレッティの甘苦い香りで、マントヴァ特有の甘じょっぱい味の対比をつくる。</image:caption>
+    </image:image>
+  </url>
 </urlset>
