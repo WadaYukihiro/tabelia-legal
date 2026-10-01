@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"coquilles-saint-jacques-a-la-bretonne","recipe_name":"Coquilles Saint-Jacques à la Bretonne","recipe_course":"entree","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -454,80 +455,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">コキーユ・サン・ジャック・ア・ラ・ブルトンヌ（ホタテの殻焼き ブルターニュ風）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">殻付きホタテ（活け）の代わりに</p>
-            <h3>冷凍ホタテ貝柱（刺身用）+ グラタン皿</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>珊瑚のコクと殻由来の磯の風味が失われ、味わいが平板になる。</p><p>殻を開く工程を省き、冷蔵庫で6時間かけて解凍してからペーパーで水気を完全に拭き取る。</p><p>貝殻の代わりに直径10cmの耐熱皿4枚を器として使い、粗塩の台は不要。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">殻付きホタテ（活け）の代わりに</p>
-            <h3>殻付きホタテ（冷蔵・非活け）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みと磯の香りがやや弱まるが、質感はほぼ変わらない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エシャロットの代わりに</p>
-            <h3>玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが前に出て、エシャロット特有の繊細な辛みと酸の余韻が消える。</p><p>水分が多いため、蒸らし炒めの時間を2分延ばして水分を飛ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エシャロットの代わりに</p>
-            <h3>わけぎの白い部分</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>青々とした軽い香りになり、煮詰めたときのコクが出にくい。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>ノンアルコール白ワイン + レモン汁5ml</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>骨格となる酸と発酵由来の厚みが減り、後味が軽くなる。</p><p>甘みが残るため、煮詰め時間を1分短くして煮詰めすぎを防ぐ。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>辛口シードル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>りんごの香りと丸い酸味が加わり、より土地の素朴な風味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">イタリアンパセリの代わりに</p>
-            <h3>セルフィーユ（チャービル）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>アニス様の甘い香りになり、パセリの青い苦みが消える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>にんにくの香りをつけたバター（にんにく1/2片を溶かしバターで温めて除く）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りだけが穏やかに残り、生にんにくの刺激がなくなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">レモン汁の代わりに</p>
-            <h3>白ワインヴィネガー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>柑橘の華やかさが消え、酸がより鋭く直線的になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フルール・ド・セル（粗塩の結晶）の代わりに</p>
-            <h3>粗塩</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味の当たりが強くなり、粒の溶ける繊細な食感が失われる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒胡椒（粗挽き）の代わりに</p>
-            <h3>白胡椒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>辛みが穏やかになり、貝の甘みが際立つ代わりに香りの立体感が減る。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="douarnenez-port">

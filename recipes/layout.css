@@ -1,0 +1,23 @@
+/* Shared by Japanese, English and Italian recipe templates. */
+.recipe-article {
+  --recipe-nav-height: 5rem;
+  --recipe-sticky-top: calc(var(--recipe-nav-height) + 1rem);
+}
+.recipe-article section[id], .recipe-article .step-card[id] { scroll-margin-top: var(--recipe-sticky-top); }
+
+@media screen and (min-width: 900px) {
+  .recipe-article .recipe-rail { position: sticky; top: var(--recipe-sticky-top); min-width: 0; }
+  .recipe-rail .recipe-ingredients {
+    max-height: calc(100vh - var(--recipe-sticky-top) - 1rem);
+    max-height: calc(100dvh - var(--recipe-sticky-top) - 1rem);
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scrollbar-gutter: stable;
+  }
+  .recipe-ingredients:focus-visible { outline: 2px solid #8f2f24; outline-offset: 3px; }
+}
+
+@media print {
+  .recipe-article .recipe-rail, .recipe-jump-nav { position: static; }
+  .recipe-rail .recipe-ingredients { max-height: none; overflow: visible; }
+}

@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"gnocchi-alla-sorrentina","recipe_name":"Gnocchi alla Sorrentina","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">6</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">6</output>
@@ -582,86 +583,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ニョッキ・アッラ・ソレンティーナは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">じゃがいも（男爵など粉質・貯蔵もの）の代わりに</p>
-            <h3>メークイン（粘質）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>水分が多く生地が締まり、もちもちを通り越して重い食感になる。</p><p>ゆでずに丸ごと180℃のオーブンで60分焼いて水分を飛ばしてから裏ごしする。</p><p>生地に入れる薄力粉を30〜50g増やし、合計240gまで使えるよう用意する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力粉（00粉）の代わりに</p>
-            <h3>中力粉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>グルテンがやや強く出て、歯ごたえが少し硬めになる。</p><p>まとめる時間を30秒短くし、練りすぎを避ける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力粉（00粉）の代わりに</p>
-            <h3>米粉（グルテンフリー）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>つながりが弱くほろりと崩れ、なめらかさより粉っぽさが残る。</p><p>結着を補うため、生地に卵1個（全卵、約50g）を加えて混ぜる。</p><p>試しゆでは必ず2回行い、崩れる場合は米粉を20gずつ追加する。</p><p>成形後すぐにゆで、生地を長時間放置しない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ホールトマト缶の代わりに</p>
-            <h3>トマトピューレ（パッサータ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>果肉感がなくなり、均質でとろみの強いソースになる。</p><p>煮詰め時間を10分短縮し、焦げ付きに注意する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ホールトマト缶の代わりに</p>
-            <h3>完熟生トマト</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味が軽く香りは鮮烈だが、旨みの厚みは控えめになる。</p><p>湯むきして種を除くと目減りするため、1300gを用意して正味800gにする。</p><p>水分が多いため煮詰め時間を10分延長する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フィオルディラッテ（牛乳製モッツァレッラ）の代わりに</p>
-            <h3>ピザ用シュレッドチーズ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>塩気と油分が強く、みずみずしい伸びではなく脂っぽい溶け方になる。</p><p>水切り工程は不要。</p><p>塩気が強いため、ソースの塩を6gから4gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フィオルディラッテ（牛乳製モッツァレッラ）の代わりに</p>
-            <h3>水牛乳モッツァレッラ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>乳の風味が濃厚になる一方、水分が多く焼き上がりがゆるくなる。</p><p>角切り後にキッチンペーパーで包み、冷蔵庫で1時間しっかり水切りする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（すりおろし）の代わりに</p>
-            <h3>グラナ・パダーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩気と熟成香がやや穏やかで、後味が軽くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（すりおろし）の代わりに</p>
-            <h3>ペコリーノ・ロマーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>羊乳特有の鋭い塩気が立ち、トマトの甘みを覆いがちになる。</p><p>塩気が強いため、ソースの塩を6gから3gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>玉ねぎ（みじん切り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>刺激が消えて甘みの丸いソースになる。</p><p>にんにくの代わりに玉ねぎ80gをみじん切りにし、オリーブオイル40mlで弱火8分、透明になるまで炒めてからトマトを加える。</p><p>炒めた玉ねぎは取り出さずソースに残す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ピュアオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>青い香りと辛みが消え、風味が平坦になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バジル（生）の代わりに</p>
-            <h3>乾燥バジル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>清涼感が失われ、乾いた草っぽい香りだけが残る。</p><p>乾燥バジル2gをトマトと同時に加える。</p><p>仕上げに天面へ散らす工程は省く。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="sorrento">

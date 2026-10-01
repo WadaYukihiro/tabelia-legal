@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"veloute-de-potiron","recipe_name":"Velouté de Potiron","recipe_course":"entree","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">6</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">6</output>
@@ -422,86 +423,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ヴルーテ・ド・ポティロン（かぼちゃのヴルーテ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">かぼちゃ（栗かぼちゃなどの西洋かぼちゃ）の代わりに</p>
-            <h3>和種の日本かぼちゃ（黒皮・菊座など）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが控えめで粘質のねっとりした舌触りになり、ヴルーテの甘い余韻が弱まる。</p><p>水分が多く緩くなりやすいので、25分の煮込みの最後の5分は蓋を外し、煮汁が木べらにまとわりつく濃度まで煮詰める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">かぼちゃ（栗かぼちゃなどの西洋かぼちゃ）の代わりに</p>
-            <h3>バターナッツかぼちゃ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>水分が多くナッツ香が強まり、より軽くなめらかな口当たりになる。</p><p>水分が多いため、25分の煮込み後に濃度が緩ければ蓋を外して弱火で3〜5分煮詰めてから、ミキサーにかけて裏ごしする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">長ねぎ（白い部分）の代わりに</p>
-            <h3>ポワロー（西洋ねぎ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>辛味が弱く甘い青い香りが加わり、より穏やかで厚みのある甘みになる。</p><p>辛味が穏やかなため、シュエの時間を10〜12分から8〜10分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">長ねぎ（白い部分）の代わりに</p>
-            <h3>玉ねぎ（増量分）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ねぎ類の青い香りが消え、甘みだけが前に出た単調な風味になる。</p><p>長ねぎの代わりに玉ねぎ120gを2mm厚の薄切りにし、既定の玉ねぎ80gと合わせて計200gをシュエする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>エシャロット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>より繊細で上品な甘みになり、後味が軽くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ブイヨン・ド・ヴォライユ（鶏のだし）の代わりに</p>
-            <h3>野菜のブイヨン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>動物性の旨みとコクが減り、かぼちゃの甘みが前面に出た軽い味になる。</p><p>クレーム・フレーシュを20ml追加で用意し、リエゾン用を140ml、飾り用を30mlに分け取る（飾り分は減らさない）。</p><p>リエゾンは卵黄3個とクレーム・フレーシュ140mlで作る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ブイヨン・ド・ヴォライユ（鶏のだし）の代わりに</p>
-            <h3>水＋固形ブイヨン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>塩味と旨み調味料の角が立ち、ヴルーテの繊細な余韻が失われる。</p><p>塩分が強いため、仕上げの食塩4gは2gだけ加えて味を見て止める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">クレーム・フレーシュ（濃厚生クリーム）の代わりに</p>
-            <h3>無糖の豆乳クリーム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>乳のコクが失われ、豆の風味とやや軽い後味になる。</p><p>分離しやすいので、リエゾンを鍋に戻したあとは湯気が細く立つ程度の弱火に保ち、鍋肌にも泡を立てない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">クレーム・フレーシュ（濃厚生クリーム）の代わりに</p>
-            <h3>生クリーム（乳脂肪38%）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>クレーム・フレーシュ特有のわずかな酸味が消え、甘く丸い印象になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">タイムの代わりに</p>
-            <h3>乾燥タイム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りがやや平板で薬草的になるが方向性は保たれる。</p><p>枝を束ねる代わりに、茶漉しパックに乾燥タイム小さじ1/2を入れ、ローリエ1枚と一緒に煮込みに加える。</p><p>裏ごし前に、茶漉しパックとローリエをトングで取り出して捨てる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ナツメグ（ホール）の代わりに</p>
-            <h3>パウダーナツメグ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>揮発した香りが弱く、粉っぽい苦味がわずかに残る。</p><p>おろし金で削る代わりに、パウダーナツメグ小さじ1/4を茶漉しで振り入れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白胡椒（挽きたて）の代わりに</p>
-            <h3>黒胡椒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが力強くなる代わりに、淡いオレンジ色の外観に黒い点が散る。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="ile-de-france">

@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"veloute-de-chataignes","recipe_name":"Velouté de Châtaignes","recipe_course":"entree","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -452,116 +453,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ヴルーテ・ド・シャテーニュ（栗のヴルーテ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生栗の代わりに</p>
-            <h3>甘栗（無糖・むき身）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>焙煎香と甘みが強く出て、素朴なヴルーテより菓子的な風味に傾く。</p><p>正味300gに減らし、皮むき工程を省いて香味野菜に直接加える。</p><p>仕上げの塩を0.5g増やして甘みを締める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生栗の代わりに</p>
-            <h3>むき栗（真空パック・加熱済み）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>香ばしさと繊維の粗さが減り、より均一で軽い甘さになる。</p><p>切り込み・ゆで・皮むきの工程を省き、正味350gをそのまま香味野菜に加える。</p><p>煮込み時間を25分から15分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のブイヨンの代わりに</p>
-            <h3>野菜のブイヨン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>コクが軽くなり、栗の甘みがより前面に出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のブイヨンの代わりに</p>
-            <h3>水＋乾燥ポルチーニの戻し汁</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>動物性の厚みが消え、きのこの土の香りが主役になる。</p><p>乾燥ポルチーニ5gを水600mlに30分浸し、戻し汁を漉してブイヨンの代わりに使う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛乳（成分無調整）の代わりに</p>
-            <h3>無糖アーモンドミルク</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>乳のまろみが薄れ、ナッツ香が重なって軽い仕上がりになる。</p><p>分離しやすいため沸騰させず、80℃前後を保って温める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生クリーム（乳脂肪35〜40%）の代わりに</p>
-            <h3>豆乳クリーム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>乳脂肪の余韻が消え、口当たりがさらりとする。</p><p>分離を防ぐため火を止めてから加え、余熱でのみ混ぜる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生クリーム（乳脂肪35〜40%）の代わりに</p>
-            <h3>クレーム・フレーシュ・エペス（サワークリーム）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>わずかな乳酸の酸味が加わり、栗の甘さが引き締まる。</p><p>固いため、少量の温かいスープでのばしてから鍋に戻す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エシャロットの代わりに</p>
-            <h3>玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが強く香りが素朴になり、繊細さがやや後退する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">長ねぎ（白い部分）の代わりに</p>
-            <h3>下仁田ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>加熱後の甘みが濃くなり、より丸い風味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">セロリ（茎）の代わりに</p>
-            <h3>セロリアック（根セロリ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>青い香りが減り、土の甘みが加わって濃度も少し増す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">無塩バターの代わりに</p>
-            <h3>ガチョウまたは鴨の脂</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>乳の香りが消え、燻製肉と響き合う動物的なコクが出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白ポートワインの代わりに</p>
-            <h3>辛口白ワイン＋はちみつ小さじ1/2</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘味のふくらみが減り、酸のきいた輪郭になる。</p><p>酸が立つため、煮立てる時間を1分延ばしてから次へ進む。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白ポートワインの代わりに</p>
-            <h3>マデイラ酒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ナッツ様の酸化香が加わり、より重厚な余韻になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">タイムの代わりに</p>
-            <h3>乾燥タイム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが angular になり、青さが減る。</p><p>乾燥タイム小さじ1/2をお茶パックに入れて煮込む。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローリエの代わりに</p>
-            <h3>セージ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樟脳様の清涼感が消え、栗と相性のよい甘苦い香りになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白胡椒（挽きたて）の代わりに</p>
-            <h3>黒胡椒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが強く出て、クリーム色の表面に黒い粒が散る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ナツメグの代わりに</p>
-            <h3>メース</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>より繊細で花のような香りになる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="ardeche-antraigues">

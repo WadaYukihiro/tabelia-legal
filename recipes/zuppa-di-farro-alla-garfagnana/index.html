@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"zuppa-di-farro-alla-garfagnana","recipe_name":"Zuppa di Farro alla Garfagnana","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -561,116 +562,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ズッパ・ディ・ファッロ・アッラ・ガルファニャーナ（ファッロと豆のスープ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ファッロ（スペルト小麦・セミパール）の代わりに</p>
-            <h3>押し麦（大麦）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>香ばしさが減り、粘りととろみが強く出て粒の弾力が弱くなる。</p><p>手順3の浸水を省き、押し麦280gは流水で洗ってザルにあげておくだけにする。</p><p>手順8の炊き上げ時間を25〜30分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ファッロ（スペルト小麦・セミパール）の代わりに</p>
-            <h3>小麦全粒粒（デュラム小麦粒）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>粒がより硬質で歯応えが強く、ファッロ特有の甘い麦の香りが薄れる。</p><p>手順3の浸水では足りないため、前夜に豆と並行して水800mlで8時間浸水させる。</p><p>手順8の炊き上げを50〜60分に延長し、煮汁が減ったら熱湯を100mlずつ足す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">乾燥ボルロッティ豆の代わりに</p>
-            <h3>乾燥カンネッリーニ豆</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>皮が薄く味が繊細になり、煮汁の色が淡く仕上がる。</p><p>手順4の弱火の煮込みを70〜80分に短縮する（皮が薄く早く柔らかくなる）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">乾燥ボルロッティ豆の代わりに</p>
-            <h3>水煮ボルロッティ豆（缶）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>豆の煮汁の旨みが得られず、スープのとろみとコクが明らかに軽くなる。</p><p>手順1の浸水を省略する。</p><p>手順3〜4の豆の下煮を省き、鍋に水2200ml、生ハムの皮、ローリエ、塩4gを入れて弱火で40分煮出してベースを作る。</p><p>手順5では缶汁を切った水煮豆600gのうち300gをパッサヴェルドゥーレにかけてベースに戻し、残り300gは粒のまま加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">水の代わりに</p>
-            <h3>野菜のブロード</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>旨みが厚くなる一方、豆そのものの純粋な風味が後ろに下がる。</p><p>手順3で豆を煮る2500mlを野菜のブロードに置き換える（浸水用と調整用は水のまま）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パンチェッタ（豚バラ塩漬け）の代わりに</p>
-            <h3>グアンチャーレ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>脂の甘みと香りがより濃厚になり、スープの油層が厚くなる。</p><p>手順6で脂が溶けるのが早いため、炒め時間を5〜6分にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パンチェッタ（豚バラ塩漬け）の代わりに</p>
-            <h3>省略（オリーブオイル20ml追加）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>塩気と燻香のコクが消え、豆と野菜の素直な味だけの軽い仕上がりになる。</p><p>手順6でパンチェッタを炒める工程を省き、オリーブオイルを20ml追加して合計80mlとし、野菜を弱めの中火で15分かけて甘みを引き出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生ハムの皮（豚皮）の代わりに</p>
-            <h3>パルミジャーノの皮</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>獣脂のコクの代わりに乳製品由来の旨みが立ち、後味が塩気寄りになる。</p><p>手順2の下茹では行わず、表面をナイフでこそげ洗いして4cm角に切る。</p><p>手順3で豆と一緒に鍋へ入れる。</p><p>手順5で取り出し、刻まずに捨てる（手順7で戻さない）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生ハムの皮（豚皮）の代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>煮汁のゼラチン質が減り、とろみと口当たりの厚みが軽くなる。</p><p>手順2の皮の下茹で、手順3の投入、手順5の取り出しと刻み戻しをすべて省く。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>赤玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが強く出て、スープの色がわずかに濁る。</p><p>手順6で水分が多く出るため、炒め時間を15分まで延ばして水気を飛ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">セロリの代わりに</p>
-            <h3>セロリの葉と茎の下部</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>青い香りがやや強まるが構成は変わらない。</p><p>手順2で葉は別にしておき、手順6ではにんにくと同じタイミングで加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマトピューレ（パッサータ）の代わりに</p>
-            <h3>ホールトマト缶（手で潰す）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>果肉感が残り、酸味がわずかに強くなる。</p><p>手順6で加える前に手で細かく潰し、種と芯を取り除いてから鍋に入れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマトピューレ（パッサータ）の代わりに</p>
-            <h3>トマトペースト（水で希釈）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>凝縮した甘みと濃い色が出るが、フレッシュな酸味が失われる。</p><p>手順6でトマトペースト40gを水160mlで溶いてから加え、煮詰め時間を6分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ピュアオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>青草の香りと辛みが消え、仕上げの生がけの存在感がほぼ失われる。</p><p>手順10の生がけは香りが立たないため、皿にかける量を30mlのまま保ちつつ、黒胡椒を3gに増やして香りの輪郭を補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローズマリーの代わりに</p>
-            <h3>乾燥ローズマリー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>樹脂的な香りが単調になり、清涼感が弱まる。</p><p>手順2ではハーブ束を作らず、乾燥ローズマリー小さじ1と生セージ4枚をお茶パックに入れる。</p><p>手順6でお茶パックを加え、手順8の炊き上げ終了時に取り出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">セージの代わりに</p>
-            <h3>乾燥セージ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りがこもり、生葉特有の柔らかい苦みが出ない。</p><p>手順2で乾燥セージ小さじ1をお茶パックに入れ、ローズマリーの枝と一緒にタコ糸でまとめる。</p><p>手順6で加え、手順8の炊き上げ終了時に取り出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">乾燥唐辛子の代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>後味の刺激が消え、より穏やかな甘い仕上がりになる。</p><p>手順2で唐辛子の下処理を省き、手順6ではにんにくとハーブ束だけを加える。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="garfagnana">

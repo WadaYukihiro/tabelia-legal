@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"pot-au-feu","recipe_name":"Pot-au-Feu","recipe_course":"plat","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -351,38 +352,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ポトフは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛すね肉（骨付き）の代わりに</p>
-            <h3>牛すね肉（骨なし）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>骨からのゼラチン質とコクがやや減るが、長時間煮込むことで十分な柔らかさとブイヨンの旨みは出る</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛肩バラ肉（塊）の代わりに</p>
-            <h3>牛肩ロース（かたまり）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>脂の入り方が均一になり、肩バラ特有のとろけるような食感がやや薄れる。長時間煮込む点は変わらない</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛すじの代わりに</p>
-            <h3>牛骨髄付き骨（マルソー）</h3>
-            <p class="recipe-alternative-kind">本場のバリエーション · 本格度への影響なし</p>
-            <p>骨髄の芳醇な脂がブイヨンに溶け出し、より深いコクが出る。精肉店や輸入食材店で手に入るなら、本来はこちらを使うのが本式</p><p>牛すじの下茹でステップを省略し、骨の表面を軽く洗ってそのまま鍋に加える</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ポワロー（リーキ）の代わりに</p>
-            <h3>長ねぎ（白い部分）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが強く和風の方向に寄るが、ブイヨンに甘みを加える役割は保たれる</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="limousin-orchard">

@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"tarte-normande","recipe_name":"Tarte Normande","recipe_course":"dessert","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">6</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">6</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">6</output>
@@ -524,104 +525,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">タルト・ノルマンドは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力粉の代わりに</p>
-            <h3>薄力粉＋強力粉（9:1）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>生地がやや締まり、ほろほろ感が減って香ばしさが増す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力粉の代わりに</p>
-            <h3>中力粉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ほぼ同じだが、わずかに歯切れが強くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラニュー糖（生地用）の代わりに</p>
-            <h3>粉糖</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>生地の表面がなめらかになり、ほろつきよりも口溶けが前に出る。</p><p>粉糖は薄力粉と一緒に篩ってから混ぜる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">塩の代わりに</p>
-            <h3>細粒の海塩</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ミネラル感が加わり、林檎の甘みがわずかに立つ。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">林檎（酸味のある品種）の代わりに</p>
-            <h3>ふじ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>酸味が弱く甘さが前に出て、煮崩れしにくいため輪郭が強く残る。</p><p>甘みが強い分、アパレイユのグラニュー糖を40gに減らす。</p><p>水分が出にくいので、ソテーは片面2分30秒ずつに延ばして焼き色を濃くつける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">林檎（酸味のある品種）の代わりに</p>
-            <h3>グラニースミス</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>はっきりした酸味と固い果肉で、より引き締まった味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">クレーム・フレッシュ（乳酸発酵させた濃厚な生クリーム）の代わりに</p>
-            <h3>生クリーム（乳脂肪38%）＋プレーンヨーグルト15g</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>乳酸の香りが弱まり、甘さがやや平板になる。</p><p>生クリーム85mlとヨーグルト15gを泡立て器で均一に混ぜてからアパレイユに加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">クレーム・フレッシュ（乳酸発酵させた濃厚な生クリーム）の代わりに</p>
-            <h3>サワークリーム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味が強く出て、より締まった口当たりになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラニュー糖（アパレイユ用）の代わりに</p>
-            <h3>カソナード（きび砂糖）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>糖蜜のコクが加わり、焼き色が濃くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">アーモンドパウダーの代わりに</p>
-            <h3>アーモンドパウダー（皮付き）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが強く、断面に茶色い粒が見える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">アーモンドパウダーの代わりに</p>
-            <h3>薄力粉15g</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>アーモンドの香ばしさとコクが失われ、素朴なフラン状の食感になる。</p><p>薄力粉15gを篩ってから加え、混ぜすぎないよう20回以内で止める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">カルヴァドス（林檎のブランデー）の代わりに</p>
-            <h3>アップルブランデー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>樽香がやや弱く、林檎の香りが素直に出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">カルヴァドス（林檎のブランデー）の代わりに</p>
-            <h3>シードルを1/4まで煮詰めたもの</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>アルコールの芯がなくなり、酸味と甘みだけの穏やかな林檎感になる。</p><p>シードル120mlを小鍋で強めの中火にかけ、30mlになるまで約8分煮詰めて冷ます。</p><p>冷めた煮詰めシードルを、カルヴァドスと同じ分量（ソテーに10ml、アパレイユに20ml）で置き換える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バニラビーンズの代わりに</p>
-            <h3>バニラエクストラクト</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが単調になり、黒い斑点が出ない。</p><p>バニラエクストラクト小さじ1/2（2.5ml）をアパレイユの最後に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">無塩バター（林檎用）の代わりに</p>
-            <h3>有塩バター</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>林檎の表面にかすかな塩気が乗り、甘さが締まる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="normandy-apple-orchard">

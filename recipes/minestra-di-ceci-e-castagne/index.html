@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"minestra-di-ceci-e-castagne","recipe_name":"Minestra di Ceci e Castagne","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -435,92 +436,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ミネストラ・ディ・チェチ・エ・カスターニェ（ひよこ豆と干し栗のスープ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">乾燥ひよこ豆の代わりに</p>
-            <h3>ひよこ豆の水煮（缶）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>煮汁にでんぷんが出にくく、とろみと豆の風味が薄くなる。</p><p>ひよこ豆の浸水と重曹の工程を省く（干し栗の浸水のみ行う）。</p><p>下処理では干し栗の渋皮取りと2cm大への切り揃えだけを行い、ひよこ豆の重曹水洗いは省く。</p><p>煮込み開始時に注ぐ熱湯を1000mlに減らし、干し栗だけで煮始める。</p><p>水気を切って流水で洗った水煮ひよこ豆400gを、90分の煮込みの残り30分の段階で鍋に加える。</p><p>とろみが足りない場合は、つぶす量を豆と栗の1/2に増やす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">干し栗の代わりに</p>
-            <h3>生栗（鬼皮つき）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みは強くなるが、干し栗特有の燻したような凝縮感が消える。</p><p>干し栗の浸水を省く（ひよこ豆の浸水のみ行う）。</p><p>下処理では、生栗200gの丸い面に十字の切り込みを入れて10分下ゆでし、熱いうちに鬼皮と渋皮をむいて2cm大に割る。</p><p>むいた生栗は煮込み開始時ではなく、90分の煮込みの残り40分の段階で鍋に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">干し栗の代わりに</p>
-            <h3>蒸し栗（真空パック）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>栗の風味が穏やかで甘さが前に出て、煮汁に栗の香りが移りにくい。</p><p>干し栗の浸水を省く（ひよこ豆の浸水のみ行う）。</p><p>下処理での栗の渋皮取りと切り揃えは不要。</p><p>蒸し栗150gを90分の煮込みの残り20分の段階で加え、崩れすぎないよう静かに煮る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">水の代わりに</p>
-            <h3>野菜ブロード（無塩）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>下味に厚みが出て、香味野菜の甘みがわずかに強まるが、豆と栗の素朴さは隠れる。</p><p>浸水には水を使い、煮込みの熱湯1200mlと差し湯300mlだけを無塩の野菜ブロードに置き換える。</p><p>仕上げの塩を8gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージン・オリーブオイルの代わりに</p>
-            <h3>米油＋オリーブオイル少量</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>青い辛みと果実香が失われ、仕上げの香りの立ち上がりが弱くなる。</p><p>ソッフリットには米油25mlとオリーブオイル5mlを合わせて使う。</p><p>仕上げの生がけはオリーブオイル15mlのまま変えず、香りが弱いぶん黒胡椒を小さじ3/4に増やして振る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">カンパーニュなどの素朴なパン（硬くなったもの）の代わりに</p>
-            <h3>カンパーニュ（塩入り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>パン自体の塩気と酸味が加わり、スープの塩味がやや強く感じられる。</p><p>スープに加える塩を8gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤玉ねぎの代わりに</p>
-            <h3>黄玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>甘みが穏やかになり、後味がすっきりする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>乾燥ガーリック（粗粒）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>甘い焙煎香に寄り、生にんにくの立体的な香りが出ない。</p><p>炒め用のにんにくの代わりに乾燥ガーリック2gを赤玉ねぎと一緒に炒める。</p><p>焼いたパンににんにくをこすりつける工程は省く。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローズマリーの代わりに</p>
-            <h3>乾燥ローズマリー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樹脂的な苦みが強く出て、清涼感のある香りが弱まる。</p><p>生の枝の代わりに、乾燥ローズマリー1.5gを茶パックに入れてソッフリットに加える。</p><p>茶パックは煮詰め工程の前に取り出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">セージの代わりに</p>
-            <h3>乾燥セージ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>乾いた薬草香になり、栗の甘みとの馴染みが弱くなる。</p><p>生葉の代わりに乾燥セージ0.5gをソッフリットの香味と一緒に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローリエの代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りの奥行きがやや減るが、豆と栗の味は保たれる。</p><p>ソッフリットにローリエを加えず、煮込み後に取り出すのはローズマリーの枝とセージだけにする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ホールトマト（缶）の代わりに</p>
-            <h3>トマトペースト</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味が減って甘みと濃度が増し、色が濃くなる。</p><p>ホールトマトの代わりにトマトペースト20gをソッフリットに加え、1分だけ炒める。</p><p>煮込み開始時に注ぐ熱湯を1280mlに増やす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒胡椒の代わりに</p>
-            <h3>白胡椒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>刺激は残るが、粗挽き黒胡椒の香ばしい香りが出ない。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="viterbo">

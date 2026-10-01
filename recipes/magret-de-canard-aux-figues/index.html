@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"magret-de-canard-aux-figues","recipe_name":"Magret de Canard aux Figues","recipe_course":"plat","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -429,140 +430,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">マグレ・ド・カナール・オー・フィグ（鴨胸肉のロースト いちじくのソース）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マグレ・ド・カナール（鴨胸肉）の代わりに</p>
-            <h3>合鴨むね肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>肉質がやわらかく脂の香りが穏やかで、南西部特有の力強い鴨の風味は弱まる。</p><p>皮目の脂出しを弱めの中火で8分に短縮し、焦げやすいので途中で溶けた脂をこまめに除く。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マグレ・ド・カナール（鴨胸肉）の代わりに</p>
-            <h3>バルバリー鴨の胸肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>脂の層が薄く赤身も繊細になり、肉の濃厚さと脂の甘みが軽くなる。</p><p>脂が少ないため皮目を焼く時間を12分から7〜8分に短縮する。</p><p>身側の加熱は1分半にとどめる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生いちじく（紫種）の代わりに</p>
-            <h3>洋梨</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>種のプチプチした食感がなくなり、甘みが軽く水っぽい仕上がりになる。</p><p>洋梨2個を8等分のくし形に切る。</p><p>鴨脂で片面1分ずつ焼き色をつけてから取り出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生いちじく（紫種）の代わりに</p>
-            <h3>ドライいちじく</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>果汁のみずみずしさが失われる代わりに、糖度と濃縮した果実味が強く出る。</p><p>ドライいちじく8個を40℃のぬるま湯80mlに30分浸して戻し、縦半分に切る（この戻し作業はステップ3の待ち時間内に行う）。</p><p>戻し汁80mlはブイヨンと同時にソースへ加え、煮詰め時間を1分延ばして100mlに合わせる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のブイヨン（無塩・液体）の代わりに</p>
-            <h3>市販のフォン・ド・ヴォー（規定倍率で希釈）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ゼラチン質が増えてとろみと粘りが強まり、ソースがより重厚になる。</p><p>塩気が強いので仕上げの味見まで塩を加えない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のブイヨン（無塩・液体）の代わりに</p>
-            <h3>水</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>旨みの芯が抜け、甘酸っぱさと赤ワインの渋みだけが前に出た薄いソースになる。</p><p>水180mlを使う場合は煮詰め目標を80mlに下げ、モンテのバターを25gに増やしてとろみを補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のブイヨン（無塩・液体）の代わりに</p>
-            <h3>鴨のブイヨン（鴨ガラで引いたもの）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>鴨の香りが重なり、ソースの余韻がより濃く野性的になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤ワイン（フルボディ）の代わりに</p>
-            <h3>ぶどうジュース（無糖・赤）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>タンニンの骨格が消え、甘さが前に出た平坦なソースになる。</p><p>ジュースは煮詰めても酸が立たないため、モンテの直前にシェリーヴィネガー小さじ1を追加して味を締める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤ワイン（フルボディ）の代わりに</p>
-            <h3>ポートワイン（ルビー）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みと熟した果実味が強まり、ソースがより濃密で甘口に寄る。</p><p>ポートは甘いので蜂蜜を15gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">蜂蜜（アカシア）の代わりに</p>
-            <h3>栗の蜂蜜</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ほろ苦さと樹木的な香りが加わり、鴨に対してより野性的な甘さになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">蜂蜜（アカシア）の代わりに</p>
-            <h3>グラニュー糖</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>花の香りが消え、直線的な甘さとカラメル香だけになる。</p><p>別の小鍋でグラニュー糖25gを中火にかけ、揺すりながら琥珀色になるまで乾式で溶かす。</p><p>火を止めてシェリーヴィネガー20mlを注ぎ、固まった塊が溶けるまで弱火で30秒煮溶かす。</p><p>このカラメル液を玉ねぎのフライパンに流し入れ、30秒煮立ててからアルマニャックの工程へ進む（この分の準備はステップ3で済ませておく）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シェリーヴィネガーの代わりに</p>
-            <h3>赤ワインビネガー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>樽由来のナッツ香が減り、酸が直線的で鋭くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シェリーヴィネガーの代わりに</p>
-            <h3>バルサミコ酢</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>甘みと粘度が加わり、南西部のソースというよりイタリア風の甘酸っぱさになる。</p><p>バルサミコは甘いので蜂蜜を15gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">アルマニャックの代わりに</p>
-            <h3>コニャック</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>より丸く華やかな香りになり、アルマニャックの土っぽい野性味は弱まる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">アルマニャックの代わりに</p>
-            <h3>ブランデー（国産）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樽香が浅く、余韻の複雑さが減る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>エシャロット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>甘みが穏やかで香りが繊細になり、ソースの輪郭が締まる。</p><p>エシャロット2個（計約50g）を細かいみじん切りにする。</p><p>水分が少なく色づきやすいので、炒め時間を1分30秒に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シナモンスティックの代わりに</p>
-            <h3>キャトルエピス</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>クローブと白胡椒の刺激が加わり、より複雑でスパイシーな香りになる。</p><p>キャトルエピス小さじ1/4をソースの煮詰めの最後に加える（取り除かない）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生タイムの代わりに</p>
-            <h3>乾燥タイム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>青い香りが弱まり、乾いた草の香りが前に出る。</p><p>アロゼには加えず、乾燥タイム小さじ1/2をブイヨンと同時にソースへ加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">粗塩の代わりに</p>
-            <h3>海塩（粗粒）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ほぼ同等で、塩味の立ち方がわずかに丸くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フルール・ド・セルの代わりに</p>
-            <h3>海塩（細粒・湿式）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>粒立ちの歯当たりが弱まり、塩味が一度に強く出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒胡椒（粗挽き）の代わりに</p>
-            <h3>白胡椒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>刺激が穏やかになり、鴨の脂の甘みに対する対比が弱まる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="gascogne-armagnac-countryside">

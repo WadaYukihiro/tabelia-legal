@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"prosciutto-e-fichi","recipe_name":"Prosciutto e Fichi","recipe_course":"antipasto","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -296,74 +297,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">プロシュット・エ・フィーキ（生ハムといちじく）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">長期熟成生ハム・薄切り（24か月熟成）の代わりに</p>
-            <h3>クラテッロ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>脂が少なく赤身の香りが濃くなり、より絹のような口溶けになる。</p><p>脂が少なく乾きやすいため、紙から剥がしたら30秒以内に皿へ並べ、盛り付けから2分以内に供する。</p><p>1枚が小さいので1人分60gを8〜10枚に分けて盛る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">長期熟成生ハム・薄切り（24か月熟成）の代わりに</p>
-            <h3>国産長期熟成生ハム（薄切り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>熟成香とナッツ様の甘みがやや控えめになり、塩気が前に出る。</p><p>塩気が強い製品が多いため、1人分を50gに減らし、いちじくを1皿2個のまま供する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">長期熟成生ハム・薄切り（24か月熟成）の代わりに</p>
-            <h3>スペック（燻製生ハム）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>燻香が加わり、いちじくの繊細な蜜の香りを覆う。</p><p>厚さ1.5〜2mmの薄切りを用い、紙から剥がしたら波立たせずに皿へ平らに広げる。</p><p>燻香が強いので黒胡椒は0.2gに減らして振る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">長期熟成生ハム・薄切り（24か月熟成）の代わりに</p>
-            <h3>ブレザオラ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>脂がほぼ無くなり、赤身の酸味と乾いた食感が主体になる。</p><p>脂がなく紙に貼り付きにくいため、1枚ずつ剥がす手順は省き、紙ごと皿の上で滑らせて広げる。</p><p>波立たせると乾いて反るため、皿に平らに敷き、いちじくを上に重ねて果汁を移す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生いちじく（完熟）の代わりに</p>
-            <h3>完熟メロン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>青い芳香と多量の果汁が加わり、同じく古典のプロシュット・エ・メローネの味になる。</p><p>皮と種を除き、幅2cmのくし形6切れに切り分けて盛り付ける（十字の切り込みは行わない）。</p><p>果汁が出るので盛り付け直前に切る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生いちじく（完熟）の代わりに</p>
-            <h3>完熟柿</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>種のプチプチ感がなくなり、粘りのある甘さだけが残る。</p><p>皮を剥き、くし形8等分に切ってから盛り付ける（十字の切り込みは行わない）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生いちじく（完熟）の代わりに</p>
-            <h3>セミドライいちじく</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>みずみずしさが失われ、糖度が凝縮して噛みごたえのある甘さになる。</p><p>40℃のぬるま湯200mlに15分浸して戻し、水気をしっかり拭き取る。</p><p>十字の切り込みは入れず、縦半分に切って断面を上に向けて盛る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">田舎パン（カンパーニュ系）の代わりに</p>
-            <h3>フォカッチャ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>オイルと塩気が増え、生ハムの塩味と重なってやや濃い印象になる。</p><p>フォカッチャ100gを厚さ1.5cmに4枚切って室温で添える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">田舎パン（カンパーニュ系）の代わりに</p>
-            <h3>グリッシーニ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>食感が軽く乾いたものになり、生ハムを巻いて食べる形になる。</p><p>パンをスライスする作業を省き、グリッシーニ6本をそのまま皿に添える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒胡椒（粒）の代わりに</p>
-            <h3>白胡椒（粒）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが穏やかになり、辛味だけが後に残る。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="parma">

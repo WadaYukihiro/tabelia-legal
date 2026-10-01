@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"rigatoni-al-ragu-napoletano","recipe_name":"Rigatoni al Ragù Napoletano","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -416,62 +417,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ナポリ風ラグーのリガトーニは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">リガトーニの代わりに</p>
-            <h3>ジーティ（半分に折る）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ナポリでは最も伝統的な形状。管の中にラグーが入り込み一口ごとの旨みが増す</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">リガトーニの代わりに</p>
-            <h3>パッケリ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>大きな管がラグーの肉の旨みを包み込む豪快な組み合わせ</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛薄切り肉（ブラチョーレ用）の代わりに</p>
-            <h3>豚薄切り肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>旨みは近いが牛特有の深みが出ない</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">豚スペアリブの代わりに</p>
-            <h3>豚バラ肉（骨なし・ブロック）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>骨から出る旨みとゼラチンが減る</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">サルシッチャの代わりに</p>
-            <h3>粗挽き豚ソーセージ（生）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>フェンネルシードの香りが欠ける場合は小さじ1/2追加する</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パッサータ（トマトピューレ）の代わりに</p>
-            <h3>ホールトマト缶 × 3（手でつぶす）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>繊維感が残るが旨みは近い</p><p>缶の中のトマトを手でよくつぶしてから加える</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤ワインの代わりに</p>
-            <h3>白ワイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ソースの深みが薄れ軽い仕上がりになる</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ペコリーノ・ロマーノの代わりに</p>
-            <h3>パルミジャーノ・レッジャーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>やや甘くマイルドな仕上がりになる</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="campania">

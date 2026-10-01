@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"salade-perigourdine","recipe_name":"Salade Périgourdine","recipe_course":"entree","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -437,146 +438,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">サラード・ペリグルディーヌは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バタビアレタスの代わりに</p>
-            <h3>フリルレタスとエンダイブの混合</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>苦味が強まり、ヴィネグレットの酸をより受け止める歯切れのよい食感になる。</p><p>エンダイブは白い内葉のみを使い、外葉の強い苦味を避ける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バタビアレタスの代わりに</p>
-            <h3>サニーレタス</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>葉が柔らかく苦味が乏しいため、全体が穏やかで軽い印象になる。</p><p>葉が薄く傷みやすいので、和えるのは供する直前にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鴨の砂肝のコンフィの代わりに</p>
-            <h3>鴨もも肉のコンフィ（身をほぐす）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>歯ごたえのある砂肝の食感が失われ、ほろりと崩れる脂の甘みが前に出る。</p><p>もも肉は皮目を鴨脂のフライパンで3分焼いてから骨を外し、身を大きめにほぐして温かいまま散らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鴨胸肉の燻製の代わりに</p>
-            <h3>生ハム（ジャンボン・ド・バイヨンヌ風）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>燻香の代わりに熟成した塩気と甘みが立ち、鴨の風味の層が一段減る。</p><p>塩気が強いためヴィネグレットの塩を1gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鴨胸肉の燻製の代わりに</p>
-            <h3>鴨のスモークスライス（市販品）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味と燻香が均一で、脂の厚みと肉の弾力はやや控えめになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鴨のフォワグラ・ミ・キュイの代わりに</p>
-            <h3>鶏レバーのムース</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>レバー特有の鉄分の風味が強く、フォワグラの上品な脂の甘みは出ない。</p><p>ムースは絞り袋でトーストに絞り出し、フルール・ド・セルを振らずに供する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鴨のフォワグラ・ミ・キュイの代わりに</p>
-            <h3>フォワグラのパテ（ブロック・ド・フォワグラ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>肉の粒感がなく口溶けが均一で、脂の甘さが単調になる。</p><p>柔らかいのでスプーンでクネル状に取り、トーストにのせる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">粘質系じゃがいもの代わりに</p>
-            <h3>男爵いも</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ほくほくするが縁が崩れやすく、形の揃った重なりが出にくい。</p><p>崩れを防ぐため輪切りを4mm厚にし、返す回数を2回までに抑える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">粘質系じゃがいもの代わりに</p>
-            <h3>メークイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>煮崩れしにくく、外は香ばしく中はもっちりしたサルラデーズらしい仕上がりになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">卵の代わりに</p>
-            <h3>うずらの卵（6個）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>黄身の量が減りソースとしての濃度が下がるが、一口サイズで軽やかになる。</p><p>沸騰湯で2分20秒茹でて氷水に取り、殻をむいて半割にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">くるみの代わりに</p>
-            <h3>ペカンナッツ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>渋みが弱く甘い香りが立ち、ペリゴールらしい苦味の輪郭がぼやける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">くるみ油の代わりに</p>
-            <h3>くるみ油とひまわり油の半量混合</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>くるみの香りが穏やかになり、後味が軽くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">くるみ油の代わりに</p>
-            <h3>太白ごま油</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>ナッツの香りがほぼなくなり、ヴィネグレットが平板で酸のみ立つ味になる。</p><p>香りを補うため乾煎りしたくるみを10g増やして砕いて加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">くるみ油の代わりに</p>
-            <h3>ヘーゼルナッツ油</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘く丸いナッツ香に変わり、くるみ特有の渋みのある余韻が消える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シェリービネガーの代わりに</p>
-            <h3>赤ワインビネガー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>熟成の甘い香りが減り、酸がまっすぐ鋭く出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シェリービネガーの代わりに</p>
-            <h3>りんご酢</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>果実の甘酸っぱさが前に出て、鴨の脂に対する切れ味が弱まる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ディジョンマスタードの代わりに</p>
-            <h3>粒マスタード</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>乳化がやや弱く、粒の食感と穏やかな辛味が加わる。</p><p>乳化しにくいので泡立て器で60秒しっかり撹拌する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エシャロットの代わりに</p>
-            <h3>赤玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みと辛味が強く、繊細なエシャロットの香りは出ない。</p><p>辛味を抜くため、みじん切りを冷水に5分さらして水気を絞ってから加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パン・ド・カンパーニュの代わりに</p>
-            <h3>ライ麦入り食パン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>目が細かくしっとりするため、フォワグラの脂を受け止める歯切れが鈍る。</p><p>耳を切り落として1cm厚に切り、両面を乾かすように長めに焼く。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パン・ド・カンパーニュの代わりに</p>
-            <h3>バゲット（斜め薄切り4枚）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>軽くパリッとした食感になり、酸味のある田舎パンのコクは弱まる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマトの代わりに</p>
-            <h3>ミニトマト（8個）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味と甘みが凝縮し、果汁が皿に流れにくい。</p><p>半割にして切り口を上にして配置する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フルール・ド・セルの代わりに</p>
-            <h3>粗塩（結晶タイプ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩の当たりが強く、溶けるまでの繊細な甘みが出にくい。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="perigord">

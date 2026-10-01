@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"gnocchi-di-patate-al-pomodoro-e-basilico","recipe_name":"Gnocchi di Patate al Pomodoro e Basilico","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -583,92 +584,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ジャガイモのニョッキ トマトとバジルのソースは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">粉質じゃがいも（男爵・キタアカリなど、貯蔵もの）の代わりに</p>
-            <h3>メークイン（粘質種）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>水分が多く粘りが出るため、もっちりを通り越して重くゴムのような食感になりやすい。</p><p>茹でずに丸ごと蒸して水分吸収を抑える。</p><p>裏漉し後、弱火のフライパンで2〜3分乾煎りして水分を飛ばしてから粉を加える。</p><p>小麦粉を30〜50g増やす前提で、少量ずつ加えて硬さを見る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力粉（イタリア00粉）の代わりに</p>
-            <h3>セモリナ粉（デュラム小麦）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>歯切れが良く固さのある食感になり、ジャガイモの軽さが後退する。</p><p>水分吸収が遅いため、生地をまとめた後10分休ませてから硬さを再判断する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力粉（イタリア00粉）の代わりに</p>
-            <h3>中力粉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>グルテンがやや強く出て歯応えが増し、ふんわり感が少し減る。</p><p>こね時間を短くし、まとまった時点で即座に成形へ移る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">卵の代わりに</p>
-            <h3>卵黄2個分</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>水分が減ってよりホクホクと軽い仕上がりになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">卵の代わりに</p>
-            <h3>卵なし（ヴェローナ古式）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>非常に軽く口溶けが良い反面、茹で崩れしやすく繊細になる。</p><p>卵の水分が入らない分、増粉はほとんど不要。試し茹でで崩れる場合のみ10g足す。</p><p>茹でるときは一度に入れる数を8〜10個までに減らし、湯を弱い沸騰に保つ。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ナツメグの代わりに</p>
-            <h3>ナツメグなし</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ジャガイモの風味がより素直に出るが、北イタリア特有の甘い香りの奥行きが消える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ホールトマト缶の代わりに</p>
-            <h3>完熟生トマト</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味が軽くフレッシュだが、旨味とコクが薄くなり水っぽくなりやすい。</p><p>1kgの生トマトに十字の切れ目を入れ、沸騰湯に20秒くぐらせて氷水にとり湯剥きする。</p><p>種とゼリー質を除いてざく切りにし、水分が多いため煮込み時間を5分延長する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ホールトマト缶の代わりに</p>
-            <h3>パッサータ（トマトピューレ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>均一で滑らかになる一方、果肉の粒感と輪郭のある酸味が失われる。</p><p>潰す作業が不要なため、にんにくの香りを出した後にそのまま注ぐ。</p><p>煮詰まりが早いので加熱時間を15分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ピュアオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>青々とした香りと辛味が消え、ソースの余韻が平板になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>玉ねぎ（みじん切り40g）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>辛味のある香りが甘く穏やかな旨味に変わり、南部風から北部風の丸い味になる。</p><p>オイルで弱火7分、透き通るまで炒めてからトマトを加える。</p><p>取り出さずソースに残す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バジル（生）の代わりに</p>
-            <h3>乾燥バジル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>清涼感のある甘い香りが失われ、乾いた草のような香りだけが残る。</p><p>火を止める直前ではなく、トマトを加えた直後に2gを入れて煮出す。</p><p>仕上げの飾りは省略する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（すりおろし）の代わりに</p>
-            <h3>グラナ・パダーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味と熟成香が穏やかになり、コクの余韻がやや短くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（すりおろし）の代わりに</p>
-            <h3>ペコリーノ・ロマーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>羊乳の強い塩気と酸が前に出て、北部の穏やかな味わいから中南部寄りの鋭い味になる。</p><p>塩気が強いため、ソース用の塩を3gに減らす。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="campania">

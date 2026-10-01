@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"foie-gras-poele-aux-raisins","recipe_name":"Foie Gras Poêlé aux Raisins","recipe_course":"entree","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -452,98 +453,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">フォワグラ・ポワレ・オー・レザン（フォワグラのポワレ 葡萄添え）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鴨のフォワグラ（生・厚切り）の代わりに</p>
-            <h3>ガチョウのフォワグラ（生）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>より繊細で上品な風味になるが脂の溶け出しが早く、コクの押しは弱まる。</p><p>ガチョウのフォワグラも1枚80g、合計160gとする。中心75℃以上で1分以上の加熱基準は変えない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マスカット系白葡萄の代わりに</p>
-            <h3>シャスラ（白葡萄）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>香りが穏やかになり、酸味がやや前に出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マスカット系白葡萄の代わりに</p>
-            <h3>巨峰（種なし）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが強く果肉が厚いため、ソースが甘く重くなり香りのニュアンスが単調になる。</p><p>皮を全量むき、加熱時間を30秒短縮して煮崩れを防ぐ。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ソーテルヌ（貴腐甘口白ワイン）の代わりに</p>
-            <h3>モンバジヤック</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ほぼ同質。蜂蜜香がやや控えめになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ソーテルヌ（貴腐甘口白ワイン）の代わりに</p>
-            <h3>貴腐でない甘口白ワイン＋蜂蜜小さじ1</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>貴腐由来の複雑な蜜香が失われ、単純な甘さになる。</p><p>デグラッセ後に蜂蜜小さじ1を加えて溶かす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏の褐色フォンの代わりに</p>
-            <h3>市販の無塩チキンブイヨン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>骨由来のゼラチン感が乏しく、ソースの粘度と余韻が軽くなる。</p><p>煮詰め時間を2分延長し、仕上げのバターを5g増やしてとろみを補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏の褐色フォンの代わりに</p>
-            <h3>鴨のフォン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>より郷土色が強く、コクが深まる。</p><p>同量の無塩チキンブイヨンへ置き換え、木べらを薄く覆う濃度まで煮詰める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴェルジュ（未熟葡萄の果汁）の代わりに</p>
-            <h3>レモン汁</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>柑橘の香りが加わり、南西部らしい葡萄の一体感が薄れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴェルジュ（未熟葡萄の果汁）の代わりに</p>
-            <h3>白ワインビネガー＋水（1:1）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸が鋭く直線的になり、葡萄由来の丸みが減る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エシャロットの代わりに</p>
-            <h3>玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが強く香りが鈍くなり、ソースの輪郭がぼやける。</p><p>みじん切り量を20gに減らし、炒め時間を1分延長して 水分 を飛ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">アルマニャックの代わりに</p>
-            <h3>コニャック</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>より滑らかで華やかな香りになり、南西部特有の力強い土っぽさが減る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">アルマニャックの代わりに</p>
-            <h3>ブランデー不使用（ソーテルヌを15ml増量）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>蒸留酒の香ばしい余韻が消え、全体が甘く平坦になる。</p><p>アルマニャックを加える工程を省き、ソーテルヌを95mlでデグラッセする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フルール・ド・セルの代わりに</p>
-            <h3>粗塩</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味が尖り、口の中でほどける繊細さが減る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パン・ド・カンパーニュの代わりに</p>
-            <h3>ブリオッシュ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘くバターリッチになり、脂の重さがより強調される。</p><p>焦げやすいためトースト時間を1分短縮する。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="gascogne-armagnac-countryside">

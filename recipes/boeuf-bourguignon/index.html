@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"boeuf-bourguignon","recipe_name":"Bœuf Bourguignon","recipe_course":"plat","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -370,38 +371,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ブフ・ブルギニョンは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛肩バラ肉（ブロック）の代わりに</p>
-            <h3>牛すね肉（ブロック）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>赤身の締まりが強く、コラーゲンがほぐれるまでにやや時間がかかる。長めに煮込めばほろほろにほぐれる</p><p>煮込み時間を30分延長する</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤ワイン（ブルゴーニュ、ピノ・ノワール種）の代わりに</p>
-            <h3>ミディアムボディの赤ワイン（ピノ・ノワール種）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>本場特有の複雑な果実味と土っぽさはやや控えめになるが、酸とタンニンのバランスが近く、マリネ・煮込みとも問題なく機能する</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ラルドン（燻製豚バラの角切り）の代わりに</p>
-            <h3>ブロックベーコン（角切り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>燻製香がやや軽く、脂の甘みも穏やかになるが、コクの土台としての役割は同等</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">小玉ねぎの代わりに</p>
-            <h3>普通の玉ねぎ（4等分のくし切り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>見た目の丸い一体感は失われるが、甘みと食感を添える役割は変わらない</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="bourgogne">

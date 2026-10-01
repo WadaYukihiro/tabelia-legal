@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"risotto-al-nero-di-seppia-alla-veneziana","recipe_name":"Risotto al Nero di Seppia alla Veneziana","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -644,98 +645,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">リゾット・アル・ネロ・ディ・セッピア（イカスミのリゾット ヴェネツィア風）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">甲イカ（墨袋つきの丸ごと）の代わりに</p>
-            <h3>ヤリイカ（墨袋つき）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>身が薄く繊細になり、甲イカ特有のねっとりした甘みとコクが弱まる。</p><p>ヤリイカは加熱で硬化しやすいため、煮込み時間を20分から8分に短縮する。</p><p>丸ごと重量は歩留まりが高いので1200gとし、可食部800gを同じく550g／250gに分ける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">甲イカ（墨袋つきの丸ごと）の代わりに</p>
-            <h3>冷凍イカ胴＋市販イカスミ増量</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>イカ自身の墨と肝の旨みが失われ、塩気主体の平板な味になる。</p><p>墨袋の取り出し工程を省き、冷凍イカ胴800gをそのまま可食部として550g／250gに分ける。</p><p>市販イカスミを8gから20gに増やし、フュメット50mlで溶いて2:1に分ける。</p><p>冷凍イカは冷蔵庫で12時間かけて解凍し、水気を完全に拭き取ってから切る。</p><p>冷凍イカは硬化しやすいため、煮込み時間を20分から10分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">イカスミ（パック入り）の代わりに</p>
-            <h3>甲イカの墨袋のみで代用（追加なし）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>色が漆黒ではなく濃いグレー寄りになるが、風味は最も純粋で角がない。</p><p>墨を溶きのばす工程で市販イカスミを加えず、墨袋の中身のみをフュメット40mlで濾しながら溶き、同じく2:1に分ける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィアローネ・ナノ米の代わりに</p>
-            <h3>日本の短粒米（無洗米以外）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>糊化が進んで粥状になり、粒の輪郭とアルデンテ感が失われる。</p><p>米は絶対に洗わず、炊き時間を16分から12分に短縮する。</p><p>フュメットの注ぎ足し総量を1350mlから1050mlに減らす（最初の150ml＋120ml×7回＋90ml×1回）。</p><p>墨液の残り1/3を加えるタイミングを炊き始め10分から7分に繰り上げる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィアローネ・ナノ米の代わりに</p>
-            <h3>カルナローリ米</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>粒の芯がより強く残り、全体がやや締まった食感になる。</p><p>炊き時間を16分から18分に延ばし、フュメットの注ぎ足しを120ml×12回＋最初の150ml（合計1590ml）に増やす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィアローネ・ナノ米の代わりに</p>
-            <h3>アルボリオ米</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>デンプンが出やすく粘りが強くなり、粒立ちが甘くなる。</p><p>フュメットの追加量を1回あたり120mlから80mlに減らし（最初の150ml＋80ml×15回＝1350ml）、混ぜる回数を1〜2分おきから3分おきに控える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白身魚のアラ（頭と中骨）の代わりに</p>
-            <h3>市販の無添加フィッシュブイヨン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>香りの立体感が減り、塩味が強く単調になる。</p><p>フュメットを仕込み・煮出す工程を省き、規定濃度より20%薄めた液体1800mlを80℃に温めて使う。</p><p>塩の総量を13gから8gに減らし、煮込み2g・炊き途中3g・仕上げ3gに配分する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白身魚のアラ（頭と中骨）の代わりに</p>
-            <h3>海老の頭と殻</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甲殻類の甘く香ばしい風味が前に出て、イカスミの磯の風味がやや隠れる。</p><p>海老の頭と殻800gを、追加のオリーブオイル15ml（リストの70mlとは別に用意）で中火5分炒めてから水2400mlを加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白玉ねぎの代わりに</p>
-            <h3>エシャロット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが上品になり、輪郭がやや繊細で軽い味わいになる。</p><p>焦げやすいため、ソッフリットの加熱を弱めの中火8〜10分から弱火6分に変える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>にんにくパウダー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>生にんにくの立ち上がる香りがなく、こもった乾いた香りになる。</p><p>オイルに香りを移す工程を省き、イカを鍋に加える直前に小さじ1/2を振り入れて10秒炒める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">イタリアンパセリの代わりに</p>
-            <h3>パセリ（縮葉種）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが強く青臭さが増し、繊維質の食感がわずかに残る。</p><p>仕上げ用は繊維が硬いので、葉5gをより細かく刻んでから散らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワイン（ソアーヴェ）の代わりに</p>
-            <h3>フュメット100ml＋レモン汁小さじ1</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>ワイン由来の芳香と厚みが失われ、酸味だけが直線的に残る。</p><p>漉した1800mlのフュメットのうち予備分から100mlを取り、追加のレモン汁小さじ1（5ml）とともに注ぐ。</p><p>アルコールを飛ばす必要がないため、注いだら30秒煮立てて次のフュメット追加に移る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワイン（ソアーヴェ）の代わりに</p>
-            <h3>辛口の日本産白ワイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸の輪郭がやや穏やかになり、余韻が丸くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマトペーストの代わりに</p>
-            <h3>完熟トマトの果肉（種を除き裏漉し）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>凝縮感が減って軽い酸味になり、色味がわずかに赤みを帯びる。</p><p>トマトペーストの代わりに裏漉しトマト40gを加え、炒め時間を1分から3分に延ばして水分を飛ばす。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="veneto">

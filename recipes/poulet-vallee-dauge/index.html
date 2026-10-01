@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"poulet-vallee-dauge","recipe_name":"Poulet Vallée d'Auge","recipe_course":"plat","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -460,110 +461,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">プーレ・ヴァレ・ドージュ（オージュ渓谷風 鶏のシードル煮）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">丸鶏（中抜き）の代わりに</p>
-            <h3>骨付き鶏もも肉（ぶつ切り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>胸肉のさっぱりした対比が失われ、全体が濃厚で均質な味わいになる。</p><p>丸鶏を捌く工程を省き、骨付きもも肉1200gを1切れ80g程度に骨ごとぶつ切りにして塩胡椒する。</p><p>ガラがないため煮込みの鶏のブイヨンを150mlから200mlに増やす。</p><p>胸肉の取り出しタイミング調整は不要で、全片を同時に25分煮込む。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">丸鶏（中抜き）の代わりに</p>
-            <h3>骨付き鶏もも肉と手羽元</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>ゼラチン質が増えてソースはとろみが強くなるが、部位の食べ比べの妙は消える。</p><p>捌く工程を省き、もも肉4本と手羽元8本を塩胡椒して2回に分けて焼き付ける。</p><p>胸肉がないため15分での引き上げは行わず、全片を弱火で合計25分煮込む。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シードル・ブリュット（辛口発泡リンゴ酒）の代わりに</p>
-            <h3>アルコール抜きシードル（ノンアルコール・辛口）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>リンゴの香りと酵母香は残るが甘みがやや強く、ソースの締まりが緩くなる。</p><p>甘みを相殺するため、ステップ6の味の調整でレモン果汁を5mlから8mlに増やす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シードル・ブリュット（辛口発泡リンゴ酒）の代わりに</p>
-            <h3>辛口白ワイン200ml＋果汁100%リンゴジュース100ml</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>シードル特有の渋みと酵母香が抜け、ブドウ由来の酸が直線的に立つ。</p><p>白ワイン200mlを先に注いで2分煮立ててアルコール臭を飛ばしてから、リンゴジュース100mlと鶏のブイヨン150mlを加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">カルヴァドス（リンゴのブランデー）の代わりに</p>
-            <h3>ブランデー（コニャック等）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ブドウ由来の甘い香りになり、リンゴの一体感が弱まる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">カルヴァドス（リンゴのブランデー）の代わりに</p>
-            <h3>アップルブランデー（一般的なリンゴ蒸留酒）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>樽由来の熟成香がやや浅くなるが、リンゴの骨格は保たれる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">クレーム・フレッシュ・エペス（濃厚な発酵生クリーム）の代わりに</p>
-            <h3>生クリーム（乳脂肪45%）160ml＋サワークリーム40g</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>乳酸の酸味がやや尖り、コクの余韻が短くなる。</p><p>サワークリームは単独で加熱すると分離しやすいので、生クリームと先に混ぜ合わせてから鍋に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">クレーム・フレッシュ・エペス（濃厚な発酵生クリーム）の代わりに</p>
-            <h3>生クリーム（乳脂肪35%）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>酸味が消えて甘くのっぺりし、ソースの輪郭がぼやける。</p><p>酸味を補うためステップ6のレモン果汁を5mlから8mlに増やす。</p><p>濃度が出にくいので、クリームを加えた後の煮詰め時間を2分延ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のブイヨンの代わりに</p>
-            <h3>水150ml＋チキンコンソメ顆粒小さじ1/2</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>旨みが平板になり塩味が立ちやすい。</p><p>顆粒の塩分を見込み、鶏の下味の塩を6gから4gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マッシュルーム（ホワイト）の代わりに</p>
-            <h3>しめじ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>歯ざわりが繊維質になり、ノルマンディーらしい丸い香りが出ない。</p><p>石づきを外して小房に分け、水分が少ないため炒め時間を合計3分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マッシュルーム（ホワイト）の代わりに</p>
-            <h3>ブラウンマッシュルーム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>香りが強く、ソースの色がわずかに濃くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">リンゴ（紅玉）の代わりに</p>
-            <h3>ふじ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが勝り、ソースの酸味との対比が弱くなる。</p><p>甘みが強いため、リンゴのソテーの仕上げにレモン果汁を2ml振って締める（その分ソースの締めのレモン果汁を3mlに減らす）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">リンゴ（紅玉）の代わりに</p>
-            <h3>ジョナゴールド</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味がやや穏やかになり、ソテーの甘さが前に出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>エシャロット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>甘みが控えめで香りがより繊細になり、本場の風味に近づく。</p><p>水分が少ないため、炒め時間を3〜4分から2〜3分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">タイム（生）の代わりに</p>
-            <h3>ドライタイム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>青い香りが減り、乾いた薬草香が前に出る。</p><p>小さじ1/3を煮込み液に直接加える（煮汁は漉すので取り出し不要）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">レモン果汁の代わりに</p>
-            <h3>白ワインヴィネガー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>柑橘の香りがなくなり、酸がより鋭く立つ。</p><p>リンゴの変色止めには白ワインヴィネガー5mlを水500mlに溶かして同様に使う。</p><p>酸が強いためソースの締めに使う量を5mlから3mlに減らす。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="normandy-apple-orchard">

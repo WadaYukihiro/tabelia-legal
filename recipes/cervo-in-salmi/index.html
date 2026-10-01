@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"cervo-in-salmi","recipe_name":"Cervo in Salmì","recipe_course":"secondo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -530,122 +531,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">チェルヴォ・イン・サルミ（鹿肉の赤ワイン煮込み）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鹿肩肉の代わりに</p>
-            <h3>牛すね肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>野性味が消え、ゼラチン質の穏やかな赤ワイン煮込みになる。</p><p>マリネ時間を12時間に短縮する。</p><p>ジュニパーベリーを8粒に減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鹿肩肉の代わりに</p>
-            <h3>猪肩肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>脂の甘みが強く出て、鹿特有の鉄分の香りは弱まる。</p><p>脂が多いため煮込み中に浮く脂をこまめに掬い取る。</p><p>煮込み時間を30分延長する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鹿肩肉の代わりに</p>
-            <h3>ラム肩肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>獣香は残るが乳脂的な甘い香りに変わり、ソースがやや重くなる。</p><p>焼き色付けの後、余分な脂を紙で拭き取る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フルボディ赤ワインの代わりに</p>
-            <h3>ミディアムボディの赤ワイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ソースの骨格が細くなり、果実味寄りの軽い仕上がりになる。</p><p>マリナードを煮詰める工程を5分長くして濃度を補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">肉のブロードの代わりに</p>
-            <h3>無塩の牛肉のだし</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ジビエの風味が穏やかになります。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>エシャロット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>刺激が和らぎ、上品な甘い香りに変わる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">燻製パンチェッタの代わりに</p>
-            <h3>ベーコン（塊）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>燻香が強く出て塩味も増すため、全体がやや甘く煙たくなる。</p><p>塩の量を小さじ1/4減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">燻製パンチェッタの代わりに</p>
-            <h3>ラルド（背脂の塩漬け）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>燻香がなくなり、純粋な脂の甘みだけがソースに移る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ジュニパーベリーの代わりに</p>
-            <h3>ジン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>針葉樹の香りは似るが、粒由来の樹脂的な苦みが出ず輪郭がぼやける。</p><p>ジン20mlをマリナードに加え、煮込み開始時にアルコールを煮立てて飛ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローズマリーの代わりに</p>
-            <h3>ドライローズマリー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが乾いた印象になり、青い清涼感が弱まる。</p><p>小さじ1/2を茶漉し袋に入れて煮込み、仕上げ前に取り出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シナモンスティックの代わりに</p>
-            <h3>シナモンパウダー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが強く前に出て、ソースがわずかに濁る。</p><p>小さじ1/8を煮込み開始時に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ラード（strutto）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>山岳部の古式に近く、コクが増して香りが丸くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラッパの代わりに</p>
-            <h3>ブランデー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>樽由来の甘い香りが加わり、ソースがやや丸くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラッパの代わりに</p>
-            <h3>省略（赤ワインを30ml追加）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>蒸留酒の抜けの良い香りが失われ、輪郭がやや鈍る。</p><p>デグラッセは赤ワインで行い、アルコール臭が消えるまで1分煮立てる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマトペーストの代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>色が淡くなり、酸味と旨みの下支えが減る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">カカオ70%ダークチョコレートの代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ワインの渋みと酸が残り、より野性的で鋭い味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">カカオ70%ダークチョコレートの代わりに</p>
-            <h3>無糖カカオパウダー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>苦みが直線的に出て、ソースのつやと丸みがやや減る。</p><p>小さじ1をブロード大さじ1で溶いてから加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">粗挽きとうもろこし粉（ブラマータ）の代わりに</p>
-            <h3>インスタントポレンタ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>とうもろこしの粒立ちと香りが弱く、なめらかだが平板な口当たりになる。</p><p>インスタントポレンタ150gへ置き換え、必要な水量・加熱時間は製品の表示に合わせる。</p><p>ソース仕上げの開始と同時に炊き、肉の盛り付け直前に完成させる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="dolomiti">

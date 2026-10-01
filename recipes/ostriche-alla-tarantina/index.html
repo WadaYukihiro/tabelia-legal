@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"ostriche-alla-tarantina","recipe_name":"Ostriche alla Tarantina","recipe_course":"antipasto","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -371,50 +372,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">オストリケ・アッラ・タランティーナ（タラント風牡蠣のグラタン）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生牡蠣（殻付き・生食用）の代わりに</p>
-            <h3>殻付きホタテ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>塩気が弱まり甘みの強い上品な仕上がりになる。</p><p>殻付きホタテ6個は殻を開いて貝柱とヒモを外し、黒い内臓（ウロ）とエラを取り除いてから水気を拭き、深い側の殻6枚に貝柱とヒモを戻す（シャッキングは行わない）。</p><p>パン粉の混合物は1個あたり約16gずつ（6個で約96g）のせ、オリーブオイルは1個あたり2.5mlを回しかける。</p><p>焼成は240℃で7〜8分にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生牡蠣（殻付き・生食用）の代わりに</p>
-            <h3>殻付きムール貝</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>牡蠣の濃厚なミネラル感が消え、より軽く甘い貝の風味になる。</p><p>ムール貝24個は殻をこすり洗いして足糸を引き抜き、鍋に入れて蓋をし強火で3〜4分、口が開くまで蒸し煮にする（シャッキングは行わない）。</p><p>片側の殻を外し、身の付いた側の殻24枚を粗塩の上に並べる。</p><p>パン粉の混合物は1枚あたり約4gずつ（24枚で約96g）のせ、オリーブオイルは1枚あたり0.6mlを回しかける。</p><p>焼成は240℃で4〜5分にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>乾燥ガーリックパウダー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>生のにんにくの立ち上がる香りが消え、こもった甘い香りになる。</p><p>ガーリックパウダー小さじ1/2（1.5g）をパン粉に直接混ぜ込み、オリーブオイルは27mlに増やして湿り具合を合わせる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">イタリアンパセリの代わりに</p>
-            <h3>パセリ（縮み葉）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りがやや強く青臭さが出るが、全体の印象は近い。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ペコリーノチーズ（すりおろし）の代わりに</p>
-            <h3>なし（チーズを省く）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>牡蠣の海のミネラル感がより前面に出て、味の輪郭が澄む。</p><p>パン粉に塩（細粒）を0.5g追加し、合計1.5gにして塩気を補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ペコリーノチーズ（すりおろし）の代わりに</p>
-            <h3>パルミジャーノ・レッジャーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>羊乳特有の鋭い塩気が和らぎ、ナッツ様の甘い旨みになる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="taranto">
