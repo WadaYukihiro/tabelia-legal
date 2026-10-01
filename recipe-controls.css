@@ -12,7 +12,7 @@
 .language-trigger::marker { content: ""; }
 .language-trigger:hover, .language-switcher[open] > .language-trigger { background: #f6ece5; }
 .language-trigger:active { opacity: 0.7; }
-.language-flag { font-size: 1.2rem; line-height: 1; }
+.language-flag { display: block; flex: 0 0 24px; width: 24px; height: 16px; overflow: hidden; border-radius: 2px; outline: 1px solid rgba(37, 32, 24, 0.14); outline-offset: -1px; }
 .language-options { position: absolute; top: calc(100% + 0.5rem); right: 0; box-sizing: border-box; width: 208px; max-width: calc(100vw - 2rem); max-height: min(360px, 60vh); overflow-y: auto; overscroll-behavior: contain; padding: 0.4rem; border: 1px solid #ddd4c8; border-radius: 12px; background: #fff; box-shadow: 0 8px 28px rgba(37, 32, 24, 0.14); }
 .language-switcher[open] > .language-options { animation: language-options-in 150ms ease-out; }
 @keyframes language-options-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
