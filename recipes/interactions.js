@@ -1,3 +1,192 @@
+(function(){
+var modules={"./formatQty": function(module, exports, require) {
+"use strict";
+// Unit-aware quantity formatter.
+//
+// Rounding policy (also documented in CLAUDE.md):
+//   Count units  (枝/個/枚/本/片 …)  → integer, min 1
+//   Spoon units  (大さじ/小さじ)      → 0.5 step
+//   Cup          (カップ)             → 0.25 step
+//   g / ml       ≥100                 → 5 step
+//   g / ml        10–99               → 1 step
+//   g / ml        <10                 → 0.5 step
+//   Everything else                   → 1 decimal
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.COUNT_UNITS = void 0;
+exports.fmtQty = fmtQty;
+exports.fmtQtyWithUnit = fmtQtyWithUnit;
+exports.COUNT_UNITS = [
+    '枝', '個', '枚', '本', '片', '束', '株', '房', '粒',
+    '缶', 'パック', '袋', 'セット', '尾', '切れ', '羽', '頭', '茎',
+    'ひとつまみ', 'ひとにぎり', '適量',
+];
+const COUNT_UNIT_SET = new Set(exports.COUNT_UNITS);
+function step(n, s) {
+    return Math.round(n / s) * s;
+}
+function fmt(n) {
+    if (Number.isInteger(n))
+        return String(n);
+    // Show at most 1 decimal; strip trailing zero
+    const r = Math.round(n * 10) / 10;
+    return Number.isInteger(r) ? String(r) : String(r);
+}
+function fmtQty(n, unit) {
+    if (n <= 0)
+        return '少量';
+    if (COUNT_UNIT_SET.has(unit)) {
+        return String(Math.max(1, Math.round(n)));
+    }
+    if (unit === '大さじ' || unit === '小さじ') {
+        const r = step(n, 0.5);
+        return r <= 0 ? '少量' : fmt(r);
+    }
+    if (unit === 'カップ') {
+        const r = step(n, 0.25);
+        return r <= 0 ? '少量' : fmt(r);
+    }
+    if (unit === 'g' || unit === 'ml') {
+        if (n >= 100)
+            return String(step(n, 5));
+        if (n >= 10)
+            return String(Math.round(n));
+        const r = step(n, 0.5);
+        return r <= 0 ? '少量' : fmt(r);
+    }
+    // Fallback: 1 decimal
+    return fmt(n);
+}
+function fmtQtyWithUnit(n, unit) {
+    if (unit === '適量')
+        return '適量';
+    const qty = fmtQty(n, unit);
+    if (!unit)
+        return qty;
+    if (unit === '大さじ' || unit === '小さじ') {
+        return `${unit}${qty}`;
+    }
+    return `${qty}${unit}`;
+}
+
+},
+"./scaleRecipe": function(module, exports, require) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ingredientScaleFactor = ingredientScaleFactor;
+exports.scaleQty = scaleQty;
+exports.scaleInstructionText = scaleInstructionText;
+exports.scaleIngredientNotes = scaleIngredientNotes;
+const formatQty_1 = require("./formatQty");
+const QUANTITY_PATTERN = String.raw `\d+(?:\.\d+)?(?:\/\d+(?:\.\d+)?)?`;
+const COUNT_UNIT_PATTERN = formatQty_1.COUNT_UNITS
+    .map((unit) => unit.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .sort((a, b) => b.length - a.length)
+    .join('|');
+const QUANTITY_RE = new RegExp(`(大さじ|小さじ|カップ)(${QUANTITY_PATTERN})|(${QUANTITY_PATTERN})(kg|g|ml|mL|L|リットル|cc|${COUNT_UNIT_PATTERN})`, 'g');
+function ingredientName(value) {
+    return value.replace(/（[^）]*）|\([^)]*\)/g, '').replace(/[ァ-ヶ]/g, (character) => String.fromCharCode(character.charCodeAt(0) - 0x60)).trim();
+}
+// Match only a named ingredient immediately before the amount. Ambiguous names
+// and unlabelled amounts retain the legacy proportional fallback.
+function namedIngredient(prefix, ingredients) {
+    var _a;
+    const label = (_a = ingredientName(prefix).split(/[。\n、，,・]/).pop()) !== null && _a !== void 0 ? _a : '';
+    const matches = ingredients.filter((item) => {
+        const name = ingredientName(item.nameJa);
+        return name && ['', 'を', 'の', 'は', '計', 'の残り'].some((particle) => label.endsWith(name + particle));
+    });
+    return matches.length === 1 ? matches[0] : undefined;
+}
+function comparableUnit(unit) {
+    if (['ml', 'mL', 'L', 'リットル', 'cc'].includes(unit))
+        return 'volume';
+    if (['g', 'kg'].includes(unit))
+        return 'mass';
+    return unit;
+}
+function ingredientScaleFactor(ingredient, baseServings, targetServings) {
+    var _a, _b, _c;
+    const base = (_a = ingredient.baseQuantity) !== null && _a !== void 0 ? _a : ingredient.quantity;
+    return base > 0 ? scaleQty(base, baseServings, targetServings, (_b = ingredient.role) !== null && _b !== void 0 ? _b : 'essential', ingredient.unit, (_c = ingredient.scalingBehavior) !== null && _c !== void 0 ? _c : undefined) / base : targetServings / baseServings;
+}
+function parseQuantityToken(token) {
+    if (!token.includes('/'))
+        return parseFloat(token);
+    const [numerator, denominator] = token.split('/').map(Number);
+    if (!Number.isFinite(numerator) || !Number.isFinite(denominator) || denominator === 0) {
+        return parseFloat(token);
+    }
+    return numerator / denominator;
+}
+// Scale a single ingredient quantity.
+//
+// When scalingBehavior is set explicitly it takes full precedence:
+//   fixed     → quantity never changes regardless of servings
+//   sublinear → ×ratio^0.75 (same as the flavor heuristic)
+//   linear    → proportional
+//
+// When scalingBehavior is omitted the legacy heuristic applies:
+//   ml ≥ 40 (cooking liquid) → linear regardless of role
+//   role 'flavor'            → sublinear (×ratio^0.75)
+//   everything else          → linear
+function scaleQty(base, baseServings, target, role, unit, scalingBehavior) {
+    const ratio = target / baseServings;
+    if (scalingBehavior === 'fixed')
+        return base;
+    if (scalingBehavior === 'sublinear')
+        return base * Math.pow(ratio, 0.75);
+    if (scalingBehavior === 'linear')
+        return base * ratio;
+    // Legacy heuristic fallback
+    if (unit === 'ml' && base >= 40)
+        return base * ratio;
+    if (role === 'flavor')
+        return base * Math.pow(ratio, 0.75);
+    return base * ratio;
+}
+// Scale quantity values embedded in step instruction text.
+// Scales: weight/volume (g, kg, ml, L, cc), Japanese spoon/cup (大さじ, 小さじ, カップ),
+//         and count units (個, 枚, 本, 片, 束, 株, 房, 粒, 缶, パック, 袋, セット, 尾, 切れ, 羽, 頭, 枝, 茎).
+// Does NOT scale: time (分/時間), temperature (度/℃), size (cm/mm).
+function scaleInstructionText(instruction, baseServings, targetServings, ingredients = []) {
+    if (baseServings === targetServings)
+        return instruction;
+    const ratio = targetServings / baseServings;
+    return instruction.replace(QUANTITY_RE, (match, spoon, spoonNumber, number, suffix, offset) => {
+        const unit = spoon || suffix;
+        const amount = parseQuantityToken(spoonNumber || number);
+        const ingredient = namedIngredient(instruction.slice(0, offset), ingredients);
+        const factor = ingredient ? ingredientScaleFactor(ingredient, baseServings, targetServings) : ratio;
+        const normalizedUnit = unit === 'mL' ? 'ml' : unit;
+        return spoon ? `${unit}${(0, formatQty_1.fmtQty)(amount * factor, unit)}` : `${(0, formatQty_1.fmtQty)(amount * factor, normalizedUnit)}${normalizedUnit}`;
+    });
+}
+/** Only scale an explicit partition of the listed amount; preserve ratios and piece sizes. */
+function scaleIngredientNotes(text, ingredient, baseServings, targetServings) {
+    var _a;
+    if (baseServings === targetServings)
+        return text;
+    const quantities = [...text.matchAll(QUANTITY_RE)];
+    if (quantities.length < 2 || quantities.some((m) => comparableUnit(m[1] || m[4]) !== comparableUnit(ingredient.unit)))
+        return text;
+    const unitMultiplier = (unit) => ['kg', 'L', 'リットル'].includes(unit) ? 1000 : 1;
+    const total = quantities.reduce((sum, m) => sum + parseQuantityToken(m[2] || m[3]) * unitMultiplier(m[1] || m[4]), 0);
+    if (Math.abs(total - ((_a = ingredient.baseQuantity) !== null && _a !== void 0 ? _a : ingredient.quantity) * unitMultiplier(ingredient.unit)) > 0.001)
+        return text;
+    const factor = ingredientScaleFactor(ingredient, baseServings, targetServings);
+    return text.replace(QUANTITY_RE, (match, spoon, spoonNumber, number, suffix) => {
+        const unit = spoon || suffix;
+        if (comparableUnit(unit) !== comparableUnit(ingredient.unit))
+            return match;
+        const value = (0, formatQty_1.fmtQty)(parseQuantityToken(spoonNumber || number) * factor, unit === 'mL' ? 'ml' : unit);
+        return spoon ? `${unit}${value}` : `${value}${unit}`;
+    });
+}
+
+}}, cache={};
+function require(id){if(!cache[id]){var m=cache[id]={exports:{}};modules[id](m,m.exports,require);}return cache[id].exports;}
+window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./scaleRecipe'));
+})();
 (function () {
   'use strict';
 
@@ -27,7 +216,9 @@
   var dialog = document.getElementById('substitution-dialog');
   var activeIngredientId = null;
   var lockedScrollY = 0;
-  var countUnits = new Set(['枝','個','枚','本','片','束','株','房','粒','缶','パック','袋','セット','尾','切れ','羽','頭','茎','ひとつまみ','ひとにぎり','適量']);
+  var scaling = window.TabeliaRecipeScaling;
+  var fmtQtyWithUnit = scaling.fmtQtyWithUnit;
+  var currentIngredients = [];
 
   function esc(value) {
     return String(value == null ? '' : value)
@@ -35,33 +226,6 @@
       .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   }
 
-  function roundStep(value, step) { return Math.round(value / step) * step; }
-  function compactNumber(value) {
-    var rounded = Math.round(value * 10) / 10;
-    return Number.isInteger(rounded) ? String(rounded) : String(rounded);
-  }
-  function fmtQty(value, unit) {
-    if (value <= 0) return '少量';
-    if (countUnits.has(unit)) return String(Math.max(1, Math.round(value)));
-    if (unit === '大さじ' || unit === '小さじ') {
-      var spoon = roundStep(value, 0.5); return spoon <= 0 ? '少量' : compactNumber(spoon);
-    }
-    if (unit === 'カップ') {
-      var cup = roundStep(value, 0.25); return cup <= 0 ? '少量' : compactNumber(cup);
-    }
-    if (unit === 'g' || unit === 'ml') {
-      if (value >= 100) return String(roundStep(value, 5));
-      if (value >= 10) return String(Math.round(value));
-      var small = roundStep(value, 0.5); return small <= 0 ? '少量' : compactNumber(small);
-    }
-    return compactNumber(value);
-  }
-  function fmtQtyWithUnit(value, unit) {
-    if (unit === '適量') return '適量';
-    var quantity = fmtQty(value, unit);
-    if (!unit) return quantity;
-    return unit === '大さじ' || unit === '小さじ' ? unit + quantity : quantity + unit;
-  }
   function fmtMinutes(minutes) {
     var hours = Math.floor(minutes / 60), rest = minutes % 60;
     if (hours && rest) return hours + '時間' + rest + '分';
@@ -69,35 +233,10 @@
     return minutes + '分';
   }
   function scaleQty(base, role, unit, behavior) {
-    var ratio = state.servings / data.recipe.baseServings;
-    if (behavior === 'fixed') return base;
-    if (behavior === 'sublinear') return base * Math.pow(ratio, 0.75);
-    if (behavior === 'linear') return base * ratio;
-    if (unit === 'ml' && base >= 40) return base * ratio;
-    if (role === 'flavor') return base * Math.pow(ratio, 0.75);
-    return base * ratio;
-  }
-
-  function parseToken(token) {
-    if (token.indexOf('/') < 0) return parseFloat(token);
-    var parts = token.split('/').map(Number);
-    return parts[1] ? parts[0] / parts[1] : parseFloat(token);
+    return scaling.scaleQty(base, data.recipe.baseServings, state.servings, role, unit, behavior);
   }
   function scaleInstruction(text) {
-    if (!text || state.servings === data.recipe.baseServings) return text || '';
-    var ratio = state.servings / data.recipe.baseServings;
-    var quantity = '\\d+(?:\\.\\d+)?(?:/\\d+(?:\\.\\d+)?)?';
-    var result = text.replace(new RegExp('(' + quantity + ')(g|kg|ml|mL|L|リットル|cc)', 'g'), function (_, n, unit) {
-      var normalized = unit === 'mL' ? 'ml' : unit;
-      return fmtQty(parseToken(n) * ratio, normalized) + normalized;
-    });
-    result = result.replace(new RegExp('(大さじ|小さじ|カップ)(' + quantity + ')', 'g'), function (_, unit, n) {
-      return unit + fmtQty(parseToken(n) * ratio, unit);
-    });
-    var units = Array.from(countUnits).sort(function (a, b) { return b.length - a.length; }).join('|');
-    return result.replace(new RegExp('(' + quantity + ')(' + units + ')', 'g'), function (_, n, unit) {
-      return fmtQty(parseToken(n) * ratio, unit) + unit;
-    });
+    return scaling.scaleInstructionText(text || '', data.recipe.baseServings, state.servings, currentIngredients);
   }
 
   function selectedOptions() {
@@ -287,7 +426,7 @@
       var hasOptions = standard && standard.substitutionOptions.length;
       return '<li data-ingredient-row="' + esc(item.standardIngredientId) + '" class="' + (item.isSubstituted ? 'is-substituted' : '') + '">' +
         '<span class="ingredient-name" data-ingredient-name>' + esc(item.nameJa) + '</span><span class="ingredient-qty" data-ingredient-qty>' + esc(fmtQtyWithUnit(item.quantity, item.unit)) + '</span>' +
-        (item.notes ? '<span class="ingredient-notes">' + esc(item.notes) + '</span>' : '') +
+        (item.notes ? '<span class="ingredient-notes">' + esc(scaling.scaleIngredientNotes(item.notes, item, data.recipe.baseServings, state.servings)) + '</span>' : '') +
         buyLinksHtml(item.nameJa, item.buy) +
         (hasOptions ? '<button type="button" class="substitution-trigger" data-substitution-trigger="' + esc(item.standardIngredientId) + '"><span>' + (item.isSubstituted ? '代替：' + esc(item.nameJa) : '代替食材を選ぶ') + '</span><span aria-hidden="true">›</span></button>' : '') + '</li>';
     }).join('');
@@ -313,7 +452,8 @@
   }
   function render() {
     var options = selectedOptions();
-    renderIngredients(adaptedIngredients(options)); renderSteps(adaptedSteps(options), options.length > 0); renderScore(options);
+    currentIngredients = adaptedIngredients(options);
+    renderIngredients(currentIngredients); renderSteps(adaptedSteps(options), options.length > 0); renderScore(options);
     ['ingredient-servings-label','servings-output'].forEach(function (id) { var el=document.getElementById(id); if(el)el.textContent=String(state.servings); });
     var meta=document.getElementById('recipe-meta-servings'); if(meta)meta.textContent=state.servings+'人分';
     var minus=document.getElementById('servings-minus'), plus=document.getElementById('servings-plus'); if(minus)minus.disabled=state.servings<=data.recipe.minServings;if(plus)plus.disabled=state.servings>=data.recipe.maxServings;

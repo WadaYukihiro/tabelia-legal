@@ -66,6 +66,21 @@
   <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/learn/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/learn/pasta-basics/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/learn/pasta-basics/01-flour-and-eggs/</loc><lastmod>2026-10-01</lastmod></url>
@@ -89,6 +104,11 @@
   <url><loc>https://tabelia.app/en/recipes/course/plat/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/dessert/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/entrante/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primer-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/segundo-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/guarnicion/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/postre/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-10-01</lastmod></url>
@@ -98,6 +118,24 @@
   <url><loc>https://tabelia.app/it/ricette/portata/plat/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/accompagnement/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/dessert/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/entrante/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primer-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/segundo-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/guarnicion/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/postre/</loc><lastmod>2026-10-01</lastmod></url>
+  <url>
+    <loc>https://tabelia.app/recipes/croquetas-de-jamon/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/croquetas-de-jamon/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0063b837-debb-5263-9d28-45a2e1907e13_1790832711272.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ハモンのクロケタス（Croquetas de jamón）</image:title>
+      <image:caption>ハモンの旨みを含む濃いベシャメルを、薄い衣で包む小さなコロッケです。冷却を十分に取り、口の中でほどける中身と香ばしい衣の対比を作ります。</image:caption>
+    </image:image>
+  </url>
   <url>
     <loc>https://tabelia.app/recipes/tortelli-di-zucca-alla-mantovana/</loc>
     <lastmod>2026-08-15</lastmod>
@@ -267,6 +305,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/070ed9bc-9ac3-4093-a870-0494640ce6ff_1790690339818.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ラパン・シャスール（うさぎの狩人風煮込み）（Lapin Chasseur）</image:title>
       <image:caption>うさぎを焼き付け、マッシュルームと白ワイン、トマトで煮込むシャスール仕立てです。肉の焼き色を鍋底からソースへ移し、きのこの水分を別に飛ばして香りを重ねます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/ajoblanco/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/ajoblanco/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/07c077ec-c215-5a35-9ad0-e827ad835524_1790832684130.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アホブランコ（Ajoblanco）</image:title>
+      <image:caption>アーモンドとパン、にんにくを油で乳化させるアンダルシアの白い冷製スープです。滑らかな舌触りに、ぶどうの甘さを添えます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -569,6 +620,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/bacalao-al-pil-pil/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bacalao-al-pil-pil/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/15f8f15e-6596-5c7c-b85d-33feac6d0f27_1790832702467.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>バカラオ・アル・ピルピル（Bacalao al pil-pil）</image:title>
+      <image:caption>塩漬けタラの皮から出るゼラチンとオリーブオイルを、鍋を揺すってつなぎます。粉やクリームを使わず、魚自身の力で滑らかなソースを作るバスク料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/totani-in-umido-con-piselli/</loc>
     <lastmod>2026-05-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/totani-in-umido-con-piselli/"/>
@@ -592,6 +656,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/1680ce84-a7c5-4d34-821c-8693dae91041_1790663744610.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ヤリイカの詰め物オーブン焼き（Totani Ripieni al Forno）</image:title>
       <image:caption>ヤリイカの胴にパン粉・足・ケッパー・パセリを詰め、白ワインをかけてオーブンで焼く南イタリアの家庭料理。詰め物が膨らむのでイカの7割まで詰めるのが鉄則。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/tortilla-de-patatas/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tortilla-de-patatas/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/178ac936-5f5a-5b9e-9725-28e3cbc2995f_1790832783752.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>トルティージャ・デ・パタタス（Tortilla de patatas）</image:title>
+      <image:caption>じゃがいもを油でじっくり柔らかくし、卵で厚くまとめるスペインの定番です。玉ねぎ入りの型を採用し、卵が流れないしっとりした火入れに仕上げます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1223,6 +1300,45 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/arroz-negro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-negro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/30106500-ac12-5410-ade4-48fd7afeeb0b_1790832699056.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アロス・ネグロ（Arroz negro）</image:title>
+      <image:caption>コウイカと魚のだしを米に吸わせ、イカ墨で深い黒色に仕上げます。だし取りから始め、海の香りと粒の立った食感を揃える米料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/papas-arrugadas-con-mojo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/papas-arrugadas-con-mojo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/317277b9-8e0b-5dea-9a9c-d26da715c6ea_1790832753721.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パパス・アルガダスとモホ（Papas arrugadas con mojo）</image:title>
+      <image:caption>小粒のじゃがいもを濃い塩水でゆで、皮を乾かして薄い塩の膜を作ります。にんにくと唐辛子をすり合わせた赤いモホを添える、カナリア諸島の一皿です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/rabo-de-toro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/rabo-de-toro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/31c47fa6-e270-5825-8d6d-0e74cfcf2f9b_1790832770848.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>牛テールの赤ワイン煮込み（Rabo de toro）</image:title>
+      <image:caption>牛テールを赤ワインと野菜で煮込み、骨の周りのゼラチン質を柔らかくほどきます。煮汁の脂を整理し、滑らかなソースにまとめる主菜です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/kougelhopf-alsacien/</loc>
     <lastmod>2026-08-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/kougelhopf-alsacien/"/>
@@ -1272,6 +1388,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/330e51f8-fc29-4f8a-af8e-65300cf696c2_1790663519579.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>玉ねぎのフリッタータ（Frittata di Cipolle）</image:title>
       <image:caption>玉ねぎをゆっくり炒めて甘みを引き出し、卵と合わせてオーブンで焼くイタリア式卵料理。フランスのオムレツとは異なり、平らに焼いて切り分けて供する。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/fabada-asturiana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fabada-asturiana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/33784d74-658e-5c20-b2c4-fd12b561b10d_1790832717949.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ファバーダ・アストゥリアーナ（Fabada asturiana）</image:title>
+      <image:caption>大粒の白いんげん豆を、塩漬け豚肉と二種類のソーセージで煮込みます。豆の皮を保ちながら芯まで柔らかくし、煮汁に肉の旨みを重ねます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1353,6 +1482,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/conejo-en-salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/conejo-en-salmorejo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/3758c727-b86b-583b-946b-7772ec074e81_1790832705382.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>うさぎのサルモレホ煮（Conejo en salmorejo）</image:title>
+      <image:caption>にんにくとパプリカ、ハーブの漬け汁でうさぎを休ませてから煮込みます。レバーをすりつぶしてソースをまとめる、カナリア諸島の型です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pipi-e-patati/</loc>
     <lastmod>2026-07-26</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pipi-e-patati/"/>
@@ -1376,6 +1518,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/386c9e4f-eb5b-4488-bf67-618ec521caf7_1790663561314.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>カステッルッチョのレンズ豆（Lenticchie di Castelluccio）</image:title>
       <image:caption>ウンブリア産カステッルッチョのレンズ豆をソフリットと煮込む伝統料理。小粒で皮が薄いため浸水不要で30分で完成する。年越しや新年に「お金が増える」縁起物としても愛される。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/merluza-en-salsa-verde/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/merluza-en-salsa-verde/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/39a3fcd6-beac-5a28-b392-b7f5b7434bdb_1790832747101.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>メルルーサのサルサ・ベルデ（Merluza en salsa verde）</image:title>
+      <image:caption>白身魚とあさりを、にんにくとパセリのソースで静かに火入れします。白アスパラガスを添えるバスクの型で、魚の繊細な身を崩さず仕上げます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1807,6 +1962,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4da66c53-c696-4795-b335-7d668eefad04_1790654557310.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>タルト・タタン（Tarte Tatin）</image:title>
       <image:caption>型の底でりんごをカラメルとともに煮て、パート・ブリゼを被せて焼き上げ、熱いうちにひっくり返す「逆さま」のタルト。ソローニュ地方の姉妹が営んだホテルの名物として知られるようになった菓子である。カラメルのほろ苦さとりんごの酸味が一体になるため、紅玉など酸味の強い品種が最もよく合う。生地を自家製にすることで、カラメルを吸った縁の食感まで本格になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/espinacas-con-garbanzos/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/espinacas-con-garbanzos/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4e4dd666-460a-5d72-b88f-d0d3f4920b28_1790832714573.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ほうれん草とひよこ豆の煮込み（Espinacas con garbanzos）</image:title>
+      <image:caption>ほうれん草とひよこ豆を、揚げ焼きしたパンとにんにくのペーストでまとめます。パプリカとクミンの香りが野菜に重なる、セビリアの定番です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2306,6 +2474,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/arroz-al-horno/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-al-horno/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/63e0c68a-474d-5c43-9f6c-1434931e9956_1790832691786.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アロス・アル・オルノ（Arroz al horno）</image:title>
+      <image:caption>豚肉とひよこ豆の旨みを米に吸わせ、じゃがいもとトマト、丸ごとのにんにくとともに焼き上げます。バレンシアの内陸に根付く、オーブンの米料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/gateau-basque/</loc>
     <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gateau-basque/"/>
@@ -2433,6 +2614,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/69436db3-be6c-45dc-ba31-c0b2fc565018_1790663542443.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>リコッタとほうれん草のニューディ バターとセージ（Gnudi di Ricotta e Spinaci al Burro e Salvia）</image:title>
       <image:caption>詰め物だけを裸（gnudo）のまま茹でる、トスカーナのラビオリの「中身」だけの一皿。小麦粉は生地に一切入れず、水切りしたリコッタと固く絞ったほうれん草を卵黄とパルミジャーノだけで繋ぐシエナ流の配合で、口に入れた瞬間に崩れるほど軽く仕上がる。茹で崩れを防ぐのは粉ではなく、たっぷりのセモリナに埋めて12時間乾かし表面に薄い皮を作る工程。リコッタの水切り12時間と成形後の乾燥12時間で正味2日（2晩）がかりの段取りになるため、初日の夜に水切り、2日目の朝に成形、3日目の朝以降に茹でる、あるいは初日朝に水切りを始めて夜に成形し翌夜に食べる計画で臨む。仕上げは焦がしすぎない泡立ちバターとセージだけで受け止める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/fideua/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fideua/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6a044cc1-1877-5623-9652-cb2c19dbd8e4_1790832720912.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フィデウア（Fideuà）</image:title>
+      <image:caption>ガンディアの海辺に根付く、短い麺と魚介の料理です。魚のあらから取っただしを吸わせ、麺とアンコウ、殻付きエビを一つの浅い鍋にまとめます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2683,6 +2877,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/salmorejo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/74693f7f-3c7b-5507-86d0-1f150ac27307_1790832774119.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>サルモレホ（Salmorejo）</image:title>
+      <image:caption>トマトとパンをオリーブオイルで乳化する、コルドバの濃厚な冷製料理です。きゅうりやピーマンを加えず、ゆで卵とハモンで仕上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/anelletti-al-forno/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/anelletti-al-forno/"/>
@@ -2862,6 +3069,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7d006bc6-2a28-4eef-b259-bc3727c3c226_1790690332723.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ノワゼット・ド・シュヴルイユ、ソース・グラン・ヴヌール（Noisettes de Chevreuil Sauce Grand Veneur）</image:title>
       <image:caption>鹿のロースを厚めに切って焼き、赤ワイン、ヴィネガー、赤すぐりのジュレで調えたソースを添えます。ソースの酸味と果実味を煮詰めて整え、肉は中心まで十分に加熱する家庭向けの基準です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/flan-de-huevo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/flan-de-huevo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7de4e7b7-4904-50f3-828e-59850d0b4d97_1790832723988.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フラン・デ・ウエボ（Flan de huevo）</image:title>
+      <image:caption>卵と牛乳の生地をカラメルの型に入れ、湯煎で静かに焼きます。気泡を増やさず、薄いカラメルが流れる滑らかなフランに仕上げます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3426,6 +3646,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/arroz-con-leche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-con-leche/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/98e13938-d35d-5b48-b449-c382c63b4860_1790832695789.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アロス・コン・レチェ（Arroz con leche）</image:title>
+      <image:caption>牛乳を少しずつ煮詰めながら米を柔らかくし、バターで厚みを加えるアストゥリアスの型です。シナモンとレモンの香りを移し、冷たいデザートにします。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/mont-blanc/</loc>
     <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/mont-blanc/"/>
@@ -3475,6 +3708,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9ca79a0c-5bd3-4d36-bdb8-e309d15a2695_1790663720735.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>牛肉とじゃがいものスペッツァティーノ（Spezzatino di Manzo con Patate）</image:title>
       <image:caption>イタリア家庭の週末の定番。「スペッツァティーノ」は細かく切った肉の意。白ワインとトマトで2時間煮込み、後からじゃがいもを加えてとろりと仕上げる。難しい技術は要らないが、時間が旨みを作る。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/suquet-de-peix/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/suquet-de-peix/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9cdd0f08-60bc-5a30-803f-36af8f60cd25_1790832777087.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>スケット・ダ・ペイシュ（Suquet de peix）</image:title>
+      <image:caption>魚とじゃがいもを煮込み、パンとアーモンドのピカーダで味と濃度をまとめます。カタルーニャ沿岸の魚料理を、だし取りから組み立てます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3792,6 +4038,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/paella-valenciana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/paella-valenciana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ac35c08c-66ac-565f-8f4d-fd4471d69f09_1790832750425.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パエリア・バレンシアーナ（Paella valenciana）</image:title>
+      <image:caption>鶏とうさぎ、平さやいんげんと大粒豆で炊くバレンシアのパエリアです。先に鍋の中でだしを作り、薄く広げた米へ旨みを吸わせます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/quiche-lorraine/</loc>
     <lastmod>2026-08-01</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/quiche-lorraine/"/>
@@ -3950,6 +4209,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/leche-frita/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/leche-frita/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b3e3d75c-ebe2-5176-972b-34fd9aafdb01_1790832733496.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>レチェ・フリータ（Leche frita）</image:title>
+      <image:caption>シナモンを香らせた牛乳を濃い生地にし、冷やして切り分けてから揚げます。薄い衣と柔らかな中身に、シナモンシュガーをまとわせます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/tarte-aux-mirabelles/</loc>
     <lastmod>2026-08-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarte-aux-mirabelles/"/>
@@ -3986,6 +4258,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b6d8bf09-7df4-4cfb-a9e5-91ee2b8f4dd2_1790663724485.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ノルチャ産黒トリュフのストランゴッツィ（Strangozzi al Tartufo Nero di Norcia）</image:title>
       <image:caption>ウンブリアの手打ち平麺「ストランゴッツィ」と、ノルチャ産黒トリュフのシンプルなソース。黒トリュフはオリーブオイルで温め、にんにくとアンチョビで旨みを底上げするのがウンブリア流。白トリュフとは別の、土臭くて力強い香りが特徴。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/albondigas-en-salsa/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/albondigas-en-salsa/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b8c6e0a1-c6a0-580e-9204-45c35695c0b7_1790832688367.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アルボンディガスの野菜ソース煮（Albóndigas en salsa）</image:title>
+      <image:caption>牛と豚の肉だねに牛乳で戻したパンを混ぜ、柔らかな肉団子にします。香ばしく焼いてから野菜と赤ワインのソースで煮る、家庭の主菜です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4158,6 +4443,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gazpacho/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/gazpacho/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c041baa5-1131-502c-95a5-236103e6be51_1790832730405.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガスパチョ（Gazpacho）</image:title>
+      <image:caption>完熟トマトと夏野菜、パン、オリーブオイルを滑らかにつなぐ冷製スープです。野菜の繊維をこし、酸味と乳化した油の丸みを揃えます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/polpo-alla-luciana/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/polpo-alla-luciana/"/>
@@ -4194,6 +4492,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c231d732-9010-4f9c-9c26-68268d19d469_1790663726734.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スモークサーモンのタリアテッレ（Tagliatelle al Salmone Affumicato）</image:title>
       <image:caption>北イタリアの湖沿いや港町のトラットリアで1970〜80年代から定着したクリームパスタ。スモークサーモンの塩気とクリームの甘さ、レモンの酸味が絶妙のバランス。サーモンは絶対に加熱しすぎない——余熱で合わせることが唯一のルール。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/mejillones-en-escabeche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/mejillones-en-escabeche/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c2406522-e920-522c-b414-bb2dc5ab9980_1790832739684.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ムール貝のエスカベチェ（Mejillones en escabeche）</image:title>
+      <image:caption>ムール貝を蒸し、香味野菜とパプリカ、酢、オイルの漬け汁で休ませます。酸味の奥に貝の旨みを残す、冷製の小皿です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4587,6 +4898,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pisto-manchego/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pisto-manchego/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cf41e6e5-728c-511c-bd35-8605d98cea04_1790832759495.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ピスト・マンチェゴ（Pisto manchego）</image:title>
+      <image:caption>トマトとピーマンを中心に、野菜の甘みを重ねるラ・マンチャの料理です。卵をのせる型もありますが、ここでは肉や魚に添える野菜だけの型を採用します。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/ravioli-alla-caprese/</loc>
     <lastmod>2026-08-15</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ravioli-alla-caprese/"/>
@@ -4693,6 +5017,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/crema-catalana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/crema-catalana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d5befd47-d06b-59ac-9840-059219b4fa0e_1790832708520.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>クレマ・カタラーナ（Crema catalana）</image:title>
+      <image:caption>牛乳と卵黄にレモンとシナモンを香らせ、鍋でクリームを炊きます。冷たい中身に薄い飴の蓋を重ねる、カタルーニャのデザートです。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/bietola-saltata/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bietola-saltata/"/>
@@ -4781,6 +5118,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d9e179f8-1a66-4680-98ac-1d5b1ced5b16_1790654553754.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>タルト・オ・プラリーヌ・ローズ（Tarte aux Pralines Roses）</image:title>
       <image:caption>バラ色の砂糖衣をまとわせたアーモンド「プラリーヌ・ローズ」を砕き、生クリームと煮詰めてタルトに流し込む、リヨン名物の鮮やかなピンク色の菓子。プラリーヌを自家製するところから始め、クリームとの煮詰め加減で艶と固さを決める。ブションと呼ばれるリヨンの食堂や街のパン屋で、ショーケースをバラ色に染める看板菓子である。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/marmitako/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/marmitako/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/da0ef5d8-836e-59e9-9fce-e4acea8d6d0b_1790832736304.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マルミタコ（Marmitako）</image:title>
+      <image:caption>じゃがいもと野菜の煮込みへ、最後にカツオを加えるバスク沿岸の料理です。芋が生む自然なとろみと、魚を煮すぎない火入れを両立します。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4885,6 +5235,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/de570fd6-94b3-4f7d-8282-b9e195b06d38_1790663638583.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏肉のレモンピッカータ（Piccata di Pollo al Limone）</image:title>
       <image:caption>仔牛のスカロッピーナを鶏胸肉でアレンジした定番肉料理。「ピッカータ」とはイタリア語で「刺激のある」の意。鶏胸肉を薄くたたいて素早く焼き、レモン・ケッパー・バターのソースで仕上げる。すべての工程が10分以内で完了するイタリア家庭の重宝な一品。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/df126da4-16be-59ed-a79f-6590a2503649_1790832756326.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ピキージョピーマンのバカラオ詰め（Pimientos del piquillo rellenos de bacalao）</image:title>
+      <image:caption>炭火で焼いて皮をむいたピキージョピーマンに、塩抜きしたタラのベシャメルを詰めます。甘い赤い皮とタラの熟成した旨みが重なる、ナバラの食卓に馴染む一皿です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5057,6 +5420,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/tarta-de-santiago/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tarta-de-santiago/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e6aced34-2461-54ca-9448-1f93715ff2f9_1790832780281.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タルタ・デ・サンティアゴ（Tarta de Santiago）</image:title>
+      <image:caption>アーモンド、砂糖、卵を中心に焼くガリシアの菓子です。小麦粉の土台を付けない型で、薄い焼き色としっとりした中身を揃えます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pizzoccheri-della-valtellina/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pizzoccheri-della-valtellina/"/>
@@ -5145,6 +5521,19 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/eebefe88-fb66-4d0d-b46c-d9cfa79d83ab_1790653062740.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>シチリア風イカの詰め物トマト煮（Calamari Ripieni alla Siciliana）</image:title>
       <image:caption>イカの胴にゲソ・パン粉・干しぶどう・松の実・ケッパーを詰め、トマトソースでやわらかく煮るシチリアの家庭料理。甘酸っぱさと魚介の旨みが重なる夏のセコンド。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pulpo-a-la-gallega/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pulpo-a-la-gallega/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ef34d2ce-20b2-5e4e-8916-f6343ae90fc4_1790832767481.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タコのガリシア風（Pulpo a la gallega）</image:title>
+      <image:caption>柔らかくゆでたタコとじゃがいもを、オリーブオイルとパプリカで味わいます。タコの弾力を残す火入れと、温かいうちの切り分けが要です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5239,6 +5628,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pollo-al-chilindron/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pollo-al-chilindron/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f5e57a03-fc55-5e41-b8b8-d8b9c70c38db_1790832762494.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>鶏のチリンドロン煮込み（Pollo al chilindrón）</image:title>
+      <image:caption>骨付き鶏を焼き、ピーマンとトマト、ハモンの旨みで煮込みます。野菜を十分に炒めてから鶏を戻し、アラゴンの家庭料理の厚みを作ります。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/triglie-alla-livornese/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
@@ -5330,6 +5732,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gambas-al-ajillo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/gambas-al-ajillo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fc8b4b6a-b107-5672-9a4c-bd27599c9752_1790832727518.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガンバス・アル・アヒージョ（Gambas al ajillo）</image:title>
+      <image:caption>にんにくと唐辛子の香りを移したオリーブオイルで、エビを短く火入れする小皿です。香ばしさと身の弾力を同時に残す、火を止める判断が要になります。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/fregola-con-aragosta/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fregola-con-aragosta/"/>
@@ -5418,6 +5833,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ffe5dd47-4ebe-4603-b2c2-1f2681b00526_1790686400036.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ティラミス（Tiramisù）</image:title>
       <image:caption>マスカルポーネと卵黄で作るクリームをサヴォイアルディに重ねたイタリアを代表するドルチェ。コアントローとエスプレッソの香りが本場の証。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/croquetas-de-jamon/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/croquetas-de-jamon/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0063b837-debb-5263-9d28-45a2e1907e13_1790832711272.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Serrano Ham Croquettes</image:title>
+      <image:caption>A thick béchamel rich with the flavour of ham is enclosed in a thin coating to make these small croquettes. Thorough chilling creates a contrast between the filling that melts in the mouth and the crisp, golden coating.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/croquetas-de-jamon/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/croquetas-de-jamon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/croquetas-de-jamon/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0063b837-debb-5263-9d28-45a2e1907e13_1790832711272.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Crocchette di prosciutto serrano</image:title>
+      <image:caption>Piccole crocchette con una besciamella densa e saporita al prosciutto, racchiusa in una panatura sottile. Un raffreddamento accurato crea il contrasto fra il ripieno che si scioglie in bocca e la crosta dorata e croccante.</image:caption>
     </image:image>
   </url>
   <url>
@@ -5760,6 +6201,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/070ed9bc-9ac3-4093-a870-0494640ce6ff_1790690339818.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Coniglio alla cacciatora</image:title>
       <image:caption>Il coniglio viene rosolato e poi stufato con funghi, vino bianco e pomodoro secondo lo stile chasseur. Il fondo dorato della pentola passa nella salsa, mentre i funghi vengono cotti a parte per eliminarne l’acqua e aggiungere profumo.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/ajoblanco/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/ajoblanco/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/07c077ec-c215-5a35-9ad0-e827ad835524_1790832684130.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Chilled Almond and Garlic Soup</image:title>
+      <image:caption>A white chilled soup from Andalusia, made by emulsifying almonds, bread and garlic with oil. Sweet grapes accompany its smooth texture.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/ajoblanco/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/ajoblanco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/ajoblanco/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/07c077ec-c215-5a35-9ad0-e827ad835524_1790832684130.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Zuppa fredda di mandorle e aglio</image:title>
+      <image:caption>Una zuppa bianca fredda dell’Andalusia, preparata emulsionando mandorle, pane e aglio con olio. Alla consistenza vellutata si accompagna la dolcezza dell’uva.</image:caption>
     </image:image>
   </url>
   <url>
@@ -6361,6 +6828,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/bacalao-al-pil-pil/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bacalao-al-pil-pil/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/15f8f15e-6596-5c7c-b85d-33feac6d0f27_1790832702467.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Salt Cod in Pil Pil Sauce</image:title>
+      <image:caption>Gelatin released by the skin of salt cod is emulsified with olive oil by gently moving the pan. This Basque dish uses the fish itself to create a smooth sauce, without flour or cream.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/bacalao-al-pil-pil/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bacalao-al-pil-pil/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bacalao-al-pil-pil/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/15f8f15e-6596-5c7c-b85d-33feac6d0f27_1790832702467.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Baccalà in salsa pil-pil</image:title>
+      <image:caption>La gelatina rilasciata dalla pelle del baccalà viene emulsionata con olio d’oliva muovendo delicatamente la casseruola. Questo piatto basco crea una salsa liscia grazie al pesce stesso, senza farina né panna.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/totani-in-umido-con-piselli/</loc>
     <lastmod>2026-05-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/totani-in-umido-con-piselli/"/>
@@ -6410,6 +6903,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/1680ce84-a7c5-4d34-821c-8693dae91041_1790663744610.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Totani ripieni al forno</image:title>
       <image:caption>Un piatto casalingo del sud Italia: sacche di calamaro farcite con pangrattato, tentacoli, capperi e prezzemolo, bagnate con vino bianco e cotte in forno. Il ripieno si gonfia, quindi la regola è riempirle soltanto al 70%.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/tortilla-de-patatas/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tortilla-de-patatas/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/178ac936-5f5a-5b9e-9725-28e3cbc2995f_1790832783752.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Spanish Potato Omelette</image:title>
+      <image:caption>A Spanish staple made by slowly softening potatoes in oil and binding them into a thick omelette with eggs. This version includes onion and is cooked until moist but without runny egg.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/tortilla-de-patatas/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tortilla-de-patatas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tortilla-de-patatas/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/178ac936-5f5a-5b9e-9725-28e3cbc2995f_1790832783752.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Frittata spagnola di patate</image:title>
+      <image:caption>Un classico spagnolo in cui le patate vengono ammorbidite lentamente nell’olio e legate dalle uova in una frittata spessa. Questa versione comprende la cipolla e resta umida, con l’uovo cotto senza parti liquide.</image:caption>
     </image:image>
   </url>
   <url>
@@ -7669,6 +8188,84 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/arroz-negro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-negro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/30106500-ac12-5410-ade4-48fd7afeeb0b_1790832699056.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Cuttlefish Black Rice</image:title>
+      <image:caption>Rice absorbs the flavour of cuttlefish and fish stock, while ink turns it a deep black. Starting with homemade stock, this rice dish combines the aroma of the sea with distinct, firm grains.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/arroz-negro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-negro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-negro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/30106500-ac12-5410-ade4-48fd7afeeb0b_1790832699056.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Riso nero con seppie</image:title>
+      <image:caption>Il riso assorbe il sapore delle seppie e del brodo di pesce, mentre il nero di seppia gli conferisce un colore intenso. La preparazione comincia dal brodo, per ottenere profumo di mare e chicchi ben distinti.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/papas-arrugadas-con-mojo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/papas-arrugadas-con-mojo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/317277b9-8e0b-5dea-9a9c-d26da715c6ea_1790832753721.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Wrinkled Potatoes with Red Mojo</image:title>
+      <image:caption>Small potatoes are boiled in strongly salted water, then dried until a thin film of salt forms on their skins. This Canary Islands dish is served with red mojo made by grinding garlic and chilli together.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/papas-arrugadas-con-mojo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/papas-arrugadas-con-mojo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/papas-arrugadas-con-mojo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/317277b9-8e0b-5dea-9a9c-d26da715c6ea_1790832753721.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Patate rugose con mojo rosso</image:title>
+      <image:caption>Piccole patate vengono lessate in acqua molto salata, poi asciugate fino a formare un sottile velo di sale sulla buccia. Questo piatto delle Canarie si serve con mojo rosso, preparato pestando aglio e peperoncino.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/rabo-de-toro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/rabo-de-toro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/31c47fa6-e270-5825-8d6d-0e74cfcf2f9b_1790832770848.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Spanish Oxtail Stew</image:title>
+      <image:caption>Oxtail is braised with red wine and vegetables until the gelatinous tissue around the bones softens. Excess fat is removed from the braising liquid, which is blended into a smooth sauce for this main course.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/rabo-de-toro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/rabo-de-toro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/rabo-de-toro/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/31c47fa6-e270-5825-8d6d-0e74cfcf2f9b_1790832770848.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Stufato spagnolo di coda di manzo</image:title>
+      <image:caption>La coda di manzo viene brasata con vino rosso e verdure fino ad ammorbidire il tessuto gelatinoso intorno alle ossa. Il fondo viene sgrassato e trasformato in una salsa liscia per questo secondo piatto.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/kougelhopf-alsacien/</loc>
     <lastmod>2026-08-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/kougelhopf-alsacien/"/>
@@ -7770,6 +8367,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/330e51f8-fc29-4f8a-af8e-65300cf696c2_1790663519579.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Frittata di cipolle</image:title>
       <image:caption>Un piatto italiano di uova: le cipolle vengono cotte lentamente per sviluppare dolcezza, unite alle uova e finite in forno. A differenza dell’omelette francese, si cuoce piatta e si serve tagliata a porzioni.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/fabada-asturiana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fabada-asturiana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/33784d74-658e-5c20-b2c4-fd12b561b10d_1790832717949.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Asturian Bean and Cured Pork Stew</image:title>
+      <image:caption>Large white beans are simmered with salted pork and two kinds of sausage. They become tender to the centre while keeping their skins intact, and the cooking liquid takes on the rich flavour of the meat.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/fabada-asturiana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fabada-asturiana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fabada-asturiana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/33784d74-658e-5c20-b2c4-fd12b561b10d_1790832717949.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Stufato asturiano di fagioli e carni suine</image:title>
+      <image:caption>Grandi fagioli bianchi vengono stufati con carne suina salata e due tipi di salsiccia. Diventano teneri fino al centro senza perdere la buccia, mentre il liquido di cottura si arricchisce del sapore delle carni.</image:caption>
     </image:image>
   </url>
   <url>
@@ -7929,6 +8552,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/conejo-en-salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/conejo-en-salmorejo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/3758c727-b86b-583b-946b-7772ec074e81_1790832705382.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Canarian Rabbit in Salmorejo</image:title>
+      <image:caption>Rabbit rests in a marinade of garlic, paprika and herbs before being braised. This Canary Islands version uses crushed liver to give body to the sauce.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/conejo-en-salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/conejo-en-salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/conejo-en-salmorejo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/3758c727-b86b-583b-946b-7772ec074e81_1790832705382.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Coniglio delle Canarie in salmorejo</image:title>
+      <image:caption>Il coniglio riposa in una marinata di aglio, paprica ed erbe prima di essere stufato. Questa versione delle Canarie usa il fegato pestato per dare corpo alla salsa.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/pipi-e-patati/</loc>
     <lastmod>2026-07-26</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pipi-e-patati/"/>
@@ -7978,6 +8627,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/386c9e4f-eb5b-4488-bf67-618ec521caf7_1790663561314.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Lenticchie di Castelluccio</image:title>
       <image:caption>Una preparazione tradizionale di lenticchie umbre di Castelluccio stufate con il soffritto. Piccole e dalla buccia sottile, non richiedono ammollo e sono pronte in 30 minuti. Sono amate anche a Capodanno come portafortuna associato alla crescita della ricchezza.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/merluza-en-salsa-verde/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/merluza-en-salsa-verde/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/39a3fcd6-beac-5a28-b392-b7f5b7434bdb_1790832747101.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Hake in Green Sauce</image:title>
+      <image:caption>White fish and clams are gently cooked in a garlic and parsley sauce. This Basque version is served with white asparagus, keeping the delicate fish flesh intact.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/merluza-en-salsa-verde/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/merluza-en-salsa-verde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/merluza-en-salsa-verde/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/39a3fcd6-beac-5a28-b392-b7f5b7434bdb_1790832747101.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Nasello in salsa verde</image:title>
+      <image:caption>Pesce bianco e vongole cuociono dolcemente in una salsa all’aglio e prezzemolo. Questa versione basca comprende asparagi bianchi e mantiene integra la delicata polpa del pesce.</image:caption>
     </image:image>
   </url>
   <url>
@@ -8840,6 +9515,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4da66c53-c696-4795-b335-7d668eefad04_1790654557310.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tarte Tatin</image:title>
       <image:caption>Crostata rovesciata: le mele cuociono nel caramello nello stampo, si coprono con pasta brisée e si infornano, poi si capovolgono da calde. Nota come specialità dell'albergo di due sorelle in Sologne, unisce amaro del caramello e acidità delle mele, ideali varietà acidule come Kogyoku. La pasta fatta in casa rende autentica anche la consistenza dei bordi imbevuti di caramello.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/espinacas-con-garbanzos/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/espinacas-con-garbanzos/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4e4dd666-460a-5d72-b88f-d0d3f4920b28_1790832714573.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Spinach with Chickpeas</image:title>
+      <image:caption>Spinach and chickpeas are bound with a paste of shallow-fried bread and garlic. Paprika and cumin add their aromas to this vegetable dish, a Seville staple.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/espinacas-con-garbanzos/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/espinacas-con-garbanzos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/espinacas-con-garbanzos/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4e4dd666-460a-5d72-b88f-d0d3f4920b28_1790832714573.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Spinaci con ceci</image:title>
+      <image:caption>Gli spinaci e i ceci sono legati da una pasta di pane e aglio rosolati nell’olio. Paprica e cumino aggiungono il loro profumo alle verdure in questo classico di Siviglia.</image:caption>
     </image:image>
   </url>
   <url>
@@ -9835,6 +10536,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/arroz-al-horno/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-al-horno/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/63e0c68a-474d-5c43-9f6c-1434931e9956_1790832691786.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Valencian Oven-Baked Rice</image:title>
+      <image:caption>Rice absorbs the flavour of pork and chickpeas and is baked with potatoes, tomatoes and a whole head of garlic. This oven-baked rice dish is rooted in inland Valencia.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/arroz-al-horno/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-al-horno/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-al-horno/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/63e0c68a-474d-5c43-9f6c-1434931e9956_1790832691786.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Riso al forno valenciano</image:title>
+      <image:caption>Il riso assorbe il sapore della carne di maiale e dei ceci e cuoce in forno con patate, pomodori e una testa d’aglio intera. È un piatto di riso radicato nell’entroterra valenciano.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/gateau-basque/</loc>
     <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gateau-basque/"/>
@@ -10092,6 +10819,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/69436db3-be6c-45dc-ba31-c0b2fc565018_1790663542443.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Gnudi di ricotta e spinaci al burro e salvia</image:title>
       <image:caption>Il solo ripieno dei ravioli toscani, lessato nudo. Nella formula senese la farina non entra nell’impasto: ricotta scolata e spinaci ben strizzati si legano soltanto con tuorli e Parmigiano, per una leggerezza che si scioglie in bocca. A impedire che si disfino è la sottile pelle formata da 12 ore di riposo sepolti nella semola. Le 12 ore di scolatura e le 12 ore di asciugatura dopo la formatura richiedono 2 giorni, o 2 notti: iniziare la sera del primo giorno, formare la mattina del giorno 2 e lessare dalla mattina del giorno 3; oppure iniziare la prima mattina, formare la sera e mangiare la sera seguente. Si completano soltanto con burro spumeggiante, non troppo brunito, e salvia.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/fideua/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fideua/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6a044cc1-1877-5623-9652-cb2c19dbd8e4_1790832720912.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Seafood Fideuà</image:title>
+      <image:caption>A dish of short noodles and seafood rooted in the coast of Gandia. The noodles absorb stock made from fish bones and trimmings, joining monkfish and shell-on prawns in a shallow pan.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/fideua/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fideua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fideua/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6a044cc1-1877-5623-9652-cb2c19dbd8e4_1790832720912.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Fideuà di pesce e crostacei</image:title>
+      <image:caption>Un piatto di pasta corta e prodotti del mare radicato sulla costa di Gandia. La pasta assorbe il brodo preparato con gli scarti del pesce e cuoce con rana pescatrice e gamberi con il guscio in un’unica padella bassa.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10589,6 +11342,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/salmorejo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/74693f7f-3c7b-5507-86d0-1f150ac27307_1790832774119.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Salmorejo: Chilled Tomato and Bread Soup</image:title>
+      <image:caption>A rich cold dish from Córdoba, made by emulsifying tomatoes and bread with olive oil. It contains no cucumber or green pepper and is finished with boiled egg and jamón.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/salmorejo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/salmorejo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/74693f7f-3c7b-5507-86d0-1f150ac27307_1790832774119.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Salmorejo: crema fredda di pomodoro e pane</image:title>
+      <image:caption>Un piatto freddo e denso di Córdoba, preparato emulsionando pomodori e pane con olio d’oliva. Non si aggiungono cetrioli o peperoni verdi; si completa con uova sode e jamón.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/anelletti-al-forno/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/anelletti-al-forno/"/>
@@ -10950,6 +11729,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7d006bc6-2a28-4eef-b259-bc3727c3c226_1790690332723.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Medaglioni di cervo con salsa grand veneur</image:title>
       <image:caption>Il lombo di cervo viene tagliato spesso, rosolato e accompagnato da una salsa di vino rosso, aceto e gelatina di ribes rosso. La riduzione equilibra acidità e note fruttate della salsa; la carne, secondo il criterio adottato per questa versione domestica, viene cotta bene fino al centro.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/flan-de-huevo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/flan-de-huevo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7de4e7b7-4904-50f3-828e-59850d0b4d97_1790832723988.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Egg Flan</image:title>
+      <image:caption>An egg-and-milk mixture is poured into caramel-lined moulds and baked gently in a water bath. Avoiding excess bubbles produces a smooth flan with a light caramel sauce flowing around it.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/flan-de-huevo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/flan-de-huevo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/flan-de-huevo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7de4e7b7-4904-50f3-828e-59850d0b4d97_1790832723988.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Flan all’uovo</image:title>
+      <image:caption>Un composto di uova e latte viene versato in stampini rivestiti di caramello e cotto dolcemente a bagnomaria. Evitando di incorporare troppe bolle si ottiene un flan liscio, accompagnato da un velo di caramello fluido.</image:caption>
     </image:image>
   </url>
   <url>
@@ -12075,6 +12880,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/arroz-con-leche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-con-leche/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/98e13938-d35d-5b48-b449-c382c63b4860_1790832695789.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Asturian Rice Pudding</image:title>
+      <image:caption>In this Asturian version, the rice softens as the milk slowly reduces, with butter adding richness. Cinnamon and lemon perfume the pudding, which is served chilled.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/arroz-con-leche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/arroz-con-leche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/arroz-con-leche/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/98e13938-d35d-5b48-b449-c382c63b4860_1790832695789.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Riso al latte delle Asturie</image:title>
+      <image:caption>In questa versione asturiana il riso si ammorbidisce mentre il latte si restringe lentamente, e il burro aggiunge corpo. Cannella e limone profumano il dolce, che viene servito freddo.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/mont-blanc/</loc>
     <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/mont-blanc/"/>
@@ -12176,6 +13007,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9ca79a0c-5bd3-4d36-bdb8-e309d15a2695_1790663720735.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Spezzatino di manzo con patate</image:title>
       <image:caption>Un classico del fine settimana nelle case italiane. Spezzatino significa carne tagliata a piccoli pezzi. Cuoce 2 ore con vino bianco e pomodoro, poi si aggiungono le patate per una consistenza densa. Non servono tecniche difficili, ma il tempo crea il sapore.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/suquet-de-peix/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/suquet-de-peix/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9cdd0f08-60bc-5a30-803f-36af8f60cd25_1790832777087.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Catalan Fish and Potato Stew</image:title>
+      <image:caption>Fish and potatoes are simmered and finished with a bread-and-almond picada that brings the flavour and consistency together. This version of the Catalan coastal dish begins by making the stock.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/suquet-de-peix/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/suquet-de-peix/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/suquet-de-peix/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9cdd0f08-60bc-5a30-803f-36af8f60cd25_1790832777087.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Stufato catalano di pesce e patate</image:title>
+      <image:caption>Pesce e patate vengono stufati e completati con una picada di pane e mandorle, che lega sapore e consistenza. Questa preparazione della costa catalana comincia dal brodo di pesce.</image:caption>
     </image:image>
   </url>
   <url>
@@ -12807,6 +13664,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/paella-valenciana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/paella-valenciana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ac35c08c-66ac-565f-8f4d-fd4471d69f09_1790832750425.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Valencian Paella</image:title>
+      <image:caption>Valencian paella made with chicken, rabbit, flat green beans and large beans. The broth is prepared in the pan first, then absorbed by a thin layer of rice.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/paella-valenciana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/paella-valenciana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/paella-valenciana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ac35c08c-66ac-565f-8f4d-fd4471d69f09_1790832750425.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Paella valenciana con pollo e coniglio</image:title>
+      <image:caption>La paella valenciana si prepara con pollo, coniglio, fagiolini piatti e fagioli grandi. Prima si forma il brodo nella padella, poi lo si fa assorbire al riso distribuito in uno strato sottile.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/quiche-lorraine/</loc>
     <lastmod>2026-08-01</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/quiche-lorraine/"/>
@@ -13123,6 +14006,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/leche-frita/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/leche-frita/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b3e3d75c-ebe2-5176-972b-34fd9aafdb01_1790832733496.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Fried Milk Custard</image:title>
+      <image:caption>Cinnamon-scented milk is cooked into a thick mixture, chilled, cut and fried. A thin coating and soft centre are finished with cinnamon sugar.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/leche-frita/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/leche-frita/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/leche-frita/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b3e3d75c-ebe2-5176-972b-34fd9aafdb01_1790832733496.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Latte fritto alla spagnola</image:title>
+      <image:caption>Il latte profumato alla cannella viene cotto fino a formare un composto denso, poi raffreddato, tagliato e fritto. Una copertura sottile e un interno morbido vengono completati con zucchero alla cannella.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/tarte-aux-mirabelles/</loc>
     <lastmod>2026-08-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarte-aux-mirabelles/"/>
@@ -13198,6 +14107,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b6d8bf09-7df4-4cfb-a9e5-91ee2b8f4dd2_1790663724485.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Strangozzi al tartufo nero di Norcia</image:title>
       <image:caption>Pasta piatta umbra fatta a mano con una salsa semplice di tartufo nero di Norcia. Scaldarlo nell'olio e rafforzare il sapore con aglio e acciuga è l'uso umbro. Il profumo terroso e deciso si distingue da quello del tartufo bianco.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/albondigas-en-salsa/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/albondigas-en-salsa/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b8c6e0a1-c6a0-580e-9204-45c35695c0b7_1790832688367.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Meatballs in Vegetable and Red Wine Sauce</image:title>
+      <image:caption>Beef and pork are mixed with milk-soaked bread to make tender meatballs. Browned and then simmered in a vegetable and red wine sauce, they make a home-style main course.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/albondigas-en-salsa/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/albondigas-en-salsa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/albondigas-en-salsa/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b8c6e0a1-c6a0-580e-9204-45c35695c0b7_1790832688367.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Polpette in salsa di verdure e vino rosso</image:title>
+      <image:caption>La carne di manzo e maiale si mescola con pane ammollato nel latte per ottenere polpette morbide. Rosolate e poi stufate in una salsa di verdure e vino rosso, sono un secondo piatto di casa.</image:caption>
     </image:image>
   </url>
   <url>
@@ -13539,6 +14474,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/gazpacho/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/gazpacho/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c041baa5-1131-502c-95a5-236103e6be51_1790832730405.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Chilled Tomato and Vegetable Soup</image:title>
+      <image:caption>A chilled soup that blends ripe tomatoes, summer vegetables, bread and olive oil into a smooth whole. Straining out the vegetable fibres balances the acidity with the rounded texture of the emulsified oil.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/gazpacho/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/gazpacho/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/gazpacho/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c041baa5-1131-502c-95a5-236103e6be51_1790832730405.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Zuppa fredda di pomodoro e verdure</image:title>
+      <image:caption>Una zuppa fredda che unisce pomodori maturi, verdure estive, pane e olio d’oliva in una consistenza liscia. Filtrare le fibre delle verdure permette di equilibrare l’acidità con la rotondità dell’olio emulsionato.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/polpo-alla-luciana/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/polpo-alla-luciana/"/>
@@ -13614,6 +14575,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c231d732-9010-4f9c-9c26-68268d19d469_1790663726734.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tagliatelle al salmone affumicato</image:title>
       <image:caption>Pasta alla panna affermatasi nelle trattorie dei laghi e porti settentrionali negli anni Settanta–Ottanta. Sapidità del salmone, dolcezza della panna e acidità del limone si equilibrano. Non scaldare troppo il salmone: unirlo col calore residuo è l'unica regola.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/mejillones-en-escabeche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/mejillones-en-escabeche/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c2406522-e920-522c-b414-bb2dc5ab9980_1790832739684.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Mussels in Escabeche</image:title>
+      <image:caption>Mussels are steamed, then rested in a marinade of aromatic vegetables, paprika, vinegar and oil. This chilled small plate retains the savoury flavour of the shellfish beneath its acidity.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/mejillones-en-escabeche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/mejillones-en-escabeche/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/mejillones-en-escabeche/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c2406522-e920-522c-b414-bb2dc5ab9980_1790832739684.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Cozze in escabeche</image:title>
+      <image:caption>Le cozze vengono cotte al vapore e lasciate riposare in una marinata di verdure aromatiche, paprica, aceto e olio. Un piccolo piatto freddo in cui, sotto l’acidità, rimane il sapore sapido dei molluschi.</image:caption>
     </image:image>
   </url>
   <url>
@@ -14397,6 +15384,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/pisto-manchego/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pisto-manchego/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cf41e6e5-728c-511c-bd35-8605d98cea04_1790832759495.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>La Mancha Vegetable Stew</image:title>
+      <image:caption>A dish from La Mancha built around tomatoes and peppers, layering the sweetness of vegetables. Some versions are topped with eggs; this version uses vegetables alone, to accompany meat or fish.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/pisto-manchego/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pisto-manchego/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pisto-manchego/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cf41e6e5-728c-511c-bd35-8605d98cea04_1790832759495.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Stufato di verdure della Mancia</image:title>
+      <image:caption>Un piatto della Mancia incentrato su pomodori e peperoni, che unisce la dolcezza di diverse verdure. Esistono versioni con un uovo sopra; qui si propone quella di sole verdure, da accompagnare a carne o pesce.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/ravioli-alla-caprese/</loc>
     <lastmod>2026-08-15</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ravioli-alla-caprese/"/>
@@ -14609,6 +15622,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/crema-catalana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/crema-catalana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d5befd47-d06b-59ac-9840-059219b4fa0e_1790832708520.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Catalan Custard with Caramelized Sugar</image:title>
+      <image:caption>Milk and egg yolks are infused with lemon and cinnamon and cooked into a custard in a saucepan. This Catalan dessert combines a cold centre with a thin lid of caramel.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/crema-catalana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/crema-catalana/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/crema-catalana/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d5befd47-d06b-59ac-9840-059219b4fa0e_1790832708520.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Crema catalana con zucchero caramellato</image:title>
+      <image:caption>Latte e tuorli, profumati con limone e cannella, vengono cotti in pentola fino a formare una crema. Questo dessert catalano abbina un cuore freddo a una sottile crosta di caramello.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/bietola-saltata/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bietola-saltata/"/>
@@ -14788,6 +15827,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d9e179f8-1a66-4680-98ac-1d5b1ced5b16_1790654553754.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Crostata alle praline rosa</image:title>
       <image:caption>La vivace crostata rosa di Lione unisce praline roses, mandorle rivestite di zucchero rosa, frantumate e ridotte con panna nel guscio. Si parte dalle praline fatte in casa; la riduzione determina lucentezza e consistenza. È il dolce simbolo che colora le vetrine dei panifici e i bouchon cittadini.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/marmitako/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/marmitako/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/da0ef5d8-836e-59e9-9fce-e4acea8d6d0b_1790832736304.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Basque Skipjack Tuna and Potato Stew</image:title>
+      <image:caption>A dish from the Basque coast in which skipjack tuna is added to a potato and vegetable stew at the end. It combines the potatoes’ natural thickening with careful cooking that keeps the fish from overcooking.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/marmitako/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/marmitako/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/marmitako/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/da0ef5d8-836e-59e9-9fce-e4acea8d6d0b_1790832736304.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Stufato basco di tonnetto striato e patate</image:title>
+      <image:caption>Un piatto della costa basca in cui il tonnetto striato viene aggiunto alla fine a uno stufato di patate e verdure. Unisce la densità naturale delle patate a una cottura attenta a non cuocere troppo il pesce.</image:caption>
     </image:image>
   </url>
   <url>
@@ -14996,6 +16061,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/de570fd6-94b3-4f7d-8282-b9e195b06d38_1790663638583.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Piccata di pollo al limone</image:title>
       <image:caption>Un classico di carne che adatta la scaloppina di vitello al petto di pollo. Piccata richiama un gusto stimolante: il petto si batte sottile, si rosola rapidamente e si completa con limone, capperi e burro. Un piatto prezioso nelle famiglie italiane, con tutti i passaggi conclusi in meno di 10 minuti.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/pimientos-del-piquillo-rellenos-de-bacalao/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/df126da4-16be-59ed-a79f-6590a2503649_1790832756326.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Piquillo Peppers Stuffed with Salt Cod</image:title>
+      <image:caption>Charcoal-roasted, peeled piquillo peppers are filled with a béchamel made with desalted cod. The sweet red flesh meets the matured savouriness of the cod in a dish at home on Navarrese tables.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/pimientos-del-piquillo-rellenos-de-bacalao/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/df126da4-16be-59ed-a79f-6590a2503649_1790832756326.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Peperoni del piquillo ripieni di baccalà</image:title>
+      <image:caption>Peperoni del piquillo arrostiti sulla brace e spellati vengono farciti con una besciamella al baccalà dissalato. La dolcezza dell’involucro rosso incontra il sapore maturato del baccalà in un piatto familiare sulle tavole della Navarra.</image:caption>
     </image:image>
   </url>
   <url>
@@ -15337,6 +16428,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/tarta-de-santiago/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tarta-de-santiago/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e6aced34-2461-54ca-9448-1f93715ff2f9_1790832780281.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Galician Almond Cake</image:title>
+      <image:caption>A Galician cake baked mainly from almonds, sugar and eggs. This version has no flour-based crust, pairing a lightly browned surface with a moist interior.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/tarta-de-santiago/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tarta-de-santiago/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tarta-de-santiago/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e6aced34-2461-54ca-9448-1f93715ff2f9_1790832780281.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Torta galiziana alle mandorle</image:title>
+      <image:caption>Un dolce galiziano preparato principalmente con mandorle, zucchero e uova. Questa versione non ha una base di farina di frumento e unisce una superficie leggermente dorata a un interno umido.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/pizzoccheri-della-valtellina/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pizzoccheri-della-valtellina/"/>
@@ -15516,6 +16633,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/eebefe88-fb66-4d0d-b46c-d9cfa79d83ab_1790653062740.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Calamari ripieni alla siciliana</image:title>
       <image:caption>Un piatto familiare siciliano di calamari farciti con tentacoli, pangrattato, uvetta, pinoli e capperi, poi cotti dolcemente nel pomodoro. Un secondo estivo in cui l’agrodolce incontra il sapore del mare.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/pulpo-a-la-gallega/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pulpo-a-la-gallega/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ef34d2ce-20b2-5e4e-8916-f6343ae90fc4_1790832767481.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Galician-Style Octopus</image:title>
+      <image:caption>Tender boiled octopus and potatoes are served with olive oil and paprika. The key is cooking that preserves the octopus’s springy texture and slicing it while still warm.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/pulpo-a-la-gallega/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pulpo-a-la-gallega/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pulpo-a-la-gallega/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ef34d2ce-20b2-5e4e-8916-f6343ae90fc4_1790832767481.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Polpo alla galiziana</image:title>
+      <image:caption>Polpo lessato fino a diventare tenero e patate vengono conditi con olio d’oliva e paprica. Sono essenziali una cottura che conservi l’elasticità del polpo e il taglio quando è ancora caldo.</image:caption>
     </image:image>
   </url>
   <url>
@@ -15701,6 +16844,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/pollo-al-chilindron/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pollo-al-chilindron/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f5e57a03-fc55-5e41-b8b8-d8b9c70c38db_1790832762494.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Chicken with Peppers, Tomatoes and Jamón</image:title>
+      <image:caption>Bone-in chicken is browned and simmered with peppers, tomatoes and the savoury depth of jamón. Cooking the vegetables thoroughly before returning the chicken builds the depth of this Aragonese home-style dish.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/pollo-al-chilindron/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/pollo-al-chilindron/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pollo-al-chilindron/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f5e57a03-fc55-5e41-b8b8-d8b9c70c38db_1790832762494.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Pollo con peperoni, pomodori e jamón</image:title>
+      <image:caption>Il pollo con l’osso viene rosolato e stufato con peperoni, pomodori e il sapore del jamón. Cuocere bene le verdure prima di rimettere il pollo in pentola dà profondità a questo piatto della cucina domestica aragonese.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/triglie-alla-livornese/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/triglie-alla-livornese/"/>
@@ -15880,6 +17049,32 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fbb0c33e-cd83-4651-8874-67394b65d856_1790663489050.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Cipolle borettane in agrodolce</image:title>
       <image:caption>Un antipasto tradizionale emiliano di cipolline borettane cotte con burro e aceto balsamico fino a ottenere una glassa agrodolce. Si servono con antipasti di carne o come preparazione di gastronomia.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/gambas-al-ajillo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/gambas-al-ajillo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fc8b4b6a-b107-5672-9a4c-bd27599c9752_1790832727518.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Garlic Prawns</image:title>
+      <image:caption>A small plate of prawns briefly cooked in olive oil infused with garlic and chilli. Knowing when to turn off the heat preserves both the toasted aromas and the springy texture of the prawns.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/gambas-al-ajillo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/gambas-al-ajillo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/gambas-al-ajillo/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fc8b4b6a-b107-5672-9a4c-bd27599c9752_1790832727518.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Gamberi all’aglio</image:title>
+      <image:caption>Un piccolo piatto di gamberi cotti brevemente in olio d’oliva aromatizzato con aglio e peperoncino. Scegliere quando spegnere il fuoco permette di conservare sia gli aromi tostati sia l’elasticità della polpa.</image:caption>
     </image:image>
   </url>
   <url>
