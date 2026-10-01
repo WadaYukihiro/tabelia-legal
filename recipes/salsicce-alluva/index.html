@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"salsicce-alluva","recipe_name":"Salsicce all'Uva","recipe_course":"secondo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -371,74 +372,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">サルシッチェ・アッルーヴァ（生ソーセージの葡萄煮）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生ソーセージ（豚肉・ケーシング入り）の代わりに</p>
-            <h3>粗挽き豚肉と羊腸で自家充填したソーセージ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>肉の粒感が強くなり、脂の甘みがはっきりする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生ソーセージ（豚肉・ケーシング入り）の代わりに</p>
-            <h3>ルガーネガ（渦巻き生ソーセージ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香辛料が穏やかになり、葡萄の甘みがより前に出る。</p><p>渦巻き状のまま切らずに鍋に丸く収めて焼き、転がす代わりに5分ごとにフライ返しで裏返す。</p><p>煮込みの間もトングでなくフライ返しで持ち上げて裏返す。</p><p>盛り付け時に一人分ずつ2〜3巻きに切り分ける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生ソーセージ（豚肉・ケーシング入り）の代わりに</p>
-            <h3>生チョリソー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>パプリカの燻香が支配的になり、葡萄の繊細な酸と喧嘩する。</p><p>赤みの強い脂が多く出るため、焼き上がりで鍋を傾け、大さじ1分だけ脂を残して残りはスプーンで除いてからデグラッセに移る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">種なし黒葡萄（巨峰・ピオーネなど）の代わりに</p>
-            <h3>デラウェア</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>粒が小さく皮が残りやすいが、酸味が強くソースは引き締まる。</p><p>粒が小さいため半割にせず400g全量を丸ごと加える。</p><p>皮が薄く崩れやすいので、蓋を取ってからの煮詰めを6〜8分に短くする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">種なし黒葡萄（巨峰・ピオーネなど）の代わりに</p>
-            <h3>マスカット（白葡萄）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ソースの色が薄い金色になり、香りが華やかで軽くなる。</p><p>色が出ないため、煮詰まりの判断は色ではなく木べらでなぞった跡の残り方だけで見る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">種なし黒葡萄（巨峰・ピオーネなど）の代わりに</p>
-            <h3>キャンベル・アーリー（種あり黒葡萄）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>野性的な香りと高い酸が出て、ソースが引き締まる。</p><p>種があるため300gは半割にしてナイフの先で種を取り除き、丸のまま使う100gは種ごと煮て食べるときに出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>白葡萄ジュース（無糖・果汁100%）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>アルコールの締まりが消えて甘さが強く出る。</p><p>白ワイン80mlの代わりに白葡萄ジュース60mlを鍋の縁から注ぎ、煮立てる時間を4分に延ばして水分を飛ばし、甘さを凝縮させる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>鶏のブロード</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>果実の香りが弱まり、肉の出汁感が主体のソースになる。</p><p>白ワイン80mlの代わりに鶏のブロード80mlを同量で使う。</p><p>酸味が不足するため葡萄を500gに増やし、そのうち400gを半割、100gを丸のままにする。</p><p>煮詰めは蓋を取ってから10〜12分と長めにとり、とろみを同じ状態まで持っていく。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ラード（豚脂）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>より濃厚で田舎風のコクが出る。</p><p>ラード20gを鍋に入れ、完全に溶けて透明になってからソーセージを並べる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローズマリーの代わりに</p>
-            <h3>乾燥ローズマリー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樹脂的な香りが弱く、やや薬草っぽさが出る。</p><p>焼き始めには加えず、乾燥品2gを指で砕いて白ワインを注ぐときに一緒に加える。</p><p>枝がないため仕上げで引き上げず、そのままソースに残す。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="norcia">

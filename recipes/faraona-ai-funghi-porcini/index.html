@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"faraona-ai-funghi-porcini","recipe_name":"Faraona ai Funghi Porcini","recipe_course":"secondo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -496,104 +497,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ファラオーナ・アイ・フンギ・ポルチーニ（ホロホロ鳥のポルチーニ煮込み）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ホロホロ鳥（丸鳥）の代わりに</p>
-            <h3>地鶏の骨付きもも肉と骨付き胸肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>野禽らしい引き締まった旨みと弾力が和らぎ、素直で軽い味わいになる。</p><p>合計1.2kgの骨付き地鶏へ置き換える。</p><p>ももと手羽を先に煮て胸肉は後から加え、各部位の中心75℃以上で1分以上を確認する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>辛口の日本の白ワイン（甲州）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸が穏やかで、煮汁の輪郭がわずかに丸くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>ブロード＋白ワインビネガー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>ワイン由来の果実味と厚みが失われ、酸味が単調に立つ。</p><p>ブロード140mlに白ワインビネガー10mlを合わせて加え、酸を飛ばすため2分長く煮立てる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">肉のブロードの代わりに</p>
-            <h3>鶏ガラスープ（無塩）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>コクがやや軽く、煮汁の後味が短くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パンチェッタの代わりに</p>
-            <h3>厚切りベーコン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>燻香が加わり、ポルチーニの香りをやや覆う。</p><p>燻香を和らげるため、加える前に熱湯で30秒下茹でして水気を拭く。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パンチェッタの代わりに</p>
-            <h3>グアンチャーレ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>脂の甘みがより濃く、香りが力強くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>米油</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>青い果実香と苦みが消え、全体の風味が平板になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ニンニクの代わりに</p>
-            <h3>乾燥ガーリックスライス</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>みずみずしい香りが乏しく、香ばしさ寄りの風味になる。</p><p>焦げやすいため、油が温まる前に加えて弱火で1分だけ香りを出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>エシャロット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが上品になり、煮汁の香りが繊細に寄る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">セロリの代わりに</p>
-            <h3>セロリの葉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>苦みと香りが強く出て、青い風味が前に出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんじんの代わりに</p>
-            <h3>パースニップ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが強く土の香りが増し、煮汁が丸くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローズマリーの代わりに</p>
-            <h3>ドライローズマリー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樹脂のような香りが強く出て、清涼感が減る。</p><p>ドライ2gをガーゼで包んで煮汁に入れ、仕上げ前に取り出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">セージの代わりに</p>
-            <h3>ドライセージ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>香りがやや粉っぽく、余韻が短くなる。</p><p>ドライ1.5gを香味野菜と一緒に加えて油に香りを移す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ジュニパーベリーの代わりに</p>
-            <h3>黒胡椒粒（粗砕き）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>針葉樹の清涼な香りが消え、辛みの刺激に置き換わる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマトペーストの代わりに</p>
-            <h3>ドライトマトのペースト</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味が控えめで甘みと旨みが濃くなる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="toscana">

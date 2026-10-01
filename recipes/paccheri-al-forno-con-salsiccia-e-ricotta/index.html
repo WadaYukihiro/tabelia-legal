@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"paccheri-al-forno-con-salsiccia-e-ricotta","recipe_name":"Paccheri al Forno con Salsiccia e Ricotta","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -342,44 +343,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">サルシッチャとリコッタのパッケリ オーブン焼きは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パッケリの代わりに</p>
-            <h3>リガトーニ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>パッケリより管が細く小さいため、リコッタを各穴に詰める工程が省略される。仕上がりの迫力と管の中に閉じ込めるリコッタの食感が失われる</p><p>リコッタはパッケリの穴に詰めず、ソースと混ぜてパスタ全体に散らす</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">サルシッチャ（生ソーセージ）の代わりに</p>
-            <h3>豚ひき肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>サルシッチャ特有のフェンネル・スパイスの風味が失われる。塩こしょうで味を補う必要がある</p><p>スパイス（フェンネルシード小さじ1、黒胡椒少々）を加えて炒める</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">リコッタの代わりに</p>
-            <h3>カッテージチーズ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>水分が多く、焼き上がりのテクスチャーが変わる。ざるで水切りしてから使う</p><p>一晩ざるで水切りしてから使用</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フィオル・ディ・ラッテ（モッツァレラ）の代わりに</p>
-            <h3>モッツァレラ（水牛）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>よりリッチな味わいになる。水分が多いため水気をしっかり取ること</p><p>キッチンペーパーで30分以上水切りする</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノの代わりに</p>
-            <h3>グラナ・パダーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>風味はやや穏やかになるが焼き料理では大きな差は出にくい</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="campania">

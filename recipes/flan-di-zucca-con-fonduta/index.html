@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"flan-di-zucca-con-fonduta","recipe_name":"Flan di Zucca con Fonduta","recipe_course":"antipasto","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -434,56 +435,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">フラン・ディ・ズッカ・コン・フォンドゥータ（かぼちゃのフランとフォンティーナのフォンドゥータ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">栗かぼちゃ（粉質のもの）の代わりに</p>
-            <h3>バターナッツかぼちゃ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>水分が多く繊維が細かいため、甘みは上品だが身が緩くなりやすい。</p><p>200℃での焼き時間を10分延長し、果肉の水分をしっかり飛ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">栗かぼちゃ（粉質のもの）の代わりに</p>
-            <h3>さつまいも</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>甘みとでんぷん質が強く出て、ねっとりと重い口当たりになる。</p><p>卵液を合わせる際に生クリームを15ml追加（合計75ml）して固さを調整する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生クリーム（乳脂肪35〜38%）の代わりに</p>
-            <h3>全乳</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>コクが薄れ、フランの口溶けが軽く水っぽくなる。</p><p>卵液を作る際に卵黄をもう1個分（合計2個）加えて凝固力を補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（すりおろし）の代わりに</p>
-            <h3>グラナ・パダーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味と熟成香がやや穏やかになり、後味が軽くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ナツメグの代わりに</p>
-            <h3>シナモンパウダー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘い香りが前に出て、菓子寄りの印象になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フォンティーナチーズの代わりに</p>
-            <h3>タレッジョ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>酸味と洗い皮の強い香りが立ち、ソースの印象が大きく変わる。</p><p>外皮を厚め（3mm）に削り落としてから1cm角に切る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フォンティーナチーズの代わりに</p>
-            <h3>ラクレット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ミルク感は近いが香りが穏やかで、伸びと余韻がやや弱い。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="piemonte">

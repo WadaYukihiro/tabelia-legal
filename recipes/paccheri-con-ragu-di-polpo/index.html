@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"paccheri-con-ragu-di-polpo","recipe_name":"Paccheri con Ragù di Polpo","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -358,44 +359,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">タコのラグーのパッケリは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パッケリの代わりに</p>
-            <h3>リガトーニ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>管状パスタとしてソースの絡みは同等。サイズ感が変わる</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マダコ（生）の代わりに</p>
-            <h3>イイダコ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>旨みは同等だが煮込み時間が短くなる（40〜50分）</p><p>煮込み時間を40分に短縮して柔らかさを確認する</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤ワインの代わりに</p>
-            <h3>白ワイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ソースの色が薄くなるが風味は大きく変わらない</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒オリーブ（タッジャスカ種）の代わりに</p>
-            <h3>カラマタオリーブ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>風味は近い。塩気が強いため量を80gに減らす</p><p>使用量を80gに調整</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ケッパー（塩漬け）の代わりに</p>
-            <h3>ケッパー（酢漬け）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酢の酸味が加わる。水でよく洗ってから使う</p><p>水でよく洗ってから使用</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="campania">

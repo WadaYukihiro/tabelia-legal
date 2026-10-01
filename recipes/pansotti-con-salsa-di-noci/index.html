@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"pansotti-con-salsa-di-noci","recipe_name":"Pansotti con Salsa di Noci","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -593,122 +594,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">パンソッティ・コン・サルサ・ディ・ノーチ（くるみソースの詰めパスタ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力寄りの中力粉（00粉）の代わりに</p>
-            <h3>デュラム小麦のセモラ・リマチナータ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>生地が黄色く粗い口当たりになり、くるみソースの繊細さが隠れる。</p><p>水分を20ml増やし、生地の休ませ時間を60分にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力寄りの中力粉（00粉）の代わりに</p>
-            <h3>中力粉（うどん粉）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>生地の歯応えがやや強くなり、延ばしの伸展性が少し落ちる。</p><p>加水を10ml増やし、休ませ時間を45分に延長する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>水＋白ワインビネガー小さじ1</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>生地の香りの奥行きが減り、やや平板な風味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">プレボッジョン（野草の混合）の代わりに</p>
-            <h3>ほうれん草300g＋春菊150g＋ルッコラ100g＋クレソン50gの混合</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>野草特有の苦みと草いきれが弱まり、詰め物が穏やかで甘い風味になる。</p><p>ほうれん草は茹で時間を1分に短縮し、ルッコラとクレソンは30秒だけ湯にくぐらせる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">プレボッジョン（野草の混合）の代わりに</p>
-            <h3>ほうれん草500g＋チャード100g</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>苦みがほぼ消え、詰め物が単調な青菜の味になる。</p><p>茹で上げ後の絞りをより強くし、水分を確実に抜く。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">プレシンスエーア（リグーリアの乳清チーズ）の代わりに</p>
-            <h3>リコッタ150g＋水切りヨーグルト50g</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>本来の乳酸の酸味に近づくが、粒立ちがやや細かく滑らかになる。</p><p>ヨーグルトは30分以上水切りしてから合わせる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">プレシンスエーア（リグーリアの乳清チーズ）の代わりに</p>
-            <h3>リコッタのみ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>酸味が失われ、詰め物が甘く重い印象になる。</p><p>レモン汁小さじ1を詰め物に加えて酸味を補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（詰め物用・すりおろし）の代わりに</p>
-            <h3>ペコリーノ・サルド（マイルドタイプ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>羊乳の塩味と獣香が前に出て、くるみソースの甘みと競合する。</p><p>詰め物の塩を2gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（詰め物用・すりおろし）の代わりに</p>
-            <h3>グラナ・パダーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味と旨みがやや軽く、余韻が短くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">卵の代わりに</p>
-            <h3>卵黄2個</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>詰め物がより濃厚でねっとりした口当たりになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フレッシュマジョラムの代わりに</p>
-            <h3>乾燥マジョラム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>青い香りが消え、乾いた干し草様の香りになる。</p><p>1.5gに減らし、詰め物に混ぜて15分置いてから包む。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フレッシュマジョラムの代わりに</p>
-            <h3>フレッシュオレガノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>香りが鋭く薬草的になり、リグーリア特有の甘い芳香が薄れる。</p><p>量を2gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">くるみ（殻むき）の代わりに</p>
-            <h3>くるみ（ローストなし・生の市販むき身）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>油の香りがやや弱く、ソースの甘みが控えめになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">松の実の代わりに</p>
-            <h3>カシューナッツ（無塩）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樹脂香が消え、丸く乳製品的な甘みに変わる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛乳（成分無調整）の代わりに</p>
-            <h3>無糖アーモンドミルク</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>乳のコクが消えてナッツ感が重複し、ソースが軽く水っぽくなる。</p><p>オリーブオイルを10ml増やして口当たりを補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにく（ソース用）の代わりに</p>
-            <h3>にんにく（牛乳で5分下茹でしたもの）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>辛味と刺激が和らぎ、ソースが穏やかになる。</p><p>下茹で用の牛乳20mlを別に用意し、茹でた後は捨てる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（ソース用・すりおろし）の代わりに</p>
-            <h3>グラナ・パダーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味が穏やかになり、くるみの苦みがやや目立つ。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラバージンオリーブオイル（穏やかなタイプ）の代わりに</p>
-            <h3>辛味の強いエクストラバージンオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>苦みと辛味がくるみの渋みと重なり、ソースが刺々しくなる。</p><p>乳化用を60mlに減らし、牛乳を20ml増やす。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="rapallo">

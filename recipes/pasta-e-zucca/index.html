@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"pasta-e-zucca","recipe_name":"Pasta e Zucca","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -443,80 +444,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">パスタ・エ・ズッカ（かぼちゃのパスタ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">かぼちゃ（栗かぼちゃ）の代わりに</p>
-            <h3>バターナッツかぼちゃ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>水分が多く繊維が細かいため、より滑らかで甘みの穏やかなソースになる。</p><p>ステップ3で注ぐ熱湯を300mlから200mlに減らす。</p><p>煮崩れにくいのでステップ4の煮込みを20分から25分に延ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パスタ・ミスタ（混合ショートパスタ）の代わりに</p>
-            <h3>ディタリーニ単一</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>食感の変化がなくなり均一な口当たりになるが、火通りは揃う。</p><p>ステップ6では形が1種なので、投入から8分後ではなく袋表示時間の2分前から噛んで芯を確かめる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パスタ・ミスタ（混合ショートパスタ）の代わりに</p>
-            <h3>スパゲッティを3cmに折ったもの</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>デンプンの溶け出しが多く、よりねっとりとした仕上がりになる。</p><p>ステップ6では投入後2分間、絶えず木べらで混ぜて束にならないようにする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">水の代わりに</p>
-            <h3>顆粒野菜ブイヨンを溶いた湯</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みの層が単調になり、旨み調味料由来の塩気が前に出る。</p><p>ステップ1で沸かす水900mlに顆粒野菜ブイヨン小さじ2を溶かしてから保温する。</p><p>塩気が加わるため、ステップ3で振る塩3gを1.5gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">水の代わりに</p>
-            <h3>野菜のブロード</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>香味野菜の甘みと旨みが重なり、かぼちゃの甘さに厚みのある土台がつく。</p><p>ステップ1では水を沸かす代わりに、鍋に水1200mlと4つ割りの玉ねぎ80g・皮つき2cm輪切りのにんじん80g・3cm長さのセロリ60gを入れ、蓋をせず中火にかけ、沸いたら弱火で30分煮出す。</p><p>ざるで漉して野菜を除き（押し潰さない）、900mlに足りなければ湯を足して900mlに合わせ、小鍋でごく弱火に保温する。かぼちゃと香味の下ごしらえはこの30分の間に済ませる。</p><p>ブロードには塩を入れず、以降の手順で「熱湯」とある箇所はすべてこのブロードに置き換える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">プロヴォローネ・ピカンテ（すりおろし）の代わりに</p>
-            <h3>パルミジャーノ・レッジャーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ミルクのコクが減り、塩味と旨みがより鋭くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">プロヴォローネ・ピカンテ（すりおろし）の代わりに</p>
-            <h3>ペコリーノ・ロマーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>塩味と羊乳の香りが強く、かぼちゃの甘みと対比的な味になる。</p><p>塩味が強いため、ステップ6で加える塩を3gから1.5gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>乾燥にんにくスライス</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>生の刺激的な立ち上がりが弱く、香ばしく乾いた香りになる。</p><p>ステップ2では冷たい油から始めず、オイルが温まってから乾燥にんにくスライス3gを加え、1分で色づく前に取り出す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">乾燥赤唐辛子の代わりに</p>
-            <h3>粗挽き唐辛子フレーク</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>辛みが早く強く立ち、香油の香りがやや単調になる。</p><p>ステップ2では冷たい油に入れず、にんにくを取り出した直後に小さじ1/3を加え、20秒後に玉ねぎを入れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バジル（生）の代わりに</p>
-            <h3>ミント（生）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>より清涼感のある後味になり、かぼちゃの甘さが軽く感じられる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノの皮の代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>旨みの奥行きが減り、かぼちゃの甘さが前面に出る。</p><p>ステップ3で皮を鍋に沈める操作と、ステップ6で取り出す操作を省く。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="campania">

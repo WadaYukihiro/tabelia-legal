@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"mont-blanc","recipe_name":"Mont-Blanc","recipe_course":"dessert","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -497,56 +498,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">モンブランは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生栗の代わりに</p>
-            <h3>栗の水煮（無糖・むき栗）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>栗の香りの立ち上がりが弱まり、繊維感のない均一な口当たりになる。</p><p>ステップ1では水1Lを沸かす作業を行わない。</p><p>ステップ2では鬼皮・渋皮を剥く作業を行わず、メレンゲを焼き始めたら庫内の色づきを確認しながら待つだけにする。</p><p>ステップ3の水600mlでの下煮を省く。</p><p>ステップ4のシロップに水煮栗140gをそのまま入れ、弱火で10分煮含める。</p><p>皮むき用の水1Lは使用しない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生栗の代わりに</p>
-            <h3>市販のパート・ド・マロン（加糖栗ペースト）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>甘さが単調になり、自家製特有の粗い舌触りと栗の芯の香りが失われる。</p><p>ステップ1では水1Lを沸かす作業を行わない。</p><p>ステップ2〜5の栗の下処理・下茹で・シロップ煮・味含ませを行わない。</p><p>ステップ6でパート・ド・マロン180gをボウルでほぐし、ポマード状の無塩バター15gとダークラム10mlを練り込むところから始める。</p><p>シロップ用のグラニュー糖70gと水70ml、下茹で用の水600ml、皮むき用の水1Lは使用しない。</p><p>硬さ調整はシロップの代わりに牛乳25mlのみで行う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バニラビーンズの代わりに</p>
-            <h3>バニラエクストラクト</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>種の粒感と余韻が薄れ、香りがやや平板になる。</p><p>ステップ4のシロップにはバニラを加えず、グラニュー糖と水だけで立てる。</p><p>ステップ6で裏ごしした栗生地にバニラエクストラクト小さじ1/2を加えて練り込む。</p><p>ステップ7でシャンティイを泡立てる前にバニラエクストラクト小さじ1/2を加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ダークラムの代わりに</p>
-            <h3>ラム風味シロップ（ノンアルコール）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>香りの伸びが短く、栗の甘さがやや前に出る。</p><p>ステップ6の硬さ調整では甘みが増すため煮汁のシロップは加えず、牛乳25mlだけで伸ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ダークラムの代わりに</p>
-            <h3>コニャック</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>甘い樽香がより乾いたブランデー香に変わる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">レモン汁の代わりに</p>
-            <h3>ホワイトビネガー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>柑橘の微かな酸味が消え、ごく僅かに酸の匂いが残る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生クリーム（乳脂肪35%）の代わりに</p>
-            <h3>乳脂肪47%の生クリーム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>コクが強く重たいシャンティイになり、雪のような軽さが減る。</p><p>ステップ7の泡立ては氷水にボウルを当てて低速で行い、とろみがついた時点から5秒ごとに状態を確認して角が立った瞬間に止める。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="paris-patisserie-street">

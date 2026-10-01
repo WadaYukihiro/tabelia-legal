@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"cinghiale-in-agrodolce","recipe_name":"Cinghiale in Agrodolce","recipe_course":"secondo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -559,110 +560,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">チンギアーレ・イン・アグロドルチェ（猪肉の甘酢煮込み）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">猪肩肉の代わりに</p>
-            <h3>豚肩ロース肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>獣臭が消えて穏やかな味になり、甘酢の輪郭が強く前に出る。</p><p>豚肩ロース600gに置き換え、冷蔵マリネを12時間にする。</p><p>煮込みは90分後から柔らかさを確認し、串が抵抗なく通るまで続ける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">猪肩肉の代わりに</p>
-            <h3>鹿肩肉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>脂が少なく野趣は保たれるが、口当たりがやや締まった仕上がりになる。</p><p>鹿肩肉600gに置き換え、パンチェッタは合計80gにする。</p><p>加熱時間で決めず、中心75℃以上で1分以上加熱され、串が抵抗なく通るまで煮る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤ワイン（フルボディ）の代わりに</p>
-            <h3>軽めの赤ワイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>タンニンが弱く、猪の野趣を受け止めきれずソースの厚みが薄くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤ワインビネガーの代わりに</p>
-            <h3>白ワインビネガー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸が鋭く直線的になり、ソースの色もわずかに浅くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>赤玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが増し、ソースがやや丸い味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ジュニパーベリーの代わりに</p>
-            <h3>ジン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>針葉樹様の香りは似るが、実の樹脂感が弱まり香りが軽くなる。</p><p>マリネ液にジン15mlを加える。</p><p>煮込み開始時にアルコール臭を飛ばすため、追加で2分沸かす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローズマリーの代わりに</p>
-            <h3>乾燥ローズマリー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>樹脂香が穏やかになり、青い香りが失われる。</p><p>乾燥ローズマリー小さじ1/2をガーゼに包んで煮込みに入れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パンチェッタの代わりに</p>
-            <h3>ベーコン（ブロック）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>燻香が加わり、猪とハーブの香りがやや後退する。</p><p>燻香を和らげるため、切ったベーコンを熱湯で1分下茹でしてから炒める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマトペーストの代わりに</p>
-            <h3>ホールトマト缶（裏漉し）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>旨みの凝縮感が減り、ソースがやや軽く水っぽい印象になる。</p><p>裏漉ししたトマト80gを加え、水分を飛ばすため煮込み前に5分煮詰める。</p><p>ブロードを350mlに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">肉のブロードの代わりに</p>
-            <h3>無塩の鶏のブロード</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>肉の深い香りが穏やかになり、甘酢の輪郭が前に出ます。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">レーズンの代わりに</p>
-            <h3>プルーン（種なし・刻む）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが深く濃厚になり、ソースの色がより暗くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">松の実の代わりに</p>
-            <h3>スライスアーモンド</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樹脂のような甘い脂の香りが消え、乾いた香ばしさが前に出る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ダークチョコレート（カカオ70%）の代わりに</p>
-            <h3>無糖カカオパウダー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>苦味は出るがカカオバターの艶とコクが不足し、ソースの口当たりが軽くなる。</p><p>カカオパウダー10gをソース少量で溶きのばしてから鍋に戻し入れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">オレンジピール（砂糖漬け）の代わりに</p>
-            <h3>オレンジの表皮（国産・ノーワックス）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>苦味と香りが鮮烈になり、砂糖漬け由来のねっとりした甘みは失われる。</p><p>すりおろした表皮小さじ1を火を止める直前に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィン・サントの代わりに</p>
-            <h3>ぬるま湯</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>酒由来の熟成香とコクが消え、甘酢の輪郭だけが残る単調な味になる。</p><p>レーズンをぬるま湯50mlで20分戻し、戻し汁は使わず切ってから加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィン・サントの代わりに</p>
-            <h3>マルサラ（甘口）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ナッツ香がより濃厚になり、甘みが強く残る。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="toscana">

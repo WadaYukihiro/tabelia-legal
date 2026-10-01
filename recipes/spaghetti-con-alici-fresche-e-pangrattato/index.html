@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"spaghetti-con-alici-fresche-e-pangrattato","recipe_name":"Spaghetti con Alici Fresche e Pangrattato","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -549,92 +550,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">スパゲッティ・コン・アリーチ・フレスケ・エ・パングラッタート（生カタクチイワシとパン粉のスパゲッティ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">スパゲッティの代わりに</p>
-            <h3>ヴェルミチェッリ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>ナポリ本来の太めの麺となり噛み応えが増す。</p><p>太さが増すため袋の表示時間から2分引いた時間でタイマーをセットし直す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">スパゲッティの代わりに</p>
-            <h3>リングイネ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>断面が平たくなりオイルの絡みが増して口当たりがやや重くなる。</p><p>袋の表示茹で時間から2分引いた時間でタイマーをセットし直す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生カタクチイワシの代わりに</p>
-            <h3>生の小イワシ（マイワシ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>脂が強く魚の風味が濃くなり、繊細さより力強さが前に出る。</p><p>身が厚いため鍋を揺すりながらの加熱を30秒延ばし、1分30秒〜2分にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生カタクチイワシの代わりに</p>
-            <h3>オイル漬けアンチョビフィレ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>生の甘みが完全に失われ、塩気と発酵香だけの別種のソースになる。</p><p>量を60gに減らし、手開きと塩締めの工程を省く。</p><p>にんにくを取り出したオイルの中で弱火のまま木べらで押し崩し、ペースト状に溶かす。</p><p>白ワインは溶かしたあとに加え、40〜50秒煮立てる。</p><p>仕上げの細塩1gを加えない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生カタクチイワシの代わりに</p>
-            <h3>冷凍カタクチイワシ（解凍）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>身が水っぽく崩れやすく、原形を保ちにくいが風味自体はほぼ同等。</p><p>冷蔵庫で解凍し、氷水ですすぐ前にキッチンペーパーで水気を十分に押さえてから開く。</p><p>開いた身は氷水で洗わず、キッチンペーパーで拭くだけにする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">固くなった田舎パンの代わりに</p>
-            <h3>パン粉（乾燥・粗目）80g</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>軽くサクサクしすぎてオイルを吸ったコクが出にくい。</p><p>フードプロセッサーで挽く工程を省き、手で軽く砕いて80gを用意する。</p><p>油を吸いやすいので炒め時間を4〜5分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">固くなった田舎パンの代わりに</p>
-            <h3>市販の細目パン粉（乾燥）80g</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>粒が揃いすぎて食感の粗さが失われ、軽い口当たりになる。</p><p>フードプロセッサーで挽く工程を省き、80gをそのまま使う。</p><p>焦げやすいので炒め時間を4〜5分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ピュアオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>青々とした苦味と香りが消え、ソース全体が平坦になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>乾燥ガーリックスライス</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>生の甘い香りが出ず、焦げた乾いた香りになる。</p><p>油に入れる直前に水で軽く戻し、水気を拭いてから使う。</p><p>焦げやすいので油に入れてからの加熱を1分30秒に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤唐辛子（乾燥）の代わりに</p>
-            <h3>一味唐辛子</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>辛味が均一に回るが、油に移る香ばしい香りが弱まる。</p><p>唐辛子は最初から入れず、にんにくを取り出した直後の油に小さじ1/3を加え、10秒揺すってすぐ火を止める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>水＋白ワインビネガー小さじ1/2</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ワインの果実味が抜け、酸だけが立った軽い風味になる。</p><p>水30mlに白ワインビネガー小さじ1/2を混ぜて加え、30秒だけ煮立てて酸を飛ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">コラトゥーラ・ディ・アリーチ（イワシの魚醤）の代わりに</p>
-            <h3>塩漬けアンチョビペースト小さじ1</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>旨味は残るが液体でないためソースの伸びが鈍くなる。</p><p>取り置いた茹で汁のうち15mlで溶きのばしてから、火を止めたフライパンに加える。</p><p>マンテカトゥーラで使う茹で汁は最初に105mlとし、残り80mlを40mlずつ足す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">コラトゥーラ・ディ・アリーチ（イワシの魚醤）の代わりに</p>
-            <h3>ナンプラー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みと発酵香が強く、南イタリアらしい澄んだ塩味からやや東南アジア寄りになる。</p><p>量を7mlに減らして火を止めてから加える。</p><p>仕上げの細塩1gは加えない。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="campania">

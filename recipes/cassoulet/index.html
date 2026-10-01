@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"cassoulet","recipe_name":"Cassoulet","recipe_course":"plat","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -376,32 +377,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">カスレは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白いんげん豆（乾燥）の代わりに</p>
-            <h3>乾燥カネリーニ豆</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>粒がやや大きく煮崩れしにくいが、クリーミーな仕上がりと役割はほぼ同じ</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鴨のコンフィ（もも、市販）の代わりに</p>
-            <h3>鶏もも肉のオイル煮（自家製）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>鴨特有の濃厚な脂とコクが失われ、鶏の淡白な旨みに変わる。ボリューム感と食感の役割は代替できる</p><p>骨付き鶏もも肉4本に塩とタイムをすり込んで冷蔵庫で3時間置き、サラダ油に完全に沈めて弱火で90分、静かな泡が立つ程度の温度を保ちながら煮て自家製コンフィを作る。仕込みは前日までに済ませておく</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トゥールーズソーセージ（生）の代わりに</p>
-            <h3>粗挽き生ソーセージ（市販）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>トゥールーズソーセージ特有の粗い挽き方と豚肉の風味のバランスがやや変わるが、粗挽きタイプを選べば食感の再現度は高い</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="toulousain">

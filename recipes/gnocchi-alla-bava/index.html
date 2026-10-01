@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"gnocchi-alla-bava","recipe_name":"Gnocchi alla Bava","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -543,80 +544,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">ニョッキ・アッラ・バーヴァは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">じゃがいも（粉質・男爵など）の代わりに</p>
-            <h3>メークイン（粘質種）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>生地が粘りやすく、軽さが減って弾力の強い食感になる。</p><p>粘りが出るため生地用の00小麦粉を160gではなく190gにし、まとめる回数を2〜3回に抑える。</p><p>試し茹でを必ず2回行い、崩れる場合のみ10gずつ足す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">じゃがいも（粉質・男爵など）の代わりに</p>
-            <h3>インカのめざめ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みと黄色みが強まり、チーズソースとの一体感がやや増す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">00小麦粉の代わりに</p>
-            <h3>薄力粉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>よりやわらかく崩れやすいが、口当たりは軽く仕上がる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">00小麦粉の代わりに</p>
-            <h3>中力粉</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>粗さが出てやや歯ごたえの強いニョッキになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ナツメグの代わりに</p>
-            <h3>パウダーナツメグ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りの立ち上がりが弱く、こもった風味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フォンティーナの代わりに</p>
-            <h3>トーマ・ピエモンテーゼ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味がやや強く、溶けた後の糸引きが少し弱まる。</p><p>水分が多いため浸漬用の牛乳を150mlに減らし、フォンドゥータに戻す量を100mlにする。</p><p>糸引きが弱いので卵黄を加えた後の加熱を6〜8分に延ばして濃度をつける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フォンティーナの代わりに</p>
-            <h3>グリュイエール</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ナッツ様の香りが前に出て塩気が強く、コクは近いが甘みが減る。</p><p>溶けにくいため冷蔵での浸漬を一晩（8時間）に延ばす。</p><p>塩気が強いのでフォンドゥータに塩を足さない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フォンティーナの代わりに</p>
-            <h3>タレッジョ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>発酵香と塩気が強く、なめらかだが糸引きはほとんど出ない。</p><p>水分が多いため浸漬用の牛乳を130mlに減らし、全量をフォンドゥータに使う。</p><p>溶けやすいので湯煎での溶解は6〜8分で切り上げる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">牛乳（全乳）の代わりに</p>
-            <h3>生クリーム（乳脂肪35%）と牛乳を半量ずつ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>重く濃厚になり、フォンティーナ本来の香りが隠れる。</p><p>浸漬液を牛乳90ml＋生クリーム90mlにし、冷蔵で2時間以上浸す。</p><p>脂が多くなるためフォンドゥータ用バターを20gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">パルミジャーノ・レッジャーノ（すりおろし）の代わりに</p>
-            <h3>グラナ・パダーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>熟成香が穏やかになり、旨みの余韻が短くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒胡椒（ホール）の代わりに</p>
-            <h3>白胡椒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>辛味が穏やかになり、見た目に黒い点が出ない。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="piemonte-alps">

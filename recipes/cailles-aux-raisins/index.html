@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"cailles-aux-raisins","recipe_name":"Cailles aux Raisins","recipe_course":"plat","recipe_cuisine":"French"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">2</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">2</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">2</output>
@@ -402,86 +403,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">カイユ・オ・レザン（うずらの葡萄煮）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白ぶどうの代わりに</p>
-            <h3>巨峰（皮を剥いたもの）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>甘みが強く果汁が多いため、ソースが甘ったるく緩みやすい。</p><p>皮と種を除いて半割りにし、ソースの最後に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白ぶどうの代わりに</p>
-            <h3>マスカット（種なし・皮薄）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りは華やかになるが果肉が締まりやすく、酸味がやや弱い。</p><p>種抜きが不要なため、湯むき後は半割りにするだけでよい。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のフォンの代わりに</p>
-            <h3>水＋無添加チキンブイヨン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>ゼラチン質が不足してソースの粘りととろみが弱くなる。</p><p>表示に従って無塩の鶏のスープ250mlを用意する。煮詰めは時間だけでなく木べらを薄く覆う濃度で判断する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">鶏のフォンの代わりに</p>
-            <h3>ジビエのフォン（フォン・ド・ジビエ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>より野性的で深いコクになり、秋の一皿としての輪郭が強まる。</p><p>表示に従って無塩の鶏のスープ250mlを用意する。煮詰めは時間だけでなく木べらを薄く覆う濃度で判断する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>ノンアルコール白ワイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>酸の厚みとアルコール由来の香りの広がりが減り、ソースが平板になる。</p><p>同量を用い、液量が半分になるまで煮詰める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マール・ド・ブルゴーニュの代わりに</p>
-            <h3>白ワイン＋白ワインビネガー小さじ1／2</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>蒸留酒の香りの芯が失われ、酸主体の軽いソースになる。</p><p>アルコール度数が低いため、注いだ後の煮立ては20秒で切り上げる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マール・ド・ブルゴーニュの代わりに</p>
-            <h3>コニャック</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>葡萄の搾りかす由来の野太い香りが、より丸く甘い樽香に変わる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">生クリーム（乳脂肪40%前後）の代わりに</p>
-            <h3>サワークリーム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>軽い乳酸の酸味が加わり、葡萄の甘さが締まって感じられる。</p><p>分離しやすいため、火を弱めてから加え、沸騰させずに1〜2分で仕上げる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エシャロットの代わりに</p>
-            <h3>玉ねぎ（新玉ねぎ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが強く香りが粗くなり、ソースの繊細さがやや損なわれる。</p><p>水分が多いため、炒め時間を1分延ばして透明になるまで火を入れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グレープシードオイルの代わりに</p>
-            <h3>太白ごま油</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ごくわずかに香ばしさが加わるが、仕上がりへの影響は小さい。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">食パン（クルトン用）の代わりに</p>
-            <h3>バゲット（斜め厚切り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>歯応えが強くなり、ソースの吸い込みが穏やかになる。</p><p>目が粗く焦げやすいため、バターで片面1分ずつ弱めの中火で焼く。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">タイムの代わりに</p>
-            <h3>ドライタイム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りがやや乾いた印象になり、青い清涼感が減る。</p><p>腹に詰められないため、小さじ1／2をうずらの表面にまぶしてから焼く。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="france-sunday-market-rotisserie">

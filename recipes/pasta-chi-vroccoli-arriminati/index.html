@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"pasta-chi-vroccoli-arriminati","recipe_name":"Pasta chi Vroccoli Arriminati","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -540,104 +541,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">パスタ・キ・ヴロッコリ・アッリミナーティ（カリフラワーの練り込みパスタ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ブカティーニの代わりに</p>
-            <h3>メッツィ・ジーティ（折ったもの）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>筒状の短い麺にソースが入り込み、より粘度のある一体感になる。</p><p>長さ4〜5cmに手で折ってから茹でる。</p><p>茹で時間は袋の表示より2分短く取り、鍋の中で2〜3分あおって仕上げる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ブカティーニの代わりに</p>
-            <h3>スパゲッティ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>穴がないぶんソースの含みが浅く、口当たりが軽くなる。</p><p>湯切り後に水分が抜けやすいので、鍋であおる時間を2分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">緑カリフラワー（シチリア産種のカリフラワー）の代わりに</p>
-            <h3>ロマネスコ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>ナッツ様の香りが強く、崩れにくいため粒感がやや残る。</p><p>丸ごと茹でる時間を2分ほど長くし、竹串が芯まで抵抗なく通るまで加熱する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">緑カリフラワー（シチリア産種のカリフラワー）の代わりに</p>
-            <h3>白カリフラワー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが穏やかで香りが淡く、全体の色がサフラン寄りの黄色一色になる。</p><p>丸ごと茹でる時間を13〜15分に短くする（白種は繊維がやわらかい）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">白玉ねぎの代わりに</p>
-            <h3>黄玉ねぎ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>甘みがやや濃く、輪郭のはっきりした香りになる。</p><p>色づきやすいので炒めは弱火のまま10分にとどめる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">塩漬けアンチョビの代わりに</p>
-            <h3>コラトゥーラ・ディ・アリーチ（魚醤）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>旨みは通るが身のコクがなく、後味が澄んだ塩味になる。</p><p>ソフリットには加えず、パスタを鍋であおり終える直前に小さじ2を回し入れる。</p><p>塩漬けアンチョビの塩抜き作業は不要になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">塩漬けアンチョビの代わりに</p>
-            <h3>オイル漬けアンチョビフィレ（12枚）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩気と熟成香がやや弱く、丸みのある旨みになる。</p><p>塩抜きは不要。12枚の油を軽く切ってそのまま使う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">干しぶどう（小粒のパッソリーナ）の代わりに</p>
-            <h3>サルタナレーズン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>粒が大きく甘みが直線的で、酸味の余韻が弱くなる。</p><p>戻したあと粗く刻んでからソフリットに加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">干しぶどう（小粒のパッソリーナ）の代わりに</p>
-            <h3>カラント（干しすぐり）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>酸味が強めで、甘塩っぱさのコントラストが鋭くなる。</p><p>粒が小さく戻りが早いので、浸水は10分にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">松の実の代わりに</p>
-            <h3>スライスアーモンド</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>樹脂香が消え、香ばしさが軽く乾いた印象になる。</p><p>焦げやすいので乾煎りは弱火で2分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">サフラン（めしべ）の代わりに</p>
-            <h3>ターメリック</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>色は近づくが、サフラン特有の干し草様の甘い香りが失われ土っぽい苦みが出る。</p><p>茹で汁に浸す工程を省く。</p><p>小さじ1/2をソフリットの油に直接加えて弱火で30秒炒め、香りを出してから茹で汁50mlを注ぐ。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">サフラン（めしべ）の代わりに</p>
-            <h3>サフランパウダー</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りの立ち上がりが早く、余韻はやや短い。</p><p>めしべ0.3gの代わりにパウダー0.15g（0.125g入り小袋1袋＋ひとつまみ）を茹で汁50mlに溶く。</p><p>浸す時間は3分で足りる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">トマト濃縮ペースト（エストラット）の代わりに</p>
-            <h3>トマトペースト（缶・チューブ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味と発酵的な深みが薄く、酸味がやや前に出る。</p><p>溶きのばす茹で汁を20mlに減らし、同量で扱う（水分が多いため）。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ピュアオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>青い辛みと果実香が消え、ソース全体の輪郭がぼやける。</p><p>発煙点が高く色づきが早いので、パン粉の炒りは中弱火で5分に調整する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">固くなったパンの中身（パン粉用）の代わりに</p>
-            <h3>乾燥パン粉（粗挽き）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>粒が均一で軽く、噛んだときのざらつきと小麦の甘みが弱まる。</p><p>水分が少ないため炒る時間を3〜4分に短縮し、色づきを早めに止める。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="sicilia">

@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"cjarsons-della-carnia","recipe_name":"Cjarsons della Carnia","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -656,158 +657,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">チャルソンス・デッラ・カルニアは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">じゃがいも（生地用・黄肉種）の代わりに</p>
-            <h3>男爵いも</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>生地が崩れやすく口当たりが粗くなる。</p><p>デンプンが多く練ると粘りが出やすい一方で保形性が低いため、小麦粉は先に70gではなく50gだけ混ぜ、手にわずかに付く硬さになるまで残りを5gずつ足す（総量105gを超えないようにする）。</p><p>こねる時間を3〜4分から2分に短縮する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">じゃがいも（生地用・黄肉種）の代わりに</p>
-            <h3>メークイン</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>粘りが強くなり生地がわずかにもっちりする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力寄りの小麦粉（00タイプ）の代わりに</p>
-            <h3>小麦粉タイプ1（準全粒）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>素朴な麦の香りが強まり、山村の古い作り方に近づく。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">薄力寄りの小麦粉（00タイプ）の代わりに</p>
-            <h3>中力粉（うどん粉）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>生地の歯ごたえが増し、繊細さがやや失われる。</p><p>グルテンが出やすいため、こね時間を3〜4分から2分に短縮する。</p><p>休ませ時間を30分から40分に延ばす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">卵黄の代わりに</p>
-            <h3>全卵（1/2個分を溶いたもの）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>生地がやや締まり、コクが軽くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">バター（生地用）の代わりに</p>
-            <h3>ラード</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>生地がよりほろりと崩れ、山岳部の古式に近い風味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フレッシュリコッタ（牛乳製）の代わりに</p>
-            <h3>水切りしたカッテージチーズ（裏ごし）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>酸味が立ち、口当たりがやや粒状になる。</p><p>2時間の水切り後に裏ごしを2回行って粒感を消し、その状態で詰めものに加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">フレッシュリコッタ（牛乳製）の代わりに</p>
-            <h3>羊乳リコッタ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>乳の香りが濃厚になり、甘さとの対比が強まる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ほうれん草の代わりに</p>
-            <h3>スイスチャード（不断草）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>わずかに土の香りが強く、より野草に近い風味になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ほうれん草の代わりに</p>
-            <h3>イラクサ（新芽）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>青く野性的な香りが加わり、最も現地に近い味になる。</p><p>手袋を着用し、湯1Lで1分ではなく2分茹でて刺毛を無害化してから冷水に取り、固く絞る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ミント（生）の代わりに</p>
-            <h3>ドライミント</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>清涼感が鈍り、乾いた薬草的な香りになる。</p><p>生ミント8gの代わりにドライミント3gを使い、刻まずに指で揉んで香りを立たせてから他のハーブと合わせる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">レモンバームの代わりに</p>
-            <h3>レモンタイム</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>柑橘感は残るが樹脂的な香りが加わる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">マジョラムの代わりに</p>
-            <h3>オレガノ（生）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが強く苦味寄りになる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>エシャロット</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが上品になり辛味が減る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">レーズンの代わりに</p>
-            <h3>干しいちじく</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みが穏やかになり、種のプチプチした食感が加わる。</p><p>繊維が固いため先に5mm角に刻み、それから40℃程度のぬるま湯200mlで20分戻して固く絞る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シトロンの砂糖漬けの代わりに</p>
-            <h3>オレンジピールの砂糖漬け</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>柑橘の香りが甘く華やかになり、苦味が減る。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">シトロンの砂糖漬けの代わりに</p>
-            <h3>ゆずの砂糖漬け</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>和柑橘の華やかな香りが前に出て、山村的な素朴さが薄れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">無糖ココアパウダーの代わりに</p>
-            <h3>ダークチョコレート（カカオ70%・削り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>油脂のコクと甘みが加わり、苦味の輪郭がやわらぐ。</p><p>ココア5gの代わりにカカオ70%のチョコレート15gを冷蔵庫で15分冷やし、目の細かいおろし金で細かく削って冷蔵庫に戻しておく。</p><p>ふるったココアの代わりに、削ったチョコレート15gをレーズン・シトロン・アマレッティと一緒に加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">アマレッティ（固焼き）の代わりに</p>
-            <h3>ビスコッティ＋アーモンドエッセンス</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>杏仁香が単調になり、余韻が短くなる。</p><p>アマレッティの代わりにビスコッティ25gを同様に粉状に砕く。</p><p>砕いたビスコッティにアーモンドエッセンス2滴を混ぜてから詰めものに加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラニュー糖（詰めもの用）の代わりに</p>
-            <h3>はちみつ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>甘みに花の香りが加わり、詰めものが緩くなる。</p><p>グラニュー糖15gの代わりにはちみつ12gを加える。</p><p>水分が増えるためパン粉を15gから20gに増やし、3回に分けて硬さを見ながら加える。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラッパの代わりに</p>
-            <h3>ラム酒（ダーク）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘い樽香が加わり、山のブランデーらしい辛口の香りが弱まる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラッパの代わりに</p>
-            <h3>りんごの蒸留酒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>果実香が前に出て後味が軽くなる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">燻製リコッタの代わりに</p>
-            <h3>スカモルツァ・アッフミカータ（削り）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>燻香は残るが乳脂が多く、粉状ではなく細い糸状に散り、熱で溶けて糸を引く。</p><p>削る前に冷凍庫で15分締めてから目の細かいおろし金で細かく削る。</p><p>溶けて固まらないよう、皿に盛って焦がしバターをかけた直後に散らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">燻製リコッタの代わりに</p>
-            <h3>リコッタ・サラータ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>燻香が消え、塩味とミルク感だけの輪郭になる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="carnia">

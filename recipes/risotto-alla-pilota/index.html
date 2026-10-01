@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"risotto-alla-pilota","recipe_name":"Risotto alla Pilota","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -112,7 +114,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -121,9 +122,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -420,92 +421,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">リゾット・アッラ・ピロータは、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィアローネ・ナーノ米の代わりに</p>
-            <h3>日本の短粒米（うるち米）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>粘りが強く炊き込みご飯に近い食感になり、粒の独立感が失われる。</p><p>米は2回だけ手早く水にくぐらせて表面の糠を落とす。</p><p>水を430mlに減らし、沸騰後の加熱を8分にする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィアローネ・ナーノ米の代わりに</p>
-            <h3>アルボリオ米</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>澱粉が多く粒同士がくっつきやすく、狙いの「そぐらなーと」より粘りが出る。</p><p>水を500mlに減らす。</p><p>蒸らしは15分のまま、蓋と布巾を外した直後、バターを散らす前にフォークで縦に切るように粒をほぐす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ヴィアローネ・ナーノ米の代わりに</p>
-            <h3>カルナローリ米</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>粒が長く芯が強いため、ほろほろ感がやや減り歯応えが立つ。</p><p>吸水量が多いので水を570mlに増やす。</p><p>吸水加熱を13〜14分に延ばす。</p><p>蒸らしを18分に延長する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">水の代わりに</p>
-            <h3>薄い肉のブロード</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>旨みが増す一方で、ソーセージの脂と米の甘みだけで構成する素朴な輪郭がぼやける。</p><p>ブロードに塩気がある場合、加える粗塩を2gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">サラメッラ（マントヴァの生ソーセージ）の代わりに</p>
-            <h3>ルガーネガ（生ソーセージ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>にんにくと胡椒の効きがやや穏やかになるが、脂と塩気の質はほぼ同等。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">サラメッラ（マントヴァの生ソーセージ）の代わりに</p>
-            <h3>味付けなしの粗挽き豚ソーセージ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>香辛料の複雑さが減り、単調な豚肉の甘さが前に出る。</p><p>崩した肉に黒胡椒0.5gと塩1gを追加して下味を補う。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">サラメッラ（マントヴァの生ソーセージ）の代わりに</p>
-            <h3>豚粗挽き肉＋豚背脂</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>熟成香と塩の丸みがなく、肉汁の濃度が浅くなる。</p><p>豚粗挽き肉300gに刻んだ背脂50g、塩4g、黒胡椒1g、すりおろしにんにく2gを混ぜ、30分冷蔵して馴染ませてから崩し焼きにする。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラーナ・パダーノ（すりおろし）の代わりに</p>
-            <h3>パルミジャーノ・レッジャーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>塩味と旨みがより鋭く、素朴な甘みがやや後退する。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">グラーナ・パダーノ（すりおろし）の代わりに</p>
-            <h3>ペコリーノ・ロマーノ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>羊乳の強い塩気と酸が支配し、豚の脂の甘さと衝突する。</p><p>塩気が強いため、炊き水に加える粗塩を3gに減らす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ラード（豚脂）の代わりに</p>
-            <h3>エクストラヴァージンオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>青い香りが混じり、マントヴァ平野の豚脂主体のこってりした味の芯が抜ける。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ラード（豚脂）の代わりに</p>
-            <h3>バター</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>乳の香りが加わり、豚脂特有の力強さがやや和らぐ。</p><p>焦げやすいため、肉を焼く火加減を中火より弱めに保つ。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>ランブルスコ（辛口・赤）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>色がわずかに付き、タンニンで肉の風味がより濃厚になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>水＋白ワインビネガー小さじ1</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>果実味の甘い余韻がなく、酸だけが立って肉の香りが平板になる。</p><p>水55mlと白ワインビネガー5mlを合わせて加え、鍋底をこそげながら30秒煮立てる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="lombardia">

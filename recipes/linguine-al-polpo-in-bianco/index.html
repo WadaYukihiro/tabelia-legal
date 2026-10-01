@@ -40,6 +40,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
   <script>gtag('js',new Date());gtag('config',"G-WS85ZG81XE",{"page_type":"recipe","recipe_slug":"linguine-al-polpo-in-bianco","recipe_name":"Linguine al polpo in bianco","recipe_course":"primo","recipe_cuisine":"Italian"});</script>
   <script src="/analytics.js" defer></script>
+  <link rel="stylesheet" href="/recipes/layout.css">
+  <script src="/recipes/layout.js" defer></script>
 </head>
 <body>
   <div class="container container-recipe">
@@ -113,7 +115,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#alternatives">代替食材</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -122,9 +123,9 @@
 
         <div class="recipe-body">
           <div class="recipe-rail">
-            <section class="recipe-ingredients" id="ingredients">
+            <section class="recipe-ingredients" id="ingredients" aria-labelledby="ingredients-title">
               <div class="ingredients-heading">
-                <h2>材料（<span id="ingredient-servings-label">4</span>人分）</h2>
+                <h2 id="ingredients-title">材料（<span id="ingredient-servings-label">4</span>人分）</h2>
                 <div class="servings-stepper" aria-label="人数を変更">
                   <button type="button" id="servings-minus" aria-label="人数を1人減らす">−</button>
                   <output id="servings-output" aria-live="polite">4</output>
@@ -509,104 +510,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-alternatives" id="alternatives">
-        <p class="eyebrow">INGREDIENT OPTIONS</p>
-        <h2>手に入る食材で、本格の輪郭を保つ</h2>
-        <p class="recipe-alternatives-lead">リングイネ・アル・ポルポ・イン・ビアンコ（タコの白いリングイネ）は、次の食材でも作れます。味や食感、手順への影響を確認して選んでください。</p>
-        <div class="recipe-alternatives-grid">
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">タコ（真ダコ）の代わりに</p>
-            <h3>ボイル済みタコ足</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>タコの茹で汁が一切取れないためソースの厚みとゼラチン質のとろみが減り、身の香りも弱くなる。</p><p>下処理と長時間の火入れ、煮汁の中で冷ます工程は行わない。</p><p>玉ねぎ1個・にんじん1本・セロリ1本・ローリエ2枚・黒胡椒ホール8粒・パセリの茎全量を水1800mlで30分煮出し、漉してから強火で20分煮詰めて700mlに濃縮し、タコの茹で汁の代わりに使う。</p><p>ボイル済みタコ足1000gのうち400gを5mm角に刻んでソースに使い、残り600gは2.5cm幅の斜めそぎ切りにして最後の1分だけ温める。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">タコ（真ダコ）の代わりに</p>
-            <h3>ヤリイカ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -35点</p>
-            <p>ゼラチン質が少なくソースのとろみが出ず、噛み応えも軽く淡白になる。</p><p>長時間の下茹でと煮汁の中で冷ます工程は行わない。</p><p>玉ねぎ1個・にんじん1本・セロリ1本・ローリエ2枚・黒胡椒ホール8粒・パセリの茎全量と、ヤリイカ1200gの足先と皮を水1800mlに入れて30分煮出し、漉して強火で20分煮詰めて700mlに濃縮する。これをソース200ml・吸わせ煮400ml・調整用100mlに配分して使う。</p><p>ヤリイカの胴400gを5mm角に刻んでソースに使い、残りの胴と足は1cm幅の輪切りにして仕上げの1分間だけ強火で火を通す。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">リングイネの代わりに</p>
-            <h3>スパゲッティ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>断面が丸くなる分ソースの絡みがやや弱まるが、味の方向性は変わらない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">リングイネの代わりに</p>
-            <h3>パッケリ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>筒状の大きな口当たりになり、麺全体にソースが薄く絡む一体感は失われる。</p><p>茹で時間を表示より3分短いところから2分延ばし、吸わせ煮に使う煮汁を調整用の100mlも充てて500mlに増やす。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">エクストラヴァージンオリーブオイルの代わりに</p>
-            <h3>ピュアオリーブオイル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -10点</p>
-            <p>青い果実香とほろ苦さが消え、仕上がりの香りが平板になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">辛口白ワインの代わりに</p>
-            <h3>水＋白ワインビネガー10ml</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>ぶどう由来の香りの層がなくなり、酸味だけが直線的に立つ。</p><p>水90mlと白ワインビネガー10mlを合わせて加え、酸が飛ぶよう2分長く煮立てる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんにくの代わりに</p>
-            <h3>にんにくペースト（チューブ）</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -20点</p>
-            <p>オイルに移る香りが弱く、加熱で焦げやすいため青臭さが残りやすい。</p><p>にんにくをつぶす・薄切りにする下準備は行わない。</p><p>油が温まってから10gを加え、弱火で30秒だけ香りを立てて即座に刻んだタコを加える。取り出す操作は行わない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">赤唐辛子の代わりに</p>
-            <h3>乾燥赤唐辛子</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>辛みが鋭く均一になり、生の青い香りは失われる。</p><p>小口切りにせず、縦に割いて種を落とし、指で2〜3片に割ってオイルに入れる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">玉ねぎの代わりに</p>
-            <h3>長ねぎの青い部分</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>甘みが減り、より軽くすっきりした出汁になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">にんじんの代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>煮汁の甘みが減り、タコの海の香りがより直接的になる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">セロリの代わりに</p>
-            <h3>セロリの葉のみ</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>青い香りが軽くなり、煮汁の輪郭がやや弱まる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">ローリエの代わりに</p>
-            <h3>タイム（生）2本</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>樹脂的な清涼感が加わり、ローリエ特有の重い甘い香りは出ない。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒胡椒（ホール）の代わりに</p>
-            <h3>省略</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>煮汁の後味の刺激がわずかに減る程度。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">黒胡椒（挽きたて）の代わりに</p>
-            <h3>白胡椒</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度 -5点</p>
-            <p>香りが穏やかになり、発酵由来のやや土っぽい風味が加わる。</p>
-          </article>
-          <article class="recipe-alternative-card">
-            <p class="recipe-alternative-from">細粒塩の代わりに</p>
-            <h3>フルール・ド・セル</h3>
-            <p class="recipe-alternative-kind">代わりに使える食材 · 本格度への影響なし</p>
-            <p>塩味の当たりが柔らかく、後から立ち上がる。</p>
-          </article>
-        </div>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="puglia">

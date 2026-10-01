@@ -393,6 +393,12 @@
       render();
     }
     unlockPageScroll();
+    // Confirming rebuilds the list, replacing the dialog's original trigger.
+    // Restore keyboard focus without moving the independently scrolled rail.
+    var trigger = Array.from(document.querySelectorAll('[data-substitution-trigger]')).find(function (button) {
+      return button.getAttribute('data-substitution-trigger') === activeIngredientId;
+    });
+    if (trigger) trigger.focus({ preventScroll: true });
   });
   bindSubstitutionTriggers(); render();
 })();
