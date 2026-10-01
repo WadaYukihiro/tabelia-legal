@@ -66,6 +66,21 @@
   <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/learn/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/learn/pasta-basics/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/learn/pasta-basics/01-flour-and-eggs/</loc><lastmod>2026-10-01</lastmod></url>
@@ -90,6 +105,15 @@
   <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-10-01</lastmod></url>
+  <url>
+    <loc>https://tabelia.app/recipes/croquetas-de-jamon/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0063b837-debb-5263-9d28-45a2e1907e13_1790832711272.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ハモンのクロケタス（Croquetas de jamón）</image:title>
+      <image:caption>ハモンの旨みを含む濃いベシャメルを、薄い衣で包む小さなコロッケです。冷却を十分に取り、口の中でほどける中身と香ばしい衣の対比を作ります。</image:caption>
+    </image:image>
+  </url>
   <url>
     <loc>https://tabelia.app/recipes/tortelli-di-zucca-alla-mantovana/</loc>
     <lastmod>2026-08-15</lastmod>
@@ -211,6 +235,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/070ed9bc-9ac3-4093-a870-0494640ce6ff_1790690339818.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ラパン・シャスール（うさぎの狩人風煮込み）（Lapin Chasseur）</image:title>
       <image:caption>うさぎを焼き付け、マッシュルームと白ワイン、トマトで煮込むシャスール仕立てです。肉の焼き色を鍋底からソースへ移し、きのこの水分を別に飛ばして香りを重ねます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/ajoblanco/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/07c077ec-c215-5a35-9ad0-e827ad835524_1790832684130.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アホブランコ（Ajoblanco）</image:title>
+      <image:caption>アーモンドとパン、にんにくを油で乳化させるアンダルシアの白い冷製スープです。滑らかな舌触りに、ぶどうの甘さを添えます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -421,6 +454,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/bacalao-al-pil-pil/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/15f8f15e-6596-5c7c-b85d-33feac6d0f27_1790832702467.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>バカラオ・アル・ピルピル（Bacalao al pil-pil）</image:title>
+      <image:caption>塩漬けタラの皮から出るゼラチンとオリーブオイルを、鍋を揺すってつなぎます。粉やクリームを使わず、魚自身の力で滑らかなソースを作るバスク料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/totani-in-umido-con-piselli/</loc>
     <lastmod>2026-05-23</lastmod>
     <image:image>
@@ -436,6 +478,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/1680ce84-a7c5-4d34-821c-8693dae91041_1790663744610.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ヤリイカの詰め物オーブン焼き（Totani Ripieni al Forno）</image:title>
       <image:caption>ヤリイカの胴にパン粉・足・ケッパー・パセリを詰め、白ワインをかけてオーブンで焼く南イタリアの家庭料理。詰め物が膨らむのでイカの7割まで詰めるのが鉄則。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/tortilla-de-patatas/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/178ac936-5f5a-5b9e-9725-28e3cbc2995f_1790832783752.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>トルティージャ・デ・パタタス（Tortilla de patatas）</image:title>
+      <image:caption>じゃがいもを油でじっくり柔らかくし、卵で厚くまとめるスペインの定番です。玉ねぎ入りの型を採用し、卵が流れないしっとりした火入れに仕上げます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -895,6 +946,33 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/arroz-negro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/30106500-ac12-5410-ade4-48fd7afeeb0b_1790832699056.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アロス・ネグロ（Arroz negro）</image:title>
+      <image:caption>コウイカと魚のだしを米に吸わせ、イカ墨で深い黒色に仕上げます。だし取りから始め、海の香りと粒の立った食感を揃える米料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/papas-arrugadas-con-mojo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/317277b9-8e0b-5dea-9a9c-d26da715c6ea_1790832753721.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パパス・アルガダスとモホ（Papas arrugadas con mojo）</image:title>
+      <image:caption>小粒のじゃがいもを濃い塩水でゆで、皮を乾かして薄い塩の膜を作ります。にんにくと唐辛子をすり合わせた赤いモホを添える、カナリア諸島の一皿です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/rabo-de-toro/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/31c47fa6-e270-5825-8d6d-0e74cfcf2f9b_1790832770848.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>牛テールの赤ワイン煮込み（Rabo de toro）</image:title>
+      <image:caption>牛テールを赤ワインと野菜で煮込み、骨の周りのゼラチン質を柔らかくほどきます。煮汁の脂を整理し、滑らかなソースにまとめる主菜です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/kougelhopf-alsacien/</loc>
     <lastmod>2026-08-07</lastmod>
     <image:image>
@@ -928,6 +1006,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/330e51f8-fc29-4f8a-af8e-65300cf696c2_1790663519579.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>玉ねぎのフリッタータ（Frittata di Cipolle）</image:title>
       <image:caption>玉ねぎをゆっくり炒めて甘みを引き出し、卵と合わせてオーブンで焼くイタリア式卵料理。フランスのオムレツとは異なり、平らに焼いて切り分けて供する。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/fabada-asturiana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/33784d74-658e-5c20-b2c4-fd12b561b10d_1790832717949.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ファバーダ・アストゥリアーナ（Fabada asturiana）</image:title>
+      <image:caption>大粒の白いんげん豆を、塩漬け豚肉と二種類のソーセージで煮込みます。豆の皮を保ちながら芯まで柔らかくし、煮汁に肉の旨みを重ねます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -985,6 +1072,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/conejo-en-salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/3758c727-b86b-583b-946b-7772ec074e81_1790832705382.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>うさぎのサルモレホ煮（Conejo en salmorejo）</image:title>
+      <image:caption>にんにくとパプリカ、ハーブの漬け汁でうさぎを休ませてから煮込みます。レバーをすりつぶしてソースをまとめる、カナリア諸島の型です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pipi-e-patati/</loc>
     <lastmod>2026-07-26</lastmod>
     <image:image>
@@ -1000,6 +1096,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/386c9e4f-eb5b-4488-bf67-618ec521caf7_1790663561314.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>カステッルッチョのレンズ豆（Lenticchie di Castelluccio）</image:title>
       <image:caption>ウンブリア産カステッルッチョのレンズ豆をソフリットと煮込む伝統料理。小粒で皮が薄いため浸水不要で30分で完成する。年越しや新年に「お金が増える」縁起物としても愛される。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/merluza-en-salsa-verde/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/39a3fcd6-beac-5a28-b392-b7f5b7434bdb_1790832747101.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>メルルーサのサルサ・ベルデ（Merluza en salsa verde）</image:title>
+      <image:caption>白身魚とあさりを、にんにくとパセリのソースで静かに火入れします。白アスパラガスを添えるバスクの型で、魚の繊細な身を崩さず仕上げます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1315,6 +1420,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4da66c53-c696-4795-b335-7d668eefad04_1790654557310.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>タルト・タタン（Tarte Tatin）</image:title>
       <image:caption>型の底でりんごをカラメルとともに煮て、パート・ブリゼを被せて焼き上げ、熱いうちにひっくり返す「逆さま」のタルト。ソローニュ地方の姉妹が営んだホテルの名物として知られるようになった菓子である。カラメルのほろ苦さとりんごの酸味が一体になるため、紅玉など酸味の強い品種が最もよく合う。生地を自家製にすることで、カラメルを吸った縁の食感まで本格になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/espinacas-con-garbanzos/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4e4dd666-460a-5d72-b88f-d0d3f4920b28_1790832714573.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ほうれん草とひよこ豆の煮込み（Espinacas con garbanzos）</image:title>
+      <image:caption>ほうれん草とひよこ豆を、揚げ焼きしたパンとにんにくのペーストでまとめます。パプリカとクミンの香りが野菜に重なる、セビリアの定番です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1674,6 +1788,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/arroz-al-horno/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/63e0c68a-474d-5c43-9f6c-1434931e9956_1790832691786.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アロス・アル・オルノ（Arroz al horno）</image:title>
+      <image:caption>豚肉とひよこ豆の旨みを米に吸わせ、じゃがいもとトマト、丸ごとのにんにくとともに焼き上げます。バレンシアの内陸に根付く、オーブンの米料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/gateau-basque/</loc>
     <lastmod>2026-08-08</lastmod>
     <image:image>
@@ -1761,6 +1884,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/69436db3-be6c-45dc-ba31-c0b2fc565018_1790663542443.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>リコッタとほうれん草のニューディ バターとセージ（Gnudi di Ricotta e Spinaci al Burro e Salvia）</image:title>
       <image:caption>詰め物だけを裸（gnudo）のまま茹でる、トスカーナのラビオリの「中身」だけの一皿。小麦粉は生地に一切入れず、水切りしたリコッタと固く絞ったほうれん草を卵黄とパルミジャーノだけで繋ぐシエナ流の配合で、口に入れた瞬間に崩れるほど軽く仕上がる。茹で崩れを防ぐのは粉ではなく、たっぷりのセモリナに埋めて12時間乾かし表面に薄い皮を作る工程。リコッタの水切り12時間と成形後の乾燥12時間で正味2日（2晩）がかりの段取りになるため、初日の夜に水切り、2日目の朝に成形、3日目の朝以降に茹でる、あるいは初日朝に水切りを始めて夜に成形し翌夜に食べる計画で臨む。仕上げは焦がしすぎない泡立ちバターとセージだけで受け止める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/fideua/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6a044cc1-1877-5623-9652-cb2c19dbd8e4_1790832720912.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フィデウア（Fideuà）</image:title>
+      <image:caption>ガンディアの海辺に根付く、短い麺と魚介の料理です。魚のあらから取っただしを吸わせ、麺とアンコウ、殻付きエビを一つの浅い鍋にまとめます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1935,6 +2067,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/salmorejo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/74693f7f-3c7b-5507-86d0-1f150ac27307_1790832774119.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>サルモレホ（Salmorejo）</image:title>
+      <image:caption>トマトとパンをオリーブオイルで乳化する、コルドバの濃厚な冷製料理です。きゅうりやピーマンを加えず、ゆで卵とハモンで仕上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/anelletti-al-forno/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -2058,6 +2199,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7d006bc6-2a28-4eef-b259-bc3727c3c226_1790690332723.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ノワゼット・ド・シュヴルイユ、ソース・グラン・ヴヌール（Noisettes de Chevreuil Sauce Grand Veneur）</image:title>
       <image:caption>鹿のロースを厚めに切って焼き、赤ワイン、ヴィネガー、赤すぐりのジュレで調えたソースを添えます。ソースの酸味と果実味を煮詰めて整え、肉は中心まで十分に加熱する家庭向けの基準です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/flan-de-huevo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7de4e7b7-4904-50f3-828e-59850d0b4d97_1790832723988.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フラン・デ・ウエボ（Flan de huevo）</image:title>
+      <image:caption>卵と牛乳の生地をカラメルの型に入れ、湯煎で静かに焼きます。気泡を増やさず、薄いカラメルが流れる滑らかなフランに仕上げます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2466,6 +2616,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/arroz-con-leche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/98e13938-d35d-5b48-b449-c382c63b4860_1790832695789.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アロス・コン・レチェ（Arroz con leche）</image:title>
+      <image:caption>牛乳を少しずつ煮詰めながら米を柔らかくし、バターで厚みを加えるアストゥリアスの型です。シナモンとレモンの香りを移し、冷たいデザートにします。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/mont-blanc/</loc>
     <lastmod>2026-09-29</lastmod>
     <image:image>
@@ -2499,6 +2658,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9ca79a0c-5bd3-4d36-bdb8-e309d15a2695_1790663720735.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>牛肉とじゃがいものスペッツァティーノ（Spezzatino di Manzo con Patate）</image:title>
       <image:caption>イタリア家庭の週末の定番。「スペッツァティーノ」は細かく切った肉の意。白ワインとトマトで2時間煮込み、後からじゃがいもを加えてとろりと仕上げる。難しい技術は要らないが、時間が旨みを作る。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/suquet-de-peix/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9cdd0f08-60bc-5a30-803f-36af8f60cd25_1790832777087.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>スケット・ダ・ペイシュ（Suquet de peix）</image:title>
+      <image:caption>魚とじゃがいもを煮込み、パンとアーモンドのピカーダで味と濃度をまとめます。カタルーニャ沿岸の魚料理を、だし取りから組み立てます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2728,6 +2896,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/paella-valenciana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ac35c08c-66ac-565f-8f4d-fd4471d69f09_1790832750425.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パエリア・バレンシアーナ（Paella valenciana）</image:title>
+      <image:caption>鶏とうさぎ、平さやいんげんと大粒豆で炊くバレンシアのパエリアです。先に鍋の中でだしを作り、薄く広げた米へ旨みを吸わせます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/quiche-lorraine/</loc>
     <lastmod>2026-08-01</lastmod>
     <image:image>
@@ -2842,6 +3019,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/leche-frita/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b3e3d75c-ebe2-5176-972b-34fd9aafdb01_1790832733496.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>レチェ・フリータ（Leche frita）</image:title>
+      <image:caption>シナモンを香らせた牛乳を濃い生地にし、冷やして切り分けてから揚げます。薄い衣と柔らかな中身に、シナモンシュガーをまとわせます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/tarte-aux-mirabelles/</loc>
     <lastmod>2026-08-07</lastmod>
     <image:image>
@@ -2866,6 +3052,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b6d8bf09-7df4-4cfb-a9e5-91ee2b8f4dd2_1790663724485.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ノルチャ産黒トリュフのストランゴッツィ（Strangozzi al Tartufo Nero di Norcia）</image:title>
       <image:caption>ウンブリアの手打ち平麺「ストランゴッツィ」と、ノルチャ産黒トリュフのシンプルなソース。黒トリュフはオリーブオイルで温め、にんにくとアンチョビで旨みを底上げするのがウンブリア流。白トリュフとは別の、土臭くて力強い香りが特徴。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/albondigas-en-salsa/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b8c6e0a1-c6a0-580e-9204-45c35695c0b7_1790832688367.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アルボンディガスの野菜ソース煮（Albóndigas en salsa）</image:title>
+      <image:caption>牛と豚の肉だねに牛乳で戻したパンを混ぜ、柔らかな肉団子にします。香ばしく焼いてから野菜と赤ワインのソースで煮る、家庭の主菜です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2986,6 +3181,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gazpacho/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c041baa5-1131-502c-95a5-236103e6be51_1790832730405.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガスパチョ（Gazpacho）</image:title>
+      <image:caption>完熟トマトと夏野菜、パン、オリーブオイルを滑らかにつなぐ冷製スープです。野菜の繊維をこし、酸味と乳化した油の丸みを揃えます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/polpo-alla-luciana/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -3010,6 +3214,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c231d732-9010-4f9c-9c26-68268d19d469_1790663726734.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スモークサーモンのタリアテッレ（Tagliatelle al Salmone Affumicato）</image:title>
       <image:caption>北イタリアの湖沿いや港町のトラットリアで1970〜80年代から定着したクリームパスタ。スモークサーモンの塩気とクリームの甘さ、レモンの酸味が絶妙のバランス。サーモンは絶対に加熱しすぎない——余熱で合わせることが唯一のルール。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/mejillones-en-escabeche/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c2406522-e920-522c-b414-bb2dc5ab9980_1790832739684.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ムール貝のエスカベチェ（Mejillones en escabeche）</image:title>
+      <image:caption>ムール貝を蒸し、香味野菜とパプリカ、酢、オイルの漬け汁で休ませます。酸味の奥に貝の旨みを残す、冷製の小皿です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3287,6 +3500,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pisto-manchego/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cf41e6e5-728c-511c-bd35-8605d98cea04_1790832759495.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ピスト・マンチェゴ（Pisto manchego）</image:title>
+      <image:caption>トマトとピーマンを中心に、野菜の甘みを重ねるラ・マンチャの料理です。卵をのせる型もありますが、ここでは肉や魚に添える野菜だけの型を採用します。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/ravioli-alla-caprese/</loc>
     <lastmod>2026-08-15</lastmod>
     <image:image>
@@ -3365,6 +3587,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/crema-catalana/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d5befd47-d06b-59ac-9840-059219b4fa0e_1790832708520.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>クレマ・カタラーナ（Crema catalana）</image:title>
+      <image:caption>牛乳と卵黄にレモンとシナモンを香らせ、鍋でクリームを炊きます。冷たい中身に薄い飴の蓋を重ねる、カタルーニャのデザートです。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/bietola-saltata/</loc>
     <lastmod>2026-05-28</lastmod>
     <image:image>
@@ -3425,6 +3656,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d9e179f8-1a66-4680-98ac-1d5b1ced5b16_1790654553754.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>タルト・オ・プラリーヌ・ローズ（Tarte aux Pralines Roses）</image:title>
       <image:caption>バラ色の砂糖衣をまとわせたアーモンド「プラリーヌ・ローズ」を砕き、生クリームと煮詰めてタルトに流し込む、リヨン名物の鮮やかなピンク色の菓子。プラリーヌを自家製するところから始め、クリームとの煮詰め加減で艶と固さを決める。ブションと呼ばれるリヨンの食堂や街のパン屋で、ショーケースをバラ色に染める看板菓子である。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/marmitako/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/da0ef5d8-836e-59e9-9fce-e4acea8d6d0b_1790832736304.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マルミタコ（Marmitako）</image:title>
+      <image:caption>じゃがいもと野菜の煮込みへ、最後にカツオを加えるバスク沿岸の料理です。芋が生む自然なとろみと、魚を煮すぎない火入れを両立します。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3497,6 +3737,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/de570fd6-94b3-4f7d-8282-b9e195b06d38_1790663638583.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏肉のレモンピッカータ（Piccata di Pollo al Limone）</image:title>
       <image:caption>仔牛のスカロッピーナを鶏胸肉でアレンジした定番肉料理。「ピッカータ」とはイタリア語で「刺激のある」の意。鶏胸肉を薄くたたいて素早く焼き、レモン・ケッパー・バターのソースで仕上げる。すべての工程が10分以内で完了するイタリア家庭の重宝な一品。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pimientos-del-piquillo-rellenos-de-bacalao/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/df126da4-16be-59ed-a79f-6590a2503649_1790832756326.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ピキージョピーマンのバカラオ詰め（Pimientos del piquillo rellenos de bacalao）</image:title>
+      <image:caption>炭火で焼いて皮をむいたピキージョピーマンに、塩抜きしたタラのベシャメルを詰めます。甘い赤い皮とタラの熟成した旨みが重なる、ナバラの食卓に馴染む一皿です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3617,6 +3866,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/tarta-de-santiago/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e6aced34-2461-54ca-9448-1f93715ff2f9_1790832780281.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タルタ・デ・サンティアゴ（Tarta de Santiago）</image:title>
+      <image:caption>アーモンド、砂糖、卵を中心に焼くガリシアの菓子です。小麦粉の土台を付けない型で、薄い焼き色としっとりした中身を揃えます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pizzoccheri-della-valtellina/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -3680,6 +3938,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pulpo-a-la-gallega/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ef34d2ce-20b2-5e4e-8916-f6343ae90fc4_1790832767481.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タコのガリシア風（Pulpo a la gallega）</image:title>
+      <image:caption>柔らかくゆでたタコとじゃがいもを、オリーブオイルとパプリカで味わいます。タコの弾力を残す火入れと、温かいうちの切り分けが要です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pasta-cacio-e-uova/</loc>
     <lastmod>2026-05-22</lastmod>
     <image:image>
@@ -3740,6 +4007,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f50157de-1e3d-40bf-8570-34e4c2f6b7bf_1790663455633.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ブルスケッタ・コン・フンギ（Bruschetta con Funghi）</image:title>
       <image:caption>ポルチーニや混合きのこをにんにく・タイムで炒め、焼きたてのブルスケッタにのせる。きのこの香りとオリーブオイルが渾然一体となる秋の前菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pollo-al-chilindron/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f5e57a03-fc55-5e41-b8b8-d8b9c70c38db_1790832762494.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>鶏のチリンドロン煮込み（Pollo al chilindrón）</image:title>
+      <image:caption>骨付き鶏を焼き、ピーマンとトマト、ハモンの旨みで煮込みます。野菜を十分に炒めてから鶏を戻し、アラゴンの家庭料理の厚みを作ります。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3807,6 +4083,15 @@
       <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fbb0c33e-cd83-4651-8874-67394b65d856_1790663489050.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>チポッレ・ボレッターネ・イン・アグロドルチェ（Cipolle Borettane in Agrodolce）</image:title>
       <image:caption>ボレッターネ種の小玉ねぎをバターとバルサミコで甘酸っぱく煮詰めたエミリア地方の伝統前菜。肉のアンティパストとしてもデリカテッセン食材としても使われる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gambas-al-ajillo/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/fc8b4b6a-b107-5672-9a4c-bd27599c9752_1790832727518.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガンバス・アル・アヒージョ（Gambas al ajillo）</image:title>
+      <image:caption>にんにくと唐辛子の香りを移したオリーブオイルで、エビを短く火入れする小皿です。香ばしさと身の弾力を同時に残す、火を止める判断が要になります。</image:caption>
     </image:image>
   </url>
   <url>
