@@ -208,6 +208,18 @@
   document.addEventListener('click', function (e) {
     var link = closestLink(e.target, 'a[data-affiliate]');
     if (!link) return;
+    // 商品紹介欄（道具・ワイン）: 同じイベント名で商品系パラメータを送る。
+    // 商品名は ingredient_name に入れない（docs/design/RECIPE_RELATED_PRODUCTS.md §9）
+    if (link.getAttribute('data-source') === 'recipe_products') {
+      track('affiliate_link_opened', {
+        merchant: link.getAttribute('data-affiliate') || '',
+        source: 'recipe_products',
+        product_id: link.getAttribute('data-product-id') || '',
+        product_kind: link.getAttribute('data-product-kind') || '',
+        recipe_slug: page.recipe_slug || '',
+      });
+      return;
+    }
     track('affiliate_link_opened', {
       merchant: link.getAttribute('data-affiliate') || '',
       source: 'recipe_ingredients',

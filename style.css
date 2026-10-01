@@ -1844,3 +1844,75 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .recipe-story-copy { padding: 1.5rem 1.5rem 2rem; }
   .recipe-story-copy h2 { font-size: 1.5rem; }
 }
+
+/* ============================================================
+   商品紹介欄（道具・ワイン）— docs/design/RECIPE_RELATED_PRODUCTS.md
+   画像を主役に、商品名・関係の一文・販売先リンクだけ。価格・在庫・星評価・
+   購入ボタンは置かない。重い枠・シャドウも付けない。
+   列数は本文欄の実測幅で切り替える（コンテナクエリ。未対応ブラウザは2列のまま）。
+   ============================================================ */
+.recipe-products {
+  max-width: 800px;
+  margin: 3.5rem auto 0;
+  container-type: inline-size;
+}
+.recipe-products h2 {
+  border: 0;
+  margin-top: 0.2rem;
+  padding: 0;
+  font-family: 'Cormorant Garamond', 'Yu Mincho', serif;
+  font-size: 1.9rem;
+}
+/* 開示は小さくても低コントラスト・折りたたみに隠さない（ステマ告示ガイドブック） */
+.product-disclosure { color: #6b5f55; font-size: 0.82rem; margin-top: 0.3rem; }
+.products-grid {
+  list-style: none;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.product-card {
+  background: #fdfbf7;
+  border-radius: 12px;
+  padding: 1rem;
+}
+/* 正方形の枠。商品全体が見える contain。読込失敗時も枠は残る */
+.product-image {
+  aspect-ratio: 1;
+  background: #f2ede4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product-image img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.product-name { font-size: 0.95rem; font-weight: 600; line-height: 1.5; margin: 0.6rem 0 0; }
+.product-relation { color: #6b5f55; font-size: 0.85rem; line-height: 1.55; margin: 0.25rem 0 0; }
+/* 見た目はテキストリンク、操作領域は44px相当以上 */
+.product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 44px;
+  color: #9e2f23;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.product-link-icon { flex-shrink: 0; }
+.product-wine-notice { color: #6b5f55; font-size: 0.82rem; margin-top: 1rem; }
+.product-amazon-disclosure { color: #6b5f55; font-size: 0.78rem; margin-top: 0.4rem; }
+
+@container (max-width: 319px) {
+  .products-grid { grid-template-columns: 1fr; }
+  /* 1列のときは画像枠を最大240pxで左寄せにする */
+  .product-image { max-width: 240px; }
+}
+@container (min-width: 640px) {
+  .products-grid { grid-template-columns: repeat(3, minmax(0, 240px)); }
+}
+
+/* 印刷時は商品欄を省く */
+@media print {
+  .recipe-products { display: none; }
+}
