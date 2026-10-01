@@ -1,21 +1,36 @@
 /* Generated page controls shared by every locale. */
-.language-switcher { flex-shrink: 0; }
-.language-switcher a { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; }
-.language-flag { font-size: 1.1rem; line-height: 1; }
-.language-short { display: none; }
-.language-switcher a:focus-visible, .search-result:focus-visible, .search-more:focus-visible { outline: 2px solid #9e2f23; outline-offset: 3px; }
+/* Keep navigation text on its own row so translations cannot move the flag. */
+.site-header { display: grid; grid-template-columns: auto minmax(0, 1fr) 44px; grid-template-areas: "brand search language" "nav nav nav"; align-items: center; gap: 0.5rem 1rem; }
+.site-header > .wordmark { grid-area: brand; }
+.site-header > .header-search { grid-area: search; width: 100%; min-width: 0; max-width: 320px; margin: 0; justify-self: end; }
+.site-header > .site-nav { grid-area: nav; width: 100%; min-width: 0; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.15rem; }
+.site-header > .site-nav a { white-space: nowrap; }
+.site-header > .language-switcher { grid-area: language; }
+.language-switcher { position: relative; display: block; width: 44px; height: 44px; padding: 0; margin: 0; border: 0; border-radius: 0; background: transparent; z-index: 110; }
+.language-trigger { box-sizing: border-box; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 1px solid #ddd4c8; border-radius: 50%; background: #fff; cursor: pointer; list-style: none; transition: background-color 150ms ease; }
+.language-trigger::-webkit-details-marker { display: none; }
+.language-trigger::marker { content: ""; }
+.language-trigger:hover, .language-switcher[open] > .language-trigger { background: #f6ece5; }
+.language-trigger:active { opacity: 0.7; }
+.language-flag { font-size: 1.2rem; line-height: 1; }
+.language-options { position: absolute; top: calc(100% + 0.5rem); right: 0; box-sizing: border-box; width: 208px; max-width: calc(100vw - 2rem); max-height: min(360px, 60vh); overflow-y: auto; overscroll-behavior: contain; padding: 0.4rem; border: 1px solid #ddd4c8; border-radius: 12px; background: #fff; box-shadow: 0 8px 28px rgba(37, 32, 24, 0.14); }
+.language-switcher[open] > .language-options { animation: language-options-in 150ms ease-out; }
+@keyframes language-options-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .language-switcher[open] > .language-options { animation: none; } }
+.language-switcher:not([open]) > .language-options { display: none; }
+.language-switcher .language-options a { display: flex; align-items: center; gap: 0.65rem; box-sizing: border-box; min-height: 44px; padding: 0.5rem 0.65rem; color: #625b51; border-radius: 8px; font-size: 0.9rem; line-height: 1.4; letter-spacing: normal; }
+.language-name { display: inline; }
+.language-check { margin-left: auto; }
+.language-trigger:focus-visible, .language-switcher a:focus-visible, .search-result:focus-visible, .search-more:focus-visible { outline: 2px solid #9e2f23; outline-offset: 3px; }
+.language-switcher .language-options a[aria-current="page"] { color: #fff; background: #9e2f23; }
 .search-more { display: block; width: 100%; min-height: 44px; border: 0; background: #f6ece5; color: #9e2f23; cursor: pointer; border-radius: 8px; transition: background-color 150ms ease; }
 .search-more:hover { background: #ebd7c9; }
 @media (max-width: 600px) {
-  .site-header > .language-switcher { margin-left: auto; }
-  .site-header > .header-search { flex-basis: 100%; max-width: none; margin: 0; order: 1; }
-  .language-name { display: none; }
-  .language-short { display: inline; }
-  .language-switcher a { padding: 0.25rem 0.4rem; gap: 0.2rem; }
+  .site-header { grid-template-areas: "brand . language" "search search search" "nav nav nav"; }
+  .site-header > .header-search { max-width: none; }
 }
 @media (max-width: 360px) {
   .site-header > .wordmark { font-size: 0.95rem; gap: 0.25rem; }
-  .language-switcher a { padding-inline: 0.3rem; }
 }
 
 /* Recipe sharing: a secondary action next to the recipe heading. */
