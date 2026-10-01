@@ -40,6 +40,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"carpaccio-di-manzo","recipe_name":"Carpaccio di Manzo","recipe_course":"antipasto","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
