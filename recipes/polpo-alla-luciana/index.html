@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"polpo-alla-luciana","recipe_name":"Polpo alla Luciana","recipe_course":"secondo","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -318,22 +319,26 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>南イタリア・ナポリの他のレシピ</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/pomodori-al-forno/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/83ab953b-8c9e-48b6-9af4-923c8b774b04_1780068082117.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pomodori al Forno"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/83ab953b-8c9e-48b6-9af4-923c8b774b04_1790663669619.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pomodori al Forno"></span>
             <span class="recipe-card-title">Pomodori al Forno</span>
             <span class="recipe-card-subtitle">トマトのオーブン焼き</span>
           </a>
           <a class="recipe-card" href="/recipes/rapini-affogati/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d584c2fc-34b7-4e33-8e3a-1c3b43a6c560_1780067605489.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Rapini Affogati"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d584c2fc-34b7-4e33-8e3a-1c3b43a6c560_1790663679261.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Rapini Affogati"></span>
             <span class="recipe-card-title">Rapini Affogati</span>
             <span class="recipe-card-subtitle">ブロッコリーラーベのオリーブオイル蒸し煮</span>
           </a>
           <a class="recipe-card" href="/recipes/ravioli-alla-caprese/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d052af2a-c52d-4a24-874b-988eb5c58f81_1786805489522.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Ravioli alla Caprese"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d052af2a-c52d-4a24-874b-988eb5c58f81_1790663680725.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Ravioli alla Caprese"></span>
             <span class="recipe-card-title">Ravioli alla Caprese</span>
             <span class="recipe-card-subtitle">ラヴィオリ・アッラ・カプレーゼ（カプリ島のラヴィオリ）</span>
           </a>
@@ -343,19 +348,19 @@
         <h2>他の地方のセコンド・ピアット</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/porchetta-al-forno-versione-casalinga/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cbae4318-54d3-4b45-ba94-58b9cb022d38_1780064762536.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Porchetta al Forno (versione casalinga)"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cbae4318-54d3-4b45-ba94-58b9cb022d38_1790663672603.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Porchetta al Forno (versione casalinga)"></span>
             <span class="recipe-card-title">Porchetta al Forno (versione casalinga)</span>
             <span class="recipe-card-subtitle">ハーブを詰めた豚バラ肉のポルケッタ</span>
           </a>
+          <a class="recipe-card" href="/recipes/salsicce-alluva/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2fa044d2-0204-4709-838c-e7ff7adf83bd_1790690221206.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Salsicce all'Uva"></span>
+            <span class="recipe-card-title">Salsicce all'Uva</span>
+            <span class="recipe-card-subtitle">サルシッチェ・アッルーヴァ（生ソーセージの葡萄煮）</span>
+          </a>
           <a class="recipe-card" href="/recipes/saltimbocca-alla-romana/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/58d89673-4c3a-4028-ae1e-b662e681f66b_1780064884152.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Saltimbocca alla Romana"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/58d89673-4c3a-4028-ae1e-b662e681f66b_1790663695897.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Saltimbocca alla Romana"></span>
             <span class="recipe-card-title">Saltimbocca alla Romana</span>
             <span class="recipe-card-subtitle">ローマ風サルティンボッカ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/sarde-a-beccafico/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/84aefa5f-f2f7-49b1-93c7-d0fd24537c21_1780064885665.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Sarde a Beccafico"></span>
-            <span class="recipe-card-title">Sarde a Beccafico</span>
-            <span class="recipe-card-subtitle">いわしのベッカフィーコ風</span>
           </a>
         </div>
         </div>
@@ -424,7 +429,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

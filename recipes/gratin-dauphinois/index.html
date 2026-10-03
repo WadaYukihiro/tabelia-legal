@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"gratin-dauphinois","recipe_name":"Gratin Dauphinois","recipe_course":"accompagnement","recipe_cuisine":"French"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -321,44 +322,61 @@
           </div>
         </section>
 
+
+
+        <section class="recipe-products" aria-labelledby="products-title">
+          <p class="eyebrow">TOOLS</p>
+          <h2 id="products-title">道具</h2>
+          <p class="product-disclosure">この欄にはアフィリエイトリンクが含まれます。</p>
+          <ul class="products-grid" role="list">
+          <li class="product-card">
+            <div class="product-image"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/zwilling-shop/cabinet/shop_img/thumb_1809new/977.jpg?_ex=480x480" alt="" loading="lazy" decoding="async"></div>
+            <p class="product-name">STAUB セラミック レクタンギュラーディッシュ 27×20cm</p>
+            <p class="product-relation">じゃがいもを牛乳ごと焼き上げ、そのまま食卓へ出す工程に。4人分が収まる2.4L。</p>
+            <a class="product-link" href="https://hb.afl.rakuten.co.jp/ichiba/5815a4d9.5c714d92.5815a4da.a0a59bd1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fzwilling-shop%2F40508-591%2F&amp;link_type=picttext&amp;ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D" target="_blank" rel="nofollow sponsored noopener" data-affiliate="rakuten" data-source="recipe_products" data-product-id="925e4c84-0ce1-4ed6-8124-35c0b1cc626b" data-product-kind="tool">楽天市場で見る<svg class="product-link-icon" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M4.5 1.5h-2A1.5 1.5 0 0 0 1 3v6a1.5 1.5 0 0 0 1.5 1.5h6A1.5 1.5 0 0 0 10 9V7.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M7 1h4v4M10.6 1.4 5.8 6.2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+          </ul>
+
+        </section>
+
         <section class="related-section">
         <div class="related-group">
         <h2>リヨンとブルゴーニュ・ドフィネの他のレシピ</h2>
         <div class="recipe-grid">
-          <a class="recipe-card" href="/recipes/tarte-aux-pralines-roses/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d9e179f8-1a66-4680-98ac-1d5b1ced5b16_1790654553754.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tarte aux Pralines Roses"></span>
-            <span class="recipe-card-title">Tarte aux Pralines Roses</span>
-            <span class="recipe-card-subtitle">タルト・オ・プラリーヌ・ローズ</span>
+          <a class="recipe-card" href="/recipes/tarte-aux-noix-grenobloise/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a79450d0-4c73-4fe0-a50c-0a17ab00d664_1790690367927.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tarte aux Noix Grenobloise"></span>
+            <span class="recipe-card-title">Tarte aux Noix Grenobloise</span>
+            <span class="recipe-card-subtitle">タルト・オ・ノワ・グルノブロワーズ</span>
           </a>
           <a class="recipe-card" href="/recipes/tartiflette/">
             <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/aafae4f3-a8bd-4b67-b023-174b208e2f33_1790654559253.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tartiflette"></span>
             <span class="recipe-card-title">Tartiflette</span>
             <span class="recipe-card-subtitle">タルティフレット</span>
           </a>
-          <a class="recipe-card" href="/recipes/boeuf-bourguignon/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/572b7e8d-679a-4a12-996e-9b215c5fd906_1790653052010.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Bœuf Bourguignon"></span>
-            <span class="recipe-card-title">Bœuf Bourguignon</span>
-            <span class="recipe-card-subtitle">ブフ・ブルギニョン</span>
+          <a class="recipe-card" href="/recipes/veloute-de-chataignes/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/db751da2-6a1c-4ab9-9454-e07d128cef87_1790690317221.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Velouté de Châtaignes"></span>
+            <span class="recipe-card-title">Velouté de Châtaignes</span>
+            <span class="recipe-card-subtitle">ヴルーテ・ド・シャテーニュ（栗のヴルーテ）</span>
           </a>
         </div>
         </div>
         <div class="related-group">
         <h2>他の地方のアコンパニュマン</h2>
         <div class="recipe-grid">
+          <a class="recipe-card" href="/recipes/marrons-braises/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5aff127d-20d5-42e5-b1c3-5aa31e08f65f_1790690358231.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Marrons Braisés"></span>
+            <span class="recipe-card-title">Marrons Braisés</span>
+            <span class="recipe-card-subtitle">マロン・ブレゼ（栗の蒸し煮）</span>
+          </a>
+          <a class="recipe-card" href="/recipes/navets-glaces/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5fa9d067-f9ac-4b2e-95c8-77522dc7753d_1790690354803.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Navets Glacés"></span>
+            <span class="recipe-card-title">Navets Glacés</span>
+            <span class="recipe-card-subtitle">ナヴェ・グラッセ（かぶのグラッセ）</span>
+          </a>
           <a class="recipe-card" href="/recipes/puree-de-pommes-de-terre/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f05bddb3-41ec-4b20-94f1-e5109b523c2b_1785592237765.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Purée de Pommes de Terre"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f05bddb3-41ec-4b20-94f1-e5109b523c2b_1790663678015.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Purée de Pommes de Terre"></span>
             <span class="recipe-card-title">Purée de Pommes de Terre</span>
             <span class="recipe-card-subtitle">じゃがいものピュレ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/ratatouille/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/712bf90e-95fe-429f-8fa4-346b95d1a9cd_1790653055756.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Ratatouille"></span>
-            <span class="recipe-card-title">Ratatouille</span>
-            <span class="recipe-card-subtitle">ラタトゥイユ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/aligot/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e49702a3-bb85-47f4-9b72-f6648069cec6_1785592193113.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Aligot"></span>
-            <span class="recipe-card-title">Aligot</span>
-            <span class="recipe-card-subtitle">アリゴ</span>
           </a>
         </div>
         </div>
@@ -427,7 +445,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

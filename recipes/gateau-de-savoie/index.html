@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"gateau-de-savoie","recipe_name":"Gâteau de Savoie","recipe_course":"dessert","recipe_cuisine":"French"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -347,6 +348,10 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>リヨンとブルゴーニュ・サヴォワの他のレシピ</h2>
@@ -356,10 +361,10 @@
             <span class="recipe-card-title">Gratin Dauphinois</span>
             <span class="recipe-card-subtitle">グラタン・ドフィノワ</span>
           </a>
-          <a class="recipe-card" href="/recipes/tarte-aux-pralines-roses/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d9e179f8-1a66-4680-98ac-1d5b1ced5b16_1790654553754.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tarte aux Pralines Roses"></span>
-            <span class="recipe-card-title">Tarte aux Pralines Roses</span>
-            <span class="recipe-card-subtitle">タルト・オ・プラリーヌ・ローズ</span>
+          <a class="recipe-card" href="/recipes/tarte-aux-noix-grenobloise/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a79450d0-4c73-4fe0-a50c-0a17ab00d664_1790690367927.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tarte aux Noix Grenobloise"></span>
+            <span class="recipe-card-title">Tarte aux Noix Grenobloise</span>
+            <span class="recipe-card-subtitle">タルト・オ・ノワ・グルノブロワーズ</span>
           </a>
           <a class="recipe-card" href="/recipes/tartiflette/">
             <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/aafae4f3-a8bd-4b67-b023-174b208e2f33_1790654559253.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tartiflette"></span>
@@ -453,7 +458,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

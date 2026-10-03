@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"poireaux-vinaigrette","recipe_name":"Poireaux Vinaigrette","recipe_course":"entree","recipe_cuisine":"French"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -328,6 +329,10 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
 
         <div class="related-group">
@@ -347,6 +352,21 @@
             <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/4d774a6a-976e-45fe-b955-5771d7e3c673_1790654550463.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Soupe au Pistou"></span>
             <span class="recipe-card-title">Soupe au Pistou</span>
             <span class="recipe-card-subtitle">ピストゥスープ</span>
+          </a>
+          <a class="recipe-card" href="/recipes/veloute-de-chataignes/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/db751da2-6a1c-4ab9-9454-e07d128cef87_1790690317221.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Velouté de Châtaignes"></span>
+            <span class="recipe-card-title">Velouté de Châtaignes</span>
+            <span class="recipe-card-subtitle">ヴルーテ・ド・シャテーニュ（栗のヴルーテ）</span>
+          </a>
+          <a class="recipe-card" href="/recipes/coquilles-saint-jacques-a-la-bretonne/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/94dddd82-1aa4-4355-8161-69a0b8e0e882_1790690320964.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Coquilles Saint-Jacques à la Bretonne"></span>
+            <span class="recipe-card-title">Coquilles Saint-Jacques à la Bretonne</span>
+            <span class="recipe-card-subtitle">コキーユ・サン・ジャック・ア・ラ・ブルトンヌ（ホタテの殻焼き ブルターニュ風）</span>
+          </a>
+          <a class="recipe-card" href="/recipes/foie-gras-poele-aux-raisins/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d5318ed7-af4c-40de-a334-31c090e9a8f2_1790690329268.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Foie Gras Poêlé aux Raisins"></span>
+            <span class="recipe-card-title">Foie Gras Poêlé aux Raisins</span>
+            <span class="recipe-card-subtitle">フォワグラ・ポワレ・オー・レザン（フォワグラのポワレ 葡萄添え）</span>
           </a>
         </div>
         </div>
@@ -415,7 +435,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

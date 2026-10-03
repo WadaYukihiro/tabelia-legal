@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"tarte-aux-mirabelles","recipe_name":"Tarte aux Mirabelles","recipe_course":"dessert","recipe_cuisine":"French"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -386,12 +387,34 @@
           </div>
         </section>
 
+
+
+        <section class="recipe-products" aria-labelledby="products-title">
+          <p class="eyebrow">TOOLS</p>
+          <h2 id="products-title">道具</h2>
+          <p class="product-disclosure">この欄にはアフィリエイトリンクが含まれます。</p>
+          <ul class="products-grid" role="list">
+          <li class="product-card">
+            <div class="product-image"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ra-must/cabinet/e2/0838987.jpg?_ex=480x480" alt="" loading="lazy" decoding="async"></div>
+            <p class="product-name">貝印 Kai House SELECT 底取式タルト型 18cm（DL6151）</p>
+            <p class="product-relation">24cmに延ばした生地を敷き込む4人分のタルトに。底取れ式で崩さず外せる。</p>
+            <a class="product-link" href="https://hb.afl.rakuten.co.jp/ichiba/5815a563.fead4b69.5815a564.fa741077/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fra-must%2F0838987%2F&amp;link_type=picttext&amp;ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D" target="_blank" rel="nofollow sponsored noopener" data-affiliate="rakuten" data-source="recipe_products" data-product-id="a9cd594e-5739-4b06-b940-6d2081d6db53" data-product-kind="tool">楽天市場で見る<svg class="product-link-icon" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M4.5 1.5h-2A1.5 1.5 0 0 0 1 3v6a1.5 1.5 0 0 0 1.5 1.5h6A1.5 1.5 0 0 0 10 9V7.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M7 1h4v4M10.6 1.4 5.8 6.2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+          </ul>
+
+        </section>
+
         <section class="related-section">
         <div class="related-group">
         <h2>アルザスと北東部・ロレーヌの他のレシピ</h2>
         <div class="recipe-grid">
+          <a class="recipe-card" href="/recipes/chou-rouge-aux-pommes/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/77e8a022-2001-4b45-9deb-1ab0b07340a8_1790690347227.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Chou Rouge aux Pommes"></span>
+            <span class="recipe-card-title">Chou Rouge aux Pommes</span>
+            <span class="recipe-card-subtitle">シュー・ルージュ・オ・ポム（紫キャベツとりんごの煮込み）</span>
+          </a>
           <a class="recipe-card" href="/recipes/choucroute-garnie/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2ec12ca5-49d3-4b2e-b856-b1195b27e45c_1785592203509.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Choucroute Garnie"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2ec12ca5-49d3-4b2e-b856-b1195b27e45c_1790665436088.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Choucroute Garnie"></span>
             <span class="recipe-card-title">Choucroute Garnie</span>
             <span class="recipe-card-subtitle">シュークルート・ガルニ</span>
           </a>
@@ -399,11 +422,6 @@
             <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e313815d-6340-4517-bc9e-ba8d95a3df8d_1790654536670.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gâteau Battu"></span>
             <span class="recipe-card-title">Gâteau Battu</span>
             <span class="recipe-card-subtitle">ガトー・バチュ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/kougelhopf-alsacien/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/31c6a03d-66ab-4960-9160-bb48b78e08b5_1790654539956.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Kougelhopf Alsacien"></span>
-            <span class="recipe-card-title">Kougelhopf Alsacien</span>
-            <span class="recipe-card-subtitle">クグロフ・アルザシアン</span>
           </a>
         </div>
         </div>
@@ -492,7 +510,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

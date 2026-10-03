@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"fregola-con-aragosta","recipe_name":"Fregola con Aragosta","recipe_course":"primo","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -301,22 +302,26 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>イタリア島嶼部・カリャリの他のレシピ</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/gamberi-allaglio-e-olio/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cce1bd1f-06d6-4987-bc15-140c19eb2e16_1780064906566.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gamberi all'Aglio e Olio"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cce1bd1f-06d6-4987-bc15-140c19eb2e16_1790663532858.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gamberi all'Aglio e Olio"></span>
             <span class="recipe-card-title">Gamberi all'Aglio e Olio</span>
             <span class="recipe-card-subtitle">エビのガーリックオイルソテー</span>
           </a>
           <a class="recipe-card" href="/recipes/gamberoni-alla-griglia-con-salmoriglio/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8bd09567-70ed-4915-a9ed-e16485f36de8_1780154158050.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gamberoni alla Griglia con Salmoriglio"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8bd09567-70ed-4915-a9ed-e16485f36de8_1790663535185.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gamberoni alla Griglia con Salmoriglio"></span>
             <span class="recipe-card-title">Gamberoni alla Griglia con Salmoriglio</span>
             <span class="recipe-card-subtitle">グリルガンベロとサルモリーリョ</span>
           </a>
           <a class="recipe-card" href="/recipes/gelo-di-melone/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d9cc4970-5d28-4e7e-aabd-c699aee75f4d_1780112946554.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gelo di Melone"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/d9cc4970-5d28-4e7e-aabd-c699aee75f4d_1790663537648.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gelo di Melone"></span>
             <span class="recipe-card-title">Gelo di Melone</span>
             <span class="recipe-card-subtitle">シチリア風スイカのジェーロ</span>
           </a>
@@ -326,17 +331,17 @@
         <h2>他の地方のプリモ・ピアット</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/fusilli-al-pesto-di-rucola-e-pomodorini/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e0e85b44-b639-45c3-a60b-4b668477d6c1_1780064745677.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Fusilli al Pesto di Rucola e Pomodorini"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e0e85b44-b639-45c3-a60b-4b668477d6c1_1790663528496.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Fusilli al Pesto di Rucola e Pomodorini"></span>
             <span class="recipe-card-title">Fusilli al Pesto di Rucola e Pomodorini</span>
             <span class="recipe-card-subtitle">ルッコラペストとミニトマトのフジッリ</span>
           </a>
           <a class="recipe-card" href="/recipes/garganelli-al-ragu-bianco-di-vitello/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e39b1566-a6a1-46b5-9108-110da93a4814_1780064750098.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Garganelli al Ragù Bianco di Vitello"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e39b1566-a6a1-46b5-9108-110da93a4814_1790663536391.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Garganelli al Ragù Bianco di Vitello"></span>
             <span class="recipe-card-title">Garganelli al Ragù Bianco di Vitello</span>
             <span class="recipe-card-subtitle">仔牛の白いラグーのガルガネッリ</span>
           </a>
           <a class="recipe-card" href="/recipes/gnocchi-alla-bava/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2586d97b-691e-4fb3-a592-ee2d757ff302_1786805473227.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gnocchi alla Bava"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2586d97b-691e-4fb3-a592-ee2d757ff302_1790663538663.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Gnocchi alla Bava"></span>
             <span class="recipe-card-title">Gnocchi alla Bava</span>
             <span class="recipe-card-subtitle">ニョッキ・アッラ・バーヴァ</span>
           </a>
@@ -407,7 +412,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

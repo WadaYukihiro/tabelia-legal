@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"pastis-gascon","recipe_name":"Pastis Gascon","recipe_course":"dessert","recipe_cuisine":"French"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -431,30 +432,39 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>バスクと南西部・ガスコーニュの他のレシピ</h2>
         <div class="recipe-grid">
+          <a class="recipe-card" href="/recipes/salade-perigourdine/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/354f7187-bd78-427b-b260-c33f63dbea07_1790690324750.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Salade Périgourdine"></span>
+            <span class="recipe-card-title">Salade Périgourdine</span>
+            <span class="recipe-card-subtitle">サラード・ペリグルディーヌ</span>
+          </a>
           <a class="recipe-card" href="/recipes/canele-de-bordeaux/">
             <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0c2d3d62-b55e-4385-9d67-e187ed6127cb_1790654524766.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Canelé de Bordeaux"></span>
             <span class="recipe-card-title">Canelé de Bordeaux</span>
             <span class="recipe-card-subtitle">カヌレ・ド・ボルドー</span>
           </a>
           <a class="recipe-card" href="/recipes/cassoulet/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/096b92e6-c870-4dbb-83bc-99d20bc4548c_1785592200272.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cassoulet"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/096b92e6-c870-4dbb-83bc-99d20bc4548c_1790663481095.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cassoulet"></span>
             <span class="recipe-card-title">Cassoulet</span>
             <span class="recipe-card-subtitle">カスレ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/confit-de-canard-aux-pommes-sarladaises/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b9add530-ea4e-4abf-b187-a72000dbbd86_1785592208324.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Confit de Canard aux Pommes Sarladaises"></span>
-            <span class="recipe-card-title">Confit de Canard aux Pommes Sarladaises</span>
-            <span class="recipe-card-subtitle">鴨のコンフィ サルラ風ポテト</span>
           </a>
         </div>
         </div>
         <div class="related-group">
         <h2>他の地方のデセール</h2>
         <div class="recipe-grid">
+          <a class="recipe-card" href="/recipes/poires-belle-helene/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/5e3509a9-27f9-42f2-b106-9adf8f38671d_1790690361533.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Poires Belle-Hélène"></span>
+            <span class="recipe-card-title">Poires Belle-Hélène</span>
+            <span class="recipe-card-subtitle">ポワール・ベル・エレーヌ</span>
+          </a>
           <a class="recipe-card" href="/recipes/profiteroles-au-chocolat/">
             <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/3dd26c3e-bf77-4280-b069-368bc5a1f1e0_1790654547026.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Profiteroles au Chocolat"></span>
             <span class="recipe-card-title">Profiteroles au Chocolat</span>
@@ -464,11 +474,6 @@
             <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/af3c87f1-78d6-4fa2-94d7-b518d7edbd4f_1790654548232.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Saint-Honoré"></span>
             <span class="recipe-card-title">Saint-Honoré</span>
             <span class="recipe-card-subtitle">サントノレ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/tarte-au-sucre-du-nord/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/f060a9eb-94bf-4371-b769-8f4eb807152d_1790654551535.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tarte au Sucre du Nord"></span>
-            <span class="recipe-card-title">Tarte au Sucre du Nord</span>
-            <span class="recipe-card-subtitle">北フランス風タルト・オ・シュクル</span>
           </a>
         </div>
         </div>
@@ -537,7 +542,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

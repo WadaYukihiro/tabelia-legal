@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"panzanella","recipe_name":"Panzanella","recipe_course":"antipasto","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -330,22 +331,26 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>中部イタリア・フィレンツェの他のレシピ</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/pappa-al-pomodoro/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b0f57aff-e383-4b93-b22b-c60a2fc1cfbf_1780064827888.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pappa al Pomodoro"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b0f57aff-e383-4b93-b22b-c60a2fc1cfbf_1790663593997.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pappa al Pomodoro"></span>
             <span class="recipe-card-title">Pappa al Pomodoro</span>
             <span class="recipe-card-subtitle">トスカーナ風トマトとパンのスープ</span>
           </a>
           <a class="recipe-card" href="/recipes/pappardelle-al-cinghiale/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0c279800-d6ee-47a8-8393-7d62019a43c5_1780064829203.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pappardelle al Cinghiale"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0c279800-d6ee-47a8-8393-7d62019a43c5_1790663595308.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pappardelle al Cinghiale"></span>
             <span class="recipe-card-title">Pappardelle al Cinghiale</span>
             <span class="recipe-card-subtitle">猪のラグーのパッパルデッレ</span>
           </a>
           <a class="recipe-card" href="/recipes/patate-al-rosmarino/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9679927e-78b1-4a1b-a542-0f987a95f9b6_1780068423272.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Patate al Rosmarino"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9679927e-78b1-4a1b-a542-0f987a95f9b6_1790663617637.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Patate al Rosmarino"></span>
             <span class="recipe-card-title">Patate al Rosmarino</span>
             <span class="recipe-card-subtitle">じゃがいものローズマリー焼き</span>
           </a>
@@ -355,19 +360,19 @@
         <h2>他の地方のアンティパスト</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/peperoni-arrostiti/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e22e545b-0279-4184-9db3-58db815e56ed_1780065770043.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Peperoni Arrostiti"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e22e545b-0279-4184-9db3-58db815e56ed_1790663630180.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Peperoni Arrostiti"></span>
             <span class="recipe-card-title">Peperoni Arrostiti</span>
             <span class="recipe-card-subtitle">ペペローニ・アロスティティ</span>
           </a>
           <a class="recipe-card" href="/recipes/polenta-fritta/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ed44688d-1145-48ff-a364-9ed6855c1e12_1780562128284.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Polenta Fritta"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ed44688d-1145-48ff-a364-9ed6855c1e12_1790663650969.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Polenta Fritta"></span>
             <span class="recipe-card-title">Polenta Fritta</span>
             <span class="recipe-card-subtitle">ポレンタ・フリッタ</span>
           </a>
-          <a class="recipe-card" href="/recipes/prosciutto-e-melone/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/c2e66016-eb97-4ba5-8ad4-c96a0f9ef348_1780064863242.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Prosciutto e Melone"></span>
-            <span class="recipe-card-title">Prosciutto e Melone</span>
-            <span class="recipe-card-subtitle">生ハムとメロン</span>
+          <a class="recipe-card" href="/recipes/prosciutto-e-fichi/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/06d28f06-7457-4071-abb9-6c9b4d4d45b9_1790690248197.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Prosciutto e Fichi"></span>
+            <span class="recipe-card-title">Prosciutto e Fichi</span>
+            <span class="recipe-card-subtitle">プロシュット・エ・フィーキ（生ハムといちじく）</span>
           </a>
         </div>
         </div>
@@ -436,7 +441,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

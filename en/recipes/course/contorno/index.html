@@ -28,6 +28,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"course"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -53,7 +54,7 @@
       <h1 class="page-title display-serif">Side dishes</h1>
       <p class="recipe-index-lead">A vegetable dish served alongside the secondo. Never just a garnish — how it’s handled can shape the impression of the whole main course.</p>
 
-      <div class="recipe-grid"><a class="recipe-card" href="/en/recipes/peperonata/"><img src="https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1780068288018.png?width=360&amp;height=240&amp;resize=cover&amp;quality=72" srcset="https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1780068288018.png?width=360&amp;height=240&amp;resize=cover&amp;quality=72 1x, https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1780068288018.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72 2x" alt="Authentic Peperonata" width="600" height="400" loading="lazy" decoding="async"><span class="recipe-card-title">Authentic Peperonata</span><span class="recipe-card-subtitle">Peperonata</span></a></div>
+      <div class="recipe-grid"><a class="recipe-card" href="/en/recipes/peperonata/"><img src="https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1790663628080.png?width=360&amp;height=240&amp;resize=cover&amp;quality=72" srcset="https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1790663628080.png?width=360&amp;height=240&amp;resize=cover&amp;quality=72 1x, https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/50bad5d6-3885-4cbd-9808-07eb6d6a89d8_1790663628080.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72 2x" alt="Authentic Peperonata" width="600" height="400" loading="lazy" decoding="async"><span class="recipe-card-title">Authentic Peperonata</span><span class="recipe-card-subtitle">Peperonata</span></a></div>
 
       <div class="app-cta">
         <img class="app-cta-chef" src="/chef/chef-authen-welcome.png" alt="Chef Authen" width="72" height="72" loading="lazy">

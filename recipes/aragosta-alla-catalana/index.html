@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"aragosta-alla-catalana","recipe_name":"Aragosta alla Catalana","recipe_course":"secondo","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -323,22 +324,26 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>イタリア島嶼部・アルゲーロの他のレシピ</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/arancini-siciliani/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a7e27d01-b217-4263-9f64-d97e2d5a3817_1780064910648.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Arancini Siciliani"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/a7e27d01-b217-4263-9f64-d97e2d5a3817_1790663431700.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Arancini Siciliani"></span>
             <span class="recipe-card-title">Arancini Siciliani</span>
             <span class="recipe-card-subtitle">シチリア風アランチーニ</span>
           </a>
           <a class="recipe-card" href="/recipes/biancomangiare/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6e9e5d67-9f58-454e-ae7d-05c252abfd9b_1780064909331.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Biancomangiare"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6e9e5d67-9f58-454e-ae7d-05c252abfd9b_1790663442331.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Biancomangiare"></span>
             <span class="recipe-card-title">Biancomangiare</span>
             <span class="recipe-card-subtitle">シチリア風アーモンドミルクのブランマンジェ</span>
           </a>
           <a class="recipe-card" href="/recipes/broccoli-affogati-alla-siciliana/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2a0c78b9-f5a3-4cad-a2c4-eda398490b3d_1785048384915.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Broccoli Affogati alla Siciliana"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/2a0c78b9-f5a3-4cad-a2c4-eda398490b3d_1790663452104.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Broccoli Affogati alla Siciliana"></span>
             <span class="recipe-card-title">Broccoli Affogati alla Siciliana</span>
             <span class="recipe-card-subtitle">ブロッコリーのシチリア風蒸し煮</span>
           </a>
@@ -348,17 +353,17 @@
         <h2>他の地方のセコンド・ピアット</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/arista-di-maiale-al-forno/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/1b680419-d682-4d59-906a-ff95962c4ce2_1780064988705.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Arista di Maiale al Forno"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/1b680419-d682-4d59-906a-ff95962c4ce2_1790663432848.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Arista di Maiale al Forno"></span>
             <span class="recipe-card-title">Arista di Maiale al Forno</span>
             <span class="recipe-card-subtitle">豚ロースのハーブロースト</span>
           </a>
           <a class="recipe-card" href="/recipes/baccala-alla-vicentina/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e4713f13-f3b2-485a-8388-11ac52105949_1780541737117.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Baccalà alla Vicentina"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/e4713f13-f3b2-485a-8388-11ac52105949_1790663437650.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Baccalà alla Vicentina"></span>
             <span class="recipe-card-title">Baccalà alla Vicentina</span>
             <span class="recipe-card-subtitle">干し鱈のヴィチェンツァ風煮込み</span>
           </a>
           <a class="recipe-card" href="/recipes/bistecca-alla-fiorentina/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1780064737661.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Bistecca alla Fiorentina"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1790663445258.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Bistecca alla Fiorentina"></span>
             <span class="recipe-card-title">Bistecca alla Fiorentina</span>
             <span class="recipe-card-subtitle">フィレンツェ風Tボーンステーキ（ビステッカ）</span>
           </a>
@@ -429,7 +434,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"spaghetti-con-colatura-di-alici","recipe_name":"Spaghetti con Colatura di Alici","recipe_course":"primo","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -324,6 +325,10 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>南イタリア・チェターラの他のレシピ</h2>
@@ -334,7 +339,7 @@
             <span class="recipe-card-subtitle">ナポリ風はちみつの揚げ菓子 ストゥルッフォリ</span>
           </a>
           <a class="recipe-card" href="/recipes/torta-caprese/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6a87c2fc-b5b0-4905-97b8-15a1eecdc6b2_1786183498041.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Torta Caprese"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6a87c2fc-b5b0-4905-97b8-15a1eecdc6b2_1790663736824.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Torta Caprese"></span>
             <span class="recipe-card-title">Torta Caprese</span>
             <span class="recipe-card-subtitle">カプリ風チョコレートとアーモンドのケーキ</span>
           </a>
@@ -349,17 +354,17 @@
         <h2>他の地方のプリモ・ピアット</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/strangozzi-al-tartufo-nero-di-norcia/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b6d8bf09-7df4-4cfb-a9e5-91ee2b8f4dd2_1780064955900.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Strangozzi al Tartufo Nero di Norcia"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b6d8bf09-7df4-4cfb-a9e5-91ee2b8f4dd2_1790663724485.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Strangozzi al Tartufo Nero di Norcia"></span>
             <span class="recipe-card-title">Strangozzi al Tartufo Nero di Norcia</span>
             <span class="recipe-card-subtitle">ノルチャ産黒トリュフのストランゴッツィ</span>
           </a>
           <a class="recipe-card" href="/recipes/tagliatelle-ai-funghi-porcini/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6f76dea5-bc6d-4bde-bacc-4e1484289dec_1780064967620.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tagliatelle ai Funghi Porcini"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6f76dea5-bc6d-4bde-bacc-4e1484289dec_1790663725655.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tagliatelle ai Funghi Porcini"></span>
             <span class="recipe-card-title">Tagliatelle ai Funghi Porcini</span>
             <span class="recipe-card-subtitle">ポルチーニ茸のタリアテッレ</span>
           </a>
           <a class="recipe-card" href="/recipes/tagliolini-ai-gamberi-con-bisque/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8880e916-9311-4bb3-91de-ebb0e397e113_1780758864055.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tagliolini ai Gamberi con Bisque"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/8880e916-9311-4bb3-91de-ebb0e397e113_1790663728853.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Tagliolini ai Gamberi con Bisque"></span>
             <span class="recipe-card-title">Tagliolini ai Gamberi con Bisque</span>
             <span class="recipe-card-subtitle">エビのビスク仕立てタリオリーニ</span>
           </a>
@@ -430,7 +435,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

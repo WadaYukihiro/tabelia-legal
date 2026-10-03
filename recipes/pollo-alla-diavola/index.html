@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"pollo-alla-diavola","recipe_name":"Pollo alla Diavola","recipe_course":"secondo","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -304,7 +305,7 @@
         <p class="pairings-lead">現地の食卓では、この一皿と共にこんな料理が並びます。</p>
         <div class="pairing-grid">
           <a class="pairing-card" href="/recipes/cicoria-ripassata/">
-            <span class="pairing-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b37e5f9c-7091-46c1-ab3d-95b844f11392_1780541749714.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cicoria Ripassata"></span>
+            <span class="pairing-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/b37e5f9c-7091-46c1-ab3d-95b844f11392_1790663487789.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cicoria Ripassata"></span>
             <span class="pairing-card-context">コントルノ（付け合わせ）</span>
             <span class="pairing-card-title">Cicoria Ripassata</span>
             <span class="pairing-card-subtitle">チコリ菜のガーリックソテー</span>
@@ -342,22 +343,26 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>中部イタリア・ローマ・フィレンツェの他のレシピ</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/pomodori-ripieni-di-riso/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/935c8328-cbbd-4309-b94a-2bf5036e514e_1780065734653.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pomodori Ripieni di Riso"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/935c8328-cbbd-4309-b94a-2bf5036e514e_1790663671184.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Pomodori Ripieni di Riso"></span>
             <span class="recipe-card-title">Pomodori Ripieni di Riso</span>
             <span class="recipe-card-subtitle">ポモドーリ・リピエーニ・ディ・リーゾ</span>
           </a>
           <a class="recipe-card" href="/recipes/porchetta-al-forno-versione-casalinga/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cbae4318-54d3-4b45-ba94-58b9cb022d38_1780064762536.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Porchetta al Forno (versione casalinga)"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/cbae4318-54d3-4b45-ba94-58b9cb022d38_1790663672603.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Porchetta al Forno (versione casalinga)"></span>
             <span class="recipe-card-title">Porchetta al Forno (versione casalinga)</span>
             <span class="recipe-card-subtitle">ハーブを詰めた豚バラ肉のポルケッタ</span>
           </a>
           <a class="recipe-card" href="/recipes/ribollita/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9f003759-1072-44d2-9d31-f4022aba4de2_1780064866074.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Ribollita"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/9f003759-1072-44d2-9d31-f4022aba4de2_1790663681837.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Ribollita"></span>
             <span class="recipe-card-title">Ribollita</span>
             <span class="recipe-card-subtitle">トスカーナ風パンと野菜の煮込みスープ</span>
           </a>
@@ -367,7 +372,7 @@
         <h2>他の地方のセコンド・ピアット</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/polpette-al-sugo/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/68ba885f-6e88-4216-a956-782d843f0ad8_1780541785808.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Polpette al Sugo"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/68ba885f-6e88-4216-a956-782d843f0ad8_1790663666569.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Polpette al Sugo"></span>
             <span class="recipe-card-title">Polpette al Sugo</span>
             <span class="recipe-card-subtitle">肉団子のトマト煮込み</span>
           </a>
@@ -377,7 +382,7 @@
             <span class="recipe-card-subtitle">タコのルチアーナ風煮込み</span>
           </a>
           <a class="recipe-card" href="/recipes/salsicce-e-friarielli/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/caa29642-fed0-44ba-b4fa-30256a849bbf_1780064795192.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Salsicce e Friarielli"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/caa29642-fed0-44ba-b4fa-30256a849bbf_1790663694048.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Salsicce e Friarielli"></span>
             <span class="recipe-card-title">Salsicce e Friarielli</span>
             <span class="recipe-card-subtitle">サルシッチャと菜の花のナポリ風</span>
           </a>
@@ -448,7 +453,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>

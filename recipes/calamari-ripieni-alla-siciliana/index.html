@@ -35,6 +35,7 @@
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
   gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500,region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB"]});
   try{if(window.localStorage.getItem('tabelia-consent')==='granted')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}
+  try{var s=location.search;if(s.indexOf('internal=1')>-1)localStorage.setItem('tabelia-internal','1');else if(s.indexOf('internal=0')>-1)localStorage.removeItem('tabelia-internal');if(localStorage.getItem('tabelia-internal')==='1')gtag('set',{traffic_type:'internal'});}catch(e){}
   window.TABELIA_GA_ID="G-WS85ZG81XE";window.TABELIA_PAGE={"page_type":"recipe","recipe_slug":"calamari-ripieni-alla-siciliana","recipe_name":"Calamari Ripieni alla Siciliana","recipe_course":"secondo","recipe_cuisine":"Italian"};
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS85ZG81XE"></script>
@@ -54,7 +55,7 @@
       </div>
       <nav class="site-nav">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
@@ -439,22 +440,26 @@
           </div>
         </section>
 
+
+
+
+
         <section class="related-section">
         <div class="related-group">
         <h2>イタリア島嶼部・パレルモの他のレシピ</h2>
         <div class="recipe-grid">
           <a class="recipe-card" href="/recipes/cannoli-siciliani/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/40d0972d-7532-4815-98e3-97cde88a44fe_1780064914801.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cannoli Siciliani"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/40d0972d-7532-4815-98e3-97cde88a44fe_1790663463179.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cannoli Siciliani"></span>
             <span class="recipe-card-title">Cannoli Siciliani</span>
             <span class="recipe-card-subtitle">シチリア風カンノーリ</span>
           </a>
           <a class="recipe-card" href="/recipes/caponata/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/23416c1e-ce2a-49c1-8ce5-b244119c9aa9_1780064669529.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Caponata"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/23416c1e-ce2a-49c1-8ce5-b244119c9aa9_1790663465342.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Caponata"></span>
             <span class="recipe-card-title">Caponata</span>
             <span class="recipe-card-subtitle">シチリア風野菜のカポナータ</span>
           </a>
           <a class="recipe-card" href="/recipes/carote-al-marsala/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/39ebeb6b-b5b4-462a-b5d0-e7f8688cf9f1_1785048375120.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Carote al Marsala"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/39ebeb6b-b5b4-462a-b5d0-e7f8688cf9f1_1790663473680.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Carote al Marsala"></span>
             <span class="recipe-card-title">Carote al Marsala</span>
             <span class="recipe-card-subtitle">にんじんのマルサラ蒸し煮</span>
           </a>
@@ -463,20 +468,20 @@
         <div class="related-group">
         <h2>他の地方のセコンド・ピアット</h2>
         <div class="recipe-grid">
+          <a class="recipe-card" href="/recipes/cervo-in-salmi/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/66a236ef-2e05-4915-b27d-a67ef065ee9a_1790690290640.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cervo in Salmì"></span>
+            <span class="recipe-card-title">Cervo in Salmì</span>
+            <span class="recipe-card-subtitle">チェルヴォ・イン・サルミ（鹿肉の赤ワイン煮込み）</span>
+          </a>
+          <a class="recipe-card" href="/recipes/cinghiale-in-agrodolce/">
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/81a50aec-f4c6-4568-bc09-7196ea80dc04_1790690286472.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cinghiale in Agrodolce"></span>
+            <span class="recipe-card-title">Cinghiale in Agrodolce</span>
+            <span class="recipe-card-subtitle">チンギアーレ・イン・アグロドルチェ（猪肉の甘酢煮込み）</span>
+          </a>
           <a class="recipe-card" href="/recipes/costolette-di-maiale-alla-milanese/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ca1b1a3c-9c3c-41e9-8075-b8c8cdb1f832_1780064784269.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Costolette di Maiale alla Milanese"></span>
+            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/ca1b1a3c-9c3c-41e9-8075-b8c8cdb1f832_1790663492849.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Costolette di Maiale alla Milanese"></span>
             <span class="recipe-card-title">Costolette di Maiale alla Milanese</span>
             <span class="recipe-card-subtitle">骨付き豚ロースのミラノ風カツレツ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/cotoletta-alla-milanese/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/7c0cb266-7dc3-448c-98a0-aa27d99be5ba_1780541751909.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Cotoletta alla Milanese"></span>
-            <span class="recipe-card-title">Cotoletta alla Milanese</span>
-            <span class="recipe-card-subtitle">ミラノ風仔牛カツレツ</span>
-          </a>
-          <a class="recipe-card" href="/recipes/dentice-al-forno-con-olive-e-capperi/">
-            <span class="recipe-card-photo" style="background-image:url('https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6f891b6a-7af2-4398-9f09-2411da749c41_1780064633602.png?width=720&amp;height=480&amp;resize=cover&amp;quality=72')" role="img" aria-label="Dentice al Forno con Olive e Capperi"></span>
-            <span class="recipe-card-title">Dentice al Forno con Olive e Capperi</span>
-            <span class="recipe-card-subtitle">マダイのオリーブとケッパーのオーブン焼き</span>
           </a>
         </div>
         </div>
@@ -545,7 +550,7 @@
       </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="/recipes/">レシピ</a>
-        <a href="/learn/">基礎知識</a>
+        <a href="/articles/">記事</a>
         <a href="/app/">アプリ</a>
         <a href="/about/">タベリアについて</a>
         <a href="/support/">サポート</a>
