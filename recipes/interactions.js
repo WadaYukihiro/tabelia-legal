@@ -403,7 +403,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     actions.forEach(function(text,i){if(!usedA.has(i))ordered.push({kind:'action',text:text});}); parallels.forEach(function(text,i){if(!usedP.has(i))ordered.push({kind:'parallel',text:text});}); return ordered;
   }
 
-  // 料理用語を「この料理の用語」へのリンクにする。生成器（generate-web-recipes.ts の glossHtml）と同じ規則:
+  // 料理用語を説明ダイアログのボタンにする。生成器（generate-web-recipes.ts の glossHtml）と同じ規則:
   // この料理に現れる用語の表記だけを data.glossary で受け取り、長い表記から順に、カタカナ語は語境界を見て照合する。
   var KATAKANA = /[ァ-ヶー]/;
   var glossaryMatchers = (data.glossary || []).flatMap(function (term) {
@@ -429,7 +429,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
       var hit = null;
       for (var k = 0; k < glossaryMatchers.length; k++) { var len = glossaryMatchAt(text, i, glossaryMatchers[k]); if (len > 0) { hit = { id: glossaryMatchers[k].id, length: len }; break; } }
       if (!hit) { i++; continue; }
-      html += esc(text.slice(plainStart, i)) + '<a class="term" href="#' + esc(hit.id) + '">' + esc(text.slice(i, i + hit.length)) + '</a>';
+      html += esc(text.slice(plainStart, i)) + '<button type="button" class="term" data-glossary-trigger="' + esc(hit.id) + '" aria-haspopup="dialog" aria-controls="glossary-dialog">' + esc(text.slice(i, i + hit.length)) + '</button>';
       i += hit.length; plainStart = i;
     }
     return html + esc(text.slice(plainStart));
@@ -514,6 +514,51 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     document.getElementById('substitution-options').innerHTML = html;
     if (typeof dialog.showModal === 'function') dialog.showModal(); else dialog.setAttribute('open','');
     lockPageScroll();
+  }
+
+  var glossaryDialog = document.getElementById('glossary-dialog');
+  var glossaryTrigger = null;
+  var activeTerm = null;
+  function openGlossary(trigger) {
+    var term = (data.glossary || []).find(function (item) { return item.id === trigger.getAttribute('data-glossary-trigger'); });
+    if (!term || !glossaryDialog) return;
+    glossaryTrigger = trigger;
+    activeTerm = term;
+    document.getElementById('glossary-dialog-title').textContent = term.term;
+    document.getElementById('glossary-dialog-gloss').textContent = term.gloss;
+    document.getElementById('glossary-dialog-description').textContent = term.description;
+    var learnLink = document.getElementById('glossary-dialog-learn');
+    learnLink.hidden = !term.learn;
+    if (term.learn) {
+      learnLink.textContent = term.learn.title + ' →';
+      learnLink.setAttribute('href', term.learn.path);
+    } else {
+      learnLink.removeAttribute('href');
+      learnLink.textContent = '';
+    }
+    lockPageScroll();
+    glossaryDialog.showModal();
+    track('glossary_term_opened', { recipe_id: data.recipe.id, recipe_slug: pageInfo.recipe_slug || '', term: term.term, source: 'recipe_step' });
+  }
+  // Event delegation also covers steps rebuilt after serving or substitution changes.
+  document.addEventListener('click', function (event) {
+    var trigger = event.target.closest('[data-glossary-trigger]');
+    if (trigger) openGlossary(trigger);
+  });
+  if (glossaryDialog) {
+    glossaryDialog.addEventListener('close', function () {
+      unlockPageScroll();
+      if (glossaryTrigger && glossaryTrigger.isConnected) glossaryTrigger.focus({ preventScroll: true });
+      activeTerm = null;
+    });
+    glossaryDialog.addEventListener('click', function (event) {
+      if (event.target !== glossaryDialog) return;
+      var bounds = glossaryDialog.getBoundingClientRect();
+      if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) glossaryDialog.close();
+    });
+    document.getElementById('glossary-dialog-learn').addEventListener('click', function () {
+      if (activeTerm && activeTerm.learn) track('glossary_learn_opened', { recipe_id: data.recipe.id, recipe_slug: pageInfo.recipe_slug || '', term: activeTerm.term, series_slug: activeTerm.learn.seriesSlug });
+    });
   }
 
   function lockPageScroll() {

@@ -129,7 +129,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -197,7 +196,7 @@
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
-              <span class="action-item-body"><span class="action-item-text">トマト・フレッシュバジル8枚（手でちぎる）・みじん切りにんにく・EXVオリーブオイル大さじ2と合わせて<a class="term" href="#term-68">マリネ</a>する。</span></span>
+              <span class="action-item-body"><span class="action-item-text">トマト・フレッシュバジル8枚（手でちぎる）・みじん切りにんにく・EXVオリーブオイル大さじ2と合わせて<button type="button" class="term" data-glossary-trigger="term-68" aria-haspopup="dialog" aria-controls="glossary-dialog">マリネ</button>する。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">3</span>
@@ -239,7 +238,7 @@
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
-              <span class="action-item-body"><span class="action-item-text"><a class="term" href="#term-68">マリネ</a>したトマトをのせ、EXVオリーブオイル大さじ1を仕上げにかける。</span></span>
+              <span class="action-item-body"><span class="action-item-text"><button type="button" class="term" data-glossary-trigger="term-68" aria-haspopup="dialog" aria-controls="glossary-dialog">マリネ</button>したトマトをのせ、EXVオリーブオイル大さじ1を仕上げにかける。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">3</span>
@@ -278,16 +277,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-68">
-            <dt>マリネ<span class="recipe-glossary-gloss">調味液に浸けて味と香りを入れること</span></dt>
-            <dd>食材を油・酢・ワイン・香草などの液に浸けて、味と香りを入れたり、肉を柔らかくしたりすることです。冷蔵庫で時間をかけ、浸ける時間は手順の指示に従います。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="lazio">
@@ -465,7 +454,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4ae26d71-d498-42f0-aae7-d0cd369cd838","nameJa":"トマトのブルスケッタ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"6c6ca60e-6aac-45a4-a9eb-432bcec2c511","nameOriginal":"Ciabatta","nameJa":"チャバタ","nameEn":"Ciabatta","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"1.5cm厚に切る。パン・ド・カンパーニュでも可","buy":null,"substitutionOptions":[{"id":"0e37a3db-e65a-43a1-9624-91a8ace2b573","standardIngredientId":"6c6ca60e-6aac-45a4-a9eb-432bcec2c511","nameJa":"食パン","nameEn":"Sandwich bread","buy":null,"authenticityImpact":-20,"flavorImpact":"食感が柔らかくなりすぎ、本場のしっかりした外皮感が失われる","textureImpact":null,"procedureChanges":["食パンは薄いため焼き時間を短くする"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"48be8830-389e-4985-94d2-9a7b12e7852d","standardIngredientId":"6c6ca60e-6aac-45a4-a9eb-432bcec2c511","nameJa":"バゲット","nameEn":"Baguette","buy":null,"authenticityImpact":-5,"flavorImpact":"断面積が小さく少し食べにくいが風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"582f28bd-7275-4be4-8b93-9532a2881ed5","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト","nameEn":"Ripe tomatoes","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"中玉。熟したものほど甘みが出る","buy":null,"substitutionOptions":[]},{"id":"fb9f6774-2946-4a95-bb77-74e6ed19ae5a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"1片はみじん切りにしてマリネ用、1片は焼いたパンにこすりつける用","buy":null,"substitutionOptions":[]},{"id":"bbf89a28-a99c-4e9a-b1da-4fdf6df07f69","nameOriginal":"Basilico fresco","nameJa":"フレッシュバジル","nameEn":"Fresh basil","quantity":8,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"1bc08099-0766-4258-9fe3-4b0a9b478498","nameOriginal":"Olio EVO","nameJa":"EXVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":3,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[{"id":"c5cd6e85-f569-4854-a77b-48898fd7c228","standardIngredientId":"1bc08099-0766-4258-9fe3-4b0a9b478498","nameJa":"ピュアオリーブオイル","nameEn":"Pure olive oil","buy":null,"authenticityImpact":-10,"flavorImpact":"フルーティーな香りが失われ、風味が平坦になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"708afc69-bc4b-4d9b-830d-cd58647b32c5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":0.5,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":"フレークソルト推奨","buy":null,"substitutionOptions":[]},{"id":"1635b2bd-fade-49a7-b798-939fa704282a","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"garnish","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-68","surfaces":["マリネ"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"完熟トマト3個を1cm角に切り、塩小さじ1/4をふって5分置く。出てきた水気をキッチンペーパーで丁寧に拭き取る。","title":"トマトの水気を抜く","actionItems":["完熟トマト3個を1cm角に切り、塩小さじ1/4をふって5分置く。","出てきた水気をキッチンペーパーで丁寧に拭き取る。"],"parallelItems":[],"completionCriteria":["5分。水気が十分に出てキッチンペーパーで拭き取れたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"にんにく1片をみじん切りにし、トマト・フレッシュバジル8枚（手でちぎる）・EXVオリーブオイル大さじ2と合わせてマリネする。塩で味を整える。","title":"トマトをマリネする","actionItems":["にんにく1片をみじん切りにする。","トマト・フレッシュバジル8枚（手でちぎる）・みじん切りにんにく・EXVオリーブオイル大さじ2と合わせてマリネする。","塩で味を整える。"],"parallelItems":[],"completionCriteria":["全体がよく混ざり塩で味が整ったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"チャバタ4枚を1.5cm厚に切り、グリルまたはトースターで両面をきつね色に焼く（片面2〜3分）。","title":"パンを焼く","actionItems":["チャバタ4枚を1.5cm厚に切る。","グリルまたはトースターで両面をきつね色に焼く（片面2〜3分）。"],"parallelItems":[],"completionCriteria":["片面2〜3分ずつ。両面がきつね色でカリッとしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"焼いたチャバタの表面ににんにく（残り1片）の断面を全体にこすりつける。マリネしたトマトをのせ、EXVオリーブオイル大さじ1を仕上げにかけ、黒胡椒をひいて完成。","title":"にんにくをこすりつけて仕上げる","actionItems":["焼いたチャバタの表面ににんにく1片の断面を全体にこすりつける。","マリネしたトマトをのせ、EXVオリーブオイル大さじ1を仕上げにかける。","黒胡椒をひいて完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4ae26d71-d498-42f0-aae7-d0cd369cd838","nameJa":"トマトのブルスケッタ","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"6c6ca60e-6aac-45a4-a9eb-432bcec2c511","nameOriginal":"Ciabatta","nameJa":"チャバタ","nameEn":"Ciabatta","quantity":4,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"1.5cm厚に切る。パン・ド・カンパーニュでも可","buy":null,"substitutionOptions":[{"id":"0e37a3db-e65a-43a1-9624-91a8ace2b573","standardIngredientId":"6c6ca60e-6aac-45a4-a9eb-432bcec2c511","nameJa":"食パン","nameEn":"Sandwich bread","buy":null,"authenticityImpact":-20,"flavorImpact":"食感が柔らかくなりすぎ、本場のしっかりした外皮感が失われる","textureImpact":null,"procedureChanges":["食パンは薄いため焼き時間を短くする"],"affectedStepNumbers":[3],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]},{"id":"48be8830-389e-4985-94d2-9a7b12e7852d","standardIngredientId":"6c6ca60e-6aac-45a4-a9eb-432bcec2c511","nameJa":"バゲット","nameEn":"Baguette","buy":null,"authenticityImpact":-5,"flavorImpact":"断面積が小さく少し食べにくいが風味は近い","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"582f28bd-7275-4be4-8b93-9532a2881ed5","nameOriginal":"Pomodori maturi","nameJa":"完熟トマト","nameEn":"Ripe tomatoes","quantity":3,"unit":"個","role":"essential","scalingBehavior":null,"notes":"中玉。熟したものほど甘みが出る","buy":null,"substitutionOptions":[]},{"id":"fb9f6774-2946-4a95-bb77-74e6ed19ae5a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"1片はみじん切りにしてマリネ用、1片は焼いたパンにこすりつける用","buy":null,"substitutionOptions":[]},{"id":"bbf89a28-a99c-4e9a-b1da-4fdf6df07f69","nameOriginal":"Basilico fresco","nameJa":"フレッシュバジル","nameEn":"Fresh basil","quantity":8,"unit":"枚","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"1bc08099-0766-4258-9fe3-4b0a9b478498","nameOriginal":"Olio EVO","nameJa":"EXVオリーブオイル","nameEn":"Extra virgin olive oil","quantity":3,"unit":"大さじ","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[{"id":"c5cd6e85-f569-4854-a77b-48898fd7c228","standardIngredientId":"1bc08099-0766-4258-9fe3-4b0a9b478498","nameJa":"ピュアオリーブオイル","nameEn":"Pure olive oil","buy":null,"authenticityImpact":-10,"flavorImpact":"フルーティーな香りが失われ、風味が平坦になる","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"708afc69-bc4b-4d9b-830d-cd58647b32c5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":0.5,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":"フレークソルト推奨","buy":null,"substitutionOptions":[]},{"id":"1635b2bd-fade-49a7-b798-939fa704282a","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"garnish","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-68","term":"マリネ","gloss":"調味液に浸けて味と香りを入れること","description":"食材を油・酢・ワイン・香草などの液に浸けて、味と香りを入れたり、肉を柔らかくしたりすることです。冷蔵庫で時間をかけ、浸ける時間は手順の指示に従います。","surfaces":["マリネ"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"完熟トマト3個を1cm角に切り、塩小さじ1/4をふって5分置く。出てきた水気をキッチンペーパーで丁寧に拭き取る。","title":"トマトの水気を抜く","actionItems":["完熟トマト3個を1cm角に切り、塩小さじ1/4をふって5分置く。","出てきた水気をキッチンペーパーで丁寧に拭き取る。"],"parallelItems":[],"completionCriteria":["5分。水気が十分に出てキッチンペーパーで拭き取れたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":6,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"にんにく1片をみじん切りにし、トマト・フレッシュバジル8枚（手でちぎる）・EXVオリーブオイル大さじ2と合わせてマリネする。塩で味を整える。","title":"トマトをマリネする","actionItems":["にんにく1片をみじん切りにする。","トマト・フレッシュバジル8枚（手でちぎる）・みじん切りにんにく・EXVオリーブオイル大さじ2と合わせてマリネする。","塩で味を整える。"],"parallelItems":[],"completionCriteria":["全体がよく混ざり塩で味が整ったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"チャバタ4枚を1.5cm厚に切り、グリルまたはトースターで両面をきつね色に焼く（片面2〜3分）。","title":"パンを焼く","actionItems":["チャバタ4枚を1.5cm厚に切る。","グリルまたはトースターで両面をきつね色に焼く（片面2〜3分）。"],"parallelItems":[],"completionCriteria":["片面2〜3分ずつ。両面がきつね色でカリッとしたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"焼いたチャバタの表面ににんにく（残り1片）の断面を全体にこすりつける。マリネしたトマトをのせ、EXVオリーブオイル大さじ1を仕上げにかけ、黒胡椒をひいて完成。","title":"にんにくをこすりつけて仕上げる","actionItems":["焼いたチャバタの表面ににんにく1片の断面を全体にこすりつける。","マリネしたトマトをのせ、EXVオリーブオイル大さじ1を仕上げにかける。","黒胡椒をひいて完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

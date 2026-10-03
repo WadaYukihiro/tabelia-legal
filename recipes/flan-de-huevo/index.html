@@ -131,7 +131,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -173,7 +172,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">オーブンを160℃に<a class="term" href="#term-46">予熱</a>する。</span></span>
+              <span class="action-item-body"><span class="action-item-text">オーブンを160℃に<button type="button" class="term" data-glossary-trigger="term-46" aria-haspopup="dialog" aria-controls="glossary-dialog">予熱</button>する。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -223,7 +222,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">型を深いオーブン皿に並べ、型の高さの半分まで温かい水を注ぐ。<a class="term" href="#term-44">湯煎</a>水は約1L使う。</span></span>
+              <span class="action-item-body"><span class="action-item-text">型を深いオーブン皿に並べ、型の高さの半分まで温かい水を注ぐ。<button type="button" class="term" data-glossary-trigger="term-44" aria-haspopup="dialog" aria-controls="glossary-dialog">湯煎</button>水は約1L使う。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -242,7 +241,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">型を湯から出し、<a class="term" href="#term-47">粗熱</a>が取れたら蓋をして冷蔵庫で4時間冷やす。</span></span>
+              <span class="action-item-body"><span class="action-item-text">型を湯から出し、<button type="button" class="term" data-glossary-trigger="term-47" aria-haspopup="dialog" aria-controls="glossary-dialog">粗熱</button>が取れたら蓋をして冷蔵庫で4時間冷やす。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -285,24 +284,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-46">
-            <dt>予熱<span class="recipe-glossary-gloss">オーブンを先に温めておくこと</span></dt>
-            <dd>食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。</dd>
-          </div>
-          <div class="recipe-glossary-item" id="term-44">
-            <dt>湯せん<span class="recipe-glossary-gloss">湯の熱で間接的に温めること</span></dt>
-            <dd>ボウルを湯に当てて、湯の熱で中身を間接的に温めることです。チョコレートや卵は直火では焦げたり固まったりするので、湯せんで50〜60℃に保ちます。ボウルの底が湯に触れない方が温度が安定します。</dd>
-          </div>
-          <div class="recipe-glossary-item" id="term-47">
-            <dt>粗熱<span class="recipe-glossary-gloss">手で触れる程度まで冷ますこと</span></dt>
-            <dd>加熱直後の高い熱を、手で触れても熱くない程度（40℃前後）まで冷ますことです。熱いまま次の材料と合わせると分離や固まりの原因になります。完全に冷やす必要はありません。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="spanish-santander">
@@ -476,7 +457,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7de4e7b7-4904-50f3-828e-59850d0b4d97","nameJa":"フラン・デ・ウエボ","baseServings":4,"minServings":2,"maxServings":4},"ingredients":[{"id":"35c64520-3535-42f7-a568-5d76f81de67c","nameOriginal":"Leche entera","nameJa":"牛乳","nameEn":"Whole milk","quantity":400,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"4ba1a7d6-c59d-45af-a8d7-0264793aafa7","nameOriginal":"Huevo","nameJa":"卵","nameEn":"Egg","quantity":3,"unit":"個","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"a2ea889d-8bbe-4af0-a2bf-1901dd5d6d91","nameOriginal":"Azúcar","nameJa":"グラニュー糖","nameEn":"Sugar","quantity":130,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生地70g・カラメル60g","buy":null,"substitutionOptions":[]},{"id":"881f49bb-2212-4fb0-b044-863dd5928f87","nameOriginal":"Agua","nameJa":"水","nameEn":"Water","quantity":1030,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"カラメル30ml・湯煎1L","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","surfaces":["予熱"]},{"id":"term-44","surfaces":["湯せん","湯煎"]},{"id":"term-47","surfaces":["粗熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを160℃に予熱する。小鍋に砂糖60gと水30mlを入れ、中火で加熱する。鍋を揺すり、濃い琥珀色になったら火を止め、容量180mlの耐熱プリン型4個へ均等に流す。型の底が薄いカラメルで覆われれば次へ。","title":"型にカラメルを敷く","actionItems":["オーブンを160℃に予熱する。","小鍋に砂糖60gと水30mlを入れ、中火で加熱する。","鍋を揺すり、濃い琥珀色になったら火を止め、容量180mlの耐熱プリン型4個へ均等に流す。"],"parallelItems":[],"completionCriteria":["型の底が薄いカラメルで覆われれば次へ。"],"cautionItems":["カラメルは高温で皮膚に付くと危険。味見しない。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"ボウルで卵3個と砂糖70gを静かに混ぜる。牛乳400mlを少しずつ加え、ざるでこす。表面の泡をすくい、型4個に均等に注ぐ。卵白の筋と大きな泡がなくなれば次へ。","title":"卵液を泡立てずに合わせる","actionItems":["ボウルで卵3個と砂糖70gを静かに混ぜる。","牛乳400mlを少しずつ加え、ざるでこす。","表面の泡をすくい、型4個に均等に注ぐ。"],"parallelItems":[],"completionCriteria":["卵白の筋と大きな泡がなくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"型を深いオーブン皿に並べ、型の高さの半分まで温かい水を注ぐ。湯煎水は約1L使う。160℃で35〜40分焼き、型を軽く揺すって中心を確認する。外側が固まり、中央が液体ではなく一体でわずかに揺れれば次へ。","title":"湯煎でゆっくり焼く","actionItems":["型を深いオーブン皿に並べ、型の高さの半分まで温かい水を注ぐ。湯煎水は約1L使う。","160℃で35〜40分焼き、型を軽く揺すって中心を確認する。"],"parallelItems":[],"completionCriteria":["外側が固まり、中央が液体ではなく一体でわずかに揺れれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"型を湯から出し、粗熱が取れたら蓋をして冷蔵庫で4時間冷やす。縁に薄いナイフを一周入れ、皿をかぶせて反転し、カラメルごと外す。滑らかなプリンが形を保ち、カラメルが周囲に広がれば完成。","title":"冷やして型から外す","actionItems":["型を湯から出し、粗熱が取れたら蓋をして冷蔵庫で4時間冷やす。","縁に薄いナイフを一周入れ、皿をかぶせて反転し、カラメルごと外す。"],"parallelItems":[],"completionCriteria":["滑らかなプリンが形を保ち、カラメルが周囲に広がれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7de4e7b7-4904-50f3-828e-59850d0b4d97","nameJa":"フラン・デ・ウエボ","baseServings":4,"minServings":2,"maxServings":4},"ingredients":[{"id":"35c64520-3535-42f7-a568-5d76f81de67c","nameOriginal":"Leche entera","nameJa":"牛乳","nameEn":"Whole milk","quantity":400,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"4ba1a7d6-c59d-45af-a8d7-0264793aafa7","nameOriginal":"Huevo","nameJa":"卵","nameEn":"Egg","quantity":3,"unit":"個","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"a2ea889d-8bbe-4af0-a2bf-1901dd5d6d91","nameOriginal":"Azúcar","nameJa":"グラニュー糖","nameEn":"Sugar","quantity":130,"unit":"g","role":"essential","scalingBehavior":null,"notes":"生地70g・カラメル60g","buy":null,"substitutionOptions":[]},{"id":"881f49bb-2212-4fb0-b044-863dd5928f87","nameOriginal":"Agua","nameJa":"水","nameEn":"Water","quantity":1030,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"カラメル30ml・湯煎1L","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","term":"予熱","gloss":"オーブンを先に温めておくこと","description":"食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。","surfaces":["予熱"]},{"id":"term-44","term":"湯せん","gloss":"湯の熱で間接的に温めること","description":"ボウルを湯に当てて、湯の熱で中身を間接的に温めることです。チョコレートや卵は直火では焦げたり固まったりするので、湯せんで50〜60℃に保ちます。ボウルの底が湯に触れない方が温度が安定します。","surfaces":["湯せん","湯煎"]},{"id":"term-47","term":"粗熱","gloss":"手で触れる程度まで冷ますこと","description":"加熱直後の高い熱を、手で触れても熱くない程度（40℃前後）まで冷ますことです。熱いまま次の材料と合わせると分離や固まりの原因になります。完全に冷やす必要はありません。","surfaces":["粗熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを160℃に予熱する。小鍋に砂糖60gと水30mlを入れ、中火で加熱する。鍋を揺すり、濃い琥珀色になったら火を止め、容量180mlの耐熱プリン型4個へ均等に流す。型の底が薄いカラメルで覆われれば次へ。","title":"型にカラメルを敷く","actionItems":["オーブンを160℃に予熱する。","小鍋に砂糖60gと水30mlを入れ、中火で加熱する。","鍋を揺すり、濃い琥珀色になったら火を止め、容量180mlの耐熱プリン型4個へ均等に流す。"],"parallelItems":[],"completionCriteria":["型の底が薄いカラメルで覆われれば次へ。"],"cautionItems":["カラメルは高温で皮膚に付くと危険。味見しない。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"ボウルで卵3個と砂糖70gを静かに混ぜる。牛乳400mlを少しずつ加え、ざるでこす。表面の泡をすくい、型4個に均等に注ぐ。卵白の筋と大きな泡がなくなれば次へ。","title":"卵液を泡立てずに合わせる","actionItems":["ボウルで卵3個と砂糖70gを静かに混ぜる。","牛乳400mlを少しずつ加え、ざるでこす。","表面の泡をすくい、型4個に均等に注ぐ。"],"parallelItems":[],"completionCriteria":["卵白の筋と大きな泡がなくなれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"型を深いオーブン皿に並べ、型の高さの半分まで温かい水を注ぐ。湯煎水は約1L使う。160℃で35〜40分焼き、型を軽く揺すって中心を確認する。外側が固まり、中央が液体ではなく一体でわずかに揺れれば次へ。","title":"湯煎でゆっくり焼く","actionItems":["型を深いオーブン皿に並べ、型の高さの半分まで温かい水を注ぐ。湯煎水は約1L使う。","160℃で35〜40分焼き、型を軽く揺すって中心を確認する。"],"parallelItems":[],"completionCriteria":["外側が固まり、中央が液体ではなく一体でわずかに揺れれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":40,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"型を湯から出し、粗熱が取れたら蓋をして冷蔵庫で4時間冷やす。縁に薄いナイフを一周入れ、皿をかぶせて反転し、カラメルごと外す。滑らかなプリンが形を保ち、カラメルが周囲に広がれば完成。","title":"冷やして型から外す","actionItems":["型を湯から出し、粗熱が取れたら蓋をして冷蔵庫で4時間冷やす。","縁に薄いナイフを一周入れ、皿をかぶせて反転し、カラメルごと外す。"],"parallelItems":[],"completionCriteria":["滑らかなプリンが形を保ち、カラメルが周囲に広がれば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":240,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

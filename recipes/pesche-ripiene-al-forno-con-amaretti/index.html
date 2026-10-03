@@ -130,7 +130,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -175,7 +174,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">オーブンを180度に<a class="term" href="#term-46">予熱</a>する。</span></span>
+              <span class="action-item-body"><span class="action-item-text">オーブンを180度に<button type="button" class="term" data-glossary-trigger="term-46" aria-haspopup="dialog" aria-controls="glossary-dialog">予熱</button>する。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -268,16 +267,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-46">
-            <dt>予熱<span class="recipe-glossary-gloss">オーブンを先に温めておくこと</span></dt>
-            <dd>食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="piemonte">
@@ -451,7 +440,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"3e4559cf-02dc-4a73-95b8-6c5f06fde504","nameJa":"桃のリピエーネ アマレッティとナッツの詰め物","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"ab713488-7ce6-4586-8228-42c2b0b9f322","nameOriginal":"Pesche mature","nameJa":"完熟桃","nameEn":"Ripe peaches","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"半割りにテストメモ更新して種を取る","buy":null,"substitutionOptions":[]},{"id":"46063808-11f9-437e-8f4a-f23d78b063bb","nameOriginal":"Amaretti","nameJa":"アマレッティ","nameEn":"Amaretti cookies","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"砕く","buy":{"amazon":"https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%9E%E3%83%AC%E3%83%83%E3%83%86%E3%82%A3&tag=tabelia1123-22","rakuten":"https://hb.afl.rakuten.co.jp/hgc/54ba49bc.2624912a.54ba49bd.915ec7d4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%259E%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2586%25E3%2582%25A3%2F"},"substitutionOptions":[{"id":"5160f53c-f20d-4fe3-8294-a997cc030566","standardIngredientId":"46063808-11f9-437e-8f4a-f23d78b063bb","nameJa":"アーモンドの固焼きクッキー（市販）","nameEn":"Crisp almond cookies","buy":null,"authenticityImpact":-20,"flavorImpact":"杏仁の苦みと軽い歯ざわりが失われ、甘さが前に出る。","textureImpact":"砕くと粉になりやすい。","procedureChanges":["砕く前にアーモンドエッセンスを数滴たらす"],"affectedStepNumbers":[],"notes":"スーパーの菓子売り場。","variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"4114eac2-cd68-4ec5-8b5f-74b839e25abf","nameOriginal":"Nocciole","nameJa":"ヘーゼルナッツ","nameEn":"Hazelnuts","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"刻む","buy":null,"substitutionOptions":[]},{"id":"b7bc989f-e1eb-4170-9963-d950381cb4b6","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":"小さく切る","buy":null,"substitutionOptions":[]},{"id":"329fc8b6-aada-413f-81a1-40e279aab099","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"07a8511e-e9d9-4d15-88fb-c075b37369f6","nameOriginal":"Cacao amaro","nameJa":"無糖ココア","nameEn":"Unsweetened cocoa","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ccb46af7-9863-4345-9abd-4a85776813a4","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを180度に予熱する。完熟桃4個は半割りにして種を取る。アマレッティ80gは砕く。ヘーゼルナッツ30gは刻む。バター40gは小さく切る。桃のくぼみが詰め物を受けられる大きさになったら次へ。","title":"桃を割り詰め物の材料を準備する","actionItems":["オーブンを180度に予熱する。","完熟桃4個は半割りにして種を取る。","アマレッティ80gは砕く。","ヘーゼルナッツ30gは刻む。","バター40gは小さく切る。","桃のくぼみが詰め物を受けられる大きさになったら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"砕いたアマレッティ、ヘーゼルナッツ、砂糖30g、無糖ココア8g、バター半量を混ぜる。しっとりまとまり、手で軽く押すと形が残る状態になったら次へ。","title":"詰め物を作る","actionItems":["砕いたアマレッティ、ヘーゼルナッツ、砂糖30g、無糖ココア8g、バター半量を混ぜる。"],"parallelItems":[],"completionCriteria":["しっとりまとまり、手で軽く押すと形が残る状態になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"桃に詰め物をのせ、耐熱皿に並べる。白ワイン60mlを皿の底に注ぎ、残りのバターを点在させる。180度で25〜30分焼く。桃が柔らかくなり、詰め物の表面が香ばしく色づいたら完成。","title":"焼く","actionItems":["桃に詰め物をのせ、耐熱皿に並べる。","白ワイン60mlを皿の底に注ぎ、残りのバターを点在させる。","180度で25〜30分焼く。","桃が柔らかくなり、詰め物の表面が香ばしく色づいたら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"3e4559cf-02dc-4a73-95b8-6c5f06fde504","nameJa":"桃のリピエーネ アマレッティとナッツの詰め物","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"ab713488-7ce6-4586-8228-42c2b0b9f322","nameOriginal":"Pesche mature","nameJa":"完熟桃","nameEn":"Ripe peaches","quantity":4,"unit":"個","role":"essential","scalingBehavior":null,"notes":"半割りにテストメモ更新して種を取る","buy":null,"substitutionOptions":[]},{"id":"46063808-11f9-437e-8f4a-f23d78b063bb","nameOriginal":"Amaretti","nameJa":"アマレッティ","nameEn":"Amaretti cookies","quantity":80,"unit":"g","role":"essential","scalingBehavior":null,"notes":"砕く","buy":{"amazon":"https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%9E%E3%83%AC%E3%83%83%E3%83%86%E3%82%A3&tag=tabelia1123-22","rakuten":"https://hb.afl.rakuten.co.jp/hgc/54ba49bc.2624912a.54ba49bd.915ec7d4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25A2%25E3%2583%259E%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2586%25E3%2582%25A3%2F"},"substitutionOptions":[{"id":"5160f53c-f20d-4fe3-8294-a997cc030566","standardIngredientId":"46063808-11f9-437e-8f4a-f23d78b063bb","nameJa":"アーモンドの固焼きクッキー（市販）","nameEn":"Crisp almond cookies","buy":null,"authenticityImpact":-20,"flavorImpact":"杏仁の苦みと軽い歯ざわりが失われ、甘さが前に出る。","textureImpact":"砕くと粉になりやすい。","procedureChanges":["砕く前にアーモンドエッセンスを数滴たらす"],"affectedStepNumbers":[],"notes":"スーパーの菓子売り場。","variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"4114eac2-cd68-4ec5-8b5f-74b839e25abf","nameOriginal":"Nocciole","nameJa":"ヘーゼルナッツ","nameEn":"Hazelnuts","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"刻む","buy":null,"substitutionOptions":[]},{"id":"b7bc989f-e1eb-4170-9963-d950381cb4b6","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":"小さく切る","buy":null,"substitutionOptions":[]},{"id":"329fc8b6-aada-413f-81a1-40e279aab099","nameOriginal":"Zucchero","nameJa":"砂糖","nameEn":"Sugar","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"07a8511e-e9d9-4d15-88fb-c075b37369f6","nameOriginal":"Cacao amaro","nameJa":"無糖ココア","nameEn":"Unsweetened cocoa","quantity":8,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ccb46af7-9863-4345-9abd-4a85776813a4","nameOriginal":"Vino bianco","nameJa":"白ワイン","nameEn":"Dry white wine","quantity":60,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","term":"予熱","gloss":"オーブンを先に温めておくこと","description":"食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを180度に予熱する。完熟桃4個は半割りにして種を取る。アマレッティ80gは砕く。ヘーゼルナッツ30gは刻む。バター40gは小さく切る。桃のくぼみが詰め物を受けられる大きさになったら次へ。","title":"桃を割り詰め物の材料を準備する","actionItems":["オーブンを180度に予熱する。","完熟桃4個は半割りにして種を取る。","アマレッティ80gは砕く。","ヘーゼルナッツ30gは刻む。","バター40gは小さく切る。","桃のくぼみが詰め物を受けられる大きさになったら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"砕いたアマレッティ、ヘーゼルナッツ、砂糖30g、無糖ココア8g、バター半量を混ぜる。しっとりまとまり、手で軽く押すと形が残る状態になったら次へ。","title":"詰め物を作る","actionItems":["砕いたアマレッティ、ヘーゼルナッツ、砂糖30g、無糖ココア8g、バター半量を混ぜる。"],"parallelItems":[],"completionCriteria":["しっとりまとまり、手で軽く押すと形が残る状態になったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"桃に詰め物をのせ、耐熱皿に並べる。白ワイン60mlを皿の底に注ぎ、残りのバターを点在させる。180度で25〜30分焼く。桃が柔らかくなり、詰め物の表面が香ばしく色づいたら完成。","title":"焼く","actionItems":["桃に詰め物をのせ、耐熱皿に並べる。","白ワイン60mlを皿の底に注ぎ、残りのバターを点在させる。","180度で25〜30分焼く。","桃が柔らかくなり、詰め物の表面が香ばしく色づいたら完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":30,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

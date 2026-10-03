@@ -131,7 +131,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -260,7 +259,7 @@
           </div>
         <div class="support-block">
             <p class="step-block-heading">注意点</p>
-            <p class="support-text">ソースが沸くと<a class="term" href="#term-43">乳化</a>が崩れる。</p>
+            <p class="support-text">ソースが沸くと<button type="button" class="term" data-glossary-trigger="term-43" aria-haspopup="dialog" aria-controls="glossary-dialog">乳化</button>が崩れる。</p>
           </div>
         </div>
 
@@ -294,16 +293,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-43">
-            <dt>乳化<span class="recipe-glossary-gloss">油と水分をなじませてとろみを出すこと</span></dt>
-            <dd>本来は混ざらない油と水分を、かき混ぜることで細かい粒にして一体化させることです。パスタソースでは、茹で汁の澱粉が油を包み、白くとろりとした状態になります。ソースが麺に絡んで皿に油が残らなければ乳化できています。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="spanish-pasaia">
@@ -490,7 +479,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"15f8f15e-6596-5c7c-b85d-33feac6d0f27","nameJa":"バカラオ・アル・ピルピル","baseServings":4,"minServings":2,"maxServings":4},"ingredients":[{"id":"476f4c73-6b76-4af8-914b-7529161badfa","nameOriginal":"Bacalao salado","nameJa":"塩漬け干しタラ","nameEn":"Salt cod","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮付き厚切り4切れ。冷蔵48時間塩抜き","buy":null,"substitutionOptions":[]},{"id":"841c7150-10b6-413c-9203-f4f5cbb1e972","nameOriginal":"Aceite de oliva","nameJa":"オリーブオイル","nameEn":"Olive oil","quantity":250,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"魚のゼラチンとの乳化用","buy":null,"substitutionOptions":[]},{"id":"3270e457-5ce5-4063-88bf-343044ebb5fd","nameOriginal":"Ajo","nameJa":"にんにく","nameEn":"Garlic","quantity":25,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"a403e42e-fcf2-48ad-90e3-d23fd5fabe10","nameOriginal":"Guindilla","nameJa":"唐辛子","nameEn":"Dried chilli","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"6f96edf9-56d4-47e4-b66e-15936f81be0b","nameOriginal":"Agua","nameJa":"水","nameEn":"Water","quantity":12000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"塩抜き用2Lを計6回","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-43","surfaces":["乳化"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"タラ700gの表面の塩を洗い、水2Lに沈めて冷蔵庫で48時間置く。8、16、24、32、40時間後に水を2Lずつ交換する。身が戻り、表面に塩の結晶がなければ次へ。","title":"皮付きの干しタラを塩抜きする","actionItems":["タラ700gの表面の塩を洗い、水2Lに沈めて冷蔵庫で48時間置く。","8、16、24、32、40時間後に水を2Lずつ交換する。"],"parallelItems":[],"completionCriteria":["身が戻り、表面に塩の結晶がなければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2880,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"タラの骨と残ったうろこを取り、皮は残して水分を十分に拭く。にんにく25gを薄切りにし、唐辛子1本は種を除いて輪切りにする。タラの表面に水滴がなく、骨が除かれていれば次へ。","title":"タラを乾かし香味を薄く切る","actionItems":["タラの骨と残ったうろこを取り、皮は残して水分を十分に拭く。","にんにく25gを薄切りにし、唐辛子1本は種を除いて輪切りにする。"],"parallelItems":[],"completionCriteria":["タラの表面に水滴がなく、骨が除かれていれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"24cmの浅い鍋に油250ml、にんにく、唐辛子を入れ、弱火で5分加熱する。にんにくが淡い金色になったら唐辛子とともに取り出す。タラを皮側を下にして入れ、油を80〜90℃に保ちながら10分程度加熱する。身の中心まで不透明になったらタラを取り出し、油を50℃程度まで落ち着かせる。タラの身がほぐれ、鍋底に白いゼラチン質の汁が見えれば次へ。","title":"香りの油でタラを火入れする","actionItems":["24cmの浅い鍋に油250ml、にんにく、唐辛子を入れ、弱火で5分加熱する。","にんにくが淡い金色になったら唐辛子とともに取り出す。","タラを皮側を下にして入れ、油を80〜90℃に保ちながら10分程度加熱する。","身の中心まで不透明になったらタラを取り出し、油を50℃程度まで落ち着かせる。"],"parallelItems":[],"completionCriteria":["タラの身がほぐれ、鍋底に白いゼラチン質の汁が見えれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"鍋底の白い汁を残し、透明な油の大半を別容器に移す。タラを皮側を下に戻し、火を止めた状態で鍋を小さく円を描くように揺する。取っておいた油を少量ずつ加え、白濁するたびに次の油を加える。ソースがつながったら極弱火で温め、にんにくと唐辛子を上に戻して供する。淡い黄色のソースが匙を覆い、透明な油が分離していなければ完成。","title":"鍋を揺すってピルピルをつなぐ","actionItems":["鍋底の白い汁を残し、透明な油の大半を別容器に移す。","タラを皮側を下に戻し、火を止めた状態で鍋を小さく円を描くように揺する。","取っておいた油を少量ずつ加え、白濁するたびに次の油を加える。","ソースがつながったら極弱火で温め、にんにくと唐辛子を上に戻して供する。"],"parallelItems":[],"completionCriteria":["淡い黄色のソースが匙を覆い、透明な油が分離していなければ完成。"],"cautionItems":["ソースが沸くと乳化が崩れる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"15f8f15e-6596-5c7c-b85d-33feac6d0f27","nameJa":"バカラオ・アル・ピルピル","baseServings":4,"minServings":2,"maxServings":4},"ingredients":[{"id":"476f4c73-6b76-4af8-914b-7529161badfa","nameOriginal":"Bacalao salado","nameJa":"塩漬け干しタラ","nameEn":"Salt cod","quantity":700,"unit":"g","role":"essential","scalingBehavior":null,"notes":"皮付き厚切り4切れ。冷蔵48時間塩抜き","buy":null,"substitutionOptions":[]},{"id":"841c7150-10b6-413c-9203-f4f5cbb1e972","nameOriginal":"Aceite de oliva","nameJa":"オリーブオイル","nameEn":"Olive oil","quantity":250,"unit":"ml","role":"technique","scalingBehavior":null,"notes":"魚のゼラチンとの乳化用","buy":null,"substitutionOptions":[]},{"id":"3270e457-5ce5-4063-88bf-343044ebb5fd","nameOriginal":"Ajo","nameJa":"にんにく","nameEn":"Garlic","quantity":25,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"a403e42e-fcf2-48ad-90e3-d23fd5fabe10","nameOriginal":"Guindilla","nameJa":"唐辛子","nameEn":"Dried chilli","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"6f96edf9-56d4-47e4-b66e-15936f81be0b","nameOriginal":"Agua","nameJa":"水","nameEn":"Water","quantity":12000,"unit":"ml","role":"essential","scalingBehavior":null,"notes":"塩抜き用2Lを計6回","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-43","term":"乳化","gloss":"油と水分をなじませてとろみを出すこと","description":"本来は混ざらない油と水分を、かき混ぜることで細かい粒にして一体化させることです。パスタソースでは、茹で汁の澱粉が油を包み、白くとろりとした状態になります。ソースが麺に絡んで皿に油が残らなければ乳化できています。","surfaces":["乳化"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"タラ700gの表面の塩を洗い、水2Lに沈めて冷蔵庫で48時間置く。8、16、24、32、40時間後に水を2Lずつ交換する。身が戻り、表面に塩の結晶がなければ次へ。","title":"皮付きの干しタラを塩抜きする","actionItems":["タラ700gの表面の塩を洗い、水2Lに沈めて冷蔵庫で48時間置く。","8、16、24、32、40時間後に水を2Lずつ交換する。"],"parallelItems":[],"completionCriteria":["身が戻り、表面に塩の結晶がなければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":2880,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"タラの骨と残ったうろこを取り、皮は残して水分を十分に拭く。にんにく25gを薄切りにし、唐辛子1本は種を除いて輪切りにする。タラの表面に水滴がなく、骨が除かれていれば次へ。","title":"タラを乾かし香味を薄く切る","actionItems":["タラの骨と残ったうろこを取り、皮は残して水分を十分に拭く。","にんにく25gを薄切りにし、唐辛子1本は種を除いて輪切りにする。"],"parallelItems":[],"completionCriteria":["タラの表面に水滴がなく、骨が除かれていれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"24cmの浅い鍋に油250ml、にんにく、唐辛子を入れ、弱火で5分加熱する。にんにくが淡い金色になったら唐辛子とともに取り出す。タラを皮側を下にして入れ、油を80〜90℃に保ちながら10分程度加熱する。身の中心まで不透明になったらタラを取り出し、油を50℃程度まで落ち着かせる。タラの身がほぐれ、鍋底に白いゼラチン質の汁が見えれば次へ。","title":"香りの油でタラを火入れする","actionItems":["24cmの浅い鍋に油250ml、にんにく、唐辛子を入れ、弱火で5分加熱する。","にんにくが淡い金色になったら唐辛子とともに取り出す。","タラを皮側を下にして入れ、油を80〜90℃に保ちながら10分程度加熱する。","身の中心まで不透明になったらタラを取り出し、油を50℃程度まで落ち着かせる。"],"parallelItems":[],"completionCriteria":["タラの身がほぐれ、鍋底に白いゼラチン質の汁が見えれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"鍋底の白い汁を残し、透明な油の大半を別容器に移す。タラを皮側を下に戻し、火を止めた状態で鍋を小さく円を描くように揺する。取っておいた油を少量ずつ加え、白濁するたびに次の油を加える。ソースがつながったら極弱火で温め、にんにくと唐辛子を上に戻して供する。淡い黄色のソースが匙を覆い、透明な油が分離していなければ完成。","title":"鍋を揺すってピルピルをつなぐ","actionItems":["鍋底の白い汁を残し、透明な油の大半を別容器に移す。","タラを皮側を下に戻し、火を止めた状態で鍋を小さく円を描くように揺する。","取っておいた油を少量ずつ加え、白濁するたびに次の油を加える。","ソースがつながったら極弱火で温め、にんにくと唐辛子を上に戻して供する。"],"parallelItems":[],"completionCriteria":["淡い黄色のソースが匙を覆い、透明な油が分離していなければ完成。"],"cautionItems":["ソースが沸くと乳化が崩れる。"],"tipItems":[],"durationMinutes":15,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

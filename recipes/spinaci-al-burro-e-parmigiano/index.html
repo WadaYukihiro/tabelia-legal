@@ -130,7 +130,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -205,7 +204,7 @@
             </li>
           <li class="action-item">
               <span class="action-item-number">3</span>
-              <span class="action-item-body"><span class="action-item-text"><a class="term" href="#term-47">粗熱</a>が取れたら両手で挟んで水気をしっかり絞り、軽くほぐす。</span></span>
+              <span class="action-item-body"><span class="action-item-text"><button type="button" class="term" data-glossary-trigger="term-47" aria-haspopup="dialog" aria-controls="glossary-dialog">粗熱</button>が取れたら両手で挟んで水気をしっかり絞り、軽くほぐす。</span></span>
             </li>
           </ul>
         </div>
@@ -244,7 +243,7 @@
           </ul>
         <div class="support-block">
             <p class="step-block-heading">完了の目安</p>
-            <p class="support-text">チーズが<a class="term" href="#term-45">余熱</a>でしっとりなじんだら完成。</p>
+            <p class="support-text">チーズが<button type="button" class="term" data-glossary-trigger="term-45" aria-haspopup="dialog" aria-controls="glossary-dialog">余熱</button>でしっとりなじんだら完成。</p>
           </div>
         </div>
 
@@ -278,20 +277,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-47">
-            <dt>粗熱<span class="recipe-glossary-gloss">手で触れる程度まで冷ますこと</span></dt>
-            <dd>加熱直後の高い熱を、手で触れても熱くない程度（40℃前後）まで冷ますことです。熱いまま次の材料と合わせると分離や固まりの原因になります。完全に冷やす必要はありません。</dd>
-          </div>
-          <div class="recipe-glossary-item" id="term-45">
-            <dt>余熱<span class="recipe-glossary-gloss">火を止めた後に残る熱</span></dt>
-            <dd>火を止めたり取り出したりした後も、鍋や食材に残っている熱のことです。肉を焼いた後に休ませると、余熱で中心まで火が通ります。オーブンを温める「予熱」とは別の語です。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="emilia-romagna">
@@ -461,7 +446,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7baa779b-0d17-4bcd-82ef-a68baf4829de","nameJa":"ほうれん草のバター・パルミジャーノソテー","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"e5941485-9319-46fb-89f1-9f086ef85ee5","nameOriginal":"Spinaci","nameJa":"ほうれん草","nameEn":"Spinach","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"根元を切り落とし、よく洗う","buy":null,"substitutionOptions":[]},{"id":"f5ee9543-54fb-4ae6-9906-a6fb8efee58c","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"8834577c-567e-4f40-a238-988dc5285ace","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす","buy":null,"substitutionOptions":[]},{"id":"f5024d9e-c878-4e2a-bbfd-b3663ad2303c","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"fc4f55dd-a248-42a0-83ee-0acbaf4b1cb4","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":22,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"20gは茹で湯用","buy":null,"substitutionOptions":[]},{"id":"1858ba0f-f8a2-4252-b00c-0015e25f70ad","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-47","surfaces":["粗熱"]},{"id":"term-45","surfaces":["余熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"（下ごしらえの間に）大鍋に湯2Lを沸かし始める。\n・ほうれん草800gは根元を切り落とし、水を2〜3回替えながら振り洗いする\n・パルミジャーノ30gをすりおろす\n洗い水に砂が出なくなったら次へ。","title":"下ごしらえと湯沸かし","actionItems":["ほうれん草800gは根元を切り落とし、水を2〜3回替えながら振り洗いする","パルミジャーノ30gをすりおろす"],"parallelItems":["（下ごしらえの間に）大鍋に湯2Lを沸かし始める。"],"completionCriteria":["洗い水に砂が出なくなったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"沸いた湯に塩20gを溶かし、ほうれん草を入れて1分〜1分30秒茹でる。葉が鮮やかな緑になり、茎がしなやかに曲がるようになったらざるに上げる。粗熱が取れたら両手で挟んで水気をしっかり絞り、軽くほぐす。","title":"ほうれん草をさっと茹でる","actionItems":["沸いた湯に塩20gを溶かし、ほうれん草を入れて1分〜1分30秒茹でる。","葉が鮮やかな緑になり、茎がしなやかに曲がるようになったらざるに上げる。","粗熱が取れたら両手で挟んで水気をしっかり絞り、軽くほぐす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"フライパンにバター40gを入れて弱めの中火で溶かす。泡が細かくなったらほうれん草を加えてほぐし、塩2gとナツメグ少々を振って2〜3分炒める。水気が飛び、バターが葉全体につやよく絡んだら火を止める。","title":"バターでソテーする","actionItems":["フライパンにバター40gを入れて弱めの中火で溶かす。","泡が細かくなったらほうれん草を加えてほぐし、塩2gとナツメグ少々を振って2〜3分炒める。","水気が飛び、バターが葉全体につやよく絡んだら火を止める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"火を止めたフライパンに、すりおろしたパルミジャーノ30gの半量を加えて和える。皿に盛り、残りのパルミジャーノと黒胡椒を振る。チーズが余熱でしっとりなじんだら完成。","title":"パルミジャーノで仕上げる","actionItems":["火を止めたフライパンに、すりおろしたパルミジャーノ30gの半量を加えて和える。","皿に盛り、残りのパルミジャーノと黒胡椒を振る。"],"parallelItems":[],"completionCriteria":["チーズが余熱でしっとりなじんだら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"7baa779b-0d17-4bcd-82ef-a68baf4829de","nameJa":"ほうれん草のバター・パルミジャーノソテー","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"e5941485-9319-46fb-89f1-9f086ef85ee5","nameOriginal":"Spinaci","nameJa":"ほうれん草","nameEn":"Spinach","quantity":800,"unit":"g","role":"essential","scalingBehavior":null,"notes":"根元を切り落とし、よく洗う","buy":null,"substitutionOptions":[]},{"id":"f5ee9543-54fb-4ae6-9906-a6fb8efee58c","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":40,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"8834577c-567e-4f40-a238-988dc5285ace","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす","buy":null,"substitutionOptions":[]},{"id":"f5024d9e-c878-4e2a-bbfd-b3663ad2303c","nameOriginal":"Noce moscata","nameJa":"ナツメグ","nameEn":"Nutmeg","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"fc4f55dd-a248-42a0-83ee-0acbaf4b1cb4","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":22,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"20gは茹で湯用","buy":null,"substitutionOptions":[]},{"id":"1858ba0f-f8a2-4252-b00c-0015e25f70ad","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-47","term":"粗熱","gloss":"手で触れる程度まで冷ますこと","description":"加熱直後の高い熱を、手で触れても熱くない程度（40℃前後）まで冷ますことです。熱いまま次の材料と合わせると分離や固まりの原因になります。完全に冷やす必要はありません。","surfaces":["粗熱"]},{"id":"term-45","term":"余熱","gloss":"火を止めた後に残る熱","description":"火を止めたり取り出したりした後も、鍋や食材に残っている熱のことです。肉を焼いた後に休ませると、余熱で中心まで火が通ります。オーブンを温める「予熱」とは別の語です。","surfaces":["余熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"（下ごしらえの間に）大鍋に湯2Lを沸かし始める。\n・ほうれん草800gは根元を切り落とし、水を2〜3回替えながら振り洗いする\n・パルミジャーノ30gをすりおろす\n洗い水に砂が出なくなったら次へ。","title":"下ごしらえと湯沸かし","actionItems":["ほうれん草800gは根元を切り落とし、水を2〜3回替えながら振り洗いする","パルミジャーノ30gをすりおろす"],"parallelItems":["（下ごしらえの間に）大鍋に湯2Lを沸かし始める。"],"completionCriteria":["洗い水に砂が出なくなったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"沸いた湯に塩20gを溶かし、ほうれん草を入れて1分〜1分30秒茹でる。葉が鮮やかな緑になり、茎がしなやかに曲がるようになったらざるに上げる。粗熱が取れたら両手で挟んで水気をしっかり絞り、軽くほぐす。","title":"ほうれん草をさっと茹でる","actionItems":["沸いた湯に塩20gを溶かし、ほうれん草を入れて1分〜1分30秒茹でる。","葉が鮮やかな緑になり、茎がしなやかに曲がるようになったらざるに上げる。","粗熱が取れたら両手で挟んで水気をしっかり絞り、軽くほぐす。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"フライパンにバター40gを入れて弱めの中火で溶かす。泡が細かくなったらほうれん草を加えてほぐし、塩2gとナツメグ少々を振って2〜3分炒める。水気が飛び、バターが葉全体につやよく絡んだら火を止める。","title":"バターでソテーする","actionItems":["フライパンにバター40gを入れて弱めの中火で溶かす。","泡が細かくなったらほうれん草を加えてほぐし、塩2gとナツメグ少々を振って2〜3分炒める。","水気が飛び、バターが葉全体につやよく絡んだら火を止める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"火を止めたフライパンに、すりおろしたパルミジャーノ30gの半量を加えて和える。皿に盛り、残りのパルミジャーノと黒胡椒を振る。チーズが余熱でしっとりなじんだら完成。","title":"パルミジャーノで仕上げる","actionItems":["火を止めたフライパンに、すりおろしたパルミジャーノ30gの半量を加えて和える。","皿に盛り、残りのパルミジャーノと黒胡椒を振る。"],"parallelItems":[],"completionCriteria":["チーズが余熱でしっとりなじんだら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

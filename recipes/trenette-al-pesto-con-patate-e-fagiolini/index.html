@@ -130,7 +130,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -220,7 +219,7 @@
           </ul>
         <div class="support-block">
             <p class="step-block-heading">完了の目安</p>
-            <p class="support-text">パスタが<a class="term" href="#term-67">アルデンテ</a>に茹で上がった。</p>
+            <p class="support-text">パスタが<button type="button" class="term" data-glossary-trigger="term-67" aria-haspopup="dialog" aria-controls="glossary-dialog">アルデンテ</button>に茹で上がった。</p>
           </div>
         <div class="support-block">
             <p class="step-block-heading">注意点</p>
@@ -308,16 +307,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-67">
-            <dt>アルデンテ<span class="recipe-glossary-gloss">芯にわずかな歯ごたえが残る茹で加減</span></dt>
-            <dd>パスタの中心にわずかな歯ごたえが残る茹で加減のことです。ソースと和える間にも火が入るので、袋の表示より1〜2分早く上げます。切ると中心に白い点が残る程度が目安です。<a class="recipe-glossary-learn" href="/articles/pasta-basics-04-shapes-and-sauces/">形状とソースの論理 <span aria-hidden="true">→</span></a></dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="liguria">
@@ -495,7 +484,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4ee7b218-c7f1-409b-8f55-ab8e81a911c1","nameJa":"じゃがいもとインゲンのジェノヴェーゼ・トレネッテ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"f30fff63-78b8-4a4b-8375-21fb830ee6a3","nameOriginal":"Trenette","nameJa":"トレネッテ（細平打ちパスタ）","nameEn":"Trenette","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":{"amazon":"https://www.amazon.co.jp/s?k=%E3%83%88%E3%83%AC%E3%83%8D%E3%83%83%E3%83%86&tag=tabelia1123-22","rakuten":"https://hb.afl.rakuten.co.jp/hgc/54ba49bc.2624912a.54ba49bd.915ec7d4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2588%25E3%2583%25AC%25E3%2583%258D%25E3%2583%2583%25E3%2583%2586%2F"},"substitutionOptions":[{"id":"b4322c2b-4b31-4b6a-b032-72b5d1cc5e31","standardIngredientId":"f30fff63-78b8-4a4b-8375-21fb830ee6a3","nameJa":"リングイーネ","nameEn":"Linguine","buy":null,"authenticityImpact":-5,"flavorImpact":"形状は近く代用しやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d5ea047d-e4d3-42c5-bc98-67aabdc46097","nameOriginal":"Pesto genovese","nameJa":"ジェノヴェーゼペスト（上記レシピまたは市販品）","nameEn":"Genoese pesto","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"639af463-d71e-4265-9e80-8d91820d8a78","nameOriginal":"Patate","nameJa":"じゃがいも（中）","nameEn":"Potatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"皮をむき2cm角に切る","buy":null,"substitutionOptions":[]},{"id":"29628ca8-2344-471f-a66d-a314014c79a3","nameOriginal":"Fagiolini","nameJa":"さやいんげん","nameEn":"Green beans","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"両端を取り4cm長さに切る","buy":null,"substitutionOptions":[]},{"id":"ccb9c671-b2a4-43c6-9075-84ec102cf6e5","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"仕上げ用","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-67","surfaces":["アルデンテ","アル・デンテ"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"じゃがいも2個の皮をむいて2cm角に切り、さやいんげん150gの両端を取り4cm長さに切る。","title":"野菜を切る","actionItems":["じゃがいも2個の皮をむき2cm角に切る。","さやいんげん150gの両端を取り4cm長さに切る。"],"parallelItems":[],"completionCriteria":["じゃがいもが均一な2cm角、さやいんげんが4cm長さになった。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"（野菜を切る間に）大鍋に塩水を沸かし、じゃがいもを先に入れて5分茹でる。","title":"じゃがいもを茹でる","actionItems":["大鍋に塩水を沸かす。","じゃがいもを入れて5分茹でる。"],"parallelItems":[],"completionCriteria":["じゃがいもに箸が刺さるがまだ固め（5分経過）。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"さやいんげんを加えてさらに3分茹でる。次にトレネッテを加えてパッケージの表示通りに茹でる（野菜と同じ鍋で仕上がる計算）。","title":"さやいんげんとパスタを加える","actionItems":["さやいんげんを加えてさらに3分茹でる。","トレネッテを加えてパッケージの表示通りに茹でる。"],"parallelItems":[],"completionCriteria":["パスタがアルデンテに茹で上がった。"],"cautionItems":["パスタの表示時間からさやいんげんの3分を引いたタイミングでパスタを投入すること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"茹で汁45mlを取り置き、パスタと野菜をまとめてザルにあける。","title":"茹で汁を取り湯切りする","actionItems":["茹で汁45mlをカップに取り置く。","パスタと野菜をザルにあける。"],"parallelItems":[],"completionCriteria":["茹で汁が確保され、パスタと野菜が湯切りできた。"],"cautionItems":["茹で汁を取り忘れないこと。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"imageHtml":"","instruction":"ボウルにペスト120gを入れ、茹で汁大さじ3で溶いてからパスタと野菜を加えて素早く和える。皿に盛りパルミジャーノ40gを散らして完成（ペストは加熱しない）。","title":"ペストと和える","actionItems":["ボウルにペスト120gを入れ茹で汁大さじ3で溶く。","パスタと野菜を加えて素早く和える。","皿に盛りパルミジャーノ40gを散らす。"],"parallelItems":[],"completionCriteria":["ペストが全体にムラなく絡み、じゃがいもとインゲンまで緑に色づけば完成。"],"cautionItems":["ペストは加熱しないこと。火にかけると香りが飛ぶ。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"4ee7b218-c7f1-409b-8f55-ab8e81a911c1","nameJa":"じゃがいもとインゲンのジェノヴェーゼ・トレネッテ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"f30fff63-78b8-4a4b-8375-21fb830ee6a3","nameOriginal":"Trenette","nameJa":"トレネッテ（細平打ちパスタ）","nameEn":"Trenette","quantity":320,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":{"amazon":"https://www.amazon.co.jp/s?k=%E3%83%88%E3%83%AC%E3%83%8D%E3%83%83%E3%83%86&tag=tabelia1123-22","rakuten":"https://hb.afl.rakuten.co.jp/hgc/54ba49bc.2624912a.54ba49bd.915ec7d4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2588%25E3%2583%25AC%25E3%2583%258D%25E3%2583%2583%25E3%2583%2586%2F"},"substitutionOptions":[{"id":"b4322c2b-4b31-4b6a-b032-72b5d1cc5e31","standardIngredientId":"f30fff63-78b8-4a4b-8375-21fb830ee6a3","nameJa":"リングイーネ","nameEn":"Linguine","buy":null,"authenticityImpact":-5,"flavorImpact":"形状は近く代用しやすい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"d5ea047d-e4d3-42c5-bc98-67aabdc46097","nameOriginal":"Pesto genovese","nameJa":"ジェノヴェーゼペスト（上記レシピまたは市販品）","nameEn":"Genoese pesto","quantity":120,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"639af463-d71e-4265-9e80-8d91820d8a78","nameOriginal":"Patate","nameJa":"じゃがいも（中）","nameEn":"Potatoes","quantity":2,"unit":"個","role":"essential","scalingBehavior":null,"notes":"皮をむき2cm角に切る","buy":null,"substitutionOptions":[]},{"id":"29628ca8-2344-471f-a66d-a314014c79a3","nameOriginal":"Fagiolini","nameJa":"さやいんげん","nameEn":"Green beans","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":"両端を取り4cm長さに切る","buy":null,"substitutionOptions":[]},{"id":"ccb9c671-b2a4-43c6-9075-84ec102cf6e5","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":40,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"仕上げ用","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-67","term":"アルデンテ","gloss":"芯にわずかな歯ごたえが残る茹で加減","description":"パスタの中心にわずかな歯ごたえが残る茹で加減のことです。ソースと和える間にも火が入るので、袋の表示より1〜2分早く上げます。切ると中心に白い点が残る程度が目安です。","surfaces":["アルデンテ","アル・デンテ"],"learn":{"path":"/articles/pasta-basics-04-shapes-and-sauces/","title":"形状とソースの論理","seriesSlug":"pasta-basics"}}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"じゃがいも2個の皮をむいて2cm角に切り、さやいんげん150gの両端を取り4cm長さに切る。","title":"野菜を切る","actionItems":["じゃがいも2個の皮をむき2cm角に切る。","さやいんげん150gの両端を取り4cm長さに切る。"],"parallelItems":[],"completionCriteria":["じゃがいもが均一な2cm角、さやいんげんが4cm長さになった。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"（野菜を切る間に）大鍋に塩水を沸かし、じゃがいもを先に入れて5分茹でる。","title":"じゃがいもを茹でる","actionItems":["大鍋に塩水を沸かす。","じゃがいもを入れて5分茹でる。"],"parallelItems":[],"completionCriteria":["じゃがいもに箸が刺さるがまだ固め（5分経過）。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"さやいんげんを加えてさらに3分茹でる。次にトレネッテを加えてパッケージの表示通りに茹でる（野菜と同じ鍋で仕上がる計算）。","title":"さやいんげんとパスタを加える","actionItems":["さやいんげんを加えてさらに3分茹でる。","トレネッテを加えてパッケージの表示通りに茹でる。"],"parallelItems":[],"completionCriteria":["パスタがアルデンテに茹で上がった。"],"cautionItems":["パスタの表示時間からさやいんげんの3分を引いたタイミングでパスタを投入すること。"],"tipItems":[],"durationMinutes":10,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"茹で汁45mlを取り置き、パスタと野菜をまとめてザルにあける。","title":"茹で汁を取り湯切りする","actionItems":["茹で汁45mlをカップに取り置く。","パスタと野菜をザルにあける。"],"parallelItems":[],"completionCriteria":["茹で汁が確保され、パスタと野菜が湯切りできた。"],"cautionItems":["茹で汁を取り忘れないこと。"],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"imageHtml":"","instruction":"ボウルにペスト120gを入れ、茹で汁大さじ3で溶いてからパスタと野菜を加えて素早く和える。皿に盛りパルミジャーノ40gを散らして完成（ペストは加熱しない）。","title":"ペストと和える","actionItems":["ボウルにペスト120gを入れ茹で汁大さじ3で溶く。","パスタと野菜を加えて素早く和える。","皿に盛りパルミジャーノ40gを散らす。"],"parallelItems":[],"completionCriteria":["ペストが全体にムラなく絡み、じゃがいもとインゲンまで緑に色づけば完成。"],"cautionItems":["ペストは加熱しないこと。火にかけると香りが飛ぶ。"],"tipItems":[],"durationMinutes":2,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

@@ -131,7 +131,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -252,7 +251,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">蓋をして冷蔵庫で最低2時間<a class="term" href="#term-68">マリネ</a>する。</span></span>
+              <span class="action-item-body"><span class="action-item-text">蓋をして冷蔵庫で最低2時間<button type="button" class="term" data-glossary-trigger="term-68" aria-haspopup="dialog" aria-controls="glossary-dialog">マリネ</button>する。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -295,16 +294,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-68">
-            <dt>マリネ<span class="recipe-glossary-gloss">調味液に浸けて味と香りを入れること</span></dt>
-            <dd>食材を油・酢・ワイン・香草などの液に浸けて、味と香りを入れたり、肉を柔らかくしたりすることです。冷蔵庫で時間をかけ、浸ける時間は手順の指示に従います。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="campania">
@@ -474,7 +463,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e5f065be-de6c-4386-a243-15470b3c1c4a","nameJa":"ズッキーニのミントマリネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"38ad6f30-aeaa-40b7-896f-8e11ae82a995","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":4,"unit":"本","role":"essential","scalingBehavior":null,"notes":"5mm輪切り","buy":null,"substitutionOptions":[]},{"id":"91cd15af-eaff-4b88-9470-8b62f055e693","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"e89d2e41-848c-4f04-b4f0-b47485e6fb24","nameOriginal":"Menta fresca","nameJa":"ミント（生）","nameEn":"Fresh mint","quantity":15,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"ちぎる","buy":null,"substitutionOptions":[]},{"id":"fb2b15c5-5730-403c-913f-b06d3faca23a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り","buy":null,"substitutionOptions":[]},{"id":"4a151177-2471-44a9-b248-e7e06fcae1a5","nameOriginal":"Olio di semi","nameJa":"揚げ油（サンフラワー油）","nameEn":"Sunflower oil for frying","quantity":400,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"85f5060e-5afe-42b7-b11a-5559d3f859f7","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"929dc4d7-9915-4375-ab93-77b3b23b9edd","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-68","surfaces":["マリネ"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"・ズッキーニを5mm輪切りにし、ペーパータオルで水気を拭く\n・にんにくを薄切りにする","title":"野菜を切る","actionItems":["ズッキーニ4本を5mm輪切りにする。","ペーパータオルで水気を拭く。","にんにく2片を薄切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"揚げ油を170℃に熱し、ズッキーニを2〜3分ずつ両面揚げる。黄金色になったらペーパータオルに取り出す。","title":"ズッキーニを揚げる","actionItems":["揚げ油400mlを170℃に熱する。","ズッキーニを2〜3分ずつ両面揚げる。","黄金色になったらペーパータオルに取り出す。"],"parallelItems":[],"completionCriteria":["ズッキーニが黄金色になれば取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"保存容器に揚げたズッキーニを並べ、にんにく・ミント・塩をふる。ズッキーニが重なりすぎず、香味が全体に散ったら次へ。","title":"容器に重ねる","actionItems":["保存容器に揚げたズッキーニを並べる。","にんにく・ミント15枚（ちぎる）・塩をふる。"],"parallelItems":[],"completionCriteria":["香味が全体に散ったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"白ワインビネガーとオリーブオイルを全体に回しかける。","title":"ビネガーとオイルをかける","actionItems":["白ワインビネガー50mlを全体に回しかける。","オリーブオイル30mlを全体に回しかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"imageHtml":"","instruction":"蓋をして冷蔵庫で最低2時間、できれば一晩マリネする。常温に戻してから供する。","title":"マリネする","actionItems":["蓋をして冷蔵庫で最低2時間マリネする。","供する前に常温に30分戻す。"],"parallelItems":[],"completionCriteria":["酸味と香りが全体に染み込んだら完成（2時間以上、一晩が理想）。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e5f065be-de6c-4386-a243-15470b3c1c4a","nameJa":"ズッキーニのミントマリネ","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"38ad6f30-aeaa-40b7-896f-8e11ae82a995","nameOriginal":"Zucchine","nameJa":"ズッキーニ","nameEn":"Zucchini","quantity":4,"unit":"本","role":"essential","scalingBehavior":null,"notes":"5mm輪切り","buy":null,"substitutionOptions":[]},{"id":"91cd15af-eaff-4b88-9470-8b62f055e693","nameOriginal":"Aceto di vino bianco","nameJa":"白ワインビネガー","nameEn":"White wine vinegar","quantity":50,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"e89d2e41-848c-4f04-b4f0-b47485e6fb24","nameOriginal":"Menta fresca","nameJa":"ミント（生）","nameEn":"Fresh mint","quantity":15,"unit":"枚","role":"essential","scalingBehavior":null,"notes":"ちぎる","buy":null,"substitutionOptions":[]},{"id":"fb2b15c5-5730-403c-913f-b06d3faca23a","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":2,"unit":"片","role":"essential","scalingBehavior":null,"notes":"薄切り","buy":null,"substitutionOptions":[]},{"id":"4a151177-2471-44a9-b248-e7e06fcae1a5","nameOriginal":"Olio di semi","nameJa":"揚げ油（サンフラワー油）","nameEn":"Sunflower oil for frying","quantity":400,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"85f5060e-5afe-42b7-b11a-5559d3f859f7","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"929dc4d7-9915-4375-ab93-77b3b23b9edd","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-68","term":"マリネ","gloss":"調味液に浸けて味と香りを入れること","description":"食材を油・酢・ワイン・香草などの液に浸けて、味と香りを入れたり、肉を柔らかくしたりすることです。冷蔵庫で時間をかけ、浸ける時間は手順の指示に従います。","surfaces":["マリネ"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"・ズッキーニを5mm輪切りにし、ペーパータオルで水気を拭く\n・にんにくを薄切りにする","title":"野菜を切る","actionItems":["ズッキーニ4本を5mm輪切りにする。","ペーパータオルで水気を拭く。","にんにく2片を薄切りにする。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":7,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"揚げ油を170℃に熱し、ズッキーニを2〜3分ずつ両面揚げる。黄金色になったらペーパータオルに取り出す。","title":"ズッキーニを揚げる","actionItems":["揚げ油400mlを170℃に熱する。","ズッキーニを2〜3分ずつ両面揚げる。","黄金色になったらペーパータオルに取り出す。"],"parallelItems":[],"completionCriteria":["ズッキーニが黄金色になれば取り出す。"],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"保存容器に揚げたズッキーニを並べ、にんにく・ミント・塩をふる。ズッキーニが重なりすぎず、香味が全体に散ったら次へ。","title":"容器に重ねる","actionItems":["保存容器に揚げたズッキーニを並べる。","にんにく・ミント15枚（ちぎる）・塩をふる。"],"parallelItems":[],"completionCriteria":["香味が全体に散ったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"白ワインビネガーとオリーブオイルを全体に回しかける。","title":"ビネガーとオイルをかける","actionItems":["白ワインビネガー50mlを全体に回しかける。","オリーブオイル30mlを全体に回しかける。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":1,"attentionLevel":"active","sectionTitle":null},{"stepNumber":5,"imageHtml":"","instruction":"蓋をして冷蔵庫で最低2時間、できれば一晩マリネする。常温に戻してから供する。","title":"マリネする","actionItems":["蓋をして冷蔵庫で最低2時間マリネする。","供する前に常温に30分戻す。"],"parallelItems":[],"completionCriteria":["酸味と香りが全体に染み込んだら完成（2時間以上、一晩が理想）。"],"cautionItems":[],"tipItems":[],"durationMinutes":120,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
