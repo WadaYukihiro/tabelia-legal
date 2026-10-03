@@ -2043,3 +2043,18 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 @media print {
   .recipe-products { display: none; }
 }
+/* ── 料理用語（手順本文のタップ説明） ──────────────────────────────────────────
+   本文中の用語は点線の下線だけで示し、同じページ下部の「この料理の用語」へ飛ぶ。
+   色を変えるとリンクが並んだ手順になり読みにくいので、文字色は本文のまま。
+   用語集はアプリと同じ culinary-glossary.ts から生成する。 */
+.term { color: inherit; text-decoration: underline dotted #b89a68; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.term:hover { text-decoration-color: #9e2f23; }
+.recipe-glossary { margin-top: 2.2rem; }
+.recipe-glossary dl { margin: 0; }
+.recipe-glossary-item { scroll-margin-top: var(--recipe-sticky-top, 6rem); padding: 0.85rem 0; border-top: 1px solid #ddd3c6; }
+.recipe-glossary-item:last-child { border-bottom: 1px solid #ddd3c6; }
+.recipe-glossary-item:target { background: #fff7e9; margin: 0 -0.6rem; padding-left: 0.6rem; padding-right: 0.6rem; }
+.recipe-glossary dt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.7rem; font-weight: 700; font-size: 0.95rem; }
+.recipe-glossary-gloss { font-weight: 400; font-size: 0.82rem; color: #68584a; }
+.recipe-glossary dd { margin: 0.35rem 0 0; font-size: 0.86rem; line-height: 1.75; color: #444; }
+.recipe-glossary-learn { display: inline-block; margin-top: 0.35rem; font-size: 0.8rem; font-weight: 600; color: #8a4d21; }
