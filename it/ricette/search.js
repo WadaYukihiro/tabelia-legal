@@ -2,8 +2,93 @@
   var input = document.getElementById('recipe-search-input');
   var results = document.getElementById('recipe-search-results');
   if (!input || !results) return;
-  var normalizeRecipeSearch = function normalizeRecipeSearch(value){return value.normalize("NFKC").toLowerCase().replace(/œ/g,"oe").replace(/æ/g,"ae").replace(/ß/g,"ss").normalize("NFD").replace(/[\u0300-\u036f]/g,"").normalize("NFC").replace(/[ァ-ヶ]/g,letter=>String.fromCharCode(letter.charCodeAt(0)-96)).replace(/[\s・･'’ʼ‐‑–—-]+/g,"")};
-  var searchRecipes = function searchRecipes(entries,query){const terms=query.trim().split(/\s+/).map(normalizeRecipeSearch).filter(Boolean);if(!terms.length)return[];return entries.map((entry,index)=>{const names=entry.names.map(normalizeRecipeSearch);const ingredients=entry.ingredients.map(normalizeRecipeSearch);const all=names.concat(ingredients);if(!terms.every(term=>all.some(text=>text.includes(term))))return{entry,index,score:0};const score=terms.reduce((total,term)=>total+(names.some(name=>name===term)?100:names.some(name=>name.startsWith(term))?30:names.some(name=>name.includes(term))?10:1),0);return{entry,index,score}}).filter(match=>match.score>0).sort((a,b)=>b.score-a.score||a.index-b.index).map(match=>match.entry)};
+const LATIN_LIGATURES = {
+    'œ': 'oe', 'æ': 'ae', 'ß': 'ss', 'ø': 'o', 'ł': 'l', 'đ': 'd', 'ð': 'd', 'þ': 'th',
+};
+const SMALL_KANA_TO_LARGE = {
+    'ぁ': 'あ', 'ぃ': 'い', 'ぅ': 'う', 'ぇ': 'え', 'ぉ': 'お',
+    'ゃ': 'や', 'ゅ': 'ゆ', 'ょ': 'よ', 'ゎ': 'わ',
+};
+const KANJI_READINGS = [
+    ['薩摩芋', 'さつまいも'],
+    ['玉ねぎ', 'たまねぎ'], ['玉葱', 'たまねぎ'],
+    ['茄子', 'なす'], ['烏賊', 'いか'], ['牛蒡', 'ごぼう'], ['大蒜', 'にんにく'],
+    ['南瓜', 'かぼちゃ'], ['人参', 'にんじん'], ['胡瓜', 'きゅうり'],
+    ['牛肉', 'ぎゅうにく'], ['豚肉', 'ぶたにく'], ['鶏肉', 'とりにく'],
+    ['蛸', 'たこ'], ['葱', 'ねぎ'], ['韮', 'にら'], ['蕪', 'かぶ'], ['茄', 'なす'],
+];
+const SEPARATORS = /[\s　・･、。，,．.'’‘`´\-‐–—―_~〜～:：;；/／&＆!！?？()（）[\]「」『』【】"“”]/g;
+const cache = new Map();
+const CACHE_LIMIT = 4000;
+function normalizeSearchText(input) {
+    const hit = cache.get(input);
+    if (hit !== undefined)
+        return hit;
+    let s = input.normalize('NFKC').toLowerCase();
+    s = s.replace(/[œæßøłđðþ]/g, (ch) => { var _a; return (_a = LATIN_LIGATURES[ch]) !== null && _a !== void 0 ? _a : ch; });
+    s = s.normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC');
+    for (const [kanji, reading] of KANJI_READINGS)
+        s = s.split(kanji).join(reading);
+    s = s.replace(/[ァ-ヶ]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0x60));
+    s = s.replace(/ゔぁ/g, 'ば').replace(/ゔぃ/g, 'び').replace(/ゔぇ/g, 'べ').replace(/ゔぉ/g, 'ぼ').replace(/ゔ/g, 'ぶ');
+    s = s.replace(/っ/g, '');
+    s = s.replace(/[ぁぃぅぇぉゃゅょゎ]/g, (ch) => { var _a; return (_a = SMALL_KANA_TO_LARGE[ch]) !== null && _a !== void 0 ? _a : ch; });
+    s = s.replace(/ー/g, '');
+    s = s.replace(SEPARATORS, '');
+    if (cache.size >= CACHE_LIMIT)
+        cache.clear();
+    cache.set(input, s);
+    return s;
+}
+function foldKanaVoicing(key) {
+    return key.normalize('NFD').replace(/[゙゚]/g, '');
+}
+function searchTokens(query) {
+    return query
+        .split(/[\s　・･,、]+/)
+        .map((t) => normalizeSearchText(t))
+        .filter((t) => t.length > 0);
+}
+function searchKeyIncludes(haystackKey, needleKey) {
+    if (needleKey.length === 0)
+        return true;
+    if (haystackKey.length === 0)
+        return false;
+    if (haystackKey.includes(needleKey))
+        return true;
+    return foldKanaVoicing(haystackKey).includes(foldKanaVoicing(needleKey));
+}
+function rankNameMatch(keys, query) {
+    const tokens = searchTokens(query);
+    if (tokens.length === 0)
+        return 0;
+    const joined = tokens.join('');
+    let best = 0;
+    for (const key of keys) {
+        if (!key)
+            continue;
+        if (key === joined || foldKanaVoicing(key) === foldKanaVoicing(joined))
+            return 100;
+        if (key.startsWith(joined) || foldKanaVoicing(key).startsWith(foldKanaVoicing(joined)))
+            best = Math.max(best, 80);
+        else if (searchKeyIncludes(key, joined))
+            best = Math.max(best, 60);
+    }
+    if (best > 0)
+        return best;
+    const all = keys.join(' ');
+    return tokens.every((t) => searchKeyIncludes(all, t)) ? 50 : 0;
+}
+
+  var normalizeRecipeSearch = normalizeSearchText;
+  var searchRecipes = function(entries,query) {
+    if (!searchTokens(query).length) return [];
+    return entries.map(function(entry,index) {
+      var names=entry.names.map(normalizeSearchText), all=names.concat(entry.ingredients.map(normalizeSearchText));
+      var nameScore=rankNameMatch(names,query), allScore=rankNameMatch(all,query);
+      return {entry:entry,index:index,score:nameScore || (allScore ? allScore / 1000 : 0)};
+    }).filter(function(match){return match.score>0;}).sort(function(a,b){return b.score-a.score||a.index-b.index;}).map(function(match){return match.entry;});
+  };
   var data = null, fetchPromise = null, limit = 20, requestId = 0;
   input.setAttribute('aria-controls', results.id);
   input.setAttribute('aria-expanded', 'false');
