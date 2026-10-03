@@ -176,6 +176,11 @@
     track('recipe_view', page);
   }
 
+  // 記事本文の閲覧。recipe_view と同じ理由で page_view とは別に送る
+  if (page.page_type === 'article') {
+    track('article_view', page);
+  }
+
   function closestLink(target, selector) {
     if (!target || typeof target.closest !== 'function') return null;
     return target.closest(selector);
@@ -202,6 +207,29 @@
       engaged: engaged.substitution || engaged.servings ? 1 : 0,
     });
   });
+
+  // 記事 → 関連レシピカード（/articles/<slug>/ の .article-recipe-card）
+  document.addEventListener('click', function (e) {
+    var link = closestLink(e.target, 'a[data-article-recipe]');
+    if (!link) return;
+    track('article_recipe_click', {
+      article_slug: page.article_slug || '',
+      recipe_slug: link.getAttribute('data-recipe-slug') || '',
+    });
+  });
+
+  // レシピ → 関連記事カード（/recipes/<slug>/ の .recipe-article-card）
+  document.addEventListener('click', function (e) {
+    var link = closestLink(e.target, 'a[data-recipe-article]');
+    if (!link) return;
+    track('recipe_article_click', {
+      recipe_slug: page.recipe_slug || '',
+      article_slug: link.getAttribute('data-article-slug') || '',
+    });
+  });
+
+  // 記事トップのフィルター操作（article_filter）は /articles/filter.js が
+  // window.tabeliaTrack 経由で送る（scripts/lib/web-articles.ts の ARTICLE_FILTER_JS）。
 
   // 取り寄せリンク（Amazon / 楽天市場）。アプリの affiliate_link_opened と同じイベント名・パラメータで、
   // source だけ Web の配置名にする（docs/ANALYTICS.md）

@@ -81,20 +81,6 @@
   <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/01-flour-and-eggs/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/02-kneading-and-resting/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/03-pasta-machine/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/04-shapes-and-sauces/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/pasta-basics/05-from-flour-to-noodle/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/bread-basics/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/bread-basics/01-flour-and-water/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/bread-basics/02-yeast-and-time/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/bread-basics/03-kneading-and-folding/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/bread-basics/04-shaping-and-bubbles/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/bread-basics/05-baking-and-resting/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://tabelia.app/learn/bread-basics/06-from-flour-to-table/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-10-01</lastmod></url>
@@ -17259,4 +17245,19 @@
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi. I profumi di Cointreau ed espresso ne esprimono il carattere autentico.</image:caption>
     </image:image>
   </url>
+
+<url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/bread-basics-05-baking-and-resting/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/bread-basics-01-flour-and-water/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/bread-basics-03-kneading-and-folding/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/bread-basics-06-from-flour-to-table/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/bread-basics-02-yeast-and-time/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/bread-basics-04-shaping-and-bubbles/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/pasta-basics-04-shapes-and-sauces/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/pasta-basics-05-from-flour-to-noodle/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-03</lastmod></url>
+<url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-03</lastmod></url>
 </urlset>

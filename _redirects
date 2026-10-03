@@ -21,3 +21,20 @@
 /recipes/feature/pasta/ /recipes/italian/feature/pasta/ 301
 /recipes/feature/weekend/ /recipes/italian/feature/weekend/ 301
 /recipes/feature/omotenashi/ /recipes/italian/feature/omotenashi/ 301
+
+# --- articles-migration (generated) ---
+/learn/ /articles/ 301
+/learn/pasta-basics/ /articles/series/pasta-basics/ 301
+/learn/bread-basics/ /articles/series/bread-basics/ 301
+/learn/bread-basics/04-shaping-and-bubbles/ /articles/bread-basics-04-shaping-and-bubbles/ 301
+/learn/bread-basics/05-baking-and-resting/ /articles/bread-basics-05-baking-and-resting/ 301
+/learn/bread-basics/06-from-flour-to-table/ /articles/bread-basics-06-from-flour-to-table/ 301
+/learn/pasta-basics/01-flour-and-eggs/ /articles/pasta-basics-01-flour-and-eggs/ 301
+/learn/pasta-basics/03-pasta-machine/ /articles/pasta-basics-03-pasta-machine/ 301
+/learn/pasta-basics/05-from-flour-to-noodle/ /articles/pasta-basics-05-from-flour-to-noodle/ 301
+/learn/pasta-basics/04-shapes-and-sauces/ /articles/pasta-basics-04-shapes-and-sauces/ 301
+/learn/pasta-basics/02-kneading-and-resting/ /articles/pasta-basics-02-kneading-and-resting/ 301
+/learn/bread-basics/01-flour-and-water/ /articles/bread-basics-01-flour-and-water/ 301
+/learn/bread-basics/02-yeast-and-time/ /articles/bread-basics-02-yeast-and-time/ 301
+/learn/bread-basics/03-kneading-and-folding/ /articles/bread-basics-03-kneading-and-folding/ 301
+# --- end articles-migration ---
