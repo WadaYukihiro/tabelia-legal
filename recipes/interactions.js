@@ -403,19 +403,51 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     actions.forEach(function(text,i){if(!usedA.has(i))ordered.push({kind:'action',text:text});}); parallels.forEach(function(text,i){if(!usedP.has(i))ordered.push({kind:'parallel',text:text});}); return ordered;
   }
 
+  // 料理用語を「この料理の用語」へのリンクにする。生成器（generate-web-recipes.ts の glossHtml）と同じ規則:
+  // この料理に現れる用語の表記だけを data.glossary で受け取り、長い表記から順に、カタカナ語は語境界を見て照合する。
+  var KATAKANA = /[ァ-ヶー]/;
+  var glossaryMatchers = (data.glossary || []).flatMap(function (term) {
+    var fixed = term.surfaces.map(function (surface) { return { id: term.id, surface: surface, length: surface.length }; });
+    if (!term.match) return fixed;
+    var regex = new RegExp(term.match, 'y');
+    return [{ id: term.id, regex: regex, length: term.surfaces[0].length + 1 }].concat(fixed.slice(1));
+  }).sort(function (a, b) { return b.length - a.length; });
+  function glossaryMatchAt(text, index, matcher) {
+    if (matcher.regex) { matcher.regex.lastIndex = index; var m = matcher.regex.exec(text); return m && m.index === index ? m[0].length : 0; }
+    if (text.substr(index, matcher.surface.length) !== matcher.surface) return 0;
+    if (/^[ァ-ヶー・]+$/.test(matcher.surface)) {
+      var before = text[index - 1], after = text[index + matcher.surface.length];
+      if ((before && KATAKANA.test(before)) || (after && KATAKANA.test(after))) return 0;
+    }
+    return matcher.surface.length;
+  }
+  function glossHtml(text) {
+    text = String(text || '');
+    if (!glossaryMatchers.length) return esc(text);
+    var html = '', plainStart = 0, i = 0;
+    while (i < text.length) {
+      var hit = null;
+      for (var k = 0; k < glossaryMatchers.length; k++) { var len = glossaryMatchAt(text, i, glossaryMatchers[k]); if (len > 0) { hit = { id: glossaryMatchers[k].id, length: len }; break; } }
+      if (!hit) { i++; continue; }
+      html += esc(text.slice(plainStart, i)) + '<a class="term" href="#' + esc(hit.id) + '">' + esc(text.slice(i, i + hit.length)) + '</a>';
+      i += hit.length; plainStart = i;
+    }
+    return html + esc(text.slice(plainStart));
+  }
+
   function supportBlock(label, items) {
     if (!items || !items.length) return '';
-    return '<div class="support-block"><p class="step-block-heading">' + esc(label) + '</p>' + items.map(function (item) { return '<p class="support-text">' + esc(scaleInstruction(item)) + '</p>'; }).join('') + '</div>';
+    return '<div class="support-block"><p class="step-block-heading">' + esc(label) + '</p>' + items.map(function (item) { return '<p class="support-text">' + glossHtml(scaleInstruction(item)) + '</p>'; }).join('') + '</div>';
   }
   function renderStepBody(step) {
     var structured = step.title || step.actionItems.length || step.parallelItems.length || step.completionCriteria.length || step.cautionItems.length || step.tipItems.length;
-    if (!structured) return '<p>' + esc(scaleInstruction(step.instruction)) + '</p>';
+    if (!structured) return '<p>' + glossHtml(scaleInstruction(step.instruction)) + '</p>';
     var html = step.title ? '<p class="step-title">' + esc(step.title) + '</p>' : '';
     var items = orderedItems(step);
     if (items.length) html += '<ul class="action-list">' + items.map(function (item, index) {
       var text = scaleInstruction(item.text);
-      return '<li class="action-item"><span class="action-item-number">' + (index + 1) + '</span><span class="action-item-body">' + (item.kind === 'parallel' ? '<span class="parallel-label">並行</span>' : '') + '<span class="action-item-text">' + esc(text) + '</span></span></li>';
-    }).join('') + '</ul>'; else if (step.instruction) html += '<p>' + esc(scaleInstruction(step.instruction)) + '</p>';
+      return '<li class="action-item"><span class="action-item-number">' + (index + 1) + '</span><span class="action-item-body">' + (item.kind === 'parallel' ? '<span class="parallel-label">並行</span>' : '') + '<span class="action-item-text">' + glossHtml(text) + '</span></span></li>';
+    }).join('') + '</ul>'; else if (step.instruction) html += '<p>' + glossHtml(scaleInstruction(step.instruction)) + '</p>';
     return html + supportBlock('完了の目安', step.completionCriteria) + supportBlock('注意点', step.cautionItems) + supportBlock('補足', step.tipItems);
   }
 
