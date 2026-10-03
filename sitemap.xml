@@ -17260,4 +17260,44 @@
 <url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-03</lastmod></url>
+
+<url>
+    <loc>https://tabelia.app/recipes/paella-de-marisco/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/paella-de-marisco/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6eb9d189-15b5-4eca-a6d1-0a4ee4969bb2_1791004708738.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>魚介のパエリア（Paella de marisco）</image:title>
+      <image:caption>エビ・イカ・ムール貝を合わせ、魚介のだしとサフランで米を炊くパエリア。浅い鍋に米を薄く広げ、かき混ぜずに炊いて粒の食感を残します。</image:caption>
+    </image:image>
+  </url>
+<url>
+    <loc>https://tabelia.app/en/recipes/paella-de-marisco/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/paella-de-marisco/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6eb9d189-15b5-4eca-a6d1-0a4ee4969bb2_1791004708738.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Seafood Paella</image:title>
+      <image:caption>Paella with shrimp, squid and mussels, cooked in fish stock with saffron. Spread the rice thinly in a shallow pan and cook without stirring to preserve the texture of the grains.</image:caption>
+    </image:image>
+  </url>
+<url>
+    <loc>https://tabelia.app/it/ricette/paella-de-marisco/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/paella-de-marisco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/paella-de-marisco/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/6eb9d189-15b5-4eca-a6d1-0a4ee4969bb2_1791004708738.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Paella di frutti di mare</image:title>
+      <image:caption>Paella con gamberi, calamari e cozze, cotta con brodo di pesce e zafferano. Il riso si distribuisce in uno strato sottile in una padella bassa e si cuoce senza mescolare, per conservare la consistenza dei chicchi.</image:caption>
+    </image:image>
+  </url>
 </urlset>
