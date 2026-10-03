@@ -9,7 +9,7 @@
 
   var categoryChips = [].slice.call(root.querySelectorAll('[data-filter-category]'));
   var cuisineChips = [].slice.call(root.querySelectorAll('[data-filter-cuisine]'));
-  var cards = [].slice.call(list.querySelectorAll('a[data-category]'));
+  var cards = [].slice.call(list.querySelectorAll('.article-card[data-category]'));
 
   var knownCategories = categoryChips
     .map(function (c) { return c.getAttribute('data-filter-category'); })
@@ -92,6 +92,9 @@
     var start = (state.page - 1) * PAGE_SIZE;
     var visible = matched.slice(start, start + PAGE_SIZE);
     cards.forEach(function (card) { card.hidden = visible.indexOf(card) === -1; });
+    [].slice.call(list.querySelectorAll('[data-article-group]')).forEach(function (group) {
+      group.hidden = ![].slice.call(group.querySelectorAll('.article-card')).some(function (card) { return !card.hidden; });
+    });
     // フィルター中はおすすめ枠を出さない（一致記事だけを表示する）
     if (featured) featured.hidden = filtering || state.page > 1;
     if (empty) empty.hidden = matched.length !== 0;
