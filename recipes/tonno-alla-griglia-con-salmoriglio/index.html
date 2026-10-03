@@ -130,7 +130,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -189,7 +188,7 @@
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
-              <span class="action-item-body"><span class="action-item-text">小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を合わせてよく混ぜ、サルモリーリョが軽く<a class="term" href="#term-43">乳化</a>したら次へ。</span></span>
+              <span class="action-item-body"><span class="action-item-text">小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を合わせてよく混ぜ、サルモリーリョが軽く<button type="button" class="term" data-glossary-trigger="term-43" aria-haspopup="dialog" aria-controls="glossary-dialog">乳化</button>したら次へ。</span></span>
             </li>
           </ul>
         </div>
@@ -262,16 +261,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-43">
-            <dt>乳化<span class="recipe-glossary-gloss">油と水分をなじませてとろみを出すこと</span></dt>
-            <dd>本来は混ざらない油と水分を、かき混ぜることで細かい粒にして一体化させることです。パスタソースでは、茹で汁の澱粉が油を包み、白くとろりとした状態になります。ソースが麺に絡んで皿に油が残らなければ乳化できています。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="trapani">
@@ -441,7 +430,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"19d9a5c2-efdd-4740-b24f-1ce1c4f98bce","nameJa":"グリルマグロのサルモリーリョ仕立て","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"ab9659ea-0a2b-47d8-b979-6aa3354fa14d","nameOriginal":"Tranci di tonno","nameJa":"生マグロ柵","nameEn":"Fresh tuna steaks","quantity":360,"unit":"g","role":"essential","scalingBehavior":null,"notes":"厚さ3cm。室温に10分置く","buy":null,"substitutionOptions":[]},{"id":"70829f86-2050-4584-aca3-05831935a916","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"果汁を絞る","buy":null,"substitutionOptions":[]},{"id":"50fa0c6d-8ce2-4fa2-8819-2142697bc1de","nameOriginal":"Origano secco","nameJa":"乾燥オレガノ","nameEn":"Dried oregano","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"18ffe9a5-9bc1-48ac-978a-6da938b9a7c2","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":55,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ca063bb7-1ee5-4222-8286-c873d087dc07","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"02b3e451-0dc3-4b04-be8a-fc3d53f129d3","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-43","surfaces":["乳化"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"生マグロ柵360gを厚さ3cmに整え、室温に10分置く。","title":"マグロを準備する","actionItems":["生マグロ柵360gを厚さ3cmに整え、室温に10分置く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"（マグロが室温に戻る間に）レモン1個の果汁を絞る。小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を合わせてよく混ぜ、サルモリーリョが軽く乳化したら次へ。","title":"サルモリーリョを作る","actionItems":["小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を合わせてよく混ぜ、サルモリーリョが軽く乳化したら次へ。"],"parallelItems":["（マグロが室温に戻る間に）レモン1個の果汁を絞る。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"ボウルで生マグロ柵にエクストラバージンオリーブオイル15mlと塩3gをなじませる。強く熱した鉄板で各面45〜60秒ずつ焼く。表面に焼き色がつき、中心が赤く柔らかい弾力を保っていたら取り出す。","title":"表面だけ焼く","actionItems":["ボウルで生マグロ柵にエクストラバージンオリーブオイル15mlと塩3gをなじませる。","強く熱した鉄板で各面45〜60秒ずつ焼く。","表面に焼き色がつき、中心が赤く柔らかい弾力を保っていたら取り出す。"],"parallelItems":[],"completionCriteria":["各面に香ばしい焼き色がつき、指で押すと中心が生の柔らかい弾力を保っていれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"焼いた生マグロ柵を厚めに切り、サルモリーリョをかける。切り口の中心がしっとり赤く残っていれば完成。","title":"仕上げる","actionItems":["焼いた生マグロ柵を厚めに切り、サルモリーリョをかける。","切り口の中心がしっとり赤く残っていれば完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"19d9a5c2-efdd-4740-b24f-1ce1c4f98bce","nameJa":"グリルマグロのサルモリーリョ仕立て","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"ab9659ea-0a2b-47d8-b979-6aa3354fa14d","nameOriginal":"Tranci di tonno","nameJa":"生マグロ柵","nameEn":"Fresh tuna steaks","quantity":360,"unit":"g","role":"essential","scalingBehavior":null,"notes":"厚さ3cm。室温に10分置く","buy":null,"substitutionOptions":[]},{"id":"70829f86-2050-4584-aca3-05831935a916","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"essential","scalingBehavior":null,"notes":"果汁を絞る","buy":null,"substitutionOptions":[]},{"id":"50fa0c6d-8ce2-4fa2-8819-2142697bc1de","nameOriginal":"Origano secco","nameJa":"乾燥オレガノ","nameEn":"Dried oregano","quantity":1,"unit":"小さじ","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"18ffe9a5-9bc1-48ac-978a-6da938b9a7c2","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":55,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ca063bb7-1ee5-4222-8286-c873d087dc07","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"02b3e451-0dc3-4b04-be8a-fc3d53f129d3","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-43","term":"乳化","gloss":"油と水分をなじませてとろみを出すこと","description":"本来は混ざらない油と水分を、かき混ぜることで細かい粒にして一体化させることです。パスタソースでは、茹で汁の澱粉が油を包み、白くとろりとした状態になります。ソースが麺に絡んで皿に油が残らなければ乳化できています。","surfaces":["乳化"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"生マグロ柵360gを厚さ3cmに整え、室温に10分置く。","title":"マグロを準備する","actionItems":["生マグロ柵360gを厚さ3cmに整え、室温に10分置く。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"（マグロが室温に戻る間に）レモン1個の果汁を絞る。小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を合わせてよく混ぜ、サルモリーリョが軽く乳化したら次へ。","title":"サルモリーリョを作る","actionItems":["小ボウルにレモン果汁、乾燥オレガノ小さじ1、エクストラバージンオリーブオイル40ml、塩2g、黒胡椒を合わせてよく混ぜ、サルモリーリョが軽く乳化したら次へ。"],"parallelItems":["（マグロが室温に戻る間に）レモン1個の果汁を絞る。"],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"ボウルで生マグロ柵にエクストラバージンオリーブオイル15mlと塩3gをなじませる。強く熱した鉄板で各面45〜60秒ずつ焼く。表面に焼き色がつき、中心が赤く柔らかい弾力を保っていたら取り出す。","title":"表面だけ焼く","actionItems":["ボウルで生マグロ柵にエクストラバージンオリーブオイル15mlと塩3gをなじませる。","強く熱した鉄板で各面45〜60秒ずつ焼く。","表面に焼き色がつき、中心が赤く柔らかい弾力を保っていたら取り出す。"],"parallelItems":[],"completionCriteria":["各面に香ばしい焼き色がつき、指で押すと中心が生の柔らかい弾力を保っていれば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":4,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"焼いた生マグロ柵を厚めに切り、サルモリーリョをかける。切り口の中心がしっとり赤く残っていれば完成。","title":"仕上げる","actionItems":["焼いた生マグロ柵を厚めに切り、サルモリーリョをかける。","切り口の中心がしっとり赤く残っていれば完成。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":3,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

@@ -130,7 +130,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -203,7 +202,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="parallel-label">並行</span><span class="action-item-text">（軸を炒める間に）オーブンを200度に<a class="term" href="#term-46">予熱</a>し始める。</span></span>
+              <span class="action-item-body"><span class="parallel-label">並行</span><span class="action-item-text">（軸を炒める間に）オーブンを200度に<button type="button" class="term" data-glossary-trigger="term-46" aria-haspopup="dialog" aria-controls="glossary-dialog">予熱</button>し始める。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -280,16 +279,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-46">
-            <dt>予熱<span class="recipe-glossary-gloss">オーブンを先に温めておくこと</span></dt>
-            <dd>食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="liguria">
@@ -459,7 +448,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"825bf1fc-3194-4e81-a209-7e9618fe1e21","nameJa":"マッシュルームの香草パン粉詰め焼き","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0695f9e5-e632-4629-ab9c-b661f9d9f49f","nameOriginal":"Funghi champignon","nameJa":"マッシュルーム","nameEn":"Button mushrooms","quantity":12,"unit":"個","role":"essential","scalingBehavior":null,"notes":"大きめのもの。軸を外し、軸はみじん切り","buy":null,"substitutionOptions":[]},{"id":"c879da0b-ebf4-4e53-a91a-77c4f5e23e5f","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かいタイプ","buy":null,"substitutionOptions":[]},{"id":"5643cc1f-cb53-405f-892b-e4ddb0f67de4","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす","buy":null,"substitutionOptions":[]},{"id":"deeaf9d1-2d52-4ea7-9841-b34fe37acaf3","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":4,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":"みじん切り。詰め物用","buy":null,"substitutionOptions":[]},{"id":"ae999145-221e-450c-9432-a2a810d2b7ac","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","buy":null,"substitutionOptions":[]},{"id":"9102c98c-f5c9-41ae-a19d-eba269777e17","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"8c4666cb-6ce2-4ba5-a111-0bf2a7852b70","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"815a16da-a3fe-4148-8406-345629c4bca5","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"・マッシュルーム12個は汚れを拭き取り、軸を根元からねじって外す\n・外した軸はみじん切りにする\n・にんにく1片とイタリアンパセリ4枝はみじん切りにする\n・パルミジャーノ30gをすりおろす\n軸がすべて細かいみじん切りになったら次へ。","title":"マッシュルームを準備する","actionItems":["マッシュルーム12個は汚れを拭き取り、軸を根元からねじって外す","外した軸はみじん切りにする","にんにく1片とイタリアンパセリ4枝はみじん切りにする","パルミジャーノ30gをすりおろす","軸がすべて細かいみじん切りになったら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"（軸を炒める間に）オーブンを200度に予熱し始める。\nフライパンにエクストラバージンオリーブオイル20mlとにんにくを入れて弱火で熱し、香りが立ったら軸のみじん切りを加えて中火で炒める。水分が飛び、軸がきつね色に色づいたら火から下ろす。","title":"軸を炒める","actionItems":["フライパンにエクストラバージンオリーブオイル20mlとにんにくを入れて弱火で熱し、香りが立ったら軸のみじん切りを加えて中火で炒める。"],"parallelItems":["（軸を炒める間に）オーブンを200度に予熱し始める。"],"completionCriteria":["水分が飛び、軸がきつね色に色づいたら火から下ろす。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"ボウルに炒めた軸、パン粉40g、パルミジャーノ、イタリアンパセリ、塩3g、黒胡椒、エクストラバージンオリーブオイル10mlを入れて混ぜる。指で握るとほろりとまとまる湿り気になったら、マッシュルームのカサに山盛りに詰める。","title":"詰め物を作って詰める","actionItems":["ボウルに炒めた軸、パン粉40g、パルミジャーノ、イタリアンパセリ、塩3g、黒胡椒、エクストラバージンオリーブオイル10mlを入れて混ぜる。","指で握るとほろりとまとまる湿り気になったら、マッシュルームのカサに山盛りに詰める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"天板にオーブンシートを敷いてマッシュルームを並べ、表面にエクストラバージンオリーブオイル10mlを回しかける。200度のオーブンで18〜20分焼く。パン粉がきつね色に色づき、カサの底から水分が染み出て香ばしい香りが立ったら完成。","title":"オーブンで焼く","actionItems":["天板にオーブンシートを敷いてマッシュルームを並べ、表面にエクストラバージンオリーブオイル10mlを回しかける。","200度のオーブンで18〜20分焼く。"],"parallelItems":[],"completionCriteria":["パン粉がきつね色に色づき、カサの底から水分が染み出て香ばしい香りが立ったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"passive","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"825bf1fc-3194-4e81-a209-7e9618fe1e21","nameJa":"マッシュルームの香草パン粉詰め焼き","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"0695f9e5-e632-4629-ab9c-b661f9d9f49f","nameOriginal":"Funghi champignon","nameJa":"マッシュルーム","nameEn":"Button mushrooms","quantity":12,"unit":"個","role":"essential","scalingBehavior":null,"notes":"大きめのもの。軸を外し、軸はみじん切り","buy":null,"substitutionOptions":[]},{"id":"c879da0b-ebf4-4e53-a91a-77c4f5e23e5f","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":40,"unit":"g","role":"essential","scalingBehavior":null,"notes":"細かいタイプ","buy":null,"substitutionOptions":[]},{"id":"5643cc1f-cb53-405f-892b-e4ddb0f67de4","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":30,"unit":"g","role":"flavor","scalingBehavior":null,"notes":"すりおろす","buy":null,"substitutionOptions":[]},{"id":"deeaf9d1-2d52-4ea7-9841-b34fe37acaf3","nameOriginal":"Prezzemolo","nameJa":"イタリアンパセリ","nameEn":"Flat-leaf parsley","quantity":4,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":"みじん切り。詰め物用","buy":null,"substitutionOptions":[]},{"id":"ae999145-221e-450c-9432-a2a810d2b7ac","nameOriginal":"Aglio","nameJa":"にんにく","nameEn":"Garlic","quantity":1,"unit":"片","role":"flavor","scalingBehavior":null,"notes":"みじん切り","buy":null,"substitutionOptions":[]},{"id":"9102c98c-f5c9-41ae-a19d-eba269777e17","nameOriginal":"Olio extravergine di oliva","nameJa":"エクストラバージンオリーブオイル","nameEn":"Extra virgin olive oil","quantity":40,"unit":"ml","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"8c4666cb-6ce2-4ba5-a111-0bf2a7852b70","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"815a16da-a3fe-4148-8406-345629c4bca5","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","term":"予熱","gloss":"オーブンを先に温めておくこと","description":"食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"・マッシュルーム12個は汚れを拭き取り、軸を根元からねじって外す\n・外した軸はみじん切りにする\n・にんにく1片とイタリアンパセリ4枝はみじん切りにする\n・パルミジャーノ30gをすりおろす\n軸がすべて細かいみじん切りになったら次へ。","title":"マッシュルームを準備する","actionItems":["マッシュルーム12個は汚れを拭き取り、軸を根元からねじって外す","外した軸はみじん切りにする","にんにく1片とイタリアンパセリ4枝はみじん切りにする","パルミジャーノ30gをすりおろす","軸がすべて細かいみじん切りになったら次へ。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"（軸を炒める間に）オーブンを200度に予熱し始める。\nフライパンにエクストラバージンオリーブオイル20mlとにんにくを入れて弱火で熱し、香りが立ったら軸のみじん切りを加えて中火で炒める。水分が飛び、軸がきつね色に色づいたら火から下ろす。","title":"軸を炒める","actionItems":["フライパンにエクストラバージンオリーブオイル20mlとにんにくを入れて弱火で熱し、香りが立ったら軸のみじん切りを加えて中火で炒める。"],"parallelItems":["（軸を炒める間に）オーブンを200度に予熱し始める。"],"completionCriteria":["水分が飛び、軸がきつね色に色づいたら火から下ろす。"],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"ボウルに炒めた軸、パン粉40g、パルミジャーノ、イタリアンパセリ、塩3g、黒胡椒、エクストラバージンオリーブオイル10mlを入れて混ぜる。指で握るとほろりとまとまる湿り気になったら、マッシュルームのカサに山盛りに詰める。","title":"詰め物を作って詰める","actionItems":["ボウルに炒めた軸、パン粉40g、パルミジャーノ、イタリアンパセリ、塩3g、黒胡椒、エクストラバージンオリーブオイル10mlを入れて混ぜる。","指で握るとほろりとまとまる湿り気になったら、マッシュルームのカサに山盛りに詰める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":8,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"天板にオーブンシートを敷いてマッシュルームを並べ、表面にエクストラバージンオリーブオイル10mlを回しかける。200度のオーブンで18〜20分焼く。パン粉がきつね色に色づき、カサの底から水分が染み出て香ばしい香りが立ったら完成。","title":"オーブンで焼く","actionItems":["天板にオーブンシートを敷いてマッシュルームを並べ、表面にエクストラバージンオリーブオイル10mlを回しかける。","200度のオーブンで18〜20分焼く。"],"parallelItems":[],"completionCriteria":["パン粉がきつね色に色づき、カサの底から水分が染み出て香ばしい香りが立ったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"passive","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

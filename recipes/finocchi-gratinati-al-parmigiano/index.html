@@ -130,7 +130,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -178,7 +177,7 @@
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
-              <span class="action-item-body"><span class="action-item-text">オーブンを200度に<a class="term" href="#term-46">予熱</a>する。</span></span>
+              <span class="action-item-body"><span class="action-item-text">オーブンを200度に<button type="button" class="term" data-glossary-trigger="term-46" aria-haspopup="dialog" aria-controls="glossary-dialog">予熱</button>する。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">3</span>
@@ -263,16 +262,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-46">
-            <dt>予熱<span class="recipe-glossary-gloss">オーブンを先に温めておくこと</span></dt>
-            <dd>食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="emilia-romagna">
@@ -442,7 +431,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0d493666-41e5-4d0e-8ca8-ef0ecd539ad0","nameJa":"フェンネルのパルミジャーノグラタン","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"b02358df-efc4-4c0b-8c47-cd9f55997931","nameOriginal":"Finocchi","nameJa":"フェンネル","nameEn":"Fennel bulbs","quantity":3,"unit":"株","role":"essential","scalingBehavior":null,"notes":"根元を落とし、くし形に切る","buy":null,"substitutionOptions":[]},{"id":"2215f756-6421-4f0a-8cbc-32703d95b142","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"すりおろす","buy":null,"substitutionOptions":[]},{"id":"a4385bc9-1a7c-4dcc-a7d1-7908c694c9b7","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":35,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"384c2278-c76c-4f12-90f1-d742a87bd3d1","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":35,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ceac2205-d01f-45f1-814d-f40da7c68ea5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":7,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"efa6394f-48e8-4a8f-a1c0-1d3d0a8cf9ce","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"（下処理の間に）鍋に湯を沸かし始める。オーブンを200度に予熱する。フェンネル3株は根元を落とし、くし形に切る。パルミジャーノ60gはすりおろす。フェンネルの層がばらけすぎない大きさになったら次へ。","title":"フェンネルを切る","actionItems":["オーブンを200度に予熱する。","フェンネル3株は根元を落とし、くし形に切る。","パルミジャーノ60gはすりおろす。"],"parallelItems":["（下処理の間に）鍋に湯を沸かし始める。"],"completionCriteria":["フェンネルの層がばらけすぎない大きさになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"沸いた湯に塩4gを加える。フェンネルを8〜10分茹でる。芯に串が入り、形が崩れない柔らかさになったら水気を切る。","title":"下茹でする","actionItems":["沸いた湯に塩4gを加える。","フェンネルを8〜10分茹でる。","芯に串が入り、形が崩れない柔らかさになったら水気を切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"耐熱皿にフェンネルを並べ、バター35gを点在させる。パルミジャーノ、パン粉35g、塩3g、黒胡椒を振り、200度で18〜20分焼く。表面が黄金色になり、縁が香ばしくなったら完成。","title":"焼く","actionItems":["耐熱皿にフェンネルを並べ、バター35gを点在させる。","パルミジャーノ、パン粉35g、塩3g、黒胡椒を振り、200度で18〜20分焼く。"],"parallelItems":[],"completionCriteria":["表面が黄金色になり、縁が香ばしくなったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"0d493666-41e5-4d0e-8ca8-ef0ecd539ad0","nameJa":"フェンネルのパルミジャーノグラタン","baseServings":4,"minServings":1,"maxServings":20},"ingredients":[{"id":"b02358df-efc4-4c0b-8c47-cd9f55997931","nameOriginal":"Finocchi","nameJa":"フェンネル","nameEn":"Fennel bulbs","quantity":3,"unit":"株","role":"essential","scalingBehavior":null,"notes":"根元を落とし、くし形に切る","buy":null,"substitutionOptions":[]},{"id":"2215f756-6421-4f0a-8cbc-32703d95b142","nameOriginal":"Parmigiano Reggiano","nameJa":"パルミジャーノ・レッジャーノ","nameEn":"Parmigiano Reggiano","quantity":60,"unit":"g","role":"essential","scalingBehavior":null,"notes":"すりおろす","buy":null,"substitutionOptions":[]},{"id":"a4385bc9-1a7c-4dcc-a7d1-7908c694c9b7","nameOriginal":"Pangrattato","nameJa":"パン粉","nameEn":"Breadcrumbs","quantity":35,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"384c2278-c76c-4f12-90f1-d742a87bd3d1","nameOriginal":"Burro","nameJa":"バター","nameEn":"Butter","quantity":35,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ceac2205-d01f-45f1-814d-f40da7c68ea5","nameOriginal":"Sale","nameJa":"塩","nameEn":"Salt","quantity":7,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"efa6394f-48e8-4a8f-a1c0-1d3d0a8cf9ce","nameOriginal":"Pepe nero","nameJa":"黒胡椒","nameEn":"Black pepper","quantity":1,"unit":"少々","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","term":"予熱","gloss":"オーブンを先に温めておくこと","description":"食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"（下処理の間に）鍋に湯を沸かし始める。オーブンを200度に予熱する。フェンネル3株は根元を落とし、くし形に切る。パルミジャーノ60gはすりおろす。フェンネルの層がばらけすぎない大きさになったら次へ。","title":"フェンネルを切る","actionItems":["オーブンを200度に予熱する。","フェンネル3株は根元を落とし、くし形に切る。","パルミジャーノ60gはすりおろす。"],"parallelItems":["（下処理の間に）鍋に湯を沸かし始める。"],"completionCriteria":["フェンネルの層がばらけすぎない大きさになったら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"沸いた湯に塩4gを加える。フェンネルを8〜10分茹でる。芯に串が入り、形が崩れない柔らかさになったら水気を切る。","title":"下茹でする","actionItems":["沸いた湯に塩4gを加える。","フェンネルを8〜10分茹でる。","芯に串が入り、形が崩れない柔らかさになったら水気を切る。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":12,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"耐熱皿にフェンネルを並べ、バター35gを点在させる。パルミジャーノ、パン粉35g、塩3g、黒胡椒を振り、200度で18〜20分焼く。表面が黄金色になり、縁が香ばしくなったら完成。","title":"焼く","actionItems":["耐熱皿にフェンネルを並べ、バター35gを点在させる。","パルミジャーノ、パン粉35g、塩3g、黒胡椒を振り、200度で18〜20分焼く。"],"parallelItems":[],"completionCriteria":["表面が黄金色になり、縁が香ばしくなったら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":20,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

@@ -130,7 +130,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -174,7 +173,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">オーブンを220℃に<a class="term" href="#term-46">予熱</a>する。</span></span>
+              <span class="action-item-body"><span class="action-item-text">オーブンを220℃に<button type="button" class="term" data-glossary-trigger="term-46" aria-haspopup="dialog" aria-controls="glossary-dialog">予熱</button>する。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -270,16 +269,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-46">
-            <dt>予熱<span class="recipe-glossary-gloss">オーブンを先に温めておくこと</span></dt>
-            <dd>食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="liguria">
@@ -453,7 +442,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"f1eb261e-34a5-4fcb-a9dd-5a016cf7b8ea","nameJa":"スズキの塩釜焼き","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"366ac92c-8659-4888-ad78-420528be1b40","nameOriginal":"Branzino intero","nameJa":"スズキ（丸ごと、鱗・内臓付き）","nameEn":"Whole sea bass","quantity":700,"unit":"g（1尾）","role":"essential","scalingBehavior":null,"notes":"鱗はそのままでよい。内臓は除く","buy":null,"substitutionOptions":[{"id":"b95a1090-567f-448e-93cf-ad8ad5b9f838","standardIngredientId":"366ac92c-8659-4888-ad78-420528be1b40","nameJa":"マダイ（丸ごと）","nameEn":"Whole sea bream","buy":null,"authenticityImpact":-5,"flavorImpact":"旨みが少し強くなるが同様に美味しい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"84e597e1-3542-4616-8f53-9441090d9e56","nameOriginal":"Sale marino grosso","nameJa":"粗塩（海塩）","nameEn":"Coarse sea salt","quantity":1.5,"unit":"kg","role":"essential","scalingBehavior":null,"notes":"魚全体を完全に包める量","buy":null,"substitutionOptions":[]},{"id":"41213eed-d464-4aa5-a5a8-626556bba87d","nameOriginal":"Albume d'uovo","nameJa":"卵白","nameEn":"Egg white","quantity":2,"unit":"個分","role":"essential","scalingBehavior":null,"notes":"塩を固めるため","buy":null,"substitutionOptions":[]},{"id":"70a2add3-a3d2-43e6-8c37-448876b524b5","nameOriginal":"Rosmarino e timo","nameJa":"ローズマリー・タイム","nameEn":"Rosemary and thyme","quantity":4,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":"魚の腹に詰める","buy":null,"substitutionOptions":[]},{"id":"6168e64d-231e-4f23-a435-de21b9b82cbe","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"garnish","scalingBehavior":null,"notes":"半分をスライスして腹に、半分はサーブ用","buy":null,"substitutionOptions":[]},{"id":"2a4b8425-985b-4e98-a13d-6670ae8a4e97","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"garnish","scalingBehavior":null,"notes":"仕上げにかける","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを220℃に予熱する。魚の腹にハーブとレモンスライスを詰める。","title":"魚に詰め物をする","actionItems":["オーブンを220℃に予熱する。","魚の腹にハーブとレモンスライスを詰める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"粗塩と卵白をよく混ぜて塩衣を作る。天板に塩を1cm厚に敷き、魚をのせ、上から残りの塩で完全に覆う。","title":"塩衣で包む","actionItems":["粗塩1.5kgと卵白2個分をよく混ぜて塩衣を作る。","天板に塩衣を1cm厚に敷き、魚をのせ、上から残りの塩で完全に覆う。"],"parallelItems":[],"completionCriteria":["魚が塩衣で完全に隙間なく覆われたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"220℃で25〜30分焼く。焼き上がりの確認：太い部分に串を刺して5秒後に唇に当て、温かければ火が通っている。","title":"塩釜で魚を焼く","actionItems":["220℃で25〜30分焼く。","太い部分に串を刺して5秒後に唇に当て、温かければ火が通っているか確認する。"],"parallelItems":[],"completionCriteria":["串が温かければ完成（約25〜30分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":28,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"テーブルで塩の塊を金属製スプーンやハンマーで割り、魚の皮を剥いでフィレを取り分ける。取り分けた魚の身に上質なオリーブオイルをかけて提供。","title":"割り分ける","actionItems":["テーブルで塩の塊を金属製スプーンやハンマーで割る。","魚の皮を剥いでフィレを取り分ける。","取り分けた魚の身に上質なオリーブオイルをかけて提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"f1eb261e-34a5-4fcb-a9dd-5a016cf7b8ea","nameJa":"スズキの塩釜焼き","baseServings":2,"minServings":1,"maxServings":20},"ingredients":[{"id":"366ac92c-8659-4888-ad78-420528be1b40","nameOriginal":"Branzino intero","nameJa":"スズキ（丸ごと、鱗・内臓付き）","nameEn":"Whole sea bass","quantity":700,"unit":"g（1尾）","role":"essential","scalingBehavior":null,"notes":"鱗はそのままでよい。内臓は除く","buy":null,"substitutionOptions":[{"id":"b95a1090-567f-448e-93cf-ad8ad5b9f838","standardIngredientId":"366ac92c-8659-4888-ad78-420528be1b40","nameJa":"マダイ（丸ごと）","nameEn":"Whole sea bream","buy":null,"authenticityImpact":-5,"flavorImpact":"旨みが少し強くなるが同様に美味しい","textureImpact":null,"procedureChanges":[],"affectedStepNumbers":[],"notes":null,"variantType":"substitute","ingredientPatches":[],"stepPatches":[]}]},{"id":"84e597e1-3542-4616-8f53-9441090d9e56","nameOriginal":"Sale marino grosso","nameJa":"粗塩（海塩）","nameEn":"Coarse sea salt","quantity":1.5,"unit":"kg","role":"essential","scalingBehavior":null,"notes":"魚全体を完全に包める量","buy":null,"substitutionOptions":[]},{"id":"41213eed-d464-4aa5-a5a8-626556bba87d","nameOriginal":"Albume d'uovo","nameJa":"卵白","nameEn":"Egg white","quantity":2,"unit":"個分","role":"essential","scalingBehavior":null,"notes":"塩を固めるため","buy":null,"substitutionOptions":[]},{"id":"70a2add3-a3d2-43e6-8c37-448876b524b5","nameOriginal":"Rosmarino e timo","nameJa":"ローズマリー・タイム","nameEn":"Rosemary and thyme","quantity":4,"unit":"枝","role":"flavor","scalingBehavior":null,"notes":"魚の腹に詰める","buy":null,"substitutionOptions":[]},{"id":"6168e64d-231e-4f23-a435-de21b9b82cbe","nameOriginal":"Limone","nameJa":"レモン","nameEn":"Lemon","quantity":1,"unit":"個","role":"garnish","scalingBehavior":null,"notes":"半分をスライスして腹に、半分はサーブ用","buy":null,"substitutionOptions":[]},{"id":"2a4b8425-985b-4e98-a13d-6670ae8a4e97","nameOriginal":"Olio d'oliva EVO","nameJa":"エクストラバージン・オリーブオイル","nameEn":"Extra virgin olive oil","quantity":30,"unit":"ml","role":"garnish","scalingBehavior":null,"notes":"仕上げにかける","buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","term":"予熱","gloss":"オーブンを先に温めておくこと","description":"食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを220℃に予熱する。魚の腹にハーブとレモンスライスを詰める。","title":"魚に詰め物をする","actionItems":["オーブンを220℃に予熱する。","魚の腹にハーブとレモンスライスを詰める。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"粗塩と卵白をよく混ぜて塩衣を作る。天板に塩を1cm厚に敷き、魚をのせ、上から残りの塩で完全に覆う。","title":"塩衣で包む","actionItems":["粗塩1.5kgと卵白2個分をよく混ぜて塩衣を作る。","天板に塩衣を1cm厚に敷き、魚をのせ、上から残りの塩で完全に覆う。"],"parallelItems":[],"completionCriteria":["魚が塩衣で完全に隙間なく覆われたら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"220℃で25〜30分焼く。焼き上がりの確認：太い部分に串を刺して5秒後に唇に当て、温かければ火が通っている。","title":"塩釜で魚を焼く","actionItems":["220℃で25〜30分焼く。","太い部分に串を刺して5秒後に唇に当て、温かければ火が通っているか確認する。"],"parallelItems":[],"completionCriteria":["串が温かければ完成（約25〜30分）。"],"cautionItems":[],"tipItems":[],"durationMinutes":28,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"テーブルで塩の塊を金属製スプーンやハンマーで割り、魚の皮を剥いでフィレを取り分ける。取り分けた魚の身に上質なオリーブオイルをかけて提供。","title":"割り分ける","actionItems":["テーブルで塩の塊を金属製スプーンやハンマーで割る。","魚の皮を剥いでフィレを取り分ける。","取り分けた魚の身に上質なオリーブオイルをかけて提供する。"],"parallelItems":[],"completionCriteria":[],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

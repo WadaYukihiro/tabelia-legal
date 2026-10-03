@@ -131,7 +131,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -244,7 +243,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">表面にラップを密着させ、<a class="term" href="#term-47">粗熱</a>が取れたら冷蔵庫で3時間冷やす。</span></span>
+              <span class="action-item-body"><span class="action-item-text">表面にラップを密着させ、<button type="button" class="term" data-glossary-trigger="term-47" aria-haspopup="dialog" aria-controls="glossary-dialog">粗熱</button>が取れたら冷蔵庫で3時間冷やす。</span></span>
             </li>
           </ul>
         <div class="support-block">
@@ -302,16 +301,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-47">
-            <dt>粗熱<span class="recipe-glossary-gloss">手で触れる程度まで冷ますこと</span></dt>
-            <dd>加熱直後の高い熱を、手で触れても熱くない程度（40℃前後）まで冷ますことです。熱いまま次の材料と合わせると分離や固まりの原因になります。完全に冷やす必要はありません。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="spanish-barcelona">
@@ -481,7 +470,19 @@
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d5befd47-d06b-59ac-9840-059219b4fa0e","nameJa":"クレマ・カタラーナ","baseServings":4,"minServings":2,"maxServings":4},"ingredients":[{"id":"2521c304-ff28-4539-bdd2-f81524283a2e","nameOriginal":"Leche entera","nameJa":"牛乳","nameEn":"Whole milk","quantity":600,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"63b1eba2-28d1-4a8d-bd83-07f6ffbb0ea9","nameOriginal":"Yema de huevo","nameJa":"卵黄","nameEn":"Egg yolk","quantity":4,"unit":"個","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"7db64af7-16ec-4109-b700-48bacd04a66f","nameOriginal":"Azúcar","nameJa":"グラニュー糖","nameEn":"Sugar","quantity":110,"unit":"g","role":"essential","scalingBehavior":null,"notes":"クリーム80g・表面30g","buy":null,"substitutionOptions":[]},{"id":"b62a5c38-1b2f-4674-989e-0c69496303b0","nameOriginal":"Almidón de maíz","nameJa":"コーンスターチ","nameEn":"Cornstarch","quantity":25,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"aca8266b-e344-4c5c-b8e6-510ff8dd49c9","nameOriginal":"Canela en rama","nameJa":"シナモンスティック","nameEn":"Cinnamon stick","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"2a30e2d3-5a61-4737-a808-f8afaa274e67","nameOriginal":"Piel de limón","nameJa":"レモンの皮（国産・ノーワックス）","nameEn":"Lemon zest","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-47","surfaces":["粗熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"レモンの皮5gを白い部分を避けて薄くむく。牛乳500mlをシナモン1本、レモンの皮と鍋に入れ、弱火で鍋縁に泡が出るまで温める。火を止めて蓋をし、5分置く。牛乳に香りが移り、沸きこぼれていなければ次へ。","title":"牛乳に柑橘とシナモンを移す","actionItems":["レモンの皮5gを白い部分を避けて薄くむく。","牛乳500mlをシナモン1本、レモンの皮と鍋に入れ、弱火で鍋縁に泡が出るまで温める。","火を止めて蓋をし、5分置く。"],"parallelItems":[],"completionCriteria":["牛乳に香りが移り、沸きこぼれていなければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"ボウルで卵黄4個と砂糖80gを混ぜる。別の器でコーンスターチ25gを残りの冷たい牛乳100mlに溶かし、卵黄に混ぜる。香りを移した牛乳をこしながら少しずつ卵黄へ加える。粉のだまがなく、均一な淡い黄色なら次へ。","title":"卵黄とでんぷんを牛乳につなぐ","actionItems":["ボウルで卵黄4個と砂糖80gを混ぜる。","別の器でコーンスターチ25gを残りの冷たい牛乳100mlに溶かし、卵黄に混ぜる。","香りを移した牛乳をこしながら少しずつ卵黄へ加える。"],"parallelItems":[],"completionCriteria":["粉のだまがなく、均一な淡い黄色なら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"混ぜた液を鍋に戻し、弱めの中火で底をこすりながら5〜8分加熱する。とろみが出て小さな泡が一つ二つ上がったら弱火で1分混ぜ、火を止める。耐熱の浅い器4個に均等に注ぐ。泡立て器の跡がゆっくり消える、滑らかなクリームなら次へ。","title":"鍋でクリームをとろませる","actionItems":["混ぜた液を鍋に戻し、弱めの中火で底をこすりながら5〜8分加熱する。","とろみが出て小さな泡が一つ二つ上がったら弱火で1分混ぜ、火を止める。","耐熱の浅い器4個に均等に注ぐ。"],"parallelItems":[],"completionCriteria":["泡立て器の跡がゆっくり消える、滑らかなクリームなら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"表面にラップを密着させ、粗熱が取れたら冷蔵庫で3時間冷やす。器の中心まで冷えてクリームが落ち着けば次へ。","title":"器ごと冷やす","actionItems":["表面にラップを密着させ、粗熱が取れたら冷蔵庫で3時間冷やす。"],"parallelItems":[],"completionCriteria":["器の中心まで冷えてクリームが落ち着けば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":180,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"imageHtml":"","instruction":"ラップを外し、表面の水滴をペーパーでそっと取り、砂糖30gを4皿に薄く均等に振る。耐熱の作業台で料理用バーナーを動かしながら砂糖だけを炙り、1分置く。表面が薄い琥珀色の板になり、匙で割れる状態なら完成。","title":"薄い砂糖の蓋を焼く","actionItems":["ラップを外し、表面の水滴をペーパーでそっと取り、砂糖30gを4皿に薄く均等に振る。","耐熱の作業台で料理用バーナーを動かしながら砂糖だけを炙り、1分置く。"],"parallelItems":[],"completionCriteria":["表面が薄い琥珀色の板になり、匙で割れる状態なら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"d5befd47-d06b-59ac-9840-059219b4fa0e","nameJa":"クレマ・カタラーナ","baseServings":4,"minServings":2,"maxServings":4},"ingredients":[{"id":"2521c304-ff28-4539-bdd2-f81524283a2e","nameOriginal":"Leche entera","nameJa":"牛乳","nameEn":"Whole milk","quantity":600,"unit":"ml","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"63b1eba2-28d1-4a8d-bd83-07f6ffbb0ea9","nameOriginal":"Yema de huevo","nameJa":"卵黄","nameEn":"Egg yolk","quantity":4,"unit":"個","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"7db64af7-16ec-4109-b700-48bacd04a66f","nameOriginal":"Azúcar","nameJa":"グラニュー糖","nameEn":"Sugar","quantity":110,"unit":"g","role":"essential","scalingBehavior":null,"notes":"クリーム80g・表面30g","buy":null,"substitutionOptions":[]},{"id":"b62a5c38-1b2f-4674-989e-0c69496303b0","nameOriginal":"Almidón de maíz","nameJa":"コーンスターチ","nameEn":"Cornstarch","quantity":25,"unit":"g","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"aca8266b-e344-4c5c-b8e6-510ff8dd49c9","nameOriginal":"Canela en rama","nameJa":"シナモンスティック","nameEn":"Cinnamon stick","quantity":1,"unit":"本","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"2a30e2d3-5a61-4737-a808-f8afaa274e67","nameOriginal":"Piel de limón","nameJa":"レモンの皮（国産・ノーワックス）","nameEn":"Lemon zest","quantity":5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-47","term":"粗熱","gloss":"手で触れる程度まで冷ますこと","description":"加熱直後の高い熱を、手で触れても熱くない程度（40℃前後）まで冷ますことです。熱いまま次の材料と合わせると分離や固まりの原因になります。完全に冷やす必要はありません。","surfaces":["粗熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"レモンの皮5gを白い部分を避けて薄くむく。牛乳500mlをシナモン1本、レモンの皮と鍋に入れ、弱火で鍋縁に泡が出るまで温める。火を止めて蓋をし、5分置く。牛乳に香りが移り、沸きこぼれていなければ次へ。","title":"牛乳に柑橘とシナモンを移す","actionItems":["レモンの皮5gを白い部分を避けて薄くむく。","牛乳500mlをシナモン1本、レモンの皮と鍋に入れ、弱火で鍋縁に泡が出るまで温める。","火を止めて蓋をし、5分置く。"],"parallelItems":[],"completionCriteria":["牛乳に香りが移り、沸きこぼれていなければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"ボウルで卵黄4個と砂糖80gを混ぜる。別の器でコーンスターチ25gを残りの冷たい牛乳100mlに溶かし、卵黄に混ぜる。香りを移した牛乳をこしながら少しずつ卵黄へ加える。粉のだまがなく、均一な淡い黄色なら次へ。","title":"卵黄とでんぷんを牛乳につなぐ","actionItems":["ボウルで卵黄4個と砂糖80gを混ぜる。","別の器でコーンスターチ25gを残りの冷たい牛乳100mlに溶かし、卵黄に混ぜる。","香りを移した牛乳をこしながら少しずつ卵黄へ加える。"],"parallelItems":[],"completionCriteria":["粉のだまがなく、均一な淡い黄色なら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"混ぜた液を鍋に戻し、弱めの中火で底をこすりながら5〜8分加熱する。とろみが出て小さな泡が一つ二つ上がったら弱火で1分混ぜ、火を止める。耐熱の浅い器4個に均等に注ぐ。泡立て器の跡がゆっくり消える、滑らかなクリームなら次へ。","title":"鍋でクリームをとろませる","actionItems":["混ぜた液を鍋に戻し、弱めの中火で底をこすりながら5〜8分加熱する。","とろみが出て小さな泡が一つ二つ上がったら弱火で1分混ぜ、火を止める。","耐熱の浅い器4個に均等に注ぐ。"],"parallelItems":[],"completionCriteria":["泡立て器の跡がゆっくり消える、滑らかなクリームなら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"表面にラップを密着させ、粗熱が取れたら冷蔵庫で3時間冷やす。器の中心まで冷えてクリームが落ち着けば次へ。","title":"器ごと冷やす","actionItems":["表面にラップを密着させ、粗熱が取れたら冷蔵庫で3時間冷やす。"],"parallelItems":[],"completionCriteria":["器の中心まで冷えてクリームが落ち着けば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":180,"attentionLevel":"waiting","sectionTitle":null},{"stepNumber":5,"imageHtml":"","instruction":"ラップを外し、表面の水滴をペーパーでそっと取り、砂糖30gを4皿に薄く均等に振る。耐熱の作業台で料理用バーナーを動かしながら砂糖だけを炙り、1分置く。表面が薄い琥珀色の板になり、匙で割れる状態なら完成。","title":"薄い砂糖の蓋を焼く","actionItems":["ラップを外し、表面の水滴をペーパーでそっと取り、砂糖30gを4皿に薄く均等に振る。","耐熱の作業台で料理用バーナーを動かしながら砂糖だけを炙り、1分置く。"],"parallelItems":[],"completionCriteria":["表面が薄い琥珀色の板になり、匙で割れる状態なら完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":5,"attentionLevel":"active","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

@@ -131,7 +131,6 @@
         <nav class="recipe-jump-nav" aria-label="このレシピの目次">
           <a href="#ingredients">材料</a>
           <a href="#steps">作り方</a>
-          <a href="#glossary">用語</a>
           <a href="#story">料理の背景</a>
 
           <a href="#faq">よくある質問</a>
@@ -176,7 +175,7 @@
         <ul class="action-list">
           <li class="action-item">
               <span class="action-item-number">1</span>
-              <span class="action-item-body"><span class="action-item-text">オーブンを170℃に<a class="term" href="#term-46">予熱</a>する。</span></span>
+              <span class="action-item-body"><span class="action-item-text">オーブンを170℃に<button type="button" class="term" data-glossary-trigger="term-46" aria-haspopup="dialog" aria-controls="glossary-dialog">予熱</button>する。</span></span>
             </li>
           <li class="action-item">
               <span class="action-item-number">2</span>
@@ -292,16 +291,6 @@
           <figcaption>コーチング — 全料理の工程がひとつのタイムラインに</figcaption>
         </figure>
       </div>
-
-        <section class="recipe-glossary" id="glossary">
-        <h2>この料理の用語</h2>
-        <dl>
-          <div class="recipe-glossary-item" id="term-46">
-            <dt>予熱<span class="recipe-glossary-gloss">オーブンを先に温めておくこと</span></dt>
-            <dd>食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。</dd>
-          </div>
-        </dl>
-      </section>
 
         <section class="recipe-story recipe-story--place" id="story" aria-labelledby="story-title">
         <figure class="recipe-story-place" data-story-place="spanish-santiago-fonseca">
@@ -473,7 +462,19 @@ Publicada por/Publish by:  Luis Miguel Bugallo Sánchez</a> · <a href="https://
       <button class="dialog-confirm" value="confirm">決定</button>
     </form>
   </dialog>
-  <script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e6aced34-2461-54ca-9448-1f93715ff2f9","nameJa":"タルタ・デ・サンティアゴ","baseServings":4,"minServings":4,"maxServings":4},"ingredients":[{"id":"c2eb6aef-5c14-4abe-9ccf-d6587abda360","nameOriginal":"Almendra molida","nameJa":"アーモンドパウダー","nameEn":"Ground almonds","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"b7483670-725e-471c-91f8-9ce971da3006","nameOriginal":"Azúcar","nameJa":"グラニュー糖","nameEn":"Sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"5b84b2f3-8ea9-40fe-992f-9a1b13077872","nameOriginal":"Huevo","nameJa":"卵","nameEn":"Egg","quantity":3,"unit":"個","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"5edb647d-aa93-4cc9-a425-d7def3e4c15d","nameOriginal":"Piel de limón","nameJa":"レモンの皮（国産・ノーワックス）","nameEn":"Lemon zest","quantity":3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ab84e081-8775-4526-9000-b88b7f7e9079","nameOriginal":"Canela molida","nameJa":"シナモンパウダー","nameEn":"Ground cinnamon","quantity":0.5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"91c5e0fa-0861-46a8-b277-0d4544c5e847","nameOriginal":"Mantequilla","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":5,"unit":"g","role":"technique","scalingBehavior":null,"notes":"型に塗る","buy":null,"substitutionOptions":[]},{"id":"550a9a32-d57a-440a-83c1-8aaaa0af85f2","nameOriginal":"Azúcar glas","nameJa":"粉砂糖","nameEn":"Icing sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを170℃に予熱する。直径18cmの底が外れる丸型の底に敷紙を敷き、側面にバター5gを塗る。レモンの黄色い皮3gを細かくすりおろす。アーモンドパウダー150gの塊を指でほぐす。型が均一に覆われ、粉に大きな塊がなければ次へ。","title":"型とアーモンドを整える","actionItems":["オーブンを170℃に予熱する。","直径18cmの底が外れる丸型の底に敷紙を敷き、側面にバター5gを塗る。","レモンの黄色い皮3gを細かくすりおろす。","アーモンドパウダー150gの塊を指でほぐす。"],"parallelItems":[],"completionCriteria":["型が均一に覆われ、粉に大きな塊がなければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"ボウルで卵3個と砂糖150gを、泡立てすぎず均一になるまで混ぜる。アーモンド、レモンの皮、シナモン0.5gを加え、へらで混ぜる。型に流し、表面を平らにする。粉の塊がなく、重い生地が均一なら次へ。","title":"卵とアーモンドを混ぜる","actionItems":["ボウルで卵3個と砂糖150gを、泡立てすぎず均一になるまで混ぜる。","アーモンド、レモンの皮、シナモン0.5gを加え、へらで混ぜる。","型に流し、表面を平らにする。"],"parallelItems":[],"completionCriteria":["粉の塊がなく、重い生地が均一なら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"170℃のオーブンで30〜35分焼く。中央に竹串を刺して状態を確認し、生の生地が付く場合は5分追加する。表面が金色で、串に湿った細かな屑だけが付けば次へ。","title":"アーモンド生地を焼く","actionItems":["170℃のオーブンで30〜35分焼く。","中央に竹串を刺して状態を確認し、生の生地が付く場合は5分追加する。"],"parallelItems":[],"completionCriteria":["表面が金色で、串に湿った細かな屑だけが付けば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":35,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"型のまま15分置いてから外し、網の上で45分冷ます。紙で作ったサンティアゴの十字形を中央に置き、粉砂糖15gを薄く振る。紙を静かに取り、4等分して皿に盛る。生地の中心まで冷え、表面に十字の輪郭が残れば完成。","title":"冷まして粉砂糖の印を付ける","actionItems":["型のまま15分置いてから外し、網の上で45分冷ます。","紙で作ったサンティアゴの十字形を中央に置き、粉砂糖15gを薄く振る。","紙を静かに取り、4等分して皿に盛る。"],"parallelItems":[],"completionCriteria":["生地の中心まで冷え、表面に十字の輪郭が残れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":60,"attentionLevel":"waiting","sectionTitle":null}]}</script>
+    <dialog class="substitution-dialog glossary-dialog" id="glossary-dialog" aria-labelledby="glossary-dialog-title" aria-describedby="glossary-dialog-gloss glossary-dialog-description">
+    <form method="dialog" class="substitution-dialog-frame">
+      <div class="substitution-dialog-head">
+        <div><h2 id="glossary-dialog-title"></h2><p id="glossary-dialog-gloss"></p></div>
+        <button class="dialog-close" value="close" aria-label="閉じる" autofocus>×</button>
+      </div>
+      <div class="glossary-dialog-body">
+        <p id="glossary-dialog-description"></p>
+        <a class="recipe-glossary-learn" id="glossary-dialog-learn" hidden></a>
+      </div>
+    </form>
+  </dialog>
+<script type="application/json" id="recipe-interaction-data">{"recipe":{"id":"e6aced34-2461-54ca-9448-1f93715ff2f9","nameJa":"タルタ・デ・サンティアゴ","baseServings":4,"minServings":4,"maxServings":4},"ingredients":[{"id":"c2eb6aef-5c14-4abe-9ccf-d6587abda360","nameOriginal":"Almendra molida","nameJa":"アーモンドパウダー","nameEn":"Ground almonds","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"b7483670-725e-471c-91f8-9ce971da3006","nameOriginal":"Azúcar","nameJa":"グラニュー糖","nameEn":"Sugar","quantity":150,"unit":"g","role":"essential","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"5b84b2f3-8ea9-40fe-992f-9a1b13077872","nameOriginal":"Huevo","nameJa":"卵","nameEn":"Egg","quantity":3,"unit":"個","role":"technique","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"5edb647d-aa93-4cc9-a425-d7def3e4c15d","nameOriginal":"Piel de limón","nameJa":"レモンの皮（国産・ノーワックス）","nameEn":"Lemon zest","quantity":3,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"ab84e081-8775-4526-9000-b88b7f7e9079","nameOriginal":"Canela molida","nameJa":"シナモンパウダー","nameEn":"Ground cinnamon","quantity":0.5,"unit":"g","role":"flavor","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]},{"id":"91c5e0fa-0861-46a8-b277-0d4544c5e847","nameOriginal":"Mantequilla","nameJa":"無塩バター","nameEn":"Unsalted butter","quantity":5,"unit":"g","role":"technique","scalingBehavior":null,"notes":"型に塗る","buy":null,"substitutionOptions":[]},{"id":"550a9a32-d57a-440a-83c1-8aaaa0af85f2","nameOriginal":"Azúcar glas","nameJa":"粉砂糖","nameEn":"Icing sugar","quantity":15,"unit":"g","role":"garnish","scalingBehavior":null,"notes":null,"buy":null,"substitutionOptions":[]}],"glossary":[{"id":"term-46","term":"予熱","gloss":"オーブンを先に温めておくこと","description":"食材を入れる前にオーブンを設定温度まで温めておくことです。家庭用オーブンは表示より低いことが多いので、設定温度に達してから5〜10分待つと安定します。","surfaces":["予熱"]}],"steps":[{"stepNumber":1,"imageHtml":"","instruction":"オーブンを170℃に予熱する。直径18cmの底が外れる丸型の底に敷紙を敷き、側面にバター5gを塗る。レモンの黄色い皮3gを細かくすりおろす。アーモンドパウダー150gの塊を指でほぐす。型が均一に覆われ、粉に大きな塊がなければ次へ。","title":"型とアーモンドを整える","actionItems":["オーブンを170℃に予熱する。","直径18cmの底が外れる丸型の底に敷紙を敷き、側面にバター5gを塗る。","レモンの黄色い皮3gを細かくすりおろす。","アーモンドパウダー150gの塊を指でほぐす。"],"parallelItems":[],"completionCriteria":["型が均一に覆われ、粉に大きな塊がなければ次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":2,"imageHtml":"","instruction":"ボウルで卵3個と砂糖150gを、泡立てすぎず均一になるまで混ぜる。アーモンド、レモンの皮、シナモン0.5gを加え、へらで混ぜる。型に流し、表面を平らにする。粉の塊がなく、重い生地が均一なら次へ。","title":"卵とアーモンドを混ぜる","actionItems":["ボウルで卵3個と砂糖150gを、泡立てすぎず均一になるまで混ぜる。","アーモンド、レモンの皮、シナモン0.5gを加え、へらで混ぜる。","型に流し、表面を平らにする。"],"parallelItems":[],"completionCriteria":["粉の塊がなく、重い生地が均一なら次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":10,"attentionLevel":"active","sectionTitle":null},{"stepNumber":3,"imageHtml":"","instruction":"170℃のオーブンで30〜35分焼く。中央に竹串を刺して状態を確認し、生の生地が付く場合は5分追加する。表面が金色で、串に湿った細かな屑だけが付けば次へ。","title":"アーモンド生地を焼く","actionItems":["170℃のオーブンで30〜35分焼く。","中央に竹串を刺して状態を確認し、生の生地が付く場合は5分追加する。"],"parallelItems":[],"completionCriteria":["表面が金色で、串に湿った細かな屑だけが付けば次へ。"],"cautionItems":[],"tipItems":[],"durationMinutes":35,"attentionLevel":"passive","sectionTitle":null},{"stepNumber":4,"imageHtml":"","instruction":"型のまま15分置いてから外し、網の上で45分冷ます。紙で作ったサンティアゴの十字形を中央に置き、粉砂糖15gを薄く振る。紙を静かに取り、4等分して皿に盛る。生地の中心まで冷え、表面に十字の輪郭が残れば完成。","title":"冷まして粉砂糖の印を付ける","actionItems":["型のまま15分置いてから外し、網の上で45分冷ます。","紙で作ったサンティアゴの十字形を中央に置き、粉砂糖15gを薄く振る。","紙を静かに取り、4等分して皿に盛る。"],"parallelItems":[],"completionCriteria":["生地の中心まで冷え、表面に十字の輪郭が残れば完成。"],"cautionItems":[],"tipItems":[],"durationMinutes":60,"attentionLevel":"waiting","sectionTitle":null}]}</script>
   <script src="/recipes/search.js" defer></script>
   <script src="/recipes/interactions.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
