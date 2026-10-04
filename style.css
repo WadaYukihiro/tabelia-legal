@@ -1667,7 +1667,7 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .recipe-heading { margin-top: 2rem; }
   .recipe-heading .recipe-title { font-size: 2.45rem; }
   .recipe-article .recipe-hero { border-radius: 10px 10px 45px 10px; }
-  /* 目次は画面下端に固定（親指の届く位置）。固定する板はこの1枚だけで、ヘッダーは固定しない。
+  /* 目次は画面下端に固定（親指の届く位置）。固定する板は目次バー1枚、浮遊ボタンは「作りたい」1つだけ。ヘッダーは固定しない。
      ホーム・材料・作り方・料理の背景・検索の5枠に絞り、横スクロールさせない（.recipe-jump-more は非表示） */
   .recipe-jump-nav { position: fixed; top: auto; bottom: 0; left: 0; right: 0; z-index: 30; margin: 0; gap: 0.1rem; padding: 0.3rem 0.4rem calc(0.3rem + env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: 0; box-shadow: 0 -8px 25px rgba(58,42,28,0.07); }
   .recipe-jump-nav a { flex: 1 1 0; min-width: 0; padding: 0.5rem 0.15rem; font-size: 0.74rem; white-space: nowrap; }

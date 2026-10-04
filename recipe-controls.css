@@ -41,3 +41,37 @@
 .recipe-share-button:focus-visible { outline: 2px solid #9e2f23; outline-offset: 3px; }
 .recipe-share-status { font-size: 0.8rem; color: #625b51; }
 .recipe-share-url { flex: 1 0 100%; width: 100%; min-width: 0; padding: 0.5rem; font: inherit; font-size: 0.8rem; }
+
+/* 「作りたい」: the only floating control on the site (docs/epics/WEB_WANT_TO_COOK.md §2・§3・§9).
+   Do not add a second floating element, App Store links, badges or follow-up copy to it. */
+.recipe-save { position: fixed; right: 24px; bottom: 24px; z-index: 31; display: inline-flex; align-items: center; gap: 0.4rem; box-sizing: border-box; height: 48px; margin: 0; padding: 0 1.05rem 0 0.85rem; border: 1px solid #ddd5c9; border-radius: 999px; background: #fff; color: #2d261e; font: inherit; font-size: 0.86rem; font-weight: 700; line-height: 1; cursor: pointer; box-shadow: 0 8px 25px rgba(58, 42, 28, 0.13); transition: opacity 200ms ease, transform 200ms ease, background-color 150ms ease, color 150ms ease, border-color 150ms ease; -webkit-tap-highlight-color: transparent; }
+.recipe-save-icon { flex: none; display: block; color: #9e2f23; }
+.recipe-save-count { color: #7a7065; font-weight: 600; font-variant-numeric: tabular-nums; }
+.recipe-save[aria-pressed="true"] { border-color: #9e2f23; background: #9e2f23; color: #fff; }
+.recipe-save[aria-pressed="true"] .recipe-save-icon { color: #fff; }
+.recipe-save[aria-pressed="true"] .recipe-save-icon path { fill: currentColor; }
+.recipe-save[aria-pressed="true"] .recipe-save-count { color: rgba(255, 255, 255, 0.82); }
+.recipe-save:active { opacity: 0.7; }
+.recipe-save:focus-visible { outline: 2px solid #9e2f23; outline-offset: 3px; }
+.recipe-save.is-bouncing { animation: recipe-save-bounce 200ms ease-out; }
+@keyframes recipe-save-bounce { 0% { transform: scale(1); } 45% { transform: scale(1.08); } 100% { transform: scale(1); } }
+/* Step aside while a dialog, the consent banner or a text field owns the screen
+   (a fixed button would otherwise float above the on-screen keyboard). */
+body.dialog-open .recipe-save,
+body:has(.consent-banner) .recipe-save,
+body:has(input[type="search"]:focus, input[type="text"]:focus, input[type="email"]:focus, textarea:focus) .recipe-save { opacity: 0; transform: translateY(8px); pointer-events: none; }
+body:has(.recipe-save) { padding-bottom: 88px; }
+@media (max-width: 600px) {
+  /* Above the bottom-fixed table of contents, on the thumb side; never over the start of a line. */
+  .recipe-save { right: 16px; bottom: calc(3.4rem + env(safe-area-inset-bottom) + 12px); }
+  body:has(.recipe-save) { padding-bottom: calc(3.4rem + env(safe-area-inset-bottom) + 72px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recipe-save { transition: none; }
+  .recipe-save.is-bouncing { animation: none; }
+}
+@media print { .recipe-save { display: none !important; } }
+.recipe-save-byline { color: #938b81; }
+.recipe-hub-copy > p.recipe-hub-saves:not(.eyebrow) { margin-top: 0.7rem; color: #777066; font-size: 0.82rem; line-height: 1.6; }
+.recipe-hub-saves strong { color: #9e2f23; font-weight: 700; font-variant-numeric: tabular-nums; }
+.recipe-save-phrase { display: inline-block; }
