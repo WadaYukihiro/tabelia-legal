@@ -782,59 +782,6 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   .feature-grid { grid-template-columns: 1fr; }
 }
 
-/* よくある質問（レシピ詳細）。設問はDBの実データから生成される（scripts/generate-web-recipes.ts の recipeFaq）。
-   本文の一部として読ませたいので、開閉なしで最初から全文を表示する。 */
-.recipe-faq {
-  max-width: 800px;
-  margin: 3.5rem auto 0;
-  scroll-margin-top: 5rem;
-}
-.recipe-faq h2 {
-  border: 0;
-  margin-top: 0.2rem;
-  padding: 0;
-  font-family: 'Cormorant Garamond', 'Yu Mincho', serif;
-  font-size: 1.9rem;
-}
-.faq-item {
-  padding: 1.15rem 0;
-  border-bottom: 1px solid #e7e0d6;
-}
-.faq-item:last-child { border-bottom: 0; }
-.faq-question {
-  display: flex;
-  gap: 0.55rem;
-  font-size: 0.98rem;
-  font-weight: 700;
-  color: #3a2a1c;
-  line-height: 1.6;
-  margin: 0 0 0.5rem;
-}
-.faq-question::before {
-  content: 'Q';
-  flex-shrink: 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
-  line-height: 1.3;
-  color: #c0392b;
-}
-.faq-answer {
-  display: flex;
-  gap: 0.55rem;
-  font-size: 0.9rem;
-  color: #51493f;
-  line-height: 1.95;
-  margin: 0;
-}
-.faq-answer::before {
-  content: 'A';
-  flex-shrink: 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem;
-  line-height: 1.5;
-  color: #b0a596;
-}
-
 /* Chef Authen 紹介（ハブページ） */
 .chef-intro {
   display: flex;
