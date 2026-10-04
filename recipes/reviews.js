@@ -93,9 +93,11 @@
   // ページが最後に生成された時点のスナップショットでしかない。管理画面での承認を
   // 再生成・デプロイなしで即座に反映するため、読み込みのたびに最新値を取得して
   // 埋め込みデータを上書きする（取得失敗時は埋め込みデータのまま表示を維持する）。
-  if (data.recipe.getRatingUrl) {
+  function refreshReviews() {
+    if (!data.recipe.getRatingUrl) return;
     var ratingUrl = data.recipe.getRatingUrl + '?recipeId=' + encodeURIComponent(data.recipe.id);
     fetch(ratingUrl, {
+      cache: 'no-store',
       headers: {
         apikey: data.recipe.supabaseAnonKey,
         Authorization: 'Bearer ' + data.recipe.supabaseAnonKey,
@@ -115,6 +117,7 @@
       })
       .catch(function () { /* 埋め込みデータのまま表示を維持 */ });
   }
+  refreshReviews();
 
   // ── 投稿フォーム ────────────────────────────────────────────────
   var form = document.getElementById('review-form');
@@ -129,11 +132,28 @@
     errorEl.hidden = false;
   }
 
-  function showThanks() {
-    // 送信フォームを無効化する。実際の公開はモデレーション承認後なので、
-    // ここで投稿内容を一覧に足すことはしない（この時点では他ユーザーにも投稿者自身にも見えない）。
+  function showThanks(status) {
     form.hidden = true;
-    if (thanksEl) thanksEl.hidden = false;
+    if (thanksEl) {
+      thanksEl.querySelector('p').textContent = status === 'approved'
+        ? '評価ありがとうございます。公開しました。'
+        : '評価ありがとうございます。確認後に公開されます。';
+      thanksEl.hidden = false;
+    }
+    if (status === 'approved') refreshReviews();
+  }
+
+  function getReviewerId() {
+    var key = 'tabelia-reviewer-id';
+    try {
+      var stored = window.localStorage.getItem(key);
+      if (stored && /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(stored)) return stored;
+      var id = window.crypto.randomUUID();
+      window.localStorage.setItem(key, id);
+      return id;
+    } catch (_) {
+      return null;
+    }
   }
 
   form.addEventListener('submit', function (event) {
@@ -153,11 +173,6 @@
       showError('評価を選択してください。');
       return;
     }
-    var email = String(formData.get('email') || '').trim();
-    if (!email) {
-      showError('メールアドレスを入力してください（公開されません）。');
-      return;
-    }
     var turnstileToken = formData.get('cf-turnstile-response');
     if (!turnstileToken) {
       showError('認証を確認しています。少し待ってからもう一度お試しください。');
@@ -169,7 +184,7 @@
       rating: rating,
       commentBody: String(formData.get('comment') || '').trim() || null,
       authorDisplayName: String(formData.get('displayName') || '').trim() || null,
-      authorEmail: email,
+      reviewerId: getReviewerId(),
       turnstileToken: turnstileToken,
     };
 
@@ -184,7 +199,9 @@
       body: JSON.stringify(payload),
     })
       .then(function (res) {
-        if (res.ok) { showThanks(); return; }
+        if (res.ok) {
+          return res.json().then(function (body) { showThanks(body.status); });
+        }
         return res.json().catch(function () { return null; }).then(function (body) {
           if (submitButton) submitButton.disabled = false;
           showError((body && body.message) || '送信に失敗しました。しばらくしてからもう一度お試しください。');
