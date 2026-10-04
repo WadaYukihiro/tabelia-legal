@@ -153,6 +153,9 @@ function scaleInstructionText(instruction, baseServings, targetServings, ingredi
         return instruction;
     const ratio = targetServings / baseServings;
     return instruction.replace(QUANTITY_RE, (match, spoon, spoonNumber, number, suffix, offset) => {
+        // Vessel capacity is a specification, including the upper bound of a range.
+        if (/容量\s*(?:\d+(?:\.\d+)?\s*[〜～–-]\s*)?$/.test(instruction.slice(0, offset)))
+            return match;
         const unit = spoon || suffix;
         const amount = parseQuantityToken(spoonNumber || number);
         const ingredient = namedIngredient(instruction.slice(0, offset), ingredients);
