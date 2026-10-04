@@ -1413,9 +1413,16 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .recipe-article .recipe-description { max-width: 760px; font-size: 1rem; line-height: 1.9; margin-bottom: 1rem; }
 .recipe-byline { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; color: #938b81; font-size: 0.75rem; margin-bottom: 1.5rem; }
 .recipe-byline strong { color: #625a50; }
-.recipe-jump-nav { position: sticky; top: 0; z-index: 20; display: flex; gap: 0.45rem; padding: 0.65rem; margin: 0 -0.65rem 2.5rem; border: 1px solid rgba(221,213,201,0.92); border-radius: 12px; background: rgba(251,250,247,0.94); box-shadow: 0 8px 25px rgba(58,42,28,0.07); backdrop-filter: blur(12px); }
+.recipe-jump-nav { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 0.45rem; padding: 0.65rem; margin: 0 -0.65rem 2.5rem; border: 1px solid rgba(221,213,201,0.92); border-radius: 12px; background: rgba(251,250,247,0.94); box-shadow: 0 8px 25px rgba(58,42,28,0.07); backdrop-filter: blur(12px); }
 .recipe-jump-nav a { flex: 1; color: #554d43; border-radius: 8px; padding: 0.55rem 0.75rem; font-size: 0.8rem; font-weight: 700; text-align: center; text-decoration: none; }
 .recipe-jump-nav a:hover { color: #9e2f23; background: #eee7dd; }
+.recipe-jump-nav a[aria-current] { color: #9e2f23; background: #eee7dd; }
+/* 目次の両端: ホーム（ワードマーク）と検索。検索はヘッダーの検索欄へフォーカスを移すだけ（recipes/layout.js） */
+.recipe-jump-nav .recipe-jump-home { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.6rem; color: #252018; font-size: 0.78rem; letter-spacing: 0.08em; }
+.recipe-jump-nav .recipe-jump-home img { display: block; width: 22px; height: 22px; border-radius: 5px; }
+.recipe-jump-search { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; margin: 0; padding: 0; border: 0; border-radius: 8px; background: transparent; color: #554d43; cursor: pointer; }
+.recipe-jump-search:hover, .recipe-jump-search:focus-visible { color: #9e2f23; background: #eee7dd; }
+.recipe-jump-search svg { display: block; }
 .recipe-article .recipe-body { margin-top: 0; grid-template-columns: 315px 1fr; gap: 3.25rem; }
 .recipe-ingredients { scroll-margin-top: 5rem; padding: 1.25rem 1.25rem 0.5rem; border: 1px solid #e5ddd2; border-radius: 14px; background: #f2ece3; }
 .recipe-ingredients h2 { margin-top: 0; border: 0; padding-bottom: 0; }
@@ -1713,8 +1720,14 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   .recipe-heading { margin-top: 2rem; }
   .recipe-heading .recipe-title { font-size: 2.45rem; }
   .recipe-article .recipe-hero { border-radius: 10px 10px 45px 10px; }
-  .recipe-jump-nav { overflow-x: auto; }
-  .recipe-jump-nav a { flex: 0 0 auto; min-width: 76px; }
+  /* 目次は画面下端に固定（親指の届く位置）。固定する板はこの1枚だけで、ヘッダーは固定しない。
+     ホーム・材料・作り方・料理の背景・検索の5枠に絞り、横スクロールさせない（.recipe-jump-more は非表示） */
+  .recipe-jump-nav { position: fixed; top: auto; bottom: 0; left: 0; right: 0; z-index: 30; margin: 0; gap: 0.1rem; padding: 0.3rem 0.4rem calc(0.3rem + env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: 0; box-shadow: 0 -8px 25px rgba(58,42,28,0.07); }
+  .recipe-jump-nav a { flex: 1 1 0; min-width: 0; padding: 0.5rem 0.15rem; font-size: 0.74rem; white-space: nowrap; }
+  .recipe-jump-nav .recipe-jump-more { display: none; }
+  .recipe-jump-nav .recipe-jump-home { flex: 0 0 auto; padding: 0.4rem 0.5rem; }
+  .recipe-jump-nav .recipe-jump-home span { display: none; }
+  body:has(.recipe-jump-nav) { padding-bottom: calc(3.4rem + env(safe-area-inset-bottom)); }
   .recipe-ingredients { padding: 1rem 1rem 0.3rem; }
   .recipe-alternatives { margin-top: 3rem; padding: 1.25rem; border-radius: 12px 12px 34px 12px; }
   .recipe-alternatives > h2 { font-size: 1.2rem; }
@@ -2049,6 +2062,7 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 
 /* 印刷時は商品欄を省く */
 @media print {
+  .recipe-jump-nav { display: none; }
   .recipe-products { display: none; }
 }
 /* Inline culinary terms open a native modal using the substitution dialog shell. */
