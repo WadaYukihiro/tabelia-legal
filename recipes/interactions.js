@@ -408,12 +408,14 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
 
   // 料理用語を説明ダイアログのボタンにする。生成器（generate-web-recipes.ts の glossHtml）と同じ規則:
   // この料理に現れる用語の表記だけを data.glossary で受け取り、長い表記から順に、カタカナ語は語境界を見て照合する。
+  // context のある語（「休ませる」）は、ステップ全体（renderStepBody の stepContext）に対象（生地・肉）が出ているときだけ照合する。
   var KATAKANA = /[ァ-ヶー]/;
   var glossaryMatchers = (data.glossary || []).flatMap(function (term) {
-    var fixed = term.surfaces.map(function (surface) { return { id: term.id, surface: surface, length: surface.length }; });
+    var context = term.context ? new RegExp(term.context) : null;
+    var fixed = term.surfaces.map(function (surface) { return { id: term.id, surface: surface, length: surface.length, context: context }; });
     if (!term.match) return fixed;
     var regex = new RegExp(term.match, 'y');
-    return [{ id: term.id, regex: regex, length: term.surfaces[0].length + 1 }].concat(fixed.slice(1));
+    return [{ id: term.id, regex: regex, length: term.surfaces[0].length + 1, context: context }].concat(fixed.slice(1));
   }).sort(function (a, b) { return b.length - a.length; });
   function glossaryMatchAt(text, index, matcher) {
     if (matcher.regex) { matcher.regex.lastIndex = index; var m = matcher.regex.exec(text); return m && m.index === index ? m[0].length : 0; }
@@ -424,13 +426,15 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     }
     return matcher.surface.length;
   }
-  function glossHtml(text) {
+  function glossHtml(text, context) {
     text = String(text || '');
+    if (context == null) context = text;
     if (!glossaryMatchers.length) return esc(text);
+    var matchers = glossaryMatchers.filter(function (m) { return !m.context || m.context.test(context); });
     var html = '', plainStart = 0, i = 0;
     while (i < text.length) {
       var hit = null;
-      for (var k = 0; k < glossaryMatchers.length; k++) { var len = glossaryMatchAt(text, i, glossaryMatchers[k]); if (len > 0) { hit = { id: glossaryMatchers[k].id, length: len }; break; } }
+      for (var k = 0; k < matchers.length; k++) { var len = glossaryMatchAt(text, i, matchers[k]); if (len > 0) { hit = { id: matchers[k].id, length: len }; break; } }
       if (!hit) { i++; continue; }
       html += esc(text.slice(plainStart, i)) + '<button type="button" class="term" data-glossary-trigger="' + esc(hit.id) + '" aria-haspopup="dialog" aria-controls="glossary-dialog">' + esc(text.slice(i, i + hit.length)) + '</button>';
       i += hit.length; plainStart = i;
@@ -438,20 +442,25 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     return html + esc(text.slice(plainStart));
   }
 
-  function supportBlock(label, items) {
+  function supportBlock(label, items, context) {
     if (!items || !items.length) return '';
-    return '<div class="support-block"><p class="step-block-heading">' + esc(label) + '</p>' + items.map(function (item) { return '<p class="support-text">' + glossHtml(scaleInstruction(item)) + '</p>'; }).join('') + '</div>';
+    return '<div class="support-block"><p class="step-block-heading">' + esc(label) + '</p>' + items.map(function (item) { return '<p class="support-text">' + glossHtml(scaleInstruction(item), context) + '</p>'; }).join('') + '</div>';
+  }
+  // 用語の文脈条件はステップ全体で判定する（生成器の stepGlossaryContext と同じ構成）
+  function stepContext(step) {
+    return [step.title, step.instruction].concat(step.actionItems, step.parallelItems, step.completionCriteria, step.cautionItems, step.tipItems).filter(Boolean).join('\n');
   }
   function renderStepBody(step) {
+    var context = stepContext(step);
     var structured = step.title || step.actionItems.length || step.parallelItems.length || step.completionCriteria.length || step.cautionItems.length || step.tipItems.length;
-    if (!structured) return '<p>' + glossHtml(scaleInstruction(step.instruction)) + '</p>';
+    if (!structured) return '<p>' + glossHtml(scaleInstruction(step.instruction), context) + '</p>';
     var html = step.title ? '<p class="step-title">' + esc(step.title) + '</p>' : '';
     var items = orderedItems(step);
     if (items.length) html += '<ul class="action-list">' + items.map(function (item, index) {
       var text = scaleInstruction(item.text);
-      return '<li class="action-item"><span class="action-item-number">' + (index + 1) + '</span><span class="action-item-body">' + (item.kind === 'parallel' ? '<span class="parallel-label">並行</span>' : '') + '<span class="action-item-text">' + glossHtml(text) + '</span></span></li>';
-    }).join('') + '</ul>'; else if (step.instruction) html += '<p>' + glossHtml(scaleInstruction(step.instruction)) + '</p>';
-    return html + supportBlock('完了の目安', step.completionCriteria) + supportBlock('注意点', step.cautionItems) + supportBlock('補足', step.tipItems);
+      return '<li class="action-item"><span class="action-item-number">' + (index + 1) + '</span><span class="action-item-body">' + (item.kind === 'parallel' ? '<span class="parallel-label">並行</span>' : '') + '<span class="action-item-text">' + glossHtml(text, context) + '</span></span></li>';
+    }).join('') + '</ul>'; else if (step.instruction) html += '<p>' + glossHtml(scaleInstruction(step.instruction), context) + '</p>';
+    return html + supportBlock('完了の目安', step.completionCriteria, context) + supportBlock('注意点', step.cautionItems, context) + supportBlock('補足', step.tipItems, context);
   }
 
   function renderIngredients(items) {
