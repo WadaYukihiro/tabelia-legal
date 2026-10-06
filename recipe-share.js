@@ -12,6 +12,8 @@
   };
   document.querySelectorAll('[data-recipe-share], [data-article-share]').forEach(function (container) {
     var data = container.dataset;
+    if (data.shareInitialized) return;
+    data.shareInitialized = 'true';
     var encodedUrl = encodeURIComponent(data.shareUrl);
     var encodedTitle = encodeURIComponent(data.shareTitle);
     function track(method) {
@@ -24,14 +26,14 @@
     }
     container.textContent = '';
     [
-      { method: 'x', label: 'X', href: 'https://x.com/intent/post?text=' + encodedTitle + '&url=' + encodedUrl },
+      { method: 'x', label: 'X', href: 'https://x.com/intent/tweet?text=' + encodedTitle + '&url=' + encodedUrl },
       { method: 'line', label: 'LINE', href: 'https://social-plugins.line.me/lineit/share?url=' + encodedUrl },
       { method: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl },
     ].forEach(function (target) {
       var link = document.createElement('a');
       link.className = 'recipe-share-button';
       link.href = target.href;
-      link.target = '_blank';
+      link.target = target.method === 'x' && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? '_self' : '_blank';
       link.rel = 'noopener noreferrer';
       link.innerHTML = ICONS[target.method] + '<span>' + target.label + '</span>';
       link.addEventListener('click', function () { track(target.method); });
