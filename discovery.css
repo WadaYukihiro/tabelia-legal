@@ -21,7 +21,10 @@ body > .site-header, .site-header { position: sticky; top: 0; z-index: 100; back
 .cuisine-option[aria-current] .cuisine-check { display: block; }
 .site-nav .cuisine-options .cuisine-option-all { margin-bottom: 0.3rem; }
 .cuisine-option-all::after { content: ''; position: absolute; left: 1.25rem; right: 1.25rem; top: 63px; border-bottom: 1px solid #eee8df; }
-.recipe-jump-nav { top: var(--site-header-height, 120px); z-index: 20; }
+@media (min-width: 601px) {
+  .recipe-jump-nav { top: var(--site-header-height, 120px); z-index: 20; }
+}
+.recipe-article { --recipe-sticky-top: calc(var(--site-header-height, 120px) + var(--recipe-nav-height, 5rem) + 1rem); }
 [id] { scroll-margin-top: calc(var(--site-header-height, 120px) + 100px); }
 .wide-container { max-width: 1200px; }
 .header-search-link svg { flex: none; }
