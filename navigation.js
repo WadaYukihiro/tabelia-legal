@@ -62,10 +62,12 @@
   new ResizeObserver(measure).observe(header); measure();
   updateHeader();
   function markCuisine() {
-    var isSearch = /\/recipes\/search\/?$/.test(location.pathname);
+    var isSearch = /\/(?:recipes|ricette)\/search\/?$/.test(location.pathname);
     var selected = new URLSearchParams(location.search).get('country') || '';
     header.querySelectorAll('[data-cuisine]').forEach(function (option) {
-      if (isSearch && option.dataset.cuisine === selected) option.setAttribute('aria-current', 'true');
+      var hubPath = new URL(option.href).pathname;
+      var isHub = location.pathname === hubPath || (option.dataset.cuisine && location.pathname.indexOf(hubPath) === 0);
+      if (isHub || (isSearch && option.dataset.cuisine === selected)) option.setAttribute('aria-current', 'true');
       else option.removeAttribute('aria-current');
     });
   }
