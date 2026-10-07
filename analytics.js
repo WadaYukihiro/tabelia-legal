@@ -259,7 +259,7 @@
   // -------------------------------------------------------------------------
   // 3. サイト内検索（全ロケールの search.js が共通の ID を使う）
   // -------------------------------------------------------------------------
-  var searchInput = document.getElementById('recipe-search-input');
+  var searchInput = document.getElementById('discovery-query') || document.getElementById('recipe-search-input');
   if (searchInput) {
     var searchTimer = null;
     var lastSentTerm = '';
@@ -275,7 +275,7 @@
     });
 
     document.addEventListener('click', function (e) {
-      var result = closestLink(e.target, '.search-result');
+      var result = closestLink(e.target, '.search-result, .discovery-card');
       if (!result) return;
       track('search_result_click', {
         search_term: searchInput.value.trim(),

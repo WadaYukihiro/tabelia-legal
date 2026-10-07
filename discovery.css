@@ -1,0 +1,34 @@
+body > .site-header, .site-header { position: sticky; top: 0; z-index: 100; background: #fbfaf7; padding: 0.65rem max(1rem, calc((100vw - 1200px) / 2)); margin: 0 0 1.5rem; border-bottom: 1px solid #e7e0d6; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "brand search language" "nav nav nav"; gap: 0.35rem 1rem; }
+.site-header > .wordmark { grid-area: brand; }
+.site-header > .language-switcher { grid-area: language; }
+.site-header > .header-search-link, .home-page .site-header > .header-search-link { display: flex; align-items: center; gap: 0.5rem; grid-area: search; justify-self: end; width: 100%; max-width: 360px; min-width: 0; margin: 0; min-height: 44px; padding: 0.4rem 1rem; border: 1px solid #ddd4c8; border-radius: 24px; background: #fff; color: #625b51; text-decoration: none; font-size: 0.85rem; }
+.site-header > .site-nav { grid-area: nav; overflow: visible; flex-wrap: wrap; gap: 0.4rem 1rem; }
+.cuisine-menu { position: relative; }
+.cuisine-menu summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; gap: 0.5rem; color: #625b51; font-size: 0.85rem; }
+.cuisine-menu summary::after { content: '▾'; }
+.cuisine-options { position: absolute; top: 100%; left: 0; width: 210px; padding: 0.5rem; border: 1px solid #ddd4c8; border-radius: 12px; background: white; box-shadow: 0 8px 28px #25201820; animation: discovery-in 150ms ease; }
+.cuisine-options a { display: block; padding: 0.5rem; border-radius: 6px; }
+.cuisine-options a:hover { background: #f6ece5; }
+.recipe-jump-nav { top: var(--site-header-height, 120px); z-index: 20; }
+[id] { scroll-margin-top: calc(var(--site-header-height, 120px) + 100px); }
+.wide-container { max-width: 1200px; }
+.header-search-link svg { flex: none; }
+.discovery-page { max-width: 1100px; margin: 2rem auto 4rem; }
+.discovery-page h1 { font-family: 'Yu Mincho', serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem; }
+.discovery-query-label { display: block; font-size: 0.85rem; margin-bottom: 0.4rem; }
+#discovery-query { width: 100%; min-height: 52px; padding: 0.8rem 1rem; font: inherit; border: 1px solid #ddd4c8; border-radius: 12px; background: white; }
+.discovery-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin: 1rem 0 2rem; }
+.discovery-filters label { display: grid; gap: 0.3rem; font-size: 0.85rem; flex: 1 1 160px; }
+.discovery-filters select, .discovery-page button { min-height: 44px; padding: 0.5rem 1rem; border: 1px solid #ddd4c8; border-radius: 8px; background: white; color: #625b51; font: inherit; cursor: pointer; }
+.discovery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.3rem; margin-top: 1rem; }
+.discovery-card { border: 1px solid #e7e0d6; border-radius: 12px; overflow: hidden; background: white; color: #252018; text-decoration: none; animation: discovery-in 180ms ease; transition: transform 180ms ease; }
+.discovery-card:hover { transform: translateY(-3px); }
+.discovery-card img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.discovery-card-body { padding: 1rem; }
+.discovery-card h3 { font-family: 'Yu Mincho', serif; font-size: 1.15rem; line-height: 1.4; margin: 0 0 0.5rem; overflow-wrap: anywhere; }
+.discovery-card p, .discovery-card small { font-size: 0.8rem; color: #625b51; }
+#discovery-more { display: block; margin: 2rem auto; }
+a:focus-visible, summary:focus-visible, select:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid #9e2f23; outline-offset: 3px; }
+@keyframes discovery-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@media(max-width: 600px) { body > .site-header, .site-header { grid-template-areas: "brand . language" "search search search" "nav nav nav"; gap: 0.25rem 0.5rem; }.site-header > .header-search-link { max-width: none; }.site-header > .site-nav { gap: 0.3rem 0.7rem; }.site-nav a { font-size: 0.75rem; }.discovery-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.7rem; }.discovery-card-body { padding: 0.7rem; }.discovery-card h3 { font-size: 0.95rem; } }
+@media(prefers-reduced-motion: reduce) { .discovery-card, .cuisine-options { animation: none; transition: none; } }
