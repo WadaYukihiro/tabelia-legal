@@ -47,7 +47,8 @@
     var threshold = header.classList.contains('header-compact') ? 24 : 80;
     var compact = mobile.matches && window.scrollY > threshold;
     // Do not move a control while someone is using it.
-    if (compact && header.contains(document.activeElement)) return;
+    var keyboardFocus = header.contains(document.activeElement) && document.activeElement.matches(':focus-visible');
+    if (compact && (keyboardFocus || header.classList.contains('header-menu-open') || header.querySelector('details[open]'))) return;
     header.classList.toggle('header-compact', compact);
     measure();
   }
