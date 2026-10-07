@@ -82,8 +82,8 @@ a:focus-visible, summary:focus-visible, select:focus-visible, input:focus-visibl
     left: 1rem;
     right: 1rem;
     width: auto;
-    max-height: min(65vh, 480px);
-    overflow-y: auto;
+    max-height: none;
+    overflow: visible;
     overscroll-behavior: contain;
     padding: 0.5rem;
     border: 1px solid #e7e0d6;
@@ -100,7 +100,19 @@ a:focus-visible, summary:focus-visible, select:focus-visible, input:focus-visibl
     margin: 0;
     font-size: 0.875rem;
   }
-  .header-mobile-enhanced .cuisine-options { position: static; width: 100%; max-width: none; box-shadow: none; }
+  .header-mobile-enhanced .cuisine-menu { flex: none; }
+  .header-mobile-enhanced .cuisine-options {
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 0.25rem);
+    left: 0;
+    width: min(288px, 100%);
+    max-width: none;
+    max-height: calc(100dvh - var(--site-header-height, 109px) - 5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    box-shadow: 0 8px 28px #39291d20;
+  }
   .header-mobile-enhanced .cuisine-option-all::after { display: none; }
   body > .site-header.header-mobile-enhanced.header-compact { grid-template-areas: "brand search language menu"; }
   .header-mobile-enhanced.header-compact > .header-search-link {
