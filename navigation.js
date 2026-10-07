@@ -5,6 +5,17 @@
   document.body.prepend(header);
   function measure() { document.documentElement.style.setProperty('--site-header-height', header.offsetHeight + 'px'); }
   new ResizeObserver(measure).observe(header); measure();
+  function markCuisine() {
+    var isSearch = /\/recipes\/search\/?$/.test(location.pathname);
+    var selected = new URLSearchParams(location.search).get('country') || '';
+    header.querySelectorAll('[data-cuisine]').forEach(function (option) {
+      if (isSearch && option.dataset.cuisine === selected) option.setAttribute('aria-current', 'true');
+      else option.removeAttribute('aria-current');
+    });
+  }
+  markCuisine();
+  document.addEventListener('discoverychange', markCuisine);
+  window.addEventListener('popstate', markCuisine);
   var link = header.querySelector('.header-search-link');
   document.querySelectorAll('.home-search input, .hub-search input').forEach(function (input) {
     input.addEventListener('focus', function () { location.assign(link.href + (input.value ? '?q=' + encodeURIComponent(input.value) : '')); });
