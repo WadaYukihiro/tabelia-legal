@@ -5,6 +5,8 @@
   var featured = document.querySelector('[data-article-featured]');
   var empty = document.querySelector('[data-article-empty]');
   var pagination = document.querySelector('[data-article-pagination]');
+  var seriesDirectory = document.querySelector('[data-series-directory]');
+  var seriesCards = [].slice.call(document.querySelectorAll('[data-series-card]'));
   var PAGE_SIZE = 20;
 
   var categoryChips = [].slice.call(root.querySelectorAll('[data-filter-category]'));
@@ -92,9 +94,10 @@
     var start = (state.page - 1) * PAGE_SIZE;
     var visible = matched.slice(start, start + PAGE_SIZE);
     cards.forEach(function (card) { card.hidden = visible.indexOf(card) === -1; });
-    [].slice.call(list.querySelectorAll('[data-article-group]')).forEach(function (group) {
-      group.hidden = ![].slice.call(group.querySelectorAll('.article-card')).some(function (card) { return !card.hidden; });
+    seriesCards.forEach(function (card) {
+      card.hidden = ![].slice.call(card.querySelectorAll('[data-series-member]')).some(matches);
     });
+    if (seriesDirectory) seriesDirectory.hidden = !seriesCards.some(function (card) { return !card.hidden; });
     // フィルター中はおすすめ枠を出さない（一致記事だけを表示する）
     if (featured) featured.hidden = filtering || state.page > 1;
     if (empty) empty.hidden = matched.length !== 0;
