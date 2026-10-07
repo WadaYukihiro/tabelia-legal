@@ -46,4 +46,71 @@ body > .site-header, .site-header { position: sticky; top: 0; z-index: 100; back
 a:focus-visible, summary:focus-visible, select:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid #9e2f23; outline-offset: 3px; }
 @keyframes discovery-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 @media(max-width: 600px) { body > .site-header, .site-header { grid-template-areas: "brand . language" "search search search" "nav nav nav"; gap: 0.25rem 0.5rem; }.site-header > .header-search-link { max-width: none; }.site-header > .site-nav { gap: 0.3rem 0.7rem; }.site-nav a { font-size: 0.75rem; }.discovery-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.7rem; }.discovery-card-body { padding: 0.7rem; }.discovery-card h3 { font-size: 0.95rem; } }
-@media(prefers-reduced-motion: reduce) { .discovery-card, .cuisine-options { animation: none; transition: none; } }
+.header-menu-toggle { display: none; }
+.header-scroll-spacer { overflow-anchor: none; display: flow-root; }
+@media (max-width: 600px) {
+  body > .site-header.header-mobile-enhanced {
+    grid-template-columns: minmax(0, 1fr) 44px 44px 44px;
+    grid-template-areas: "brand . language menu" "search search search search";
+    align-items: center;
+    gap: 0.25rem 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow-anchor: none;
+  }
+  .header-mobile-enhanced > .header-menu-toggle {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid #ddd4c8;
+    border-radius: 50%;
+    background: #fff;
+    color: #463b30;
+    cursor: pointer;
+    transition: background 150ms ease, opacity 150ms ease;
+  }
+  .header-menu-toggle[aria-expanded="true"] { background: #eee8df; }
+  .header-menu-toggle:active, .header-search-link:active { opacity: 0.7; }
+  .header-mobile-enhanced > .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    max-height: min(65vh, 480px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.5rem;
+    border: 1px solid #e7e0d6;
+    border-radius: 12px;
+    background: #fffefc;
+    box-shadow: 0 8px 28px #39291d16;
+  }
+  .header-mobile-enhanced.header-menu-open > .site-nav { display: flex; flex-direction: column; gap: 0; animation: discovery-in 150ms ease; }
+  .header-mobile-enhanced > .site-nav > a, .header-mobile-enhanced .cuisine-menu summary {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  .header-mobile-enhanced .cuisine-options { position: static; width: 100%; max-width: none; box-shadow: none; }
+  .header-mobile-enhanced .cuisine-option-all::after { display: none; }
+  body > .site-header.header-mobile-enhanced.header-compact { grid-template-areas: "brand search language menu"; }
+  .header-mobile-enhanced.header-compact > .header-search-link {
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    animation: discovery-in 150ms ease;
+  }
+  .header-compact .header-search-label { display: none; }
+}
+@media(prefers-reduced-motion: reduce) { .discovery-card, .cuisine-options, .header-menu-toggle, .header-mobile-enhanced > .site-nav, .header-mobile-enhanced > .header-search-link { animation: none !important; transition: none; } }
