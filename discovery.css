@@ -4,11 +4,23 @@ body > .site-header, .site-header { position: sticky; top: 0; z-index: 100; back
 .site-header > .header-search-link, .home-page .site-header > .header-search-link { display: flex; align-items: center; gap: 0.5rem; grid-area: search; justify-self: end; width: 100%; max-width: 360px; min-width: 0; margin: 0; min-height: 44px; padding: 0.4rem 1rem; border: 1px solid #ddd4c8; border-radius: 24px; background: #fff; color: #625b51; text-decoration: none; font-size: 0.85rem; }
 .site-header > .site-nav { grid-area: nav; overflow: visible; flex-wrap: wrap; gap: 0.4rem 1rem; }
 .cuisine-menu { position: relative; }
-.cuisine-menu summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; gap: 0.5rem; color: #625b51; font-size: 0.85rem; }
-.cuisine-menu summary::after { content: '▾'; }
-.cuisine-options { position: absolute; top: 100%; left: 0; width: 210px; padding: 0.5rem; border: 1px solid #ddd4c8; border-radius: 12px; background: white; box-shadow: 0 8px 28px #25201820; animation: discovery-in 150ms ease; }
-.cuisine-options a { display: block; padding: 0.5rem; border-radius: 6px; }
-.cuisine-options a:hover { background: #f6ece5; }
+.cuisine-menu summary { cursor: pointer; list-style: none; min-height: 42px; display: flex; align-items: center; gap: 0.55rem; padding: 0.35rem 0.6rem; margin-left: -0.6rem; border-radius: 9px; color: #332c25; font-size: 0.875rem; font-weight: 600; transition: background 150ms ease; }
+.cuisine-menu summary::-webkit-details-marker { display: none; }
+.cuisine-menu summary::marker { content: ''; }
+.cuisine-menu summary:hover, .cuisine-menu[open] summary { background: #eee8df; }
+.cuisine-menu summary .cuisine-globe { width: 17px; height: 17px; color: #8a7460; }
+.cuisine-chevron { margin-left: 0.1rem; color: #8a8176; transition: transform 150ms ease; }
+.cuisine-menu[open] .cuisine-chevron { transform: rotate(180deg); }
+.cuisine-options { position: absolute; top: calc(100% + 0.6rem); left: -0.6rem; width: 252px; max-width: calc(100vw - 2rem); padding: 0.45rem; border: 1px solid #e8e1d7; border-radius: 16px; background: #fffefc; box-shadow: 0 12px 40px #39291d16, 0 2px 6px #39291d08; animation: discovery-in 150ms ease; }
+.site-nav .cuisine-options .cuisine-option { display: flex; align-items: center; gap: 0.85rem; min-height: 54px; padding: 0.75rem 0.85rem; border-radius: 10px; color: #463b30; font-size: 0.9rem; font-weight: 500; line-height: 1.4; text-decoration: none; transition: background 150ms ease; }
+.site-nav .cuisine-options .cuisine-option:hover { background: #f4f0e9; color: #252018; }
+.site-nav .cuisine-options .cuisine-option[aria-current] { background: #f5ede4; color: #9e2f23; }
+.cuisine-flag { width: 30px; height: 20px; object-fit: cover; border-radius: 3px; box-shadow: 0 0 0 1px #25201812; flex: none; }
+.cuisine-option > .cuisine-globe { width: 30px; height: 22px; color: #8a7460; flex: none; }
+.cuisine-check { display: none; margin-left: auto; font-size: 0.9rem; }
+.cuisine-option[aria-current] .cuisine-check { display: block; }
+.site-nav .cuisine-options .cuisine-option-all { margin-bottom: 0.3rem; }
+.cuisine-option-all::after { content: ''; position: absolute; left: 1.25rem; right: 1.25rem; top: 63px; border-bottom: 1px solid #eee8df; }
 .recipe-jump-nav { top: var(--site-header-height, 120px); z-index: 20; }
 [id] { scroll-margin-top: calc(var(--site-header-height, 120px) + 100px); }
 .wide-container { max-width: 1200px; }
