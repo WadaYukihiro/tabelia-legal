@@ -56,12 +56,23 @@ function fmtQty(n, unit) {
     // Fallback: 1 decimal
     return fmt(n);
 }
+// Units that already state the amount in words. A number in front of them
+// reads as a typo (「塩1少々」), so they are shown on their own.
+const AMOUNT_WORD_UNITS = new Set(['適量', '少々', '少量']);
+// 「ひとつまみ」「ひとにぎり」 count by the pinch: 1 → the word itself, 2 → 「2つまみ」.
+const HANDFUL_UNITS = { 'ひとつまみ': 'つまみ', 'ひとにぎり': 'にぎり' };
 function fmtQtyWithUnit(n, unit) {
-    if (unit === '適量')
-        return '適量';
+    if (AMOUNT_WORD_UNITS.has(unit))
+        return unit;
     const qty = fmtQty(n, unit);
     if (!unit)
         return qty;
+    // fmtQty returns 「少量」 for amounts that round to zero; a unit after it reads as 「少量g」.
+    if (qty === '少量')
+        return qty;
+    const handful = HANDFUL_UNITS[unit];
+    if (handful)
+        return qty === '1' ? unit : `${qty}${handful}`;
     if (unit === '大さじ' || unit === '小さじ') {
         return `${unit}${qty}`;
     }
@@ -474,7 +485,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
         '<span class="ingredient-name" data-ingredient-name>' + esc(item.nameJa) + '</span><span class="ingredient-qty" data-ingredient-qty>' + esc(fmtQtyWithUnit(item.quantity, item.unit)) + '</span>' +
         (item.notes ? '<span class="ingredient-notes">' + esc(scaling.scaleIngredientNotes(item.notes, item, data.recipe.baseServings, state.servings)) + '</span>' : '') +
         buyLinksHtml(item.nameJa, item.buy) +
-        (hasOptions ? '<button type="button" class="substitution-trigger" data-substitution-trigger="' + esc(item.standardIngredientId) + '"><span>' + (item.isSubstituted ? '代替：' + esc(item.nameJa) : '代替食材を選ぶ') + '</span><span aria-hidden="true">›</span></button>' : '') + '</li>';
+        (hasOptions ? '<button type="button" class="substitution-trigger" data-substitution-trigger="' + esc(item.standardIngredientId) + '"><span>' + (item.isSubstituted ? '代替：' + esc(item.nameJa) : '代わりに使える食材を選ぶ') + '</span><span aria-hidden="true">›</span></button>' : '') + '</li>';
     }).join('');
     // 開示注記はリンクがあるときだけ
     var note = document.querySelector('.ingredient-affiliate-note');
@@ -493,7 +504,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
   function renderScore(options) {
     var score = scoreFor(options), value = document.getElementById('authenticity-score'), description = document.getElementById('authenticity-description'), selected = document.getElementById('selected-substitutions');
     if (value) value.textContent = String(score);
-    if (description) description.textContent = options.length ? scoreLabel(score) + '。選んだ代替による味・食感・手順への影響を材料欄と作り方に反映しています。' : '標準レシピの食材と手順です。代替食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。';
+    if (description) description.textContent = options.length ? scoreLabel(score) + '。選んだ代替による味・食感・手順への影響を材料欄と作り方に反映しています。' : '標準レシピの食材と手順です。代わりに使える食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。';
     if (selected) { selected.hidden = !options.length; selected.innerHTML = options.map(function (item) { var ingredient=data.ingredients.find(function(candidate){return candidate.id===item.ingredientId;});var impact=ingredient&&ingredient.role==='garnish'?0:item.option.authenticityImpact;return '<span>' + esc(item.option.nameJa) + ' <strong>' + (impact === 0 ? '±0' : impact) + '</strong></span>'; }).join(''); }
   }
   function render() {

@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://tabelia.app/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-10-03</lastmod>
+  <url><loc>https://tabelia.app/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-10-03</lastmod>
+  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-10-03</lastmod>
+  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-10-03</lastmod>
+  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-10-03</lastmod>
+  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-10-03</lastmod>
+  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-10-03</lastmod>
+  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
@@ -42,73 +42,103 @@
   <url><loc>https://tabelia.app/terms/</loc></url>
   <url><loc>https://tabelia.app/commercial/</loc></url>
   <url><loc>https://tabelia.app/support/</loc></url>
-  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dessert/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/entrante/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/entree/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/guarnicion/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/plat/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/postre/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primer-plato/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/segundo-plato/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/accompagnement/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dessert/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/entrante/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/entree/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/guarnicion/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/plat/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/postre/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primer-plato/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/segundo-plato/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-01-what-is-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-07-brodo-in-dishes/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-02-types-of-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-06-fish-fumetto/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-03-beef-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-04-chicken-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/taste-memory-place/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-05-vegetable-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/noel-a-la-maison/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/ragu-bolognese-senza-spaghetti/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/gratin-dauphinois-sans-fromage/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/gazpacho-antes-del-tomate/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/carbonara-senza-panna/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/tiramisu-treviso-1972/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/paella-valenciana-sin-marisco/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-05-baking-and-resting/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-01-flour-and-water/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-03-kneading-and-folding/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-06-from-flour-to-table/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-02-yeast-and-time/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-04-shaping-and-bubbles/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-04-shapes-and-sauces/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-05-from-flour-to-noodle/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dessert/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/entrante/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/entree/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/guarnicion/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/plat/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/postre/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primer-plato/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/segundo-plato/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/accompagnement/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dessert/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/entrante/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/entree/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/guarnicion/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/plat/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/postre/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primer-plato/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/segundo-plato/</loc><lastmod>2026-10-08</lastmod></url>
   <url>
     <loc>https://tabelia.app/recipes/croquetas-de-jamon/</loc>
     <lastmod>2026-10-07</lastmod>
@@ -197,7 +227,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/040f2d2b-5506-4f1e-b5b2-ef07341143bc_1790663717591.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スパゲッティ・コン・アリーチ・フレスケ・エ・パングラッタート（生カタクチイワシとパン粉のスパゲッティ）（Spaghetti con Alici Fresche e Pangrattato）</image:title>
-      <image:caption>生のカタクチイワシを指だけで手開きにし、ニンニクと唐辛子を効かせたオリーブオイルで1分ほどしか火を通さずに身の甘みを残す、ナポリ湾岸の漁師料理。チーズを使わない魚のパスタの伝統に従い、固くなった田舎パンから挽いて香ばしく炒めたパン粉（パングラッタート＝「貧者のチーズ」）を仕上げに散らして食感とコクを補う。手開きの精度と、イワシを崩さずに和えるマンテカトゥーラの見極めが味を決める。</image:caption>
+      <image:caption>生のカタクチイワシを指だけで手開きにし、にんにくと唐辛子を効かせたオリーブオイルで1分ほどしか火を通さずに身の甘みを残す、ナポリ湾岸の漁師料理。チーズを使わない魚のパスタの伝統に従い、固くなった田舎パンから挽いて香ばしく炒めたパン粉（パングラッタート＝「貧者のチーズ」）を仕上げに散らして食感とコクを補う。手開きの精度と、イワシを崩さずに和えるマンテカトゥーラの見極めが味を決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -489,6 +519,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/carottes-vichy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>キャロット・ヴィシー（にんじんのヴィシー風）（Carottes Vichy）</image:title>
+      <image:caption>にんじんを薄い輪切りにし、ひたひたの水に塩と砂糖を加えて、汁気がほとんどなくなるまで蓋をせずに煮る。火を止めて小さく切ったバターをからめ、つやを出してパセリを散らす。仔牛のコートや鶏のソテーに添える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/risotto-alla-zucca/</loc>
     <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/risotto-alla-zucca/"/>
@@ -606,6 +649,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/celeri-branche-braise/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/159be76c-20ea-40b8-be68-3019260fa293_1791218335891.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>セロリの蒸し煮（フランス風）（Céleri-Branche Braisé）</image:title>
+      <image:caption>株のままのセロリの外側の硬い茎を除き、20cmに切りそろえて筋を取り、縦半分に割って塩湯で10分下ゆでする。糸で縛り、豚ばら肉・玉ねぎ・にんじんを敷いた深いバットに並べ、ブイヨンをひたひたに注いで、アルミ箔で覆って180℃のオーブンで1時間30分煮る。煮汁を漉して煮詰め、バターとレモン汁で仕上げてかける。ローストビーフや仔牛の料理に添える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/bacalao-al-pil-pil/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bacalao-al-pil-pil/"/>
@@ -655,6 +707,17 @@
       <image:loc>https://tabelia.app/img/recipe-images/178ac936-5f5a-5b9e-9725-28e3cbc2995f_1790832783752.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>トルティージャ・デ・パタタス（Tortilla de patatas）</image:title>
       <image:caption>じゃがいもを油でじっくり柔らかくし、卵で厚くまとめるスペインの定番です。玉ねぎ入りの型を採用し、卵が流れないしっとりした火入れに仕上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/butterbredele/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/butterbredele/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/butterbredele/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/18380d95-f663-4c45-84ee-dce8b97ee495_1791218381318.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ブッターブレデレ（アルザスのバタークッキー）（Butterbredele）</image:title>
+      <image:caption>バターと砂糖を指ですり合わせて砂のようにし、卵黄を1個ずつ加えて粉を入れ、短くこねて2時間冷やす。厚さ4mmにのばして星やもみの木の型で抜き、少しの水でのばした卵黄を塗って180℃で10〜12分、きつね色に焼く。アルザスでは待降節に何種類も焼き、金属の缶にしまって祝いの期間に出す。</image:caption>
     </image:image>
   </url>
   <url>
@@ -761,6 +824,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/1a8e3344-8414-43d5-96f0-b4c3c86e9be6_1790663738129.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>松の実とカスタードのタルト（Torta della Nonna）</image:title>
       <image:caption>サクサクのパスタ・フロッラ生地にレモン香るカスタードクリームを詰め、松の実を散らして焼いたトスカーナの定番「おばあちゃんのタルト」。シンプルながら奥深い家庭の味。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/opera/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/1ac2c2e2-cd95-4663-b015-f878ea6e8e54_1791218441202.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>オペラ（コーヒーとチョコレートの層の菓子）（Opéra）</image:title>
+      <image:caption>アーモンドの薄いスポンジ（ビスキュイ・ジョコンド）3枚に濃いコーヒーシロップをしみ込ませ、コーヒーのバタークリームとガナッシュを交互に薄く重ねる。冷やして固め、枠を外してチョコレートの上がけを一度で薄く広げ、縁を切りそろえて、上に「Opéra」の文字を書く。厚さは3cmを超えない。</image:caption>
     </image:image>
   </url>
   <url>
@@ -929,22 +1001,22 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2269b8fe-93a6-4630-bfb1-c39a3875c63d_1790663469774.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>アーティチョークのローマ風煮込み（Carciofi alla Romana）</image:title>
-      <image:caption>アーティチョークをミント・ニンニク・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
+      <image:caption>アーティチョークをミント・にんにく・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2269b8fe-93a6-4630-bfb1-c39a3875c63d_1790663776582.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>アーティチョークのローマ風煮込み（Carciofi alla Romana）</image:title>
-      <image:caption>アーティチョークをミント・ニンニク・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
+      <image:caption>アーティチョークをミント・にんにく・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2269b8fe-93a6-4630-bfb1-c39a3875c63d_1790663777941.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>アーティチョークのローマ風煮込み（Carciofi alla Romana）</image:title>
-      <image:caption>アーティチョークをミント・ニンニク・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
+      <image:caption>アーティチョークをミント・にんにく・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2269b8fe-93a6-4630-bfb1-c39a3875c63d_1790663778968.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>アーティチョークのローマ風煮込み（Carciofi alla Romana）</image:title>
-      <image:caption>アーティチョークをミント・ニンニク・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
+      <image:caption>アーティチョークをミント・にんにく・イタリアンパセリで詰めてオリーブオイルと白ワインで蒸し煮にするローマの春の味。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1000,6 +1072,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pate-en-croute/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/2463f26a-4137-4610-8234-b8474ad599e6_1791218049581.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パテ・アン・クルート（Pâté en Croûte）</image:title>
+      <image:caption>豚バラ・豚ヒレ・鶏ももを酒と塩で一晩マリネして粗く刻み、ピスタチオと練った詰め物に、棒状の鶏むね肉を重ねてバターの生地で包み、専用の型で焼き上げる。翌日、冷えて縮んだすき間にブイヨンのジュレを煙突から流し込み、さらに冷やし固めてから厚く切る。生地を割らずに型へ敷き込む手つきと、中心温度を見ながらの長い焼成、ジュレを数回に分けて満たす根気が要る3日がかりの前菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/tarte-tropezienne/</loc>
     <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarte-tropezienne/"/>
@@ -1048,7 +1129,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/25351026-577f-41b2-b67b-07ee539e19fa_1790651345055.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ポロねぎのヴィネグレット（Poireaux Vinaigrette）</image:title>
-      <image:caption>フランス全土のビストロで定番の、素材の少なさで技術を見せる前菜。ポロねぎを丸ごと柔らかく茹で、マスタードを効かせたヴィネグレットで和えるだけのシンプルな料理だが、茹で加減の見極めとヴィネグレットの乳化が仕上がりを左右する。冷やして供することが多く、夏でも冬でも食卓に上がる家庭の定番だ。</image:caption>
+      <image:caption>フランス全土のビストロで定番の、素材の少なさで技術を見せる前菜。リーキを丸ごと柔らかく茹で、マスタードを効かせたヴィネグレットで和えるだけのシンプルな料理だが、茹で加減の見極めとヴィネグレットの乳化が仕上がりを左右する。冷やして供することが多く、夏でも冬でも食卓に上がる家庭の定番だ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1085,9 +1166,9 @@
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bistecca-alla-fiorentina/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
     <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1790663445258.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:loc>https://tabelia.app/img/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1791091757995.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>フィレンツェ風Tボーンステーキ（ビステッカ）（Bistecca alla Fiorentina）</image:title>
-      <image:caption>厚切りTボーンを強火で焼き、休ませてから塩とオリーブオイルで仕上げるトスカーナの代表的な肉料理。肉の厚み、焼き色、休ませる時間が味を決める。</image:caption>
+      <image:caption>厚切りTボーンを広葉樹の熾火で網焼きにし、10分休ませて塩とオリーブオイルで仕上げるフィレンツェの肉料理。屋外での炭火調理を前提にします。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1113,7 +1194,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/27538de5-6455-4885-a5f9-ed117886baf1_1790690239971.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>マグレ・ド・カナール・オー・フィグ（鴨胸肉のロースト いちじくのソース）（Magret de Canard aux Figues）</image:title>
-      <image:caption>フォアグラ用に肥育した鴨の胸肉（マグレ）を、冷たいフライパンから皮目の脂をゆっくり溶かし出しながら焼き、中心をロゼに仕上げる南西部の代表的な一皿。鴨を休ませている間に、その焼き鍋に残った鴨脂と焼き付きを土台として玉ねぎを炒め、蜂蜜とシェリーヴィネガーのガストリック、アルマニャック、赤ワイン、鶏のブイヨンを一気に煮詰めて甘酸と旨みが拮抗するソースを立て、シナモンを効かせて焼いたいちじくを絡める。厚い脂を焦がさず均一に落としきる火の管理と、休ませ時間を含めた火入れの読みが技術の核になる。</image:caption>
+      <image:caption>フォアグラ用に肥育した鴨の胸肉（マグレ）を、冷たいフライパンから皮目の脂をゆっくり溶かし出しながら焼き、中心をロゼに仕上げる南西部の代表的な一皿。鴨を休ませている間に、その焼き鍋に残った鴨脂と焼き付きを土台として玉ねぎを炒め、はちみつとシェリービネガーのガストリック、アルマニャック、赤ワイン、鶏のブイヨンを一気に煮詰めて甘酸と旨みが拮抗するソースを立て、シナモンを効かせて焼いたいちじくを絡める。厚い脂を焦がさず均一に落としきる火の管理と、休ませ時間を含めた火入れの読みが技術の核になる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1152,7 +1233,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/28bc3fa5-fa4f-42a4-beab-60ae6cc86d10_1790654554833.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>タルト・ブルダルー（Tarte Bourdaloue）</image:title>
-      <image:caption>パリのブルダルー通りにあった菓子店に由来するとされる、洋梨のタルト。バニラシロップでポワシェした洋梨を、バターとアーモンドプードルで仕立てたクレーム・ダマンドに沈めて焼き上げる。洋梨のやわらかな煮加減とアーモンドクリームの焼き加減、二つの見極めが仕上がりを決める、パリのパティスリーに定番の一皿。</image:caption>
+      <image:caption>パリのブルダルー通りにあった菓子店に由来するとされる、洋梨のタルト。バニラシロップでポワシェした洋梨を、バターとアーモンドパウダーで仕立てたクレーム・ダマンドに沈めて焼き上げる。洋梨のやわらかな煮加減とアーモンドクリームの焼き加減、二つの見極めが仕上がりを決める、パリのパティスリーに定番の一皿。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1191,7 +1272,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2a74e83a-7e63-44e7-b94a-d2d10d566239_1790663766166.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ズッコット（Zuccotto）</image:title>
-      <image:caption>フィレンツェ発祥のドーム型冷製デザート。名前は「小さなカボチャ」に由来し、リキュールを染み込ませたスポンジケーキでボウルを覆い、白い生クリーム層とチョコレートクリーム層の2色フィリングを詰めて冷凍する。アンモールドしたドームに純cocooaと粉砂糖で2色仕上げにする、メディチ家の宴を想起させる菓子。</image:caption>
+      <image:caption>フィレンツェ発祥のドーム型冷製デザート。名前は「小さなカボチャ」に由来し、リキュールを染み込ませたスポンジケーキでボウルを覆い、白い生クリーム層とチョコレートクリーム層の2色フィリングを詰めて冷凍する。アンモールドしたドームに純ココアと粉砂糖で2色仕上げにする、メディチ家の宴を想起させる菓子。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1256,7 +1337,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2e587d2d-0080-47cd-858b-8250aa11ab9a_1790663624450.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ペンネ アラビアータ（Penne all'Arrabbiata）</image:title>
-      <image:caption>「怒りんぼスタイル」の名の通り、ペペロンチーノをたっぷり使う辛口トマトソース。本場ではチーズをかけない。材料は3つだけ——ニンニク・ペペロンチーノ・トマト。だからこそオイルでじっくり香りを引き出す工程が全てを決める。</image:caption>
+      <image:caption>「怒りんぼスタイル」の名の通り、ペペロンチーノをたっぷり使う辛口トマトソース。本場ではチーズをかけない。材料は3つだけ——にんにく・ペペロンチーノ・トマト。だからこそオイルでじっくり香りを引き出す工程が全てを決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1296,6 +1377,17 @@
       <image:loc>https://tabelia.app/img/recipe-images/30106500-ac12-5410-ade4-48fd7afeeb0b_1790832699056.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>アロス・ネグロ（Arroz negro）</image:title>
       <image:caption>コウイカと魚のだしを米に吸わせ、イカ墨で深い黒色に仕上げます。だし取りから始め、海の香りと粒の立った食感を揃える米料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/cepes-a-la-bordelaise/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cepes-a-la-bordelaise/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/cepes-a-la-bordelaise/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/314569a0-6c67-4f9c-b3ed-a40395227862_1791218302377.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>セップのボルドー風（ペルシヤード仕上げ）（Cèpes à la Bordelaise）</image:title>
+      <image:caption>厚めに切ったセップを、油とレモン汁で蓋をして5分煮て汁気を切り、強火の油でさっと焼いて塩こしょうし、余分な油を切る。火を止めて、パセリとにんにくを細かく刻んだペルシヤードを加え、熱いうちに出す。ボルドーのセップは油で調理し、バターは使わない。肉や家禽の付け合わせにする。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1361,6 +1453,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/324e4390-9336-47e0-8394-2101d4d7de5a_1790663683053.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>シエナ風アーモンド菓子 リッチャレッリ（Ricciarelli di Siena）</image:title>
       <image:caption>シエナ発祥の中世由来のアーモンドクッキー。外側はカリッとした粉砂糖の衣、内側はしっとりとした柔らかさ。ローズウォーターとオレンジピールが上品な香りを添える。IGP認証取得。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/babas-au-rhum/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/32f6c388-c490-43d7-b430-8db39ccee4b2_1791218455404.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ババ・オ・ラム（レーズン入りのラムのシロップ漬け）（Babas au Rhum）</image:title>
+      <image:caption>前日にラムに漬けたレーズンを、卵とバターの多い発酵生地に混ぜ、小さなババ型で倍にふくらませて焼く。冷ましてから、柑橘の皮とバニラで香りをつけ、火から下ろしてラムを加えたばかりの熱いシロップに沈め、泡が出なくなるまで含ませる。少し冷めたら生のラムをかける。火はつけない。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1451,7 +1552,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/354f7187-bd78-427b-b260-c33f63dbea07_1790690324750.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>サラード・ペリグルディーヌ（Salade Périgourdine）</image:title>
-      <image:caption>ペリゴールの三宝——鴨のコンフィ（砂肝）、燻製マグレ、フォワグラ——をくるみ油のヴィネグレットでまとめる、南西フランスの正統な前菜サラダ。鴨脂で焼くポム・ド・テール・サルラデーズを温かいまま葉物に添え、冷たい葉と温かい芋・砂肝の温度差で構成する点が要で、卵はウフ・モレ（半熟のゆで卵）に仕上げて黄身をソースの一部として働かせる。くるみ油は加熱せず、シェリー酢とマスタードで乳化させてから最後に和えることで、ペリゴール特産のくるみの香りを立たせる。</image:caption>
+      <image:caption>ペリゴールの三宝——鴨のコンフィ（砂肝）、燻製マグレ、フォアグラ——をくるみ油のヴィネグレットでまとめる、南西フランスの正統な前菜サラダ。鴨脂で焼くポム・ド・テール・サルラデーズを温かいまま葉物に添え、冷たい葉と温かい芋・砂肝の温度差で構成する点が要で、卵はウフ・モレ（半熟のゆで卵）に仕上げて黄身をソースの一部として働かせる。くるみ油は加熱せず、シェリー酢とマスタードで乳化させてから最後に和えることで、ペリゴール特産のくるみの香りを立たせる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1465,6 +1566,17 @@
       <image:loc>https://tabelia.app/img/recipe-images/35a27d8e-bc01-472c-a6d2-0bdac3bf0306_1790663691775.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>トレヴィーゾ産ラディッキオのリゾット（Risotto al Radicchio Trevigiano）</image:title>
       <image:caption>トレヴィーゾ産の細長い赤チコリ（ラディッキオ・ロッソ・ディ・トレヴィーゾ）を使ったリゾット。炒めると紫色がくすんだワインレッドに変わり、ほろ苦さとバターの甘みが絶妙に調和する。北イタリア冬の風物詩。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/truite-aux-amandes/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/truite-aux-amandes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/truite-aux-amandes/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/35a70a43-13dd-4d7b-8c1a-70931898ac8c_1791218242438.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マスのムニエル、アーモンド添え（Truite aux Amandes）</image:title>
+      <image:caption>丸ごとのニジマスに塩こしょうをして焼く直前に粉をはたき、バターで両面に焼き色をつけてから、火を弱めて中まで焼く。アーモンドスライスは別に乾煎りしておき、焼き上がる前にフライパンへ加える。皿に盛ったマスにレモン汁とパセリをかけ、同じフライパンでバターと酢を熱して、アーモンドと一緒に上から注ぐ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1504,6 +1616,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/386c9e4f-eb5b-4488-bf67-618ec521caf7_1790663561314.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>カステッルッチョのレンズ豆（Lenticchie di Castelluccio）</image:title>
       <image:caption>ウンブリア産カステッルッチョのレンズ豆をソフリットと煮込む伝統料理。小粒で皮が薄いため浸水不要で30分で完成する。年越しや新年に「お金が増える」縁起物としても愛される。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/boudin-blanc-aux-pommes/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/38ad5430-71ce-4e8d-b61c-98b605596b6d_1791218094888.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ブーダン・ブラン、りんご添え（Boudin Blanc aux Pommes）</image:title>
+      <image:caption>豚の肩ロースと背脂を粒が残る細かさに挽き、卵と冷たい牛乳を少しずつ混ぜて、乳化させずに粒の見える白い生地にまとめ、天然の豚腸に詰めて80℃の湯で静かにゆでる。冷水で締めたあと、針で刺してバターでこんがり焼き、バターと砂糖で色づけたりんごを添える。パンや粉でつながず、卵の白身が固まる力だけで生地をまとめるルテルの作り方で、湯を沸騰させない温度の管理が仕上がりを決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1574,6 +1695,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pommes-bonne-femme/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pommes-bonne-femme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pommes-bonne-femme/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/3b6380a9-2d95-4e1c-9f8a-a3796cb1afc6_1791218467440.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ポム・ボヌ・ファム（家庭風の焼きりんご）（Pommes Bonne-Femme）</image:title>
+      <image:caption>皮付きのりんごの芯を抜き、皮の周りに浅く切れ目を入れる。穴に砂糖を混ぜたバターを詰め、皿の底に少し水を張って、オーブンでゆっくり焼く。皿にたまった汁をかけ、焼いた器のまま食卓に出す。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/farfalle-con-salmone-e-panna/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/farfalle-con-salmone-e-panna/"/>
@@ -1610,6 +1742,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/3ca35172-a0b4-457d-a7d6-e5ae68fdf83f_1790665474088.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>仔牛のブランケット（Blanquette de Veau）</image:title>
       <image:caption>ブランケット・ド・ヴォーは、肉に焼き色を一切つけずに白いまま煮る「白い煮込み」を代表するフランスの家庭料理である。仔牛肉を下茹でして香味野菜とともに静かに煮込み、仕上げに卵黄と生クリームのリエゾンでとろみをつける。仔牛肉は日本では入手が難しいため、豚肩ロースや鶏もも肉で代用しても白く煮る技法とリエゾンの体験は成立するが、本来の繊細でミルキーな風味は仔牛でこそ味わえる。赤ワインと焼き色を特徴とする他の煮込み料理とは対照的な、白さと優しさが身上の一皿である。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/buche-de-noel-au-chocolat/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/3d4cdbbd-799b-4231-a5a3-28fefa55a878_1791218347347.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>チョコレートのビュッシュ・ド・ノエル（Bûche de Noël au Chocolat）</image:title>
+      <image:caption>ココアのビスキュイを薄く焼いて温かいうちに巻き癖をつけ、ラムのシロップを打ってチョコレートのクレーム・オ・ブールを塗り、薪の形に巻き上げるクリスマスの菓子。表面をフォークで樹皮のように筋立て、切り株を載せ、余った卵白で焼いたメレンゲのきのこと粉糖の雪で飾る。120℃のシロップで卵を泡立てるパータ・ボンブと、バターを分離させずに混ぜ込む温度の見極めが技術の山になる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1714,6 +1855,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/40d0972d-7532-4815-98e3-97cde88a44fe_1790663463179.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>シチリア風カンノーリ（Cannoli Siciliani）</image:title>
       <image:caption>シチリアを代表する筒型の揚げ菓子。マルサラ入りの生地を筒型に巻いて揚げ、羊乳リコッタとチョコチップのクリームを提供直前に詰める。詰め立ての食感が命。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/mille-feuille-a-la-vanille/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/416e2984-e8fb-4c57-9130-91c129320b87_1791218447138.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ミルフィーユ（バニラのクリームを挟んだパイ菓子）（Mille-Feuille à la Vanille）</image:title>
+      <image:caption>薄くのばしたパイ生地に穴をあけ、上から天板で押さえて平らに焼いた板を3枚作る。バニラで香りをつけたクレーム・パティシエールにキルシュを加え、板とクリームを交互に重ね、最後の板は平らな面を上にする。冷やして締めてから粉糖をふり、波刃の包丁で切る。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1895,7 +2045,16 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/4ae26d71-d498-42f0-aae7-d0cd369cd838_1790663454624.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>トマトのブルスケッタ（Bruschetta al Pomodoro）</image:title>
-      <image:caption>完熟トマトをのせたローマの定番アンティパスト。素材の質がすべて。焼いたパンの香ばしさとEXVオリーブオイルが命。</image:caption>
+      <image:caption>完熟トマトをのせたローマの定番アンティパスト。素材の質がすべて。焼いたパンの香ばしさとエキストラバージンオリーブオイルが命。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gougeres/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/4b1be68d-f36a-4b63-b07c-8e97920ae016_1791217959443.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>グジェール（Gougères）</image:title>
+      <image:caption>牛乳で作る砂糖なしのシュー生地に、角切りのコンテを混ぜ込んで小さな球に絞り、溶き卵を塗っておろしたチーズを散らして焼く、ブルゴーニュの一口大のチーズ菓子。牛乳とバターに粉を入れて鍋肌から離れるまで練り、卵を少しずつ加えて、木べらから逆三角形に垂れる固さに整えるのが技術の要になる。焼き上がりは火を止めたオーブンの中で落ち着かせ、温かいうちに前菜として、冷めたものはワインに添えて食べる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2040,7 +2199,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/50fbfe16-e978-4a49-9753-fdef34b852a8_1790653051207.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>きのこのフェットゥッチーネ（Fettuccine ai Funghi Misti）</image:title>
-      <image:caption>トスカーナの秋の森から採れる混合きのこを、バターとニンニクでシンプルに仕上げたパスタ。フィンフェルリの芳醇な香りと乾燥ポルチーニのだしが重なり、森の奥行きを生み出す。乾燥ポルチーニがだしと香りの要——これを外すと別の料理になる。</image:caption>
+      <image:caption>トスカーナの秋の森から採れる混合きのこを、バターとにんにくでシンプルに仕上げたパスタ。フィンフェルリの芳醇な香りと乾燥ポルチーニのだしが重なり、森の奥行きを生み出す。乾燥ポルチーニがだしと香りの要——これを外すと別の料理になる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2054,6 +2213,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/52b00017-451d-4438-ac1d-fd01941d683a_1790663523884.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ヴェネツィア風カーニバルの揚げ菓子（Frittelle di Carnevale）</image:title>
       <image:caption>ヴェネツィアのカーニバル（謝肉祭）に欠かせない揚げドーナツ。イーストで膨らんだ生地にレーズン・松の実・すりおろした柑橘の皮を加えて揚げ、粉砂糖をまぶす。外はサクッ、中はふんわり。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/tarte-meringuee-au-citron/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/52f8cb25-f77e-4171-80cc-367068f3ad8d_1791218428325.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>レモンメレンゲタルト（Tarte Meringuée au Citron）</image:title>
+      <image:caption>パート・ブリゼを型に敷いて空焼きし、粉とコーンスターチでつないだレモンクリームを流して焼く。熱いうちに、塩と砂糖・粉糖で泡立てたメレンゲで縁までしっかり覆い、オーブンで焼いて焼き色をつける。温かいうちでも、冷やしてからでも食べる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2079,7 +2247,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/543b88e1-ec25-44d7-9710-c91c3f2a46dd_1790654542706.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>プロヴァンス風ヌガー・グラッセ（Nougat Glacé Provençal）</image:title>
-      <image:caption>熱い蜂蜜シロップで作るイタリアンメレンゲに、泡立てた生クリームと香ばしいナッツ、砂糖漬けの果実を合わせて凍らせる、プロヴァンスの冷たいデザート。アイスクリームメーカーを使わず、メレンゲの気泡だけでふんわりと軽い口当たりを作るのが伝統の技術である。ヌガーの構成要素——蜂蜜・ナッツ・砂糖漬け果実——をそのまま冷菓に移し替えた、南仏の夏の一皿。</image:caption>
+      <image:caption>熱いはちみつシロップで作るイタリアンメレンゲに、泡立てた生クリームと香ばしいナッツ、砂糖漬けの果実を合わせて凍らせる、プロヴァンスの冷たいデザート。アイスクリームメーカーを使わず、メレンゲの気泡だけでふんわりと軽い口当たりを作るのが伝統の技術である。ヌガーの構成要素——はちみつ・ナッツ・砂糖漬け果実——をそのまま冷菓に移し替えた、南仏の夏の一皿。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2157,7 +2325,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/56de9a33-a7d6-4180-a682-22447614e483_1790663633330.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>黒胡椒を効かせたトスカーナ風牛肉煮込み（Peposo alla Fornacina）</image:title>
-      <image:caption>15世紀フィレンツェのレンガ職人（フォルナチーニ）が生んだ伝説の料理。牛すね肉を大量の黒胡椒・にんにく・キアンティで、かつてはレンガ窯の余熱で数時間煮込んだ。材料は最低限、胡椒だけが主役。肉が崩れるまで待つことが全て。</image:caption>
+      <image:caption>15世紀フィレンツェのレンガ職人（フォルナチーニ）が生んだ伝説の料理。牛すね肉を大量の黒こしょう・にんにく・キアンティで、かつてはレンガ窯の余熱で数時間煮込んだ。材料は最低限、胡椒だけが主役。肉が崩れるまで待つことが全て。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2247,7 +2415,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/tagliatelle-al-ragu-ragu-alla-bolognese/"/>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/5a68d4d1-c12e-408b-a064-377684c1abfb_1790653053083.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ボローニャ風ラグーのタリアテッレ（ボロネーゼ）（Tagliatelle al Ragù(Ragù alla bolognese)）</image:title>
+      <image:title>ボローニャ風ラグーのタリアテッレ（ボロネーゼ）「Tagliatelle al Ragù(Ragù alla bolognese)」</image:title>
       <image:caption>日本で「ボロネーゼ」と呼ばれる料理の本場版。生パスタのタリアテッレと牛ひき肉のラグーは切っても切れない組み合わせ。スパゲッティに合わせるのは本場ではご法度とされる。</image:caption>
     </image:image>
   </url>
@@ -2327,19 +2495,6 @@
       <image:loc>https://tabelia.app/img/recipe-images/5cff08e7-fcd0-4591-a332-6484541552c8_1790663603739.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>揚げなすとリコッタサラータのパスタ（Pasta alla Norma）</image:title>
       <image:caption>なすとリコッタ・サラータ（塩漬けリコッタ）のシチリアを代表するパスタ。作曲家ベッリーニの傑作オペラ「ノルマ」にちなんで命名されたとされる。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/fagioli-alluccelletto/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/7edc9ba9-01d2-4ad6-a3d0-4cac2965bee5_1790663502787.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>白いんげん豆のトスカーナ風トマト煮（Fagioli all'Uccelletto）</image:title>
-      <image:caption>白いんげん豆をにんにく、セージ、トマトで煮含めるトスカーナの定番コントルノ。グリルした牛肉、ペポーゾ、ローストポークなど、赤身肉と脂のある肉料理に自然に添えられる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2460,6 +2615,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/souffle-au-grand-marnier/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/souffle-au-grand-marnier/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/souffle-au-grand-marnier/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/63c20ca4-b134-4f56-8220-fa2a16bae826_1791218422839.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>グラン・マルニエのスフレ（Soufflé au Grand Marnier）</image:title>
+      <image:caption>牛乳と砂糖を沸かして粉でつなぎ、オレンジの皮とグラン・マルニエで香りをつけた生地に、卵黄とバターを加える。固く泡立てた卵白を合わせ、バターを塗って砂糖をふった小さな型に入れて焼き、焼き上がりの直前に粉糖をふって、ふくらんだまますぐに食卓へ出す。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/arroz-al-horno/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/arroz-al-horno/"/>
@@ -2525,6 +2691,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/cabillaud-au-beurre-blanc/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/66f44ff2-011d-4590-9ef5-6597503b6531_1791218223145.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タラのブール・ブランソース（Cabillaud au Beurre Blanc）</image:title>
+      <image:caption>真だらの切り身を、レモンの輪切りと塩を入れた冷たい水から火にかけ、沸いたら静かに揺れる火加減でポシェする。ソースは、刻んだエシャロットをワインビネガーと魚のフュメで3分の1量まで煮詰め、火から下ろして冷たいバターを一度に入れ、泡立て器で強く混ぜて乳化させる。蒸したじゃがいもを添える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/insalata-di-sgombro/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/insalata-di-sgombro/"/>
@@ -2535,6 +2710,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/67b625bd-b9ad-4aee-9117-0e58ec5a7ed4_1790663553490.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>サバのサラダ（Insalata di Sgombro）</image:title>
       <image:caption>焼いたサバとじゃがいも・赤玉ねぎ・オリーブをレモンドレッシングで和えるリグーリアの海鮮サラダ。地中海の陽気な風味が凝縮した一皿。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/chou-vert-braise/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/684871fb-7ec9-47ce-8fcc-80ce0e7465a7_1791218329593.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>キャベツの蒸し煮（フランス風）（Chou Vert Braisé）</image:title>
+      <image:caption>キャベツを4つ割りにして塩湯で下ゆでし、冷水にとって固く絞り、葉をはがして太い葉脈を除く。豚ばら肉を敷いた鍋ににんじん、キャベツ、クローブを刺した玉ねぎ、香草の束を重ね、ブイヨンを注いで豚ばらで覆い、蓋をして180℃のオーブンで1時間30分煮る。豚のローストやソーセージ、ヤマウズラに添える。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2560,7 +2744,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/686e6a54-bdbf-45d7-ac30-4664516d249d_1790690282944.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ミネストラ・ディ・チェチ・エ・カスターニェ（ひよこ豆と干し栗のスープ）（Minestra di Ceci e Castagne）</image:title>
-      <image:caption>乾燥ひよこ豆と干し栗をそれぞれ12時間水戻しし、同じ鍋でゆっくり煮崩して一体化させるトスカーナ山間部の冬のミネストラ。豆のでんぷんと栗の甘みが溶け合ってとろみが生まれるため、粉や生クリームは一切使わず、煮汁の量と火加減の管理だけで濃度を決めるのが要点。仕上げは焼いた硬いトスカーナパンの上に注ぎ、生のオリーブオイルと粗挽き黒胡椒で香りを立てる。浸水12時間は調理時間とは別に必要。</image:caption>
+      <image:caption>乾燥ひよこ豆と干し栗をそれぞれ12時間水戻しし、同じ鍋でゆっくり煮崩して一体化させるトスカーナ山間部の冬のミネストラ。豆のでんぷんと栗の甘みが溶け合ってとろみが生まれるため、粉や生クリームは一切使わず、煮汁の量と火加減の管理だけで濃度を決めるのが要点。仕上げは焼いた硬いトスカーナパンの上に注ぎ、生のオリーブオイルと粗挽き黒こしょうで香りを立てる。浸水12時間は調理時間とは別に必要。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2681,6 +2865,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/mendiants-au-chocolat/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/mendiants-au-chocolat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/mendiants-au-chocolat/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/6c1012b8-d9b3-4de9-ae82-485e4eff02df_1791218504375.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マンディアン（4種のナッツと干し果物をのせたチョコレート）（Mendiants au Chocolat）</image:title>
+      <image:caption>製菓用チョコレートの3分の2を溶かして50〜55℃にし、残りを刻んだまま加えて31〜32℃に下げてテンパリングする。紙の上に小さな円盤に絞り、固まる前にアーモンド、ヘーゼルナッツ、レーズン、干しいちじくを1つずつのせ、18〜20℃の室温で固める。つやがあり、割るとぱきっと音がする。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/penne-ai-quattro-formaggi/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/penne-ai-quattro-formaggi/"/>
@@ -2733,6 +2928,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/canard-a-lorange/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/6ecd6582-7f03-4a94-b312-5f41d869b8f7_1791218112877.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>鴨のオレンジソース（Canard à l'Orange）</image:title>
+      <image:caption>丸鴨を手羽先と香味野菜を敷いた天板で焼き、胸肉はロゼのアギエットに、脚は焼き足して皿に並べ、オレンジのソースをかける古典の主菜。ソースはバターと砂糖のカラメルを赤ワインビネガーで溶いたガストリックに、フォン・ド・ヴォーと柑橘の果汁を加えて煮詰め、天板の焼き汁を合わせて漉し、下ゆでした皮のせん切りとバターで仕上げる。焼いている間にガストリックを煮詰め、胸肉を休ませる間に焼き汁と合わせ、皮のせん切りとバターを入れた後は沸かさずに仕上げる段取りが要になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/tagliatelle-ai-funghi-porcini/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tagliatelle-ai-funghi-porcini/"/>
@@ -2781,7 +2985,16 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/71146e61-21eb-4a69-8d4f-381e872ce92c_1790663555591.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>トリコローレサラダ（Insalata Tricolore）</image:title>
-      <image:caption>ルッコラ・モッツァレラ・トマトのイタリア国旗色サラダ。素材の質が問われる一品。EXVオリーブオイルと塩だけで完成する。</image:caption>
+      <image:caption>ルッコラ・モッツァレラ・トマトのイタリア国旗色サラダ。素材の質が問われる一品。エキストラバージンオリーブオイルと塩だけで完成する。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/baeckeoffe/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/71262e1b-1252-4542-a692-6c7b27b3c481_1791218172421.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ベッコフ（Baeckeoffe）</image:title>
+      <image:caption>羊・豚・牛の肩肉をアルザスの白ワインと玉ねぎ・クローブ・にんにく・香草で一晩マリネし、翌日、薄切りのじゃがいもと玉ねぎと交互に鍋へ重ねる。マリネ液を注いで蓋のすき間を小麦粉の生地でふさぎ、160℃のオーブンで4時間焼く。食卓で生地の目張りを割って蓋を開けると、肉とじゃがいもがワインの汁をたっぷり吸っている。手間は前日の仕込みと重ね方に集まり、あとはオーブンにまかせる料理。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2833,7 +3046,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/73ce5a16-6bce-4a5b-8d7b-164d69428b46_1790663571541.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>生クリームを挟んだマリトッツォ（Maritozzi con la Panna）</image:title>
-      <image:caption>ふわふわのブリオッシュ生地に生クリームをたっぷり挟んだローマの朝食菓子。名前の由来は「夫（marito）」——かつて婚約者への贈り物として贈られた。すりおろしたオレンジの皮と蜂蜜の香る甘い発酵パンが、口いっぱいに広がる生クリームを包む、ローマが誇る週末の贅沢。</image:caption>
+      <image:caption>ふわふわのブリオッシュ生地に生クリームをたっぷり挟んだローマの朝食菓子。名前の由来は「夫（marito）」——かつて婚約者への贈り物として贈られた。すりおろしたオレンジの皮とはちみつの香る甘い発酵パンが、口いっぱいに広がる生クリームを包む、ローマが誇る週末の贅沢。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2902,6 +3115,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/choux-de-bruxelles-aux-lardons/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/choux-de-bruxelles-aux-lardons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/choux-de-bruxelles-aux-lardons/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/76fad8f4-9116-407e-a7be-b0eb0b1bf6c8_1791218312327.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>芽キャベツとベーコンのソテー（Choux de Bruxelles aux Lardons）</image:title>
+      <image:caption>根元を整えた芽キャベツを塩湯で蓋をせずにゆで、冷水にとらずに水気を切る。下ゆでして塩気を抜いた棒状のベーコンをバターで焼き、芽キャベツを加えて強火で焼き色をつける。豚のロースト、キジやヤマウズラに添える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pasta-al-pistacchio-di-bronte/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pasta-al-pistacchio-di-bronte/"/>
@@ -2951,6 +3175,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/78c6494f-adc5-4ebd-8917-09881d1635cb_1790665043796.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ピーマンのフリッタータ（Frittata di Peperoni）</image:title>
       <image:caption>甘く炒めたパプリカとピーマンを卵に混ぜ、皿返しで両面を焼き上げる南イタリアの家庭のフリッタータ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/saumon-en-croute/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/7a3bb218-dc85-4159-ab1d-2962ca868b1b_1791218137092.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>サーモンのパイ包み（Saumon en Croûte）</image:title>
+      <image:caption>2枚の鮭のフィレで、野菜を混ぜた白身魚のムースを挟んでラップで包み、香味野菜のクールブイヨンでポシェして冷ます。冷めた鮭をバターのパイ生地で包み、卵黄を塗ってからナイフの先でうろこを描き、180℃で生地だけをさっくり焼き上げる。泡立てた生クリームを合わせたソース・ムースリーヌを添える。鮭に先に火を通しておく段取りと、生地を湿らせずに包む手際が要になる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3019,6 +3252,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/tournedos-rossini/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/7c296485-7cb1-4ccd-bd0a-de3f3b63b7ad_1791218229172.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>トゥルヌド・ロッシーニ（牛フィレとフォアグラ、トリュフ）（Tournedos Rossini）</image:title>
+      <image:caption>糸で縛って形を整えた牛フィレをバターで焼き、中をロゼに残して休ませる。バターで揚げ焼きにした丸い食パンにのせ、焼いたフォアグラと黒トリュフの薄切りを重ねる。焼いた鍋にマデイラ酒を注いで鍋底をこそげ、フォン・ド・ヴォーで煮詰めてソースにし、周りに流す。フォアグラは中心まで火を通す。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/orecchiette-con-cime-di-rapa/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/orecchiette-con-cime-di-rapa/"/>
@@ -3067,7 +3309,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/7d006bc6-2a28-4eef-b259-bc3727c3c226_1790690332723.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ノワゼット・ド・シュヴルイユ、ソース・グラン・ヴヌール（Noisettes de Chevreuil Sauce Grand Veneur）</image:title>
-      <image:caption>鹿のロースを厚めに切って焼き、赤ワイン、ヴィネガー、赤すぐりのジュレで調えたソースを添えます。ソースの酸味と果実味を煮詰めて整え、肉は中心まで十分に加熱する家庭向けの基準です。</image:caption>
+      <image:caption>鹿のロースを厚めに切って焼き、赤ワイン、ビネガー、赤すぐりのジュレで調えたソースを添えます。ソースの酸味と果実味を煮詰めて整え、肉は中心まで十分に加熱する家庭向けの基準です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3084,6 +3326,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pommes-duchesse/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/7eace055-1c2d-4253-8fdb-25be24207d91_1791218248516.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ポム・デュシェス（Pommes Duchesse）</image:title>
+      <image:caption>粉質のじゃがいもを塩湯で少し硬めに茹で、オーブンで乾かしてから押して裏ごしし、バターと火にかけてさらに水分を飛ばす。火から下ろして卵黄と溶き卵でつなぎ、太い星口金でばら形に絞って溶き卵を塗り、高温のオーブンで山の筋だけをこんがり色づける。ローストした肉に添える古典の付け合わせで、生地の水分をどこまで飛ばすかが絞った形の立ち方を決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/verze-stufate/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/verze-stufate/"/>
@@ -3094,6 +3345,30 @@
       <image:loc>https://tabelia.app/img/recipe-images/7ec2623d-03f2-4108-a4fe-e56f2fa45b3c_1790663753715.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>サヴォイキャベツの白ワイン蒸し煮（Verze Stufate）</image:title>
       <image:caption>白キャベツをバター・にんにく・白ワインでゆっくり蒸し煮にするミラノの冬の付け合わせ。くたくたになるまで煮ることで甘みが出る、素朴で深みのある一皿。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/fagioli-alluccelletto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/7edc9ba9-01d2-4ad6-a3d0-4cac2965bee5_1790663502787.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>白いんげん豆のトスカーナ風トマト煮（Fagioli all'Uccelletto）</image:title>
+      <image:caption>白いんげん豆をにんにく、セージ、トマトで煮含めるトスカーナの定番コントルノ。グリルした牛肉、ペポーゾ、ローストポークなど、赤身肉と脂のある肉料理に自然に添えられる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/fondue-de-poireaux/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fondue-de-poireaux/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fondue-de-poireaux/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/808b2796-58d5-4b8d-a14e-501a575c89dd_1791218289791.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ポロねぎのフォンデュ（Fondue de Poireaux）</image:title>
+      <image:caption>ポロねぎの白い部分を縦に割ってよく洗い、5mm幅に切る。バターと少量の水で蓋をし、色づけずにごく弱火で20分蒸し煮にして、とろけるまでやわらかくする。蓋を外して水気を飛ばし、クレーム・フレッシュを加えて5分煮てまとめる。舌平目やターボに添え、ホタテの下に敷いて出す料理人もいる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3132,22 +3407,22 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/81cf6fc3-bac4-4ddc-b21f-35665e95dab4_1790653057383.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スパゲッティ カルボナーラ（Spaghetti alla Carbonara）</image:title>
-      <image:caption>卵・グアンチャーレ・ペコリーノ・黒胡椒だけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
+      <image:caption>卵・グアンチャーレ・ペコリーノ・黒こしょうだけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/81cf6fc3-bac4-4ddc-b21f-35665e95dab4_1790663786635.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スパゲッティ カルボナーラ（Spaghetti alla Carbonara）</image:title>
-      <image:caption>卵・グアンチャーレ・ペコリーノ・黒胡椒だけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
+      <image:caption>卵・グアンチャーレ・ペコリーノ・黒こしょうだけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/81cf6fc3-bac4-4ddc-b21f-35665e95dab4_1790663787704.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スパゲッティ カルボナーラ（Spaghetti alla Carbonara）</image:title>
-      <image:caption>卵・グアンチャーレ・ペコリーノ・黒胡椒だけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
+      <image:caption>卵・グアンチャーレ・ペコリーノ・黒こしょうだけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/81cf6fc3-bac4-4ddc-b21f-35665e95dab4_1790663789041.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スパゲッティ カルボナーラ（Spaghetti alla Carbonara）</image:title>
-      <image:caption>卵・グアンチャーレ・ペコリーノ・黒胡椒だけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
+      <image:caption>卵・グアンチャーレ・ペコリーノ・黒こしょうだけで作る、ローマの伝統パスタ。生クリームは使わない。乳化させた卵とチーズのソースが命。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3199,7 +3474,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/82d7307d-c68f-4909-a946-90d0fb98b66a_1790690306841.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>パン・コ・サンティ（Pan co' Santi）</image:title>
-      <image:caption>シエナで諸聖人の日（11月1日）前後に焼かれる、くるみとレーズンをたっぷり抱き込んだ甘いパン菓子。オリーブオイルで黒胡椒とともに温めたくるみを生地に練り込むのが核心で、油脂に移った胡椒の辛みと蜂蜜・ヴィン・サントの甘やかな香りが一体になる。ビガ（前種）による長時間発酵と、油分・具材の多い重い生地をだれさせずに成形する手さばきが味を決める。</image:caption>
+      <image:caption>シエナで諸聖人の日（11月1日）前後に焼かれる、くるみとレーズンをたっぷり抱き込んだ甘いパン菓子。オリーブオイルで黒こしょうとともに温めたくるみを生地に練り込むのが核心で、油脂に移った胡椒の辛みとはちみつ・ヴィン・サントの甘やかな香りが一体になる。ビガ（前種）による長時間発酵と、油分・具材の多い重い生地をだれさせずに成形する手さばきが味を決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3252,6 +3527,17 @@
       <image:loc>https://tabelia.app/img/recipe-images/83dc1f8f-d383-4fa8-ab4f-11bab977f357_1790663674464.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>リーキのバター蒸し煮（Porri Brasati al Burro）</image:title>
       <image:caption>リーキをバターと白ワインでゆっくり蒸し煮にするピエモンテの上品な付け合わせ。長時間の加熱でリーキが飴色になり、甘みと旨みが凝縮する。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/lentilles-vertes-au-beurre-et-aux-lardons/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/lentilles-vertes-au-beurre-et-aux-lardons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/lentilles-vertes-au-beurre-et-aux-lardons/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8440dcc4-852b-4c83-a0b9-06c41b3d7df4_1791218342913.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>緑レンズ豆のバター仕立て、ベーコン添え（Lentilles Vertes au Beurre et aux Lardons）</image:title>
+      <image:caption>緑レンズ豆を水に浸けずに洗い、冷たい水から香味野菜とともにゆっくり沸かしてアクを取り、蓋をしてごく弱火で煮る。水気を切って鍋で揺すりながら乾かし、塩こしょうとバターでまとめ、別に焼いたベーコンとパセリを合わせる。塩漬けの豚肉やソーセージに添える。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3333,6 +3619,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/lapin-a-la-moutarde/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/88bb8eb5-0c9e-4381-b869-22df79bbc1be_1791218238708.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ラパン・ア・ラ・ムータルド（うさぎのマスタード煮込み）（Lapin à la Moutarde）</image:title>
+      <image:caption>粉をはたいたうさぎのもも肉をバターとオリーブ油で焼き、エシャロット・にんにく・タイムを炒めた鍋に戻して白ワインと鶏のブイヨンを注ぎ、蓋をしてオーブンで1時間煮る。煮汁を漉して生クリームと5分煮立て、火から下ろしてディジョンマスタードと粒マスタード、冷たいバターを混ぜ込む。皿に盛ったうさぎにソースをかけ、カリッと焼いたベーコンをのせる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pollo-con-i-peperoni-alla-romana/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pollo-con-i-peperoni-alla-romana/"/>
@@ -3343,6 +3638,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/893e6378-cc9b-41c1-9db2-b9dcfcdb5ad4_1790663664758.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏肉とパプリカのローマ風煮込み（Pollo con i Peperoni alla Romana）</image:title>
       <image:caption>ローマの夏の定番家庭料理。鶏もも肉を赤・黄のパプリカと一緒に白ワインとトマトで煮込む。パプリカは途中で加えて食感を残すことが肝。旬の8月頃にローマのどの食堂でも見かける。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pommes-anna/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8b2b8767-14d9-4a62-80d8-06cbb38b4296_1791218254540.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ポム・アンナ（じゃがいものバター焼き重ね）（Pommes Anna）</image:title>
+      <image:caption>円筒形に整えたじゃがいもを薄い輪切りにし、洗って水気を拭く。バターを薄く色づけた厚手の鍋に、輪切りを少しずつ重ねて円を描くように並べ、列ごとに重ねる向きを変えながら5〜6層積む。層ごとに塩こしょうとバターをはさみ、蓋をしてオーブンで焼き、外して焼き色をつける。型から返すと、底だった面がきつね色のケーキ形になる。牛のトゥルヌドや仔羊のローストに添える。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3485,7 +3789,25 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/9003388c-6fc5-46a9-a9b0-b575371c3ef6_1790663701252.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>サルデーニャ風チーズフリット はちみつ添え（Seadas）</image:title>
-      <image:caption>サルデーニャの農村料理に起源を持つ揚げ菓子。セモリナ粉の生地で包んだフレッシュペコリーノを揚げ、苦みのあるコルベッゾーロ蜂蜜をかけて食べる。塩気と甘みの対比が絶妙。</image:caption>
+      <image:caption>サルデーニャの農村料理に起源を持つ揚げ菓子。セモリナ粉の生地で包んだフレッシュペコリーノを揚げ、苦みのあるコルベッゾーロはちみつをかけて食べる。塩気と甘みの対比が絶妙。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/bisque-de-homard/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/90157a59-027a-41ba-9713-d07a27160b16_1791218080137.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>オマール海老のビスク（Bisque de Homard）</image:title>
+      <image:caption>殻付きのままぶつ切りにしたオマール海老を、細かく刻んだ香味野菜とバターで殻が真っ赤になるまで炒め、コニャックと白ワインを煮詰めてブイヨンで煮る。別に炊いた米と合わせて殻ごと砕き、目の細かい漉し器で押し漉して、供する直前にバターと生クリームでまとめ、カイエンヌペッパーで香りを締める。米でとろみをつける古典の作り方で、殻から香りを搾り切る漉し方と、仕上げを沸かさない火加減が要になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/daube-provencale/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/904de252-380c-4749-9302-94b4b73df776_1791218168506.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ドーブ・プロヴァンサル（Daube Provençale）</image:title>
+      <image:caption>角切りの牛肩肉を玉ねぎ・にんじん・香草と一緒に赤ワインと赤ワインビネガーで5時間半マリネし、溶かした豚の背脂で焼き付ける。マリネ液を半量に煮詰め、にんにくとオレンジの皮を加えて鍋を密閉し、弱火で4〜5時間、肉がスプーンで崩れるまで煮込む。一晩休ませて脂を除き、温め直して食べる。煮汁を沸かさずに長く保つ火加減と、翌日まで待つ時間が味を決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3576,7 +3898,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/94dddd82-1aa4-4355-8161-69a0b8e0e882_1790690320964.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>コキーユ・サン・ジャック・ア・ラ・ブルトンヌ（ホタテの殻焼き ブルターニュ風）（Coquilles Saint-Jacques à la Bretonne）</image:title>
-      <image:caption>殻付きホタテを自分で開き、貝柱と珊瑚（卵巣）を有塩バターで炒めたエシャロットと辛口白ワインの煮汁で軽く火入れし、深い殻に戻して自家製パン粉とパセリ・ニンニクを練り込んだブール・ド・ペルシヤードをのせて高温で一気にグラタンにする一皿。生クリームやモルネーソースで覆うパリ風とは異なり、ブルターニュ風は貝そのものの甘みと海の塩気を、焦がしバターとパン粉の香ばしさだけで立ち上げるのが身上です。火入れは合計でも数分、貝柱に芯を残すか残さないかの見極めが味を決めます。</image:caption>
+      <image:caption>殻付きホタテを自分で開き、貝柱と珊瑚（卵巣）を有塩バターで炒めたエシャロットと辛口白ワインの煮汁で軽く火入れし、深い殻に戻して自家製パン粉とパセリ・にんにくを練り込んだブール・ド・ペルシヤードをのせて高温で一気にグラタンにする一皿。生クリームやモルネーソースで覆うパリ風とは異なり、ブルターニュ風は貝そのものの甘みと海の塩気を、焦がしバターとパン粉の香ばしさだけで立ち上げるのが身上です。火入れは合計でも数分、貝柱に芯を残すか残さないかの見極めが味を決めます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3680,7 +4002,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/9a588535-7242-41d1-bc24-43c76a63fbc4_1790663562118.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>エビとズッキーニのリングイネ（Linguine ai Gamberi e Zucchine）</image:title>
-      <image:caption>ナポリ湾に面したリストランテの夏の定番。ズッキーニをじっくり炒めて甘みと旨みを引き出し、海老の甘さと合わせる。味付けはニンニクとオイルだけ——素材の力で勝負するカンパーニャの海岸料理。</image:caption>
+      <image:caption>ナポリ湾に面したリストランテの夏の定番。ズッキーニをじっくり炒めて甘みと旨みを引き出し、海老の甘さと合わせる。味付けはにんにくとオイルだけ——素材の力で勝負するカンパーニャの海岸料理。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3737,15 +4059,15 @@
   </url>
   <url>
     <loc>https://tabelia.app/recipes/panna-cotta/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/panna-cotta/"/>
     <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1790653059363.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:loc>https://tabelia.app/img/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1791091113676.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>パンナコッタ（Panna Cotta）</image:title>
-      <image:caption>ゼラチンで固めた生クリームのデザート。シンプルな材料でとろける口溶けを作る北イタリア発祥のドルチェ。</image:caption>
+      <image:caption>バニラ香るパンナコッタに、種をこしたラズベリーソースと生のベリーを添えるドルチェ。クリームのなめらかさに、果実の酸味を合わせます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3788,6 +4110,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/haricots-verts-au-beurre/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/haricots-verts-au-beurre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/haricots-verts-au-beurre/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/9fc64cb8-3371-4c23-84cc-415f758cd20d_1791218321127.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>いんげんのバター和え（Haricots Verts au Beurre）</image:title>
+      <image:caption>筋を取ったいんげんを、塩を入れたたっぷりの湯で蓋をせずに強火でゆで、歯ごたえを少し残して引き上げる。鍋に戻して揺すりながら水気を飛ばし、塩こしょうしてバターをからめ、すぐに出す。子羊のローストに添える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/tortelli-maremmani-al-ragu/</loc>
     <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tortelli-maremmani-al-ragu/"/>
@@ -3814,6 +4147,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/carbonade-flamande/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/a111e162-5e3d-44d3-a2d7-a9ac2e160ec4_1791218185231.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>カルボナード・フラマンド（牛肉のビール煮）（Carbonade Flamande）</image:title>
+      <image:caption>牛の肩肉に強く焼き色をつけ、同じ鍋で玉ねぎを炒めてヴェルジョワーズでカラメル化させ、酢で鍋底をこそげる。ブラウンビールを注ぎ、マスタードを塗ったパン・デピスを上にのせて、蓋をして弱火で2時間30分煮る。パン・デピスが溶けてソースにとろみと甘い香辛料の香りがつき、ヴェルジョワーズの甘みと酢の酸味が加わる。北フランスでは、フライドポテトかじゃがいものピュレを添えて出す。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pinzimonio/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pinzimonio/"/>
@@ -3823,7 +4165,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/a1a505f1-c474-4ee1-8d0b-42daad86edd7_1790663641347.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ピンツィモーニオ（Pinzimonio）</image:title>
-      <image:caption>新鮮な生野菜をEVオリーブオイル・塩・白コショウのシンプルなソースにつけて食べるトスカーナの前菜。野菜の質とオリーブオイルの質がすべてを決める、究極のシンプル料理。</image:caption>
+      <image:caption>新鮮な生野菜をエキストラバージンオリーブオイル・塩・白こしょうのシンプルなソースにつけて食べるトスカーナの前菜。野菜の質とオリーブオイルの質がすべてを決める、究極のシンプル料理。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3863,6 +4205,17 @@
       <image:loc>https://tabelia.app/img/recipe-images/a26b63a0-08d6-4ad4-98cf-f7d3770db22c_1790663449662.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ブロッコリーラーベのガーリックソテー（Broccoletti di Rapa Ripassati）</image:title>
       <image:caption>菜の花に似たブロッコリーラーブ（ラーパ）をにんにくと唐辛子でソテーするプーリアの定番副菜。「リパッサーティ」とは下茹でしたものを再び炒める手法。苦みと香りが魅力。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pommes-de-terre-a-la-boulangere/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pommes-de-terre-a-la-boulangere/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pommes-de-terre-a-la-boulangere/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/a3131e97-b7d1-43a4-9b6f-375621a1f83e_1791218325066.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>じゃがいものブーランジェール風（Pommes de Terre à la Boulangère）</image:title>
+      <image:caption>薄切りにしたじゃがいもと玉ねぎを別々にバターで炒め、耐熱皿に重ねて、ブイヨンをひたひたに注ぐ。オーブンで25分、温度を下げて20分焼き、ブイヨンがほとんどなくなって表面に焼き色がつくまで仕上げる。子羊のもも肉や豚のロースに添える。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3917,6 +4270,17 @@
       <image:loc>https://tabelia.app/img/recipe-images/a57e7fa9-a40d-405c-9323-1db40a301656_1790663792163.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>トロンチーノのセミフレッド（Semifreddo al Torroncino）</image:title>
       <image:caption>トローネ（ヌガー）を使ったイタリアの半冷凍デザート。アイスクリームとムースの中間の食感で、冷凍庫で固めるだけで作れる本格ドルチェ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/epinards-a-la-creme/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/epinards-a-la-creme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/epinards-a-la-creme/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/a5ef0e30-94e2-4e5a-8b18-67577828fb83_1791218308060.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ほうれん草のクリーム煮（Épinards à la Crème）</image:title>
+      <image:caption>ほうれん草を蓋をせずにたっぷりの塩湯でゆで、冷水にとって固く絞り、細かく刻む。バターで強火で水分を飛ばしてから15分ゆっくり煮て水分を飛ばし、生クリームと残りのバターを加えてさらに10分煮る。仔牛や牛の料理に添える。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4007,7 +4371,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/aa894668-0de4-4bde-90b0-73424e9ffde1_1790663456610.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>リコッタとミニトマトのブルスケッタ（Bruschetta con Ricotta e Pomodorini）</image:title>
-      <image:caption>グリルしたパンにリコッタとチェリートマトを乗せ、蜂蜜とバジルで仕上げる現代的なブルスケッタ。なめらかなリコッタと甘酸っぱいトマトの対比が心地よい。</image:caption>
+      <image:caption>グリルしたパンにリコッタとチェリートマトを乗せ、はちみつとバジルで仕上げる現代的なブルスケッタ。なめらかなリコッタと甘酸っぱいトマトの対比が心地よい。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4034,6 +4398,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/ab98b12f-5ffd-405c-a51b-26074da714b8_1790663491675.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>豚スペアリブのサルデーニャ風オーブン焼き（Costine di Maiale al Forno alla Sarda）</image:title>
       <image:caption>サルデーニャ島の伝統的な豚の調理法。羊飼いが山で薪火で焼いたのが原型。フェンネル・ローズマリー・ミルトの実（または杜松の実）でマリネして、高温オーブンでパリッと焼き上げる。島の羊飼いが使うのと同じ素朴な技法で、骨の周りの肉が最も美味い。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/endives-au-jambon/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/ac1eeb72-c067-4abe-ab70-4081e5fecbbc_1791218208445.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アンディーヴのハム包みグラタン（Endives au Jambon）</image:title>
+      <image:caption>芯の苦い部分を除いたアンディーヴを、下ゆでせずにバター・塩・レモン汁と少量の水で蓋をして蒸し煮にし、汁気を切ってハムで1本ずつ巻く。グリュイエールを溶かした濃いベシャメルを熱いうちにかけ、チーズとバターをのせて高温のオーブンで焼き色をつける。蒸し煮のあとは汁気をよく切ってから巻く。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4230,7 +4603,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/b537d5bb-4245-4d32-a943-e6936e9dedb5_1790654552730.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ミラベルのタルト（Tarte aux Mirabelles）</image:title>
-      <image:caption>ロレーヌ地方特産の小粒な黄金色のプラム、ミラベルを使うタルト。パート・ブリゼの生地にミラベルを敷き詰めて下焼きし、卵とクレーム・フレーシュのアパレイユを流し込んでもう一度焼く二段仕込みが特徴。果実の水分でアパレイユが水っぽくならないよう、焼き加減を見極める。8月から9月、ミラベルの収穫期にロレーヌの食卓を彩る一皿。</image:caption>
+      <image:caption>ロレーヌ地方特産の小粒な黄金色のプラム、ミラベルを使うタルト。パート・ブリゼの生地にミラベルを敷き詰めて下焼きし、卵とクレーム・フレッシュのアパレイユを流し込んでもう一度焼く二段仕込みが特徴。果実の水分でアパレイユが水っぽくならないよう、焼き加減を見極める。8月から9月、ミラベルの収穫期にロレーヌの食卓を彩る一皿。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4351,6 +4724,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/cote-de-porc-sauce-charcutiere/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/ba84a890-ed28-4607-b87e-e2573ada27bc_1791218190697.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>豚の骨付きロースのソテー、シャルキュティエールソース（Côte de Porc Sauce Charcutière）</image:title>
+      <image:caption>骨付きの豚ロースをバターで両面ソテーし、骨の際まで火を通す。ソースは、色づけた玉ねぎに白ワインと酢を加えてほぼ水気がなくなるまで煮詰め、フォン・ド・ヴォーで煮詰めて、ソース・ロベールを作る。火を止めてマスタードを溶き込み、太めのせん切りにしたコルニッションを出す直前に加える。エスコフィエはじゃがいものピュレを添える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/moules-marinieres/</loc>
     <lastmod>2026-08-01</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/moules-marinieres/"/>
@@ -4390,6 +4772,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/galette-des-rois-a-la-frangipane/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/bccc4638-a221-4376-a811-ae0ffe975184_1791218371922.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガレット・デ・ロワ（フランジパーヌ）（Galette des Rois à la Frangipane）</image:title>
+      <image:caption>カスタードを合わせたアーモンドクリーム（フランジパーヌ）を、丸く切った2枚の折り込みパイ生地で包み、縁を押さえて閉じる。卵黄を塗って模様を刻み、1時間冷やしてから190℃で焼き、熱いうちにシロップを塗ってつやを出す。1月6日の公現祭のころに切り分け、フェーヴを引き当てた人がその日の王になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/impepata-di-cozze/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/impepata-di-cozze/"/>
@@ -4399,7 +4790,16 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/bcebb6de-a2d5-4c4a-be24-63c164211d60_1790663546690.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ムール貝の黒胡椒蒸し（Impepata di Cozze）</image:title>
-      <image:caption>ナポリで愛される最もシンプルな魚介料理。ムール貝を高温の蓋付き鍋で一気に蒸し開け、香り豊かな汁に黒胡椒をたっぷり効かせる。料理というよりは海を食べる体験。</image:caption>
+      <image:caption>ナポリで愛される最もシンプルな魚介料理。ムール貝を高温の蓋付き鍋で一気に蒸し開け、香り豊かな汁に黒こしょうをたっぷり効かせる。料理というよりは海を食べる体験。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/creme-dubarry/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/bdda4581-7b12-498e-b47c-3172301656a3_1791218090467.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>クレーム・デュ・バリー（Crème Dubarry）</image:title>
+      <image:caption>塩を入れない湯で下ゆでしたカリフラワーをバターで蒸らし、薄いベシャメルの中でやわらかく煮てから、ミキサーにかけて裏ごしし、牛乳で濃度を合わせて生クリームで仕上げる白いポタージュ。浮き実は取り分けておいた小さな房とチャービルの葉先。卵黄は入れず、カリフラワーのにおいを立てない下ゆでと、ざらつきを残さない裏ごしが仕上がりを決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4442,6 +4842,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/hachis-parmentier/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/bf04243c-237a-48cb-8f73-50cab6bd916d_1791218181698.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アッシ・パルマンティエ（Hachis Parmentier）</image:title>
+      <image:caption>香味野菜と一緒に茹でた牛すね肉を細かく刻み、バターで炒めた玉ねぎに小麦粉と茹で汁のブイヨンを加えて煮たソースでまとめ、耐熱皿に敷く。上をバターと牛乳で仕上げたじゃがいものピュレで覆い、パン粉と溶かしバターをかけて高温のオーブンで焼き色をつける。肉は挽かずに刻み、ソースを冷ましてから合わせる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/gazpacho/</loc>
     <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gazpacho/"/>
@@ -4465,6 +4874,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/c135497c-ad1a-4f8d-a13d-4177f41d3858_1790645355446.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>タコのルチアーナ風煮込み（Polpo alla Luciana）</image:title>
       <image:caption>ナポリ・サンタルチア漁港の漁師が生み出した料理。タコを蓋付き土鍋に入れ、水を加えずにトマト・オリーブ・ケッパーの汁気だけで1時間密閉蒸し煮する。タコ自身の水分で蒸されることでとろける食感に。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/lotte-a-larmoricaine/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/c18241b6-4ef5-49fa-976b-b0e3534f6eda_1791218217267.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アンコウのアルモリケーヌ（Lotte à l'Armoricaine）</image:title>
+      <image:caption>骨付きのまま輪切りにしたアンコウの尾の身を、ラングスティーヌの頭と殻と一緒にオリーブ油で炒め、エシャロットを加える。コニャックと白ワインを注ぎ、トマト・にんにく・タラゴン・オレンジの皮・トマトペースト・カイエンヌと15分煮る。魚を取り出して煮汁を漉し、生クリームを加えてソースにする。魚は少し締まりを残して煮上げ、バスマティ米を輪にして添える。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4763,7 +5181,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/ca5cc5af-85a4-49af-b655-77d1ccbb6a09_1790663460954.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>カチョ・エ・ペペ（Cacio e Pepe）</image:title>
-      <image:caption>チーズと黒胡椒だけで作るローマ最古のパスタ。材料はシンプルだが乳化の技術が問われる。</image:caption>
+      <image:caption>チーズと黒こしょうだけで作るローマ最古のパスタ。材料はシンプルだが乳化の技術が問われる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4801,7 +5219,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/porchetta-al-forno-versione-casalinga/"/>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/cbae4318-54d3-4b45-ba94-58b9cb022d38_1790663672603.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ハーブを詰めた豚バラ肉のポルケッタ（Porchetta al Forno (versione casalinga)）</image:title>
+      <image:title>ハーブを詰めた豚バラ肉のポルケッタ「Porchetta al Forno (versione casalinga)」</image:title>
       <image:caption>ラツィオとウンブリアを中心に街の祭りで登場する豚の丸焼き「ポルケッタ」の家庭版。豚バラ肉にフェンネル・ローズマリー・セージのハーブを詰めてロールにし、高温オーブンで皮をパリパリに焼く。ロールにする際の隙間をなくすことが大事。</image:caption>
     </image:image>
   </url>
@@ -4815,7 +5233,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/cc269c19-d29b-4333-89ef-3c260705db12_1790645399739.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏肉のディアボラ風グリル（Pollo alla Diavola）</image:title>
-      <image:caption>「悪魔風」の名の通り、唐辛子と黒胡椒をたっぷりまぶした丸鶏を押し潰してグリルする。スパッチコック（背骨を外して平らにする）が最大のコツ。均一な厚さになることで外はカリカリ、中はジューシーに仕上がる。</image:caption>
+      <image:caption>「悪魔風」の名の通り、唐辛子と黒こしょうをたっぷりまぶした丸鶏を押し潰してグリルする。スパッチコック（背骨を外して平らにする）が最大のコツ。均一な厚さになることで外はカリカリ、中はジューシーに仕上がる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4829,6 +5247,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/cce1bd1f-06d6-4987-bc15-140c19eb2e16_1790663532858.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>エビのガーリックオイルソテー（Gamberi all'Aglio e Olio）</image:title>
       <image:caption>海老をにんにく・唐辛子・オリーブオイルで炒めるシチリアの海鮮前菜。素材の鮮度と良質なオリーブオイルが決め手。パスタの原型とも言えるシンプルな美味しさ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/coulant-au-chocolat/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/cd3540df-3d88-45ac-b647-ce3760ab4248_1791218435373.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>クーラン・オ・ショコラ（中心からガナッシュが流れる焼き菓子）（Coulant au Chocolat）</image:title>
+      <image:caption>小さく凍らせたガナッシュを、チョコレートとバターの生地で包んで直径5cmのセルクルで焼く。外側は焼けた生地の壁になり、温かいうちに型から外してスプーンを入れると、中心から溶けたガナッシュが流れ出る。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4871,6 +5298,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/endives-braisees/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/endives-braisees/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/endives-braisees/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/ceda3bd9-1ee2-48fe-baaf-ebeeacf38b86_1791218283587.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アンディーヴの蒸し煮（Endives Braisées）</image:title>
+      <image:caption>根元の苦い部分を除いたアンディーヴを1段に並べ、レモン汁・塩・バター・水を加えて蓋をし、強く沸かしてから弱火で30〜35分煮る。下ゆではせず、レモンで白く保つ。汁気をよく切って皿に並べ、ブール・ノワゼットをかける。ローストや蒸し煮の肉の付け合わせにする。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/farfalle-ai-piselli-e-prosciutto-cotto/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/farfalle-ai-piselli-e-prosciutto-cotto/"/>
@@ -4910,6 +5348,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/pain-depices/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pain-depices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/pain-depices/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/cff20d6a-f1b2-41a7-9d69-f18ad027e1a3_1791218377415.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パン・デピス（Pain d'Épices）</image:title>
+      <image:caption>はちみつを沸かしてアクを取り、ふるった小麦粉に注いで練り、布をかぶせて1時間休ませる。ベーキングパウダーとアニスシード、シナモン、クローブ、柑橘の皮を力を入れて練り込み、パウンド型で190℃で焼く。焼き上がりに甘くした牛乳を塗って、つやを出す。薄く切って、バターを塗ったりフォアグラに添えたりする。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/ravioli-alla-caprese/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/ravioli-alla-caprese/"/>
@@ -4920,6 +5369,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/d052af2a-c52d-4a24-874b-988eb5c58f81_1790663680725.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ラヴィオリ・アッラ・カプレーゼ（カプリ島のラヴィオリ）（Ravioli alla Caprese）</image:title>
       <image:caption>カプリ島発祥の、卵を使わずセモリナ主体の粉に熱湯とストゥルット（ラード）を合わせて捏ねる pasta matta の生地に、フレッシュなカチョッタと大量のマヨラナを詰めた島の primo。熱湯で小麦のデンプンとグルテンを部分的に変性させるため伸びは出にくいが、茹でても崩れずもっちりとした独特の歯応えになる。詰め物はチーズと卵だけで繋ぐので水分管理と冷却が命で、ソースは煮込まず短時間で仕上げ、完熟トマトとバジルの生き生きした酸味を合わせる。マヨラナの香りがこの皿の同一性そのもので、量を減らすと別料理になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gateau-nantais/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/d0aca099-460a-49b7-bcd5-74a819de0656_1791218478842.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガトー・ナンテ（ナントのアーモンドとラムの焼き菓子）（Gâteau Nantais）</image:title>
+      <image:caption>有塩バターと砂糖を練り、アーモンドパウダーと卵、少しの小麦粉、ダークラムを加えた生地を丸型で焼く。焼き上がってすぐ逆さに型から出してラムをかけ、冷めたらラムで溶いた粉糖の白い糖衣を薄く塗る。中は密でしっとりし、糖衣は薄く少し割れる。翌日のほうがおいしいとされる。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4999,7 +5457,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/d5318ed7-af4c-40de-a334-31c090e9a8f2_1790690329268.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>フォワグラ・ポワレ・オー・レザン（フォワグラのポワレ 葡萄添え）（Foie Gras Poêlé aux Raisins）</image:title>
-      <image:caption>鴨のフォワグラに香ばしい焼き色をつけ、葡萄と甘口ワインのソースを合わせる温かい前菜です。ソースとトーストを先に用意し、フォワグラを焼いた脂で葡萄を温めて仕上げます。このレシピは国内向けに中心まで加熱する版で、半生の仕上がりを目標にはしません。</image:caption>
+      <image:caption>鴨のフォアグラに香ばしい焼き色をつけ、葡萄と甘口ワインのソースを合わせる温かい前菜です。ソースとトーストを先に用意し、フォアグラを焼いた脂で葡萄を温めて仕上げます。このレシピは国内向けに中心まで加熱する版で、半生の仕上がりを目標にはしません。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5029,6 +5487,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gratin-de-chou-fleur/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/d6a3dea6-7673-47aa-84e9-a20ca395df3a_1791218316371.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>カリフラワーのグラタン（Gratin de Chou-Fleur）</image:title>
+      <image:caption>カリフラワーを小房に分けて塩ゆでし、少し固さを残して引き上げる。バターで軽く色づけて水気を飛ばし、耐熱皿に並べる。卵黄とグリュイエールを加えたモルネーソースで覆い、おろしたチーズと溶かしバターをのせて、高温のオーブンで焼き色をつける。牛のローストやトゥルヌドに添える。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/bietola-saltata/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bietola-saltata/"/>
@@ -5052,6 +5519,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/d77e2a98-dd67-492f-9d71-7a44400f0215_1790690227733.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ペーレ・アル・ヴィーノ・ロッソ（洋梨の赤ワイン煮）（Pere al Vino Rosso）</image:title>
       <image:caption>硬めの洋梨を丸ごと、フルボディの赤ワインと香辛料でごく弱火のポーシェにかけ、芯まで赤紫に染め上げるピエモンテの古典的なドルチェ。煮汁を沸騰させずに保ち、串がすっと通る一歩手前で火から下ろし、煮汁に浸けたまま室温と冷蔵庫で計5時間（前日仕込みなら一晩）休ませて染みを進めるのが要で、仕上げに煮汁だけをナップ状のシロップまで煮詰めて洋梨にかけ直す。果実の繊維を崩さずに色と香りだけを通す温度管理が、この単純な一皿の出来を決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/terrine-de-foie-gras/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/d8221980-0c05-41be-bbe6-b84004ae16be_1791218013000.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>フォアグラのテリーヌ（Terrine de Foie Gras）</image:title>
+      <image:caption>生の鴨のフォアグラを室温に戻して血管を抜き、塩とこしょうを振ってテリーヌ型に押し込み、アルマニャックを振って24時間なじませてから、110℃のオーブンで湯せんにかけて焼く冷製の前菜。焼き上がりを72時間冷蔵庫で休ませ、味をなじませてから1cmの厚さに切り分ける。肝を割らずに血管を抜く手つきと、温度計で中心温度を確かめる加熱が仕上がりを決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5103,7 +5579,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/d9da8ca6-2fc6-4690-ab8a-011b9e88ac0d_1790663548861.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ひよこ豆のサラダ（Insalata di Ceci）</image:title>
-      <image:caption>ひよこ豆をオリーブオイル・ニンニク・ローズマリーで和えるプーリアの豆サラダ。素朴な食材の組み合わせながら、旨みが凝縮した南イタリアの家庭前菜。</image:caption>
+      <image:caption>ひよこ豆をオリーブオイル・にんにく・ローズマリーで和えるプーリアの豆サラダ。素朴な食材の組み合わせながら、旨みが凝縮した南イタリアの家庭前菜。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5155,7 +5631,16 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/dac38ed5-ec21-4b4f-974a-a58a3203993e_1790663752569.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>季節の野菜のグリル焼き（Verdure Grigliate Miste）</image:title>
-      <image:caption>数種の野菜を炭火またはグリルパンで焼き、EVオリーブオイルとハーブでマリネする。焼き跡の香ばしさと野菜の甘みが引き立つイタリアの定番コントルノ。</image:caption>
+      <image:caption>数種の野菜を炭火またはグリルパンで焼き、エキストラバージンオリーブオイルとハーブでマリネする。焼き跡の香ばしさと野菜の甘みが引き立つイタリアの定番コントルノ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/escargots-a-la-bourguignonne/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/dada5630-fb52-4acb-bd34-70772dd61fe8_1791218006164.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>エスカルゴのブルゴーニュ風（Escargots à la Bourguignonne）</image:title>
+      <image:caption>やわらかくしたバターにエシャロット・にんにく・パセリを練り込んだブール・デスカルゴを作り、ブルゴーニュ種のエスカルゴと一緒にエスカルゴ皿の穴へ詰めて、口をバターでふさぎ、細かいパン粉を振って高温のオーブンで焼く前菜。バターが溶けて泡立った瞬間に取り出し、熱いうちに食べる。缶詰のエスカルゴは加熱済みなので、焼きすぎて身を硬くしないことと、バターで口をしっかりふさぐことが仕上がりを決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5172,6 +5657,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/crepes-suzette/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/db93b70d-9f80-424f-8522-a7bf55ad5471_1791218387098.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>クレープ・シュゼット（Crêpes Suzette）</image:title>
+      <image:caption>みかんの果汁とキュラソー、オリーブ油を加えた甘いクレープ生地を2時間休ませ、薄く焼く。みかんの皮と果汁、砂糖、キュラソーを練り込んだバターを1枚ずつ塗って四つ折りにし、フライパンで弱火で温めて、溶けたバターごと皿に盛る。火はつけない。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pollo-allarancia-rossa-di-sicilia/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pollo-allarancia-rossa-di-sicilia/"/>
@@ -5182,6 +5676,17 @@
       <image:loc>https://tabelia.app/img/recipe-images/db99ae52-b4ad-41fc-9f90-872fca9b143e_1790663657817.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏肉のブラッドオレンジソース（Pollo all'Arancia Rossa di Sicilia）</image:title>
       <image:caption>エトナ山麓のカターニャ周辺で生産されるシチリア産ブラッドオレンジ（モロ種）を使った鶏料理。血のように赤い果汁の甘みと酸味が、バターと白ワインのソースに溶け込む。旬の1〜3月が最高だが、通常のオレンジでも十分美味しい。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/poires-au-vin-rouge/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/poires-au-vin-rouge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/poires-au-vin-rouge/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/dbf751b3-91f1-4010-94c5-7a32c703ae99_1791218472775.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>洋梨の赤ワイン煮（皮と蜂蜜で煮る）（Poires au Vin Rouge）</image:title>
+      <image:caption>軸を残して皮をむいた洋梨を、むいた皮ごと、蜂蜜とカソナード、バニラ、コリアンダー、白こしょうで香りをつけたタンニンの強い赤ワインに立てて入れ、蓋をして弱火で20分煮る。煮汁ごと冷まして24時間冷やし、煮詰めない冷たい煮汁をかけて出す。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5458,6 +5963,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/sole-meuniere/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/e9ffe45e-1a77-4810-9712-8ab5c1b7ad6d_1791218127121.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>舌平目のムニエル（Sole Meunière）</image:title>
+      <image:caption>黒い皮と白い皮をむいた舌平目に薄く粉をまぶし、澄ましバターと油で片面6〜7分ずつ、身を崩さずに黄金色に焼き上げる。皿の魚にレモン汁・塩・こしょう・刻んだパセリをのせ、泡立つ焦がしバターをかけて、泡が消えないうちに食卓へ出す。皮のむき方と、バターを焦がさずに厚い身の骨際まで火を通す焼き加減が要になる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/testaroli-al-pesto/</loc>
     <lastmod>2026-08-15</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/testaroli-al-pesto/"/>
@@ -5571,7 +6085,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/f060a9eb-94bf-4371-b769-8f4eb807152d_1790654551535.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>北フランス風タルト・オ・シュクル（Tarte au Sucre du Nord）</image:title>
-      <image:caption>北フランス、オー＝ド＝フランス地方に伝わる、パン屋の残り生地から生まれたとされるブリオッシュ生地の菓子。指でつけたくぼみにビート糖のヴェルジョワーズとクレーム・フレーシュを流し込み、表面をカラメル状に焼き上げる。イースト生地の発酵見極めと、トッピングの焼き色の見極めが仕上がりを左右する。日曜の朝食やグテの時間に、家庭でもパン屋でも作られる定番の一皿。</image:caption>
+      <image:caption>北フランス、オー＝ド＝フランス地方に伝わる、パン屋の残り生地から生まれたとされるブリオッシュ生地の菓子。指でつけたくぼみにビート糖のヴェルジョワーズとクレーム・フレッシュを流し込み、表面をカラメル状に焼き上げる。イースト生地の発酵見極めと、トッピングの焼き色の見極めが仕上がりを左右する。日曜の朝食やグテの時間に、家庭でもパン屋でも作られる定番の一皿。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5611,6 +6125,24 @@
       <image:loc>https://tabelia.app/img/recipe-images/f1eb261e-34a5-4fcb-a9dd-5a016cf7b8ea_1790663448563.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>スズキの塩釜焼き（Branzino al Sale）</image:title>
       <image:caption>丸ごとのスズキを粗塩とたっぷりのハーブで包み、オーブンで焼く豪快な塩窯焼き。塩が密封容器となり、蒸し焼き効果で身がしっとり仕上がる。テーブルでハンマーで割る演出も魅力。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/bouchees-a-la-reine/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/f23d4dcf-1ef1-4cd1-82a5-cdcf1b8b829c_1791218075025.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ブーシェ・ア・ラ・レーヌ（Bouchées à la Reine）</image:title>
+      <image:caption>菊形に抜いたパイ生地に輪を重ねて焼いたケースに、香味野菜のブイヨンで茹でた鶏むね肉と白く煮たマッシュルームを、茹で汁で作ったクリームのソースでつないで詰める温かい前菜。ソースはバターと小麦粉のルーを鶏の茹で汁でのばし、生クリームと卵黄でまとめる。ケースをまっすぐ高く焼き上げることと、卵黄を固めずにソースに火を入れる加減が仕上がりを決める。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/huitres-gratinees-au-champagne/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/f2efa804-a0bd-4a31-9cff-e5beb70d0779_1791218062113.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>牡蠣のシャンパーニュ風グラタン（Huîtres Gratinées au Champagne）</image:title>
+      <image:caption>殻から外した牡蠣を、殻から出た汁とシャンパーニュで中心まで火が通るようにポシェし、バターで蒸らしたリーキのフォンデュを敷いた殻に戻して、シャンパーニュのサバイヨンで覆い、高温のオーブンで表面にだけ焼き色をつける温かい前菜。殻は粗塩の台に据えて水平を保つ。卵黄を固めずに泡立てるサバイヨンと、焦がす寸前で止める焼き色が仕上がりを決める。</image:caption>
     </image:image>
   </url>
   <url>
@@ -6590,6 +7122,32 @@
       <image:loc>https://tabelia.app/img/recipe-images/0f733a8e-a21a-427b-a91b-423df233a308_1790663718859.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Spaghetti con bottarga di muggine</image:title>
       <image:caption>Un piatto pregiato sardo: spaghetti con bottarga di muggine, ovaie salate ed essiccate al sole. Grattugiarla senza scaldarla porta nel piatto intatti il sapore delicato e il profumo marino.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/en/recipes/carottes-vichy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Vichy-Style Glazed Carrots</image:title>
+      <image:caption>Thinly sliced carrots simmer uncovered with water, salt and sugar until almost all the liquid has evaporated. Toss with cold, diced butter off the heat and finish with parsley. Serve alongside veal chops or sautéed chicken.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/carottes-vichy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Carote alla Vichy</image:title>
+      <image:caption>Le carote tagliate a rondelle sottili cuociono senza coperchio con acqua, sale e zucchero finché il liquido è quasi del tutto evaporato. A fuoco spento si uniscono il burro freddo a pezzetti e il prezzemolo. Accompagnano costolette di vitello o pollo saltato in padella.</image:caption>
     </image:image>
   </url>
   <url>
@@ -7778,9 +8336,9 @@
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bistecca-alla-fiorentina/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
     <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1790663445258.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:loc>https://tabelia.app/img/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1791091757995.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Florentine T-Bone Steak</image:title>
-      <image:caption>Tuscany’s emblematic meat dish: a thick T-bone seared over high heat, rested, then finished with salt and olive oil. Thickness, browning and resting time determine its flavor.</image:caption>
+      <image:caption>A thick T-bone grilled over hardwood charcoal embers, rested for 10 minutes and finished with salt and olive oil: a Florentine meat dish prepared outdoors.</image:caption>
     </image:image>
   </url>
   <url>
@@ -7791,9 +8349,9 @@
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/bistecca-alla-fiorentina/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/bistecca-alla-fiorentina/"/>
     <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1790663445258.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:loc>https://tabelia.app/img/recipe-images/25970fbd-c4ab-48bb-882e-dd08d97c5b0e_1791091757995.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Bistecca alla fiorentina</image:title>
-      <image:caption>Un piatto simbolo della Toscana: una T-bone spessa cotta a fuoco vivo, lasciata riposare e finita con sale e olio di oliva. Spessore, rosolatura e riposo determinano il sapore.</image:caption>
+      <image:caption>Una bistecca spessa con osso a T cotta sulla brace di legna di latifoglie, lasciata riposare 10 minuti e condita con sale e olio: una specialità fiorentina da cucinare all’aperto.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10275,32 +10833,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://tabelia.app/en/recipes/fagioli-alluccelletto/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/7edc9ba9-01d2-4ad6-a3d0-4cac2965bee5_1790663502787.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>Tuscan Beans with Tomato and Sage</image:title>
-      <image:caption>A classic Tuscan contorno of white beans gently simmered with garlic, sage and tomatoes. A natural companion for grilled beef, peposo, roast pork and other lean or richly fatty meat dishes.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/it/ricette/fagioli-alluccelletto/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fagioli-alluccelletto/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/7edc9ba9-01d2-4ad6-a3d0-4cac2965bee5_1790663502787.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>Fagioli all’uccelletto</image:title>
-      <image:caption>Un classico contorno toscano di fagioli bianchi insaporiti lentamente con aglio, salvia e pomodoro. Accompagna naturalmente manzo alla griglia, peposo, arrosto di maiale e altre carni magre o ricche di grasso.</image:caption>
-    </image:image>
-  </url>
-  <url>
     <loc>https://tabelia.app/en/recipes/schiacciata-alluva/</loc>
     <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/schiacciata-alluva/"/>
@@ -11809,6 +12341,32 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/en/recipes/fagioli-alluccelletto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/7edc9ba9-01d2-4ad6-a3d0-4cac2965bee5_1790663502787.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Tuscan Beans with Tomato and Sage</image:title>
+      <image:caption>A classic Tuscan contorno of white beans gently simmered with garlic, sage and tomatoes. A natural companion for grilled beef, peposo, roast pork and other lean or richly fatty meat dishes.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/it/ricette/fagioli-alluccelletto/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/fagioli-alluccelletto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/7edc9ba9-01d2-4ad6-a3d0-4cac2965bee5_1790663502787.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Fagioli all’uccelletto</image:title>
+      <image:caption>Un classico contorno toscano di fagioli bianchi insaporiti lentamente con aglio, salvia e pomodoro. Accompagna naturalmente manzo alla griglia, peposo, arrosto di maiale e altre carni magre o ricche di grasso.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/en/recipes/cinghiale-in-agrodolce/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cinghiale-in-agrodolce/"/>
@@ -13088,28 +13646,28 @@
   </url>
   <url>
     <loc>https://tabelia.app/en/recipes/panna-cotta/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/panna-cotta/"/>
     <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1790653059363.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:loc>https://tabelia.app/img/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1791091113676.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Panna Cotta</image:title>
-      <image:caption>A cream dessert set with gelatin. This dolce from northern Italy creates a melting texture from simple ingredients.</image:caption>
+      <image:caption>Vanilla panna cotta served with strained raspberry sauce and fresh berries. The fruit’s acidity complements the smooth cream.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://tabelia.app/it/ricette/panna-cotta/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/panna-cotta/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/panna-cotta/"/>
     <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1790653059363.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:loc>https://tabelia.app/img/recipe-images/9d3f2a26-baf7-4221-ba3c-cda6c49de612_1791091113676.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Panna cotta</image:title>
-      <image:caption>Un dessert di panna rassodata con gelatina. Un dolce dell’Italia settentrionale che crea una consistenza fondente con ingredienti semplici.</image:caption>
+      <image:caption>Panna cotta alla vaniglia con salsa di lamponi senza semi e frutti di bosco freschi. L’acidità della frutta accompagna la morbidezza della panna.</image:caption>
     </image:image>
   </url>
   <url>
@@ -17284,539 +17842,4 @@
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi. I profumi di Cointreau ed espresso ne esprimono il carattere autentico.</image:caption>
     </image:image>
   </url>
-<url>
-    <loc>https://tabelia.app/recipes/gougeres/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/4b1be68d-f36a-4b63-b07c-8e97920ae016_1791217959443.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>グジェール（Gougères）</image:title>
-      <image:caption>牛乳で作る砂糖なしのシュー生地に、角切りのコンテを混ぜ込んで小さな球に絞り、溶き卵を塗っておろしたチーズを散らして焼く、ブルゴーニュの一口大のチーズ菓子。牛乳とバターに粉を入れて鍋肌から離れるまで練り、卵を少しずつ加えて、木べらから逆三角形に垂れる固さに整えるのが技術の要になる。焼き上がりは火を止めたオーブンの中で落ち着かせ、温かいうちに前菜として、冷めたものはワインに添えて食べる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/escargots-a-la-bourguignonne/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/dada5630-fb52-4acb-bd34-70772dd61fe8_1791218006164.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>エスカルゴのブルゴーニュ風（Escargots à la Bourguignonne）</image:title>
-      <image:caption>やわらかくしたバターにエシャロット・にんにく・パセリを練り込んだブール・デスカルゴを作り、ブルゴーニュ種のエスカルゴと一緒にエスカルゴ皿の穴へ詰めて、口をバターでふさぎ、細かいパン粉を振って高温のオーブンで焼く前菜。バターが溶けて泡立った瞬間に取り出し、熱いうちに食べる。缶詰のエスカルゴは加熱済みなので、焼きすぎて身を硬くしないことと、バターで口をしっかりふさぐことが仕上がりを決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/terrine-de-foie-gras/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/d8221980-0c05-41be-bbe6-b84004ae16be_1791218013000.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>フォアグラのテリーヌ（Terrine de Foie Gras）</image:title>
-      <image:caption>生の鴨のフォアグラを室温に戻して血管を抜き、塩とこしょうを振ってテリーヌ型に押し込み、アルマニャックを振って24時間なじませてから、110℃のオーブンで湯せんにかけて焼く冷製の前菜。焼き上がりを72時間冷蔵庫で休ませ、味をなじませてから1cmの厚さに切り分ける。肝を割らずに血管を抜く手つきと、温度計で中心温度を確かめる加熱が仕上がりを決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/pate-en-croute/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/2463f26a-4137-4610-8234-b8474ad599e6_1791218049581.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>パテ・アン・クルート（Pâté en Croûte）</image:title>
-      <image:caption>豚バラ・豚ヒレ・鶏ももを酒と塩で一晩マリネして粗く刻み、ピスタチオと練った詰め物に、棒状の鶏むね肉を重ねてバターの生地で包み、専用の型で焼き上げる。翌日、冷えて縮んだすき間にブイヨンのジュレを煙突から流し込み、さらに冷やし固めてから厚く切る。生地を割らずに型へ敷き込む手つきと、中心温度を見ながらの長い焼成、ジュレを数回に分けて満たす根気が要る3日がかりの前菜。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/huitres-gratinees-au-champagne/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/f2efa804-a0bd-4a31-9cff-e5beb70d0779_1791218062113.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>牡蠣のシャンパーニュ風グラタン（Huîtres Gratinées au Champagne）</image:title>
-      <image:caption>殻から外した牡蠣を、殻から出た汁とシャンパーニュで中心まで火が通るようにポシェし、バターで蒸らしたリーキのフォンデュを敷いた殻に戻して、シャンパーニュのサバイヨンで覆い、高温のオーブンで表面にだけ焼き色をつける温かい前菜。殻は粗塩の台に据えて水平を保つ。卵黄を固めずに泡立てるサバイヨンと、焦がす寸前で止める焼き色が仕上がりを決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/bouchees-a-la-reine/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/f23d4dcf-1ef1-4cd1-82a5-cdcf1b8b829c_1791218075025.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ブーシェ・ア・ラ・レーヌ（Bouchées à la Reine）</image:title>
-      <image:caption>菊形に抜いたパイ生地に輪を重ねて焼いたケースに、香味野菜のブイヨンで茹でた鶏むね肉と白く煮たマッシュルームを、茹で汁で作ったクリームのソースでつないで詰める温かい前菜。ソースはバターと小麦粉のルーを鶏の茹で汁でのばし、生クリームと卵黄でまとめる。ケースをまっすぐ高く焼き上げることと、卵黄を固めずにソースに火を入れる加減が仕上がりを決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/bisque-de-homard/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/90157a59-027a-41ba-9713-d07a27160b16_1791218080137.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>オマール海老のビスク（Bisque de Homard）</image:title>
-      <image:caption>殻付きのままぶつ切りにしたオマール海老を、細かく刻んだ香味野菜とバターで殻が真っ赤になるまで炒め、コニャックと白ワインを煮詰めてブイヨンで煮る。別に炊いた米と合わせて殻ごと砕き、目の細かい漉し器で押し漉して、供する直前にバターと生クリームでまとめ、カイエンヌペッパーで香りを締める。米でとろみをつける古典の作り方で、殻から香りを搾り切る漉し方と、仕上げを沸かさない火加減が要になる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/creme-dubarry/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/bdda4581-7b12-498e-b47c-3172301656a3_1791218090467.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>クレーム・デュ・バリー（Crème Dubarry）</image:title>
-      <image:caption>塩を入れない湯で下ゆでしたカリフラワーをバターで蒸らし、薄いベシャメルの中でやわらかく煮てから、ミキサーにかけて裏ごしし、牛乳で濃度を合わせて生クリームで仕上げる白いポタージュ。浮き実は取り分けておいた小さな房とチャービルの葉先。卵黄は入れず、カリフラワーのにおいを立てない下ゆでと、ざらつきを残さない裏ごしが仕上がりを決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/boudin-blanc-aux-pommes/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/38ad5430-71ce-4e8d-b61c-98b605596b6d_1791218094888.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ブーダン・ブラン、りんご添え（Boudin Blanc aux Pommes）</image:title>
-      <image:caption>豚の肩ロースと背脂を粒が残る細かさに挽き、卵と冷たい牛乳を少しずつ混ぜて、乳化させずに粒の見える白い生地にまとめ、天然の豚腸に詰めて80℃の湯で静かにゆでる。冷水で締めたあと、針で刺してバターでこんがり焼き、バターと砂糖で色づけたりんごを添える。パンや粉でつながず、卵の白身が固まる力だけで生地をまとめるルテルの作り方で、湯を沸騰させない温度の管理が仕上がりを決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/canard-a-lorange/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/6ecd6582-7f03-4a94-b312-5f41d869b8f7_1791218112877.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>鴨のオレンジソース（Canard à l'Orange）</image:title>
-      <image:caption>丸鴨を手羽先と香味野菜を敷いた天板で焼き、胸肉はロゼのアギエットに、脚は焼き足して皿に並べ、オレンジのソースをかける古典の主菜。ソースはバターと砂糖のカラメルを赤ワインビネガーで溶いたガストリックに、フォン・ド・ヴォーと柑橘の果汁を加えて煮詰め、天板の焼き汁を合わせて漉し、下ゆでした皮のせん切りとバターで仕上げる。焼いている間にガストリックを煮詰め、胸肉を休ませる間に焼き汁と合わせ、皮のせん切りとバターを入れた後は沸かさずに仕上げる段取りが要になる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/sole-meuniere/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/e9ffe45e-1a77-4810-9712-8ab5c1b7ad6d_1791218127121.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>舌平目のムニエル（Sole Meunière）</image:title>
-      <image:caption>黒い皮と白い皮をむいた舌平目に薄く粉をまぶし、澄ましバターと油で片面6〜7分ずつ、身を崩さずに黄金色に焼き上げる。皿の魚にレモン汁・塩・こしょう・刻んだパセリをのせ、泡立つ焦がしバターをかけて、泡が消えないうちに食卓へ出す。皮のむき方と、バターを焦がさずに厚い身の骨際まで火を通す焼き加減が要になる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/saumon-en-croute/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/7a3bb218-dc85-4159-ab1d-2962ca868b1b_1791218137092.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>サーモンのパイ包み（Saumon en Croûte）</image:title>
-      <image:caption>2枚の鮭のフィレで、野菜を混ぜた白身魚のムースを挟んでラップで包み、香味野菜のクールブイヨンでポシェして冷ます。冷めた鮭をバターのパイ生地で包み、卵黄を塗ってからナイフの先でうろこを描き、180℃で生地だけをさっくり焼き上げる。泡立てた生クリームを合わせたソース・ムースリーヌを添える。鮭に先に火を通しておく段取りと、生地を湿らせずに包む手際が要になる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/daube-provencale/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/904de252-380c-4749-9302-94b4b73df776_1791218168506.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ドーブ・プロヴァンサル（Daube Provençale）</image:title>
-      <image:caption>角切りの牛肩肉を玉ねぎ・にんじん・香草と一緒に赤ワインと赤ワインビネガーで5時間半マリネし、溶かした豚の背脂で焼き付ける。マリネ液を半量に煮詰め、にんにくとオレンジの皮を加えて鍋を密閉し、弱火で4〜5時間、肉がスプーンで崩れるまで煮込む。一晩休ませて脂を除き、温め直して食べる。煮汁を沸かさずに長く保つ火加減と、翌日まで待つ時間が味を決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/baeckeoffe/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/71262e1b-1252-4542-a692-6c7b27b3c481_1791218172421.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ベッコフ（Baeckeoffe）</image:title>
-      <image:caption>羊・豚・牛の肩肉をアルザスの白ワインと玉ねぎ・クローブ・にんにく・香草で一晩マリネし、翌日、薄切りのじゃがいもと玉ねぎと交互に鍋へ重ねる。マリネ液を注いで蓋のすき間を小麦粉の生地でふさぎ、160℃のオーブンで4時間焼く。食卓で生地の目張りを割って蓋を開けると、肉とじゃがいもがワインの汁をたっぷり吸っている。手間は前日の仕込みと重ね方に集まり、あとはオーブンにまかせる料理。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/hachis-parmentier/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/bf04243c-237a-48cb-8f73-50cab6bd916d_1791218181698.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>アッシ・パルマンティエ（Hachis Parmentier）</image:title>
-      <image:caption>香味野菜と一緒に茹でた牛すね肉を細かく刻み、バターで炒めた玉ねぎに小麦粉と茹で汁のブイヨンを加えて煮たソースでまとめ、耐熱皿に敷く。上をバターと牛乳で仕上げたじゃがいものピュレで覆い、パン粉と溶かしバターをかけて高温のオーブンで焼き色をつける。肉は挽かずに刻み、ソースを冷ましてから合わせる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/carbonade-flamande/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/a111e162-5e3d-44d3-a2d7-a9ac2e160ec4_1791218185231.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>カルボナード・フラマンド（牛肉のビール煮）（Carbonade Flamande）</image:title>
-      <image:caption>牛の肩肉に強く焼き色をつけ、同じ鍋で玉ねぎを炒めてヴェルジョワーズでカラメル化させ、酢で鍋底をこそげる。ブラウンビールを注ぎ、マスタードを塗ったパン・デピスを上にのせて、蓋をして弱火で2時間30分煮る。パン・デピスが溶けてソースにとろみと甘い香辛料の香りがつき、ヴェルジョワーズの甘みと酢の酸味が加わる。北フランスでは、フライドポテトかじゃがいものピュレを添えて出す。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/cote-de-porc-sauce-charcutiere/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/ba84a890-ed28-4607-b87e-e2573ada27bc_1791218190697.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>豚の骨付きロースのソテー、シャルキュティエールソース（Côte de Porc Sauce Charcutière）</image:title>
-      <image:caption>骨付きの豚ロースをバターで両面ソテーし、骨の際まで火を通す。ソースは、色づけた玉ねぎに白ワインと酢を加えてほぼ水気がなくなるまで煮詰め、フォン・ド・ヴォーで煮詰めて、ソース・ロベールを作る。火を止めてマスタードを溶き込み、太めのせん切りにしたコルニッションを出す直前に加える。エスコフィエはじゃがいものピュレを添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/endives-au-jambon/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/ac1eeb72-c067-4abe-ab70-4081e5fecbbc_1791218208445.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>アンディーヴのハム包みグラタン（Endives au Jambon）</image:title>
-      <image:caption>芯の苦い部分を除いたアンディーヴを、下ゆでせずにバター・塩・レモン汁と少量の水で蓋をして蒸し煮にし、汁気を切ってハムで1本ずつ巻く。グリュイエールを溶かした濃いベシャメルを熱いうちにかけ、チーズとバターをのせて高温のオーブンで焼き色をつける。蒸し煮のあとは汁気をよく切ってから巻く。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/lotte-a-larmoricaine/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/c18241b6-4ef5-49fa-976b-b0e3534f6eda_1791218217267.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>アンコウのアルモリケーヌ（Lotte à l'Armoricaine）</image:title>
-      <image:caption>骨付きのまま輪切りにしたアンコウの尾の身を、ラングスティーヌの頭と殻と一緒にオリーブ油で炒め、エシャロットを加える。コニャックと白ワインを注ぎ、トマト・にんにく・タラゴン・オレンジの皮・トマトペースト・カイエンヌと15分煮る。魚を取り出して煮汁を漉し、生クリームを加えてソースにする。魚は少し締まりを残して煮上げ、バスマティ米を輪にして添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/cabillaud-au-beurre-blanc/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/66f44ff2-011d-4590-9ef5-6597503b6531_1791218223145.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>タラのブール・ブランソース（Cabillaud au Beurre Blanc）</image:title>
-      <image:caption>真だらの切り身を、レモンの輪切りと塩を入れた冷たい水から火にかけ、沸いたら静かに揺れる火加減でポシェする。ソースは、刻んだエシャロットをワインビネガーと魚のフュメで3分の1量まで煮詰め、火から下ろして冷たいバターを一度に入れ、泡立て器で強く混ぜて乳化させる。蒸したじゃがいもを添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/tournedos-rossini/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/7c296485-7cb1-4ccd-bd0a-de3f3b63b7ad_1791218229172.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>トゥルヌド・ロッシーニ（牛フィレとフォアグラ、トリュフ）（Tournedos Rossini）</image:title>
-      <image:caption>糸で縛って形を整えた牛フィレをバターで焼き、中をロゼに残して休ませる。バターで揚げ焼きにした丸い食パンにのせ、焼いたフォアグラと黒トリュフの薄切りを重ねる。焼いた鍋にマデイラ酒を注いで鍋底をこそげ、フォン・ド・ヴォーで煮詰めてソースにし、周りに流す。フォアグラは中心まで火を通す。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/lapin-a-la-moutarde/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/88bb8eb5-0c9e-4381-b869-22df79bbc1be_1791218238708.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ラパン・ア・ラ・ムータルド（うさぎのマスタード煮込み）（Lapin à la Moutarde）</image:title>
-      <image:caption>粉をはたいたうさぎのもも肉をバターとオリーブ油で焼き、エシャロット・にんにく・タイムを炒めた鍋に戻して白ワインと鶏のブイヨンを注ぎ、蓋をしてオーブンで1時間煮る。煮汁を漉して生クリームと5分煮立て、火から下ろしてディジョンマスタードと粒マスタード、冷たいバターを混ぜ込む。皿に盛ったうさぎにソースをかけ、カリッと焼いたベーコンをのせる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/truite-aux-amandes/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/35a70a43-13dd-4d7b-8c1a-70931898ac8c_1791218242438.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>マスのムニエル、アーモンド添え（Truite aux Amandes）</image:title>
-      <image:caption>丸ごとのニジマスに塩こしょうをして焼く直前に粉をはたき、バターで両面に焼き色をつけてから、火を弱めて中まで焼く。アーモンドスライスは別に乾煎りしておき、焼き上がる前にフライパンへ加える。皿に盛ったマスにレモン汁とパセリをかけ、同じフライパンでバターと酢を熱して、アーモンドと一緒に上から注ぐ。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/pommes-duchesse/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/7eace055-1c2d-4253-8fdb-25be24207d91_1791218248516.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ポム・デュシェス（Pommes Duchesse）</image:title>
-      <image:caption>粉質のじゃがいもを塩湯で少し硬めに茹で、オーブンで乾かしてから押して裏ごしし、バターと火にかけてさらに水分を飛ばす。火から下ろして卵黄と溶き卵でつなぎ、太い星口金でばら形に絞って溶き卵を塗り、高温のオーブンで山の筋だけをこんがり色づける。ローストした肉に添える古典の付け合わせで、生地の水分をどこまで飛ばすかが絞った形の立ち方を決める。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/pommes-anna/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/8b2b8767-14d9-4a62-80d8-06cbb38b4296_1791218254540.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ポム・アンナ（じゃがいものバター焼き重ね）（Pommes Anna）</image:title>
-      <image:caption>円筒形に整えたじゃがいもを薄い輪切りにし、洗って水気を拭く。バターを薄く色づけた厚手の鍋に、輪切りを少しずつ重ねて円を描くように並べ、列ごとに重ねる向きを変えながら5〜6層積む。層ごとに塩こしょうとバターをはさみ、蓋をしてオーブンで焼き、外して焼き色をつける。型から返すと、底だった面がきつね色のケーキ形になる。牛のトゥルヌドや仔羊のローストに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/endives-braisees/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/ceda3bd9-1ee2-48fe-baaf-ebeeacf38b86_1791218283587.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>アンディーヴの蒸し煮（Endives Braisées）</image:title>
-      <image:caption>根元の苦い部分を除いたアンディーヴを1段に並べ、レモン汁・塩・バター・水を加えて蓋をし、強く沸かしてから弱火で30〜35分煮る。下ゆではせず、レモンで白く保つ。汁気をよく切って皿に並べ、ブール・ノワゼットをかける。ローストや蒸し煮の肉の付け合わせにする。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/fondue-de-poireaux/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/808b2796-58d5-4b8d-a14e-501a575c89dd_1791218289791.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ポロねぎのフォンデュ（Fondue de Poireaux）</image:title>
-      <image:caption>ポロねぎの白い部分を縦に割ってよく洗い、5mm幅に切る。バターと少量の水で蓋をし、色づけずにごく弱火で20分蒸し煮にして、とろけるまでやわらかくする。蓋を外して水気を飛ばし、クレーム・フレッシュを加えて5分煮てまとめる。舌平目やターボに添え、ホタテの下に敷いて出す料理人もいる。</image:caption>
-    </image:image>
-  </url>
-
-<url>
-    <loc>https://tabelia.app/recipes/cepes-a-la-bordelaise/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/314569a0-6c67-4f9c-b3ed-a40395227862_1791218302377.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>セップのボルドー風（ペルシヤード仕上げ）（Cèpes à la Bordelaise）</image:title>
-      <image:caption>厚めに切ったセップを、油とレモン汁で蓋をして5分煮て汁気を切り、強火の油でさっと焼いて塩こしょうし、余分な油を切る。火を止めて、パセリとにんにくを細かく刻んだペルシヤードを加え、熱いうちに出す。ボルドーのセップは油で調理し、バターは使わない。肉や家禽の付け合わせにする。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/epinards-a-la-creme/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/a5ef0e30-94e2-4e5a-8b18-67577828fb83_1791218308060.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ほうれん草のクリーム煮（Épinards à la Crème）</image:title>
-      <image:caption>ほうれん草を蓋をせずにたっぷりの塩湯でゆで、冷水にとって固く絞り、細かく刻む。バターで強火で水分を飛ばしてから15分ゆっくり煮て水分を飛ばし、生クリームと残りのバターを加えてさらに10分煮る。仔牛や牛の料理に添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/choux-de-bruxelles-aux-lardons/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/76fad8f4-9116-407e-a7be-b0eb0b1bf6c8_1791218312327.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>芽キャベツとベーコンのソテー（Choux de Bruxelles aux Lardons）</image:title>
-      <image:caption>根元を整えた芽キャベツを塩湯で蓋をせずにゆで、冷水にとらずに水気を切る。下ゆでして塩気を抜いた棒状のベーコンをバターで焼き、芽キャベツを加えて強火で焼き色をつける。豚のロースト、キジやヤマウズラに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/gratin-de-chou-fleur/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/d6a3dea6-7673-47aa-84e9-a20ca395df3a_1791218316371.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>カリフラワーのグラタン（Gratin de Chou-Fleur）</image:title>
-      <image:caption>カリフラワーを小房に分けて塩ゆでし、少し固さを残して引き上げる。バターで軽く色づけて水気を飛ばし、耐熱皿に並べる。卵黄とグリュイエールを加えたモルネーソースで覆い、おろしたチーズと溶かしバターをのせて、高温のオーブンで焼き色をつける。牛のローストやトゥルヌドに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/haricots-verts-au-beurre/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/9fc64cb8-3371-4c23-84cc-415f758cd20d_1791218321127.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>いんげんのバター和え（Haricots Verts au Beurre）</image:title>
-      <image:caption>筋を取ったいんげんを、塩を入れたたっぷりの湯で蓋をせずに強火でゆで、歯ごたえを少し残して引き上げる。鍋に戻して揺すりながら水気を飛ばし、塩こしょうしてバターをからめ、すぐに出す。子羊のローストに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/pommes-de-terre-a-la-boulangere/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/a3131e97-b7d1-43a4-9b6f-375621a1f83e_1791218325066.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>じゃがいものブーランジェール風（Pommes de Terre à la Boulangère）</image:title>
-      <image:caption>薄切りにしたじゃがいもと玉ねぎを別々にバターで炒め、耐熱皿に重ねて、ブイヨンをひたひたに注ぐ。オーブンで25分、温度を下げて20分焼き、ブイヨンがほとんどなくなって表面に焼き色がつくまで仕上げる。子羊のもも肉や豚のロースに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/chou-vert-braise/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/684871fb-7ec9-47ce-8fcc-80ce0e7465a7_1791218329593.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>キャベツの蒸し煮（フランス風）（Chou Vert Braisé）</image:title>
-      <image:caption>キャベツを4つ割りにして塩湯で下ゆでし、冷水にとって固く絞り、葉をはがして太い葉脈を除く。豚ばら肉を敷いた鍋ににんじん、キャベツ、クローブを刺した玉ねぎ、香草の束を重ね、ブイヨンを注いで豚ばらで覆い、蓋をして180℃のオーブンで1時間30分煮る。豚のローストやソーセージ、ヤマウズラに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/celeri-branche-braise/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/159be76c-20ea-40b8-be68-3019260fa293_1791218335891.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>セロリの蒸し煮（フランス風）（Céleri-Branche Braisé）</image:title>
-      <image:caption>株のままのセロリの外側の硬い茎を除き、20cmに切りそろえて筋を取り、縦半分に割って塩湯で10分下ゆでする。糸で縛り、豚ばら肉・玉ねぎ・にんじんを敷いた深いバットに並べ、ブイヨンをひたひたに注いで、アルミ箔で覆って180℃のオーブンで1時間30分煮る。煮汁を漉して煮詰め、バターとレモン汁で仕上げてかける。ローストビーフや仔牛の料理に添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/lentilles-vertes-au-beurre-et-aux-lardons/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/8440dcc4-852b-4c83-a0b9-06c41b3d7df4_1791218342913.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>緑レンズ豆のバター仕立て、ベーコン添え（Lentilles Vertes au Beurre et aux Lardons）</image:title>
-      <image:caption>緑レンズ豆を水に浸けずに洗い、冷たい水から香味野菜とともにゆっくり沸かしてアクを取り、蓋をしてごく弱火で煮る。水気を切って鍋で揺すりながら乾かし、塩こしょうとバターでまとめ、別に焼いたベーコンとパセリを合わせる。塩漬けの豚肉やソーセージに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/buche-de-noel-au-chocolat/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/3d4cdbbd-799b-4231-a5a3-28fefa55a878_1791218347347.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>チョコレートのビュッシュ・ド・ノエル（Bûche de Noël au Chocolat）</image:title>
-      <image:caption>ココアのビスキュイを薄く焼いて温かいうちに巻き癖をつけ、ラムのシロップを打ってチョコレートのクレーム・オ・ブールを塗り、薪の形に巻き上げるクリスマスの菓子。表面をフォークで樹皮のように筋立て、切り株を載せ、余った卵白で焼いたメレンゲのきのこと粉糖の雪で飾る。120℃のシロップで卵を泡立てるパータ・ボンブと、バターを分離させずに混ぜ込む温度の見極めが技術の山になる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/galette-des-rois-a-la-frangipane/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/bccc4638-a221-4376-a811-ae0ffe975184_1791218371922.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ガレット・デ・ロワ（フランジパーヌ）（Galette des Rois à la Frangipane）</image:title>
-      <image:caption>カスタードを合わせたアーモンドクリーム（フランジパーヌ）を、丸く切った2枚の折り込みパイ生地で包み、縁を押さえて閉じる。卵黄を塗って模様を刻み、1時間冷やしてから190℃で焼き、熱いうちにシロップを塗ってつやを出す。1月6日の公現祭のころに切り分け、フェーヴを引き当てた人がその日の王になる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/pain-depices/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/cff20d6a-f1b2-41a7-9d69-f18ad027e1a3_1791218377415.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>パン・デピス（Pain d'Épices）</image:title>
-      <image:caption>はちみつを沸かしてアクを取り、ふるった小麦粉に注いで練り、布をかぶせて1時間休ませる。ベーキングパウダーとアニスシード、シナモン、クローブ、柑橘の皮を力を入れて練り込み、パウンド型で190℃で焼く。焼き上がりに甘くした牛乳を塗って、つやを出す。薄く切って、バターを塗ったりフォアグラに添えたりする。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/butterbredele/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/18380d95-f663-4c45-84ee-dce8b97ee495_1791218381318.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ブッターブレデレ（アルザスのバタークッキー）（Butterbredele）</image:title>
-      <image:caption>バターと砂糖を指ですり合わせて砂のようにし、卵黄を1個ずつ加えて粉を入れ、短くこねて2時間冷やす。厚さ4mmにのばして星やもみの木の型で抜き、少しの水でのばした卵黄を塗って180℃で10〜12分、きつね色に焼く。アルザスでは待降節に何種類も焼き、金属の缶にしまって祝いの期間に出す。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/crepes-suzette/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/db93b70d-9f80-424f-8522-a7bf55ad5471_1791218387098.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>クレープ・シュゼット（Crêpes Suzette）</image:title>
-      <image:caption>みかんの果汁とキュラソー、オリーブ油を加えた甘いクレープ生地を2時間休ませ、薄く焼く。みかんの皮と果汁、砂糖、キュラソーを練り込んだバターを1枚ずつ塗って四つ折りにし、フライパンで弱火で温めて、溶けたバターごと皿に盛る。火はつけない。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/souffle-au-grand-marnier/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/63c20ca4-b134-4f56-8220-fa2a16bae826_1791218422839.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>グラン・マルニエのスフレ（Soufflé au Grand Marnier）</image:title>
-      <image:caption>牛乳と砂糖を沸かして粉でつなぎ、オレンジの皮とグラン・マルニエで香りをつけた生地に、卵黄とバターを加える。固く泡立てた卵白を合わせ、バターを塗って砂糖をふった小さな型に入れて焼き、焼き上がりの直前に粉糖をふって、ふくらんだまますぐに食卓へ出す。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/tarte-meringuee-au-citron/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/52f8cb25-f77e-4171-80cc-367068f3ad8d_1791218428325.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>レモンメレンゲタルト（Tarte Meringuée au Citron）</image:title>
-      <image:caption>パート・ブリゼを型に敷いて空焼きし、粉とコーンスターチでつないだレモンクリームを流して焼く。熱いうちに、塩と砂糖・粉糖で泡立てたメレンゲで縁までしっかり覆い、オーブンで焼いて焼き色をつける。温かいうちでも、冷やしてからでも食べる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/coulant-au-chocolat/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/cd3540df-3d88-45ac-b647-ce3760ab4248_1791218435373.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>クーラン・オ・ショコラ（中心からガナッシュが流れる焼き菓子）（Coulant au Chocolat）</image:title>
-      <image:caption>小さく凍らせたガナッシュを、チョコレートとバターの生地で包んで直径5cmのセルクルで焼く。外側は焼けた生地の壁になり、温かいうちに型から外してスプーンを入れると、中心から溶けたガナッシュが流れ出る。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/opera/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/1ac2c2e2-cd95-4663-b015-f878ea6e8e54_1791218441202.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>オペラ（コーヒーとチョコレートの層の菓子）（Opéra）</image:title>
-      <image:caption>アーモンドの薄いスポンジ（ビスキュイ・ジョコンド）3枚に濃いコーヒーシロップをしみ込ませ、コーヒーのバタークリームとガナッシュを交互に薄く重ねる。冷やして固め、枠を外してチョコレートの上がけを一度で薄く広げ、縁を切りそろえて、上に「Opéra」の文字を書く。厚さは3cmを超えない。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/mille-feuille-a-la-vanille/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/416e2984-e8fb-4c57-9130-91c129320b87_1791218447138.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ミルフィーユ（バニラのクリームを挟んだパイ菓子）（Mille-Feuille à la Vanille）</image:title>
-      <image:caption>薄くのばしたパイ生地に穴をあけ、上から天板で押さえて平らに焼いた板を3枚作る。バニラで香りをつけたクレーム・パティシエールにキルシュを加え、板とクリームを交互に重ね、最後の板は平らな面を上にする。冷やして締めてから粉糖をふり、波刃の包丁で切る。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/babas-au-rhum/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/32f6c388-c490-43d7-b430-8db39ccee4b2_1791218455404.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ババ・オ・ラム（レーズン入りのラムのシロップ漬け）（Babas au Rhum）</image:title>
-      <image:caption>前日にラムに漬けたレーズンを、卵とバターの多い発酵生地に混ぜ、小さなババ型で倍にふくらませて焼く。冷ましてから、柑橘の皮とバニラで香りをつけ、火から下ろしてラムを加えたばかりの熱いシロップに沈め、泡が出なくなるまで含ませる。少し冷めたら生のラムをかける。火はつけない。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/pommes-bonne-femme/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/3b6380a9-2d95-4e1c-9f8a-a3796cb1afc6_1791218467440.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ポム・ボヌ・ファム（家庭風の焼きりんご）（Pommes Bonne-Femme）</image:title>
-      <image:caption>皮付きのりんごの芯を抜き、皮の周りに浅く切れ目を入れる。穴に砂糖を混ぜたバターを詰め、皿の底に少し水を張って、オーブンでゆっくり焼く。皿にたまった汁をかけ、焼いた器のまま食卓に出す。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/poires-au-vin-rouge/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/dbf751b3-91f1-4010-94c5-7a32c703ae99_1791218472775.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>洋梨の赤ワイン煮（皮と蜂蜜で煮る）（Poires au Vin Rouge）</image:title>
-      <image:caption>軸を残して皮をむいた洋梨を、むいた皮ごと、蜂蜜とカソナード、バニラ、コリアンダー、白こしょうで香りをつけたタンニンの強い赤ワインに立てて入れ、蓋をして弱火で20分煮る。煮汁ごと冷まして24時間冷やし、煮詰めない冷たい煮汁をかけて出す。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/gateau-nantais/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/d0aca099-460a-49b7-bcd5-74a819de0656_1791218478842.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ガトー・ナンテ（ナントのアーモンドとラムの焼き菓子）（Gâteau Nantais）</image:title>
-      <image:caption>有塩バターと砂糖を練り、アーモンドパウダーと卵、少しの小麦粉、ダークラムを加えた生地を丸型で焼く。焼き上がってすぐ逆さに型から出してラムをかけ、冷めたらラムで溶いた粉糖の白い糖衣を薄く塗る。中は密でしっとりし、糖衣は薄く少し割れる。翌日のほうがおいしいとされる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/mendiants-au-chocolat/</loc>
-    <lastmod>2026-10-05</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/6c1012b8-d9b3-4de9-ae82-485e4eff02df_1791218504375.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>マンディアン（4種のナッツと干し果物をのせたチョコレート）（Mendiants au Chocolat）</image:title>
-      <image:caption>製菓用チョコレートの3分の2を溶かして50〜55℃にし、残りを刻んだまま加えて31〜32℃に下げてテンパリングする。紙の上に小さな円盤に絞り、固まる前にアーモンド、ヘーゼルナッツ、レーズン、干しいちじくを1つずつのせ、18〜20℃の室温で固める。つやがあり、割るとぱきっと音がする。</image:caption>
-    </image:image>
-  </url>
-
-
-
-
-
-
-<url>
-    <loc>https://tabelia.app/recipes/carottes-vichy/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>キャロット・ヴィシー（にんじんのヴィシー風）（Carottes Vichy）</image:title>
-      <image:caption>にんじんを薄い輪切りにし、ひたひたの水に塩と砂糖を加えて、汁気がほとんどなくなるまで蓋をせずに煮る。火を止めて小さく切ったバターをからめ、つやを出してパセリを散らす。仔牛のコートや鶏のソテーに添える。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/en/recipes/carottes-vichy/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>Vichy-Style Glazed Carrots</image:title>
-      <image:caption>Thinly sliced carrots simmer uncovered with water, salt and sugar until almost all the liquid has evaporated. Toss with cold, diced butter off the heat and finish with parsley. Serve alongside veal chops or sautéed chicken.</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/it/ricette/carottes-vichy/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>Carote alla Vichy</image:title>
-      <image:caption>Le carote tagliate a rondelle sottili cuociono senza coperchio con acqua, sale e zucchero finché il liquido è quasi del tutto evaporato. A fuoco spento si uniscono il burro freddo a pezzetti e il prezzemolo. Accompagnano costolette di vitello o pollo saltato in padella.</image:caption>
-    </image:image>
-  </url>
-  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/brodo-basics-01-what-is-brodo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/brodo-basics-07-brodo-in-dishes/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/brodo-basics-02-types-of-brodo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/brodo-basics-06-fish-fumetto/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/brodo-basics-03-beef-brodo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/brodo-basics-04-chicken-brodo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/taste-memory-place/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/brodo-basics-05-vegetable-brodo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/noel-a-la-maison/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/ragu-bolognese-senza-spaghetti/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/gratin-dauphinois-sans-fromage/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/gazpacho-antes-del-tomate/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/carbonara-senza-panna/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/tiramisu-treviso-1972/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/paella-valenciana-sin-marisco/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-05-baking-and-resting/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-01-flour-and-water/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-03-kneading-and-folding/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-06-from-flour-to-table/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-02-yeast-and-time/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-04-shaping-and-bubbles/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-04-shapes-and-sauces/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-05-from-flour-to-noodle/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-08</lastmod></url>
 </urlset>
