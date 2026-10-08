@@ -74,3 +74,123 @@
 @media (prefers-reduced-motion: reduce) {
   .home-more-link .link-arrow, .home-article img { transition: none; }
 }
+
+/* Christmas campaign: approved full-width textile ribbon. */
+
+body:has(.article-feature) { overflow-x: clip; }
+
+.article-feature {
+  scroll-margin-top: 100px;
+  --noel-night: #17281f;
+  --noel-gold: #c4a265;
+  --noel-gold-hairline: rgba(196, 162, 101, 0.5);
+  --noel-berry: #8a2433;
+  --noel-ivory: #f4ecdd;
+  --noel-star: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23c4a265' d='M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z'/%3E%3C/svg%3E");
+  position: relative;
+  isolation: isolate;
+  margin: 0.5rem 0 3.25rem;
+  padding: 3.25rem 0 3.5rem;
+  color: var(--noel-ivory);
+}
+
+.article-feature::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  background:
+    linear-gradient(var(--noel-gold-hairline), var(--noel-gold-hairline)) bottom / 100% 1px no-repeat,
+    radial-gradient(ellipse 45% 70% at 30% 55%, rgba(214, 160, 84, 0.2), transparent 70%),
+    var(--noel-night);
+}
+
+.article-feature-link {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 3.25rem;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+.article-feature-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 12px 12px 52px 12px;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.35);
+}
+.article-feature-copy { display: flex; flex-direction: column; gap: 0.9rem; }
+
+.article-feature-kicker { display: flex; align-items: center; gap: 0.6rem; }
+.article-feature-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--noel-gold);
+}
+.article-feature-label::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: var(--noel-star) center / contain no-repeat;
+}
+
+.article-feature-countdown {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: rgba(244, 236, 221, 0.78);
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--noel-gold-hairline);
+}
+.article-feature-countdown b {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--noel-gold);
+  font-variant-numeric: lining-nums;
+}
+
+.article-feature-title {
+  font-size: 2rem;
+  line-height: 1.35;
+  color: var(--noel-ivory);
+}
+.article-feature-tagline {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: rgba(244, 236, 221, 0.74);
+}
+.article-feature-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  color: rgba(244, 236, 221, 0.55);
+}
+.article-feature-meta svg { color: var(--noel-gold); transition: transform 180ms ease; }
+.article-feature-link:hover .article-feature-meta svg { transform: translateX(4px); }
+.article-feature-link:active { opacity: 0.85; }
+.article-feature-link:focus-visible { outline: 2px solid var(--noel-gold); outline-offset: 6px; border-radius: 14px; }
+
+@media (max-width: 720px) {
+  .article-feature { padding: 2rem 0 2.25rem; margin-bottom: 2.25rem; }
+  .article-feature-link { grid-template-columns: 1fr; gap: 1.4rem; }
+  .article-feature-title { font-size: 1.5rem; }
+  .article-feature-countdown b { font-size: 2.1rem; }
+}
+
+.article-feature::after { content: ''; position: absolute; z-index: 0; top: -2px; left: calc(50% - 50vw); right: calc(50% - 50vw); height: 32px; background: url('/assets/christmas-ribbon-2026.webp') repeat-x center top / 1200px 32px; pointer-events: none; }
+.article-feature[hidden] { display: none; }
+@media (max-width: 720px) { .article-feature { padding-top: 3rem; } .article-feature::after { height: 24px; background-size: 900px 24px; } }
