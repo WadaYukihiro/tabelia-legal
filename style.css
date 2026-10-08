@@ -1905,7 +1905,7 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 
 /* Preserve the full reference image; a crop can hide a cooking cue. */
 .step-image { margin: .75rem 0 1rem; }
-.step-image img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; background: #f4f0e9; border-radius: 8px; }
+.step-image img { display: block; width: 100%; height: auto; object-fit: contain; background: #f4f0e9; border-radius: 8px; }
 .step-image-note { color: #715438; font-size: .78rem; }
 
 /* Licensed regional photography in recipe stories (all locales). */
