@@ -6,11 +6,6 @@
   var mobile = window.matchMedia('(max-width: 600px)');
   var nav = header.querySelector('.site-nav');
   var link = header.querySelector('.header-search-link');
-  var expandedHeight = 0;
-  var spacer = document.createElement('div');
-  spacer.className = 'header-scroll-spacer';
-  spacer.setAttribute('aria-hidden', 'true');
-  header.after(spacer);
   var menuButton;
   if (nav && link) {
     var labels = { ja: 'メニュー', en: 'Menu', it: 'Menu' };
@@ -44,31 +39,10 @@
       if (mobile.matches && header.classList.contains('header-mobile-enhanced')) event.preventDefault();
     });
   }
-  function measure() {
-    var height = header.offsetHeight;
-    if (!header.classList.contains('header-compact')) expandedHeight = height;
-    spacer.style.height = mobile.matches ? Math.max(0, expandedHeight - height) + 'px' : '0px';
-    document.documentElement.style.setProperty('--site-header-height', height + 'px');
-  }
-  function updateHeader() {
-    if (!menuButton) return;
-    var threshold = header.classList.contains('header-compact') ? 24 : 80;
-    var compact = mobile.matches && window.scrollY > threshold;
-    // Do not move a control while someone is using it.
-    var keyboardFocus = header.contains(document.activeElement) && document.activeElement.matches(':focus-visible');
-    if (compact && (keyboardFocus || header.classList.contains('header-menu-open') || header.querySelector('details[open]'))) return;
-    header.classList.toggle('header-compact', compact);
-    measure();
-  }
-  var scrollPending = false;
-  window.addEventListener('scroll', function () {
-    if (scrollPending) return;
-    scrollPending = true;
-    requestAnimationFrame(function () { scrollPending = false; updateHeader(); });
-  }, { passive: true });
-  mobile.addEventListener('change', function () { setMenu(false); header.classList.remove('header-compact'); measure(); updateHeader(); });
+  // SP のヘッダーは高さが変わらない（検索はアイコンだけ）ので、追従位置の計算には実測の高さだけを渡す
+  function measure() { document.documentElement.style.setProperty('--site-header-height', header.offsetHeight + 'px'); }
+  mobile.addEventListener('change', function () { setMenu(false); measure(); });
   new ResizeObserver(measure).observe(header); measure();
-  updateHeader();
   function markCuisine() {
     var isSearch = /\/(?:recipes|ricette)\/search\/?$/.test(location.pathname);
     var selected = (new URLSearchParams(location.search).get('country') || '').split(',');

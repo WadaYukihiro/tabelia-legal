@@ -347,8 +347,9 @@ function startDiscovery(copy, facets) {
   // 条件付きの URL（共有リンク・戻る操作）で開いたときは、結果の画面から始める
   main.dataset.view = hasFilters() ? 'results' : 'filters';
   history.replaceState({ view: main.dataset.view, applied: false }, '', location.href);
-  // ヘッダーの検索欄・目次の検索ボタンから来たときは、そのまま入力できるようにする（もう一度タップさせない）
-  if (main.dataset.view === 'filters') input.focus({ preventScroll: true });
+  // デスクトップはヘッダーの検索欄から来るので、そのまま入力できるようにする（もう一度クリックさせない）。
+  // SP はキーボードが国・難易度の選択肢を隠すため、自動ではフォーカスしない（ヘッダーも検索アイコンだけにしている）
+  if (main.dataset.view === 'filters' && !mobile.matches) input.focus({ preventScroll: true });
   load();
 }
 

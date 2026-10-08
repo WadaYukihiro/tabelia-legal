@@ -122,16 +122,15 @@ html:not([lang="ja"]) .discovery-cuisine-count small { display: none; }
   .discovery-card-body { padding: 0.6rem 0.65rem 0.7rem; }
   .discovery-card h3 { font-size: 1rem; }
   .discovery-card-difficulty-label { display: none; }
-  body.discovery-body > .site-header.header-mobile-enhanced, body.discovery-body > .site-header.header-mobile-enhanced.header-compact { grid-template-areas: "brand . language menu"; }
+  body.discovery-body > .site-header.header-mobile-enhanced { grid-template-areas: "brand . language menu"; }
 }
 @keyframes discovery-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 @media(max-width: 600px) { body > .site-header, .site-header { grid-template-areas: "brand . language" "search search search" "nav nav nav"; gap: 0.25rem 0.5rem; }.site-header > .header-search-link { max-width: none; }.site-header > .site-nav { gap: 0.3rem 0.7rem; }.site-nav a { font-size: 0.75rem; } }
 .header-menu-toggle { display: none; }
-.header-scroll-spacer { overflow-anchor: none; display: flow-root; }
 @media (max-width: 600px) {
   body > .site-header.header-mobile-enhanced {
     grid-template-columns: minmax(0, 1fr) 44px 44px 44px;
-    grid-template-areas: "brand . language menu" "search search search search";
+    grid-template-areas: "brand search language menu";
     align-items: center;
     gap: 0.25rem 0.4rem;
     padding-top: 0.5rem;
@@ -190,15 +189,14 @@ html:not([lang="ja"]) .discovery-cuisine-count small { display: none; }
   .header-mobile-enhanced .recipe-menu-native { font-size: 1.12rem; }
   .header-mobile-enhanced .site-nav .recipe-menu-all { margin-top: 0.1rem; padding: 0.6rem 0.6rem 0.4rem; }
   .header-mobile-enhanced > .site-nav { max-height: calc(100dvh - var(--site-header-height, 64px) - 1rem); overflow-y: auto; }
-  body > .site-header.header-mobile-enhanced.header-compact { grid-template-areas: "brand search language menu"; }
-  .header-mobile-enhanced.header-compact > .header-search-link {
+  /* SP のヘッダーは検索ページへ移るアイコンだけにする。入力欄の形にすると、遷移後にもう一度タップさせることになる */
+  .header-mobile-enhanced > .header-search-link {
     justify-content: center;
     width: 44px;
     height: 44px;
     padding: 0;
     border-radius: 50%;
-    animation: discovery-in 150ms ease;
   }
-  .header-compact .header-search-label { display: none; }
+  .header-mobile-enhanced .header-search-label { display: none; }
 }
-@media(prefers-reduced-motion: reduce) { .discovery-card, .recipe-menu-panel, .discovery-courses, .discovery-check, .discovery-course, .discovery-difficulty-button, .header-menu-toggle, .header-mobile-enhanced > .site-nav, .header-mobile-enhanced > .header-search-link { animation: none !important; transition: none; } }
+@media(prefers-reduced-motion: reduce) { .discovery-card, .recipe-menu-panel, .discovery-courses, .discovery-check, .discovery-course, .discovery-difficulty-button, .header-menu-toggle, .header-mobile-enhanced > .site-nav { animation: none !important; transition: none; } }
