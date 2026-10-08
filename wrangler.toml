@@ -2,11 +2,15 @@ name = "tabelia-legal"
 compatibility_date = "2026-05-28"
 compatibility_flags = ["nodejs_compat"]
 workers_dev = true
+# /img/ だけ Worker が処理し、それ以外は静的ファイルを返す（worker/index.js）
+main = "worker/index.js"
 
 [observability]
 enabled = true
 
 [assets]
 directory = "."
+binding = "ASSETS"
+run_worker_first = ["/img/*"]
 # 存在しないURLでは /404.html を404ステータスで返す（レシピslug変更時の旧URL等）
 not_found_handling = "404-page"
