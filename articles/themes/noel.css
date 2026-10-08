@@ -1,0 +1,123 @@
+/*
+ * 記事テーマ「noel」（クリスマス）。learn_articles.visual_theme = 'noel' の記事だけが読み込む。
+ * 正本はこのファイルで、生成器が /articles/themes/noel.css へ書き出す。style.css は変更しない。
+ *
+ * 視覚信号は3つに絞る（2026-10-08 利用者承認の設計）:
+ *   1. 夜色の表紙帯（見出し・冒頭の問い・カバー。カバーの下側は帯からはみ出させる）
+ *   2. 金の飾り（章見出しの星とローマ数字、冒頭の問いの罫、結びの星）
+ *   3. 画像の大小（display: 'wide' の図版を本文の列より広げる）
+ * 雪・赤と緑のイラスト・絵文字・背景の柄・色付きの囲みは使わない。
+ */
+
+body[data-article-theme="noel"] {
+  --noel-night: #17281f;
+  --noel-ivory: #f4ecdd;
+  --noel-ivory-muted: rgba(244, 236, 221, 0.74);
+  --noel-ivory-faint: rgba(244, 236, 221, 0.5);
+  --noel-gold: #c4a265;
+  --noel-gold-hairline: rgba(196, 162, 101, 0.55);
+  --noel-band-overhang: 120px;
+  --noel-star: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23c4a265' d='M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z'/%3E%3C/svg%3E");
+  /* 帯を画面幅いっぱいに描くとスクロールバーの幅だけ横にはみ出すため、横方向だけ切り取る */
+  overflow-x: clip;
+}
+
+/* ── 1. 夜色の表紙帯 ─────────────────────────────────────────── */
+
+body[data-article-theme="noel"] .article-hero {
+  position: relative;
+  isolation: isolate;
+  padding: 2.75rem 0 0;
+  margin-bottom: 3rem;
+}
+body[data-article-theme="noel"] .article-hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: var(--noel-band-overhang);
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  background: var(--noel-night);
+}
+body[data-article-theme="noel"] .learn-article-head .eyebrow { color: var(--noel-gold); }
+body[data-article-theme="noel"] .learn-article-head h1 { color: var(--noel-ivory); }
+body[data-article-theme="noel"] .learn-tagline { color: var(--noel-ivory-muted); }
+body[data-article-theme="noel"] .learn-meta,
+body[data-article-theme="noel"] .learn-meta a { color: var(--noel-ivory-faint); }
+
+/* 共有ボタンは帯の上だけ反転する（記事末尾の共有ボタンは通常の地に載るので変えない） */
+body[data-article-theme="noel"] .article-hero .recipe-share-button {
+  background: transparent;
+  border-color: rgba(244, 236, 221, 0.32);
+  color: var(--noel-ivory);
+}
+body[data-article-theme="noel"] .article-hero .recipe-share-button:hover {
+  border-color: var(--noel-gold);
+  color: var(--noel-gold);
+}
+body[data-article-theme="noel"] .article-hero .recipe-share-button:focus-visible { outline-color: var(--noel-gold); }
+body[data-article-theme="noel"] .article-hero .recipe-share-status { color: var(--noel-ivory-muted); }
+
+body[data-article-theme="noel"] .article-hero .article-opening-question {
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: 1.15rem;
+  color: var(--noel-ivory);
+  border-bottom-color: var(--noel-gold-hairline);
+}
+body[data-article-theme="noel"] .article-hero .article-cover { margin-bottom: 0; }
+body[data-article-theme="noel"] .article-hero .article-cover img {
+  box-shadow: 0 18px 40px rgba(23, 40, 31, 0.28);
+}
+
+/* ── 2. 金の飾り ────────────────────────────────────────────── */
+
+body[data-article-theme="noel"] .learn-article { counter-reset: noel-chapter; }
+body[data-article-theme="noel"] .learn-heading {
+  counter-increment: noel-chapter;
+  text-align: center;
+  margin-top: 3.75rem;
+  margin-bottom: 1.25rem;
+}
+body[data-article-theme="noel"] .learn-heading::before {
+  content: counter(noel-chapter, upper-roman);
+  display: block;
+  padding-top: 22px;
+  margin-bottom: 0.3rem;
+  background: var(--noel-star) center top / 13px 13px no-repeat;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: var(--noel-gold);
+}
+
+/* 結びの星。本文の後、注記か出典の手前に一つだけ置く */
+body[data-article-theme="noel"] .article-image-note::before,
+body[data-article-theme="noel"] .learn-article > .article-sources:not(.article-image-note + .article-sources)::before {
+  content: '';
+  display: block;
+  height: 13px;
+  margin: 0 auto 2.5rem;
+  background:
+    var(--noel-star) left center / 9px 9px no-repeat,
+    var(--noel-star) center / 13px 13px no-repeat,
+    var(--noel-star) right center / 9px 9px no-repeat;
+  width: 64px;
+}
+body[data-article-theme="noel"] .article-image-note { text-align: center; }
+
+/* ── 3. 画像の大小 ──────────────────────────────────────────── */
+
+body[data-article-theme="noel"] .learn-figure { margin: 2.5rem 0; }
+body[data-article-theme="noel"] .learn-figure-wide {
+  margin-left: calc(50% - min(540px, 50vw - 16px));
+  margin-right: calc(50% - min(540px, 50vw - 16px));
+}
+
+@media (max-width: 720px) {
+  body[data-article-theme="noel"] { --noel-band-overhang: 56px; }
+  body[data-article-theme="noel"] .article-hero { padding-top: 2rem; margin-bottom: 2.25rem; }
+  body[data-article-theme="noel"] .article-hero .article-opening-question { font-size: 1.05rem; }
+  body[data-article-theme="noel"] .learn-heading { margin-top: 3rem; }
+}

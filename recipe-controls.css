@@ -77,3 +77,7 @@ body:has(.recipe-save) { padding-bottom: 88px; }
 .recipe-hub-copy > p.recipe-hub-saves:not(.eyebrow) { margin-top: 0.7rem; color: #777066; font-size: 0.82rem; line-height: 1.6; }
 .recipe-hub-saves strong { color: #9e2f23; font-weight: 700; font-variant-numeric: tabular-nums; }
 .recipe-save-phrase { display: inline-block; }
+
+/* 生成画像の注記。キャプションのない生成画像がある記事だけに出る（scripts/lib/web-articles.ts generatedImageNoteHtml） */
+.article-image-note { margin: 3rem 0 0; font-size: 0.78rem; line-height: 1.7; color: #938b81; }
+.article-image-note + .article-sources { margin-top: 1.25rem; }
