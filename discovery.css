@@ -47,7 +47,9 @@ a:focus-visible, summary:focus-visible, select:focus-visible, input:focus-visibl
 .discovery-filters-panel h1 { margin: 0; font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.6rem; font-weight: 600; line-height: 1.3; }
 .discovery-query { position: relative; margin-top: 0.85rem; }
 .discovery-query svg { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: #8b8175; pointer-events: none; }
-#discovery-query { width: 100%; height: 50px; padding: 0 1rem 0 2.75rem; border: 1px solid #ddd4c8; border-radius: 12px; background: #fff; color: #252018; font: inherit; font-size: 0.95rem; }
+#discovery-query { width: 100%; height: 50px; padding: 0 1rem 0 2.75rem; border: 1px solid #ddd4c8; border-radius: 12px; background: #fff; color: #252018; font: inherit; font-size: 0.95rem; transition: border-color 150ms ease, box-shadow 150ms ease; }
+/* 遷移直後の自動フォーカスはキーボード操作ではないため :focus-visible の枠が出ない。入力できる状態を枠の色で示す */
+#discovery-query:focus { border-color: #9e2f23; box-shadow: 0 0 0 3px #9e2f231f; outline: none; }
 .discovery-facets { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
 .discovery-facet-label { margin: 0 0 0.35rem; color: #8b8175; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; }
 .discovery-cuisines { border-top: 1px solid #e7e0d6; }
