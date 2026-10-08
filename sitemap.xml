@@ -81,20 +81,6 @@
   <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-05-baking-and-resting/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-01-flour-and-water/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-03-kneading-and-folding/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-06-from-flour-to-table/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-02-yeast-and-time/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/bread-basics-04-shaping-and-bubbles/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-04-shapes-and-sauces/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-05-from-flour-to-noodle/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-10-03</lastmod></url>
@@ -17298,30 +17284,6 @@
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi. I profumi di Cointreau ed espresso ne esprimono il carattere autentico.</image:caption>
     </image:image>
   </url>
-  <url>
-    <loc>https://tabelia.app/articles/paella-valenciana-sin-marisco/</loc>
-    <lastmod>2026-10-03</lastmod>
-  </url>
-  <url>
-    <loc>https://tabelia.app/articles/tiramisu-treviso-1972/</loc>
-    <lastmod>2026-10-03</lastmod>
-  </url>
-  <url>
-    <loc>https://tabelia.app/articles/gazpacho-antes-del-tomate/</loc>
-    <lastmod>2026-10-03</lastmod>
-  </url>
-  <url>
-    <loc>https://tabelia.app/articles/carbonara-senza-panna/</loc>
-    <lastmod>2026-10-03</lastmod>
-  </url>
-  <url>
-    <loc>https://tabelia.app/articles/gratin-dauphinois-sans-fromage/</loc>
-    <lastmod>2026-10-03</lastmod>
-  </url>
-  <url>
-    <loc>https://tabelia.app/articles/ragu-bolognese-senza-spaghetti/</loc>
-    <lastmod>2026-10-03</lastmod>
-  </url>
 <url>
     <loc>https://tabelia.app/recipes/gougeres/</loc>
     <lastmod>2026-10-05</lastmod>
@@ -17782,7 +17744,6 @@
       <image:caption>製菓用チョコレートの3分の2を溶かして50〜55℃にし、残りを刻んだまま加えて31〜32℃に下げてテンパリングする。紙の上に小さな円盤に絞り、固まる前にアーモンド、ヘーゼルナッツ、レーズン、干しいちじくを1つずつのせ、18〜20℃の室温で固める。つやがあり、割るとぱきっと音がする。</image:caption>
     </image:image>
   </url>
-  <url><loc>https://tabelia.app/articles/noel-a-la-maison/</loc><lastmod>2026-10-06</lastmod></url>
 
 
 
@@ -17828,4 +17789,34 @@
       <image:caption>Le carote tagliate a rondelle sottili cuociono senza coperchio con acqua, sale e zucchero finché il liquido è quasi del tutto evaporato. A fuoco spento si uniscono il burro freddo a pezzetti e il prezzemolo. Accompagnano costolette di vitello o pollo saltato in padella.</image:caption>
     </image:image>
   </url>
+  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-01-what-is-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-07-brodo-in-dishes/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-02-types-of-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-06-fish-fumetto/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-03-beef-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-04-chicken-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/taste-memory-place/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/brodo-basics-05-vegetable-brodo/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/noel-a-la-maison/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/ragu-bolognese-senza-spaghetti/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/gratin-dauphinois-sans-fromage/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/gazpacho-antes-del-tomate/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/carbonara-senza-panna/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/tiramisu-treviso-1972/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/paella-valenciana-sin-marisco/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-05-baking-and-resting/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-01-flour-and-water/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-03-kneading-and-folding/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-06-from-flour-to-table/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-02-yeast-and-time/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/bread-basics-04-shaping-and-bubbles/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-04-shapes-and-sauces/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-05-from-flour-to-noodle/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-08</lastmod></url>
 </urlset>
