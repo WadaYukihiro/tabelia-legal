@@ -17565,15 +17565,7 @@
       <image:caption>ポロねぎの白い部分を縦に割ってよく洗い、5mm幅に切る。バターと少量の水で蓋をし、色づけずにごく弱火で20分蒸し煮にして、とろけるまでやわらかくする。蓋を外して水気を飛ばし、クレーム・フレッシュを加えて5分煮てまとめる。舌平目やターボに添え、ホタテの下に敷いて出す料理人もいる。</image:caption>
     </image:image>
   </url>
-<url>
-    <loc>https://tabelia.app/recipes/carottes-vichy/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <image:image>
-      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>キャロット・ヴィシー（にんじんのヴィシー風）（Carottes Vichy）</image:title>
-      <image:caption>にんじんを薄い輪切りにし、ひたひたの水に塩と砂糖を加えて、汁気がほとんどなくなるまで蓋をせずに煮る。火を止めて小さく切ったバターをからめ、つやを出してパセリを散らす。仔牛のコートや鶏のソテーに添える。</image:caption>
-    </image:image>
-  </url>
+
 <url>
     <loc>https://tabelia.app/recipes/cepes-a-la-bordelaise/</loc>
     <lastmod>2026-10-07</lastmod>
@@ -17791,4 +17783,46 @@
     </image:image>
   </url>
   <url><loc>https://tabelia.app/articles/noel-a-la-maison/</loc><lastmod>2026-10-06</lastmod></url>
+
+
+
+<url>
+    <loc>https://tabelia.app/recipes/carottes-vichy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>キャロット・ヴィシー（にんじんのヴィシー風）（Carottes Vichy）</image:title>
+      <image:caption>にんじんを薄い輪切りにし、ひたひたの水に塩と砂糖を加えて、汁気がほとんどなくなるまで蓋をせずに煮る。火を止めて小さく切ったバターをからめ、つやを出してパセリを散らす。仔牛のコートや鶏のソテーに添える。</image:caption>
+    </image:image>
+  </url>
+<url>
+    <loc>https://tabelia.app/en/recipes/carottes-vichy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Vichy-Style Glazed Carrots</image:title>
+      <image:caption>Thinly sliced carrots simmer uncovered with water, salt and sugar until almost all the liquid has evaporated. Toss with cold, diced butter off the heat and finish with parsley. Serve alongside veal chops or sautéed chicken.</image:caption>
+    </image:image>
+  </url>
+<url>
+    <loc>https://tabelia.app/it/ricette/carottes-vichy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/carottes-vichy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/carottes-vichy/"/>
+    <image:image>
+      <image:loc>https://zyvkuzjemabnvbxwzxll.supabase.co/storage/v1/render/image/public/recipe-images/0fe2c0ec-8194-49a7-b978-e8caa1231d5b_1791218295507.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>Carote alla Vichy</image:title>
+      <image:caption>Le carote tagliate a rondelle sottili cuociono senza coperchio con acqua, sale e zucchero finché il liquido è quasi del tutto evaporato. A fuoco spento si uniscono il burro freddo a pezzetti e il prezzemolo. Accompagnano costolette di vitello o pollo saltato in padella.</image:caption>
+    </image:image>
+  </url>
 </urlset>
