@@ -31,10 +31,18 @@
     header.classList.add('header-mobile-enhanced');
     menuButton.addEventListener('click', function () { setMenu(menuButton.getAttribute('aria-expanded') !== 'true'); });
   }
+  var recipeMenu = header.querySelector('.recipe-menu');
   function setMenu(open) {
     header.classList.toggle('header-menu-open', open);
     if (menuButton) menuButton.setAttribute('aria-expanded', String(open));
     if (!open && nav) nav.querySelectorAll('details[open]').forEach(function (menu) { menu.open = false; });
+    // スマホのメニューでは国の一覧を最初から開き、「レシピ」を見出しとして扱う（ポップオーバーを重ねない）
+    if (open && recipeMenu && mobile.matches) recipeMenu.open = true;
+  }
+  if (recipeMenu) {
+    recipeMenu.querySelector('summary').addEventListener('click', function (event) {
+      if (mobile.matches && header.classList.contains('header-mobile-enhanced')) event.preventDefault();
+    });
   }
   function measure() {
     var height = header.offsetHeight;
@@ -63,11 +71,11 @@
   updateHeader();
   function markCuisine() {
     var isSearch = /\/(?:recipes|ricette)\/search\/?$/.test(location.pathname);
-    var selected = new URLSearchParams(location.search).get('country') || '';
+    var selected = (new URLSearchParams(location.search).get('country') || '').split(',');
     header.querySelectorAll('[data-cuisine]').forEach(function (option) {
       var hubPath = new URL(option.href).pathname;
-      var isHub = location.pathname === hubPath || (option.dataset.cuisine && location.pathname.indexOf(hubPath) === 0);
-      if (isHub || (isSearch && option.dataset.cuisine === selected)) option.setAttribute('aria-current', 'true');
+      var isHub = !isSearch && (location.pathname === hubPath || (option.dataset.cuisine && location.pathname.indexOf(hubPath) === 0));
+      if (isHub || (isSearch && option.dataset.cuisine && selected.indexOf(option.dataset.cuisine) >= 0)) option.setAttribute('aria-current', 'true');
       else option.removeAttribute('aria-current');
     });
   }
@@ -81,6 +89,8 @@
     button.addEventListener('click', function (event) { event.stopImmediatePropagation(); location.assign(link.href); }, true);
   });
   document.addEventListener('click', function (event) {
+    // メニューボタンの押下は setMenu が国の一覧を開くので、ここで閉じ直さない
+    if (menuButton && menuButton.contains(event.target)) return;
     header.querySelectorAll('details[open]').forEach(function (menu) { if (!menu.contains(event.target)) menu.open = false; });
     if (!header.contains(event.target)) setMenu(false);
   });
