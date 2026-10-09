@@ -1,6 +1,6 @@
 # Recipe story photographs
 
-全399料理の本文に照らして選定した実写113枚。対応・選定理由・根拠は `scripts/data/story-photo-assignments.json`、撮影地・作者・利用条件の唯一の正は `scripts/data/story-photos.json`。州ごとの自動割り当ては行わない。
+料理の背景に使う写真を登録しています。今回、ローマの実写5枚を追加しました。対応・選定理由・根拠は `scripts/data/story-photo-assignments.json`、撮影地・作者・利用条件の唯一の正は `scripts/data/story-photos.json`。州ごとの自動割り当ては行わない。
 
 ## Attribution and image licenses
 
@@ -127,3 +127,10 @@ Sources and visual correspondence verified: 2026-09-29.
 | `etna.webp` — Etna, vista da Randazzo | [L'Etna vista dalla campagna di Randazzo.JPG](https://commons.wikimedia.org/wiki/File:L%27Etna_vista_dalla_campagna_di_Randazzo.JPG) | Pequod76 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | `viterbo.webp` — Viterbo, Via San Pellegrino | [Viterbo, via di san pellegrino 01.jpg](https://commons.wikimedia.org/wiki/File:Viterbo%2C_via_di_san_pellegrino_01.jpg) | Sailko | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) |
 | `ardeche-antraigues.webp` — Antraigues-sur-Volane, Ardèche | [Jean Ferrat et le village d'Antraigues.jpg](https://commons.wikimedia.org/wiki/File:Jean_Ferrat_et_le_village_d%27Antraigues.jpg) | Eva Soncin | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| `roma-campo-de-fiori.webp` — Roma, Campo de’ Fiori | [Campo dei Fiori.jpg](https://commons.wikimedia.org/wiki/File:Campo_dei_Fiori.jpg) | Myrabella | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| `roma-testaccio.webp` — Roma, Piazza Testaccio | [P Testaccio rinnovata P1070076.jpg](https://commons.wikimedia.org/wiki/File:P_Testaccio_rinnovata_P1070076.jpg) | Lalupa | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `roma-monti.webp` — Roma, Via di San Martino ai Monti | [Rom, die Straße Via di San Martino Ai Monti.JPG](https://commons.wikimedia.org/wiki/File:Rom,_die_Stra%C3%9Fe_Via_di_San_Martino_Ai_Monti.JPG) | Dguendel | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) |
+| `roma-coronari.webp` — Roma, Via dei Coronari | [Via dei Coronari in Rome (1).jpg](https://commons.wikimedia.org/wiki/File:Via_dei_Coronari_in_Rome_(1).jpg) | Krzysztof Golik | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| `roma-augusto-imperatore.webp` — Roma, Piazza Augusto Imperatore | [IMPERATORE1INPS7102022 057A.jpg](https://commons.wikimedia.org/wiki/File:IMPERATORE1INPS7102022_057A.jpg) | indeciso42 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+
+Rome additions: sources, licenses and visual correspondence verified on 2026-10-10.
