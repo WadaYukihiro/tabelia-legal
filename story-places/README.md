@@ -134,3 +134,13 @@ Sources and visual correspondence verified: 2026-09-29.
 | `roma-augusto-imperatore.webp` — Roma, Piazza Augusto Imperatore | [IMPERATORE1INPS7102022 057A.jpg](https://commons.wikimedia.org/wiki/File:IMPERATORE1INPS7102022_057A.jpg) | indeciso42 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
 Rome additions: sources, licenses and visual correspondence verified on 2026-10-10.
+
+Naples and Sicily additions: sources, licenses and visual correspondence verified on 2026-10-10.
+
+| `napoli-spaccanapoli.webp` | Napoli, Spaccanapoli | Velvet | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Original](https://commons.wikimedia.org/wiki/File:Naples_spaccanapoli.JPG) | Resized; display cropped |
+| `napoli-pignasecca.webp` | Napoli, Mercato della Pignasecca | Argo Navis | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Original](https://commons.wikimedia.org/wiki/File:Pignasecca_market,_Naples_20230622_02.jpg) | Resized; display cropped |
+| `napoli-bellini.webp` | Napoli, Piazza Bellini | Armando Mancini | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Original](https://commons.wikimedia.org/wiki/File:Napoli_-_Panoramica_su_Piazza_Bellini.jpg) | Resized; display cropped |
+| `palermo-pretoria.webp` | Palermo, Piazza Pretoria | Benjamin Smith | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Original](https://commons.wikimedia.org/wiki/File:Palermo_-_Piazza_Pretoria.jpg) | Resized; display cropped |
+| `palermo-maqueda.webp` | Palermo, Via Maqueda | Civa61 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Original](https://commons.wikimedia.org/wiki/File:Via_maqueda.JPG) | Resized; display cropped |
+| `siracusa-ortigia.webp` | Siracusa, Ortigia | Andy Montgomery | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Original](https://commons.wikimedia.org/wiki/File:The_streets_of_Ortigia_Island,_Syracuse,_Sicily.jpg) | Resized; display cropped |
+| `cefalu-lungomare.webp` | Cefalù, Lungomare | Pava | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Original](https://commons.wikimedia.org/wiki/File:Lungomare_Cefal%C3%B9.JPG) | Resized; display cropped |
