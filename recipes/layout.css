@@ -22,15 +22,25 @@
   .recipe-rail .recipe-ingredients { max-height: none; overflow: visible; }
 }
 
-/* 代わりに使える食材の一覧（日本語版）。ダイアログと同じデータを本文に置く。罫線で区切り、色面の囲みは使わない */
-.recipe-substitutions { margin-top: 3.5rem; }
-.recipe-substitutions > h2 { margin: 0; padding: 0; border: 0; font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 2rem; }
-.substitution-reference { margin-top: 1.75rem; }
+/* 代わりに使える食材の一覧（日本語版）。ダイアログと同じデータを本文に置く。
+   閉じた1行でページ末尾に置き、読み進める流れを遮らない。罫線で区切り、色面の囲みは使わない */
+.recipe-substitutions { margin-top: 3rem; border-top: 1px solid #e3dbd0; border-bottom: 1px solid #e3dbd0; }
+.recipe-substitutions > summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; cursor: pointer; list-style: none; }
+.recipe-substitutions > summary::-webkit-details-marker { display: none; }
+.recipe-substitutions > summary h2 { margin: 0; padding: 0; border: 0; font-size: 1.15rem; }
+.recipe-substitutions > summary:hover h2 { color: #8f2f24; }
+.recipe-substitutions > summary:focus-visible { outline: 2px solid #8f2f24; outline-offset: 3px; }
+.recipe-substitutions-chevron { flex: 0 0 auto; color: #81776d; transition: transform 200ms ease; }
+.recipe-substitutions[open] .recipe-substitutions-chevron { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) { .recipe-substitutions-chevron { transition: none; } }
+/* 名前と本格度が離れすぎないよう、デスクトップでも1行の幅を抑える */
+.recipe-substitutions-body { max-width: 760px; padding-bottom: 1.5rem; }
+.substitution-reference { margin-top: 1.25rem; }
+.substitution-reference:first-child { margin-top: 0.25rem; }
 .substitution-reference h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.65rem; margin: 0 0 0.35rem; font-size: 1rem; font-weight: 700; }
 .substitution-reference-original { color: #81776d; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; font-weight: 500; }
 .substitution-reference ul { margin: 0; padding: 0; list-style: none; }
 .substitution-reference li { margin: 0; padding: 0.85rem 0; border-top: 1px solid #e3dbd0; }
-.substitution-reference li:last-child { border-bottom: 1px solid #e3dbd0; }
 .substitution-reference p { margin: 0.3rem 0 0; color: #51493f; font-size: 0.85rem; line-height: 1.75; overflow-wrap: anywhere; }
 .substitution-reference .substitution-reference-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.35rem 0.75rem; margin: 0; color: #2d261e; }
 .substitution-reference-head strong { font-size: 0.95rem; }
