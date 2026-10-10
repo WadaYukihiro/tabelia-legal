@@ -21,3 +21,20 @@
   .recipe-article .recipe-rail, .recipe-jump-nav { position: static; }
   .recipe-rail .recipe-ingredients { max-height: none; overflow: visible; }
 }
+
+/* 代わりに使える食材の一覧（日本語版）。ダイアログと同じデータを本文に置く。罫線で区切り、色面の囲みは使わない */
+.recipe-substitutions { margin-top: 3.5rem; }
+.recipe-substitutions > h2 { margin: 0; padding: 0; border: 0; font-family: 'Cormorant Garamond', 'Yu Mincho', serif; font-size: 2rem; }
+.substitution-reference { margin-top: 1.75rem; }
+.substitution-reference h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.65rem; margin: 0 0 0.35rem; font-size: 1rem; font-weight: 700; }
+.substitution-reference-original { color: #81776d; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; font-weight: 500; }
+.substitution-reference ul { margin: 0; padding: 0; list-style: none; }
+.substitution-reference li { margin: 0; padding: 0.85rem 0; border-top: 1px solid #e3dbd0; }
+.substitution-reference li:last-child { border-bottom: 1px solid #e3dbd0; }
+.substitution-reference p { margin: 0.3rem 0 0; color: #51493f; font-size: 0.85rem; line-height: 1.75; overflow-wrap: anywhere; }
+.substitution-reference .substitution-reference-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.35rem 0.75rem; margin: 0; color: #2d261e; }
+.substitution-reference-head strong { font-size: 0.95rem; }
+.substitution-reference .substitution-reference-steps { color: #7d6650; font-size: 0.8rem; }
+.substitution-reference-steps a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.substitution-reference-steps a:hover { color: #8f2f24; }
+.substitution-reference-steps a:focus-visible { outline: 2px solid #8f2f24; outline-offset: 2px; }
