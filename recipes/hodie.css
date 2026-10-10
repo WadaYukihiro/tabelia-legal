@@ -58,16 +58,14 @@
   .hodie-more .link-arrow, .hodie-chip { transition: none; }
 }
 
-/* 390px 幅: 区画と専用一覧のコースごとに、カードを横スクロールで送る。右端に次のカードを覗かせて続きを示す */
+/* 390px 幅。区画（/recipes/）はカードを横スクロールで送り、右端に次のカードを覗かせて続きを示す。
+   専用一覧は検索結果（/recipes/search/）と同じく2列の一覧で縦に読む（style.css の .recipe-list-page .recipe-grid）。
+   コースへの移動は、区切りが縦に並ぶ一覧では見出しが担うので出さない */
 @media (max-width: 600px) {
-  .recipe-hub-page .hodie-grid,
-  .hodie-page .hodie-rail { display: flex; gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -1rem; padding: 0 1rem 0.25rem; scroll-padding-inline: 1rem; scrollbar-width: none; }
-  .recipe-hub-page .hodie-grid::-webkit-scrollbar,
-  .hodie-page .hodie-rail::-webkit-scrollbar { display: none; }
-  .recipe-hub-page .hodie-grid > .hodie-card:nth-child(n),
-  .hodie-page .hodie-rail > .hodie-card { display: block; flex: 0 0 150px; min-width: 0; scroll-snap-align: start; }
-  .recipe-hub-page .hodie-card img,
-  .hodie-page .hodie-card img { border-radius: 8px 8px 28px 8px; }
+  .recipe-hub-page .hodie-grid { display: flex; gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -1rem; padding: 0 1rem 0.25rem; scroll-padding-inline: 1rem; scrollbar-width: none; }
+  .recipe-hub-page .hodie-grid::-webkit-scrollbar { display: none; }
+  .recipe-hub-page .hodie-grid > .hodie-card:nth-child(n) { display: block; flex: 0 0 150px; min-width: 0; scroll-snap-align: start; }
+  .hodie-card img { border-radius: 8px 8px 28px 8px; }
   .hodie-card .recipe-card-title { font-size: 1rem; }
   .hodie-card .recipe-card-subtitle { font-size: 0.72rem; }
   .hodie-more { justify-content: flex-start; }
@@ -76,12 +74,8 @@
   .hodie-hero .hodie-name { font-size: 4rem; }
   .hodie-hero .hodie-gloss { font-size: 0.95rem; }
   .hodie-hero-stat strong { font-size: 2.5rem; }
-  .hodie-chips, .hodie-course-nav { flex-wrap: nowrap; overflow-x: auto; margin: 0 -1rem; padding: 0 1rem 0.15rem; scrollbar-width: none; }
-  .hodie-chips::-webkit-scrollbar, .hodie-course-nav::-webkit-scrollbar { display: none; }
-  .hodie-chip { flex: none; min-height: 44px; }
-  .hodie-course-nav { gap: 1.1rem; padding-top: 0.5rem; }
-  .hodie-course-nav a { display: inline-flex; align-items: center; min-height: 44px; }
-  .hodie-course-nav a[hidden] { display: none; }
+  .hodie-chip { min-height: 44px; padding: 0 0.85rem; }
+  .hodie-course-nav { display: none; }
   .hodie-group { margin-top: 2.25rem; }
   .hodie-group-title { margin-bottom: 0.9rem; }
   .hodie-group-title .hodie-numeral, .hodie-group-label { font-size: 1.5rem; }
