@@ -15,9 +15,7 @@
     if (data.shareInitialized) return;
     data.shareInitialized = 'true';
     var encodedUrl = encodeURIComponent(data.shareUrl);
-    var title = data.shareTitle;
-    if (container.hasAttribute('data-recipe-share') && !title.endsWith('- TABELIA')) title += '- TABELIA';
-    var encodedTitle = encodeURIComponent(title);
+    var encodedTitle = encodeURIComponent(data.shareTitle);
     function track(method) {
       if (!window.tabeliaTrack) return;
       if (container.hasAttribute('data-article-share')) {

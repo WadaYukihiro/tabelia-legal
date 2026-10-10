@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://tabelia.app/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-10-08</lastmod>
+  <url><loc>https://tabelia.app/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-10-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-10-08</lastmod>
+  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-10-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-10-08</lastmod>
+  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-10-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-10-08</lastmod>
+  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-10-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-10-08</lastmod>
+  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-10-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-10-08</lastmod>
+  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-10-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-10-08</lastmod>
+  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-10-10</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
@@ -42,49 +42,50 @@
   <url><loc>https://tabelia.app/terms/</loc></url>
   <url><loc>https://tabelia.app/commercial/</loc></url>
   <url><loc>https://tabelia.app/support/</loc></url>
-  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/hodie/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://tabelia.app/articles/brodo-basics-01-what-is-brodo/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/brodo-basics-07-brodo-in-dishes/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/brodo-basics-02-types-of-brodo/</loc><lastmod>2026-10-08</lastmod></url>
@@ -111,34 +112,34 @@
   <url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dessert/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/entrante/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/entree/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/guarnicion/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/plat/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/postre/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primer-plato/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/segundo-plato/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/accompagnement/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dessert/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/entrante/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/entree/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/guarnicion/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/plat/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/postre/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primer-plato/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/segundo-plato/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dessert/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/entrante/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/entree/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/guarnicion/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/plat/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/postre/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primer-plato/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/segundo-plato/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/accompagnement/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dessert/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/entrante/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/entree/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/guarnicion/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/plat/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/postre/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primer-plato/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/segundo-plato/</loc><lastmod>2026-10-10</lastmod></url>
   <url>
     <loc>https://tabelia.app/recipes/croquetas-de-jamon/</loc>
     <lastmod>2026-10-07</lastmod>
@@ -4019,6 +4020,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/patatas-a-lo-pobre/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/9c77f914-886b-4eba-97de-f0f9887f6b7d_1791647279604.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パタタス・ア・ロ・ポブレ（Patatas a lo pobre）</image:title>
+      <image:caption>薄切りのじゃがいもを玉ねぎとピーマンとともに、オリーブオイルでゆっくり柔らかくします。しっとりした芋と甘い野菜を味わう、アンダルシアの付け合わせです。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/spezzatino-di-manzo-con-patate/</loc>
     <lastmod>2026-05-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/spezzatino-di-manzo-con-patate/"/>
@@ -6822,7 +6832,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/096b92e6-c870-4dbb-83bc-99d20bc4548c_1790663481095.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Cassoulet</image:title>
-      <image:caption>Cassoulet is a stew of white beans, duck and pork associated with Toulouse in southwestern France. Beans soaked for 12 hours are cooked with duck confit, Toulouse sausage and pork belly, then topped with breadcrumbs and baked. Traditionally, the fragrant crust is broken several times during baking and pushed into the beans so a new crust forms. Canned or vacuum-packed duck confit is the practical standard and is available from imported-food shops or online. Taking nearly a whole day from preparation to the end of baking, this southwestern French feast rewards a leisurely weekend commitment.</image:caption>
+      <image:caption>Cassoulet is a stew of white beans, duck and pork associated with Toulouse in southwestern France. Beans soaked for 12 hours are cooked with duck confit, Toulouse sausage and pork belly, then topped with breadcrumbs and baked. Traditionally, the fragrant crust is broken several times during baking and pushed into the beans so a new crust forms. Canned or vacuum-packed duck confit is the practical standard. Taking nearly a whole day from preparation to the end of baking, this southwestern French feast rewards a leisurely weekend commitment.</image:caption>
     </image:image>
   </url>
   <url>
@@ -6835,7 +6845,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/096b92e6-c870-4dbb-83bc-99d20bc4548c_1790663481095.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Cassoulet</image:title>
-      <image:caption>Il cassoulet è uno stufato di fagioli bianchi, anatra e maiale rappresentativo di Tolosa, nel Sud-Ovest francese. I fagioli, ammollati per 12 ore, vengono cotti con confit d’anatra, salsiccia di Tolosa e pancetta di maiale, poi coperti di pangrattato e passati in forno. Durante la cottura la crosta profumata viene spezzata più volte e affondata nei fagioli, lasciandone formare una nuova. Il confit d’anatra in scatola o sottovuoto è la soluzione pratica abituale, reperibile nei negozi di alimenti importati o online. Dalla preparazione alla fine della cottura occorre quasi una giornata: è una festa gastronomica del Sud-Ovest da affrontare con calma nel fine settimana.</image:caption>
+      <image:caption>Il cassoulet è uno stufato di fagioli bianchi, anatra e maiale rappresentativo di Tolosa, nel Sud-Ovest francese. I fagioli, ammollati per 12 ore, vengono cotti con confit d’anatra, salsiccia di Tolosa e pancetta di maiale, poi coperti di pangrattato e passati in forno. Durante la cottura la crosta profumata viene spezzata più volte e affondata nei fagioli, lasciandone formare una nuova. Il confit d’anatra in scatola o sottovuoto è la soluzione pratica abituale. Dalla preparazione alla fine della cottura occorre quasi una giornata: è una festa gastronomica del Sud-Ovest da affrontare con calma nel fine settimana.</image:caption>
     </image:image>
   </url>
   <url>
@@ -8650,7 +8660,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2e413026-66cb-41cf-8afd-bcfb37fc5d1e_1790663576868.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Livorno-Style Cod</image:title>
-      <image:caption>A Livorno-style fish dish of cod fillets briefly simmered with garlic, tomatoes, black olives and capers. Fresh cod, readily available in Japan, makes it accessible to prepare. The key is controlling the heat to cook the fish without breaking it and balancing the salty supporting ingredients within the sauce.</image:caption>
+      <image:caption>A Livorno-style fish dish of cod fillets briefly simmered with garlic, tomatoes, black olives and capers. The key is controlling the heat to cook the fish without breaking it and balancing the salty supporting ingredients within the sauce.</image:caption>
     </image:image>
   </url>
   <url>
@@ -8663,7 +8673,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/2e413026-66cb-41cf-8afd-bcfb37fc5d1e_1790663576868.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Merluzzo alla livornese</image:title>
-      <image:caption>Un piatto di pesce alla livornese: filetti di merluzzo cotti brevemente con aglio, pomodoro, olive nere e capperi. Il merluzzo fresco, facilmente reperibile in Giappone, ne facilita la preparazione. Sono fondamentali il controllo del calore, per non rompere il pesce, e l’equilibrio degli ingredienti salati nella salsa.</image:caption>
+      <image:caption>Un piatto di pesce alla livornese: filetti di merluzzo cotti brevemente con aglio, pomodoro, olive nere e capperi. Sono fondamentali il controllo del calore, per non rompere il pesce, e l’equilibrio degli ingredienti salati nella salsa.</image:caption>
     </image:image>
   </url>
   <url>
@@ -9382,7 +9392,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/3ca35172-a0b4-457d-a7d6-e5ae68fdf83f_1790665474088.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Veal Blanquette</image:title>
-      <image:caption>Blanquette de veau is a classic French home-style white stew, in which the meat is cooked without any browning. Veal is blanched, gently simmered with aromatic vegetables, and finished with an egg-yolk and cream liaison to thicken the sauce. Veal can be difficult to find in Japan; pork shoulder or chicken thighs still allow you to experience white stewing and the liaison, but only veal provides the original delicate, milky flavor. Its whiteness and gentleness contrast with stews defined by red wine and browned meat.</image:caption>
+      <image:caption>Blanquette de veau is a classic French home-style white stew, in which the meat is cooked without any browning. Veal is blanched, gently simmered with aromatic vegetables, and finished with an egg-yolk and cream liaison to thicken the sauce. Pork shoulder or chicken thighs still allow you to experience white stewing and the liaison, but only veal provides the original delicate, milky flavor. Its whiteness and gentleness contrast with stews defined by red wine and browned meat.</image:caption>
     </image:image>
   </url>
   <url>
@@ -9395,7 +9405,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/3ca35172-a0b4-457d-a7d6-e5ae68fdf83f_1790665474088.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Blanquette di vitello</image:title>
-      <image:caption>La blanquette de veau è un classico stufato bianco della cucina casalinga francese, in cui la carne cuoce senza mai essere rosolata. Il vitello viene sbollentato e poi cotto dolcemente con verdure aromatiche; alla fine si lega la salsa con tuorli e panna. In Giappone il vitello può essere difficile da reperire: spalla di maiale o cosce di pollo consentono comunque di sperimentare la cottura in bianco e la legatura, ma soltanto il vitello offre la delicatezza lattica originale. È un piatto che punta su candore e dolcezza, in contrasto con gli stufati caratterizzati da vino rosso e rosolatura.</image:caption>
+      <image:caption>La blanquette de veau è un classico stufato bianco della cucina casalinga francese, in cui la carne cuoce senza mai essere rosolata. Il vitello viene sbollentato e poi cotto dolcemente con verdure aromatiche; alla fine si lega la salsa con tuorli e panna. Spalla di maiale o cosce di pollo consentono comunque di sperimentare la cottura in bianco e la legatura, ma soltanto il vitello offre la delicatezza lattica originale. È un piatto che punta su candore e dolcezza, in contrasto con gli stufati caratterizzati da vino rosso e rosolatura.</image:caption>
     </image:image>
   </url>
   <url>
@@ -9460,7 +9470,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/3e499e79-a884-4ab1-9135-f9ac8d0fccd3_1790665610239.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Pot-au-Feu</image:title>
-      <image:caption>A foundation of French home cooking, pot-au-feu gently simmers several cuts of beef with root vegetables. Beef shank, short rib and tendon provide the stock, carefully skimmed for around 3 hours to produce a clear broth. The consommé-flavored Western-style dish familiar in Japan is a quickly cooked side using commercial stock granules; in the French version the meat itself leads. Served with coarse salt, cornichons and Dijon mustard, it is a Sunday main course in two stages: broth first as soup, then meat and vegetables.</image:caption>
+      <image:caption>A foundation of French home cooking, pot-au-feu gently simmers several cuts of beef with root vegetables. Beef shank, short rib and tendon provide the stock, carefully skimmed for around 3 hours to produce a clear broth. The meat itself provides the flavor of the broth. Served with coarse salt, cornichons and Dijon mustard, it is a Sunday main course in two stages: broth first as soup, then meat and vegetables.</image:caption>
     </image:image>
   </url>
   <url>
@@ -9473,7 +9483,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/3e499e79-a884-4ab1-9135-f9ac8d0fccd3_1790665610239.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Pot-au-feu</image:title>
-      <image:caption>Fondamento della cucina domestica francese, il pot-au-feu cuoce lentamente diversi tagli di manzo e ortaggi a radice. Stinco, costato e tendine danno il brodo, schiumato con cura per circa 3 ore fino a diventare limpido. La preparazione occidentale al consommé nota in Giappone è un contorno rapido con brodo granulare; nella versione francese la protagonista è la carne. Con sale grosso, cetriolini e senape di Digione, è un secondo domenicale in due tempi: prima il brodo come zuppa, poi carne e verdure.</image:caption>
+      <image:caption>Fondamento della cucina domestica francese, il pot-au-feu cuoce lentamente diversi tagli di manzo e ortaggi a radice. Stinco, costato e tendine danno il brodo, schiumato con cura per circa 3 ore fino a diventare limpido. È la carne stessa a dare sapore al brodo. Con sale grosso, cetriolini e senape di Digione, è un secondo domenicale in due tempi: prima il brodo come zuppa, poi carne e verdure.</image:caption>
     </image:image>
   </url>
   <url>
@@ -9850,7 +9860,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/48d25a25-a6d9-4b4e-82a8-84162985ed65_1790663558552.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Chicken Rolls with Sage</image:title>
-      <image:caption>A secondo of thinly pounded chicken breast rolled around prosciutto, sage and cheese, then gently braised with white wine. This fragrant preparation keeps chicken breast, readily available in Japan, from drying out.</image:caption>
+      <image:caption>A secondo of thinly pounded chicken breast rolled around prosciutto, sage and cheese, then gently braised with white wine. This fragrant preparation keeps chicken breast from drying out.</image:caption>
     </image:image>
   </url>
   <url>
@@ -9863,7 +9873,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/48d25a25-a6d9-4b4e-82a8-84162985ed65_1790663558552.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Involtini di pollo alla salvia</image:title>
-      <image:caption>Un secondo di petto di pollo battuto sottile, arrotolato con prosciutto crudo, salvia e formaggio, poi cotto coperto con vino bianco. Il petto di pollo, facilmente reperibile in Giappone, rimane succoso e profumato.</image:caption>
+      <image:caption>Un secondo di petto di pollo battuto sottile, arrotolato con prosciutto crudo, salvia e formaggio, poi cotto coperto con vino bianco. Il petto di pollo rimane succoso e profumato.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10058,7 +10068,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/4da66c53-c696-4795-b335-7d668eefad04_1790654557310.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tarte Tatin</image:title>
-      <image:caption>An upside-down tart: apples simmer in caramel in the tin, are covered with pâte brisée and baked, then inverted while hot. Known as the specialty of a sisters' hotel in Sologne, it unites caramel bitterness with apple acidity, ideally from tart varieties such as Kogyoku. Homemade pastry gives even the caramel-soaked edges an authentic texture.</image:caption>
+      <image:caption>An upside-down tart: apples simmer in caramel in the tin, are covered with pâte brisée and baked, then inverted while hot. Known as the specialty of a sisters' hotel in Sologne, it unites caramel bitterness with apple acidity, ideally from tart varieties such as Granny Smith. Homemade pastry gives even the caramel-soaked edges an authentic texture.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10071,7 +10081,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/4da66c53-c696-4795-b335-7d668eefad04_1790654557310.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tarte Tatin</image:title>
-      <image:caption>Crostata rovesciata: le mele cuociono nel caramello nello stampo, si coprono con pasta brisée e si infornano, poi si capovolgono da calde. Nota come specialità dell'albergo di due sorelle in Sologne, unisce amaro del caramello e acidità delle mele, ideali varietà acidule come Kogyoku. La pasta fatta in casa rende autentica anche la consistenza dei bordi imbevuti di caramello.</image:caption>
+      <image:caption>Crostata rovesciata: le mele cuociono nel caramello nello stampo, si coprono con pasta brisée e si infornano, poi si capovolgono da calde. Nota come specialità dell'albergo di due sorelle in Sologne, unisce amaro del caramello e acidità delle mele, ideali varietà acidule come la renetta. La pasta fatta in casa rende autentica anche la consistenza dei bordi imbevuti di caramello.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10504,7 +10514,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/572b7e8d-679a-4a12-996e-9b215c5fd906_1790653052010.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Beef Bourguignon</image:title>
-      <image:caption>Beef bourguignon is Burgundy’s emblematic beef stew in red wine. In the traditional method, beef chuck is marinated overnight in red wine, then braised in that same marinade for nearly 3 hours, developing deep richness and complex acidity. Using slab bacon for lardons and a medium-bodied Pinot Noir available in Japan for Burgundy wine still reproduces the essential technique and flavor. The proper finish is a garniture bourguignonne of pearl onions and mushrooms.</image:caption>
+      <image:caption>Beef bourguignon is Burgundy’s emblematic beef stew in red wine. In the traditional method, beef chuck is marinated overnight in red wine, then braised in that same marinade for nearly 3 hours, developing deep richness and complex acidity. Using slab bacon for lardons and a medium-bodied Pinot Noir for Burgundy wine still reproduces the essential technique and flavor. The proper finish is a garniture bourguignonne of pearl onions and mushrooms.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10517,7 +10527,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/572b7e8d-679a-4a12-996e-9b215c5fd906_1790653052010.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Manzo alla borgognona</image:title>
-      <image:caption>Il manzo alla borgognona è lo stufato di manzo al vino rosso simbolo della Borgogna. Il metodo tradizionale prevede una notte di marinatura della spalla di manzo nel vino rosso, seguita da quasi 3 ore di cottura nella stessa marinata, per sviluppare ricchezza e acidità complesse. Usando bacon in pezzo al posto dei lardelli e un Pinot Nero di medio corpo reperibile in Giappone al posto del vino di Borgogna, si possono comunque riprodurre la tecnica e la struttura del gusto. La finitura classica è la guarnizione alla borgognona di cipolline e funghi.</image:caption>
+      <image:caption>Il manzo alla borgognona è lo stufato di manzo al vino rosso simbolo della Borgogna. Il metodo tradizionale prevede una notte di marinatura della spalla di manzo nel vino rosso, seguita da quasi 3 ore di cottura nella stessa marinata, per sviluppare ricchezza e acidità complesse. Usando bacon in pezzo al posto dei lardelli e un Pinot Nero di medio corpo al posto del vino di Borgogna, si possono comunque riprodurre la tecnica e la struttura del gusto. La finitura classica è la guarnizione alla borgognona di cipolline e funghi.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10660,7 +10670,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/5a68d4d1-c12e-408b-a064-377684c1abfb_1790653053083.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tagliatelle with Ragù alla Bolognese</image:title>
-      <image:caption>The authentic version of the dish known in Japan as Bolognese. Fresh tagliatelle and ground-beef ragù are inseparable partners; serving the sauce with spaghetti is considered unacceptable in its hometown.</image:caption>
+      <image:caption>A Bolognese classic of fresh tagliatelle with ragù. Fresh tagliatelle and ground-beef ragù are inseparable partners; serving the sauce with spaghetti is considered unacceptable in its hometown.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10673,7 +10683,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/5a68d4d1-c12e-408b-a064-377684c1abfb_1790653053083.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tagliatelle al ragù alla bolognese</image:title>
-      <image:caption>La versione autentica del piatto chiamato “Bolognese” in Giappone. Le tagliatelle fresche e il ragù di manzo sono un abbinamento inseparabile; nella città d’origine condirvi gli spaghetti è considerato inammissibile.</image:caption>
+      <image:caption>Un classico bolognese di tagliatelle fresche al ragù. Le tagliatelle fresche e il ragù di manzo sono un abbinamento inseparabile; nella città d’origine condirvi gli spaghetti è considerato inammissibile.</image:caption>
     </image:image>
   </url>
   <url>
@@ -10730,7 +10740,7 @@
   </url>
   <url>
     <loc>https://tabelia.app/en/recipes/tarte-normande/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarte-normande/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tarte-normande/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tarte-normande/"/>
@@ -10738,12 +10748,12 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/5b9be67c-2fe0-41ae-989a-85c76246e1cf_1790690243845.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Normandy Apple Tart</image:title>
-      <image:caption>A classic baked tart combining Normandy apples, crème fraîche and Calvados. The pâte brisée, made with just 10g sugar, is blind-baked, brushed with egg white and baked again to seal it. A rich almond custard is then poured around radially arranged apples and baked gently until set. Key techniques include leaving cold butter pieces in the dough, fitting it snugly into the corners and preventing puffing and shrinkage during blind baking, and judging the heat to balance apple moisture with the setting of the custard. The care preserves a crisp base and clearly defined apples. Bake in a 22cm pan, cool completely to room temperature and dust with icing sugar just before serving.</image:caption>
+      <image:caption>A classic baked tart combining Normandy apples, crème fraîche and Calvados. The pâte brisée, made with just 10g sugar, is blind-baked, brushed with egg white and baked again to seal it. A rich almond custard is then poured around radially arranged apples and baked gently until set. Key techniques include leaving cold butter pieces in the dough, fitting it snugly into the corners and preventing puffing and shrinkage during blind baking, and judging the heat to balance apple moisture with the setting of the custard. The care preserves a crisp base and clearly defined apples. Bake in a 22cm pan, let the initial heat dissipate, refrigerate until cold and dust with powdered sugar just before serving.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://tabelia.app/it/ricette/tarte-normande/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarte-normande/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/tarte-normande/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/tarte-normande/"/>
@@ -10751,7 +10761,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/5b9be67c-2fe0-41ae-989a-85c76246e1cf_1790690243845.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Crostata normanna alle mele</image:title>
-      <image:caption>Una classica crostata da forno con mele della Normandia, crème fraîche e Calvados. La pasta brisée, con soli 10g di zucchero, viene cotta in bianco, spennellata con albume e ripassata in forno per sigillarla. Si versa poi una ricca crema alle mandorle fra le mele disposte a raggiera e si cuoce dolcemente fino a rassodarla. Sono essenziali i pezzetti di burro freddo nell’impasto, l’aderenza agli angoli dello stampo e il controllo di rigonfiamento e ritiro nella cottura in bianco, oltre a una temperatura che equilibri umidità delle mele e coagulazione della crema. Questa cura mantiene il fondo friabile e i contorni delle mele definiti. Si cuoce in uno stampo di 22cm, si raffredda completamente a temperatura ambiente e si cosparge di zucchero a velo appena prima di servire.</image:caption>
+      <image:caption>Una classica crostata da forno con mele della Normandia, crème fraîche e Calvados. La pasta brisée, con soli 10g di zucchero, viene cotta in bianco, spennellata con albume e ripassata in forno per sigillarla. Si versa poi una ricca crema alle mandorle fra le mele disposte a raggiera e si cuoce dolcemente fino a rassodarla. Sono essenziali i pezzetti di burro freddo nell’impasto, l’aderenza agli angoli dello stampo e il controllo di rigonfiamento e ritiro nella cottura in bianco, oltre a una temperatura che equilibri umidità delle mele e coagulazione della crema. Questa cura mantiene il fondo friabile e i contorni delle mele definiti. Si cuoce in uno stampo di 22cm, si lascia intiepidire e poi si raffredda in frigorifero e si cosparge di zucchero a velo appena prima di servire.</image:caption>
     </image:image>
   </url>
   <url>
@@ -12108,7 +12118,7 @@
   </url>
   <url>
     <loc>https://tabelia.app/en/recipes/risotto-al-nero-di-seppia-alla-veneziana/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/risotto-al-nero-di-seppia-alla-veneziana/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/risotto-al-nero-di-seppia-alla-veneziana/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/risotto-al-nero-di-seppia-alla-veneziana/"/>
@@ -12116,12 +12126,12 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/7ac5c0cb-6b50-42e9-89cb-73c0b0ca8571_1790663690776.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Venetian Cuttlefish Ink Risotto</image:title>
-      <image:caption>A Venetian primo made by cleaning whole cuttlefish, removing their ink sacs yourself, and cooking rice with that ink and a fumetto drawn from fish bones. As in seppie in nero, the ink first simmers with the cuttlefish for 20 minutes to soften its harshness and penetrate the flesh; the remainder is added late in the risotto to deepen the color. Vialone Nano rice is toasted with white wine and cooked for 16 minutes with additions of hot stock until all’onda: flowing in waves, with soft outer grains and a slight core. Cuttlefish are divided between braising and finishing; the finishing portion is briefly seared separately and added at the end. Final mantecatura uses cold butter only, with no cheese, following the seafood-risotto rule.</image:caption>
+      <image:caption>A Venetian primo made by cleaning whole cuttlefish, removing their ink sacs yourself, combining the recovered ink with store-bought cuttlefish ink and cooking the rice in fumetto drawn from fish trimmings. As in seppie in nero, the ink first simmers with the cuttlefish for 20 minutes to mellow its harshness and flavor the flesh; the remainder is added in the second half of cooking to deepen the color. Vialone Nano rice is toasted in oil, then white wine is added and cooked off. Hot fumetto is added gradually as the rice cooks for about 16 minutes, until all’onda: flowing in waves, with softened outer grains and a slight firm core. Cuttlefish are divided between braising and finishing; the finishing portion is seared separately over high heat, added at the end and cooked through to the center. Final mantecatura uses cold butter only, with no cheese, following the seafood-risotto rule.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://tabelia.app/it/ricette/risotto-al-nero-di-seppia-alla-veneziana/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/risotto-al-nero-di-seppia-alla-veneziana/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/risotto-al-nero-di-seppia-alla-veneziana/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/risotto-al-nero-di-seppia-alla-veneziana/"/>
@@ -12129,7 +12139,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/7ac5c0cb-6b50-42e9-89cb-73c0b0ca8571_1790663690776.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Risotto al nero di seppia alla veneziana</image:title>
-      <image:caption>Primo veneziano preparato pulendo seppie intere, estraendone personalmente le sacche del nero e cuocendo il riso con quel nero e fumetto ricavato dagli scarti del pesce. Come nelle seppie in nero, l’inchiostro cuoce prima con le seppie per 20 minuti per arrotondarsi e penetrare nella carne; il resto si aggiunge nella seconda parte della cottura del riso per intensificare il colore. Il Vialone Nano viene tostato con vino bianco e cotto per 16 minuti aggiungendo fumetto caldo fino all’onda, con esterno morbido e un lieve nucleo. Le seppie sono divise tra stufatura e finitura: queste ultime si scottano a parte e si aggiungono alla fine. La mantecatura usa soltanto burro freddo, senza formaggio, secondo la regola dei risotti di mare.</image:caption>
+      <image:caption>Un classico primo veneziano preparato pulendo seppie intere, estraendone le sacche del nero e unendo l’inchiostro recuperato al nero di seppia acquistato, con un fumetto ricavato dai ritagli del pesce. Come nelle seppie in nero, l’inchiostro cuoce prima con le seppie per 20 minuti per attenuarne l’asprezza e insaporire la polpa; il resto si aggiunge nella seconda metà della cottura per intensificare il colore. Il Vialone Nano viene tostato nell’olio, poi si aggiunge il vino bianco e si fa sfumare. Si versa gradualmente fumetto caldo e si cuoce per circa 16 minuti, fino all’onda, con l’esterno dei chicchi morbido e un lieve nucleo consistente. Le seppie sono divise fra cottura in umido e finitura: queste ultime si rosolano a parte a fuoco alto, si aggiungono alla fine e si cuociono fino al centro. La mantecatura usa soltanto burro freddo, senza formaggio, secondo la regola dei risotti di mare.</image:caption>
     </image:image>
   </url>
   <url>
@@ -14637,7 +14647,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/b537d5bb-4245-4d32-a943-e6936e9dedb5_1790654552730.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Crostata di mirabelle della Lorena</image:title>
-      <image:caption>Crostata con mirabelle, le piccole prugne dorate della Lorena. Si dispone la frutta sulla pasta brisée e si cuoce una prima volta, poi si aggiunge un composto di uova e panna acida per una seconda cottura. Valutare bene la cottura evita che l’umidità della frutta renda acquosa la crema. Compare sulle tavole lorenesi durante la raccolta di agosto e settembre.</image:caption>
+      <image:caption>Crostata con mirabelle, le piccole prugne dorate della Lorena. Si dispone la frutta sulla pasta brisée e si cuoce una prima volta, poi si aggiunge un composto di uova e crème fraîche per una seconda cottura. Valutare bene la cottura evita che l’umidità della frutta renda acquosa la crema. Compare sulle tavole lorenesi durante la raccolta di agosto e settembre.</image:caption>
     </image:image>
   </url>
   <url>
@@ -15014,7 +15024,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/be5407ad-132b-4e77-b8ef-44a1e63e8a2d_1790663660020.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Hunter-Style Chicken</image:title>
-      <image:caption>A classic hunter-style secondo: chicken thighs are deeply browned skin-side down, then braised with onion, carrot, celery, white wine, tomatoes and rosemary. Chicken and aromatics readily available in Japan make it accessible, while browning, deglazing and judging sauce thickness determine the flavor.</image:caption>
+      <image:caption>A classic hunter-style secondo: chicken thighs are deeply browned skin-side down, then braised with onion, carrot, celery, white wine, tomatoes and rosemary. Browning, deglazing and judging sauce thickness determine the flavor.</image:caption>
     </image:image>
   </url>
   <url>
@@ -15027,7 +15037,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/be5407ad-132b-4e77-b8ef-44a1e63e8a2d_1790663660020.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Pollo alla cacciatora</image:title>
-      <image:caption>Un classico secondo alla cacciatora: cosce di pollo ben rosolate dalla pelle e cotte con cipolla, carota, sedano, vino bianco, pomodoro e rosmarino. Si realizza con pollo e aromi facilmente reperibili in Giappone; rosolatura, deglassatura e consistenza del fondo ne determinano il gusto.</image:caption>
+      <image:caption>Un classico secondo alla cacciatora: cosce di pollo ben rosolate dalla pelle e cotte con cipolla, carota, sedano, vino bianco, pomodoro e rosmarino. Rosolatura, deglassatura e consistenza del fondo ne determinano il gusto.</image:caption>
     </image:image>
   </url>
   <url>
@@ -16162,7 +16172,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/d5318ed7-af4c-40de-a334-31c090e9a8f2_1790690329268.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Pan-Seared Foie Gras with Grapes</image:title>
-      <image:caption>A warm appetizer of duck foie gras seared to a savory brown crust and paired with grapes and a sweet-wine sauce. Prepare the sauce and toast first, then finish by warming the grapes in the rendered foie gras fat. This version is designed for the Japanese domestic audience and cooks the center through; it does not aim for a rare center.</image:caption>
+      <image:caption>A warm appetizer of duck foie gras seared to a savory brown crust and paired with grapes and a sweet-wine sauce. Prepare the sauce and toast first, then finish by warming the grapes in the rendered foie gras fat. The foie gras is cooked through to the center in this recipe.</image:caption>
     </image:image>
   </url>
   <url>
@@ -16175,7 +16185,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/d5318ed7-af4c-40de-a334-31c090e9a8f2_1790690329268.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Foie gras in padella con uva</image:title>
-      <image:caption>Un antipasto caldo di foie gras d’anatra ben rosolato, accompagnato da uva e salsa al vino dolce. Salsa e pane tostato si preparano prima; l’uva si scalda infine nel grasso rilasciato dal foie gras. Questa versione, destinata al pubblico giapponese, prevede la cottura completa fino al cuore e non una finitura semicruda.</image:caption>
+      <image:caption>Un antipasto caldo di foie gras d’anatra ben rosolato, accompagnato da uva e salsa al vino dolce. Salsa e pane tostato si preparano prima; l’uva si scalda infine nel grasso rilasciato dal foie gras. Questa ricetta prevede la cottura completa del foie gras fino al cuore.</image:caption>
     </image:image>
   </url>
   <url>
@@ -16708,7 +16718,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/e0a96283-cf9e-4b96-b9e7-900d18dacb7f_1790663531898.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Galette Complète</image:title>
-      <image:caption>A savory buckwheat galette passed down as a Breton staple. The complète, topped with ham, cheese and egg, is the classic of classics. The basic batter is only buckwheat flour, water and salt; with high-quality buckwheat flour available in Japan, it is a rare dish whose local flavor can be recreated without substitutions. Folded square edges and a soft yolk define its appearance.</image:caption>
+      <image:caption>A savory buckwheat galette passed down as a Breton staple. The complète, topped with ham, cheese and egg, is the classic of classics. The basic batter is only buckwheat flour, water and salt. Folded square edges and a soft yolk define its appearance.</image:caption>
     </image:image>
   </url>
   <url>
@@ -16721,7 +16731,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/e0a96283-cf9e-4b96-b9e7-900d18dacb7f_1790663531898.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Galette complète</image:title>
-      <image:caption>Una galette salata di grano saraceno, tramandata come alimento di base bretone. La complète, con prosciutto, formaggio e uovo, è il classico per eccellenza. La pastella di base contiene soltanto farina di grano saraceno, acqua e sale; poiché in Giappone si trova farina di qualità, è un raro piatto riproducibile fedelmente senza sostituzioni. Il bordo ripiegato a quadrato e il tuorlo morbido ne definiscono l’aspetto.</image:caption>
+      <image:caption>Una galette salata di grano saraceno, tramandata come alimento di base bretone. La complète, con prosciutto, formaggio e uovo, è il classico per eccellenza. La pastella di base contiene soltanto farina di grano saraceno, acqua e sale. Il bordo ripiegato a quadrato e il tuorlo morbido ne definiscono l’aspetto.</image:caption>
     </image:image>
   </url>
   <url>
@@ -17280,7 +17290,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/f05bddb3-41ec-4b20-94f1-e5109b523c2b_1790663678015.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>French Potato Purée</image:title>
-      <image:caption>A foundational side dish throughout France and one said to reveal a chef’s skill most clearly. Potatoes are boiled whole in their skins to avoid taking on water, sieved while hot, then gradually emulsified with cold butter weighing 25–30% of the potatoes. Unlike Japanese mashed potatoes with added ingredients and seasonings, it is silky smooth and almost sauce-like.</image:caption>
+      <image:caption>A foundational side dish throughout France and one said to reveal a chef’s skill most clearly. Potatoes are boiled whole in their skins to avoid taking on water, sieved while hot, then gradually emulsified with cold butter weighing 25–30% of the potatoes. The result is silky smooth and almost sauce-like.</image:caption>
     </image:image>
   </url>
   <url>
@@ -17293,7 +17303,7 @@
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/f05bddb3-41ec-4b20-94f1-e5109b523c2b_1790663678015.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Purè di patate alla francese</image:title>
-      <image:caption>Contorno fondamentale in tutta la Francia e considerato uno dei piatti che rivelano meglio l’abilità dello chef. Le patate si lessano intere con la buccia per non assorbire acqua, si passano al setaccio da calde e si emulsionano gradualmente con burro freddo pari al 25–30% del loro peso. Diversamente dal purè giapponese con ingredienti e condimenti aggiunti, è setoso e quasi simile a una salsa.</image:caption>
+      <image:caption>Contorno fondamentale in tutta la Francia e considerato uno dei piatti che rivelano meglio l’abilità dello chef. Le patate si lessano intere con la buccia per non assorbire acqua, si passano al setaccio da calde e si emulsionano gradualmente con burro freddo pari al 25–30% del loro peso. Il risultato è setoso e quasi simile a una salsa.</image:caption>
     </image:image>
   </url>
   <url>
@@ -17842,5 +17852,4 @@
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi. I profumi di Cointreau ed espresso ne esprimono il carattere autentico.</image:caption>
     </image:image>
   </url>
-  <url><loc>https://tabelia.app/recipes/hodie/</loc><lastmod>2026-10-10</lastmod></url>
 </urlset>
