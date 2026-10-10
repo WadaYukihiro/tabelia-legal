@@ -1,0 +1,88 @@
+/* Hodie（今日作る）。/recipes/ の区画と専用一覧 /recipes/hodie/。
+   generate-web-recipes.ts が legal-site/recipes/hodie.css へコピーする。カードは style.css の .recipe-card を使い、
+   ここにはコース名・所要時間・見出し・絞り込みと、390px 幅の横スクロールだけを置く */
+
+.hodie-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem 1rem; margin: 0; padding: 0; border: 0; }
+.hodie-name { font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-style: italic; font-weight: 600; line-height: 1; letter-spacing: 0.01em; }
+.hodie-gloss { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; font-size: 0.95rem; font-style: normal; font-weight: 600; color: #61594e; letter-spacing: 0.08em; }
+.hub-section-heading .hodie-name { font-size: clamp(2.4rem, 4.4vw, 3.3rem); }
+#hub-hodie-date { font-variant-numeric: tabular-nums; }
+
+.hodie-page .recipe-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.18rem; }
+.hodie-card-course { display: block; margin-top: 0.1rem; color: #8a6d3b; font-size: 0.72rem; letter-spacing: 0.06em; }
+.hodie-card-time { display: block; margin-top: 0.3rem; color: #61594e; font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+
+/* 区画: 4列×2段。抽選した16品のうち9品目以降は 390px 幅の横スクロールでだけ見せる */
+.recipe-hub-page .hodie-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.25rem 1.25rem; }
+.hodie-grid > .hodie-card:nth-child(n+9) { display: none; }
+.hodie-more { display: flex; justify-content: flex-end; margin: 1.5rem 0 0; }
+.hodie-more a, .hodie-more a:visited { display: inline-flex; align-items: center; gap: 0.35rem; color: #9e2f23; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.hodie-more .link-arrow { transition: transform 0.18s; }
+.hodie-more a:hover .link-arrow { transform: translateX(3px); }
+
+/* 専用一覧 */
+.hodie-hero { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem 2.5rem; padding-bottom: 2.25rem; margin-bottom: 1.75rem; border-bottom: 1px solid #d9d0c5; }
+.hodie-hero .hodie-name { font-size: clamp(3.6rem, 9vw, 6rem); font-weight: 500; letter-spacing: -0.02em; }
+.hodie-hero .hodie-gloss { font-size: 1.1rem; }
+.hodie-hero-lead { max-width: 620px; margin: 1.1rem 0 0; color: #61594e; line-height: 2; }
+.hodie-hero-stat { display: flex; align-items: baseline; gap: 0.6rem; margin: 0; }
+.hodie-hero-stat strong { color: #9e2f23; font-family: 'Cormorant Garamond', serif; font-size: 3.4rem; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
+.hodie-hero-stat span { color: #61594e; font-size: 0.82rem; }
+
+.hodie-filters { display: grid; gap: 0.85rem; margin-bottom: 1rem; }
+.hodie-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.hodie-chip { min-height: 40px; padding: 0 1rem; border: 1px solid #d9d0c5; border-radius: 999px; background: #fff; color: #252018; font: inherit; font-size: 0.82rem; cursor: pointer; transition: background-color 0.15s, color 0.15s; }
+.hodie-chip-count { color: #938b81; font-variant-numeric: tabular-nums; }
+.hodie-chip[aria-pressed="true"] { border-color: #252018; background: #252018; color: #fbfaf7; }
+.hodie-chip[aria-pressed="true"] .hodie-chip-count { color: #c9c1b6; }
+.hodie-chips-time .hodie-chip { border-radius: 8px; }
+.hodie-chips-time .hodie-chip[aria-pressed="true"] { border-color: #9e2f23; background: #f6ebe6; color: #9e2f23; }
+.hodie-chips-time .hodie-chip[aria-pressed="true"] .hodie-chip-count { color: #b2685e; }
+.hodie-chip:focus-visible, .hodie-course-nav a:focus-visible { outline: 2px solid #9e2f23; outline-offset: 2px; }
+
+.hodie-course-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; padding-top: 0.9rem; border-top: 1px solid #e7e0d6; font-size: 0.82rem; }
+.hodie-course-nav a { color: #252018; text-decoration: none; white-space: nowrap; }
+.hodie-course-nav a:hover { color: #9e2f23; }
+.hodie-course-nav small { margin-left: 0.35rem; color: #938b81; font-size: 0.72rem; }
+.hodie-numeral { margin-right: 0.4rem; color: #9e2f23; font-family: 'Cormorant Garamond', serif; font-weight: 600; }
+.hodie-result { margin: 0; color: #938b81; font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+
+.hodie-group { margin-top: 3rem; scroll-margin-top: 5rem; }
+.hodie-group-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.2rem 0.75rem; margin: 0 0 1.25rem; padding: 0; border: 0; font-weight: 600; }
+.hodie-group-title .hodie-numeral { margin: 0; font-size: 1.9rem; line-height: 1; }
+.hodie-group-label { font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 1.9rem; line-height: 1.2; }
+.hodie-group-cuisine, .hodie-group-count { color: #938b81; font-size: 0.8rem; font-weight: 400; font-variant-numeric: tabular-nums; }
+.hodie-empty { margin: 3rem 0; color: #756d63; text-align: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hodie-more .link-arrow, .hodie-chip { transition: none; }
+}
+
+/* 390px 幅: 区画と専用一覧のコースごとに、カードを横スクロールで送る。右端に次のカードを覗かせて続きを示す */
+@media (max-width: 600px) {
+  .recipe-hub-page .hodie-grid,
+  .hodie-page .hodie-rail { display: flex; gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -1rem; padding: 0 1rem 0.25rem; scroll-padding-inline: 1rem; scrollbar-width: none; }
+  .recipe-hub-page .hodie-grid::-webkit-scrollbar,
+  .hodie-page .hodie-rail::-webkit-scrollbar { display: none; }
+  .recipe-hub-page .hodie-grid > .hodie-card:nth-child(n),
+  .hodie-page .hodie-rail > .hodie-card { display: block; flex: 0 0 150px; min-width: 0; scroll-snap-align: start; }
+  .recipe-hub-page .hodie-card img,
+  .hodie-page .hodie-card img { border-radius: 8px 8px 28px 8px; }
+  .hodie-card .recipe-card-title { font-size: 1rem; }
+  .hodie-card .recipe-card-subtitle { font-size: 0.72rem; }
+  .hodie-more { justify-content: flex-start; }
+  .hodie-more a { min-height: 44px; }
+
+  .hodie-hero .hodie-name { font-size: 4rem; }
+  .hodie-hero .hodie-gloss { font-size: 0.95rem; }
+  .hodie-hero-stat strong { font-size: 2.5rem; }
+  .hodie-chips, .hodie-course-nav { flex-wrap: nowrap; overflow-x: auto; margin: 0 -1rem; padding: 0 1rem 0.15rem; scrollbar-width: none; }
+  .hodie-chips::-webkit-scrollbar, .hodie-course-nav::-webkit-scrollbar { display: none; }
+  .hodie-chip { flex: none; min-height: 44px; }
+  .hodie-course-nav { gap: 1.1rem; padding-top: 0.5rem; }
+  .hodie-course-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  .hodie-course-nav a[hidden] { display: none; }
+  .hodie-group { margin-top: 2.25rem; }
+  .hodie-group-title { margin-bottom: 0.9rem; }
+  .hodie-group-title .hodie-numeral, .hodie-group-label { font-size: 1.5rem; }
+}
