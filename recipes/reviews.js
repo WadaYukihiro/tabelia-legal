@@ -58,7 +58,7 @@
     if (!mount) return;
     var count = data.aggregate.reviewCount || 0;
     if (count === 0) {
-      mount.innerHTML = '<div class="reviews-empty">まだ評価が届いていません。最初のレビューを投稿してみませんか。</div>';
+      mount.innerHTML = '<div class="reviews-empty">まだレビューはありません。作ったら、最初のレビューを書いてみませんか。</div>';
       return;
     }
     var average = Number(data.aggregate.averageRating) || 0;
