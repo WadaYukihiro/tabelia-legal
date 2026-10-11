@@ -504,7 +504,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
   function renderScore(options) {
     var score = scoreFor(options), value = document.getElementById('authenticity-score'), description = document.getElementById('authenticity-description'), selected = document.getElementById('selected-substitutions');
     if (value) value.textContent = String(score);
-    if (description) description.textContent = options.length ? scoreLabel(score) + '。選んだ代替による味・食感・手順への影響を材料欄と作り方に反映しています。' : '標準レシピの食材と手順です。代わりに使える食材を選ぶと、味・食感・工程への影響とともにスコアが変わります。';
+    if (description) description.textContent = options.length ? scoreLabel(score) + '。選んだ食材による味・食感・手順の変化を、材料欄と作り方に反映しています。' : 'このスコアは、標準レシピの食材と手順で作った場合の値です。代わりに使える食材を選ぶと、味・食感・工程への影響とあわせてスコアが変わります。';
     if (selected) { selected.hidden = !options.length; selected.innerHTML = options.map(function (item) { var ingredient=data.ingredients.find(function(candidate){return candidate.id===item.ingredientId;});var impact=ingredient&&ingredient.role==='garnish'?0:item.option.authenticityImpact;return '<span>' + esc(item.option.nameJa) + ' <strong>' + (impact === 0 ? '±0' : impact) + '</strong></span>'; }).join(''); }
   }
   function render() {
