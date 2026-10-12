@@ -1,10 +1,11 @@
 // Tabelia Web のアクセス解析（Google Analytics 4）クライアント。
 // generate-web-recipes.ts が legal-site/analytics.js としてコピーする。直接 legal-site 側を編集しない。
 //
-// 役割は3つ:
+// 役割は4つ:
 //   1. EU/英国向けの Cookie 同意バナー（オプトイン）
 //   2. 流入〜App Store 導線のカスタムイベント送信
 //   3. window.tabeliaTrack() の提供（他スクリプトからの計測用フック）
+//   4. 期間限定のキャンペーン告知（ファイル末尾の別 IIFE。全ページが読む唯一のスクリプトなのでここに置く）
 //
 // 同意の実体は gtag の Consent Mode v2 が握る。head 側で EEA+UK を region 指定して
 // analytics_storage を既定拒否にしてあるため、このバナーの地域判定（タイムゾーン）が
@@ -284,4 +285,115 @@
       });
     });
   }
+})();
+
+// ---------------------------------------------------------------------------
+// 4. キャンペーン告知（Pro月額の最初の1か月¥300、docs/MONETIZATION.md）
+// ---------------------------------------------------------------------------
+// 日本語ページだけに、期間中、ブラウザごとに1回だけ出す。オファーは日本の App Store 限定のため、
+// en/it のページには出さない。期間外は何もしないので、終了後にコードを消し忘れても表示は止まる。
+// 計測に依存させないよう、上の IIFE（GA 未設定なら return する）とは分けている。
+//
+// 確認用: `?campaign_preview=1` を付けると期間と表示済みの記録に関係なく出す（記録も残さない）。
+(function () {
+  var CAMPAIGN = {
+    // 2026-10-13 00:00 〜 2026-10-31 24:00（日本時間）。App Store Connect の開始日・終了日と揃える
+    startsAt: Date.UTC(2026, 9, 12, 15, 0, 0),
+    endsAt: Date.UTC(2026, 9, 31, 15, 0, 0),
+    storageKey: 'tabelia-campaign-pro_intro_202610',
+    // ct はページ種別から下で付ける（generate-web-recipes.ts の appStoreCampaignToken と同じ形）
+    appStoreUrl: 'https://apps.apple.com/jp/app/id6773620076?pt=128959190&mt=8',
+  };
+
+  var lang = (document.documentElement.getAttribute('lang') || 'ja').slice(0, 2);
+  if (lang !== 'ja') return;
+
+  var preview = /[?&]campaign_preview=1(?:&|$)/.test(window.location.search);
+  var now = Date.now();
+  if (!preview && (now < CAMPAIGN.startsAt || now >= CAMPAIGN.endsAt)) return;
+
+  // 表示済みの記録は localStorage（ブラウザ単位）。使えない環境では sessionStorage（タブ単位）に退避し、
+  // どちらも使えなければ出さない（ページを移るたびに出るよりは、出さないほうがよい）
+  function pickStorage() {
+    var names = ['localStorage', 'sessionStorage'];
+    for (var i = 0; i < names.length; i++) {
+      try {
+        var s = window[names[i]];
+        s.setItem('tabelia-storage-test', '1');
+        s.removeItem('tabelia-storage-test');
+        return s;
+      } catch (e) {
+        /* 次の候補へ */
+      }
+    }
+    return null;
+  }
+
+  var storage = pickStorage();
+  if (!preview && (!storage || storage.getItem(CAMPAIGN.storageKey))) return;
+
+  // Cookie 同意バナーが出ているページでは重ねない。表示済みにもしないので、同意を選んだ後のページで出る
+  if (document.querySelector('.consent-banner')) return;
+
+  var page = window.TABELIA_PAGE || {};
+  function track(name, params) {
+    if (typeof window.tabeliaTrack === 'function') window.tabeliaTrack(name, params);
+  }
+
+  var ct = ['web_campaign', page.page_type || 'other', 'ja'].join('_').replace(/[^A-Za-z0-9_-]/g, '_');
+  var href = CAMPAIGN.appStoreUrl.replace('&mt=8', '&ct=' + ct + '&mt=8');
+
+  var root = document.createElement('div');
+  root.className = 'campaign-popup';
+  root.innerHTML =
+    '<div class="campaign-popup-backdrop" data-campaign-close></div>' +
+    '<div class="campaign-popup-dialog" role="dialog" aria-modal="true" aria-labelledby="campaign-popup-title" tabindex="-1">' +
+    '<button type="button" class="campaign-popup-close" data-campaign-close aria-label="閉じる">' +
+    '<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>' +
+    '</button>' +
+    '<p class="campaign-popup-kicker">10月31日までのお申し込みで</p>' +
+    '<h2 class="campaign-popup-title" id="campaign-popup-title">Proプラン<br>最初の1か月 <span>¥300</span></h2>' +
+    '<p class="campaign-popup-lead">Tabelia アプリのProプランを初めて申し込むと、最初の1か月は¥300、2か月目からは月額¥900です。' +
+    '献立に選んだ料理すべての工程を1本のタイムラインにまとめる「コーチング」を、月100回まで使えます。</p>' +
+    '<a class="appstore-badge campaign-popup-badge" data-cta-placement="campaign_popup" href="' + href + '" aria-label="Download on the App Store">' +
+    '<svg class="appstore-badge-icon" viewBox="0 0 814 1000" fill="white" aria-hidden="true"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105.9-57.8-156.7-127C46.5 682.8 3 581.1 3 483.3c0-149.8 97.7-229.2 190.1-229.2 80.2 0 131.1 53.3 181.6 53.3 48.4 0 106.3-56.3 197.7-56.3zm-161.1-153.9c49.3-58.4 85.5-139.9 85.5-221.3 0-11.3-.6-22.6-2.6-31.9-80.8 3.2-177 54.6-234.4 124.1-44.5 50.3-88.9 131.8-88.9 214.5 0 13.9 1.9 27.9 3.2 32.5 4.5.6 11.9 1.3 19.2 1.3 71.9 0 160.5-48.4 218-119.2z"/></svg>' +
+    '<span class="appstore-badge-text"><span class="appstore-badge-sub">Download on the</span><span class="appstore-badge-main">App Store</span></span>' +
+    '</a>' +
+    '<p class="campaign-popup-note">¥300の料金は、日本の App Store で月額プランを申し込んだ場合に限ります。適用されるかどうかは App Store 側で決まります。</p>' +
+    '</div>';
+
+  var previousFocus = document.activeElement;
+
+  function onKeydown(e) {
+    if (e.key === 'Escape' || e.key === 'Esc') close();
+  }
+
+  function close() {
+    document.removeEventListener('keydown', onKeydown);
+    document.documentElement.classList.remove('campaign-popup-open');
+    root.classList.remove('is-visible');
+    window.setTimeout(function () {
+      if (root.parentNode) root.parentNode.removeChild(root);
+    }, 200);
+    if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
+  }
+
+  root.addEventListener('click', function (e) {
+    var target = e.target;
+    if (target && typeof target.closest === 'function' && target.closest('[data-campaign-close]')) close();
+  });
+  document.addEventListener('keydown', onKeydown);
+
+  document.body.appendChild(root);
+  document.documentElement.classList.add('campaign-popup-open');
+  if (!preview) storage.setItem(CAMPAIGN.storageKey, String(now));
+  // 描画後にクラスを付けてフェードインさせる（同意バナーと同じ手順）
+  window.requestAnimationFrame(function () {
+    root.classList.add('is-visible');
+    // 閉じるボタンではなくダイアログ本体に移す。ボタンに当てると開いた直後からフォーカス枠が出る
+    var dialog = root.querySelector('.campaign-popup-dialog');
+    if (dialog) dialog.focus({ preventScroll: true });
+  });
+
+  track('campaign_popup_view', { page_type: page.page_type || '', locale: lang });
 })();
