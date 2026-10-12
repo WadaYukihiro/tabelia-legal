@@ -288,7 +288,7 @@
 })();
 
 // ---------------------------------------------------------------------------
-// 4. キャンペーン告知（Pro月額の最初の1か月¥300、docs/MONETIZATION.md）
+// 4. キャンペーン告知（Pro月額の最初の3か月¥300、docs/MONETIZATION.md）
 // ---------------------------------------------------------------------------
 // 日本語ページだけに、期間中、ブラウザごとに1回だけ出す。オファーは日本の App Store 限定のため、
 // en/it のページには出さない。期間外は何もしないので、終了後にコードを消し忘れても表示は止まる。
@@ -389,10 +389,10 @@
   var lastDays = now >= CAMPAIGN.lastDaysFrom;
   var daysLeft = Math.ceil((CAMPAIGN.endsAt - now) / 86400000);
   var deadline = !lastDays
-    ? '10月31日まで'
+    ? 'お申し込みは10月31日まで'
     : daysLeft <= 1
-      ? '今日まで ・ 10月31日'
-      : 'あと' + daysLeft + '日 ・ 10月31日まで';
+      ? 'お申し込みは今日まで ・ 10月31日'
+      : 'お申し込みはあと' + daysLeft + '日 ・ 10月31日まで';
   var quote = lastDays ? '迷っている間に、<br>ブロードがひと鍋取れてしまいますよ。' : '週末の献立、<br>私が横で見ていましょう。';
 
   var closeIcon =
@@ -406,16 +406,16 @@
     '<p class="campaign-popup-speaker">Chef Authen</p>' +
     '<hr class="campaign-popup-rule">' +
     '<p class="campaign-popup-deadline' + (lastDays ? ' is-last-days' : '') + '">' + deadline + '</p>' +
-    '<h2 class="campaign-popup-title" id="campaign-popup-title">Tabelia アプリの Proプラン、最初の1か月</h2>' +
+    '<h2 class="campaign-popup-title" id="campaign-popup-title">Tabelia アプリの Proプランが、最初の3か月は</h2>' +
     '<p class="campaign-popup-price">' +
     '<s class="campaign-popup-was"><span class="campaign-popup-sr">通常 </span>¥900</s>' +
     arrowIcon +
-    '<strong class="campaign-popup-now"><span class="campaign-popup-sr">最初の1か月 </span>¥300</strong>' +
-    '<span class="campaign-popup-save">¥600 お得</span>' +
+    '<strong class="campaign-popup-now"><span class="campaign-popup-sr">最初の3か月 </span>¥300<small> / 月</small></strong>' +
+    '<span class="campaign-popup-save">毎月¥600 お得</span>' +
     '</p>' +
     '<p class="campaign-popup-lead">献立の全工程を1本のタイムラインにする<br class="campaign-popup-br">コーチングが月100回使えます</p>';
   var note =
-    '<p class="campaign-popup-note">2か月目から月額¥900。日本の App Store で Proプランを初めて申し込み、月額を選んだ方が対象です。</p>';
+    '<p class="campaign-popup-note">4か月目から月額¥900。日本の App Store で Proプランを初めて申し込み、月額プランを選んだ方が対象です。</p>';
   var closeButton =
     '<button type="button" class="campaign-popup-close" data-campaign-close aria-label="閉じる">' + closeIcon + '</button>';
 

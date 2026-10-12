@@ -2260,3 +2260,12 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 @media (prefers-reduced-motion: reduce) { .glossary-dialog[open] { animation: none; } }
 
 .recipe-title-kana { display: block; margin-bottom: 0.35em; }
+
+.campaign-popup-now small {
+  font-size: 0.3em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.campaign-popup-price { flex-wrap: wrap; }
+.campaign-popup--sheet .campaign-popup-price { gap: 0.5rem; }
