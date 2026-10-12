@@ -1770,46 +1770,29 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
 }
 
 /* 期間限定のキャンペーン告知（analytics.js の 4. が日本語ページに1回だけ差し込む） */
+/* iPhone/iPad は下から出るシート（本文を覆わず、背面も止めない）、PC は中央のダイアログ＋QR コード。
+   料金は「通常¥900 → ¥300」の比較で見せ、Chef Authen のせりふと料金の間を細い罫で分ける */
 .campaign-popup-open, .campaign-popup-open body { overflow: hidden; }
 .campaign-popup {
   position: fixed;
-  inset: 0;
   z-index: 1100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
 .campaign-popup.is-visible { opacity: 1; }
-.campaign-popup-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(37, 32, 24, 0.5);
-}
 .campaign-popup-dialog {
   position: relative;
-  width: min(400px, 100%);
-  max-height: calc(100vh - 2rem);
-  overflow-y: auto;
-  padding: 2.1rem 1.75rem 1.75rem;
-  border: 1px solid #e7e0d6;
-  border-radius: 14px;
   background: #fff;
-  box-shadow: 0 18px 48px rgba(37, 32, 24, 0.22);
+  color: #252018;
   text-align: center;
-  transform: scale(0.96);
-  transition: transform 0.2s ease-out;
   outline: none;
 }
-.campaign-popup.is-visible .campaign-popup-dialog { transform: scale(1); }
 .campaign-popup-close {
   position: absolute;
-  top: 0.6rem;
-  right: 0.6rem;
-  width: 40px;
-  height: 40px;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1820,46 +1803,201 @@ body.dialog-open { position: fixed; left: 0; right: 0; width: 100%; }
   cursor: pointer;
 }
 .campaign-popup-close:hover { background: #f6eee5; }
-.campaign-popup-kicker {
-  margin: 0 0 0.6rem;
-  color: #a53629;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-}
-.campaign-popup-title {
-  margin: 0 0 1rem;
-  padding: 0;
-  border: none;
+.campaign-popup-chef { display: block; object-fit: cover; }
+.campaign-popup-quote {
+  margin: 0;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
   font-size: 1.15rem;
-  line-height: 1.45;
-  color: #2b2620;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #252018;
 }
-.campaign-popup-title span {
+.campaign-popup-speaker {
+  margin: 0.1rem 0 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #6b6156;
+}
+.campaign-popup-rule {
+  margin: 0.95rem 0;
+  border: none;
+  border-top: 1px solid #eee6da;
+}
+.campaign-popup-deadline {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #a53629;
+}
+.campaign-popup-deadline.is-last-days {
   display: inline-block;
-  margin-top: 0.15rem;
-  font-size: 2.1rem;
-  letter-spacing: 0.01em;
+  padding: 0.05rem 0.75rem;
+  border: 1px solid #9e2f23;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
   color: #9e2f23;
 }
-.campaign-popup-lead {
-  margin: 0;
-  font-size: 0.88rem;
-  line-height: 1.75;
-  color: #3f3932;
-  text-align: left;
+.campaign-popup-title {
+  margin: 0.15rem 0 0;
+  padding: 0;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #252018;
 }
-.campaign-popup-badge { margin-top: 1.35rem; }
-.campaign-popup-note {
-  margin: 1rem 0 0;
-  font-size: 0.72rem;
-  line-height: 1.65;
+.campaign-popup-price {
+  margin: 0.7rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  line-height: 1;
+}
+.campaign-popup-was {
+  font-size: 1.25rem;
   color: #7a7064;
+  text-decoration-thickness: 1.5px;
+}
+.campaign-popup-arrow { flex-shrink: 0; color: #7a7064; }
+.campaign-popup-now {
+  font-size: 3.1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #9e2f23;
+}
+.campaign-popup-save {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: #9e2f23;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.campaign-popup-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.campaign-popup-lead {
+  margin: 0.9rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #3f3932;
+}
+.campaign-popup-badge { margin-top: 1rem; }
+.campaign-popup-note {
+  margin: 0.9rem 0 0;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: #6b6156;
+}
+
+/* iPhone/iPad: 画面の下に貼り付くシート。Chef Authen の顔を上の縁からはみ出させる */
+.campaign-popup--sheet {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.campaign-popup--sheet .campaign-popup-dialog {
+  width: min(480px, 100%);
+  margin-top: 54px;
+  padding: 0 1.5rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid #e7e0d6;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -10px 32px rgba(37, 32, 24, 0.16);
+  transform: translateY(100%);
+  transition: transform 0.3s ease-out;
+  pointer-events: auto;
+}
+.campaign-popup--sheet.is-visible .campaign-popup-dialog { transform: translateY(0); }
+.campaign-popup--sheet .campaign-popup-chef {
+  width: 88px;
+  height: 88px;
+  margin: -50px auto 0.4rem;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(37, 32, 24, 0.18);
+}
+
+/* PC: 中央のダイアログ。左に Chef Authen、中に料金、右に QR コード */
+.campaign-popup--dialog {
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.campaign-popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 32, 24, 0.5);
+}
+.campaign-popup--dialog .campaign-popup-dialog {
+  width: min(880px, 100%);
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr) auto;
+  align-items: center;
+  border: 1px solid #e7e0d6;
+  border-radius: 14px;
+  box-shadow: 0 18px 48px rgba(37, 32, 24, 0.22);
   text-align: left;
+  transform: scale(0.96);
+  transition: transform 0.2s ease-out;
+}
+.campaign-popup--dialog.is-visible .campaign-popup-dialog { transform: scale(1); }
+.campaign-popup--dialog .campaign-popup-chef {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-position: 30% center;
+  align-self: stretch;
+}
+.campaign-popup-body { padding: 2.25rem 0.5rem 1.9rem 2.5rem; }
+.campaign-popup--dialog .campaign-popup-price { justify-content: flex-start; }
+.campaign-popup--dialog .campaign-popup-quote { font-size: 1.25rem; }
+.campaign-popup--dialog .campaign-popup-br { display: none; }
+.campaign-popup-qr {
+  padding: 2rem 2.5rem 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.campaign-popup-qr svg {
+  display: block;
+  border: 1px solid #e7e0d6;
+  border-radius: 10px;
+}
+.campaign-popup-qr p {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #51493f;
+}
+@media (max-width: 760px) {
+  .campaign-popup--dialog .campaign-popup-dialog { grid-template-columns: minmax(0, 1fr); text-align: center; }
+  .campaign-popup--dialog .campaign-popup-chef { width: 88px; height: 88px; min-height: 0; margin: 1.75rem auto 0; border-radius: 50%; }
+  .campaign-popup-body { padding: 0.75rem 1.5rem 0; }
+  .campaign-popup--dialog .campaign-popup-price { justify-content: center; }
+  .campaign-popup-qr { padding: 1.25rem 1.5rem 1.75rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .campaign-popup, .campaign-popup-dialog { transition: none; }
+  .campaign-popup, .campaign-popup-dialog,
+  .campaign-popup--sheet .campaign-popup-dialog,
+  .campaign-popup--dialog .campaign-popup-dialog { transition: none; }
 }
 
 /* 国カード（トップ・/recipes/ の「国から選ぶ」）
