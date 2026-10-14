@@ -1206,6 +1206,32 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .home-values li > span { color: #9e2f23; font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; }
 .home-values strong { font-size: 1rem; }
 .home-values p { margin: 0.3rem 0 0; color: #6a6156; font-size: 0.86rem; }
+
+/* タベリアについて: 考え方の節（記事への縦型リンク）・作り方の節・情報源の節 */
+.about-thesis { align-items: start; }
+.about-thesis h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.about-thesis .home-philosophy-copy > p { color: #61594e; line-height: 2; max-width: 580px; }
+.about-thesis .home-philosophy-copy > h2 + p { margin-top: 1.75rem; }
+.nobr { display: inline-block; }
+.about-thesis-article { display: flex; flex-direction: column; gap: .45rem; min-width: 0; color: #3a2a1c; text-decoration: none; transition: opacity .18s; }
+.about-thesis-article:hover { opacity: .75; }
+.about-thesis-article img { width: 100%; height: auto; aspect-ratio: 16/10; object-fit: cover; border-radius: 6px; display: block; margin-bottom: .55rem; }
+.about-thesis-article-title { font-size: 1.15rem; line-height: 1.6; }
+.about-approach { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2.5rem, 6vw, 6rem); align-items: start; }
+.about-approach h2, .about-sources h2 { border: 0; padding: 0; margin: 0 0 1.5rem; font-family: 'Cormorant Garamond', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: clamp(1.5rem, 2.6vw, 1.95rem); font-weight: 600; line-height: 1.4; }
+.about-approach-copy > p { color: #61594e; line-height: 2; }
+.about-sources-list { border-top: 1px solid rgba(57,41,28,0.16); }
+.about-sources-list > div { display: grid; grid-template-columns: 11rem 1fr; gap: 1.5rem; padding: 1.35rem 0; border-bottom: 1px solid rgba(57,41,28,0.16); }
+.about-sources-list dt { font-weight: 700; }
+.about-sources-list dd { margin: 0; min-width: 0; color: #61594e; line-height: 1.95; }
+.about-sources-list dd p { margin: 0; max-width: 46em; }
+.about-sources-list dd p + p { margin-top: 1rem; }
+@media (max-width: 720px) {
+  .about-approach { grid-template-columns: 1fr; gap: 1.5rem; }
+  .about-approach h2 br { display: none; }
+  .about-approach h2, .about-sources h2 { font-size: 1.4rem; }
+  .about-sources-list > div { grid-template-columns: 1fr; gap: .35rem; }
+}
 .home-course-list { border-top: 1px solid #d9d0c5; }
 .home-course-link { display: flex; justify-content: space-between; gap: 1rem; padding: 1.15rem 0.3rem; border-bottom: 1px solid #d9d0c5; color: #30291f; font-size: 1.05rem; font-weight: 700; text-decoration: none; transition: color 0.15s, padding 0.15s; }
 .home-course-link:hover { color: #9e2f23; padding-left: 0.7rem; }
