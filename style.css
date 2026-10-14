@@ -889,12 +889,19 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .app-feature-main { grid-template-columns: minmax(0, 1fr) 290px; background: #f8f8f8; border-radius: 12px; padding: 2rem; }
 .app-bridge { border-left: 3px solid #9e2f23; padding-left: 1.5rem; }
 .app-bridge p { color: #3f3932; line-height: 1.85; max-width: 640px; }
-.app-pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.25rem; }
-.app-pricing-card { border: 1px solid #e5ddd3; border-radius: 12px; padding: 1.25rem 1.4rem; background: #fff; }
-.app-pricing-card h3 { margin: 0 0 0.4rem; font-size: 1rem; }
-.app-pricing-price { margin: 0 0 0.75rem; font-size: 1.35rem; font-weight: 700; color: #2e2921; }
-.app-pricing-price span { font-size: 0.85rem; font-weight: 400; color: #8a8177; }
-.app-pricing-card ul { margin: 0; padding-left: 1.1rem; color: #605850; font-size: 0.85rem; line-height: 1.7; }
+.app-pricing-table-wrap { margin-top: 1.25rem; border: 1px solid #e5ddd3; border-radius: 12px; background: #fff; overflow: hidden; }
+.app-pricing-table { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 0; font-size: 0.85rem; color: #605850; }
+.app-pricing-table th, .app-pricing-table td { border: 0; background: none; vertical-align: middle; word-break: auto-phrase; }
+.app-pricing-table thead th { padding: 1rem 0.5rem 0.85rem; font-size: 0.92rem; font-weight: 700; color: #2e2921; text-align: center; vertical-align: top; }
+.app-pricing-table thead td { width: 46%; }
+.app-pricing-table tbody th { padding: 0.75rem 0.5rem 0.75rem 1.25rem; font-weight: 400; text-align: left; line-height: 1.55; }
+.app-pricing-table tbody td { padding: 0.75rem 0.5rem; text-align: center; color: #2e2921; white-space: nowrap; }
+.app-pricing-table tbody tr { border-top: 1px solid #efe8df; }
+.app-pricing-table .app-pricing-pro { color: #9e2f23; }
+.app-pricing-price { display: block; margin-top: 0.35rem; font-size: 1.2rem; font-weight: 700; color: #2e2921; }
+.app-pricing-sub { display: block; margin-top: 0.1rem; font-size: 0.76rem; font-weight: 400; color: #8a8177; }
+.app-pricing-mark { display: block; margin: 0 auto; color: #2e2921; }
+.app-pricing-mark-no { color: #bdb3a8; }
 .app-pricing-note { margin-top: 0.9rem; color: #8a8177; font-size: 0.76rem; }
 .app-closing { text-align: center; padding: 3rem 0 1rem; }
 .app-closing .appstore-badge { margin-top: 1rem; }
@@ -904,7 +911,10 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
   .app-feature-reverse .app-feature-copy { order: 1; }
   .app-feature-reverse .app-feature-shot { order: 2; }
   .app-hero-shot, .app-feature-shot { max-width: 240px; margin: 0 auto; }
-  .app-pricing-grid { grid-template-columns: 1fr; }
+  .app-pricing-table thead td { width: 38%; }
+  .app-pricing-table tbody th { padding-left: 0.9rem; }
+  .app-pricing-table th, .app-pricing-table td { padding-left: 0.35rem; padding-right: 0.35rem; }
+  .app-pricing-price { font-size: 1.05rem; }
 }
 
 /* Recipe index */
