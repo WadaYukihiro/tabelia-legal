@@ -2884,6 +2884,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/taboule/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/6bf1d2d9-8093-422a-b7ef-7a6a4304de6d_1791938998007.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>タブレ（Taboulé）</image:title>
+      <image:caption>クスクスにトマト、玉ねぎ、ミントを合わせ、レモンとオリーブオイルで和えるフランスの冷たいサラダです。クスクスの塊をほぐし、野菜の汁と香りをなじませて仕上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/mendiants-au-chocolat/</loc>
     <lastmod>2026-10-05</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/mendiants-au-chocolat/"/>
