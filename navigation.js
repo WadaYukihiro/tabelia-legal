@@ -59,9 +59,6 @@
   document.querySelectorAll('.home-search input, .hub-search input').forEach(function (input) {
     input.addEventListener('focus', function () { location.assign(link.href + (input.value ? '?q=' + encodeURIComponent(input.value) : '')); });
   });
-  document.querySelectorAll('.recipe-jump-search').forEach(function (button) {
-    button.addEventListener('click', function (event) { event.stopImmediatePropagation(); location.assign(link.href); }, true);
-  });
   document.addEventListener('click', function (event) {
     // メニューボタンの押下は setMenu が国の一覧を開くので、ここで閉じ直さない
     if (menuButton && menuButton.contains(event.target)) return;

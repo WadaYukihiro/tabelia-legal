@@ -48,3 +48,90 @@
 .substitution-reference-steps a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .substitution-reference-steps a:hover { color: #8f2f24; }
 .substitution-reference-steps a:focus-visible { outline: 2px solid #8f2f24; outline-offset: 2px; }
+
+/* ---------------------------------------------------------------------------
+   SP のレシピ詳細（2026-10-14。GA4 で SP のエンゲージメント率が PC より低く、1画面目に判断材料が無かった）
+   1画面目は「作れるか」の判断に使う: 合計時間と内訳・難易度・分量をタイトル直下に置き、写真を 3:2 にする。
+   材料までの距離を縮める: 時間のチップ（地方以外）・共通の定型文・本格度の説明カードを畳み、地図は料理の背景へ移す。
+   PC・タブレット幅（601px 以上）は従来どおり。生成側は scripts/generate-web-recipes.ts の renderRecipePage
+   --------------------------------------------------------------------------- */
+
+/* 最上部のアプリ案内の帯（appBand）。iPhone・iPad だけ web-recipe-layout.js が hidden を外す。画面に固定しない */
+.app-band { display: flex; align-items: center; gap: 10px; box-sizing: border-box; min-height: 62px; padding: 8px 12px 8px 4px; background: #f2ece3; border-bottom: 1px solid #e5ddd2; line-height: 1.4; }
+.app-band-close { flex: none; display: flex; align-items: center; justify-content: center; width: 36px; height: 44px; margin: 0; padding: 0; border: 0; background: transparent; color: #7a7065; cursor: pointer; }
+.app-band-close:focus-visible, .app-band-cta:focus-visible { outline: 2px solid #9e2f23; outline-offset: 2px; }
+.app-band-icon { flex: none; display: block; width: 36px; height: 36px; border-radius: 9px; }
+.app-band-text { flex: 1 1 auto; min-width: 0; margin: 0; }
+.app-band-text strong { display: block; color: #252018; font-size: 13px; }
+.app-band-text span { display: block; color: #625a50; font-size: 11.5px; }
+.app-band-cta { flex: none; display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: 999px; background: #252018; color: #fff; font-size: 12px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.app-band-cta:hover { color: #fff; opacity: 0.85; }
+.app-band-cta:active { opacity: 0.7; }
+
+/* SP だけで使う部品は PC・タブレット幅では出さない */
+.recipe-facts, .ingredients-score, .ingredients-diff, .ingredient-impact, .recipe-story-map { display: none; }
+
+.recipe-share-end { margin: 2rem 0 0; }
+.recipe-share-end .recipe-share { margin: 0; }
+
+@media (max-width: 600px) {
+  .container-recipe .breadcrumb { margin-bottom: 1rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .recipe-article .recipe-heading { margin: 1.25rem 0 1rem; }
+
+  /* 合計時間・難易度・分量（scripts/lib/web-recipe-facts.ts） */
+  .recipe-facts { display: block; margin: 0 0 0.9rem; padding: 0.75rem 0.85rem 0.65rem; border: 1px solid #e5ddd2; border-radius: 14px; background: #fff; }
+  .recipe-facts-row { display: flex; gap: 0.5rem; margin: 0; }
+  .recipe-facts-cell { flex: 1 1 0; min-width: 0; }
+  .recipe-facts-cell:first-child { flex-grow: 1.35; }
+  .recipe-facts-cell + .recipe-facts-cell { padding-left: 0.6rem; border-left: 1px solid #eee7dd; }
+  .recipe-facts dt { color: #7a7065; font-size: 0.7rem; line-height: 1.3; }
+  .recipe-facts dd { margin: 0.1rem 0 0; color: #2e271f; font-size: 1.05rem; font-weight: 700; line-height: 1.3; white-space: nowrap; }
+  .recipe-facts dd.recipe-facts-stars { font-size: 0.85rem; letter-spacing: 0.04em; line-height: 1.55; }
+  .recipe-facts-bar { display: flex; gap: 2px; height: 6px; margin: 0.65rem 0 0.4rem; overflow: hidden; border-radius: 3px; }
+  .recipe-facts-bar .is-prep { background: #c99a6d; }
+  .recipe-facts-bar .is-cook { background: #9e2f23; }
+  .recipe-facts-bar .is-inactive { background: repeating-linear-gradient(135deg, #ddd1c1 0 4px, #f1ebe2 4px 8px); }
+  .recipe-facts-legend { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.15rem 0.75rem; margin: 0; padding: 0; list-style: none; color: #5f574d; font-size: 0.75rem; line-height: 1.4; }
+  .recipe-facts-legend li::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 5px; border-radius: 2px; vertical-align: 0; }
+  .recipe-facts-legend .is-prep::before { background: #c99a6d; }
+  .recipe-facts-legend .is-cook::before { background: #9e2f23; }
+  .recipe-facts-legend .is-inactive::before { background: #ddd1c1; }
+
+  .recipe-article .recipe-hero { aspect-ratio: 3 / 2; height: auto; object-fit: cover; }
+  /* 地方のチップだけ残す（時間・難易度・分量は .recipe-facts が持つ。チップは DOM に残す: update-web-discovery.ts が難易度を読む） */
+  .recipe-article .recipe-meta .meta-chip:not(.meta-chip--region) { display: none; }
+  .recipe-article .recipe-meta { margin-bottom: 0.9rem; }
+  .recipe-description--standard { display: none; }
+  /* 地図は料理の背景の見出しの横へ。料理の背景が無いレシピは冒頭の地図をそのまま出す */
+  .recipe-article:has(.recipe-story-map) .recipe-lead .region-map { display: none; }
+  .recipe-story-map { display: block; float: right; margin: 0 0 0.5rem 1rem; }
+  .recipe-story-map .region-map { height: 110px; margin: 0; }
+  .recipe-article .recipe-byline { margin-bottom: 1.25rem; }
+
+  /* 本格度は説明カードを畳み、材料見出しに数値だけを出す。代替を選んだときに差と影響を材料欄に出す */
+  .recipe-article .recipe-customizer { display: none; }
+  .recipe-ingredients .ingredients-heading { flex-wrap: wrap; align-items: center; gap: 0.5rem; padding-bottom: 0.65rem; }
+  .recipe-ingredients .ingredients-heading h2 { flex: 1 1 auto; margin: 0; }
+  .ingredients-score { flex: none; display: inline-flex; align-items: center; gap: 6px; height: 32px; box-sizing: border-box; padding: 0 10px 0 4px; border: 1px solid #f0d9bd; border-radius: 999px; background: #fff; color: #7a4a1f; font-size: 0.75rem; font-weight: 700; white-space: nowrap; }
+  .ingredients-score-ring { --score: 100; display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: conic-gradient(#c9772f calc(var(--score) * 1%), #eadfd0 0); }
+  .ingredients-score-ring > span { display: flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: #fff; color: #9e2f23; font-size: 9px; line-height: 1; }
+  .ingredients-diff:not([hidden]) { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 0.75rem; margin: 0; padding: 0.4rem 0 0.65rem; border-bottom: 1px solid #ddd3c4; color: #5f574d; font-size: 0.8rem; line-height: 1.5; }
+  .ingredients-diff-items { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; }
+  .ingredients-diff strong { color: #9e2f23; }
+  .ingredient-impact { display: block; flex-basis: 100%; margin-top: 0.45rem; padding-top: 0.45rem; border-top: 1px dashed #e0d4c4; color: #4a4238; font-size: 0.78rem; line-height: 1.6; }
+  /* 本格度の札は代替ダイアログと同じ色分け（style.css の .impact-none / .impact-minor / .impact-major） */
+  .ingredient-impact-score { display: inline-block; margin-bottom: 0.2rem; padding: 0.05rem 0.55rem; border-radius: 999px; font-weight: 700; }
+  .ingredient-impact-text, .ingredient-impact-steps { display: block; }
+
+  /* 「作りたい」は下端の目次バーの4つ目（web-recipe-layout.js が SP のときだけここへ移す） */
+  .recipe-jump-nav .recipe-save { position: static; flex: 1 1 0; min-width: 0; height: auto; justify-content: center; gap: 0.3rem; padding: 0.5rem 0.15rem; border: 0; border-radius: 8px; background: transparent; box-shadow: none; color: #554d43; font-size: 0.74rem; white-space: nowrap; }
+  .recipe-jump-nav .recipe-save-count { display: none; }
+  /* 英語・イタリア語は目次の語が長く4つ並ばないので、「作りたい」はアイコンだけにする（文字は読み上げ用に残す） */
+  html:not([lang="ja"]) .recipe-jump-nav .recipe-save { flex: 0 0 44px; }
+  html:not([lang="ja"]) .recipe-jump-nav .recipe-save-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .recipe-jump-nav .recipe-save[aria-pressed="true"] { border: 0; background: #eee7dd; color: #9e2f23; }
+  .recipe-jump-nav .recipe-save[aria-pressed="true"] .recipe-save-icon { color: #9e2f23; }
+  body:has(.recipe-jump-nav .recipe-save) { padding-bottom: calc(3.4rem + env(safe-area-inset-bottom)); }
+  /* 浮遊ボタンを同意バナーの間だけ隠す規則（recipe-controls.css）は、バーの中では空きの枠になるので外す */
+  body:has(.consent-banner) .recipe-jump-nav .recipe-save { opacity: 1; transform: none; pointer-events: auto; }
+}

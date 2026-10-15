@@ -154,7 +154,8 @@
       track(saved ? 'recipe_saved' : 'recipe_unsaved', {
         recipe_slug: button.getAttribute('data-recipe-slug') || '',
         locale: button.getAttribute('data-locale') || 'ja',
-        placement: 'float',
+        // SP では web-recipe-layout.js がボタンを下端の目次バーへ移す
+        placement: button.closest('.recipe-jump-nav') ? 'bottom_bar' : 'float',
         engaged: engaged,
       });
 

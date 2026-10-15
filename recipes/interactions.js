@@ -485,11 +485,27 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
         '<span class="ingredient-name" data-ingredient-name>' + esc(item.nameJa) + '</span><span class="ingredient-qty" data-ingredient-qty>' + esc(fmtQtyWithUnit(item.quantity, item.unit)) + '</span>' +
         (item.notes ? '<span class="ingredient-notes">' + esc(scaling.scaleIngredientNotes(item.notes, item, data.recipe.baseServings, state.servings)) + '</span>' : '') +
         buyLinksHtml(item.nameJa, item.buy) +
-        (hasOptions ? '<button type="button" class="substitution-trigger" data-substitution-trigger="' + esc(item.standardIngredientId) + '"><span>' + (item.isSubstituted ? '代替：' + esc(item.nameJa) : '代わりに使える食材を選ぶ') + '</span><span aria-hidden="true">›</span></button>' : '') + '</li>';
+        (hasOptions ? '<button type="button" class="substitution-trigger" data-substitution-trigger="' + esc(item.standardIngredientId) + '"><span>' + (item.isSubstituted ? '代替：' + esc(item.nameJa) : '代わりに使える食材を選ぶ') + '</span><span aria-hidden="true">›</span></button>' : '') +
+        impactHtml(standard, item) + '</li>';
     }).join('');
     // 開示注記はリンクがあるときだけ
     var note = document.querySelector('.ingredient-affiliate-note');
     if (note) note.hidden = !list.querySelector('a[data-affiliate]');
+  }
+  // 代替を選んだ行に、本格度・味・手順への影響を出す（SP だけ。PC はスコアの説明カードに並ぶ。web-recipe-layout.css）。
+  // 表記は「代わりに使える食材」節（generate-web-recipes.ts の substitutionReferenceHtml）と揃える
+  function impactHtml(standard, item) {
+    // その行の食材そのものを代えたときだけ出す（別の代替の材料パッチで書き換わった行・足された行には出さない）
+    if (!standard || !item.isSubstituted || item.substitutionOptionId !== state.selections[item.standardIngredientId]) return '';
+    var option = standard.substitutionOptions.find(function (candidate) { return candidate.id === item.substitutionOptionId; });
+    if (!option) return '';
+    var impact = standard.role === 'garnish' ? 0 : option.authenticityImpact;
+    var steps = (option.affectedStepNumbers || []).filter(function (n, i, all) { return all.indexOf(n) === i; }).sort(function (a, b) { return a - b; });
+    var changes = (option.procedureChanges || []).filter(Boolean);
+    return '<span class="ingredient-impact"><span class="ingredient-impact-score impact-' + (impact === 0 ? 'none' : impact >= -10 ? 'minor' : 'major') + '">' + (impact === 0 ? '本格度: 変化なし' : '本格度: ' + impact + ' pts') + '</span>' +
+      (option.flavorImpact ? '<span class="ingredient-impact-text">' + esc(option.flavorImpact) + '</span>' : '') +
+      (changes.length ? '<span class="ingredient-impact-steps">' + (steps.length ? '工程' + steps.join('・') + '：' : '') + esc(changes.join('／')) + '</span>' : '') +
+      '</span>';
   }
   function renderSteps(steps, isAdapted) {
     var section = document.getElementById('steps'); if (!section) return;
@@ -504,6 +520,14 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
   function renderScore(options) {
     var score = scoreFor(options), value = document.getElementById('authenticity-score'), description = document.getElementById('authenticity-description'), selected = document.getElementById('selected-substitutions');
     if (value) value.textContent = String(score);
+    // SP の材料見出しの本格度（generate-web-recipes.ts の ingredientsScoreHtml）と、標準レシピとの差の1行
+    document.querySelectorAll('[data-authenticity-score]').forEach(function (el) { el.textContent = String(score); });
+    document.querySelectorAll('[data-score-ring]').forEach(function (el) { el.style.setProperty('--score', String(score)); });
+    var diff = document.querySelector('[data-authenticity-diff]');
+    if (diff) {
+      diff.hidden = !options.length;
+      diff.innerHTML = options.length ? '<span class="ingredients-diff-label">標準レシピとの差</span><span class="ingredients-diff-items">' + options.map(function (item) { var ingredient=data.ingredients.find(function(candidate){return candidate.id===item.ingredientId;});var impact=ingredient&&ingredient.role==='garnish'?0:item.option.authenticityImpact;return '<span>' + esc(item.option.nameJa) + ' <strong>' + (impact === 0 ? '±0' : impact) + '</strong></span>'; }).join('') + '</span>' : '';
+    }
     if (description) description.textContent = options.length ? scoreLabel(score) + '。選んだ食材による味・食感・手順の変化を、材料欄と作り方に反映しています。' : 'このスコアは、標準レシピの食材と手順で作った場合の値です。代わりに使える食材を選ぶと、味・食感・工程への影響とあわせてスコアが変わります。';
     if (selected) { selected.hidden = !options.length; selected.innerHTML = options.map(function (item) { var ingredient=data.ingredients.find(function(candidate){return candidate.id===item.ingredientId;});var impact=ingredient&&ingredient.role==='garnish'?0:item.option.authenticityImpact;return '<span>' + esc(item.option.nameJa) + ' <strong>' + (impact === 0 ? '±0' : impact) + '</strong></span>'; }).join(''); }
   }
@@ -513,6 +537,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     renderIngredients(currentIngredients); renderSteps(adaptedSteps(options), options.length > 0); renderScore(options);
     ['ingredient-servings-label','servings-output'].forEach(function (id) { var el=document.getElementById(id); if(el)el.textContent=String(state.servings); });
     var meta=document.getElementById('recipe-meta-servings'); if(meta)meta.textContent=state.servings+'人分';
+    document.querySelectorAll('[data-recipe-servings]').forEach(function (el) { el.textContent = state.servings + '人分'; });
     var minus=document.getElementById('servings-minus'), plus=document.getElementById('servings-plus'); if(minus)minus.disabled=state.servings<=data.recipe.minServings;if(plus)plus.disabled=state.servings>=data.recipe.maxServings;
     bindSubstitutionTriggers();
   }
