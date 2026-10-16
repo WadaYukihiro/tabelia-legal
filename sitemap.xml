@@ -75,7 +75,7 @@
   <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/recipes/hodie/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-16</lastmod></url>
+  
   <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-10-16</lastmod></url>
@@ -19761,4 +19761,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/articles/taste-memory-place/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/articoli/taste-memory-place/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/articles/taste-memory-place/"/></url>
+<url><loc>https://tabelia.app/articles/paris-bouquinistes-metier-vivant/</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://tabelia.app/articles/siena-palio-contrade-vita/</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://tabelia.app/articles/flamenco-penas-transmision/</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://tabelia.app/articles/slow-food-diritto-piacere/</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://tabelia.app/articles/baguette-patrimoine-savoir-faire/</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://tabelia.app/articles/</loc><lastmod>2026-10-16</lastmod></url>
 </urlset>
