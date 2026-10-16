@@ -78,6 +78,7 @@
   <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/baleares/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-10-16</lastmod></url>
@@ -3743,6 +3744,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/8722b2d8-5209-4e66-8760-63ee2c25f5c3_1790663514832.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ンドゥイヤとトマトのフィレヤ（Fileja con 'Nduja e Pomodoro）</image:title>
       <image:caption>カラブリアの手打ちパスタ「フィレヤ」を、ヴィボ・ヴァレンツィア産の激辛サラミ「ンドゥイヤ」のトマトソースで和えるパスタ。ンドゥイヤは豚の脂と唐辛子で作る柔らかなサラミで、ソースに溶かすと強烈な辛みと旨みが広がる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/ensaimada-de-mallorca/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8768107a-7b98-4ba8-8266-c82f3447562f_1792112439253.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マヨルカのエンサイマーダ（Ensaïmada de Mallorca）</image:title>
+      <image:caption>ラードを塗った生地を透けるほど薄く延ばし、棒状に巻いてから渦巻きにするマヨルカ島の発酵菓子です。一晩かけて膨らませ、焼いて冷ました表面に粉糖を振ります。</image:caption>
     </image:image>
   </url>
   <url>
