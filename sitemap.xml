@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://tabelia.app/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-10-16</lastmod></url>
+
   <url><loc>https://tabelia.app/app/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://tabelia.app/en/</loc><lastmod>2026-10-16</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
@@ -13,16 +13,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-10-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-10-16</lastmod>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
+
+
   <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-10-16</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
@@ -93,7 +85,7 @@
   <url><loc>https://tabelia.app/articles/brodo-basics-06-fish-fumetto/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/brodo-basics-03-beef-brodo/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/brodo-basics-04-chicken-brodo/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://tabelia.app/articles/taste-memory-place/</loc><lastmod>2026-10-08</lastmod></url>
+
   <url><loc>https://tabelia.app/articles/brodo-basics-05-vegetable-brodo/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/noel-a-la-maison/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://tabelia.app/articles/ragu-bolognese-senza-spaghetti/</loc><lastmod>2026-10-08</lastmod></url>
@@ -19731,4 +19723,42 @@
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi e profumata con Cointreau ed espresso.</image:caption>
     </image:image>
   </url>
+
+
+
+
+
+
+
+
+
+
+
+
+<url><loc>https://tabelia.app/about/</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
+<url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
+<url><loc>https://tabelia.app/articles/taste-memory-place/</loc><lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/articles/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/articles/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/articoli/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/articles/taste-memory-place/"/></url>
+<url><loc>https://tabelia.app/en/articles/taste-memory-place/</loc><lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/articles/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/articles/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/articoli/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/articles/taste-memory-place/"/></url>
+<url><loc>https://tabelia.app/it/articoli/taste-memory-place/</loc><lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/articles/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/articles/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/articoli/taste-memory-place/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/articles/taste-memory-place/"/></url>
 </urlset>
