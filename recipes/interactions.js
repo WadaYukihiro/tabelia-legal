@@ -172,7 +172,8 @@ function scaleInstructionText(instruction, baseServings, targetServings, ingredi
         const ingredient = namedIngredient(instruction.slice(0, offset), ingredients);
         const factor = ingredient ? ingredientScaleFactor(ingredient, baseServings, targetServings) : ratio;
         const normalizedUnit = unit === 'mL' ? 'ml' : unit;
-        return spoon ? `${unit}${(0, formatQty_1.fmtQty)(amount * factor, unit)}` : `${(0, formatQty_1.fmtQty)(amount * factor, normalizedUnit)}${normalizedUnit}`;
+        const formatted = (0, formatQty_1.fmtQtyWithUnit)(amount * factor, normalizedUnit);
+        return spoon === 'カップ' && formatted !== '少量' ? `${unit}${(0, formatQty_1.fmtQty)(amount * factor, unit)}` : formatted;
     });
 }
 /** Only scale an explicit partition of the listed amount; preserve ratios and piece sizes. */
@@ -192,8 +193,9 @@ function scaleIngredientNotes(text, ingredient, baseServings, targetServings) {
         const unit = spoon || suffix;
         if (comparableUnit(unit) !== comparableUnit(ingredient.unit))
             return match;
-        const value = (0, formatQty_1.fmtQty)(parseQuantityToken(spoonNumber || number) * factor, unit === 'mL' ? 'ml' : unit);
-        return spoon ? `${unit}${value}` : `${value}${unit}`;
+        const amount = parseQuantityToken(spoonNumber || number) * factor;
+        const formatted = (0, formatQty_1.fmtQtyWithUnit)(amount, unit === 'mL' ? 'ml' : unit);
+        return spoon === 'カップ' && formatted !== '少量' ? `${unit}${(0, formatQty_1.fmtQty)(amount, unit)}` : formatted;
     });
 }
 
