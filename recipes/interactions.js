@@ -291,7 +291,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
         standardIngredientId: ingredient.id, standardNameJa: ingredient.nameJa,
         nameJa: option ? option.nameJa : ingredient.nameJa, baseQuantity: ingredient.quantity,
         unit: ingredient.unit, role: ingredient.role, scalingBehavior: ingredient.scalingBehavior,
-        notes: ingredient.notes, isSubstituted: Boolean(option), substitutionOptionId: selectedId,
+        notes: option ? null : ingredient.notes, isSubstituted: Boolean(option), substitutionOptionId: selectedId,
         buy: option ? (option.buy || null) : (ingredient.buy || null)
       };
     });
@@ -318,7 +318,7 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
           unit: patch.unit != null ? patch.unit : current.unit,
           role: patch.role != null ? patch.role : current.role,
           scalingBehavior: patch.scalingBehavior === null ? null : (patch.scalingBehavior || current.scalingBehavior),
-          notes: patch.notes !== undefined ? patch.notes : current.notes,
+          notes: patch.notes !== undefined ? patch.notes : (patch.nameJa != null && patch.nameJa !== current.nameJa ? null : current.notes),
           isSubstituted: true, substitutionOptionId: selected.option.id
         });
       });
