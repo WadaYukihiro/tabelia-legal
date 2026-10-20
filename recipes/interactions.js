@@ -344,7 +344,16 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     var next = items.slice(); (additions || []).forEach(function (item) { item = item.trim(); if (item && next.indexOf(item) < 0) next.push(item); }); return next;
   }
   function replaceNames(step, names, replacement) {
-    function replace(value) { names.forEach(function (name) { value = String(value || '').split(name).join(replacement); }); return value; }
+    function replace(value) {
+      names.forEach(function (name) {
+        // Match the app's renaming rule: protect names already supplied by a
+        // previous alias pass or an explicit substitution step patch.
+        value = replacement.indexOf(name) >= 0
+          ? String(value || '').split(replacement).map(function (segment) { return segment.split(name).join(replacement); }).join(replacement)
+          : String(value || '').split(name).join(replacement);
+      });
+      return value;
+    }
     var next = cloneStep(step); next.instruction = replace(next.instruction); next.title = next.title ? replace(next.title) : next.title;
     next.sectionTitle = next.sectionTitle ? replace(next.sectionTitle) : next.sectionTitle;
     ['actionItems','parallelItems','completionCriteria','cautionItems','tipItems'].forEach(function (key) { next[key] = next[key].map(replace); }); return next;
