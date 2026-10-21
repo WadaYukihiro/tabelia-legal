@@ -52,7 +52,7 @@
   function sequence(pool, lastDay) {
     var picks = [];
     if (!pool || pool.length === 0) return picks;
-    var window = Math.min(REPEAT_WINDOW, Math.max(0, Math.floor(pool.length / 2)));
+    var window = Math.min(REPEAT_WINDOW, Math.max(0, pool.length > REPEAT_WINDOW ? pool.length - 1 : Math.floor(pool.length / 2)));
     for (var day = 0; day <= lastDay; day++) {
       var order = ranked(pool, day);
       var recent = {};
