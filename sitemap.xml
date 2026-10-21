@@ -505,6 +505,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/arnadi/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/0e36a6a7-8d7a-432a-9772-537ac72eba31_1792548943914.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アルナディ（Arnadí）</image:title>
+      <image:caption>焼いて水切りしたかぼちゃを砂糖と練り、アーモンドと柑橘の香りを加えるバレンシアの菓子です。土の器に山形に盛って木の実を飾り、表面を香ばしく焼き上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/risotto-al-limone/</loc>
     <lastmod>2026-05-30</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/risotto-al-limone/"/>
