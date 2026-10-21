@@ -39,6 +39,9 @@ a:focus-visible, summary:focus-visible, select:focus-visible, input:focus-visibl
 .site-nav .recipe-menu-all { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.35rem; padding: 0.8rem 0.75rem 0.45rem; border-top: 1px solid #eee8df; color: #625b51; font-size: 0.8rem; text-decoration: none; }
 .site-nav .recipe-menu-all:hover, .site-nav .recipe-menu-all[aria-current] { color: #9e2f23; }
 .recipe-menu-total { margin-left: 0.75rem; }
+.recipe-menu-hodie { margin-top: 0.35rem; border-top: 1px solid #eee8df; border-radius: 0 0 10px 10px; }
+.recipe-menu-hodie .recipe-menu-native { font-style: italic; }
+.hodie-ribbon { background: #9e2f23; }
 
 /* 検索ページ: 601px 以上は左の条件列＋結果。600px 以下は main[data-view] で条件と結果の2画面を切り替える */
 .discovery-page { max-width: 1200px; margin: 1.75rem auto 4rem; }
