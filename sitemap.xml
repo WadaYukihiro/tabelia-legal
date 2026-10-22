@@ -97,6 +97,7 @@
   <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://tabelia.app/articles/mediterranean-dry-stone-walls/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://tabelia.app/articles/catalonia-castells-pinya/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://tabelia.app/articles/italian-truffle-hunter-dog/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://tabelia.app/articles/french-meal-shared-ritual/</loc><lastmod>2026-10-19</lastmod></url>
@@ -1343,6 +1344,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/yemas-de-santa-teresa/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/2b08e6c8-1aeb-5551-808c-3082bb1b7de8_1792630096919.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ジェマス・デ・サンタ・テレサ（Yemas de Santa Teresa）</image:title>
+      <image:caption>卵黄6個・砂糖100g・水50mlの現地資料を採用する。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/branzino-al-cartoccio/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/branzino-al-cartoccio/"/>
@@ -2018,6 +2028,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/43f13482-00d2-440f-9a70-a69e5c383b55_1790663706215.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ウニのスパゲッティ（Spaghetti ai Ricci di Mare）</image:title>
       <image:caption>プーリア州タラントとガリポリで獲れるウニを、火を止めてからパスタと和えるスパゲッティ。ウニに火を通しすぎず、磯の香りを残す。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/patatas-panaderas/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/4448eb77-838d-5da0-a55f-3a7fddfc0886_1792630094981.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パタタス・パナデラス（Patatas panaderas）</image:title>
+      <image:caption>玉ねぎと緑ピーマンの油で5mm厚のじゃがいもを炒め焼きする。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2704,6 +2723,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/samfaina/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/60620ad9-d2be-59ce-b340-fcf21164a444_1792630091389.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>サンファイナ（Samfaina）</image:title>
+      <image:caption>バシュ・リュブラガート農業公園の作り方。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/cajettes/</loc>
     <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cajettes/"/>
@@ -2834,6 +2862,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/torrijas/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/66d2e591-91d8-401e-8466-06a758fb02e5_1792631891985.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>トリハス（Torrijas）</image:title>
+      <image:caption>レモンの皮とシナモンで香りを付けた牛乳をパンに含ませ、卵をまとわせて揚げるスペインの菓子です。中はしっとり、表面はこんがりと仕上げ、温かいうちにシナモン入りの砂糖をまぶします。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/cabillaud-au-beurre-blanc/</loc>
     <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cabillaud-au-beurre-blanc/"/>
@@ -2940,6 +2977,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/693f496e-45b1-4cd6-84d8-5929ccc03b42_1790663426477.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ロースト肉のソースで仕上げるアニョロッティ・デル・プリン（Agnolotti del Plin al Sugo d'Arrosto）</image:title>
       <image:caption>ピエモンテの詰め物パスタ。指でつまんで閉じる「プリン（つまむ）」という独特の成形で作る小さなラビオリに、ローストした肉の焼き汁をソースとしてかける。詰め物は、肉の余り物を使い切る農家の料理から生まれた。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/pa-amb-tomaquet/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/69411a20-3f5c-4e42-b07c-db39a8a36e4f_1792630089871.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パン・コン・トマテ（Pa amb tomàquet）</image:title>
+      <image:caption>切った完熟トマトを田舎パンにこすり、オリーブオイルと塩で仕上げるカタルーニャの付け合わせ。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3589,6 +3635,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/huevos-rotos-con-jamon/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/818408a5-0929-5b41-bea0-379c32215b15_1792630084148.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ウエボス・ロトス（Huevos rotos con jamón）</image:title>
+      <image:caption>揚げたじゃがいもにハモンと卵を重ね、食べる直前に卵を割る。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/cinghiale-in-agrodolce/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cinghiale-in-agrodolce/"/>
@@ -3879,6 +3934,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/893e6378-cc9b-41c1-9db2-b9dcfcdb5ad4_1790663664758.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏肉とパプリカのローマ風煮込み（Pollo con i Peperoni alla Romana）</image:title>
       <image:caption>鶏もも肉を赤と黄のパプリカ、白ワイン、トマトで煮込む、ローマの夏の家庭料理。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/gato-dametlla/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/89e1a92d-7b76-53d3-8e7d-d4213591c18a_1792630100324.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガトー・ダメトラ（Gató d'ametlla）</image:title>
+      <image:caption>バレアレス観光局・調理学校の全卵を泡立てる作り方。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4769,6 +4833,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/judias-verdes-con-jamon/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/ad25f5b3-d7d3-5d1c-9d0f-cdaef0a32b54_1792630093231.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>いんげんとハモンの炒め（Judías verdes con jamón）</image:title>
+      <image:caption>下ゆでしたいんげんを玉ねぎ・にんにく・ハモンと炒め合わせる。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/insalata-mista/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/insalata-mista/"/>
@@ -5197,6 +5270,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/c041baa5-1131-502c-95a5-236103e6be51_1790832730405.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ガスパチョ（Gazpacho）</image:title>
       <image:caption>完熟トマトと夏野菜、パン、オリーブオイルをなめらかに合わせる、アンダルシアの冷製スープ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/porrusalda/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/c1120b57-c24e-5772-a2e1-ec415093acbe_1792630087899.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ポルサルダ（Porrusalda）</image:title>
+      <image:caption>参照先が認める水で煮る作り方を採用する。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5759,6 +5841,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/panellets/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/d3a8df83-03de-59fc-8cb4-2fc8d602df67_1792630098581.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>パネジェッツ（Panellets）</image:title>
+      <image:caption>Marc Ribasのアーモンドと卵黄の生地を採用し、ピスタチオの別生地は作らない。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/casoncelli-alla-bergamasca/</loc>
     <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/casoncelli-alla-bergamasca/"/>
@@ -6209,6 +6300,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/e2955bd2-3dc1-4066-9d2b-8129160c50a5_1790663645722.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>フィレンツェ風グリーンピース煮（Piselli alla Fiorentina）</image:title>
       <image:caption>グリーンピースをパンチェッタとにんにくの香りでやわらかく煮含める、フィレンツェの春の定番コントルノ。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/habas-con-jamon/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/e2b265dd-2a17-58d5-abe2-d6b736122f9b_1792630085968.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>そら豆とハモンの炒め煮（Habas con jamón）</image:title>
+      <image:caption>グラナダ市の資料にある、水を少量加えて豆を蒸し煮にする作り方。</image:caption>
     </image:image>
   </url>
   <url>
@@ -19888,97 +19988,6 @@
       <image:loc>https://tabelia.app/img/recipe-images/ffe5dd47-4ebe-4603-b2c2-1f2681b00526_1790686400036.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tiramisù</image:title>
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi e profumata con Cointreau ed espresso.</image:caption>
-    </image:image>
-  </url>
-
-<url>
-    <loc>https://tabelia.app/recipes/huevos-rotos-con-jamon/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/818408a5-0929-5b41-bea0-379c32215b15_1792630084148.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ウエボス・ロトス（Huevos rotos con jamón）</image:title>
-      <image:caption>揚げたじゃがいもにハモンと卵を重ね、食べる直前に卵を割る。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/habas-con-jamon/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/e2b265dd-2a17-58d5-abe2-d6b736122f9b_1792630085968.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>そら豆とハモンの炒め煮（Habas con jamón）</image:title>
-      <image:caption>グラナダ市の資料にある、水を少量加えて豆を蒸し煮にする作り方。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/porrusalda/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/c1120b57-c24e-5772-a2e1-ec415093acbe_1792630087899.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ポルサルダ（Porrusalda）</image:title>
-      <image:caption>参照先が認める水で煮る作り方を採用する。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/pa-amb-tomaquet/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/69411a20-3f5c-4e42-b07c-db39a8a36e4f_1792630089871.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>パン・コン・トマテ（Pa amb tomàquet）</image:title>
-      <image:caption>切った完熟トマトを田舎パンにこすり、オリーブオイルと塩で仕上げるカタルーニャの付け合わせ。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/samfaina/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/60620ad9-d2be-59ce-b340-fcf21164a444_1792630091389.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>サンファイナ（Samfaina）</image:title>
-      <image:caption>バシュ・リュブラガート農業公園の作り方。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/judias-verdes-con-jamon/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/ad25f5b3-d7d3-5d1c-9d0f-cdaef0a32b54_1792630093231.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>いんげんとハモンの炒め（Judías verdes con jamón）</image:title>
-      <image:caption>下ゆでしたいんげんを玉ねぎ・にんにく・ハモンと炒め合わせる。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/patatas-panaderas/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/4448eb77-838d-5da0-a55f-3a7fddfc0886_1792630094981.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>パタタス・パナデラス（Patatas panaderas）</image:title>
-      <image:caption>玉ねぎと緑ピーマンの油で5mm厚のじゃがいもを炒め焼きする。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/yemas-de-santa-teresa/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/2b08e6c8-1aeb-5551-808c-3082bb1b7de8_1792630096919.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ジェマス・デ・サンタ・テレサ（Yemas de Santa Teresa）</image:title>
-      <image:caption>卵黄6個・砂糖100g・水50mlの現地資料を採用する。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/panellets/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/d3a8df83-03de-59fc-8cb4-2fc8d602df67_1792630098581.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>パネジェッツ（Panellets）</image:title>
-      <image:caption>Marc Ribasのアーモンドと卵黄の生地を採用し、ピスタチオの別生地は作らない。</image:caption>
-    </image:image>
-  </url>
-<url>
-    <loc>https://tabelia.app/recipes/gato-dametlla/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/89e1a92d-7b76-53d3-8e7d-d4213591c18a_1792630100324.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ガトー・ダメトラ（Gató d'ametlla）</image:title>
-      <image:caption>バレアレス観光局・調理学校の全卵を泡立てる作り方。</image:caption>
     </image:image>
   </url>
 </urlset>
