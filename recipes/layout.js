@@ -10,22 +10,30 @@
   var isAndroid = /Android/i.test(ua);
   var isIos = /iPhone|iPod|iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
 
-  // 最上部のアプリ案内の帯（generate-web-recipes.ts の appBand）。iPhone・iPad だけに出し、×で閉じたら30日出さない。
+  // 最上部のアプリ案内の帯（generate-web-recipes.ts の appBand）。iPhone・iPad だけに出し、×で閉じたら1日出さない。
+  // 帯は画面の上端に固定する（layout.css）。固定している間の高さを :root の --app-band-height で渡し、
+  // 固定ヘッダー（discovery.css）・目次・材料欄の上端と節へのジャンプ位置をその分だけ下げる（閉じたら 0 に戻す）。
   // 確認用に ?app_band_preview=1 を付けると端末と記録に関係なく出す（記録も残さない）。
   var band = document.querySelector('[data-app-band]');
   var bandPreview = /[?&]app_band_preview=1(?:&|$)/.test(window.location.search);
+  function syncBandHeight() {
+    var height = band && !band.hidden ? band.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty('--app-band-height', height + 'px');
+  }
   if (band && (isIos || bandPreview)) {
     var BAND_KEY = 'tabelia-app-band-closed-at';
-    var BAND_SNOOZE_MS = 30 * 24 * 60 * 60 * 1000;
+    var BAND_SNOOZE_MS = 24 * 60 * 60 * 1000;
     var closedAt = 0;
     try { closedAt = Number(window.localStorage.getItem(BAND_KEY)) || 0; } catch (_) { /* 記録できない環境では毎回出す */ }
     if (bandPreview || Date.now() - closedAt > BAND_SNOOZE_MS) {
       band.hidden = false;
+      syncBandHeight();
       if (!bandPreview) track('app_band_view', { recipe_slug: page.recipe_slug || '' });
       var bandClose = band.querySelector('[data-app-band-close]');
       if (bandClose) {
         bandClose.addEventListener('click', function () {
           band.hidden = true;
+          syncBandHeight();
           if (bandPreview) return;
           try { window.localStorage.setItem(BAND_KEY, String(Date.now())); } catch (_) { /* ページ内だけ閉じる */ }
           track('app_band_closed', { recipe_slug: page.recipe_slug || '' });
@@ -34,8 +42,9 @@
     }
   }
 
-  // Android はアプリが未リリースで App Store から入れられないので、作り方の後のアプリ導線ブロックを出さない
-  // （材料欄の代替確定後の1行と同じ判定。web-recipe-interactions.js）。Android 版を出したらこの判定を消す
+  // Android はアプリが未リリースで App Store から入れられないので、英語・イタリア語のレシピ詳細の末尾にある
+  // アプリ導線ブロックを出さない（日本語のレシピ詳細にはブロックが無い。2026-10-24 に撤去）。
+  // 材料欄の代替確定後の1行と同じ判定（web-recipe-interactions.js）。Android 版を出したらこの判定を消す
   if (isAndroid) {
     var ctas = document.querySelectorAll('.recipe-article .app-cta');
     for (var c = 0; c < ctas.length; c++) ctas[c].hidden = true;
@@ -55,6 +64,7 @@
   }
 
   function updateLayout() {
+    syncBandHeight();
     // Measure the actual sticky navigation, including wrapped/zoomed text.
     var navHeight = mobile.matches ? 0 : nav.getBoundingClientRect().height;
     article.style.setProperty('--recipe-nav-height', navHeight + 'px');
@@ -69,6 +79,7 @@
     var observer = new ResizeObserver(updateLayout);
     observer.observe(nav);
     observer.observe(ingredients);
+    if (band) observer.observe(band);
   }
   window.addEventListener('resize', updateLayout);
   updateLayout();

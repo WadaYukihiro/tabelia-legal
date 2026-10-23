@@ -1,7 +1,13 @@
 /* Shared by Japanese, English and Italian recipe templates. */
+/* --app-band-height は最上部の帯（.app-band）が画面上端に固定されている間の高さ。layout.js が :root に実測を書き、
+   帯が無い・閉じた・iPhone/iPad 以外のときは 0。ヘッダー・目次・材料欄の上端と節へのジャンプ位置をその分だけ下げる
+   （ヘッダーの固定と目次の位置は discovery.css が同じ変数で決める） */
 .recipe-article {
   --recipe-nav-height: 5rem;
-  --recipe-sticky-top: calc(var(--recipe-nav-height) + 1rem);
+  --recipe-sticky-top: calc(var(--app-band-height, 0px) + var(--recipe-nav-height) + 1rem);
+}
+@media screen and (min-width: 601px) {
+  .recipe-jump-nav { top: var(--app-band-height, 0px); }
 }
 .recipe-article section[id], .recipe-article .step-card[id] { scroll-margin-top: var(--recipe-sticky-top); }
 
@@ -56,8 +62,9 @@
    PC・タブレット幅（601px 以上）は従来どおり。生成側は scripts/generate-web-recipes.ts の renderRecipePage
    --------------------------------------------------------------------------- */
 
-/* 最上部のアプリ案内の帯（appBand）。iPhone・iPad だけ web-recipe-layout.js が hidden を外す。画面に固定しない */
-.app-band { display: flex; align-items: center; gap: 10px; box-sizing: border-box; min-height: 62px; padding: 8px 12px 8px 4px; background: #f2ece3; border-bottom: 1px solid #e5ddd2; line-height: 1.4; }
+/* 最上部のアプリ案内の帯（appBand）。iPhone・iPad だけ web-recipe-layout.js が hidden を外す。
+   画面の上端に固定し、スクロールしても残す（2026-10-24）。固定ヘッダー（discovery.css、z-index 100）より手前に置く */
+.app-band { position: sticky; top: 0; z-index: 110; display: flex; align-items: center; gap: 10px; box-sizing: border-box; min-height: 62px; padding: 8px 12px 8px 4px; background: #f2ece3; border-bottom: 1px solid #e5ddd2; line-height: 1.4; }
 .app-band-close { flex: none; display: flex; align-items: center; justify-content: center; width: 36px; height: 44px; margin: 0; padding: 0; border: 0; background: transparent; color: #7a7065; cursor: pointer; }
 .app-band-close:focus-visible, .app-band-cta:focus-visible { outline: 2px solid #9e2f23; outline-offset: 2px; }
 .app-band-icon { flex: none; display: block; width: 36px; height: 36px; border-radius: 9px; }
