@@ -2,7 +2,9 @@
   var header = document.querySelector('.site-header');
   if (!header) return;
   // Move the chrome outside narrow content wrappers so every page shares its width.
-  document.body.prepend(header);
+  var appBand = document.querySelector('[data-app-band]');
+  if (appBand) appBand.after(header);
+  else document.body.prepend(header);
   var mobile = window.matchMedia('(max-width: 600px)');
   var nav = header.querySelector('.site-nav');
   var link = header.querySelector('.header-search-link');
