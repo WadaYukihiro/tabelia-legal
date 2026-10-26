@@ -1,4 +1,13 @@
 // Tabelia Web のアクセス解析（Google Analytics 4）クライアント。
+// Research survey is independent of analytics consent and the GA SDK.
+(function () {
+  if (document.querySelector('script[data-visitor-survey]')) return;
+  var script = document.createElement('script');
+  script.src = '/visitor-survey.js?v=20261026';
+  script.defer = true;
+  script.setAttribute('data-visitor-survey', '');
+  document.head.appendChild(script);
+})();
 // generate-web-recipes.ts が legal-site/analytics.js としてコピーする。直接 legal-site 側を編集しない。
 //
 // 役割は4つ:
