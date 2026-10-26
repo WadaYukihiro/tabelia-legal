@@ -6,10 +6,10 @@ body:has(.visitor-survey[open]){overflow:hidden}
 .visitor-survey button:focus-visible{outline:3px solid #b78635;outline-offset:3px}
 .visitor-survey-head{display:flex;align-items:center;gap:18px;border-bottom:1px solid var(--survey-line);padding-bottom:17px}
 .visitor-survey-wordmark{font:400 29px Georgia,serif;letter-spacing:-1px}
-.visitor-survey-label{font-size:11px;color:var(--survey-muted);border-left:1px solid var(--survey-line);padding-left:18px}
+.visitor-survey-label{font-size:12px;font-weight:600;line-height:1.5;color:var(--survey-paper);background:var(--survey-green);border-radius:2px;padding:6px 10px!important;text-align:center;display:table;margin:20px 0 0}
 .visitor-survey-close{margin-left:auto;display:grid;place-items:center;width:44px;height:44px;background:none;border:0;border-radius:50%;color:var(--survey-muted);font-size:27px!important;line-height:1}
 .visitor-survey-close:hover{background:#eceee3}
-.visitor-survey h2{font:500 27px/1.6 "Yu Mincho","Hiragino Mincho ProN",serif;letter-spacing:0;margin:23px 0 10px;padding:0;border:0;color:var(--survey-ink)}
+.visitor-survey h2{font:500 27px/1.6 "Yu Mincho","Hiragino Mincho ProN",serif;letter-spacing:0;margin:10px 0 10px;padding:0;border:0;color:var(--survey-ink)}
 .visitor-survey p{padding:0}
 #visitor-survey-purpose{font-size:12px;color:var(--survey-muted);margin:0}
 .visitor-survey-hint{font-size:11px;color:var(--survey-muted);margin:21px 0 12px}
@@ -29,10 +29,10 @@ body:has(.visitor-survey[open]){overflow:hidden}
 .visitor-survey-secondary .visitor-survey-check{width:20px;height:20px;line-height:18px;right:10px;top:17px;text-align:center;font-size:11px}
 .visitor-survey-status{min-height:19px;margin:15px 0 9px;font-size:11px;color:var(--survey-muted)}
 .visitor-survey-error{font-size:12px;color:#913c29;margin:0 0 10px}
-.visitor-survey-submit{display:flex;justify-content:space-between;align-items:center;width:100%;padding:15px 20px;border:0;border-radius:2px;background:var(--survey-green);color:var(--survey-paper);font-size:13px!important;min-height:48px;transition:transform .2s,opacity .2s}
+.visitor-survey-submit{display:flex;justify-content:center;align-items:center;width:100%;padding:15px 20px;border:0;border-radius:2px;background:var(--survey-green);color:var(--survey-paper);font-size:13px!important;min-height:48px;transition:transform .2s,opacity .2s}
 .visitor-survey-submit:active:not(:disabled){transform:scale(.985)}
 .visitor-survey-submit:disabled{background:#d8ddd0;color:#66715c;cursor:default}
 .visitor-survey-note{font-size:11px;color:var(--survey-muted);text-align:center;margin:13px 0 0}
 .visitor-survey-toast{position:fixed;z-index:2147483646;left:50%;bottom:25px;transform:translateX(-50%);max-width:calc(100% - 32px);background:#354d39;color:#faf7f0;padding:12px 22px;border-radius:4px;font:400 13px/1.7 system-ui;box-shadow:0 4px 25px #0002}
-@media(max-width:440px){.visitor-survey{padding:16px 16px 20px;width:calc(100% - 20px);max-height:calc(100dvh - 20px)}.visitor-survey-head{gap:12px}.visitor-survey-label{padding-left:12px}.visitor-survey h2{font-size:23px;margin-top:20px}.visitor-survey-choices{gap:12px}.visitor-survey-picture{aspect-ratio:1.05}.visitor-survey-choice strong{font-size:12px;padding:0 5px}.visitor-survey-choice small{padding:0 6px;min-height:38px}.visitor-survey-secondary{grid-column:1/-1;padding:11px 35px 11px 4px;min-height:52px}.visitor-survey-secondary .visitor-survey-check{top:15px}}
+@media(max-width:440px){.visitor-survey{padding:16px 16px 20px;width:calc(100% - 20px);max-height:calc(100dvh - 20px)}.visitor-survey-head{gap:12px}.visitor-survey-label{font-size:12px;padding:6px 8px}.visitor-survey h2{font-size:23px;margin-top:10px}.visitor-survey-choices{gap:12px}.visitor-survey-picture{aspect-ratio:1.05}.visitor-survey-choice strong{font-size:12px;padding:0 5px}.visitor-survey-choice small{padding:0 6px;min-height:38px}.visitor-survey-secondary{grid-column:1/-1;padding:11px 35px 11px 4px;min-height:52px}.visitor-survey-secondary .visitor-survey-check{top:15px}}
 @media(prefers-reduced-motion:reduce){.visitor-survey *{animation:none!important;transition:none!important}}

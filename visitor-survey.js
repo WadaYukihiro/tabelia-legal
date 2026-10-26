@@ -19,9 +19,9 @@
 
   var locale = (document.documentElement.lang || 'ja').slice(0, 2);
   var translations = {
-    ja: { label:'1問アンケート', title:'あなたと料理の関わりは？', purpose:'これからのTabeliaの機能づくりに役立てます。', hint:'当てはまるものをすべて選んでください', home:'家庭で料理を楽しむ', homeNote:'自分や家族、友人のために', professional:'飲食の仕事をしている', professionalNote:'調理・接客・店舗運営など', student:'料理・飲食を学んでいる', other:'その他', send:'回答を送信する', sending:'送信中…', close:'アンケートを閉じる', note:'回答せずに閉じても、次回から表示しません。', error:'送信できませんでした。もう一度お試しください。', expired:'アンケートの受付は終了しました。', thanks:'ご協力ありがとうございます。', selection:'つ選択中' },
-    en: { label:'One quick question', title:'How are you involved in cooking?', purpose:'Your answer will help shape future Tabelia features.', hint:'Choose all that apply', home:'I cook at home', homeNote:'For myself, family or friends', professional:'I work in food service', professionalNote:'Cooking, service or management', student:'I study cooking or food service', other:'Other', send:'Send my answer', sending:'Sending…', close:'Close survey', note:'If you close this survey, it will not appear again.', error:'We could not send your answer. Please try again.', expired:'This survey has ended.', thanks:'Thank you for your help.', selection:' selected' },
-    it: { label:'Una sola domanda', title:'Qual è il tuo rapporto con la cucina?', purpose:'La tua risposta ci aiuterà a sviluppare le prossime funzioni di Tabelia.', hint:'Scegli tutte le risposte che ti descrivono', home:'Cucino a casa', homeNote:'Per me, la famiglia o gli amici', professional:'Lavoro nella ristorazione', professionalNote:'Cucina, servizio o gestione', student:'Studio cucina o ristorazione', other:'Altro', send:'Invia la risposta', sending:'Invio…', close:'Chiudi il sondaggio', note:'Se lo chiudi, il sondaggio non verrà più mostrato.', error:'Invio non riuscito. Riprova.', expired:'Il sondaggio è terminato.', thanks:'Grazie per il tuo contributo.', selection:' selezionate' }
+    ja: { label:'１問だけご協力ください', title:'あなたと料理の関わりは？', purpose:'これからのTabeliaの機能づくりに役立てます。', hint:'当てはまるものをすべて選んでください', home:'家庭で料理を楽しむ', homeNote:'自分や家族、友人のために', professional:'飲食の仕事をしている', professionalNote:'調理・接客・店舗運営など', student:'料理・飲食を学んでいる', other:'その他', send:'回答を送信して完了', sending:'送信中…', close:'アンケートを閉じる', note:'回答せずに閉じても、次回から表示しません。', error:'送信できませんでした。もう一度お試しください。', expired:'アンケートの受付は終了しました。', thanks:'ご協力ありがとうございます。', selection:'つ選択中' },
+    en: { label:'Please answer just one question', title:'How are you involved in cooking?', purpose:'Your answer will help shape future Tabelia features.', hint:'Choose all that apply', home:'I cook at home', homeNote:'For myself, family or friends', professional:'I work in food service', professionalNote:'Cooking, service or management', student:'I study cooking or food service', other:'Other', send:'Submit and finish', sending:'Sending…', close:'Close survey', note:'If you close this survey, it will not appear again.', error:'We could not send your answer. Please try again.', expired:'This survey has ended.', thanks:'Thank you for your help.', selection:' selected' },
+    it: { label:'Solo una domanda per aiutarci', title:'Qual è il tuo rapporto con la cucina?', purpose:'La tua risposta ci aiuterà a sviluppare le prossime funzioni di Tabelia.', hint:'Scegli tutte le risposte che ti descrivono', home:'Cucino a casa', homeNote:'Per me, la famiglia o gli amici', professional:'Lavoro nella ristorazione', professionalNote:'Cucina, servizio o gestione', student:'Studio cucina o ristorazione', other:'Altro', send:'Invia e termina', sending:'Invio…', close:'Chiudi il sondaggio', note:'Se lo chiudi, il sondaggio non verrà più mostrato.', error:'Invio non riuscito. Riprova.', expired:'Il sondaggio è terminato.', thanks:'Grazie per il tuo contributo.', selection:' selezionate' }
   };
   var copy = translations[locale] || translations.en;
   var dialog, expiresAt = 0, selected = [], busy = false, finished = false, previousFocus, expirationTimer;
@@ -87,11 +87,11 @@
         (primary?'<span class="visitor-survey-picture"><img src="/assets/survey-'+value+'-2026-10.jpg" alt="" width="640" height="480"></span>':'')+
         '<strong>'+copy[value]+'</strong>'+(primary?'<small>'+copy[value+'Note']+'</small>':'')+'</button>';
     }
-    dialog.innerHTML='<div class="visitor-survey-head"><span class="visitor-survey-wordmark">Tabelia</span><span class="visitor-survey-label">'+copy.label+'</span><button class="visitor-survey-close" type="button" aria-label="'+copy.close+'" data-survey-close>×</button></div>'+
-      '<h2 id="visitor-survey-title">'+copy.title+'</h2><p id="visitor-survey-purpose">'+copy.purpose+'</p><p class="visitor-survey-hint">'+copy.hint+'</p>'+
+    dialog.innerHTML='<div class="visitor-survey-head"><span class="visitor-survey-wordmark">Tabelia</span><button class="visitor-survey-close" type="button" aria-label="'+copy.close+'" data-survey-close>×</button></div>'+
+      '<p class="visitor-survey-label">'+copy.label+'</p><h2 id="visitor-survey-title">'+copy.title+'</h2><p id="visitor-survey-purpose">'+copy.purpose+'</p><p class="visitor-survey-hint">'+copy.hint+'</p>'+
       '<div class="visitor-survey-choices" role="group" aria-labelledby="visitor-survey-title">'+choice('home',true)+choice('professional',true)+choice('student',false)+choice('other',false)+'</div>'+
       '<p class="visitor-survey-status" data-survey-status aria-live="polite"></p><p class="visitor-survey-error" data-survey-error role="alert" hidden></p>'+
-      '<button type="button" class="visitor-survey-submit" data-survey-submit disabled><span>'+copy.send+'</span><span aria-hidden="true">→</span></button><p class="visitor-survey-note">'+copy.note+'</p>';
+      '<button type="button" class="visitor-survey-submit" data-survey-submit disabled><span>'+copy.send+'</span></button><p class="visitor-survey-note">'+copy.note+'</p>';
     dialog.querySelector('[data-survey-close]').addEventListener('click',dismiss);
     dialog.addEventListener('cancel',function(e){e.preventDefault();dismiss();});
     dialog.querySelectorAll('[data-survey-choice]').forEach(function(button){button.addEventListener('click',function(){
@@ -126,7 +126,7 @@
     var duration=Date.parse(config.endsAt)-Date.parse(config.serverNow);
     if(!Number.isFinite(duration)||duration<=0||duration>7*86400000)return;
     expiresAt=Date.now()+duration;
-    var stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href='/visitor-survey.css?v=20261026';
+    var stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href='/visitor-survey.css?v=20261026b';
     stylesheet.addEventListener('load',function(){setTimeout(function(){show(config);},1200);});
     document.head.appendChild(stylesheet);
   }).catch(function(){});
