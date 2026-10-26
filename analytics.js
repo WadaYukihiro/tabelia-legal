@@ -3,7 +3,7 @@
 (function () {
   if (document.querySelector('script[data-visitor-survey]')) return;
   var script = document.createElement('script');
-  script.src = '/visitor-survey.js?v=20261026b';
+  script.src = '/visitor-survey.js?v=20261026c';
   script.defer = true;
   script.setAttribute('data-visitor-survey', '');
   document.head.appendChild(script);

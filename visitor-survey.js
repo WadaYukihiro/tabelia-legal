@@ -18,6 +18,7 @@
   } catch (_) { return; } // A durable dismissal is required; otherwise do not interrupt visitors.
 
   var locale = (document.documentElement.lang || 'ja').slice(0, 2);
+  var siteCountry = {ja:'JP',en:'US',it:'IT'}[locale];
   var translations = {
     ja: { label:'１問だけご協力ください', title:'あなたと料理の関わりは？', purpose:'これからのTabeliaの機能づくりに役立てます。', hint:'当てはまるものをすべて選んでください', home:'家庭で料理を楽しむ', homeNote:'自分や家族、友人のために', professional:'飲食の仕事をしている', professionalNote:'調理・接客・店舗運営など', student:'料理・飲食を学んでいる', other:'その他', send:'回答を送信して完了', sending:'送信中…', close:'アンケートを閉じる', note:'回答せずに閉じても、次回から表示しません。', error:'送信できませんでした。もう一度お試しください。', expired:'アンケートの受付は終了しました。', thanks:'ご協力ありがとうございます。', selection:'つ選択中' },
     en: { label:'Please answer just one question', title:'How are you involved in cooking?', purpose:'Your answer will help shape future Tabelia features.', hint:'Choose all that apply', home:'I cook at home', homeNote:'For myself, family or friends', professional:'I work in food service', professionalNote:'Cooking, service or management', student:'I study cooking or food service', other:'Other', send:'Submit and finish', sending:'Sending…', close:'Close survey', note:'If you close this survey, it will not appear again.', error:'We could not send your answer. Please try again.', expired:'This survey has ended.', thanks:'Thank you for your help.', selection:' selected' },
@@ -27,7 +28,7 @@
   var dialog, expiresAt = 0, selected = [], busy = false, finished = false, previousFocus, expirationTimer;
   function request(action, choices) {
     return fetch(ENDPOINT, { method:'POST', headers:{'Content-Type':'application/json'}, cache:'no-store', keepalive:true,
-      body:JSON.stringify({browserId:id,action:action,choices:choices || []})
+      body:JSON.stringify({browserId:id,action:action,choices:choices || [],siteCountry:siteCountry})
     }).then(function (response) {
       if (!response.ok) { var error=new Error('survey_request_failed');error.status=response.status;throw error; }
       return response.json();
@@ -126,7 +127,7 @@
     var duration=Date.parse(config.endsAt)-Date.parse(config.serverNow);
     if(!Number.isFinite(duration)||duration<=0||duration>7*86400000)return;
     expiresAt=Date.now()+duration;
-    var stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href='/visitor-survey.css?v=20261026b';
+    var stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href='/visitor-survey.css?v=20261026c';
     stylesheet.addEventListener('load',function(){setTimeout(function(){show(config);},1200);});
     document.head.appendChild(stylesheet);
   }).catch(function(){});
