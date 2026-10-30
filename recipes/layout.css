@@ -109,7 +109,7 @@
   .recipe-article .recipe-meta .meta-chip:not(.meta-chip--region) { display: none; }
   .recipe-article .recipe-meta { margin-bottom: 0.9rem; }
   .recipe-description--standard { display: none; }
-  /* 地図は料理の背景の見出しの横へ。料理の背景が無いレシピは冒頭の地図をそのまま出す */
+  /* 地図は料理の背景の見出しの下へ。料理の背景が無いレシピは冒頭の地図をそのまま出す */
   .recipe-article:has(.recipe-story-map) .recipe-lead .region-map { display: none; }
   .recipe-story-map { display: block; float: right; margin: 0 0 0.5rem 1rem; }
   .recipe-story-map .region-map { height: 110px; margin: 0; }

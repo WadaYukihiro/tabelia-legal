@@ -216,3 +216,14 @@ Story photo usage cap additions: verified 2026-10-16.
 | spanish-additions-avila-market-chico.webp | Emilio J. Rodríguez Posada | [Plaza del Mercado Chico de Ávila en mayo de 2022 05.jpg](https://commons.wikimedia.org/wiki/File:Plaza_del_Mercado_Chico_de_%C3%81vila_en_mayo_de_2022_05.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Resized Commons rendition; converted to WebP. CSS crops for layout. |
 | spanish-additions-barcelona-la-colmena.webp | Enric | [008 La Colmena, pl. de l'Àngel 12 - bda. de la Llibreteria 14 (Barcelona).jpg](https://commons.wikimedia.org/wiki/File:008_La_Colmena,_pl._de_l%27%C3%80ngel_12_-_bda._de_la_Llibreteria_14_(Barcelona).jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Resized Commons rendition; converted to WebP. CSS crops for layout. |
 | spanish-additions-lloseta-almond-orchard.webp | Rotget | [Ametlers florits prop de Lloseta.JPG](https://commons.wikimedia.org/wiki/File:Ametlers_florits_prop_de_Lloseta.JPG) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Resized Commons rendition; converted to WebP. CSS crops for layout. |
+
+
+## Spanish additions batch 2 (2026-10-30)
+
+| Asset | Author | Source | License | Changes |
+|---|---|---|---|---|
+| spanish-batch02-jaen-concordia-park.jpg | Kordas | [Jaén - Parque de la Victoria.jpg](https://commons.wikimedia.org/wiki/File:Ja%C3%A9n_-_Parque_de_la_Victoria.jpg) | [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5) | Commons resized rendition; CSS display crop. |
+| spanish-batch02-leioa-cooking-school.jpg | Zarateman | [Lejona - Campus de Bizkaia de la UPV-EHU - Escuela de Hostelería.jpg](https://commons.wikimedia.org/wiki/File:Lejona_-_Campus_de_Bizkaia_de_la_UPV-EHU_-_Escuela_de_Hosteler%C3%ADa.jpg) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | Commons resized rendition; CSS display crop. |
+| spanish-batch02-ceuta-plaza-africa.jpg | Diego Delso | [Plaza de África, Ceuta, España, 2015-12-10, DD 02.JPG](https://commons.wikimedia.org/wiki/File:Plaza_de_%C3%81frica,_Ceuta,_Espa%C3%B1a,_2015-12-10,_DD_02.JPG) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Commons resized rendition; CSS display crop. |
+| spanish-batch02-madrid-san-gines.jpg | Zarateman | [Madrid - Chocolatería San Ginés 1.JPG](https://commons.wikimedia.org/wiki/File:Madrid_-_Chocolater%C3%ADa_San_Gin%C3%A9s_1.JPG) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | Commons resized rendition; CSS display crop. |
+| spanish-batch02-estepa-town-fields.jpg | Frobles | [Vista de Estepa y sus campos.jpg](https://commons.wikimedia.org/wiki/File:Vista_de_Estepa_y_sus_campos.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Commons resized rendition; CSS display crop. |
