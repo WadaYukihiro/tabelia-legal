@@ -234,3 +234,18 @@ Story photo usage cap additions: verified 2026-10-16.
 |---|---|---|---|
 | `venezia-grand-canal-south.webp` — Venezia, Canal Grande dal Ponte di Rialto | [View of the Grand Canal from Rialto to Ca'Foscari.jpg](https://commons.wikimedia.org/wiki/File:View_of_the_Grand_Canal_from_Rialto_to_Ca%27Foscari.jpg) | Didier Descouens | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | `venezia-rialto-waterfront.webp` — Venezia, Canal Grande e Ponte di Rialto | [Panorama of Canal Grande and Ponte di Rialto, Venice - September 2017.jpg](https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg) | Martin Falbisoner | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+
+
+## Spanish additions batch 3 (2026-10-30)
+
+| Asset | Author | Source | License | Changes |
+|---|---|---|---|---|
+| spanish-batch03-puerto-ribera-marisco.jpg | Emilio J. Rodríguez Posada | [Ribera del Marisco (37215738582).jpg](https://commons.wikimedia.org/wiki/File:Ribera_del_Marisco_(37215738582).jpg) | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-nulles-town.jpg | Amadalvarez | [Nulles esglStJoan IPA-2213 1008 resize.jpg](https://commons.wikimedia.org/wiki/File:Nulles_esglStJoan_IPA-2213_1008_resize.jpg) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-tierra-campos-fields.jpg | Angel  de los Rios from Valladolid, Spain | [Tierra de Campos, verano (36671748896).jpg](https://commons.wikimedia.org/wiki/File:Tierra_de_Campos,_verano_(36671748896).jpg) | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-ricote-orchards.jpg | Gregorico | [Ricoteysuhuerta.jpg](https://commons.wikimedia.org/wiki/File:Ricoteysuhuerta.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-irati-forest.jpg | JavierOlivares | [Selva de Irati, Reyno de Navarra, Spain.jpg](https://commons.wikimedia.org/wiki/File:Selva_de_Irati,_Reyno_de_Navarra,_Spain.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-calella-promenade.jpg | Enfo | [033 Passeig de Manuel Puigvert.jpg](https://commons.wikimedia.org/wiki/File:033_Passeig_de_Manuel_Puigvert.jpg) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-toledo-zocodover.jpg | Palickap | [Toledo, Plaza Zocodover 02.jpg](https://commons.wikimedia.org/wiki/File:Toledo,_Plaza_Zocodover_02.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-salamanca-plaza-mayor.jpg | xiquinhosilva from Cacau | [68404-Salamanca (49093511831).jpg](https://commons.wikimedia.org/wiki/File:68404-Salamanca_(49093511831).jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | Original or Commons resized rendition; CSS display crop. |
+| spanish-batch03-santiago-teide-almond.jpg | Jose Luis Espinosa | [Sueños (63570569).jpeg](https://commons.wikimedia.org/wiki/File:Sue%C3%B1os_(63570569).jpeg) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | Original or Commons resized rendition; CSS display crop. |

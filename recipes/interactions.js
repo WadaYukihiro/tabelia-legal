@@ -558,6 +558,13 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     var label = option ? option.nameJa : ingredient.nameJa;
     var sub = option ? option.flavorImpact : '標準（本場の食材）';
     var details = option ? [].concat(option.textureImpact || [], option.procedureChanges || [], option.notes || []).filter(Boolean) : [];
+    details = details.filter(function (detail, index) {
+      if (details.indexOf(detail) !== index) return false;
+      var primary = String(sub || '').trim(), text = String(detail).trim();
+      if (!text || !primary.endsWith(text)) return !!text;
+      var prefix = primary.slice(0, -text.length).trim();
+      return !!prefix && !/[。.!?！？]$/.test(prefix);
+    });
     var value = option ? option.id : '';
     return '<label class="substitution-option ' + (selectedId === value ? 'is-selected' : '') + '"><input type="radio" name="substitution" value="' + esc(value) + '" ' + (selectedId === value ? 'checked' : '') + '><span class="substitution-option-main"><strong>' + esc(label) + '</strong><small>' + esc(sub) + '</small>' + (details.length ? '<em>' + esc(details.join('／')) + '</em>' : '') + '</span><span class="substitution-impact impact-' + (impact === 0 ? 'none' : impact >= -10 ? 'minor' : 'major') + '">' + (impact === 0 ? '変化なし' : impact + ' pts') + '</span></label>';
   }
