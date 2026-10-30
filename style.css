@@ -481,6 +481,14 @@ td { padding: 0.55rem 0.85rem; border: 1px solid #e0e0e0; vertical-align: top; }
 .learn-figure { margin: 2rem 0; }
 .learn-figure img { width: 100%; height: auto; border-radius: 10px; display: block; background: #f2f2f2; }
 .learn-figure figcaption { margin-top: 0.55rem; font-size: 0.78rem; color: #938b81; line-height: 1.7; }
+.learn-figure figcaption p { margin: 0 0 0.65rem; }
+.learn-figure figcaption p:last-child { margin-bottom: 0; }
+.learn-article-visual .learn-figure { margin: 1.25rem 0 2.75rem; }
+.learn-article-visual .learn-figure img { border-radius: 0; }
+.learn-article-visual .learn-figure figcaption { margin-top: 0.85rem; font-size: 0.92rem; color: #51493f; line-height: 1.95; }
+.learn-article-visual .learn-figure figcaption p:last-child { font-size: 0.76rem; color: #938b81; }
+.learn-article-visual .article-tool-purchase { margin: 2.75rem 0; padding: 1rem 0; border-top: 1px solid #e7e0d6; border-bottom: 1px solid #e7e0d6; }
+.article-tool-purchase summary { cursor: pointer; font-weight: 700; color: #3a2a1c; min-height: 44px; display: list-item; align-content: center; }
 
 .learn-callout {
   border-top: 1px solid #e7e0d6;
