@@ -227,3 +227,10 @@ Story photo usage cap additions: verified 2026-10-16.
 | spanish-batch02-ceuta-plaza-africa.jpg | Diego Delso | [Plaza de África, Ceuta, España, 2015-12-10, DD 02.JPG](https://commons.wikimedia.org/wiki/File:Plaza_de_%C3%81frica,_Ceuta,_Espa%C3%B1a,_2015-12-10,_DD_02.JPG) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Commons resized rendition; CSS display crop. |
 | spanish-batch02-madrid-san-gines.jpg | Zarateman | [Madrid - Chocolatería San Ginés 1.JPG](https://commons.wikimedia.org/wiki/File:Madrid_-_Chocolater%C3%ADa_San_Gin%C3%A9s_1.JPG) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) | Commons resized rendition; CSS display crop. |
 | spanish-batch02-estepa-town-fields.jpg | Frobles | [Vista de Estepa y sus campos.jpg](https://commons.wikimedia.org/wiki/File:Vista_de_Estepa_y_sus_campos.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | Commons resized rendition; CSS display crop. |
+
+## Scenic photographs added on 2026-10-30
+
+| File / place | Original title and source | Creator | License |
+|---|---|---|---|
+| `venezia-grand-canal-south.webp` — Venezia, Canal Grande dal Ponte di Rialto | [View of the Grand Canal from Rialto to Ca'Foscari.jpg](https://commons.wikimedia.org/wiki/File:View_of_the_Grand_Canal_from_Rialto_to_Ca%27Foscari.jpg) | Didier Descouens | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| `venezia-rialto-waterfront.webp` — Venezia, Canal Grande e Ponte di Rialto | [Panorama of Canal Grande and Ponte di Rialto, Venice - September 2017.jpg](https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg) | Martin Falbisoner | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
