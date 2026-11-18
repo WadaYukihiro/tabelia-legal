@@ -20563,4 +20563,22 @@
       <image:caption>魚やコウイカを白ワインで煮て、じゃがいもと食べる大西洋岸の料理です。バターで炒めた玉ねぎの甘みが煮汁に溶けます。</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://tabelia.app/recipes/poulet-au-vinaigre/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/98023cca-5eff-412c-8cea-90a1bfc8c66b_1794990171364.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>プーレ・オー・ヴィネーグル（Poulet au vinaigre）</image:title>
+      <image:caption>鶏をバターで焼き、鍋に残ったうまみを赤ワインビネガーでこそげ取ります。ビネガーを煮詰め、鶏のだしと生クリームを加えたソースで仕上げるリヨンの料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/coq-a-la-biere/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/84e6dc0a-0342-4bcc-a505-ebdb9393eca2_1794990184449.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>コック・ア・ラ・ビエール（Coq à la bière）</image:title>
+      <image:caption>鶏を琥珀色のビールで煮込むフランス北部の料理です。玉ねぎとにんじんを加え、ビールの煮汁を煮詰めてソースにします。</image:caption>
+    </image:image>
+  </url>
 </urlset>
