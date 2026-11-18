@@ -81,3 +81,10 @@ body:has(.recipe-save) { padding-bottom: 88px; }
 /* 生成画像の注記。キャプションのない生成画像がある記事だけに出る（scripts/lib/web-articles.ts generatedImageNoteHtml） */
 .article-image-note { margin: 3rem 0 0; font-size: 0.78rem; line-height: 1.7; color: #938b81; }
 .article-image-note + .article-sources { margin-top: 1.25rem; }
+
+/* 英語・イタリア語のレシピ一覧（renderLocalizedHubPage）。国ごとの節に、コースの入口を1段で並べ、その下に注目レシピを置く */
+.hub-cuisine { scroll-margin-top: 5rem; }
+.hub-cuisine-dishes { margin-top: 2.75rem; padding-top: 2.75rem; border-top: 1px solid #ded6cb; }
+@media (min-width: 901px) {
+  .recipe-hub-page .hub-cuisine-courses { grid-template-columns: repeat(var(--course-count, 3), minmax(0, 1fr)); gap: 1rem; }
+}
