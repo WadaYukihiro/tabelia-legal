@@ -205,3 +205,5 @@ html:not([lang="ja"]) .discovery-cuisine-count small { display: none; }
   .header-mobile-enhanced .header-search-label { display: none; }
 }
 @media(prefers-reduced-motion: reduce) { .discovery-card, .recipe-menu-panel, .discovery-courses, .discovery-check, .discovery-course, .discovery-difficulty-button, .header-menu-toggle, .header-mobile-enhanced > .site-nav { animation: none !important; transition: none; } }
+/* 特集が4本の国は 2×2 に組む（style.css の3列のままだと1枚だけ下段に残る）。720px 以下は style.css の1列のまま */
+@media (min-width: 721px) { .feature-grid:has(> .feature-card:nth-child(4):last-child) { grid-template-columns: repeat(2, 1fr); } }
