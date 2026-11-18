@@ -258,11 +258,13 @@
       });
       return;
     }
+    // 記事の道具（article_tools）と本場の品（article_products）は data-source に配置名を持つ
     track('affiliate_link_opened', {
       merchant: link.getAttribute('data-affiliate') || '',
-      source: 'recipe_ingredients',
+      source: link.getAttribute('data-source') || 'recipe_ingredients',
       ingredient_name: link.getAttribute('data-ingredient') || '',
       recipe_slug: page.recipe_slug || '',
+      article_slug: page.article_slug || '',
     });
   });
 
