@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://tabelia.app/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-11-17</lastmod>
+  <url><loc>https://tabelia.app/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/about/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/app/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/</loc><lastmod>2026-11-19</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-11-17</lastmod>
+  <url><loc>https://tabelia.app/it/</loc><lastmod>2026-11-19</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/"/></url>
-  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-11-17</lastmod>
+  <url><loc>https://tabelia.app/en/about/</loc><lastmod>2026-11-19</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-11-17</lastmod>
+  <url><loc>https://tabelia.app/it/chi-siamo/</loc><lastmod>2026-11-19</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/about/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/about/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/chi-siamo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/about/"/></url>
-  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-11-17</lastmod>
+  <url><loc>https://tabelia.app/recipes/</loc><lastmod>2026-11-19</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-11-17</lastmod>
+  <url><loc>https://tabelia.app/en/recipes/</loc><lastmod>2026-11-19</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/recipes/"/></url>
-  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-11-17</lastmod>
+  <url><loc>https://tabelia.app/it/ricette/</loc><lastmod>2026-11-19</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/recipes/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/ricette/"/>
@@ -42,51 +42,51 @@
   <url><loc>https://tabelia.app/terms/</loc></url>
   <url><loc>https://tabelia.app/commercial/</loc></url>
   <url><loc>https://tabelia.app/support/</loc></url>
-  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/feature/omotenashi/</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/feature/bistro/</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/feature/mijote/</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/feature/regional-sweets/</loc><lastmod>2026-11-18</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/baleares/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/recipes/hodie/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/antipasto/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/primo/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/secondo/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/contorno/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/course/dolce/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/nord/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/centro/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/sud/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/region/isole/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/pasta/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/weekend/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/italian/feature/omotenashi/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/entree/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/plat/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/accompagnement/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/course/dessert/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/nord-est/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/ouest/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/centre-est/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-ouest/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/region/sud-est/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/feature/omotenashi/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/feature/bistro/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/feature/mijote/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/french/feature/regional-sweets/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/entrante/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/primer-plato/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/segundo-plato/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/guarnicion/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/course/postre/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noroeste/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/norte/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/noreste/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/levante/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/centro/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/sur/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/baleares/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/region/canarias/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/rice-and-noodles/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/spanish/feature/fish-and-seafood/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/recipes/hodie/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tabelia.app/en/articles/taste-memory-place/</loc><lastmod>2026-10-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/articles/taste-memory-place/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/articles/taste-memory-place/"/>
@@ -97,10 +97,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tabelia.app/en/articles/taste-memory-place/"/>
     <xhtml:link rel="alternate" hreflang="it-IT" href="https://tabelia.app/it/articoli/taste-memory-place/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tabelia.app/articles/taste-memory-place/"/></url>
-
-  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://tabelia.app/articles/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/articles/aubrac-aligot-buron/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tabelia.app/articles/matera-sassi-roofs-and-streets/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://tabelia.app/articles/turin-bicerin-cafe-layers/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://tabelia.app/articles/provence-santons-village-trades/</loc><lastmod>2026-11-16</lastmod></url>
@@ -162,34 +163,34 @@
   <url><loc>https://tabelia.app/articles/pasta-basics-03-pasta-machine/</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://tabelia.app/articles/pasta-basics-02-kneading-and-resting/</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://tabelia.app/articles/pasta-basics-01-flour-and-eggs/</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dessert/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/entrante/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/entree/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/guarnicion/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/plat/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/postre/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primer-plato/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/en/recipes/course/segundo-plato/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/accompagnement/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dessert/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/entrante/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/entree/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/guarnicion/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/plat/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/postre/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primer-plato/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://tabelia.app/it/ricette/portata/segundo-plato/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/accompagnement/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/antipasto/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/contorno/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dessert/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/dolce/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/entrante/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/entree/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/guarnicion/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/plat/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/postre/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primer-plato/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/primo/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/secondo/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/en/recipes/course/segundo-plato/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/accompagnement/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/antipasto/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/contorno/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dessert/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/dolce/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/entrante/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/entree/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/guarnicion/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/plat/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/postre/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primer-plato/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/primo/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/secondo/</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://tabelia.app/it/ricette/portata/segundo-plato/</loc><lastmod>2026-11-19</lastmod></url>
   <url>
     <loc>https://tabelia.app/recipes/croquetas-de-jamon/</loc>
     <lastmod>2026-10-07</lastmod>
@@ -1051,12 +1052,30 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/tajarin-e-basan-estivi-allastigiana/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/1ec550e5-e17e-4163-9b0b-a32df0b803dd_1795048804001.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アスティ風タヤリンと豆のスープ（Tajarin e basan estivi all’astigiana）</image:title>
+      <image:caption>細い卵麺タヤリンを、ボルロッティ豆とじゃがいものスープで煮るアスティの夏の料理。豆の一部をつぶしてとろみをつけ、バジルとにんにくの香りを添えます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/migliaccio/</loc>
     <lastmod>2026-10-21</lastmod>
     <image:image>
       <image:loc>https://tabelia.app/img/recipe-images/1eee3dcf-dc93-4dcc-8cc2-4ed714c82b3e_1792543536981.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ミリアッチョ（Migliaccio）</image:title>
       <image:caption>セモリナを牛乳で炊き、リコッタと卵を合わせて焼くナポリの菓子です。表面はきつね色で、内側はしっとり柔らかく、柑橘の皮とバニラが香ります。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/chou-farci/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/1fe42bb7-ddb3-47bf-97aa-93e92b01b704_1795007448191.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>シュー・ファルシ（Chou farci）</image:title>
+      <image:caption>肉と青菜の詰め物をキャベツの葉で重ねて包み、ふたをした鍋で蒸し焼きにします。取り分けると、葉の間に肉と刻んだ青菜の層が現れます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1227,6 +1246,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/boeuf-aux-carottes/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/24685aea-8245-40b1-ad2a-aa2b8de0aa2a_1795004349918.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ブフ・オ・キャロット（Bœuf aux carottes）</image:title>
+      <image:caption>牛肉を白ワインとだしで煮て、厚く切ったにんじんを加えます。肉の煮汁を吸ったにんじんも、肉と一緒にたっぷり盛ります。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/tarte-tropezienne/</loc>
     <lastmod>2026-08-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/tarte-tropezienne/"/>
@@ -1328,6 +1356,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/25a32b91-b2c2-47d1-a775-4be6fbbcb04e_1790654537939.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ガトー・ド・サヴォワ（Gâteau de Savoie）</image:title>
       <image:caption>卵を卵黄と卵白に分けて別々に立て、生地に油脂を使わずに焼き上げるサヴォワ地方の軽い菓子。粉糖をふるだけで仕上げる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/daube-de-poulpe/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/266d0287-30eb-4ac8-a7bd-1df733ad034d_1795009210230.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>たこのドーブ（Daube de poulpe）</image:title>
+      <image:caption>たこを野菜のだしと赤ワインで時間をかけて煮ます。吸盤の付いた足が柔らかくなり、煮汁にはたこと香草の味が出ます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -1981,6 +2018,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/hochepot-flamand/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/3cef0195-ef37-41ef-ad8a-10166fd64e68_1794996035034.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>オシュポ・フラマン（Hochepot flamand）</image:title>
+      <image:caption>牛テール、ラム肉、塩をした豚バラ肉を煮て、キャベツやかぶを加えるフランドルの料理です。煮汁を先に出し、肉と野菜は大皿に盛ります。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/buche-de-noel-au-chocolat/</loc>
     <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/buche-de-noel-au-chocolat/"/>
@@ -2065,6 +2111,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/3f13ab89-d568-4ce6-96b6-52558a402be5_1790663685309.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>リガトーニ グリーチャ（Rigatoni alla Gricia）</image:title>
       <image:caption>カルボナーラの原型とも言われる、トマトも卵も使わないラツィオのパスタ。グアンチャーレとペコリーノだけで作る。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/grillade-des-mariniers/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/4019533b-479b-48a6-8064-1fa6b2042b4e_1795002345520.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>グリヤード・デ・マリニエ（Grillade des mariniers）</image:title>
+      <image:caption>牛肉を玉ねぎと重ね、赤ワインとワインビネガーを注いで蒸し煮にします。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2294,6 +2349,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/coq-au-vin-jaune-et-aux-morilles/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/49538418-cfb7-4596-bdb6-566134ba32bb_1794993844926.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>コック・オー・ヴァン・ジョーヌ（Coq au vin jaune et aux morilles）</image:title>
+      <image:caption>鶏をジュラのヴァン・ジョーヌで煮て、モリーユというきのこと生クリームを加えます。焼き色をつけた鶏に、熟成したワインときのこの香りを含ませる料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/paris-brest/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/paris-brest/"/>
@@ -2330,6 +2394,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/4b1be68d-f36a-4b63-b07c-8e97920ae016_1791217959443.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>グジェール（Gougères）</image:title>
       <image:caption>牛乳で作る砂糖なしのシュー生地に角切りのコンテを混ぜ込み、小さな球に絞って焼く、ブルゴーニュの一口大のチーズ菓子。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/bouillabaisse/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/4b256102-4cad-4f57-8786-0f68529ec39b_1794979692019.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ブイヤベース（Bouillabaisse）</image:title>
+      <image:caption>魚のあらで取っただしにサフランを加え、白身魚とじゃがいもを煮ます。魚とだしを別の器に盛り、にんにくと唐辛子のソース、ルイユを添えるマルセイユの料理です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -2999,6 +3072,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/61ae61b8-0682-4d34-9581-acc28a11dfed_1790663496825.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>クロスティーニ・コン・クレマ・ディ・カンネッリーニ（Crostini con Crema di Cannellini）</image:title>
       <image:caption>カンネッリーニ豆をにんにくとローズマリーで炒めてペーストにし、カリカリに焼いたパンに塗るトスカーナの前菜。豆の素朴な甘みとオリーブオイルの香りを味わう。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/marmite-dieppoise/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/628cf193-ac10-44e6-8ed3-548fb5fdf807_1794984153144.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>マルミット・ディエポワーズ（Marmite dieppoise）</image:title>
+      <image:caption>白身魚とホタテを魚のだしで煮て、ムール貝と盛り合わせます。ポロねぎとセロリが入ったそのだしに生クリームを加え、魚介にかけるディエップの料理です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -3894,6 +3976,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/bourride-setoise/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/7ed56704-7d69-41a3-8392-0a0d4c18df34_1795000387187.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ブーリッド・セトワーズ（Bourride sétoise）</image:title>
+      <image:caption>白ワインで野菜とアンコウを煮て、にんにくを利かせたアイオリを煮汁に混ぜます。ソースを魚と野菜にかけて食べる、南フランスの港町セットの料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/fagioli-alluccelletto/</loc>
     <lastmod>2026-05-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/fagioli-alluccelletto/"/>
@@ -4131,6 +4222,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/coq-a-la-biere/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/84e6dc0a-0342-4bcc-a505-ebdb9393eca2_1794990184449.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>コック・ア・ラ・ビエール（Coq à la bière）</image:title>
+      <image:caption>鶏を琥珀色のビールで煮込むフランス北部の料理です。玉ねぎとにんじんを加え、ビールの煮汁を煮詰めてソースにします。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/penne-alla-vodka/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/penne-alla-vodka/"/>
@@ -4176,6 +4276,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/86a6e85f-ba91-468c-b5fa-aa4a6dbb159a_1790663639950.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>にんにくトマトソースのピチ（Pici all'Aglione）</image:title>
       <image:caption>トスカーナの手打ち太麺「ピーチ」に、大粒にんにく「アリオーネ」のトマトソースを合わせる郷土料理。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/canard-aux-navets/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/86c22afa-7a58-43e8-8800-1e830674e9d3_1794999032937.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>カナール・オ・ナヴェ（Canard aux navets）</image:title>
+      <image:caption>鴨を皮の側から焼いて脂を落とし、白ワインと鶏のだしで蒸し煮にします。別にバターで焼いたかぶを煮上がる少し前に加え、鴨の煮汁を含ませます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4267,6 +4376,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/gigot-de-sept-heures/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8a561cd7-4f77-4477-8bfe-b2af7a7c3be3_1795007433202.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ジゴ・ド・セットゥール（Gigot de sept heures）</image:title>
+      <image:caption>仔羊のもも肉を赤ワインとローズマリーでゆっくり煮込みます。鍋を開けるころには、大きな塊がスプーンでほぐれるほど柔らかくなります。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/pommes-anna/</loc>
     <lastmod>2026-10-05</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/pommes-anna/"/>
@@ -4293,6 +4411,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/potee-auvergnate/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8bb3058f-adde-4a18-9ffe-bf6412c6a01a_1794994834972.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ポテ・オーヴェルニャット（Potée auvergnate）</image:title>
+      <image:caption>キャベツやじゃがいも、にんじんを塩漬けの豚肉と煮るオーヴェルニュの料理です。やわらかく煮た野菜と豚肉を大皿に盛り、煮汁も食卓に出します。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/gamberoni-alla-griglia-con-salmoriglio/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/gamberoni-alla-griglia-con-salmoriglio/"/>
@@ -4312,6 +4439,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/8befc3b7-6f29-4323-9406-0f2ea5cea3d7_1793148578312.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>オッソラ風ニョッキ（Gnocchi all'ossolana）</image:title>
       <image:caption>じゃがいもに栗粉とかぼちゃを合わせ、セージを香らせたバターと山のチーズで和えるニョッキです。生地を細い棒にのばして切り、ゆで上げると、栗の香りと、しっかりした歯ごたえを楽しめます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/haricot-de-mouton/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8bfa62ad-6a7c-4e22-8b6f-f1bbf5f9e0da_1795002359124.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アリコ・ド・ムトン（Haricot de mouton）</image:title>
+      <image:caption>羊肉をトマトとだしで煮て、別にゆでた白いんげん豆と、小玉ねぎや豚の塩漬けを合わせます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4380,6 +4516,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/joue-de-boeuf-braisee-au-vin-rouge/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8d663406-85ab-447c-b1bf-0e08c2e21293_1795004364587.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>牛ほほ肉の赤ワイン煮（Joue de bœuf braisée au vin rouge）</image:title>
+      <image:caption>牛のほほ肉を赤ワインとだしでゆっくり煮ます。箸でほぐれるまで煮た肉に、赤ワインの煮汁を煮詰めたソースをかけます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/funghi-trifolati/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/funghi-trifolati/"/>
@@ -4429,6 +4574,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/8ddb9f8d-162a-4995-a65c-ba5a9156a430_1790690235774.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>プーレ・ヴァレ・ドージュ（オージュ渓谷風 鶏のシードル煮）（Poulet Vallée d'Auge）</image:title>
       <image:caption>丸鶏を8つに切り分けてカルヴァドスとシードルで煮込み、卵黄とクリームのリエゾンで仕上げるノルマンディーの古典。リンゴとマッシュルームを合わせ、シードルの酸味とリンゴの甘み、乳脂肪のまろやかさが一体になる。丸鶏1羽で4人分の主菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/poulet-a-la-creme/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/8febed1e-7411-4a65-ae13-080a0245e8bc_1795007463831.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>プーレ・ア・ラ・クレーム（Poulet à la crème）</image:title>
+      <image:caption>切り分けた鶏をバターで焼き、生クリームと白ワインで煮ます。こしたソースをかけると、鶏ときのこのうまみがクリームに重なります。</image:caption>
     </image:image>
   </url>
   <url>
@@ -4606,6 +4760,24 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/veau-aux-olives/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/96917a8f-df64-45d4-9b50-bd41dd63415c_1795006446286.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ヴォー・オ・ゾリーヴ（Veau aux olives）</image:title>
+      <image:caption>仔牛肉を香草とワインで煮て、仕上げにグリーンオリーブを加えます。柔らかい肉に、果実の塩気と香りがよく合います。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/veau-marengo/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/969e7c61-c834-49cd-8180-2f8016ef0b47_1794999053282.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ヴォー・マレンゴ（Veau Marengo）</image:title>
+      <image:caption>子牛肉を焼き、白ワインとトマトを入れて煮込みます。仕上げに小玉ねぎとマッシュルームを加え、肉を煮たソースをからめます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/cozze-alla-marinara/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cozze-alla-marinara/"/>
@@ -4638,6 +4810,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/96e44382-db39-4265-a36f-cb8dc2395e7f_1790690351248.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>グラタン・ド・ポティロン（かぼちゃのグラタン）（Gratin de Potiron）</image:title>
       <image:caption>かぼちゃを蒸し煮にして水分を飛ばし、クリームとチーズを合わせて焼くグラタン。中はなめらかで表面は香ばしく、ローストした肉の付け合わせにする。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/poulet-au-vinaigre/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/98023cca-5eff-412c-8cea-90a1bfc8c66b_1794990171364.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>プーレ・オー・ヴィネーグル（Poulet au vinaigre）</image:title>
+      <image:caption>鶏をバターで焼き、鍋に残ったうまみを赤ワインビネガーでこそげ取ります。ビネガーを煮詰め、鶏のだしと生クリームを加えたソースで仕上げるリヨンの料理です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5095,6 +5276,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/poule-au-pot/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/aa1cc73e-193d-4091-b9be-82f15d38ece8_1795007493023.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>プール・オ・ポ（Poule au pot）</image:title>
+      <image:caption>鶏一羽とにんじん、かぶ、ポロねぎを、身がほぐれるまで静かに煮ます。鶏と野菜の味が移った汁を先に出し、あとから肉を切り分けるベアルンの料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/crostini-con-fegatini-di-pollo/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/crostini-con-fegatini-di-pollo/"/>
@@ -5208,6 +5398,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/garbure/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/ae86bf81-b6ea-4040-8a82-c17d76d38389_1795007477900.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ガルビュール（Garbure）</image:title>
+      <image:caption>キャベツや白いんげん豆、じゃがいもを、塩漬けの豚肉や鴨のコンフィのうまみで煮るベアルンの汁物です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/insalata-mista/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/insalata-mista/"/>
@@ -5231,6 +5430,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/af3c87f1-78d6-4fa2-94d7-b518d7edbd4f_1790654548232.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>サントノレ（Saint-Honoré）</image:title>
       <image:caption>19世紀パリの菓子店シブースト発祥とされる菓子。パイ生地の土台の縁にカラメルで留めた小さなシュー生地を隙間なく並べ、中央にクレーム・シブースト（クレーム・パティシエールとイタリアンメレンゲを合わせた軽いクリーム）を絞り出す。パイ、シュー、カラメル、クリームという4つの仕事を一つに重ねる、フランス菓子の中でも技術的な到達点とされる一品。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/poulet-basquaise/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/afbc3438-2663-4ff2-a6ed-175c3143bf7c_1794965359729.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>プーレ・バスケーズ（Poulet basquaise）</image:title>
+      <image:caption>焼き色をつけた骨付き鶏もも肉を、トマトと赤パプリカ、ピーマンで煮込むバスク地方の料理。仕上げにエスペレット唐辛子を加えます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5318,6 +5526,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/b1ed3c0f-a995-5d3c-9d88-0c10bff5ac7d_1793357667629.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏のプルーンと松の実煮（Pollastre amb prunes i pinyons）</image:title>
       <image:caption>カタルーニャ料理研究所の、油とラード・シナモン・ブランデーで鍋焼きにする標準を採用する。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/tripes-a-la-mode-de-caen/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/b3581254-ccf1-4330-af07-1cedce604163_1795006405367.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>カーン風トリップ（Tripes à la mode de Caen）</image:title>
+      <image:caption>牛の胃を、牛の足、にんじん、玉ねぎと煮込むノルマンディーの料理です。じっくり煮ると胃は柔らかくなり、牛の足を煮た汁にはとろみがつきます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5533,6 +5750,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/bafbaec8-070a-44eb-a74a-57c216a46b55_1790663579846.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ムール・マリニエール（Moules Marinières）</image:title>
       <image:caption>北フランスの沿岸で親しまれる「船乗り風」のムール貝の白ワイン蒸し。下処理した貝を白ワイン、エシャロット、バターで一気に蒸し上げる。食べ終えて空になった殻をトング代わりにして身を外し、最後は蒸し汁にバゲットを浸して食べるのが本場の食べ方。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/alouettes-sans-tete/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/bb426e92-c3df-4793-b6a3-71279ab20f9e_1795002329671.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アルエット・サン・テット（Alouettes sans tête）</image:title>
+      <image:caption>薄切りの牛肉で詰め物を包み、ほどけないように留めて煮るプロヴァンスの料理です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -5967,6 +6193,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/c7fa2ef7-45a4-417a-9ff5-21e7c98e1721_1790663457590.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>チョコレートのブディーノ（Budino al Cioccolato）</image:title>
       <image:caption>牛乳と生クリームにコーンスターチでとろみをつけ、ダークチョコレートを溶かし込んで冷やし固める、イタリアの家庭の定番のチョコレートプリン。ゼラチンではなくコーンスターチで固めるため、ムースより濃厚で独特のなめらかさに仕上がる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/navarin-dagneau-printanier/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/c8194a34-e9a7-4cbe-8234-a03acdb645b9_1795002373838.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ナヴァラン・ダニョー・プランタニエ（Navarin d'agneau printanier）</image:title>
+      <image:caption>仔羊の肩を煮込み、春のにんじん、かぶ、じゃがいもなどを合わせます。柔らかく煮た肉に、新野菜の甘みが加わります。</image:caption>
     </image:image>
   </url>
   <url>
@@ -6533,6 +6768,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/poulet-aux-quarante-gousses-dail/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/da85dc2b-cc76-4466-a16a-10151254e554_1795006420855.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>鶏の40かけにんにく煮（Poulet aux quarante gousses d'ail）</image:title>
+      <image:caption>鶏一羽の周りに薄皮つきのにんにくを並べ、ふたをして火を通します。とろりとしたにんにくの中身は、焼いたパンに塗って鶏と食べます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/verdure-grigliate-miste/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/verdure-grigliate-miste/"/>
@@ -6556,6 +6800,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/dada5630-fb52-4acb-bd34-70772dd61fe8_1791218006164.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>エスカルゴのブルゴーニュ風（Escargots à la Bourguignonne）</image:title>
       <image:caption>ブルゴーニュ種のエスカルゴをエスカルゴ皿の穴に詰め、エシャロット・にんにく・パセリを練り込んだバターで口をふさいで、高温のオーブンで焼くフランスの前菜。バターが溶けて泡立ったら、熱いうちに食べる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/coq-au-riesling/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/db34d495-d854-4567-a313-34d41da80b2d_1794981927597.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>コック・オー・リースリング（Coq au Riesling）</image:title>
+      <image:caption>焼き色をつけた骨付き鶏肉を、アルザスの辛口リースリングで煮込みます。マッシュルームの入った煮汁に生クリームを加え、鶏肉にかけて食べます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -6617,6 +6870,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/dbf751b3-91f1-4010-94c5-7a32c703ae99_1791218472775.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>洋梨の赤ワイン煮（皮と蜂蜜で煮る）（Poires au Vin Rouge）</image:title>
       <image:caption>洋梨を、むいた皮と一緒に、蜂蜜と香辛料で香りをつけた赤ワインで煮るフランスのデザート。煮汁に沈めて24時間冷やし、冷たい煮汁をかけて出す。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/axoa-de-veau/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/dbf88a9d-6c3f-4807-9ddc-637744b7d508_1794985879778.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アショア・ド・ヴォー（Axoa de veau）</image:title>
+      <image:caption>細かく切った仔牛肉を玉ねぎや甘唐辛子と煮て、エスペレット唐辛子で辛みをつけます。フランス領バスクのエスペレットで、市の日に食べられてきた料理です。</image:caption>
     </image:image>
   </url>
   <url>
@@ -7199,6 +7461,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/boeuf-miroton/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/f3db293e-286c-4003-9011-0daf4537f27f_1794997478072.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ブフ・ミロトン（Bœuf miroton）</image:title>
+      <image:caption>ポトフで煮た牛肉を、玉ねぎや煮汁と合わせて温め直す料理です。玉ねぎの甘みが出たところにワインビネガーを加え、ソースの味を整えます。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/bruschetta-con-funghi/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/bruschetta-con-funghi/"/>
@@ -7349,6 +7620,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/fbb28c56-98bf-46fd-b1b4-f7f767a47f86_1793406972314.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ポン・オードメールのミルリトン（Mirliton de Pont-Audemer）</image:title>
       <image:caption>薄いビスケットを熱いうちに筒状に巻き、自家製アーモンドプラリネのクリームを詰めたノルマンディーの菓子。両端をダークチョコレートで閉じ、冷やして仕上げます。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/chaudree-charentaise/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/fc2530d7-ab34-4666-acd1-fc2b2242d0f1_1794987351813.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ショードレ・シャランテーズ（Chaudrée charentaise）</image:title>
+      <image:caption>魚やコウイカを白ワインで煮て、じゃがいもと食べる大西洋岸の料理です。バターで炒めた玉ねぎの甘みが煮汁に溶けます。</image:caption>
     </image:image>
   </url>
   <url>
@@ -20507,278 +20787,6 @@
       <image:loc>https://tabelia.app/img/recipe-images/ffe5dd47-4ebe-4603-b2c2-1f2681b00526_1790686400036.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>Tiramisù</image:title>
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi e profumata con Cointreau ed espresso.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/poulet-basquaise/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/afbc3438-2663-4ff2-a6ed-175c3143bf7c_1794965359729.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>プーレ・バスケーズ（Poulet basquaise）</image:title>
-      <image:caption>焼き色をつけた骨付き鶏もも肉を、トマトと赤パプリカ、ピーマンで煮込むバスク地方の料理。仕上げにエスペレット唐辛子を加えます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/bouillabaisse/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/4b256102-4cad-4f57-8786-0f68529ec39b_1794979692019.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ブイヤベース（Bouillabaisse）</image:title>
-      <image:caption>魚のあらで取っただしにサフランを加え、白身魚とじゃがいもを煮ます。魚とだしを別の器に盛り、にんにくと唐辛子のソース、ルイユを添えるマルセイユの料理です。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/coq-au-riesling/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/db34d495-d854-4567-a313-34d41da80b2d_1794981927597.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>コック・オー・リースリング（Coq au Riesling）</image:title>
-      <image:caption>焼き色をつけた骨付き鶏肉を、アルザスの辛口リースリングで煮込みます。マッシュルームの入った煮汁に生クリームを加え、鶏肉にかけて食べます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/marmite-dieppoise/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/628cf193-ac10-44e6-8ed3-548fb5fdf807_1794984153144.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>マルミット・ディエポワーズ（Marmite dieppoise）</image:title>
-      <image:caption>白身魚とホタテを魚のだしで煮て、ムール貝と盛り合わせます。ポロねぎとセロリが入ったそのだしに生クリームを加え、魚介にかけるディエップの料理です。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/axoa-de-veau/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/dbf88a9d-6c3f-4807-9ddc-637744b7d508_1794985879778.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>アショア・ド・ヴォー（Axoa de veau）</image:title>
-      <image:caption>細かく切った仔牛肉を玉ねぎや甘唐辛子と煮て、エスペレット唐辛子で辛みをつけます。フランス領バスクのエスペレットで、市の日に食べられてきた料理です。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/chaudree-charentaise/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/fc2530d7-ab34-4666-acd1-fc2b2242d0f1_1794987351813.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ショードレ・シャランテーズ（Chaudrée charentaise）</image:title>
-      <image:caption>魚やコウイカを白ワインで煮て、じゃがいもと食べる大西洋岸の料理です。バターで炒めた玉ねぎの甘みが煮汁に溶けます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/poulet-au-vinaigre/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/98023cca-5eff-412c-8cea-90a1bfc8c66b_1794990171364.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>プーレ・オー・ヴィネーグル（Poulet au vinaigre）</image:title>
-      <image:caption>鶏をバターで焼き、鍋に残ったうまみを赤ワインビネガーでこそげ取ります。ビネガーを煮詰め、鶏のだしと生クリームを加えたソースで仕上げるリヨンの料理です。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/coq-a-la-biere/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/84e6dc0a-0342-4bcc-a505-ebdb9393eca2_1794990184449.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>コック・ア・ラ・ビエール（Coq à la bière）</image:title>
-      <image:caption>鶏を琥珀色のビールで煮込むフランス北部の料理です。玉ねぎとにんじんを加え、ビールの煮汁を煮詰めてソースにします。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/coq-au-vin-jaune-et-aux-morilles/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/49538418-cfb7-4596-bdb6-566134ba32bb_1794993844926.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>コック・オー・ヴァン・ジョーヌ（Coq au vin jaune et aux morilles）</image:title>
-      <image:caption>鶏をジュラのヴァン・ジョーヌで煮て、モリーユというきのこと生クリームを加えます。焼き色をつけた鶏に、熟成したワインときのこの香りを含ませる料理です。</image:caption>
-    </image:image>
-  </url>
-<url><loc>https://tabelia.app/articles/aubrac-aligot-buron/</loc><lastmod>2026-11-18</lastmod></url>
-<url><loc>https://tabelia.app/articles/</loc><lastmod>2026-11-18</lastmod></url>
-  <url>
-    <loc>https://tabelia.app/recipes/potee-auvergnate/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/8bb3058f-adde-4a18-9ffe-bf6412c6a01a_1794994834972.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ポテ・オーヴェルニャット（Potée auvergnate）</image:title>
-      <image:caption>キャベツやじゃがいも、にんじんを塩漬けの豚肉と煮るオーヴェルニュの料理です。やわらかく煮た野菜と豚肉を大皿に盛り、煮汁も食卓に出します。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/hochepot-flamand/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/3cef0195-ef37-41ef-ad8a-10166fd64e68_1794996035034.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>オシュポ・フラマン（Hochepot flamand）</image:title>
-      <image:caption>牛テール、ラム肉、塩をした豚バラ肉を煮て、キャベツやかぶを加えるフランドルの料理です。煮汁を先に出し、肉と野菜は大皿に盛ります。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/boeuf-miroton/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/f3db293e-286c-4003-9011-0daf4537f27f_1794997478072.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ブフ・ミロトン（Bœuf miroton）</image:title>
-      <image:caption>ポトフで煮た牛肉を、玉ねぎや煮汁と合わせて温め直す料理です。玉ねぎの甘みが出たところにワインビネガーを加え、ソースの味を整えます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/canard-aux-navets/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/86c22afa-7a58-43e8-8800-1e830674e9d3_1794999032937.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>カナール・オ・ナヴェ（Canard aux navets）</image:title>
-      <image:caption>鴨を皮の側から焼いて脂を落とし、白ワインと鶏のだしで蒸し煮にします。別にバターで焼いたかぶを煮上がる少し前に加え、鴨の煮汁を含ませます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/veau-marengo/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/969e7c61-c834-49cd-8180-2f8016ef0b47_1794999053282.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ヴォー・マレンゴ（Veau Marengo）</image:title>
-      <image:caption>子牛肉を焼き、白ワインとトマトを入れて煮込みます。仕上げに小玉ねぎとマッシュルームを加え、肉を煮たソースをからめます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/bourride-setoise/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/7ed56704-7d69-41a3-8392-0a0d4c18df34_1795000387187.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ブーリッド・セトワーズ（Bourride sétoise）</image:title>
-      <image:caption>白ワインで野菜とアンコウを煮て、にんにくを利かせたアイオリを煮汁に混ぜます。ソースを魚と野菜にかけて食べる、南フランスの港町セットの料理です。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/alouettes-sans-tete/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/bb426e92-c3df-4793-b6a3-71279ab20f9e_1795002329671.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>アルエット・サン・テット（Alouettes sans tête）</image:title>
-      <image:caption>薄切りの牛肉で詰め物を包み、ほどけないように留めて煮るプロヴァンスの料理です。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/grillade-des-mariniers/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/4019533b-479b-48a6-8064-1fa6b2042b4e_1795002345520.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>グリヤード・デ・マリニエ（Grillade des mariniers）</image:title>
-      <image:caption>牛肉を玉ねぎと重ね、赤ワインとワインビネガーを注いで蒸し煮にします。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/haricot-de-mouton/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/8bfa62ad-6a7c-4e22-8b6f-f1bbf5f9e0da_1795002359124.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>アリコ・ド・ムトン（Haricot de mouton）</image:title>
-      <image:caption>羊肉をトマトとだしで煮て、別にゆでた白いんげん豆と、小玉ねぎや豚の塩漬けを合わせます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/navarin-dagneau-printanier/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/c8194a34-e9a7-4cbe-8234-a03acdb645b9_1795002373838.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ナヴァラン・ダニョー・プランタニエ（Navarin d'agneau printanier）</image:title>
-      <image:caption>仔羊の肩を煮込み、春のにんじん、かぶ、じゃがいもなどを合わせます。柔らかく煮た肉に、新野菜の甘みが加わります。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/boeuf-aux-carottes/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/24685aea-8245-40b1-ad2a-aa2b8de0aa2a_1795004349918.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ブフ・オ・キャロット（Bœuf aux carottes）</image:title>
-      <image:caption>牛肉を白ワインとだしで煮て、厚く切ったにんじんを加えます。肉の煮汁を吸ったにんじんも、肉と一緒にたっぷり盛ります。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/joue-de-boeuf-braisee-au-vin-rouge/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/8d663406-85ab-447c-b1bf-0e08c2e21293_1795004364587.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>牛ほほ肉の赤ワイン煮（Joue de bœuf braisée au vin rouge）</image:title>
-      <image:caption>牛のほほ肉を赤ワインとだしでゆっくり煮ます。箸でほぐれるまで煮た肉に、赤ワインの煮汁を煮詰めたソースをかけます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/tripes-a-la-mode-de-caen/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/b3581254-ccf1-4330-af07-1cedce604163_1795006405367.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>カーン風トリップ（Tripes à la mode de Caen）</image:title>
-      <image:caption>牛の胃を、牛の足、にんじん、玉ねぎと煮込むノルマンディーの料理です。じっくり煮ると胃は柔らかくなり、牛の足を煮た汁にはとろみがつきます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/poulet-aux-quarante-gousses-dail/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/da85dc2b-cc76-4466-a16a-10151254e554_1795006420855.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>鶏の40かけにんにく煮（Poulet aux quarante gousses d'ail）</image:title>
-      <image:caption>鶏一羽の周りに薄皮つきのにんにくを並べ、ふたをして火を通します。とろりとしたにんにくの中身は、焼いたパンに塗って鶏と食べます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/daube-de-poulpe/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/266d0287-30eb-4ac8-a7bd-1df733ad034d_1795009210230.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>たこのドーブ（Daube de poulpe）</image:title>
-      <image:caption>たこを野菜のだしと赤ワインで時間をかけて煮ます。吸盤の付いた足が柔らかくなり、煮汁にはたこと香草の味が出ます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/veau-aux-olives/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/96917a8f-df64-45d4-9b50-bd41dd63415c_1795006446286.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ヴォー・オ・ゾリーヴ（Veau aux olives）</image:title>
-      <image:caption>仔牛肉を香草とワインで煮て、仕上げにグリーンオリーブを加えます。柔らかい肉に、果実の塩気と香りがよく合います。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/gigot-de-sept-heures/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/8a561cd7-4f77-4477-8bfe-b2af7a7c3be3_1795007433202.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ジゴ・ド・セットゥール（Gigot de sept heures）</image:title>
-      <image:caption>仔羊のもも肉を赤ワインとローズマリーでゆっくり煮込みます。鍋を開けるころには、大きな塊がスプーンでほぐれるほど柔らかくなります。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/chou-farci/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/1fe42bb7-ddb3-47bf-97aa-93e92b01b704_1795007448191.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>シュー・ファルシ（Chou farci）</image:title>
-      <image:caption>肉と青菜の詰め物をキャベツの葉で重ねて包み、ふたをした鍋で蒸し焼きにします。取り分けると、葉の間に肉と刻んだ青菜の層が現れます。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/poulet-a-la-creme/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/8febed1e-7411-4a65-ae13-080a0245e8bc_1795007463831.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>プーレ・ア・ラ・クレーム（Poulet à la crème）</image:title>
-      <image:caption>切り分けた鶏をバターで焼き、生クリームと白ワインで煮ます。こしたソースをかけると、鶏ときのこのうまみがクリームに重なります。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/garbure/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/ae86bf81-b6ea-4040-8a82-c17d76d38389_1795007477900.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>ガルビュール（Garbure）</image:title>
-      <image:caption>キャベツや白いんげん豆、じゃがいもを、塩漬けの豚肉や鴨のコンフィのうまみで煮るベアルンの汁物です。</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://tabelia.app/recipes/poule-au-pot/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <image:image>
-      <image:loc>https://tabelia.app/img/recipe-images/aa1cc73e-193d-4091-b9be-82f15d38ece8_1795007493023.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
-      <image:title>プール・オ・ポ（Poule au pot）</image:title>
-      <image:caption>鶏一羽とにんじん、かぶ、ポロねぎを、身がほぐれるまで静かに煮ます。鶏と野菜の味が移った汁を先に出し、あとから肉を切り分けるベアルンの料理です。</image:caption>
     </image:image>
   </url>
 </urlset>
