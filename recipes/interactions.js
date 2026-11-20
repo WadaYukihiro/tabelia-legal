@@ -199,9 +199,70 @@ function scaleIngredientNotes(text, ingredient, baseServings, targetServings) {
     });
 }
 
+},
+"./inactiveTime": function(module, exports, require) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.resolveInactiveTimeMinutes = resolveInactiveTimeMinutes;
+/** Shared by native detail and interactive Web; recompute from the standard baseline. */
+function resolveInactiveTimeMinutes(baseline, patches) {
+    let delta = 0;
+    for (const patch of patches) {
+        if (patch.action === 'append_note' || patch.inactiveTimeDeltaMinutes === undefined)
+            continue;
+        if (!Number.isSafeInteger(patch.inactiveTimeDeltaMinutes))
+            return baseline;
+        delta += patch.inactiveTimeDeltaMinutes;
+    }
+    if (delta === 0)
+        return baseline;
+    const minutes = (baseline !== null && baseline !== void 0 ? baseline : 0) + delta;
+    // Corrupt or stale metadata must not erase the recipe's original waiting time.
+    if (!Number.isSafeInteger(minutes) || minutes < 0)
+        return baseline;
+    return minutes === 0 ? null : minutes;
+}
+
+},
+"./web-recipe-facts": function(module, exports, require) {
+"use strict";
+// レシピ詳細の先頭に置く「作れるか」の判断材料（合計時間・難易度・分量と、時間の内訳の帯）。
+// SP（600px 以下）で時間・難易度のチップの代わりに出す。チップは PC とタブレット幅でそのまま使い、
+// update-web-discovery.ts も難易度をチップから読むので DOM から外さない（scripts/web-recipe-layout.css）。
+// 本格料理は合計時間が長くなるが、手を動かす時間と待つ時間を分けて見せれば「週末なら作れる」と判断できる。
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.recipeFactsSegments = recipeFactsSegments;
+exports.recipeFactsHtml = recipeFactsHtml;
+function recipeFactsSegments(input) {
+    var _a;
+    const segments = [
+        { kind: 'prep', minutes: input.prepMinutes, label: input.labels.prep },
+        { kind: 'cook', minutes: input.cookMinutes, label: input.labels.cook },
+        { kind: 'inactive', minutes: (_a = input.inactiveMinutes) !== null && _a !== void 0 ? _a : 0, label: input.labels.inactive },
+    ];
+    return segments.filter((segment) => segment.minutes > 0);
+}
+function recipeFactsHtml(input) {
+    const { labels, escape: esc, formatMinutes } = input;
+    const segments = recipeFactsSegments(input);
+    const total = segments.reduce((sum, segment) => sum + segment.minutes, 0);
+    const cell = (label, value, attrs = '') => `<div class="recipe-facts-cell"><dt>${esc(label)}</dt><dd${attrs}>${value}</dd></div>`;
+    const cells = [
+        total > 0 ? cell(labels.total, esc(formatMinutes(total))) : '',
+        cell(labels.difficulty, esc(input.difficultyText), ' class="recipe-facts-stars"'),
+        cell(labels.servings, esc(input.servingsText), ' data-recipe-servings'),
+    ].join('');
+    // 内訳が1種類だけなら帯は合計と同じことしか言わないので出さない
+    const breakdown = segments.length > 1
+        ? `<div class="recipe-facts-bar" aria-hidden="true">${segments.map((segment) => `<span class="is-${segment.kind}" style="flex-grow:${segment.minutes}"></span>`).join('')}</div>`
+            + `<ul class="recipe-facts-legend">${segments.map((segment) => `<li class="is-${segment.kind}">${esc(segment.label)} ${esc(formatMinutes(segment.minutes))}</li>`).join('')}</ul>`
+        : '';
+    return `<div class="recipe-facts"><dl class="recipe-facts-row">${cells}</dl>${breakdown}</div>`;
+}
+
 }}, cache={};
 function require(id){if(!cache[id]){var m=cache[id]={exports:{}};modules[id](m,m.exports,require);}return cache[id].exports;}
-window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./scaleRecipe'));
+window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./scaleRecipe'),require('./inactiveTime'),require('./web-recipe-facts'));
 })();
 (function () {
   'use strict';
@@ -542,8 +603,26 @@ window.TabeliaRecipeScaling=Object.assign({},require('./formatQty'),require('./s
     if (description) description.textContent = options.length ? scoreLabel(score) + '。選んだ食材による味・食感・手順の変化を、材料欄と作り方に反映しています。' : 'このスコアは、標準レシピの食材と手順で作った場合の値です。代わりに使える食材を選ぶと、味・食感・工程への影響とあわせてスコアが変わります。';
     if (selected) { selected.hidden = !options.length; selected.innerHTML = options.map(function (item) { var ingredient=data.ingredients.find(function(candidate){return candidate.id===item.ingredientId;});var impact=ingredient&&ingredient.role==='garnish'?0:item.option.authenticityImpact;return '<span>' + esc(item.option.nameJa) + ' <strong>' + (impact === 0 ? '±0' : impact) + '</strong></span>'; }).join(''); }
   }
+  function renderTiming(options) {
+    var baseline = data.recipe.timing;
+    if (!baseline) return;
+    var patches = [];
+    options.forEach(function (item) { patches = patches.concat(item.option.stepPatches || []); });
+    var inactive = scaling.resolveInactiveTimeMinutes(baseline.inactiveMinutes, patches);
+    var chip = document.querySelector('[data-recipe-inactive-chip]');
+    if (chip) {
+      chip.style.display = inactive ? '' : 'none';
+      var value = chip.querySelector('[data-recipe-inactive-value]');
+      if (value) value.textContent = fmtMinutes(inactive || 0);
+    }
+    var facts = document.querySelector('.recipe-facts');
+    if (facts) facts.outerHTML = scaling.recipeFactsHtml(Object.assign({}, baseline, {
+      inactiveMinutes: inactive, servingsText: state.servings + '人分', formatMinutes: fmtMinutes, escape: esc
+    }));
+  }
   function render() {
     var options = selectedOptions();
+    renderTiming(options);
     currentIngredients = adaptedIngredients(options);
     renderIngredients(currentIngredients); renderSteps(adaptedSteps(options), options.length > 0); renderScore(options);
     ['ingredient-servings-label','servings-output'].forEach(function (id) { var el=document.getElementById(id); if(el)el.textContent=String(state.servings); });
