@@ -17,7 +17,7 @@ exports.fmtQty = fmtQty;
 exports.fmtQtyWithUnit = fmtQtyWithUnit;
 exports.COUNT_UNITS = [
     '枝', '個', '枚', '本', '片', '束', '株', '房', '粒',
-    '缶', 'パック', '袋', 'セット', '尾', '切れ', '羽', '頭', '茎',
+    '缶', 'パック', '袋', 'セット', '尾', '切れ', '羽', '頭', '茎', '杯',
     'ひとつまみ', 'ひとにぎり', '適量',
 ];
 const COUNT_UNIT_SET = new Set(exports.COUNT_UNITS);
@@ -157,7 +157,7 @@ function scaleQty(base, baseServings, target, role, unit, scalingBehavior) {
 }
 // Scale quantity values embedded in step instruction text.
 // Scales: weight/volume (g, kg, ml, L, cc), Japanese spoon/cup (大さじ, 小さじ, カップ),
-//         and count units (個, 枚, 本, 片, 束, 株, 房, 粒, 缶, パック, 袋, セット, 尾, 切れ, 羽, 頭, 枝, 茎).
+//         and count units (個, 枚, 本, 片, 束, 株, 房, 粒, 缶, パック, 袋, セット, 尾, 切れ, 羽, 頭, 枝, 茎, 杯).
 // Does NOT scale: time (分/時間), temperature (度/℃), size (cm/mm).
 function scaleInstructionText(instruction, baseServings, targetServings, ingredients = []) {
     if (baseServings === targetServings)
