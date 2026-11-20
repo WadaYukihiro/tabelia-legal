@@ -101,6 +101,7 @@
   <url><loc>https://tabelia.app/articles/series/pasta-basics/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://tabelia.app/articles/series/bread-basics/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://tabelia.app/articles/series/brodo-basics/</loc><lastmod>2026-11-20</lastmod></url>
+  <url><loc>https://tabelia.app/articles/saint-gilles-sardines-vintage-tins/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://tabelia.app/articles/venice-sestiere-house-numbers/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://tabelia.app/articles/aubrac-aligot-buron/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tabelia.app/articles/matera-sassi-roofs-and-streets/</loc><lastmod>2026-11-17</lastmod></url>
@@ -3008,6 +3009,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/perdiz-a-la-toledana/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/5dabfe2e-812d-47ee-a279-0406118926de_1795178912778.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>アカアシイワシャコのトレド風煮込み（Perdiz a la toledana）</image:title>
+      <image:caption>丸ごとのアカアシイワシャコを焼き、玉ねぎ、にんじん、にんにくと煮込みます。白ワインとビネガーを加え、肉が骨から離れやすくなるまでゆっくり火を通す、トレドの鳥料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/brasato-al-barolo/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/brasato-al-barolo/"/>
@@ -4865,6 +4875,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/conejo-al-ajillo/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/9659e8bd-0b10-44c8-b08b-07d30e88355a_1795178933703.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>うさぎのにんにく炒め（Conejo al ajillo）</image:title>
+      <image:caption>骨付きのうさぎもも肉をゆっくり焼き、にんにく、パセリ、タイムの香りを加えます。最後に白ワインを絡める、トレドの料理集を基準にしたコネホ・アル・アヒージョです。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/patate-al-rosmarino/</loc>
     <lastmod>2026-05-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/patate-al-rosmarino/"/>
@@ -5781,6 +5800,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/carne-ao-caldeiro/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/b81120f4-b358-4e8d-8816-6a7d4d1974b4_1795178855603.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>牛肉とじゃがいものガリシア風ゆで煮（Carne ao caldeiro）</image:title>
+      <image:caption>牛すね肉を水からゆっくり煮て、その煮汁でじゃがいもにも火を通します。肉とじゃがいもを皿へ取り、甘口パプリカ、塩、オリーブオイルをかける、ガリシアの牛肉料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/albondigas-en-salsa/</loc>
     <lastmod>2026-10-07</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/albondigas-en-salsa/"/>
@@ -6207,6 +6235,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/trucha-a-la-navarra/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/c4ca3899-1b7d-432e-a85c-48453cd55e08_1795178874681.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>にじますの生ハム詰め揚げ（Trucha a la navarra）</image:title>
+      <image:caption>にじますの腹に生ハムを収め、薄く小麦粉をまぶしてオリーブオイルで揚げます。香ばしい皮の内側に、生ハムの塩気とうまみが加わるナバラの魚料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/cavolfiore-alla-siciliana/</loc>
     <lastmod>2026-07-26</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/cavolfiore-alla-siciliana/"/>
@@ -6483,6 +6520,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/cc269c19-d29b-4333-89ef-3c260705db12_1790645399739.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>鶏肉のディアボラ風グリル（Pollo alla Diavola）</image:title>
       <image:caption>背骨を外して平らに開いた丸鶏に唐辛子と黒こしょうをたっぷりまぶし、重しで押さえて焼く、トスカーナやラツィオの鶏のグリル。厚さがそろうので、外はカリカリ、中はジューシーに焼き上がる。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/escaldums/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/ccab1822-3e74-4105-af5f-07c9d4096938_1795178980386.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>鶏肉とじゃがいものアーモンド煮（Escaldums）</image:title>
+      <image:caption>骨付きの鶏肉を玉ねぎとトマトで煮て、アーモンドとマジョラムのペーストを混ぜます。揚げたじゃがいもとプルーンを合わせる、マヨルカ島のエスカルドゥムスです。</image:caption>
     </image:image>
   </url>
   <url>
@@ -7359,6 +7405,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://tabelia.app/recipes/rap-amb-all-cremat/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/e6d9e877-755c-484e-a25b-b811907c460d_1795178893646.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>あんこうとじゃがいもの焦がしにんにく煮（Rap amb all cremat）</image:title>
+      <image:caption>にんにくを濃いきつね色に炒め、トマト、じゃがいも、あんこうを煮込みます。にんにくの香ばしさと魚のうまみを煮汁に移す、カタルーニャの海辺の料理です。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://tabelia.app/recipes/escalivada/</loc>
     <lastmod>2026-10-11</lastmod>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tabelia.app/recipes/escalivada/"/>
@@ -7583,6 +7638,15 @@
       <image:loc>https://tabelia.app/img/recipe-images/f11127c1-daa6-4dd2-9e2f-5a337540e390_1790663765006.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
       <image:title>ズッキーニのガーリックソテー（Zucchine Trifolate）</image:title>
       <image:caption>ズッキーニをにんにく、パセリ、白ワインでソテーする、イタリア各地の家庭的な副菜。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tabelia.app/recipes/carne-mechada/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://tabelia.app/img/recipe-images/f131acc2-ea77-4790-a769-0318d81160ee_1795178955963.png?width=1200&amp;resize=contain&amp;quality=78</image:loc>
+      <image:title>ハムと野菜を詰めた豚肩ロースの煮込み（Carne mechada）</image:title>
+      <image:caption>豚肩ロースの塊に生ハム、にんじん、ゆで卵を詰め、野菜とともに煮ます。肉を薄切りにして、煮込んだ野菜をなめらかにしたソースを添える、アンダルシアのカルネ・メチャーダです。</image:caption>
     </image:image>
   </url>
   <url>
@@ -21006,5 +21070,4 @@
       <image:caption>Uno dei dolci simbolo dell’Italia, con crema di mascarpone e tuorli disposta sui savoiardi e profumata con Cointreau ed espresso.</image:caption>
     </image:image>
   </url>
-<url><loc>https://tabelia.app/articles/saint-gilles-sardines-vintage-tins/</loc><lastmod>2026-11-20</lastmod></url>
 </urlset>
